@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ko" unique-identifier="pub-id" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+<metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+    <dc:title id="title">Copy of 중등영어_송1단원_백업</dc:title>
+    <dc:creator id="creator">Unset</dc:creator>
+    <dc:language>ko</dc:language>
+    <dc:identifier id="pub-id">Unset</dc:identifier>
+    <dc:date>2017-09-07T01:50:56Z</dc:date>
+    <dc:publisher>Unset</dc:publisher>
+    <dc:rights>Unset</dc:rights>
+	<meta property="dcterms:modified">2017-09-07T01:50:56Z</meta>
+	<meta property="rendition:layout">pre-paginated</meta>
+	<meta property="rendition:orientation">landscape</meta>
+	<meta property="rendition:spread">auto</meta>
+</metadata>
+<manifest>
+	<item id="toc" properties="nav" href="TOC.xhtml" media-type="application/xhtml+xml"/>
+	<item id="js1" href="js/blux-apx-1.0.js" media-type="text/javascript"/>
+<item id="js2" href="js/aspen-apx-1.0.js" media-type="text/javascript"/>
+<item id="js3" href="js/lib.js" media-type="text/javascript"/>
+<item id="js4" href="wgts/wgts.js" media-type="text/javascript"/>
+<item id="js5" href="data.js" media-type="text/javascript"/>
+<item id="js6" href="js/krs.boot.js" media-type="text/javascript"/>
+<item id="css1" href="css/bxPageTransition.css" media-type="text/css"/>
+<item id="page1" href="index_01.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page2" href="index_02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page3" href="index_03.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page4" href="index_04.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page5" href="index_05.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page6" href="index_06.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page7" href="index_07.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page8" href="index_08.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page9" href="index_09.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page10" href="index_10.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page11" href="index_11.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page12" href="index_12.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page13" href="index_13.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page14" href="index_14.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page15" href="index_15.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page16" href="index_16.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="a1" href="asset/I/c5b616a6d94b428bb92b924d1f386b20.jpg" media-type="image/jpeg"/>
+<item id="a2" href="asset/I/2bd62e1018b34acda77b31b590f5fad7.jpg" media-type="image/jpeg"/>
+<item id="a3" href="asset/I/bb081d26997b4cfabc55bbbf2ccae444.jpg" media-type="image/jpeg"/>
+<item id="a4" href="asset/I/55ee71293df8467bb28c687a0708190c.jpg" media-type="image/jpeg"/>
+<item id="a5" href="asset/I/d8fd05aaadb746ae8cff1d59edd4a039.jpg" media-type="image/jpeg"/>
+<item id="a6" href="asset/I/1cb1cacb4f2c47419dd6e579f58e5b03.jpg" media-type="image/jpeg"/>
+<item id="a7" href="asset/I/063c9b5249574276995fd8bc195b7f26.jpg" media-type="image/jpeg"/>
+<item id="a8" href="asset/I/b9e24680c65f456aab9687155dc040cd.jpg" media-type="image/jpeg"/>
+<item id="a9" href="asset/I/2f3919e56555496c8d66570f21dc2608.jpg" media-type="image/jpeg"/>
+<item id="a10" href="asset/I/9b23c876569f456bb12dbc0a10372a57.jpg" media-type="image/jpeg"/>
+<item id="a11" href="asset/I/b767cccbc1424e1782a16526f7804823.jpg" media-type="image/jpeg"/>
+<item id="a12" href="asset/I/2f8d60e2ad3d4621a15d4d2ce5c233ec.jpg" media-type="image/jpeg"/>
+<item id="a13" href="asset/I/30c2697920cc4c159091affc540dd49a.jpg" media-type="image/jpeg"/>
+<item id="a14" href="asset/I/e243ff81b78b4cb7abaf74405a41d836.jpg" media-type="image/jpeg"/>
+<item id="a15" href="asset/I/53b82617f9664eb38b12350ee64f067a.jpg" media-type="image/jpeg"/>
+<item id="a16" href="asset/I/eae19ccfa0aa43b3932cc5b16c8a4269.jpg" media-type="image/jpeg"/>
+<item id="f1" href="fonts/BubblegumSans/font.css" media-type="text/css"/>
+<item id="f1_1" href="fonts/BubblegumSans/BubblegumSans-Regular.woff" media-type="application/font-woff"/>
+<item id="f1_2" href="fonts/BubblegumSans/OFL.txt" media-type="text/plain"/>
+<item id="f2" href="fonts/Faustina/font.css" media-type="text/css"/>
+<item id="f2_1" href="fonts/Faustina/Faustina-Regular.woff" media-type="application/font-woff"/>
+<item id="f2_2" href="fonts/Faustina/Faustina-Bold.woff" media-type="application/font-woff"/>
+<item id="f2_3" href="fonts/Faustina/OFL.txt" media-type="text/plain"/>
+<item id="f3" href="fonts/FredokaOne/font.css" media-type="text/css"/>
+<item id="f3_1" href="fonts/FredokaOne/FredokaOne-Regular.woff" media-type="application/font-woff"/>
+<item id="f3_2" href="fonts/FredokaOne/OFL.txt" media-type="text/plain"/>
+<item id="f4" href="fonts/OpenSans/font.css" media-type="text/css"/>
+<item id="f4_1" href="fonts/OpenSans/OpenSans-Regular.woff" media-type="application/font-woff"/>
+<item id="f4_2" href="fonts/OpenSans/OpenSans-Bold.woff" media-type="application/font-woff"/>
+<item id="f4_3" href="fonts/OpenSans/LICENSE.txt" media-type="text/plain"/>
+<item id="f5" href="fonts/PatrickHand/font.css" media-type="text/css"/>
+<item id="f5_1" href="fonts/PatrickHand/PatrickHand-Regular.woff" media-type="application/font-woff"/>
+<item id="f5_2" href="fonts/PatrickHand/OFL.txt" media-type="text/plain"/>
+<item id="f6" href="fonts/Roboto/font.css" media-type="text/css"/>
+<item id="f6_1" href="fonts/Roboto/Roboto-Regular.woff" media-type="application/font-woff"/>
+<item id="f6_2" href="fonts/Roboto/Roboto-Bold.woff" media-type="application/font-woff"/>
+<item id="f6_3" href="fonts/Roboto/OFL.txt" media-type="text/plain"/>
+<item id="f7" href="fonts/Wellfleet/font.css" media-type="text/css"/>
+<item id="f7_1" href="fonts/Wellfleet/Wellfleet-Regular.woff" media-type="application/font-woff"/>
+<item id="f7_2" href="fonts/Wellfleet/OFL.txt" media-type="text/plain"/>
+<item id="f8" href="fonts/NanumGothic/font.css" media-type="text/css"/>
+<item id="f8_1" href="fonts/NanumGothic/NanumGothic-Regular.woff" media-type="application/font-woff"/>
+<item id="f8_2" href="fonts/NanumGothic/NanumGothic-Bold.woff" media-type="application/font-woff"/>
+<item id="f9" href="fonts/NanumMyeongjo/font.css" media-type="text/css"/>
+<item id="f9_1" href="fonts/NanumMyeongjo/NanumMyeongjo-Regular.woff" media-type="application/font-woff"/>
+<item id="f9_2" href="fonts/NanumMyeongjo/NanumMyeongjo-Bold.woff" media-type="application/font-woff"/>
+<item id="f10" href="fonts/NanumPen/font.css" media-type="text/css"/>
+<item id="f10_1" href="fonts/NanumPen/NanumPen-Regular.woff" media-type="application/font-woff"/>
+<item id="f11" href="fonts/NotoSansKR/font.css" media-type="text/css"/>
+<item id="f11_1" href="fonts/NotoSansKR/NotoSansKR-Regular.woff" media-type="application/font-woff"/>
+<item id="f11_2" href="fonts/NotoSansKR/NotoSansKR-Bold.woff" media-type="application/font-woff"/>
+<item id="f11_3" href="fonts/NotoSansKR/OFL.txt" media-type="text/plain"/>
+<item id="f12" href="fonts/SangSangAnt/font.css" media-type="text/css"/>
+<item id="f12_1" href="fonts/SangSangAnt/SangSangAnt.woff" media-type="application/font-woff"/>
+<item id="f12_2" href="fonts/SangSangAnt/LICENSE.txt" media-type="text/plain"/>
+</manifest>
+<spine page-progression-direction="ltr">
+	<itemref idref="page1" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page2" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page3" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page4" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page5" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page6" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page7" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page8" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page9" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page10" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page11" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page12" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page13" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page14" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page15" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page16" properties="rendition:spread-none rendition:orientation-landscape"/>
+</spine>
+</package>
