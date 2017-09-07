@@ -10,90 +10,74 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index_01.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="410">
+              <caret line="38" column="302" lean-forward="true" selection-start-line="38" selection-start-column="302" selection-end-line="38" selection-end-column="302" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1504749774600" expanded="false" signature="2903:3097" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="3149:3189" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="3241:3450" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="3539:3747" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="3808:4016" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="4088:4296" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="4365:4539" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="4608:4723" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="4798:5085" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5156:5213" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5228:5266" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5293:5313" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5359:5559" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5624:5817" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="5882:5998" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6072:6359" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6430:6487" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6502:6584" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6608:6690" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6713:6733" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6797:6912" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="6986:7273" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7344:7401" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7416:7436" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7460:7480" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7503:7585" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7635:7828" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="7896:8012" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8087:8374" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8445:8502" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8517:8537" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8562:8624" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8678:8743" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8790:8906" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="8981:9268" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="9339:9396" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="9411:9511" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="9536:9675" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="9751:9867" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="9942:10229" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10300:10357" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10372:10392" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10417:10479" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10541:10737" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10799:10915" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="10989:11276" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11347:11404" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11419:11439" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11471:11554" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11578:11664" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11687:11707" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11760:11876" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="11951:12238" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12309:12366" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12381:12401" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12424:12506" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12529:12591" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12617:12699" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12722:12742" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12804:12920" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="12995:13282" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13353:13410" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13425:13445" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13469:13489" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13515:13597" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13622:13684" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13742:13857" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="13932:14219" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="14290:14347" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="14362:14382" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="14411:14473" ph="..." />
-                <marker date="1504749774600" expanded="false" signature="14501:14521" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_03.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DTCaliperSensor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/js/DTCaliperSensor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lesson1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/js/lesson1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1653">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1504755889961" expanded="true" signature="31337:31354" ph="..." />
+                <marker date="1504755889961" expanded="true" signature="31337:31372" ph="..." />
+                <marker date="1504755889961" expanded="true" signature="31337:31385" ph="..." />
+                <marker date="1504755889961" expanded="true" signature="31337:31400" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,16 +103,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wgts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/wgts/wgts.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,7 +116,7 @@
       <file leaf-file-name="blux-apx-1.0.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/js/blux-apx-1.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13485">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -150,6 +124,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -159,6 +136,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/OPS/index_01.xhtml" />
       </list>
     </option>
@@ -190,32 +168,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Copy of 중등영어_송1단원_백업_2017-09-07" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Copy of 중등영어_송1단원_백업_2017-09-07" type="462c0819:PsiDirectoryNode" />
+              <item name="songJung1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="songJung1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Copy of 중등영어_송1단원_백업_2017-09-07" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Copy of 중등영어_송1단원_백업_2017-09-07" type="462c0819:PsiDirectoryNode" />
+              <item name="songJung1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="songJung1" type="462c0819:PsiDirectoryNode" />
               <item name="OPS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../네이트온 받은 파일/ybm중등영어송_17.08.25" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sr01-02\Documents\songJung1\OPS\media\p08" />
+      <recent name="C:\Users\sr01-02\Documents\songJung1\OPS" />
+      <recent name="C:\Users\sr01-02\Documents\songJung1\OPS\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -229,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index_01.xhtml">
+  <component name="RunManager" selected="JavaScript Debug.index_01.xhtml (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -311,10 +296,19 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="index_01.xhtml (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_01.xhtml" />
     <configuration name="index_01.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_01.xhtml" />
+    <configuration name="index_03.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_03.xhtml" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -329,42 +323,43 @@
       <option name="presentableId" value="Default" />
       <updated>1504749716157</updated>
       <workItem from="1504749717313" duration="298000" />
+      <workItem from="1504752905100" duration="2630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298000" />
+    <option name="totallyTimeSpent" value="2928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +373,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_02.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/container.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -396,7 +422,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/js/blux-apx-1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13485">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/wgts/wgts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/blux-apx-1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -418,88 +468,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1653">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504755889961" expanded="true" signature="31337:31354" ph="..." />
+            <marker date="1504755889961" expanded="true" signature="31337:31372" ph="..." />
+            <marker date="1504755889961" expanded="true" signature="31337:31385" ph="..." />
+            <marker date="1504755889961" expanded="true" signature="31337:31400" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/DTCaliperSensor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/lesson1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state relative-caret-position="410">
+          <caret line="38" column="302" lean-forward="true" selection-start-line="38" selection-start-column="302" selection-end-line="38" selection-end-column="302" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1504749774600" expanded="false" signature="2903:3097" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="3149:3189" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="3241:3450" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="3539:3747" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="3808:4016" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="4088:4296" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="4365:4539" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="4608:4723" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="4798:5085" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5156:5213" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5228:5266" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5293:5313" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5359:5559" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5624:5817" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="5882:5998" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6072:6359" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6430:6487" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6502:6584" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6608:6690" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6713:6733" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6797:6912" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="6986:7273" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7344:7401" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7416:7436" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7460:7480" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7503:7585" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7635:7828" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="7896:8012" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8087:8374" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8445:8502" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8517:8537" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8562:8624" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8678:8743" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8790:8906" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="8981:9268" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="9339:9396" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="9411:9511" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="9536:9675" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="9751:9867" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="9942:10229" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10300:10357" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10372:10392" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10417:10479" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10541:10737" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10799:10915" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="10989:11276" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11347:11404" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11419:11439" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11471:11554" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11578:11664" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11687:11707" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11760:11876" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="11951:12238" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12309:12366" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12381:12401" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12424:12506" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12529:12591" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12617:12699" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12722:12742" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12804:12920" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="12995:13282" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13353:13410" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13425:13445" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13469:13489" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13515:13597" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13622:13684" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13742:13857" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="13932:14219" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="14290:14347" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="14362:14382" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="14411:14473" ph="..." />
-            <marker date="1504749774600" expanded="false" signature="14501:14521" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
