@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html dir="ltr" lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+    <meta name="viewport" content="width=768, height=1024"/>
+    <script type="text/javascript" src="../../js/blux-apx-1.0.js"></script>
+    <script type="text/javascript" src="../../js/krs.boot.js"></script>
+    <script type="text/javascript" src="../../js/DTCaliperSensor.js"></script>
+    <script type="text/javascript" src="radio.js"></script>
+</head>
+<body>
+<p>개별/다중 라디오 박스를 한꺼번에 체크하여 정/오답처리 하는 샘플</p>
+<p style="margin-bottom: 50px;">라디오문제중 하나라도 틀린 것이 있는 경우 오답처리됩니다.(CD와 똑같이 구현)</p>
+<p>파라미터(매개변수)로 해당 정답 버튼 id, 라디오 버튼 이름, 답이 몇번째인지를 넣어준다.
+0이 첫번째, 1이 두번째</p>
+<p>큰 단락 1.(개별체크) <span id="question1_q" onclick="radioCheckAll('question1_q', 'question1_1', 1)">정답</span></p>
+<div style="margin-bottom: 100px;">
+    <p>문제 1. 답은 두번째</p>
+    <input type="radio" name="question1_1"/>
+    <input type="radio" name="question1_1"/>
+</div>
+
+<p>큰 단락 2.(다중체크) <span id="question2_q" onclick="radioCheckAll('question2_q', 'question2_1+question2_2+question2_3', '0+1+1')">정답</span></p>
+<div>
+    <p>문제 1. 답은 첫번째</p>
+    <input type="radio" name="question2_1"/>
+    <input type="radio" name="question2_1"/>
+</div>
+<div>
+    <p>문제 2. 답은 두번째</p>
+    <input type="radio" name="question2_2"/>
+    <input type="radio" name="question2_2"/>
+</div>
+<div>
+    <p>문제 3. 답은 두번째</p>
+    <input type="radio" name="question2_3"/>
+    <input type="radio" name="question2_3"/>
+</div>
+</body>
+</html>
