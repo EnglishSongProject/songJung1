@@ -3,7 +3,7 @@
  */
     // Global variable to track current file name.
 var currentFile = "";
-function playAudioAdd(path, btnId) {
+function playAudio(path, btnId) {
     // Check for audio element support.
     if (window.HTMLAudioElement) {
         try {
