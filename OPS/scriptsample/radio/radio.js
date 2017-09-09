@@ -7,7 +7,7 @@
 //<input type="radio" name="test1"/>
 //위의 라디오에서 정답이 첫번째 것이라고 할 경우, 파라미터로는 0이 들어오게됨.
 //names, answers은 순서대로 들어와야 함 (answerArray와 매칭) 구분자 +
-function radioCheckAll(questionId, names, answers) {
+function radioCheck(questionId, names, answers) {
     var questionId = document.getElementById(questionId);
     var answerNameArray;
     var answerArray;
@@ -24,7 +24,7 @@ function radioCheckAll(questionId, names, answers) {
     var totalForCorrect=0;
 
     if(questionId.innerHTML =='정답') {
-
+        questionId.innerHTML='다시풀기';
         for(var i=0; i<answerNameArray.length;i++){
             //answerNameArray의 갯수만큼 나와야함.
             totalForCorrect += radioCorrectCheckSeperForAll(answerNameArray[i], answerArray[i]);
@@ -36,9 +36,9 @@ function radioCheckAll(questionId, names, answers) {
             alert('오답입니다.');
             //오답일때 radiobox 컨트롤
         }
-        questionId.innerHTML='다시풀기';
 
     }else if (questionId.innerHTML =='다시풀기'){
+        questionId.innerHTML='정답';
         for(var i=0; i<answerNameArray.length;i++) {
             var name = document.getElementsByName(answerNameArray[i]);
             for(var y=0; y<name.length;y++){
@@ -47,7 +47,6 @@ function radioCheckAll(questionId, names, answers) {
                 }
             }
         }
-        questionId.innerHTML='정답';
     }
 }
 //radio 정답 체크 1과 0을 반환해줌.

@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83419728-8cc2-4f00-8fe0-57327b644cd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/DJYOSI-Summer Night Party.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay_bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/질풍가도 - 쾌걸 근육맨 2세 op.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/radio/radio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/radio/radio.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/TARI &amp; Yix - Bliss [NCS Release].mp4" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/TARIYixBliss[NCS Release].mp4" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.html" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/js/common.js" afterPath="$PROJECT_DIR$/OPS/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.js" afterPath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml" afterPath="$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml" afterPath="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/scriptsample/radio/radio.js" afterPath="$PROJECT_DIR$/OPS/scriptsample/radio/radio.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,18 +28,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="audioplay.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay.html">
+      <file leaf-file-name="index_03.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="300">
+              <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_04.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="42" column="255" lean-forward="true" selection-start-line="42" selection-start-column="255" selection-end-line="42" selection-end-column="255" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DJYOSI-Summer Night Party.mp4" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/DJYOSI-Summer Night Party.mp4">
+      <file leaf-file-name="index_05.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_06.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_06.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_07.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_07.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_08.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_08.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_09.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_09.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listenAndNumber.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listenAndNumber.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -53,87 +120,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="audioplay_project.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radio.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radio.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audioplay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#46#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blank.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blank.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blank.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/blank/blank.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audioplay_bar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay_bar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1833">
-              <caret line="82" column="2" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="91" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="185">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#p#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#13;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#16;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +152,7 @@
     <findStrings>
       <find>span</find>
       <find>7810A3_</find>
+      <find>console.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,8 +176,6 @@
         <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_bar.html" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.html" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.html" />
-        <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js" />
-        <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/checkbox/checkbox.js" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/checkbox/checkbox.xhtml" />
         <option value="$PROJECT_DIR$/OPS/js/common.js" />
@@ -186,8 +183,12 @@
         <option value="$PROJECT_DIR$/OPS/scriptsample/radio/checkbox.xhtml" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/radio/radio.xhtml" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/radio/radio.js" />
-        <option value="$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml" />
         <option value="$PROJECT_DIR$/OPS/scriptsample/blank/blank.js" />
+        <option value="$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml" />
+        <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js" />
+        <option value="$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml" />
+        <option value="$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.js" />
+        <option value="$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.xhtml" />
       </list>
     </option>
   </component>
@@ -265,28 +266,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songJung1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songJung1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scriptsample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="AndroidView" />
@@ -329,20 +308,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.radio.xhtml">
-    <configuration default="false" name="audioplay.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/scriptsample/mediaplay/sample/audioplay.html">
+  <component name="RunManager" selected="JavaScript Debug.index_09.xhtml">
+    <configuration default="false" name="index_05.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_05.xhtml">
       <method />
     </configuration>
-    <configuration default="false" name="audioplay.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="audioplay.js" working-dir="$PROJECT_DIR$/OPS/scriptsample/mediaplay">
+    <configuration default="false" name="index_06.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_06.xhtml">
       <method />
     </configuration>
-    <configuration default="false" name="audioplay_bar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/scriptsample/mediaplay/sample/audioplay_bar.html">
+    <configuration default="false" name="index_07.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_07.xhtml">
       <method />
     </configuration>
-    <configuration default="false" name="audioplay_project.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/scriptsample/mediaplay/audioplay_project.xhtml">
+    <configuration default="false" name="index_08.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_08.xhtml">
       <method />
     </configuration>
-    <configuration default="false" name="radio.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/scriptsample/radio/radio.xhtml">
+    <configuration default="false" name="index_09.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/Copy of 중등영어_송1단원_백업_2017-09-07/OPS/index_09.xhtml">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -743,19 +722,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.audioplay.html" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.audioplay.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.audioplay_bar.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.audioplay_project.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.radio.xhtml" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_06.xhtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_07.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_08.xhtml" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_09.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.radio.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.audioplay_project.xhtml" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.audioplay.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.audioplay_bar.html" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.audioplay.js" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_09.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_08.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_07.xhtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_06.xhtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -796,15 +775,15 @@
       <workItem from="1504749717313" duration="298000" />
       <workItem from="1504752905100" duration="2630000" />
       <workItem from="1504839512198" duration="1607000" />
-      <workItem from="1504931058405" duration="10697000" />
+      <workItem from="1504931058405" duration="16634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15232000" />
+    <option name="totallyTimeSpent" value="21169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -815,7 +794,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -823,6 +802,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -834,7 +814,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -860,61 +839,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/js/DTCaliperSensor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/js/lesson1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504941677072" expanded="true" signature="59:75229" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="98:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="192:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="75155:75172" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_02.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/container.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -945,18 +869,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1504931221868" expanded="true" signature="9000:9006" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="9018:9024" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14052:14058" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14070:14076" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14984:14990" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15002:15008" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15089:15095" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15107:15113" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15177:15183" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15195:15201" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16075:16081" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16093:16099" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="9000:9006" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="9018:9024" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14052:14058" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14070:14076" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14984:14990" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15002:15008" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15089:15095" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15107:15113" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15177:15183" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15195:15201" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16075:16081" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16093:16099" ph="&amp;quot;" />
           </folding>
         </state>
       </provider>
@@ -1000,10 +924,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504941677072" expanded="true" signature="59:75229" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="98:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="192:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="75155:75172" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="59:72582" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="98:192" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="192:262" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="72508:72525" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1046,18 +970,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1504931221868" expanded="true" signature="9000:9006" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="9018:9024" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14052:14058" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14070:14076" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14984:14990" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15002:15008" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15089:15095" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15107:15113" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15177:15183" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15195:15201" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16075:16081" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16093:16099" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="9000:9006" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="9018:9024" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14052:14058" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14070:14076" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14984:14990" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15002:15008" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15089:15095" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15107:15113" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15177:15183" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15195:15201" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16075:16081" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16093:16099" ph="&amp;quot;" />
           </folding>
         </state>
       </provider>
@@ -1145,19 +1069,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504941677072" expanded="true" signature="59:75229" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="98:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="192:262" ph="..." />
-            <marker date="1504941677072" expanded="true" signature="75155:75172" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="59:72582" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="98:192" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="192:262" ph="..." />
+            <marker date="1504947688863" expanded="true" signature="72508:72525" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/js/DTCaliperSensor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,22 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1193,24 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_02.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-975">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/js/aspen-apx-1.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58425">
@@ -1219,40 +1101,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="29" column="158" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1504931221868" expanded="true" signature="9000:9006" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="9018:9024" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14052:14058" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14070:14076" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="14984:14990" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15002:15008" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15089:15095" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15107:15113" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15177:15183" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="15195:15201" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16075:16081" ph="&amp;quot;" />
-            <marker date="1504931221868" expanded="true" signature="16093:16099" ph="&amp;quot;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay_bar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1833">
           <caret line="82" column="2" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="91" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1273,52 +1125,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/sample/audioplay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="375">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/blank/blank.js">
+    <entry file="file://$PROJECT_DIR$/OPS/js/DTCaliperSensor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1326,10 +1141,177 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/mediaplay/audioplay_project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="68" lean-forward="true" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/blank/blank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc;n#blankCheck#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/radio/radio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="28" column="364" lean-forward="true" selection-start-line="28" selection-start-column="364" selection-end-line="28" selection-end-column="364" />
+          <folding>
+            <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1504942028323" expanded="true" signature="9000:9006" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="9018:9024" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14052:14058" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14070:14076" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="14984:14990" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15002:15008" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15089:15095" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15107:15113" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15177:15183" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="15195:15201" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16075:16081" ph="&amp;quot;" />
+            <marker date="1504942028323" expanded="true" signature="16093:16099" ph="&amp;quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_02.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/scriptsample/blank/blank.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="185">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#13;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#16;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="255" lean-forward="true" selection-start-line="42" selection-start-column="255" selection-end-line="42" selection-end-column="255" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_06.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_07.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_08.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_09.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/scriptsample/listenAndNumber/listenAndNumber.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>

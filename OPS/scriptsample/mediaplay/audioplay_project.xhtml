@@ -6,17 +6,28 @@
     <script type="text/javascript" src="../../js/krs.boot.js"></script>
     <script type="text/javascript" src="../../js/DTCaliperSensor.js"></script>
     <script type="text/javascript" src="audioplay.js"></script>
+    <style>
+        .hover:hover{
+            color: #954EA7;
+        }
+        .cursor-pointer{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<p>
-    //mp3 button id는 playAudio숫자 형태로 통일<br></br>
+<p style="margin-bottom: 50px;">
+    //mp3 button id는 playAudio숫자 형태로 통일 (전체듣기기능)<br></br>
     버튼 혹은 div태그에 onclick="playAudio('음성파일경로+확장자포함(text.mp3)', '해당버튼아이디'); 넘겨줄 시, 재생 및 일시정지 기능 가능<br></br>
     또한 class 속성에 playAudio를 적어준다.(어떤 파일 재생 시 플레이 playAudio클래스명을 갖고 있는 경우 모두 play버튼으로 바꾸어 준후 실행 되어야함.)<br></br>
     실행가능예제는 아래와 같다.<br></br>
-    1.How Are you ''' ?<button id="playAudio1" onclick="playAudio('TARIYixBliss[NCS Release].mp4', 'playAudio1');" class="playAudio">Play</button><br></br>
-    2.I'm fine ``` ?<button id="playAudio2" onclick="playAudio('DJYOSI-Summer Night Party.mp4', 'playAudio2');" class="playAudio">Play</button><br></br>
-    3.Thank And you``` ?<button id="playAudio3" onclick="playAudio('질풍가도 - 쾌걸 근육맨 2세 op.mp3', 'playAudio3');" class="playAudio">Play</button>
+    1.How Are you ''' ?<button id="playAudio1" onclick="playAudioAdd('TARIYixBliss[NCS Release].mp4', 'playAudio1');" class="playAudio">Play</button><br></br>
+    2.I'm fine ``` ?<button id="playAudio2" onclick="playAudioAdd('DJYOSI-Summer Night Party.mp4', 'playAudio2');" class="playAudio">Play</button><br></br>
+    3.Thank And you``` ?<button id="playAudio3" onclick="playAudioAdd('질풍가도 - 쾌걸 근육맨 2세 op.mp3', 'playAudio3');" class="playAudio">Play</button>
 </p>
+<p>문장 재생 샘플</p>
+<p class="hover cursor-pointer" onclick="playAudioSingle('../../media/p08/L01_008_intro_03.mp3');">I'm fine.</p>
+<!--해당 myaudio는 지우면 안됨, 어떤 플레이가 재생중이 었는지 알 수 있게 하는 변수 역할(전체듣기에한함)-->
 <audio id="myaudio">
     HTML5 audio not supported
 </audio>
