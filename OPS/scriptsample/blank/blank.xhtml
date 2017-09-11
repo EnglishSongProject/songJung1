@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html dir="ltr" lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+    <meta name="viewport" content="width=768, height=1024"/>
+    <script type="text/javascript" src="../../js/blux-apx-1.0.js"></script>
+    <script type="text/javascript" src="../../js/krs.boot.js"></script>
+    <script type="text/javascript" src="../../js/DTCaliperSensor.js"></script>
+    <script type="text/javascript" src="blank.js"></script>
+    <style>
+        .display-none{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<p>빈칸(blank)다중, 단일 체크함수 name값으로 구현하여도 무방하지만(순차적 적용), 해당 되는 빈칸 값만 보여주고 싶을 경우를 생각해 id를 키값으로 구현하였습니다.</p>
+<p>1. 파라미터로 빈칸의 정답을 배열로 받아 해당 answerId에 돌려주는 방식(해당 요소에 ) 파라미터 3개</p>
+<p>2. 해당 요소에 정답을 미리 적어놓고 display속성값을 이용한 정답보여주기 방식(해당 요소에 display:none;의 클래스를 적어주거나 style을 직접 입력해야함) 파라미터 2개</p>
+<p style="margin-bottom: 30px;">2. 파라미터(매개변수로) 정답을 받아 해당 answerId에 답을 넣어주는 방식</p>
+<p style="color: red; font-size: 20px;" > 1번방식</p>
+<p>문제 1.(단일) B가 할 말을 추론하세요.  <span id="question_1_1" onclick="blankCheck('question_1_1', 'answer_1_1', 'Nice to meet you');">정답</span></p>
+<p>A: Hi, Mike I'm your father.</p>
+<p style="margin-bottom: 30px;">B: Oh, Hi father. <span id="answer_1_1"></span></p>
+
+<p>문제 2.(다중)</p>
+<p>Work Together소개하고 인사를 나눠요. <span id="question_1_2" onclick="blankCheck('question_1_2', 'answer_1_2_1+answer_1_2_2+answer_1_2_3', 'Hello+Yenna+Yenna');">정답</span></p>
+<p>A: <span id="answer_1_2_1"></span>, this is my friend, <span id="answer_1_2_2"></span>  .</p>
+<p>B: Pleased to meet you, <span id="answer_1_2_3"></span> .</p>
+<p>C: Nice to meet you, too.</p>
+
+<p style="color: red; font-size: 20px;"> 2번방식</p>
+<p>문제 1.(단일) B가 할 말을 추론하세요.  <span id="question_2_1" onclick="blankCheckByCss('question_2_1', 'answer_2_1');">정답</span></p>
+<p>A: Hi, Mike I'm your father.</p>
+<p style="margin-bottom: 30px;">B: Oh, Hi father. <span id="answer_2_1" class="display-none">Nice to meet you</span></p>
+
+<p>문제 2.(다중)</p>
+<p>Work Together소개하고 인사를 나눠요. <span id="question_2_2" onclick="blankCheckByCss('question_2_2', 'answer_2_2_1+answer_2_2_2+answer_2_2_3');">정답</span></p>
+<p>A: <span id="answer_2_2_1" class="display-none">Hello</span>, this is my friend, <span id="answer_2_2_2" class="display-none">Yenna</span>.</p>
+<p>B: Pleased to meet you, <span id="answer_2_2_3" class="display-none">Yenna</span>.</p>
+<p>C: Nice to meet you, too.</p>
+</body>
+</html>
