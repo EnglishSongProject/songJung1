@@ -1,6 +1,17 @@
+/*sentence*/
 .sentence-play{
     cursor: pointer;
 }
 .sentence-play:hover{
     color: #9a01cd !important;
+}
+
+/*common*/
+.cursor-pointer{
+    cursor: pointer !important;
+}
+input[type="text"]{
+    background: rgba(0,0,0,0);
+    border: none;
+    outline: none;
 }
