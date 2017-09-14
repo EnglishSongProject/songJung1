@@ -33,6 +33,7 @@ function playAudio(path, btnId) {
                 // Tests the paused attribute and set state.
                 if (oAudio.paused) {
                     oAudio.play();
+                    oAudio.style.display='block';
                     var idForPlayAudioClose = document.getElementsByClassName('playAudio');
                     for (var i = 0; i < idForPlayAudioClose.length; i++) {
                         idForPlayAudioClose[i].src = "./images/icon/headphone.png";
@@ -41,10 +42,12 @@ function playAudio(path, btnId) {
                 }
                 else {
                     oAudio.pause();
+                    oAudio.style.display='none';
                     btn.src = "./images/icon/headphone.png";
                 }
                 oAudio.addEventListener("ended", function (e) {
                    btn.src = "./images/icon/headphone.png";
+                   oAudio.style.display='none';
                 });
             }
         }
