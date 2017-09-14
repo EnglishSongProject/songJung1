@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html dir="ltr" lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+    <meta name="viewport" content="width=768, height=1024"/>
+    <script type="text/javascript" src="../../js/blux-apx-1.0.js"></script>
+    <script type="text/javascript" src="../../js/krs.boot.js"></script>
+    <script type="text/javascript" src="../../js/DTCaliperSensor.js"></script>
+    <script type="text/javascript" src="audioplay.js"></script>
+    <style>
+        .sentence:hover{
+            color: #954EA7;
+        }
+        .cursor-pointer{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<p style="margin-bottom: 50px;">
+    //mp3 button id는 playAudio숫자 형태로 통일 (전체듣기기능)<br></br>
+    버튼 혹은 div태그에 onclick="playAudio('음성파일경로+확장자포함(text.mp3)', '해당버튼아이디'); 넘겨줄 시, 재생 및 일시정지 기능 가능<br></br>
+    또한 class 속성에 playAudio를 적어준다.(어떤 파일 재생 시 플레이 playAudio클래스명을 갖고 있는 경우 모두 재생을 정지시킨 후 실행되어야함(음성겹침방지))<br></br>
+    실행가능예제는 아래와 같다.<br></br>
+    1.How Are you ''' ?<button id="playAudio1" onclick="playAudio('TARIYixBliss[NCS Release].mp4', 'playAudio1');" class="playAudio">Play</button><br></br>
+    2.I'm fine ``` ?<button id="playAudio2" onclick="playAudio('DJYOSI-Summer Night Party.mp4', 'playAudio2');" class="playAudio">Play</button><br></br>
+    3.Thank And you``` ?<button id="playAudio3" onclick="playAudio('질풍가도 - 쾌걸 근육맨 2세 op.mp3', 'playAudio3');" class="playAudio">Play</button>
+</p>
+<p>문장 재생 샘플</p>
+<p>전체듣기와 마찬가지로 전체 재생 중 문장듣기를 실행할 경우 막아놓은 버전</p>
+<p class="sentence cursor-pointer" onclick="playAudio('../../media/p08/L01_008_intro_03.mp3');">I'm fine.</p>
+<p>전체듣기와는 별개로 클릭 시 음성 재생 가능</p>
+<p class="sentence cursor-pointer" onclick="playAudioSingle('../../media/p08/L01_008_intro_03.mp3');">I'm fine.</p>
+<!--해당 myaudio는 지우면 안됨, 어떤 플레이가 재생중이 었는지 알 수 있게 하는 변수 역할(전체듣기에한함)-->
+<audio id="myaudio">
+    HTML5 audio not supported
+</audio>
+</body>
+</html>

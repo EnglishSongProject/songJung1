@@ -54,3 +54,8 @@ function playAudio(path, btnId) {
         }
     }
 }
+function textClear(textId){
+    var textId= document.getElementById(textId);
+    textId.value='';
+}
+
