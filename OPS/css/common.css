@@ -84,7 +84,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .mt50 {margin-top: 50px !important;}
 
 /* 버튼 */
-.btn_type_01 {display: inline-block; display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_02 {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_03 {display: inline-block; width:189px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
