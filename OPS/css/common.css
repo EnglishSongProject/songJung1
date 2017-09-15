@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*----------------------
+reset
+----------------------*/
+
+dl, dt, dd, ul, ol, li {list-style:none;}
+div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, input, table, tr, th, td {margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6{font-weight:normal; font-size:100%; padding:0; margin:0;}
+fieldset{border:none;}
+legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
+hr, caption {display:none;}
+img {border:none; vertical-align:middle;height:auto}
+input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #0093cc !important;}
+textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
+strong {font-weight:normal;}
+em,i {font-style:normal;}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer; outline:none}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333}
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:underline}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+table {border-collapse: collapse; border-spacing: 0;}
+
+
+
+/*----------------------
+폰트
+----------------------*/
+
+@font-face {font-family: 'Bubblegum Sans';font-style: normal;font-weight: 400;src: url(../fonts/BubblegumSans/BubblegumSans-Regular.woff) format('woff');}
+@font-face {font-family: 'Faustina';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Regular.woff) format('woff');}
+@font-face {font-family: 'Faustina';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Bold.woff) format('woff');}
+@font-face {font-family: 'Fredoka One';font-style: normal;font-weight: 400;src: url(../fonts/FredokaOne/FredokaOne-Regular.woff) format('woff');}
+@font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 400;src: url(../fonts/NanumGothic/NanumGothic-Regular.woff) format('woff');}
+@font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 700;src: url(../fonts/NanumGothic/NanumGothic-Bold.woff) format('woff');}
+@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 400;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-ExtraBold.woff) format('woff');}
+@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 700;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-Regular.woff) format('woff');}
+@font-face {font-family: 'Nanum Pen';font-style: normal;font-weight: 700;src: url(../fonts/NanumPen/NanumPen-Regular.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(../fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(../fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff');}
+@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;src: url(../fonts/OpenSans/OpenSans-Regular.woff) format('woff');}
+@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;src: url(../fonts/OpenSans/OpenSans-Bold.woff) format('woff');}
+@font-face {font-family: 'Patrick Hand';font-style: normal;font-weight: 700;src: url(../fonts/PatrickHand/PatrickHand-Regular.woff) format('woff');}
+@font-face {font-family: 'Roboto';font-style: normal;font-weight: 700;src: url(../fonts/Roboto/Roboto-Bold.woff) format('woff');}
+@font-face {font-family: 'SangSangAnt';font-style: normal;font-weight: 700;src: url(../fonts/SangSangAnt/SangSangAnt.woff) format('woff');}
+@font-face {font-family: 'Wellfleet';font-style: normal;font-weight: 700;src: url(../fonts/Wellfleet/Wellfleet-Regular.woff) format('woff');}
+
+/*----------------------
+기본스타일
+----------------------*/
+
+body {font-family:'Nanum Gothic','돋움',Dotum,sans-serif; font-size:12px; color:#333;  line-height:1.5; background:#fff}
+a{outline:none; text-decoration:none; padding:0px; border:0;}
+
+
+
+/*----------------------
+사용자 정의 클래스
+----------------------*/
+
+.fl{ float:left; }
+.fr{ float:right; }
+.show {display:block}
+.hide {display:none}
+.clearfix:after {content: "";display: block; clear: both;}
+
+/* 마진 */
+.mt0 {margin-top: 0px !important;}
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt50 {margin-top: 50px !important;}
+
+/* 버튼 */
+.btn_type_01 {display: inline-block; display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_02 {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_03 {display: inline-block; width:189px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+
+/* btn_type_01 */
+.btn_bo {background-image: url(../images/common/016_2.png)}
+.btn_sim {background-image: url(../images/common/017_2.png)}
+
+/* btn_type_02 */
+.btn_role {background-image: url(../images/common/role.png)}
+.btn_play {background-image: url(../images/common/03.png)}
+.btn_mp3 {background-image: url(../images/common/05.png)}
+.btn_mp3_a {background-image: url(../images/common/06.png)}
+.btn_stop {background-image: url(../iagesg/common/07.png)}
+.btn_pause {background-image: url(../images/common/08.png)}
+.btn_trans {background-image: url(../images/common/09.png)}
+.btn_sp {background-image: url(../images/common/010.png)}
+.btn_answer{background-image: url(../images/common/012.png)}
+.btn_repeat {background-image: url(../images/common/013.png)}
+.btn_view {background-image: url(../images/common/014.png)}
+
+/* btn_type_03 */
+.btn_word {background-image: url(../images/common/018_2.png)}
+.btn_dogame {background-image: url(../images/common/019_2.png)}
+
+/* btn_type_04 */
+.btn_pmovie {background-image: url(../images/common/04.png)}
+
+/* 슬라이드 버튼 */
+.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image: :url(../images/common/slide_bt_on.png) no-repeat 0 0;}
+.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image: :url(../images/common/slide_bt_off.png) no-repeat 0 0}
+
+
+/*----------------------
+페이지 공통
+----------------------*/
+
+.wrapper {position: relative; display: block; width: 768px; height: 1024px; background-color: #ddd; padding:50px; box-sizing: border-box;}
+
+/*폰트*/
+.tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
+.tit_step {font-family: "Noto Sans KR"; font-size: 9px;}

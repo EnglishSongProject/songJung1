@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.first {background: url(../images/08/bg_lesson01.jpg) no-repeat 0 0; background-size: cover}
+.lesson_num  {position: absolute; top:-33px; left:30px; display: block; width:120px; height: 184px; background:url(../images/08/lesson_1_num_bg.png) no-repeat 0 0; background-size: contain; text-align: center}
+.lesson_num > div {margin-top:50px; transform: rotate(-15deg);}
+.lesson_num span.num {display: block; font-size:50px}
+.lesson_tit {position: absolute; top:79px; left:165px;}
+.img_txt_box {position: absolute; top:320px; left:300px; width:350px; background: url(../images/08/lesson_1_box.png) no-repeat 0 0; background-size: cover; padding:30px}
+.sp_box {position: absolute; top:652px; left:120px;}
+.btn_list {position: absolute; right:10px; bottom:10px}
