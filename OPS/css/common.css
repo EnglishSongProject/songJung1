@@ -127,3 +127,14 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
+
+/*margin*/
+.mg-l0{
+    margin-left: 0px;
+}
+.mg-l5{
+    margin-left: 5px;
+}
+.mg-l10{
+    margin-left: 10px;
+}
