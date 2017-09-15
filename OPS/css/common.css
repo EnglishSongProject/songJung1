@@ -98,7 +98,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_play {background-image: url(../images/common/03.png)}
 .btn_mp3 {background-image: url(../images/common/05.png)}
 .btn_mp3_a {background-image: url(../images/common/06.png)}
-.btn_stop {background-image: url(../iagesg/common/07.png)}
+.btn_stop {background-image: url(../images/common/07.png)}
 .btn_pause {background-image: url(../images/common/08.png)}
 .btn_trans {background-image: url(../images/common/09.png)}
 .btn_sp {background-image: url(../images/common/010.png)}
@@ -114,8 +114,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_pmovie {background-image: url(../images/common/04.png)}
 
 /* 슬라이드 버튼 */
-.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image: :url(../images/common/slide_bt_on.png) no-repeat 0 0;}
-.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image: :url(../images/common/slide_bt_off.png) no-repeat 0 0}
+.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
+.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
 
 
 /*----------------------
