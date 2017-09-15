@@ -25,6 +25,8 @@ function playAudio(path, btnId) {
                 }else{
                     oAudio.pause();
                 }
+
+                /*다른 오디오를 정지상태(플레이 가능사진)으로 바꿔준다*/
                 var idForPlayAudioClose = document.getElementsByClassName('playAudio');
                 for (var i = 0; i < idForPlayAudioClose.length; i++) {
                     idForPlayAudioClose[i].src = "./images/icon/headphone.png";
