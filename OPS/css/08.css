@@ -24,7 +24,7 @@
 .sp_box ul li{font: 13px/1.8 'Nanum Gothic'; rgb(43,46,52);}
 .sp_box em {font: 13px 'Noto Sans KR'; vertical-align: middle;}
 .sp_box ul:last-child li em{ color:#0101ff;}
-.sp_box ul:last-child li > span:hover{color: #9a01cd; }
+.sp_box ul li > span:hover{color: #9a01cd; }
 
 .btn_list {position: absolute; right:50px; bottom:50px}
 .btn_list button {display: block}
