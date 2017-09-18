@@ -133,3 +133,11 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
+
+/*font-color*/
+.color-blue{
+    color:#0101ff;
+}
+
+/*class:hover*/
+.active-purple:hover {color: #9a01cd; }

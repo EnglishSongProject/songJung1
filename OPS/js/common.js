@@ -11,7 +11,6 @@ function playAudio(path, btnId, target) {
     if (window.HTMLAudioElement) {
         try {
             var oAudio = document.getElementById('myaudio');
-            var btn = document.getElementById(btnId);
 
             oAudio.style.position = "absolute";
             oAudio.style.width = "200px";
@@ -21,18 +20,13 @@ function playAudio(path, btnId, target) {
                 oAudio.src = path;
                 currentFile = path;
             }
-
             if(btnId == 'single'){
+                removePopup();
+                oAudio.style.display='none';
                 if (oAudio.paused){
                     oAudio.play();
                 }else{
                     oAudio.pause();
-                }
-
-                /*다른 오디오를 정지상태(플레이 가능사진)으로 바꿔준다*/
-                var idForPlayAudioClose = document.getElementsByClassName('playAudio');
-                for (var i = 0; i < idForPlayAudioClose.length; i++) {
-                    idForPlayAudioClose[i].src = "./images/icon/headphone.png";
                 }
             }else {
                 // Tests the paused attribute and set state.
@@ -40,9 +34,9 @@ function playAudio(path, btnId, target) {
                     oAudio.play();
 
                     /*팝업*/
-                    removePopup()
-                    popup = document.createElement("div")
-                    popup.className = "popup"
+                    removePopup();
+                    popup = document.createElement("div");
+                    popup.className = "popup";
                     target.parentNode.appendChild(popup);
                     popup.style.top = (target.offsetTop - 10) + "px";
                     popup.style.left = (target.offsetLeft + 40) + "px";
@@ -50,22 +44,14 @@ function playAudio(path, btnId, target) {
                     oAudio.style.left = (target.getBoundingClientRect().left + 45 ) + "px";
 
                     oAudio.style.display='block';
-                    var idForPlayAudioClose = document.getElementsByClassName('playAudio');
-                    for (var i = 0; i < idForPlayAudioClose.length; i++) {
-                        idForPlayAudioClose[i].src = "./images/icon/headphone.png";
-                    }
-                    btn.src = "./images/icon/pause.png";
                 }
                 else {
-                    removePopup()
+                    removePopup();
                     oAudio.pause();
-                    oAudio.style.display='none';
-                    btn.src = "./images/icon/headphone.png";
 
                 }
                 oAudio.addEventListener("ended", function (e) {
-                    removePopup()
-                    btn.src = "./images/icon/headphone.png";
+                    removePopup();
                     oAudio.style.display='none';
                 });
             }
