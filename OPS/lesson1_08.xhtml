@@ -11,12 +11,17 @@
         <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="./js/common.js"></script>
         <script type="text/javascript" src="./js/08.js"></script>
+        <style>
+            #myaudio {position: absolute;  }
+           .popup{position:absolute; display: block; width:230px; height:40px; border:1px solid #ddd; background-color: #fafafa; border-radius: 5px; border:none; box-shadow: 2px 2px 2px #888888 ;}
+           .popup:after {position: absolute; top:50%; left:-15px; transform:translateY(-50%); display: block; content:"";border: 8px solid transparent; border-right-color: #fff}
+        </style>
     </head>
     <body>
-        <div class="first wrapper">
+        <div class="intro wrapper">
             <div class="lesson_num">
                 <div>
-                    <span>Lesson</span>
+                    <span class="cate">Lesson</span>
                     <span class="num">1</span>
                 </div>
             </div>
@@ -24,7 +29,7 @@
                 <img src="images/08/lesson_1_tit.svg" alt="new school new freieneds" width="520" />
             </h1>
             <div class="img_txt_box">
-                <h3>• Look, Think, and Talk •<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_01.mp3');"></button></h3>
+                <h3>• Look, Think, and Talk •<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_01.mp3','',this);"></button></h3>
                 <p>그림 속 친구들이 무슨 말을 하고 있을지 이야기해 봅시다.</p>
                 <ul class="eg">
             		<li class="img_txt0 img_txt01">A: How are you?</li>
@@ -34,12 +39,12 @@
             <div class="sp_box">
                 <h3>topic 소개하기</h3>
                 <span>Functions</span>
-                <h4>•안부묻고답하기<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_02.mp3');"></button></h4>
+                <h4>•안부묻고답하기<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_02.mp3','',this);"></button></h4>
                 <ul>
                     <li>A: How are you doing today?</li>
                     <li>B: I’m great.</li>
                 </ul>
-                <h4>• 소개하고인사나누기<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_03.mp3');"></button></h4>
+                <h4>• 소개하고인사나누기<button class="btn_type_02 btn_mp3_a mg-l5 playAudio" onclick="playAudio('./media/audio/L01/008/add/L01_008_intro_add_03.mp3','',this);"></button></h4>
                 <ul>
                     <li>A: This is my English teacher, Mr. Parker.</li>
                     <li>B: Hi. Pleased to meet you, Mr. Parker.</li>
@@ -56,9 +61,10 @@
                 <button type="button" class="btn_type_03 btn_word" title="낱말 사전">낱말 사전</button>
                 <button type="button" class="btn_type_03 btn_dogame" title="게임">게임</button>
             </div>
+
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                 HTML5 audio not supported
+             </audio>
         </div>
-        <audio id="myaudio">
-            HTML5 audio not supported
-        </audio>
     </body>
 </html>

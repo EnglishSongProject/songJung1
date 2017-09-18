@@ -83,9 +83,13 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .mt45 {margin-top: 45px !important;}
 .mt50 {margin-top: 50px !important;}
 
+.ml0{margin-left: 0px;}
+.ml5{margin-left: 5px;}
+.ml10{ margin-left: 10px;}
+
 /* 버튼 */
 .btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
-.btn_type_02 {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_02 {display: inline-block; width:25px; height:25px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_03 {display: inline-block; width:189px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 
@@ -127,14 +131,3 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
-
-/*margin*/
-.mg-l0{
-    margin-left: 0px;
-}
-.mg-l5{
-    margin-left: 5px;
-}
-.mg-l10{
-    margin-left: 10px;
-}
