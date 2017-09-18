@@ -1,0 +1,15 @@
+
+.part_las {background: url(../images/10/bg_lesson01_10.jpg) no-repeat 0 0; background-size: cover}
+.page_tit {margin:10px}
+.info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
+
+.part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit img {margin-right:10px; vertical-align: top;}
+.part_las .sub_tit span {font:17px "Noto Sans KR";  margin-left:14px;}
+.part_las .btn_list {margin-left:5px !important}
+
+.part_las .img_content {padding:35px 0 0 42px}
+.part_las .eg {position: relative; margin-top:40px; font:18px 'Faustina-Regular' ;line-height: 1.7; float:left; padding-left:35px; }
+.part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
+.part_las .eg em { font:18px 'Faustina-Regular'; font-weight: 700;  }
+.part_las .eg strong {color:#a14796}
