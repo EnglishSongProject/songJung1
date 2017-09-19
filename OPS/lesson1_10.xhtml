@@ -48,9 +48,9 @@
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_b.png" alt="C" />
                                     <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_b01.mp3','single');">Listen and Check</span>
-                                    <span>What will the girl say?</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_b01_1.mp3','single');">How is each student doing?</span>
                                     <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기"></button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_02.mp3','',this);"></button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본"></button>
                                         <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_lac_r1_q" onclick="radioCheck('ls1_lac_r1_q', 'lac_1+lac_2', '0+1');" ></button>
                                     </span>
@@ -74,29 +74,33 @@
                             <div class="section">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_c.png" alt="C" />
-                                    Match and Talk
-                                    <span>How is each person doing today?</span>
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c01.mp3','single');">Match and Talk</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c01_1.mp3','single');">How is each person doing today?</span>
                                     <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                        <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
+                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이"></button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3','', this);"></button>
+                                        <button type="button" class="btn_type_02 btn_trans" title="번역"></button>
                                     </span>
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/10/img_las_03.jpg" alt="" />
                                     <div class="select_area">
-                                        <a class="select_name" href="#">
+                                        <a class="select_name" href="#" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_w.mp3','single','', 'ls_mat_c1');">
                                             <span>Jason</span>
                                         </a>
-                                        <a class="select_name" href="#">
+                                        <a class="select_name" href="#" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_w.mp3','single','', 'ls_mat_c2');">
                                             <span>Minji</span>
                                         </a>
-                                        <a class="select_name" href="#">
+                                        <a class="select_name" href="#" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_w.mp3','single','', 'ls_mat_c3');">
                                             <span>Sui</span>
                                         </a>
-                                        <a class="select_name" href="#">
+                                        <a class="select_name" href="#" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_w.mp3','single','', 'ls_mat_c4');">
                                             <span>Anna</span>
                                         </a>
+                                        <img src="./images/10/1.png" style="margin-top: 142px;margin-left: 35px;" class="display-none class-for-none" id="ls_mat_c1"></img>
+                                        <img src="./images/10/2.png" style="margin-top: 142px;margin-left: 40px;" class="display-none class-for-none"  id="ls_mat_c2"></img>
+                                        <img src="./images/10/3.png" style="margin-top: 142px;margin-left: 39px;" class="display-none class-for-none"  id="ls_mat_c3"></img>
+                                        <img src="./images/10/4.png" style="margin-top: 142px;margin-left: 38px;" class="display-none class-for-none"  id="ls_mat_c4"></img>
                                     </div>
                                     <div class="target_sentence">
                                         <span>I’m great.</span>
@@ -118,19 +122,27 @@
                                     </div>
                                     <div class="hide">
                                         <ul>
-                                            <li><em>A</em>:<span class="blue ml_5"> Minji</span>, how are you doing today? <a href="#" class="tip ml_10">TIP</a></li>
+                                            <li><em>A</em>:<span class="blue ml_5"> Minji</span>, how are you doing today?
+                                                <a href="#" class="btn_tip ml_10"></a>
+                                                <span class="tip_con hide">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
+                                            </li>
+
                                             <li><em>B</em>:<span class="blue ml_5"> Not so good</span></li>
                                         </ul>
                                     </div>
                                     <div class="hide">
                                         <ul>
-                                            <li><em>A</em>:<span class="blue ml_5"> Siu</span>, how are you doing today? <a href="#" class="tip ml_10">TIP</a></li>
+                                            <li><em>A</em>:<span class="blue ml_5"> Siu</span>, how are you doing today? <a href="#" class="btn_tip ml_10"></a>
+                                                <span class="tip_con hide">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
+                                            </li>
                                             <li><em>B</em>:<span class="blue ml_5"> Not bad.</span></li>
                                         </ul>
                                     </div>
                                     <div class="hide">
                                         <ul>
-                                            <li><em>A</em>:<span class="blue ml_5"> Anna</span>, how are you doing today? <a href="#" class="tip ml_10">TIP</a></li>
+                                            <li><em>A</em>:<span class="blue ml_5"> Anna</span>, how are you doing today? <a href="#" class="btn_tip ml_10"></a>
+                                                <span class="tip_con hide">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
+                                            </li>
                                             <li><em>B</em>:<span class="blue ml_5"> I’m fine.</span></li>
                                         </ul>
                                     </div>

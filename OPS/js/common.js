@@ -6,12 +6,11 @@
  */
     // Global variable to track current file name.
 var currentFile = "";
-function playAudio(path, btnId, target) {
+function playAudio(path, btnId, target, imgId) {
     // Check for audio element support.
     if (window.HTMLAudioElement) {
         try {
             var oAudio = document.getElementById('myaudio');
-
             oAudio.style.position = "absolute";
             oAudio.style.width = "200px";
 
@@ -21,6 +20,11 @@ function playAudio(path, btnId, target) {
                 currentFile = path;
             }
             if(btnId == 'single'){
+                var imgClassForNone = document.getElementsByClassName('class-for-none');
+
+                var imgId = document.getElementById(imgId);
+                imgId.style.display='block';
+
                 removePopup();
                 oAudio.style.display='none';
                 if (oAudio.paused){
@@ -260,6 +264,17 @@ function radioCheck(questionId, names, answers) {
             alert('오답입니다.');
             //오답일때 radiobox 컨트롤
         }
+        for(var i=0; i<answerNameArray.length;i++) {
+            var name = document.getElementsByName(answerNameArray[i]);
+            for(var y=0; y<name.length;y++){
+                if(name[y].checked){
+                    name[y].checked=false;
+                }
+            }
+            name[answerArray[i]].checked=true;
+            $(name[answerArray[i]]).removeClass('correct');
+            $(name[answerArray[i]]).addClass('false');
+        }
 
     }else if (questionId.title == '다시풀기'){
         $(questionId).removeClass('btn_repeat');
@@ -268,6 +283,10 @@ function radioCheck(questionId, names, answers) {
         for(var i=0; i<answerNameArray.length;i++) {
             var name = document.getElementsByName(answerNameArray[i]);
             for(var y=0; y<name.length;y++){
+                if($(name[y]).hasClass('false')){
+                    $(name[y]).removeClass('false');
+                }
+                $(name[y]).addClass('correct');
                 if(name[y].checked){
                     name[y].checked=false;
                 }
