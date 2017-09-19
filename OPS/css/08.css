@@ -23,11 +23,13 @@
 .sp_box .stit .listen {color: rgb(255,74,35); font-weight: 700;}
 .sp_box ul li{font: 13px/1.8 'Nanum Gothic'; rgb(43,46,52);}
 .sp_box em {font: 13px 'Noto Sans KR'; vertical-align: middle;}
-<<<<<<< HEAD
 .sp_box ul:last-child li em{ color:#0101ff;}
 .sp_box ul li > span:hover{color: #9a01cd; }
-=======
->>>>>>> feature/SONG_P10
-
 .btn_list {position: absolute; right:50px; bottom:50px}
 .btn_list button {display: block}
+.first {background: url(../images/08/bg_lesson01.jpg) no-repeat 0 0; background-size: cover}
+.lesson_tit {position: absolute; top:79px; left:165px;}
+.img_txt_box {position: absolute; top:320px; left:300px; width:350px; background: url(../images/08/lesson_1_box.png) no-repeat 0 0; background-size: cover; padding:30px}
+.sp_box {position: absolute; top:652px; left:120px;}
+.btn_list {position: absolute; right:10px; bottom:10px}
+>>>>>>> feature/SONG_P17
