@@ -6,17 +6,42 @@
 /*  Reading Time Title*/
 .page_tit {position: absolute; display: block; width: 200px; height: 120px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.svg") no-repeat 0 0; background-size: cover}
 .info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
+.btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 590px; background-size: cover;}
 
 /* 본문 */
 .reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.svg")}
 .section > p {font: 19px 'Faustina Regular'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
-.section > p.correct {font: 15px 'Nanum Gothic'; position: absolute; top: 330px; line-height: 38px; display: none;}
+.section > p.correct {font: 11px 'Open Sans'; font-weight: 700; color: #1c8a24; position: absolute; top: 330px; line-height: 38px; display: none;}
 
-.btn_mp3_a {position: relative; display: block; float:left; width: 25px; height: 25px; top: 290px; left: 150px; background-size: cover;}
-.btn_trans {position: relative; display: block; float:left; width: 25px; height: 25px; top: 290px; left: 160px; background-size: cover;}
+.btn_mp3_a {position: relative; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 100px; background-size: cover;}
+.btn_trans {position: relative; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 110px; background-size: cover;}
 
 /* Ask And Answer */
-.ask_answer {font: 13px 'Open Sans Regular'; position: absolute; display: block; top: 890px; left: 30px;}
-.aa_title {position: relative; display: block; width: 100px; height: 16px; margin-bottom: 10px; background: url("../images/15/lesson_1_p15_aa_title.png") no-repeat 0 0; background-size: cover}
-.aa_title + span {position: relative; color: #FF4A23; size: 13px;}
-.aa_ask1 {position: relative;}
+.ask_and_speak {position: absolute; top: 890px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
+.ask_and_speak > p{position:absolute;top:30px; left: 170px;}
+.ask_and_speak > p input[type="text"]{display:none;}
+.ask_and_speak>h3 {position: absolute; width: 200px;  left: 0px; top:30px; }
+.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
+.ask_and_speak > input {position: relative; display: inline-block; top: 29px; left: 75px;}
+
+.aa_title {position: relative; display: block; float:left; width: 100px; height: 16px; margin-bottom: 10px; background: url("../images/15/lesson_1_p15_aa_title.png") no-repeat 0 0; background-size: cover}
+.btn_answer {position: relative; display: block; float:left; width: 25px; height: 25px; top: -5px; left: 5px; background-size: cover;}
+.btn_answer + p {position: absolute; display: block; top: 25px;}
+.btn_answer + p + span {position: absolute; color: #FF4A23; size: 13px;}
+
+.ask {position: absolute; top: 30px;}
+.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 8px;}
+.aa_ask1 {position: relative; display: block; top: 50px; left: 10px;}
+.aa_ask2 {position: relative; display: block; top: 50px; left: 30px;}
+
+.answer {position: absolute; top: 10px;}
+.answer li {display: inline-block; position: relative; margin-top: 45px;}
+.aa_answer1 {left: -10px;}
+.aa_answer2 {left: -20px;}
+
+
+.balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 30px 5px; text-align: center; margin: 0 auto 10px;}
+.balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
+
+.btn_word {position: relative; display: block; float:left; width: 160px; height: 60px; top: 850px; left: 460px; background-size: cover;}
+
