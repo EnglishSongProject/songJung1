@@ -7,146 +7,141 @@
         <meta name="format-detection" content="telephone=no"/>
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/09.css" />
-        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
-        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="./js/common.js"></script>
-        <script type="text/javascript" src="./js/09.js"></script>
+        <script type="text/javascript" src="js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/09.js"></script>
     </head>
     <body>
-        <div class="first wrapper">
-            <div class="spl">
-              <section class="slide_rol">
-                <h1 class="main_tit">Study Plan for the Lesson</h1>
-                <h2 class="sub_tit">새 학교에서 친구들을 만나 인사하고 소개해요.</h2>
-                <div class="rol">
-                    <section class="rol_01">
-                      <article>
-                        <h1 class="inner_tit">Listen &amp;  Speak 1</h1>
-                        <h2>안부를 묻고 답해요.</h2>
-                        <p class="bg_icon">
-                          <input id="a_check_01" type="button" name="a_check_01"/>
-                          <label for="a_check_01" class="to_button a_check"></label>
-                        </p>
-                          <ul>
-                            <li><span>A:</span> How are you doing today? </li>
-                            <li><span>B:</span><input id="ls_1_t1" type="text" maxlength="4" />
-                            <label for="ls_1_t1"></label>.</li>
-                            <li class="p09_answer"><input id="ls_1_t1_2" class="ls_1_t1_2" type="text" maxlength="4" value="Good" />
-                            <label for="ls_1_t1_2"></label></li>
-                          </ul>
-                          <dl>
-                            <dt>Self Check</dt>
-                            <dd> 안부를 묻는 친구의 말에 답할 수 있나요?</dd>
-                          </dl>
-                      </article>
-
-                      <article>
-                        <h1 class="inner_tit">Listen &amp;  Speak 2</h1>
-                        <h2>소개하고 인사를 나눠요.</h2>
-                        <p class="bg_icon">
-                          <input id="a_check_02" type="button" name="a_check_02"/>
-                          <label for="a_check_02"  class="to_button a_check"></label>
-                        </p>
-                        <ul>
-                          <li>
-                            <span class="ls02_span_01">A:</span>
-                            <input id="ls_2_t1" type="text" maxlength="4" />
-                            <label for="ls_2_t1"></label>, this is my friend,
-                            <input id="ls_2_t2" type="text" maxlength="4" />
-                            <label for="ls_2_t2"></label>.
-                          </li>
-
-                          <li class="p09_answer"><input id="ls_2_t1_1" class="ls_2_t1_1 blank_bl" type="text" maxlength="4" value="Dana" />
-                          <label for="ls_2_t1_1"></label><input id="ls_2_t2_2" class="ls_2_t2_2 blank_bl1" type="text" maxlength="4" value="Yena" />
-                          <label for="ls_2_t2_2"></label></li>
-                          <li>
-                            <span>B:</span>
-                             Pleased to meet you,
-                            <input id="ls_2_t3" type="text" maxlength="4" />
-                            <label for="ls_2_t3"></label>
-                            .
-                          </li>
-                          <li  class="p09_answer"><input id="ls_2_t2_2" class="ls_2_t2_2 blank_bl2" type="text" maxlength="4" value="Yena" />
-                          <label for="ls_2_t2_2"></label></li>
-                        </ul>
-                        <dl>
-                          <dt>Self Check</dt>
-                          <dd>서로 모르는 두 친구를 소개해 줄 수 있나요?</dd>
-                        </dl>
-                      </article>
-
-                      <article>
-                        <h1 class="inner_tit">Reading Time</h1>
-                        <h2>선생님과 친구들이 네임 텐트를 만들어  자기소개 하는 글을 읽어요.</h2>
-                        <p class="bg_icon">
-                          <input id="Read_replay" type="button" name="Read_replay"/>
-                          <label for="Read_replay"  class="to_button a_replay"></label>
-                        </p>
-                          <dl>
-                            <dt>Self Check</dt>
-                            <dd>자신을 소개할 때 어떤 것을 말하고 싶나요?</dd>
-                          </dl>
-                          <textarea></textarea>
-                      </article>
-                    </section>
-
-                    <section class="rol_02">
-                      <article>
-                        <h1 class="inner_tit">Writing Workshop</h1>
-                        <h2>네임 텐트를 만들고 자기소개 글을 써요.</h2>
-                        <p class="bg_icon">
-                          <input id="Writ_replay" type="button" name="Writ_replay"/>
-                          <label for="Writ_replay"  class="to_button a_replay"></label>
-                        </p>
-                          <dl>
-                            <dt>Self Check</dt>
-                            <dd>
+    <div class="first wrapper">
+      <h1 class="main_tit">Study Plan for the Lesson</h1>
+      <h2 class="sub_tit">새 학교에서 친구들을 만나 인사하고 소개해요.</h2>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="slider_area">
+          <div class="slider_content">
+              <div class="slider_image_wrap">
+                  <ul class="slider_image">
+                      <li data-num="1" class="">
+                        <section class="rol_01">
+                          <article>
+                            <h1 class="inner_tit">Listen &amp;  Speak 1</h1>
+                            <h2>안부를 묻고 답해요.</h2>
+                            <p class="bg_icon">
+                              <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                            </p>
                               <ul>
-                                <li>•네임 텐트가 무엇인지 알고 있나요?</li>
-                                <li>• 자신의 네임 텐트를 어떻게 꾸미고 싶나요?</li>
+                                <li><span>A:</span> How are you doing today? </li>
+                                <li><span>B:</span><input id="ls_1_t1" type="text" maxlength="4" />
+                                <label for="ls_1_t1"></label>.</li>
+                                <li class="p09_answer"><input id="ls_1_t1_2" class="ls_1_t1_2" type="text" maxlength="4" value="Good" />
+                                <label for="ls_1_t1_2"></label></li>
                               </ul>
-                            </dd>
-                          </dl>
-                          <textarea></textarea>
-                      </article>
+                              <dl>
+                                <dt>Self Check</dt>
+                                <dd> 안부를 묻는 친구의 말에 답할 수 있나요?</dd>
+                              </dl>
+                          </article>
+                          <article>
+                            <h1 class="inner_tit">Listen &amp;  Speak 2</h1>
+                            <h2>소개하고 인사를 나눠요.</h2>
+                            <p class="bg_icon">
+                              <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                            </p>
+                            <ul>
+                              <li>
+                                <span class="ls02_span_01">A:</span>
+                                <input id="ls_2_t1" type="text" maxlength="4" />
+                                <label for="ls_2_t1"></label>, this is my friend,
+                                <input id="ls_2_t2" type="text" maxlength="4" />
+                                <label for="ls_2_t2"></label>.
+                              </li>
+                              <li class="p09_answer"><input id="ls_2_t1_1" class="ls_2_t1_1 blank_bl" type="text" maxlength="4" value="Dana" />
+                              <label for="ls_2_t1_1"></label><input id="ls_2_t2_2" class="ls_2_t2_2 blank_bl1" type="text" maxlength="4" value="Yena" />
+                              <label for="ls_2_t2_2"></label></li>
+                              <li>
+                                <span>B:</span>
+                                 Pleased to meet you,
+                                <input id="ls_2_t3" type="text" maxlength="4" />
+                                <label for="ls_2_t3"></label>
+                                .
+                              </li>
+                              <li  class="p09_answer"><input id="ls_2_t2_3" class="ls_2_t2_3 blank_bl2" type="text" maxlength="4" value="Yena" />
+                                <label for="ls_2_t2_3"></label></li>
+                              </ul>
+                              <dl>
+                                <dt>Self Check</dt>
+                                <dd>서로 모르는 두 친구를 소개해 줄 수 있나요?</dd>
+                              </dl>
+                            </article>
 
-                      <article>
-                        <h1 class="inner_tit">Work Together</h1>
-                        <h2>친구들과 모둠을 이루어 모둠 소개 UCC를  만들어요.</h2>
-                        <p class="bg_icon">
-                          <input id="Work_replay" type="button" name="Work_replay"/>
-                          <label for="Work_replay"  class="to_button a_replay"></label>
-                        </p>
-                          <dl>
-                            <dt>Self Check</dt>
-                            <dd> 친구들과 모둠 소개 UCC를 만들 때 어떤 점에 유의해야 하나요?</dd>
-                          </dl>
-                          <textarea></textarea>
-                      </article>
-
-                      <article>
-                        <h1 class="inner_tit">Into the World</h1>
-                        <h2>통역사가 되어 여러 나라의 인사말을 알아봐요.</h2>
-                        <p class="bg_icon">
-                          <input id="itw_replay" type="button" name="itw_replay"/>
-                          <label for="itw_replay"  class="to_button a_replay"></label>
-                        </p>
-                          <dl>
-                            <dt>Self Check</dt>
-                            <dd>다른 나라의 인사말 중 아는 것이 있나요?</dd>
-                          </dl>
-                          <textarea></textarea>
-                      </article>
-                    </section>
-                </div>
-              </section>
-              <div class="slide_bt_09">
-                <input id="rolling_bt01" class="rolling_bt" type="button" name="rolling_bt01"/>
-                <label for="rolling_bt01" class="to_button rolbtn"></label>
-                <input id="rolling_bt02" class="rolling_bt" type="button" name="rolling_bt02"/>
-                <label for="rolling_bt02" class="to_button rolbtn rolbtn2"></label>
+                            <article>
+                              <h1 class="inner_tit">Reading Time</h1>
+                              <h2>선생님과 친구들이 네임 텐트를 만들어  자기소개 하는 글을 읽어요.</h2>
+                              <p class="bg_icon">
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                              </p>
+                                <dl>
+                                  <dt>Self Check</dt>
+                                  <dd>자신을 소개할 때 어떤 것을 말하고 싶나요?</dd>
+                                </dl>
+                                <textarea></textarea>
+                            </article>
+                          </section>
+                        </li>
+                        <li data-num="2" class="">
+                          <section class="rol_02">
+                            <article>
+                              <h1 class="inner_tit">Writing Workshop</h1>
+                              <h2>네임 텐트를 만들고 자기소개 글을 써요.</h2>
+                              <p class="bg_icon">
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                              </p>
+                                <dl>
+                                  <dt>Self Check</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>•네임 텐트가 무엇인지 알고 있나요?</li>
+                                      <li>• 자신의 네임 텐트를 어떻게 꾸미고 싶나요?</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <textarea></textarea>
+                              </article>
+                            <article>
+                              <h1 class="inner_tit">Work Together</h1>
+                              <h2>친구들과 모둠을 이루어 모둠 소개 UCC를  만들어요.</h2>
+                              <p class="bg_icon">
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                              </p>
+                                <dl>
+                                  <dt>Self Check</dt>
+                                  <dd> 친구들과 모둠 소개 UCC를 만들 때 어떤 점에 유의해야 하나요?</dd>
+                                </dl>
+                                <textarea></textarea>
+                              </article>
+                            <article>
+                              <h1 class="inner_tit">Into the World</h1>
+                              <h2>통역사가 되어 여러 나라의 인사말을 알아봐요.</h2>
+                              <p class="bg_icon">
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                              </p>
+                                <dl>
+                                  <dt>Self Check</dt>
+                                  <dd>다른 나라의 인사말 중 아는 것이 있나요?</dd>
+                                </dl>
+                                <textarea></textarea>
+                            </article>
+                          </section>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_thumbnail_area">
+                        <ul class="slider_thumbnail">
+                            <li data-num="1" class=""></li>
+                            <li data-num="2" class=""></li>
+                        </ul>
+                    </div>
+                  </div>
               </div>
-            </div>
         </div>
     </body>
 </html>
