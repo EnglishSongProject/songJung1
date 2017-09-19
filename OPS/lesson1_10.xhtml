@@ -27,32 +27,32 @@
                             <div class="section">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_a.png" alt="A" />
-                                    Warm up
-                                    <span>What will the girl say?</span>
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a01.mp3','single');">Warm up</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a01_1.mp3','single');">What will the girl say?</span>
                                     <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                        <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button type="button" class="btn_type_02 btn_play" title="영상 플레이"></button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_01.mp3','',this);"></button>
+                                        <button type="button" class="btn_type_02 btn_sp" title="대본"></button>
+                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_wu_t1_q" onclick="blankCheckByCss('ls1_wu_t1_q', 'ls1_wu_t1_a');"></button>
                                     </span>
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/10/img_las_01.jpg" alt="" />
-                                    <span class="textbox wp_text01">How are you <br/>doing?</span>
-                                    <span class="textbox wp_text02">Not so good.</span>
-                                    <input type="text" class="textbox wp_input01"/>
+                                    <span class="textbox wp_text01" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a02.mp3','single');">How are you <br/>doing?</span>
+                                    <span class="textbox wp_text02 display-none" id="ls1_wu_t1_a">Not so good.</span>
+                                    <input type="text" class="textbox wp_input01" maxlength="12"/>
                                 </div>
                             </div>
                             <!-- section B-->
                             <div class="section section02" style="margin-top:75px">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_b.png" alt="C" />
-                                    Lsten and Check
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_b01.mp3','single');">Listen and Check</span>
                                     <span>What will the girl say?</span>
                                     <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                        <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기"></button>
+                                        <button type="button" class="btn_type_02 btn_sp" title="대본"></button>
+                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_lac_r1_q" onclick="radioCheck('ls1_lac_r1_q', 'lac_1+lac_2', '0+1');" ></button>
                                     </span>
                                 </h2>
                                 <div class="img_content">
@@ -74,7 +74,7 @@
                             <div class="section">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_c.png" alt="C" />
-                                     Match and Talk
+                                    Match and Talk
                                     <span>How is each person doing today?</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
@@ -146,6 +146,9 @@
                     </div>
                 </div>
             </div>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>

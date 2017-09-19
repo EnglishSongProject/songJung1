@@ -11,7 +11,7 @@ fieldset{border:none;}
 legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
 hr, caption {display:none;}
 img {border:none; vertical-align:middle;height:auto;}
-input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #0093cc !important;}
+input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #333 !important;}
 textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
 strong {font-weight:normal;}
 em,i {font-style:normal;}
@@ -180,4 +180,14 @@ input[type=checkbox]:checked.correct + label:before, input[type=radio]:checked.c
 }
 input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.false + label:before{
     color: red;
+}
+
+/*audio popup*/
+#myaudio {position: absolute;  }
+.popup{position:absolute; display: block; width:230px; height:40px; border:1px solid #ddd; background-color: #fafafa; border-radius: 5px; border:none; box-shadow: 2px 2px 2px #888888 ;}
+.popup:after {position: absolute; top:50%; left:-15px; transform:translateY(-50%); display: block; content:"";border: 8px solid transparent; border-right-color: #fff}
+
+/*display-none*/
+.display-none{
+    display: none;
 }
