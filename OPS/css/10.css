@@ -1,0 +1,55 @@
+
+.part_las {background: url(../images/10/bg_lesson01_10.jpg) no-repeat 0 0; background-size: cover}
+.page_tit {margin:10px}
+.info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
+
+.part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit img {margin-right:10px; vertical-align: top;}
+.part_las .sub_tit span {font:17px "Noto Sans KR";  margin-left:14px;}
+.part_las .btn_list {margin-left:5px !important}
+
+.part_las .img_content {position: relative; padding:35px 0 0 42px}
+.part_las .wp_text01 {position: absolute; top:100px; left:0}
+.part_las .wp_text02 {position: absolute; top:100px; left:0}
+.part_las .wp_input01 {position: absolute; top: 71px; left: 479px;}
+
+.part_las .eg {position: relative; margin-top:40px; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
+.part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
+.part_las .eg em { font:18px 'Faustina'; }
+.part_las .eg .blue {color:#a14796}
+
+.select_area {position: absolute; left:40px; top:0}
+.select_name {position: absolute; width:120px; height:120px; border:1px solid red; top:20px}
+.select_name:nth-of-type(1) {left:0px}
+.select_name:nth-of-type(2) {left:153px}
+.select_name:nth-of-type(3) {left:321px}
+.select_name:nth-of-type(4) {left:483px}
+.select_name span {position: absolute;font:13px 'Noto Sans KR' ;}
+.select_name:nth-of-type(1) span {top:72px; left:71px; }
+.select_name:nth-of-type(2) span {top:67px; left:76px; }
+.select_name:nth-of-type(3) span {top:65px; left:75px; }
+.select_name:nth-of-type(4) span {top:64px; left:66px; }
+.select_area:hover span {color:#a14796}
+
+.target_sentence {position: absolute; bottom:0; left:40px; bottom:34px; border:1px solid red}
+.target_sentence span {position: absolute; top:0; display: inline-block; width:100px; font:15px "Noto Sans KR";}
+.target_sentence span:nth-of-type(1) {left:23px}
+.target_sentence span:nth-of-type(2) {left:185px}
+.target_sentence span:nth-of-type(3) {left:345px}
+.target_sentence span:nth-of-type(4) {left:495px}
+
+.tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden;}
+
+/*슬라이더*/
+.slider_image_wrap .slider_image > li {
+    display: none;
+}
+
+.slider_image_wrap .slider_image li.on {
+    display: block;
+}
+
+.slider_thumbnail_area {position: absolute; bottom:100px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}
