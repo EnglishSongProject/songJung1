@@ -11,13 +11,15 @@
 
 li{font-family: 'Nanum Gothic';font-size:14px;}
 
-.slider_image>li{display:none;width:100%;position:absolute;left:0;top:0;}
-.slider_image > li.on{display : block;}
+.slider_image > li{display:none;width:100%;position:absolute;left:0;top:0;}
+.slider_image > li:nth-of-type(2){display:none;width:100%;position:absolute;left:600px;top:0;}
+.slider_image > li.on{display:block;left:0;}
 
 .slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;}
+.p09_answer{opacity: 0;}
 .p09_answer input[type="text"]{border:none;}
 .ls_1_t1_2{margin-left:13px;}
 .blank_bl{margin-left:18px;}
@@ -48,7 +50,9 @@ li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;displa
 
 
 textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box; min-height: 120px; min-width:580px;max-height: 117px; max-width: 580px; padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;}
-article:nth-of-type(1) textarea{ min-height: 100px;max-height: 100px;}
+article:nth-of-type(1) textarea{ min-height: 102px;max-height: 102px;}
+article:nth-of-type(2) textarea{ min-height: 118px;max-height: 118px;}
+li:nth-of-type(2) article:nth-of-type(3) textarea{ min-height: 120px;max-height: 120px;}
 
 .slider_thumbnail_area ul {text-align: center;width:74px; position: relative; top:730px;left:50%;margin-left:-37px;}
 .slider_thumbnail_area ul li {width: 20px; height: 20px; border: 1px solid #ddd; border-radius: 15px; background: url(../images/09/rol_p09_off.png) no-repeat 0 0; text-indent: -9999px; margin: 0 5px;cursor: pointer;display: inline-block;}
