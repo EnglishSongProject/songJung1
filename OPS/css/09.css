@@ -3,7 +3,7 @@
 /* layout */
 
 .main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:10px -150px;transform:rotate(-2.5deg);}
-.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:10px -150px;width:300px;background:#B4DdC8;}
+.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:5px -150px;width:300px;background:#B4DdC8;text-align:center;}
 .slider_area{height: 770px;margin: 0 auto;position: relative; width: 600px;}
 .slider_area > .slider_content{width:1200px;position: relative;top:0;left:0;}
 .slider_image_wrap{width:600px;position: relative;top:0;left:0;z-index:100;}
