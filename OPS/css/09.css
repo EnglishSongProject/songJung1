@@ -2,29 +2,34 @@
 
 /* layout */
 
-.spl{position:relative;width:600px;margin:0 auto;overflow:hidden;height:930px;}
-.spl > .slide_rol{width:1200px;position:absolute;top:0;left:0;}
-.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:25%;margin:63px -150px 0;transform:rotate(-2.5deg);}
-.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:25%;margin:13px -150px;width:300px;background:#B4DdC8;}
-section{display:inline-block;width:50%;float:left;}
-.rol article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
-.rol section article:first-of-type{margin-top:10;}
+.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:63px -150px 0;transform:rotate(-2.5deg);}
+.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:13px -150px;width:300px;background:#B4DdC8;}
+.slider_area{height: 770px;margin: 0 auto;position: relative; width: 600px;}
+.slider_area > .slider_content{width:1200px;position: relative;top:0;left:0;}
+.slider_image_wrap{width:600px;position: relative;top:0;left:0;z-index:100;}
+.slider_thumbnail_area { height: 765px; left: 50%; margin-left: -50%; overflow: hidden; position: relative; top:0; width: 50%;}
 
 li{font-family: 'Nanum Gothic';font-size:14px;}
 
+.slider_image > li{display:none;width:100%;position:absolute;left:0;top:0;}
+.slider_image > li:nth-of-type(2){display:none;width:100%;position:absolute;left:600px;top:0;}
+.slider_image > li.on{display:block;left:0;}
+
+.slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;}
+.p09_answer{opacity: 0;}
 .p09_answer input[type="text"]{border:none;}
 .ls_1_t1_2{margin-left:13px;}
 .blank_bl{margin-left:18px;}
 .blank_bl1{margin-left:118px;}
 .blank_bl2{margin-left:155px;}
+article dl{margin-top:5px;}
+article dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:16px;}
+article dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12px;line-height:18px;}
 
-.spl dl dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:16px;}
-dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12px;line-height:18px;}
-
-.rol article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:30px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
+li article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:30px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
 .rol_01 article:first-of-type h1{transform:rotate(-3deg);}
 .rol_01 article:nth-of-type(2) h1{transform:rotate(5deg);}
 .rol_01 article:last-of-type h1{transform:rotate(1deg);}
@@ -32,23 +37,24 @@ dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12
 .rol_02 article:nth-of-type(2) h1{transform:rotate(-5deg);}
 .rol_02 article:last-of-type h1{transform:rotate(2deg);}
 
-.rol article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
-input[type="button"]{display:none;}
+li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
 .a_check{background:url(../images/09/a_check_bt.png) no-repeat 0 0;}
 .a_replay{background:url(../images/09/replay_bt.png) no-repeat 0 0;}
-.bg_icon label{display:block;width:25px;height:25px;position:absolute;;top:22px;left:0;left:0;background-size:100%;}
-.rol_01 article:nth-of-type(1) p label{left:135px;}
-.rol_01 article:nth-of-type(2) p label{left:160px;}
-.rol_01 article:nth-of-type(3) p label{left:390px;}
-.rol_02 article:nth-of-type(1) p label{left:245px;}
-.rol_02 article:nth-of-type(2) p label{left:312px;}
-.rol_02 article:nth-of-type(3) p label{left:282px;}
+.bg_icon button{display:block;width:25px;height:25px;position:absolute;top:22px;left:0;left:0;background-size:100%;}
+.rol_01 article:nth-of-type(1) p button{left:135px;}
+.rol_01 article:nth-of-type(2) p button{left:160px;}
+.rol_01 article:nth-of-type(3) p button{left:390px;}
+.rol_02 article:nth-of-type(1) p button{left:245px;}
+.rol_02 article:nth-of-type(2) p button{left:312px;}
+.rol_02 article:nth-of-type(3) p button{left:282px;}
 
 
-textarea{border:1px solid red;width:580px;position:absolute;left:10px;margin-top:10px;height:120px;}
+textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box; min-height: 120px; min-width:580px;max-height: 117px; max-width: 580px; padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;}
+article:nth-of-type(1) textarea{ min-height: 102px;max-height: 102px;}
+article:nth-of-type(2) textarea{ min-height: 118px;max-height: 118px;}
+li:nth-of-type(2) article:nth-of-type(3) textarea{ min-height: 120px;max-height: 120px;}
 
-
-.slide_bt_09{position:absolute;bottom:30px;left:50%;width:50px;margin-left:-25px;}
-.rolling_bt{display:none;}
-.rolbtn{background:url(../images/09/rol_p09_off.png) no-repeat 0 0;width:20px;height:20px;display:block;float:left;margin-right:10px;}
-.rolbtn2{margin-right:0;}
+.slider_thumbnail_area ul {text-align: center;width:74px; position: relative; top:730px;left:50%;margin-left:-37px;}
+.slider_thumbnail_area ul li {width: 20px; height: 20px; border: 1px solid #ddd; border-radius: 15px; background: url(../images/09/rol_p09_off.png) no-repeat 0 0; text-indent: -9999px; margin: 0 5px;cursor: pointer;display: inline-block;}
+.slider_area .slider_thumbnail_area ul li.on { background: url(../images/09/rol_p09_on.png) no-repeat 0 0; border: 1px solid #fff;}
+.slider_thumbnail_area ul li:last-child { margin-right: 10px;}
