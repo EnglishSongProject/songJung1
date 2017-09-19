@@ -9,27 +9,40 @@
 .part_las .btn_list {margin-left:5px !important}
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
-.part_las .wp_text01 {position: absolute; top:100px; left:0}
-.part_las .wp_text02 {position: absolute; top:100px; left:0}
-.part_las .wp_input01 {position: absolute; top: 71px; left: 479px;}
+.part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
 
+/*Warm up */
+.part_las .wp_text01 {position: absolute; top: 57px; left: 84px;}
+.part_las .wp_text02 {position: absolute; top: 96px; left: 491px; color:#FF0000;}
+.part_las .wp_input01 {position: absolute; top: 65px; left: 483px; width: 116px; background: transparent}
+
+/*Lsten and Check  */
+.section02 .num {position: absolute; font:16px "Noto Sans KR";}
+.section02 .num:nth-of-type(1) {top: 30px; left: 25px;}
+.section02 .num:nth-of-type(2) {top: 30px; left: 352px}
+.section02 label:nth-of-type(1) {top: -121px; left: 245px;}
+.section02 label:nth-of-type(2) {top: -121px; left: 535px;}
+.section02 label:nth-of-type(3) {top: -53px; left: 157px;}
+.section02 label:nth-of-type(4) {top: -53px; left: 447px;}
+
+/*Match and Talk */
 .part_las .eg {position: relative; margin-top:40px; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
 .part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
 .part_las .eg em { font:18px 'Faustina'; }
 .part_las .eg .blue {color:#a14796}
 
 .select_area {position: absolute; left:40px; top:0}
-.select_name {position: absolute; width:120px; height:120px; border:1px solid red; top:20px}
+.select_name {position: absolute; width:120px; height:120px; }
 .select_name:nth-of-type(1) {left:0px}
 .select_name:nth-of-type(2) {left:153px}
 .select_name:nth-of-type(3) {left:321px}
 .select_name:nth-of-type(4) {left:483px}
 .select_name span {position: absolute;font:13px 'Noto Sans KR' ;}
-.select_name:nth-of-type(1) span {top:72px; left:71px; }
-.select_name:nth-of-type(2) span {top:67px; left:76px; }
-.select_name:nth-of-type(3) span {top:65px; left:75px; }
-.select_name:nth-of-type(4) span {top:64px; left:66px; }
-.select_area:hover span {color:#a14796}
+.select_name:nth-of-type(1) span {top:92px; left:71px; }
+.select_name:nth-of-type(2) span {top:87px; left:76px; }
+.select_name:nth-of-type(3) span {top:84px; left:75px; }
+.select_name:nth-of-type(4) span {top:84px; left:66px; }
+.select_name:hover span {color:#a14796}
 
 .target_sentence {position: absolute; bottom:0; left:40px; bottom:34px; border:1px solid red}
 .target_sentence span {position: absolute; top:0; display: inline-block; width:100px; font:15px "Noto Sans KR";}
@@ -38,7 +51,8 @@
 .target_sentence span:nth-of-type(3) {left:345px}
 .target_sentence span:nth-of-type(4) {left:495px}
 
-.tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden;}
+.btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
+.tip_con {font:11px "Noto Sans KR"; letter-spacing: -0.5px; class="hidden"}
 
 /*슬라이더*/
 .slider_image_wrap .slider_image > li {
