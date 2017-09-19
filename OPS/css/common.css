@@ -126,10 +126,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*----------------------
 페이지 공통
 ----------------------*/
-
-
 .wrapper {user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:0px;top:0px;width:768px;height:1024px;position: relative; padding:53px; box-sizing: border-box;}
-
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
@@ -143,3 +140,44 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .active-purple:hover {color: #9a01cd; }
 
 
+/*체크박스*/
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+input[type=checkbox] + label, input[type=radio] + label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+input[type=checkbox]+ label:before, input[type=radio] + label:before {
+
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+input[type=checkbox]:checked + label:before, input[type=radio]:checked + label:before {
+    content: "\2713";  /* 체크모양 */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 25px;
+    font-weight:800;
+    text-align: center;
+    line-height: 18px;
+}
+input[type=checkbox]:checked.correct + label:before, input[type=radio]:checked.correct + label:before{
+    color: blue;
+}
+input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.false + label:before{
+    color: red;
+}
