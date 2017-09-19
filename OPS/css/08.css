@@ -20,7 +20,7 @@
 .sp_box .stit {font: 13px 'Nanum Gothic'; color: rgb(255,74,35); font-weight: 700; margin-bottom:5px }
 .sp_box .stit span {color:rgb(43,46,52); font-weight: 400;}
 .sp_box ul li{font: 13px/1.8 'Nanum Gothic'; rgb(43,46,52);}
-.sp_box em {font: 13px 'Noto Sans KR'; vertical-align: middle}
+.sp_box em {font: 13px 'Noto Sans KR'; vertical-align: middle;}
 
 .btn_list {position: absolute; right:50px; bottom:50px}
 .btn_list button {display: block}
