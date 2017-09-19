@@ -37,13 +37,13 @@
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/10/img_las_01.jpg" alt="" />
-                                    <span class="wp_text01">How are you doing?</span>
-                                    <span class="wp_text02">Not so good.</span>
-                                    <input type="text" class="wp_input01"/>
+                                    <span class="textbox wp_text01">How are you <br/>doing?</span>
+                                    <span class="textbox wp_text02">Not so good.</span>
+                                    <input type="text" class="textbox wp_input01"/>
                                 </div>
                             </div>
                             <!-- section B-->
-                            <div class="section" style="margin-top:75px">
+                            <div class="section section02" style="margin-top:75px">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_b.png" alt="C" />
                                     Lsten and Check
@@ -55,7 +55,17 @@
                                     </span>
                                 </h2>
                                 <div class="img_content">
+                                    <span class="num">1.</span>
+                                    <span class="num">2.</span>
                                     <img src="./images/10/img_las_02.jpg" alt="" />
+                                    <input type="radio" id="lac_1_r1" class="correct" name="lac_1"/>
+                                    <label for="lac_1_r1"></label>
+                                    <input type="radio" id="lac_2_r1" class="correct" name="lac_2"/>
+                                    <label for="lac_2_r1"></label>
+                                    <input type="radio" id="lac_1_r2" class="correct" name="lac_1"/>
+                                    <label for="lac_1_r2"></label>
+                                    <input type="radio" id="lac_2_r2" class="correct" name="lac_2"/>
+                                    <label for="lac_2_r2"></label>
                                 </div>
                             </div>
                         </li>
@@ -98,7 +108,10 @@
                                 <div class="eg">
                                     <div>
                                         <ul>
-                                            <li><em>A</em>:<span class="blue ml_5"> Jason</span>, how are you doing today? <a href="#" class="tip ml_10">TIP</a></li>
+                                            <li><em>A</em>:<span class="blue ml_5"> Jason</span>, how are you doing today?
+                                                <a href="#this" class="btn_tip ml_10">TIP</a>
+                                                <span class="tip_con hide">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
+                                            </li>
                                             <li><em>B</em>:<span class="blue ml_5"> I’m great.</span></li>
                                         </ul>
                                     </div>
@@ -140,6 +153,10 @@
             var idx = $(this).index();
             $(".eg > div").hide();
             $(".eg > div").eq(idx).show();
+        })
+
+        $(".btn_tip").on("click",function(){
+            $(".tip_con").toggle()
         })
 
         // 슬라이드
