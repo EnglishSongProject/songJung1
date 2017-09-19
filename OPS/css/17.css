@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*본문*/
+.first {background: url(../images/17/bg_lesson01.png) no-repeat 0 0; background-size: cover; }
+
+.first div {font-family: 'Faustina regular'; font-size: 19px; line-height: 38px; }
+
+.first .txt1 p {position: absolute; top: 100px; left: 180px; }
+
+.first .txt2 p {position: absolute; top: 470px; left: 390px; width: 300px; }
+
+.btn_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 80px; left: 175px; background-size: cover;}
+.btntrans_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 80px; left: 180px; background-size: cover;}
+
+.btn_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 450px; left: 335px; background-size: cover;}
+.btntrans_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 450px; left: 340px; background-size: cover;}
+
+/*본문 문단수*/
+.five {font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 470px; left: 690px; }
+.ten{font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 550px; left: 670px; }
+
+/*본문해석*/
+.transfer_t {position: absolute; top: 120px; left: 180px; font-size: 15px !important; }
+.transfer_b {position: absolute; top: 21px; font-size: 15px !important; }
+
+/*시계*/
+.talking_time {position: absolute; left: 540px; bottom: 100px;font-family: 'Faustina regular'; }
+.talking_time>img {position: absolute; width: 190px; bottom: 110px; left: -10px; }
+.talking_time div>p {position: relative; display: block; width: 300px; height: 80px; top:70px; left: -5px; transform: rotate(3deg); }
+/*한글*/
+.talking_time>p:first-child {position: absolute; font-family: 'Nanum Gothic'; font-size: 11px; }
+/*영어*/
+.talking_time>p:last-child {font-family: 'Faustina regular'; position: absolute; font-size: 11px; }
+/*e.g*/
+.talking_time>div>p:last-child>b {font-family: 'Noto Sans KR regular'; font-size: 11px; }
+
+/*AskAnswer*/
+.ask_and_speak {position: absolute; top: 868px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
+.ask_and_speak>h3 {position: absolute; width: 100px;  left: 50px;}
+.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23;}
+
+.repeatbtn {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 43px; left: 110px; background-size: cover;}
+
+/*페이지번호*/
+.pagenum_right {position: absolute; left: 570px; bottom:-20px; }
+.pagenum_right>span:first-of-type{font-family: 'Nanum Gothic';font-size: 11px;}
+.pagenum_right>span:last-of-type{font-family: 'Noto Sans KR';font-size: 11px;}
+
