@@ -21,7 +21,9 @@ function playAudio(path, btnId, target, imgId) {
             }
             if(btnId == 'single'){
                 var imgClassForNone = document.getElementsByClassName('class-for-none');
-
+                for(var i=0; i<imgClassForNone.length; i++){
+                    imgClassForNone[i].style.display='none';
+                }
                 var imgId = document.getElementById(imgId);
                 imgId.style.display='block';
 
