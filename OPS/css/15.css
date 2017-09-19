@@ -16,7 +16,7 @@
 .btn_trans {position: relative; display: block; float:left; width: 25px; height: 25px; top: 290px; left: 160px; background-size: cover;}
 
 /* Ask And Answer */
-.ask_answer {font: 13px 'Open Sans'; position: absolute; display: block; top: 890px; left: 30px;}
+.ask_answer {font: 13px 'Open Sans Regular'; position: absolute; display: block; top: 890px; left: 30px;}
 .aa_title {position: relative; display: block; width: 100px; height: 16px; margin-bottom: 10px; background: url("../images/15/lesson_1_p15_aa_title.png") no-repeat 0 0; background-size: cover}
 .aa_title + span {position: relative; color: #FF4A23; size: 13px;}
 .aa_ask1 {position: relative;}
