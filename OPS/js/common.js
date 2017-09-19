@@ -20,12 +20,14 @@ function playAudio(path, btnId, target, imgId) {
                 currentFile = path;
             }
             if(btnId == 'single'){
-                var imgClassForNone = document.getElementsByClassName('class-for-none');
-                for(var i=0; i<imgClassForNone.length; i++){
-                    imgClassForNone[i].style.display='none';
+                if(imgId != null && imgId != 'undefined'){
+                    var imgClassForNone = document.getElementsByClassName('class-for-none');
+                    for(var i=0; i<imgClassForNone.length; i++){
+                        imgClassForNone[i].style.display='none';
+                    }
+                    var imgId = document.getElementById(imgId);
+                    imgId.style.display='block';
                 }
-                var imgId = document.getElementById(imgId);
-                imgId.style.display='block';
 
                 removePopup();
                 oAudio.style.display='none';
@@ -44,15 +46,11 @@ function playAudio(path, btnId, target, imgId) {
                     popup = document.createElement("div");
                     popup.className = "popup";
                     target.parentNode.appendChild(popup);
-                    console.log(target);
-                    console.log(popup);
                     popup.style.top = (target.offsetTop - 10) + "px";
                     popup.style.left = (target.offsetLeft + 40) + "px";
                     oAudio.style.top = (target.getBoundingClientRect().top - 6 +  window.scrollY) + "px";
                     oAudio.style.left = (target.getBoundingClientRect().left + 45 ) + "px";
-
                     oAudio.style.display='block';
-                    console.log(popup);
                 }
                 else {
                     removePopup();
