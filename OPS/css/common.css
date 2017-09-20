@@ -191,3 +191,6 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 .display-none{
     display: none;
 }
+
+input[type="text"]:focus{outline: none;}
+textarea:focus{outline: none;}

@@ -27,9 +27,13 @@ input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c
 .mar_lt2{margin-left:21px;}
 .mar_lt3{margin-left:125px;}
 .mar_lt4{margin-left:159px;}
+.mg-l38{margin-left: 38px;}
 article dl{margin-top:5px;}
 article dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:16px;}
 article dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12px;line-height:18px;}
+article dd.sol:hover{color: #9a01cd;}
+article dd ul li{font-size: 12px;}
+article dd ul li:hover{color: #9a01cd;}
 
 li article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:30px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
 .rol_01 article:first-of-type h1{transform:rotate(-3deg);}
