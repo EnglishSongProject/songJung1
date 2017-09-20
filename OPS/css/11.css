@@ -10,8 +10,13 @@
 .part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
 .part_las .sub_tit span {font:15px "Noto Sans KR";  margin-left:14px;}
+<<<<<<< HEAD
 .part_las .btn_list{margin-left:5px !important}
 .part_las .btn_list.rol_btn_list{margin-left:548px !important}
+=======
+.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .btn_list {margin-left:5px !important}
+>>>>>>> 14490789392727165d3288ef8abb8e0eb3e6e92e
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
 .part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
