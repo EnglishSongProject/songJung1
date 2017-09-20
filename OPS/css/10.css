@@ -55,11 +55,7 @@ input.wp_input01:focus{outline: none;}
 .target_sentence span:nth-of-type(4) {left:495px}
 
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
-<<<<<<< HEAD
-.tip_con {font:11px "Nanum Gothic"; letter-spacing: -0.7px; class="hidden"}
-=======
-.tip_con {font:11px "Noto Sans KR"; letter-spacing: -0.5px; class:"hidden"}
->>>>>>> 0c87a8c330a66ffb7a246866b19b7061f164a8ff
+.tip_con {font:11px "Noto Sans KR"; letter-spacing: -0.5px;}
 
 /*슬라이더*/
 .slider_image_wrap .slider_image > li {
@@ -69,7 +65,6 @@ input.wp_input01:focus{outline: none;}
 .slider_image_wrap .slider_image li.on {
     display: block;
 }
-
 .slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
 .slider_thumbnail {text-align:center}
 .slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
