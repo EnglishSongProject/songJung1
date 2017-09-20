@@ -18,13 +18,15 @@ li{font-family: 'Nanum Gothic';font-size:14px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;}
-input[type="text"]:focus{outline: none;}
-.p09_answer{opacity: 0;}
-.p09_answer input[type="text"]{border:none;}
-.ls_1_t1_2{margin-left:13px;}
-.blank_bl{margin-left:18px;}
-.blank_bl1{margin-left:118px;}
-.blank_bl2{margin-left:155px;}
+.ls_1_t1{width:90px;}
+.ls_2_t1{width:42px;}
+.ls_2_t2{width:42px;}
+.ls_2_t3{width:42px;}
+.p09_answer{display:inline-block;font-family: "Nanum Gothic";color:Red;}
+.mar_lt{margin-left:16px;}
+.mar_lt2{margin-left:21px;}
+.mar_lt3{margin-left:125px;}
+.mar_lt4{margin-left:159px;}
 article dl{margin-top:5px;}
 article dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:16px;}
 article dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12px;line-height:18px;}
@@ -43,10 +45,10 @@ li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;displa
 .bg_icon button{display:block;width:25px;height:25px;position:absolute;top:22px;left:0;background-size:100%;}
 .rol_01 article:nth-of-type(1) p button{left:143px;}
 .rol_01 article:nth-of-type(2) p button{left:168px;}
-.rol_01 article:nth-of-type(3) p button{left:417px;}
-.rol_02 article:nth-of-type(1) p button{left:260px;}
-.rol_02 article:nth-of-type(2) p button{left:329px;}
-.rol_02 article:nth-of-type(3) p button{left:299px;}
+.rol_01 article:nth-of-type(3) p button{left:400px;}
+.rol_02 article:nth-of-type(1) p button{left:255px;}
+.rol_02 article:nth-of-type(2) p button{left:324px;}
+.rol_02 article:nth-of-type(3) p button{left:294px;}
 
 
 textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box; min-height: 120px; min-width:580px;max-height: 117px; max-width: 580px; padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;}
