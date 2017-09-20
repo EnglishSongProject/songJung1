@@ -9,6 +9,7 @@
 .part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
 .part_las .sub_tit span {font:15px "Noto Sans KR";  margin-left:14px;}
+.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .btn_list {margin-left:5px !important}
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}

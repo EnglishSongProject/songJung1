@@ -27,8 +27,8 @@
                             <div class="section">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_a.png" alt="A" />
-                                    Warm up
-                                    <span>What will the boy say?</span>
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01.mp3','single');">Warm up</span>
+                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01_1.mp3','single');">What will the boy say?</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
                                         <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
@@ -38,7 +38,9 @@
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/11/img_las2_01.jpg" alt="" />
-                                    <span class="textbox wp_text01">Sam, this is my dog, Bob. <br/>Bob, this is Sam.</span>
+                                    <span class="textbox wp_text01"><span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02.mp3','single');">Sam, this is my dog, Bob. </span><br/>
+                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02_1.mp3','single');">Bob, this is Sam.</span>
+                                    </span>
                                     <span class="textbox wp_text02">,Bob.</span>
                                     <input type="text" class="textbox wp_input01"/>
                                 </div>
@@ -216,6 +218,9 @@
                     </div>
                 </div>
             </div>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>
