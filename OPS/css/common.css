@@ -11,7 +11,7 @@ fieldset{border:none;}
 legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
 hr, caption {display:none;}
 img {border:none; vertical-align:middle;height:auto;}
-input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #0093cc !important;}
+input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #333 !important;}
 textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
 strong {font-weight:normal;}
 em,i {font-style:normal;}
@@ -33,18 +33,18 @@ table {border-collapse: collapse; border-spacing: 0;}
 ----------------------*/
 
 @font-face {font-family: 'Bubblegum Sans';font-style: normal;font-weight: 400;src: url(../fonts/BubblegumSans/BubblegumSans-Regular.woff) format('woff');}
-@font-face {font-family: 'Faustina';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Regular.woff) format('woff');}
-@font-face {font-family: 'Faustina';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Bold.woff) format('woff');}
+@font-face {font-family: 'Faustina Regular';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Regular.woff) format('woff');}
+@font-face {font-family: 'Faustina Bold';font-style: normal;font-weight: 400;src: url(../fonts/Faustina/Faustina-Bold.woff) format('woff');}
 @font-face {font-family: 'Fredoka One';font-style: normal;font-weight: 400;src: url(../fonts/FredokaOne/FredokaOne-Regular.woff) format('woff');}
-@font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 400;src: url(../fonts/NanumGothic/NanumGothic-Regular.woff) format('woff');}
-@font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 700;src: url(../fonts/NanumGothic/NanumGothic-Bold.woff) format('woff');}
-@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 400;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-ExtraBold.woff) format('woff');}
-@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 700;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-Regular.woff) format('woff');}
+@font-face {font-family: 'Nanum Gothic Regular';font-style: normal;font-weight: 400;src: url(../fonts/NanumGothic/NanumGothic-Regular.woff) format('woff');}
+@font-face {font-family: 'Nanum Gothic Bold';font-style: normal;font-weight: 700;src: url(../fonts/NanumGothic/NanumGothic-Bold.woff) format('woff');}
+@font-face {font-family: 'Nanum Myeongjo ExtraBold';font-style: normal;font-weight: 400;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-ExtraBold.woff) format('woff');}
+@font-face {font-family: 'Nanum Myeongjo Regular';font-style: normal;font-weight: 700;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-Regular.woff) format('woff');}
 @font-face {font-family: 'Nanum Pen';font-style: normal;font-weight: 700;src: url(../fonts/NanumPen/NanumPen-Regular.woff) format('woff');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(../fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(../fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff');}
-@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;src: url(../fonts/OpenSans/OpenSans-Regular.woff) format('woff');}
-@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;src: url(../fonts/OpenSans/OpenSans-Bold.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR Regular';font-style: normal;font-weight: 400;src: url(../fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR Bold';font-style: normal;font-weight: 700;src: url(../fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff');}
+@font-face {font-family: 'Open Sans Regular';font-style: normal;font-weight: 400;src: url(../fonts/OpenSans/OpenSans-Regular.woff) format('woff');}
+@font-face {font-family: 'Open Sans Bold';font-style: normal;font-weight: 700;src: url(../fonts/OpenSans/OpenSans-Bold.woff) format('woff');}
 @font-face {font-family: 'Patrick Hand';font-style: normal;font-weight: 700;src: url(../fonts/PatrickHand/PatrickHand-Regular.woff) format('woff');}
 @font-face {font-family: 'Roboto';font-style: normal;font-weight: 700;src: url(../fonts/Roboto/Roboto-Bold.woff) format('woff');}
 @font-face {font-family: 'SangSangAnt';font-style: normal;font-weight: 700;src: url(../fonts/SangSangAnt/SangSangAnt.woff) format('woff');}
@@ -180,4 +180,14 @@ input[type=checkbox]:checked.correct + label:before, input[type=radio]:checked.c
 }
 input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.false + label:before{
     color: red;
+}
+
+/*audio popup*/
+#myaudio {position: absolute;  }
+.popup{position:absolute; display: block; width:230px; height:40px; border:1px solid #ddd; background-color: #fafafa; border-radius: 5px; border:none; box-shadow: 2px 2px 2px #888888 ;}
+.popup:after {position: absolute; top:50%; left:-15px; transform:translateY(-50%); display: block; content:"";border: 8px solid transparent; border-right-color: #fff}
+
+/*display-none*/
+.display-none{
+    display: none;
 }
