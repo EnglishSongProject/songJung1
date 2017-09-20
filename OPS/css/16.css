@@ -6,6 +6,7 @@
   background-repeat:no-repeat; background-size: contain;width:155px; height: 41px;position: relative;}
 .first div p{font-family: 'Faustina';font-size: 19px;line-height: 38px;}
 .top,.bottom{padding-left: 20px}
+.top p:hover,.bottom p:hover{cursor: pointer !important;}
 .top{ margin-left: 262px;margin-top: 27px;width: 300px; height: 300px;}
 .bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
 .transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
