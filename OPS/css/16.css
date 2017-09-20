@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.first {background: url(../images/16/16back.jpg) no-repeat 0 0; background-size: cover}
+
+.page_tit{ text-indent: -9999px; display: block;background:url(../images/16/read.png) center center;
+  background-repeat:no-repeat; background-size: contain;width:155px; height: 41px;position: relative;}
+.first div p{font-family: 'Faustina';font-size: 19px;line-height: 38px;}
+.top,.bottom{padding-left: 20px}
+.top p:hover,.bottom p:hover{cursor: pointer !important;}
+.top{ margin-left: 262px;margin-top: 27px;width: 300px; height: 300px;}
+.bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
+.transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
+.transper_b{display: none;position: absolute;width: 350px;height: 0px; top: 534px; left: 196px;}
+.transper_t p,.transper_b p{font-size: 15px !important; color: #339900;}
+
+/*해석보기*/
+
+#btn_top:checked ~ .transper_t{ display:block;}
+#btn_bottom:checked ~ .transper_b{display: block;}
+.b_top,.b_bottom{position:relative; display: inline-block; width:25px; height:25px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;
+cursor: pointer;}
+.b_top p,.b_bottom p{position: absolute;}
+.btn_mp3_a.b_top{top:20px; left:279px;}
+.btn_mp3_a.b_bottom{top:20px; left:140px;}
+
+/*label-commom파일 스타일제거*/
+input[type=checkbox] + label:before{display:none}
+input[type=checkbox] + label{padding-left: 0;}
+
+label.l_top {position: absolute;top:28px;left: 285px;}
+label.l_bottom{position: absolute;top:28px;left: 146px;}
+
+.top span,.bottom span{font-family: 'Nanum Gothic';font-size: 9px; position: absolute;display: block;}
+.top span{top: 319px;right: 130px}
+.bottom span{bottom: 367px;right: 300px;}
+
+.ask_and_speak{position: relative;padding-top: 90px;padding-left: 284px;font-family: 'Open Sans';font-size: 13px;}
+.ask_and_speak img{margin-top: -15px;}
+.ask_and_speak #a_text{position: absolute;margin-left: 175px;width: 175px;padding: 3px;display: none;margin-top: -2px;border: 1px solid #999;}
+#answer_check:checked ~ #a_text{display: block;}
+
+.ask_and_speak h3{}
+.ask_and_speak h3:before{content:"2";font-family: 'Noto Sans KR ' !important;font-size: 13px; color:#FF4A23;margin-right: 5px;}
+.ask_and_speak ul li{float: left;}
+
+.ask_and_speak ul.ask{overflow: hidden;margin-top: 30px;z-index: 10;position:relative;}
+.ask_and_speak ul.ask li{padding-right: 17px;}
+
+.ask_and_speak ul.answer{overflow: hidden; display:block; position: absolute;padding-bottom: 10px;}
+.ask_and_speak ul.answer li{float: left;}
+
+.balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
+
+.balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
+
+
+
+
+#answer_btn{cursor: pointer;}

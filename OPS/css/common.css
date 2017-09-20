@@ -154,8 +154,9 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*font-color*/
 .color-blue{color:#0101ff;}
 
-/*class:hover*/
-.active-purple:hover {color: #9a01cd; }
+.color-green{
+    color: #339900;
+}
 
 /*class:hover*/
 .active-purple:hover {color: #9a01cd; }
@@ -212,3 +213,6 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 .display-none{
     display: none;
 }
+
+input[type="text"]:focus{outline: none;}
+textarea:focus{outline: none;}

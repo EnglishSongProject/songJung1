@@ -5,43 +5,81 @@
         <meta name="viewport" content="width=768, height=1024"/>
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/16.css" />
     </head>
     <body>
-        <div class="wrapper">
+        <div class="first wrapper">
             <h1 class="page_tit">
                 Reading time
             </h1>
-            <div>
+            <button type="button" class="btn_type_02 btn_mp3_a b_top" title="mp3전체 듣기">mp3전체듣기</button>
+            <input type="checkbox" id="btn_top"></input>
+            <label for="btn_top" class="btn_type_02 btn_trans l_top"></label>
+            <div class="top">
+                <p class="active-purple">Here’s my name tent.</p>
+                <p class="active-purple">My name is Kang Hosik.</p>
+                <p class="active-purple">I like cookies and doughnuts.</p>
+                <p class="active-purple">I am not a great baker.</p>
+                <p class="active-purple">But my cheesecake is fantastic.</p>
+                <p class="active-purple">Now it’s your turn.</p>
+                <span>5</span>
+            </div>
+            <div class="transper_t">
                 <p>
-                    Here’s my name tent.
-                    My name is Kang Hosik.
-                    I like cookies and doughnuts.
-                    I am not a great baker.
-                    But my cheesecake is fantastic.
-                    Now it’s your turn.
+                    여기 제 네임 텐트가 있어요.<br/>
+                    제 이름은 강호식입니다.<br/>
+                    저는 쿠키와 도넛을 좋아합니다.<br/>
+                    저는 훌륭한 제빵사는 아닙니다.<br/>
+                    그렇지만 제 치즈 케이크는 환상적입니다.<br/>
+                    이제 여러분 차례에요.
                 </p>
             </div>
-            <div>
+            <button type="button" class="btn_type_02 btn_mp3_a b_bottom" title="mp3전체 듣기">mp3전체듣기</button>
+            <input type="checkbox" id="btn_bottom"></input>
+            <label for="btn_bottom" class="btn_type_02 btn_trans l_bottom"></label>
+            <div class="bottom">
+                <p class="active-purple">My name is Song Ara.</p>
+                <p class="active-purple">I am active.</p>
+                <p class="active-purple">I like taking trips and camping.</p>
+                <p class="active-purple">I’m a good map reader.</p>
+                <p class="active-purple">My nickname is Song Navi.</p>
+                <span>10</span>
+            </div>
+
+            <div class="transper_b">
                 <p>
-                    My name is Song Ara.
-                    I am active.
-                    I like taking trips and camping.
-                    I’m a good map reader.
-                    My nickname is Song Navi.
+                    제 이름은 송아라입니다.<br/>
+                    저는 활동적입니다.<br/>
+                    저는 여행하는 것과 캠핑하는 것을 좋아합니다.<br/>
+                    저는 지도를 잘 읽습니다.<br/>
+                    제 별명은 송 내비입니다.
                 </p>
             </div>
-        </div>
-        <div class="ask_and_speak">
-            <h3>  What is Ara’s nickname? </h3>
-            <ul>
-                <li>• baker</li>
-                <li>• fantastic</li>
-                <li>• fantastic</li>
-                <li>• turn</li>
-                <li>• active</li>
-                <li>• trip</li>
-                <li>• camping</li>
-            </ul>
-        </div>
+            <div class="ask_and_speak">
+              <img src="images/16/AA.png" alt="ask_and_answer"/>
+              <input type="checkbox" id="answer_check"/>
+              <label class="btn_type_02 btn_answer" id="answer_btn" for="answer_check"></label>
+              <input type="text" id="a_text" />
+              <h3>  What is Ara’s nickname? </h3>
+
+              <ul class="answer">
+                  <li class="aa_answer1 balloon">제빵사</li>
+                  <li class="aa_answer2 balloon">환상적인</li>
+                  <li class="aa_answer3 balloon">순번, 차례</li>
+                  <li class="aa_answer4 balloon">활동적인, 적극적인</li>
+                  <li class="aa_answer5 balloon">여행</li>
+                  <li class="aa_answer6 balloon">캠핑, 여행</li>
+              </ul>
+              <ul class="ask">
+                  <li class="aa_ask1">• baker</li>
+                  <li class="aa_ask2">• fantastic</li>
+                  <li class="aa_ask3">• turn</li>
+                  <li class="aa_ask4">• active</li>
+                  <li class="aa_ask5">• trip</li>
+                  <li class="aa_ask6">• camping</li>
+              </ul>
+
+            </div><!--ask_and_speak-->
+        </div><!--first wrapper-->
     </body>
 </html>

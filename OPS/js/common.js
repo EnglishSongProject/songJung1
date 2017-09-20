@@ -28,13 +28,12 @@ function playAudio(path, btnId, target, imgId) {
                     var imgId = document.getElementById(imgId);
                     imgId.style.display='block';
                 }
-
                 removePopup();
                 oAudio.style.display='none';
                 if (oAudio.paused){
                     oAudio.play();
                 }else{
-                    oAudio.pause();
+                    return;
                 }
             }else {
                 // Tests the paused attribute and set state.
@@ -203,17 +202,20 @@ function blankCheck(questionId, Ids, answers){
     }
 }
 
-function blankCheckByCss(questionId, Ids){
+function blankCheckByCss(questionId, Ids, clearId){
     var questionId = document.getElementById(questionId);
     var answerIdArray;
+    var clearArray;
     var answerId;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
     //포함하고 있지 않다면 단일 빈칸 체크임
     if(Ids.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
         answerIdArray =  Ids.split('+');
+        clearArray = clearId.split('+');
     }else{//단일일경우(단일 빈칸체크일 경우
         answerIdArray = [Ids];
+        clearArray = [clearId];
     }
     if(questionId.title =='답안'){
         $(questionId).removeClass('btn_answer');
@@ -228,6 +230,11 @@ function blankCheckByCss(questionId, Ids){
         $(questionId).addClass('btn_answer');
         questionId.title = '답안';
         for(var i=0; i<answerIdArray.length; i++){
+            clearId = document.getElementById(clearArray[i]);
+            clearId.value='';
+            if(clearId.value != null && clearId.value != ''){
+                clearId.value='';
+            }
             answerId = document.getElementById(answerIdArray[i]);
             answerId.style.display='none';
         }
@@ -301,5 +308,11 @@ function radioCorrectCheckSeperForAll(name, answer){
         return 1;
     }else{
         return 0;
+    }
+}
+function textClear(idForClear) {
+    var id = document.getElementById(idForClear);
+    if(id.value != null && id.value != ''){
+        id.value='';
     }
 }
