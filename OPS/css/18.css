@@ -12,23 +12,55 @@ h1.page_tit{display:block;text-indent:-9999px;overflow: hidden;background: url(.
 /* container */
 .container>div{position:relative;}
 .container>div:nth-of-type(1){height:487px;}
-.container>div:nth-of-type(1)>p>img{position:absolute;left:35px;top:30px;width:170px;}
+
+@keyframes Bus_ani {
+  0%{}
+  50%{width:190px;height:130px;}
+  100%{}
+}
+/* width:119 height:72*/
+.container>div:nth-of-type(1)>p>img{position:absolute;bottom:340px;left:35px;width:170px;height:103px;z-index: 100;animation: Bus_ani 900ms linear 0s infinite;transform-origin: center;}
 .container>div:nth-of-type(2) {height:400px;}
 h2{font-family: 'Open Sans';font-size:13px;font-weight:bold;}
 h2>img{margin-right:5px;width:25px;height:25px;}
+div.bt_A,div.bt_B{position:absolute;right:70px;top:0;}
+div.bt_B{right:200px;}
 
 /* 문제1 */
 .Q_A{display:inline-block;position:absolute;left:50%;top:40px;margin-left:-295px;width:585px;height:400px;}
-.Q_A_inner{border:1px solid red;width:170px;height:100px;position:absolute;}
+.Q_A_inner{width:170px;height:100px;position:absolute;}
+.Q_A_inner dt{font-family: "Nanum Gothic";font-weight:700;font-size:12px;position:absolute;left:0;}
+.Q_A_inner dd{font-family: "Open sans";font-weight:700;font-size:15px;position:absolute;left:50%;}
+.true,.false{font-family: "Open sans";font-weight:700;font-size:17px;position:absolute;}
+
 .Q_A_inner1{left:290px;top:65px;}
+.Q_A_inner1 dt{top:56px;}
+.Q_A_inner1 dd{width:90px;top:8px;margin-left:-20px;}
+.Q_A_inner1 .true{right:6px;top:17px;}
+.Q_A_inner1 .false{right:10px;top:51px;}
+
 .Q_A_inner2{left:330px;top:220px;}
+.Q_A_inner2 dt{top:32px;left:2px;}
+.Q_A_inner2 dd{width:110px;top:33px;margin-left:-45px;}
+.Q_A_inner2 .true{left:7px;top:51px;}
+.Q_A_inner2 .false{right:93px;top:1px;}
+
 .Q_A_inner3{left:45px;top:100px;}
+.Q_A_inner3 dt{top:53px;left:2px;}
+.Q_A_inner3 dd{width:90px;top:28px;margin-left:-35px;}
+.Q_A_inner3 .true{left:40px;}
+.Q_A_inner3 .false{left:67px;bottom:0;}
+
 .Q_A_inner4{left:95px;top:255px;}
+.Q_A_inner4 dt{top:45px;left:2px;}
+.Q_A_inner4 dd{width:80px;margin-left:-35px;top:20px;}
+.Q_A_inner4 .true{right:6px;top:21px;}
+.Q_A_inner4 .false{left:69px;bottom:5px;}
 
 /* 문제2 */
 .Q_B{position:absolute;left:50%;top:75px;margin-left:-185px;width:370px;}
 .Q_B dt{float:left;font-family: 'Open Sans';font-weight:200;font-size:14px;line-height:20px;margin-bottom:15px;width:50PX;text-align: right;margin-right:5px;}
-.Q_B dd{font-family: 'Faustina';font-weight:200;font-size:16px;line-height:20px;margin-left:10px;margin-bottom:15px;}
+.Q_B dd{font-family: 'Faustina';font-weight:200;font-size:16px;line-height:20px;margin-bottom:15px;margin-left:10px;}
 .Q_B dd input[type="text"]{border-bottom:1px solid #a9a9a9;font:16px 'Faustina';font-weight:200;}
 .Q_B dd .read_txt_1 input[type="text"]:nth-of-type(1){width:75px;}
 .Q_B dd .read_txt_1 input[type="text"]:nth-of-type(2){width:55px;}
