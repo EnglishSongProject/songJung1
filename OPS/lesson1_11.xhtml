@@ -27,32 +27,34 @@
                             <div class="section">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_a.png" alt="A" />
-                                    Warm up
-                                    <span>What will the boy say?</span>
+                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01.mp3', 'single');" class="audio_tit">Warm up</span>
+                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01_1.mp3', 'single');">What will the boy say?</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_01.mp3','',this);">mp3전체듣기</button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button type="button" id="ls2_wu_t1_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls2_wu_t1_q', 'ls2_wu_t1_a', 'ls2_wu_t1');">답안</button>
                                     </span>
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/11/img_las2_01.jpg" alt="" />
-                                    <span class="textbox wp_text01">Sam, this is my dog, Bob. <br/>Bob, this is Sam.</span>
-                                    <span class="textbox wp_text02">,Bob.</span>
-                                    <input type="text" class="textbox wp_input01"/>
+                                    <span class="textbox wp_text01"><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02.mp3', 'single');">Sam, this is my dog, Bob.</span>
+                                        <br/><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02_1.mp3', 'single');">Bob, this is Sam.</span></span>
+                                    <span class="textbox wp_text02 active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a03.mp3', 'single');">,Bob.</span>
+                                    <input id="ls2_wu_t1" type="text" class="textbox wp_input01" maxlength="20"/>
+                                    <span id="ls2_wu_t1_a" class="textbox wp_text03 display-none">Nice to meet you</span>
                                 </div>
                             </div>
                             <!-- section B-->
                             <div class="section section02 mt_50">
                                 <h2 class="sub_tit">
                                     <img src="./images/10/tit_las_b.png" alt="C" />
-                                    Listen and Check
-                                    <span>Listen and number the pictures.</span>
+                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01.mp3', 'single');" class="audio_tit">Listen and Number</span>
+                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01_1.mp3', 'single');" >Listen and number the pictures.</span>
                                     <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_02.mp3','',this);">mp3전체듣기</button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button id="ls2_lan_t_q" type="button" class="btn_type_02 btn_answer" title="답안" onclick="listenAndNumberCheck('ls2_lan_t_q', 'ls2_lan_t1+ls2_lan_t2+ls2_lan_t3', '1+3+2');">답안</button>
                                     </span>
                                 </h2>
                                 <div class="tip_wrap mt_5">
@@ -61,9 +63,9 @@
                                 </div>
                                 <div class="img_content" style="padding-top:20px">
                                     <img src="./images/11/img_las2_02.jpg" alt="" />
-                                    <input type="text" maxlength="1" />
-                                    <input type="text" maxlength="1" />
-                                    <input type="text" maxlength="1" />
+                                    <input id="ls2_lan_t1" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+                                    <input id="ls2_lan_t2" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+                                    <input id="ls2_lan_t3" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
                                 </div>
                             </div>
                         </li>
@@ -79,9 +81,9 @@
                                         <div class="rolling_image_wrap">
                                             <ul>
                                                 <li data-num="1" class="rolling_01 on">
-                                                    <span class="btn_list mt_5 fr" style="display:block; text-align:right">
+                                                    <span class="btn_list mt_5 rol_btn_list" style="display:block; text-align:right;">
                                                         <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_a.mp3','',this);">mp3전체듣기</button>
                                                         <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
                                                     </span>
                                                     <img src="./images/11/c_rol_01.png" alt="" />
@@ -112,11 +114,6 @@
                                                     </ul>
                                                 </li>
                                                 <li data-num="2" class="rolling_02">
-                                                    <span class="btn_list mt_5 fr" style="display:block; text-align:right">
-                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                                        <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
-                                                    </span>
                                                     <img src="./images/11/c_rol_02.png" alt="" />
                                                     <span class="img_txt">
                                                         best friend / <br />
@@ -145,11 +142,6 @@
                                                     </ul>
                                                 </li>
                                                 <li data-num="3" class="rolling_03">
-                                                    <span class="btn_list mt_5 fr" style="display:block; text-align:right">
-                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                                        <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
-                                                    </span>
                                                     <img src="./images/11/c_rol_03.png" alt="" />
                                                     <span class="img_txt">
                                                         neighbor / <br />
@@ -178,11 +170,6 @@
                                                     </ul>
                                                 </li>
                                                 <li data-num="4" class="rolling_04">
-                                                    <span class="btn_list mt_5 fr" style="display:block; text-align:right">
-                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                                        <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
-                                                    </span>
                                                     <img src="./images/11/c_rol_04.png" alt="" />
                                                     <span class="img_txt">
                                                         classmate / <br />
@@ -231,6 +218,9 @@
                     </div>
                 </div>
             </div>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>
