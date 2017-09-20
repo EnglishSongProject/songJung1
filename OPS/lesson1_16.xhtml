@@ -6,25 +6,28 @@
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/16.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
     </head>
     <body>
         <div class="first wrapper">
             <h1 class="page_tit">
                 Reading time
             </h1>
-            <button type="button" class="btn_type_02 btn_mp3_a b_top" title="mp3전체 듣기">mp3전체듣기</button>
+            <button type="button" class="btn_type_02 btn_mp3_a b_top" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_w01.mp3','',this);">mp3전체듣기</button>
             <input type="checkbox" id="btn_top"></input>
             <label for="btn_top" class="btn_type_02 btn_trans l_top"></label>
             <div class="top">
-                <p class="active-purple">Here’s my name tent.</p>
-                <p class="active-purple">My name is Kang Hosik.</p>
-                <p class="active-purple">I like cookies and doughnuts.</p>
-                <p class="active-purple">I am not a great baker.</p>
-                <p class="active-purple">But my cheesecake is fantastic.</p>
-                <p class="active-purple">Now it’s your turn.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_01.mp3', 'single');">Here’s my name tent.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_02.mp3', 'single');">My name is Kang Hosik.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_03.mp3', 'single');">I like cookies and doughnuts.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_04.mp3', 'single');">I am not a great baker.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_05.mp3', 'single');">But my cheesecake is fantastic.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_06.mp3', 'single');">Now it’s your turn.</p>
                 <span>5</span>
             </div>
-            <div class="transper_t">
+            <div class="transper_t color-green">
                 <p>
                     여기 제 네임 텐트가 있어요.<br/>
                     제 이름은 강호식입니다.<br/>
@@ -34,19 +37,19 @@
                     이제 여러분 차례에요.
                 </p>
             </div>
-            <button type="button" class="btn_type_02 btn_mp3_a b_bottom" title="mp3전체 듣기">mp3전체듣기</button>
+            <button type="button" class="btn_type_02 btn_mp3_a b_bottom" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_w02.mp3','',this);">mp3전체듣기</button>
             <input type="checkbox" id="btn_bottom"></input>
             <label for="btn_bottom" class="btn_type_02 btn_trans l_bottom"></label>
             <div class="bottom">
-                <p class="active-purple">My name is Song Ara.</p>
-                <p class="active-purple">I am active.</p>
-                <p class="active-purple">I like taking trips and camping.</p>
-                <p class="active-purple">I’m a good map reader.</p>
-                <p class="active-purple">My nickname is Song Navi.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_07.mp3', 'single');">My name is Song Ara.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_08_01.mp3', 'single');">I am active.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_08_02.mp3', 'single');">I like taking trips and camping.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_09.mp3', 'single');">I’m a good map reader.</p>
+                <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_10.mp3', 'single');">My nickname is Song Navi.</p>
                 <span>10</span>
             </div>
 
-            <div class="transper_b">
+            <div class="transper_b color-green">
                 <p>
                     제 이름은 송아라입니다.<br/>
                     저는 활동적입니다.<br/>
@@ -60,7 +63,7 @@
               <input type="checkbox" id="answer_check"/>
               <label class="btn_type_02 btn_answer" id="answer_btn" for="answer_check"></label>
               <input type="text" id="a_text" />
-              <h3>  What is Ara’s nickname? </h3>
+              <h3 onclick="playAudio('./media/audio/L01/016/L01_016_read_q_02_1.mp3', 'single');">  What is Ara’s nickname? </h3>
 
               <ul class="answer">
                   <li class="aa_answer1 balloon">제빵사</li>
@@ -71,15 +74,18 @@
                   <li class="aa_answer6 balloon">캠핑, 여행</li>
               </ul>
               <ul class="ask">
-                  <li class="aa_ask1">• baker</li>
-                  <li class="aa_ask2">• fantastic</li>
-                  <li class="aa_ask3">• turn</li>
-                  <li class="aa_ask4">• active</li>
-                  <li class="aa_ask5">• trip</li>
-                  <li class="aa_ask6">• camping</li>
+                  <li class="aa_ask1" onclick="playAudio('./media/audio/L01/016/L01_016_w01.mp3', 'single');">• baker</li>
+                  <li class="aa_ask2" onclick="playAudio('./media/audio/L01/016/L01_016_w02.mp3', 'single');">• fantastic</li>
+                  <li class="aa_ask3" onclick="playAudio('./media/audio/L01/016/L01_016_w03.mp3', 'single');">• turn</li>
+                  <li class="aa_ask4" onclick="playAudio('./media/audio/L01/016/L01_016_w04.mp3', 'single');">• active</li>
+                  <li class="aa_ask5" onclick="playAudio('./media/audio/L01/016/L01_016_w05.mp3', 'single');">• trip</li>
+                  <li class="aa_ask6" onclick="playAudio('./media/audio/L01/016/L01_016_w06.mp3', 'single');">• camping</li>
               </ul>
 
             </div><!--ask_and_speak-->
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div><!--first wrapper-->
     </body>
 </html>
