@@ -10,7 +10,7 @@
 .bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
 .transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
 .transper_b{display: none;position: absolute;width: 350px;height: 0px; top: 534px; left: 196px;}
-.transper_t p,.transper_b p{font-size: 15px !important;}
+.transper_t p,.transper_b p{font-size: 15px !important; color: #339900;}
 
 /*해석보기*/
 
