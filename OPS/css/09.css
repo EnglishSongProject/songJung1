@@ -2,8 +2,8 @@
 
 /* layout */
 
-.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:10px -150px;transform:rotate(-2.5deg);}
-.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:5px -150px;width:300px;background:#B4DdC8;text-align:center;}
+.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:10px -150px;transform:rotate(-2.5deg);font-family: "Open Sans Bold";}
+.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:5px -150px;width:320px;background:#B4DdC8;text-align:center;font-family: "Open Sans";}
 .slider_area{height: 770px;margin: 0 auto;position: relative; width: 600px;}
 .slider_area > .slider_content{width:1200px;position: relative;top:0;left:0;}
 .slider_image_wrap{width:600px;position: relative;top:0;left:0;z-index:100;}
@@ -40,13 +40,13 @@ li article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;p
 li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
 .a_check{background:url(../images/09/a_check_bt.png) no-repeat 0 0;}
 .a_replay{background:url(../images/09/replay_bt.png) no-repeat 0 0;}
-.bg_icon button{display:block;width:25px;height:25px;position:absolute;top:22px;left:0;left:0;background-size:100%;}
-.rol_01 article:nth-of-type(1) p button{left:135px;}
-.rol_01 article:nth-of-type(2) p button{left:160px;}
-.rol_01 article:nth-of-type(3) p button{left:390px;}
-.rol_02 article:nth-of-type(1) p button{left:245px;}
-.rol_02 article:nth-of-type(2) p button{left:312px;}
-.rol_02 article:nth-of-type(3) p button{left:282px;}
+.bg_icon button{display:block;width:25px;height:25px;position:absolute;top:22px;left:0;background-size:100%;}
+.rol_01 article:nth-of-type(1) p button{left:143px;}
+.rol_01 article:nth-of-type(2) p button{left:168px;}
+.rol_01 article:nth-of-type(3) p button{left:417px;}
+.rol_02 article:nth-of-type(1) p button{left:260px;}
+.rol_02 article:nth-of-type(2) p button{left:329px;}
+.rol_02 article:nth-of-type(3) p button{left:299px;}
 
 
 textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box; min-height: 120px; min-width:580px;max-height: 117px; max-width: 580px; padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;}
