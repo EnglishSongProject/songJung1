@@ -6,7 +6,7 @@
 /*  Reading Time Title*/
 .page_tit {position: absolute; display: block; width: 200px; height: 120px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.svg") no-repeat 0 0; background-size: cover}
 .info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
-.btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 590px; background-size: cover;}
+.btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 560px; background-size: cover;}
 
 /* 본문 */
 .reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.svg")}
