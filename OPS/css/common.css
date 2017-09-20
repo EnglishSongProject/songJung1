@@ -85,7 +85,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .ml_5{ margin-left: 5px;}
 .ml_10{ margin-left: 10px;}
 .ml_15{margin-left: 15px;}
-
+.ml_20{margin-left: 20px;}
 
 /* 버튼 */
 .btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
