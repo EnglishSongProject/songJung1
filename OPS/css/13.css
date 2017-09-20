@@ -5,6 +5,7 @@
 .p13_ct {position: absolute; display: block; top: 43px; content: url("../images/13/lesson_1_p13_ct.png");}
 
 /* Step 1 */
+.p13_step1_list {}
 .p13_step1 {position: absolute; top: 130px;}
 .p13_step1 p {padding: 16px; margin-left: 200px; font-family: "Faustina"; font-size: 16px;}
 .step1_red {color: #ae69aa;}
@@ -14,6 +15,10 @@
 
 /* Step 3 */
 .p13_step3 {position: absolute; top: 520px;}
+
+/* Self Check */
+.p13_self_check {position: absolute; display: block; width: 7%; top: 880px; left: 70px; content: url("../images/13/lesson_1_p13_self_check.svg");}
+.p13_self_check + p {font-family: "Nanum Gothic"; font-size: 11px; line-height: 23px; position: absolute; display: block; top: 910px; left: 135px;}
 
 /*슬라이더*/
 .slider_content {margin-top: 20px;}
