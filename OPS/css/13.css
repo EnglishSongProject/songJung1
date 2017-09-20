@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 배경 */
+.intro {background: url("../images/13/bg_lesson01_13.jpg") no-repeat 0 0; background-size: cover}
+.p13_ct {position: absolute; display: block; top: 43px; content: url("../images/13/lesson_1_p13_ct.png");}
+
+/* Step 1 */
+.p13_step1 {position: absolute; top: 130px;}
+.p13_step1 p {padding: 16px; margin-left: 200px; font-family: "Faustina"; font-size: 16px;}
+.step1_red {color: #ae69aa;}
+
+/* Step 2 */
+.p13_step2 {position: absolute; top: 450px;}
+
+/* Step 3 */
+.p13_step3 {position: absolute; top: 520px;}
+
+/*슬라이더*/
+.slider_content {margin-top: 20px;}
+.slider_image_wrap .slider_image > li {display: none; text-align: center;}
+
+.slider_image_wrap .slider_image li.on {display: block;}
+
+.slider_thumbnail_area {position: absolute; top:320px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}

@@ -10,7 +10,7 @@
 
 /* 본문 */
 .reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.svg")}
-.section > p {font: 19px 'Faustina Regular'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
+.section > p {font: 19px 'Faustina'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
 .section > p.correct {font: 11px 'Open Sans'; font-weight: 700; color: #1c8a24; position: absolute; top: 330px; line-height: 38px; display: none;}
 
 .btn_mp3_a {position: relative; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 100px; background-size: cover;}
@@ -29,8 +29,8 @@
 .btn_answer + p {position: absolute; display: block; top: 25px;}
 .btn_answer + p + span {position: absolute; color: #FF4A23; size: 13px;}
 
-.ask {position: absolute; top: 30px;}
-.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 8px;}
+.ask {position: absolute; top: 45px;}
+.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 0; top: 45px;}
 .aa_ask1 {position: relative; display: block; top: 50px; left: 10px;}
 .aa_ask2 {position: relative; display: block; top: 50px; left: 30px;}
 
