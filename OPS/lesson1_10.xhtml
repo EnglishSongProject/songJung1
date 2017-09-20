@@ -33,14 +33,14 @@
                                         <button type="button" class="btn_type_02 btn_play" title="영상 플레이"></button>
                                         <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_01.mp3','',this);"></button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본"></button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_wu_t1_q" onclick="blankCheckByCss('ls1_wu_t1_q', 'ls1_wu_t1_a');"></button>
+                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_wu_t1_q" onclick="blankCheckByCss('ls1_wu_t1_q', 'ls1_wu_t1_a', 'ls1_wu_t1');"></button>
                                     </span>
                                 </h2>
                                 <div class="img_content">
                                     <img src="./images/10/img_las_01.jpg" alt="" />
-                                    <span class="textbox wp_text01" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a02.mp3','single');">How are you <br/>doing?</span>
+                                    <span class="textbox wp_text01 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a02.mp3','single');">How are you <br/>doing?</span>
                                     <span class="textbox wp_text02 display-none" id="ls1_wu_t1_a">Not so good.</span>
-                                    <input type="text" class="textbox wp_input01" maxlength="12"/>
+                                    <input type="text" class="textbox wp_input01" maxlength="12" id="ls1_wu_t1"/>
                                 </div>
                             </div>
                             <!-- section B-->
@@ -110,8 +110,12 @@
                                         <span>Not so good.</span>
                                     </div>
                                 </div>
+<<<<<<< HEAD
 
                                 <div class="tip_wrap mt_60">
+=======
+                                <div class="tip_wrap mt_35">
+>>>>>>> 51cc963c8c2d9fcb7f7b91288a681f4928d353e4
                                     <a href="#this" class="btn_tip">TIP</a>
                                     <span class="tip_con hide">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
                                 </div>
@@ -119,8 +123,8 @@
                                 <div class="eg mt_5">
                                     <div>
                                         <ul>
-                                            <li><em>A</em>:<span class="blue ml_5"> Jason</span>, how are you doing today?</li>
-                                            <li><em>B</em>:<span class="blue ml_5"> I’m great.</span></li>
+                                            <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_01.mp3', 'single');" class="active-purple"><span class="blue ml_5"> Jason</span>, how are you doing today?</span></li>
+                                            <li><em>B</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_02.mp3', 'single');" class="blue ml_5 active-purple"> I’m great.</span></li>
                                         </ul>
                                     </div>
                                     <div class="hide">
