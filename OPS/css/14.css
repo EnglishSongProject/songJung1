@@ -6,10 +6,10 @@
 /*title*/
 .page_tit>img{position: absolute; top: 55px; left: 52px;}
 /*A question*/
-.section1>h2>img{position: absolute; top:122px; }
-.section1>h2>p{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
+.section1>h2>img{position: absolute; top:-3px; left: -33px; }
+.section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*다시 아이콘*/
-.btn_repeat{position: absolute; top: 122px; left:588px; }
+.btn_repeat{position: absolute; top: 122px; left:555px; }
 
 
 /*name*/
@@ -29,21 +29,21 @@
 .section02 label:nth-of-type(3) {top: 263px; left: -60px;}
 .section02 label:nth-of-type(4) {top: 263px; left: 315px;}
 .section02 label:nth-of-type(5) {top: 376px; left: -150px;}
-.section02 label:nth-of-type(6) {top: 376px; left: 225px;}
+.section02 label:nth-of-type(6) {top: 376px; left: 227px;}
 
 /*yourown*/
 .af>img{position: absolute; top: 398px; left:515px; }
-.a_text{position: absolute; top: 442px; left: 562px;}
+.a_text{position: absolute; top: 442px; left: 560px; width: 130px; background: rgba(0,0,0,0);font-family: 'Noto Sans KR';font-size: 15px;}
 
 
 /*B question*/
 .section2>h2>img{position: absolute; top:550px; }
-.section2>h2>p{position: relative; top: 460px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
+.section2>h2>span:nth-of-type(1){position: relative; top: 460px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*tip icon*/
-.btn_tip{position: absolute; top: 552px; left: 420px;}
-.transfer {display: none; position: absolute; top: 554px; left: 465px; font-family: 'Noto Sans KR'; font-size: 9px;}
+.btn_tip{position: absolute; top: 552px; left: 400px;}
+.transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 11px;}
 /*답 아이콘*/
-.btn_answer{position: absolute; top: 551px; left: 385px;}
+.btn_answer{position: absolute; top: 551px; left: 365px;}
 
 /*b 문제*/
 .number {position: absolute;  width:500px; height: 15px; top:630px; left:120px;}
@@ -58,13 +58,13 @@
 .num_3{position: absolute; top: 26px;left: 375px;}
 .num_3_1{position: absolute; top: 48px;left: 389px;}
 
-.a_text1{position: absolute; /*border: 1px solid red;*/ top: 44px; width: 70px;left:20px; }
-.a_text2{position: absolute;/* border: 1px solid blue;*/ top: 29px; width: 70px;left:231px; }
-.a_text3{position: absolute;/* border: 1px solid orange;*/ top: 47px; width: 70px;left:402px; }
+.a_text1{position: absolute; /*border: 1px solid red;*/ top: 43px; width: 70px;left:20px; background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
+.a_text2{position: absolute; /*border: 1px solid blue;*/ top: 27px; width: 70px;left:231px;  background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
+.a_text3{position: absolute; /*border: 1px solid orange;*/ top: 46px; width: 70px;left:402px;  background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
 
 
-.word{position: absolute;width: 280px; top: 895px; left: 260px; font-family: 'Noto Sans KR'; font-size: 15px;}
-.word>li{float: left; padding-right:43px; }
+.word{position: absolute;width: 290px; top: 895px; left: 260px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.word>li{float: left; padding-right:40px; }
 
 
 
