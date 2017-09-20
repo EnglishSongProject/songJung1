@@ -8,7 +8,6 @@
 .slider_area > .slider_content{width:1200px;position: relative;top:0;left:0;}
 .slider_image_wrap{width:600px;position: relative;top:0;left:0;z-index:100;}
 .slider_thumbnail_area { height: 765px; left: 50%; margin-left: -50%; overflow: hidden; position: relative; top:0; width: 50%;}
-
 li{font-family: 'Nanum Gothic';font-size:14px;}
 
 .slider_image > li{display:none;width:100%;position:absolute;left:0;top:0;}
@@ -19,6 +18,7 @@ li{font-family: 'Nanum Gothic';font-size:14px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;}
+input[type="text"]:focus{outline: none;}
 .p09_answer{opacity: 0;}
 .p09_answer input[type="text"]{border:none;}
 .ls_1_t1_2{margin-left:13px;}
