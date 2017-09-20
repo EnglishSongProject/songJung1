@@ -2,25 +2,90 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=768, height=1024"/>
         <title>lesson1</title>
-        <link rel="stylesheet" href="css/common.css" />
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/13.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/13.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <h1 class="page_tit">Communication Tast</h1>
-            <div class="section">
-                <h2  class="tit_step">
-                    step
-                    <span>서로 친구를 소개하는 릴레이 대화를 연습해 봅시다</span>
+        <div class="intro wrapper">
+            <img class="p13_ct"></img>
+            <div class="section p13_step1">
+                <h2 class="sub_tit">
+                    <img src="./images/13/lesson_1_p13_step1.svg" alt="STEP1"></img>
+                    <span>서로 친구를 소개하는 릴레이 대화를 연습해 봅시다.</span>
+                    <span class="btn_list">
+                        <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
+                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                    </span>
                 </h2>
+                <div class="p13_step1_list">
+                    <span id="p13_step1_list_a"><span>A:</span></span>
+                    <span id="p13_step1_list_b"><span>B:</span></span>
+                    <span id="p13_step1_list_c"><span>C:</span></span>
+                </div>
+                <p>
+                    My name is <span class="color-blue">Min</span>. I like <span class="color-blue">soccer</span>. <br/>
+                    Pleased to meet you, everyone. This is <span class="color-blue">Jisu</span>.
+                </p>
+                <p>
+                    I am <span class="color-blue">Jisu</span>. My nickname is <span class="color-blue">Happy Girl</span>. <br/>
+                    Nice to meet you, everyone. This is <span class="color-blue">Hoa</span>.
+                </p>
+                <p>
+                    My name is <span class="color-blue">Hoa</span>. I am from <span class="color-blue">Vietnam</span>. <br/>
+                    Nice to meet you, everyone. This is <span class="color-blue">Sujin</span>.
+                </p>
             </div>
+
+
+                <!-- 슬라이더 시작 -->
+                <div class="slider_content mt_20">
+                    <div class="slider_image_wrap">
+                        <ul class="slider_image">
+                            <li data-num="1" class="on">
+                                    <div class="section p13_step2_3">
+                                        <h2 class="sub_tit">
+                                            <img src="./images/13/lesson_1_p13_step2.svg" alt="STEP2"></img>
+                                            <span>다섯 명이 둥글게 서서 한 명이 자신을 소개한 뒤, 다음 사람에게 털실 뭉치를 던져 줍니다.</span>
+                                        </h2>
+                                        <img src="images/13/step3_slider01.png"></img>
+                                    </div>
+                            </li>
+                            <li data-num="2" class="">
+                                <div class="section p13_step2_3">
+                                    <h2 class="sub_tit">
+                                        <img src="./images/13/lesson_1_p13_step3.svg" alt="STEP3"></img>
+                                        <span>누구에게 어떤 순서로 털실 뭉치를 던져야 별 모양이 될지 생각하며 자신과 친구를 소개해 봅시다.</span>
+                                    </h2>
+                                    <img src="images/13/step3_slider02.png"></img>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider_thumbnail_area">
+                        <div class="slider_thumbnail">
+                            <a data-num="1" href="#this" class="on">1</a>
+                            <a data-num="2" href="#this" class="">2</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 슬라이더 끝 !-->
+
             <div class="section">
-                <h2>
-                    <img src="" alt="B" />
-                    Action Speaking
-                </h2>
+                <img class="p13_self_check"></img>
+                <p>
+                    1. 알맞은 표현을 사용하여 나를 자신감 있게 소개했나요? <br/>
+                    2. 친구들의 소개를 듣고, 친구들을 더 잘 알게 됐나요?
+                </p>
+                <img src="images/13/self_check_pen.png" class="p13_self_check_pen"></img>
             </div>
+
         </div>
     </body>
 </html>
