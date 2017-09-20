@@ -5,26 +5,93 @@
         <meta name="viewport" content="width=768, height=1024"/>
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="./css/14.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/14.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <h1 class="page_tit">Before your read</h1>
-            <div class="section">
+        <div class="first wrapper">
+            <h1 class="page_tit"><img src="images/14/tit.png" alt="beforeyouread"></h1>
+            <div class="section1">
+    		<button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
                 <h2>
-                    <img src="" alt="A" />
-                    새로운 친구를 만났을 때 가장 궁금한 것 세 가지를 고르고, 짝의 것과 비교해 봅시다.
+                    <img src="images/14/A.png" alt="A" />
+                    <p>새로운 친구를 만났을 때 가장 궁금한 것 세 가지를 고르고, 짝의 것과 비교해 봅시다.</p>
                 </h2>
                 <div>
-
+					<span class="aa"><p>name</p></span>
+					<span class="ab"><p>nickname</p></span>
+					<span class="ac"><p>school</p></span>
+					<span class="ad"><p>birthday</p></span>
+					<span class="ae"><p>family</p></span>
+					<span class="af"><img src="images/14/YourOwn.png" alt="inputbox"></span>
+					   <p>
+						<input class="a_text" id="a_text" type="text" />
+						<lable for="a_text"></lable>
+					   </p>
+                <div class="section02">
+              		<input type="checkbox" id="rbtn_1" class="correct" name="rbtn1"/>
+              		 <label for="rbtn_1"></label>
+              		 <input type="checkbox" id="rbtn_2" class="correct" name="rbtn2"/>
+              		 <label for="rbtn_2"></label>
+              		 <input type="checkbox" id="rbtn_3" class="correct" name="rbtn3"/>
+              		 <label for="rbtn_3"></label>
+              		 <input type="checkbox" id="rbtn_4" class="correct" name="rbtn4"/>
+              		 <label for="rbtn_4"></label>
+              		 <input type="checkbox" id="rbtn_5" class="correct" name="rbtn5"/>
+              		 <label for="rbtn_5"></label>
+              		 <input type="checkbox" id="rbtn_6" class="correct" name="rbtn6"/>
+              		 <label for="rbtn_6"></label>
+               </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section2">
                 <h2>
-                    <img src="" alt="B" />
-                    빈칸에 알맞은 낱말을 골라 문장을 완성해 봅시다.
+                    <img src="images/14/B.png" alt="B" />
+                    <p>빈칸에 알맞은 낱말을 골라 문장을 완성해 봅시다.</p>
+                    <span class="tip">
+    				<button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                    	<span class="btn_tip"></span>
+                    	<div class="transfer">
+                    		<p>그림의 상황을 생각해 보며, 낱말의 뜻을 유추해 보세요.</p>
+                    	</div>
+                   	 </span>
                 </h2>
                 <div>
-
+					<ul class="number">
+						<li class="one">1.</p>
+						<li class="two">2.</p>
+						<li class="three">3.</p>
+					</ul>
+					</span>	
+					<div class="txtbox">
+						<span class="num_1"><p>Now, it's your</p></span>
+							<p>
+							<input class="a_text1" id="a_text" type="text" />
+							<lable for="a_text1"></lable>
+						   </p>
+						<span class="num_2"><p>I'd like to</p></span>
+							<p>
+							<input class="a_text2" id="a_text" type="text" />
+							<lable for="a_text2"></lable>
+						   </p>
+						<span class="num_2_1"><p>my friend to you.</p></span>
+						<span class="num_3"><p>Look, This picture<br></p></span>
+						<span class="num_3_1"><p>is</p></span>
+							<p>
+							<input class="a_text3" id="a_text" type="text" />
+							<lable for="a_text3"></lable>
+						   </p>
+               		</div>
+               		<ul class="word"> 
+               			<li class="firstword">fantastic</li>
+               			<li class="secondword">introduce</li>
+               			<li class="thirdword">turn</li>
+               		</ul>
+               		
+					</span>
                 </div>
             </div>
         </div>
