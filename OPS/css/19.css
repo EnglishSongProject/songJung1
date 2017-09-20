@@ -1,3 +1,41 @@
 @charset "utf-8";
 
 .part_lu {background: url(../images/19/bg_lesson01_19.jpg) no-repeat 0 0; background-size: cover}
+
+.page_tit {margin: 10px;}
+input[type="text"] {position: relative;}
+.inbutBox {border-bottom:1px solid #6c6c6c; padding:0 0 2px 0}
+.sentence{display: block; white-space: nowrap}
+.sentence em {font:14px 'Noto Sans KR';}
+.icon_tb {display: inline-block; font:11px 'Bubblegum Sans'; width:50px; height: 20px; background: url(../images/19/icon_tb.png) no-repeat 0 0; color:#fff; padding:4px 0 0 8px}
+
+.part_lu .section {position: relative; padding:0 40px; }
+.part_lu .section h2 {position: absolute; top:0; left:0}
+.part_lu .section h3 {font:13px 'Noto Sans KR';}
+.part_lu .section .top_area {position: relative; background:#fff6e8; border-radius: 10px; overflow: hidden}
+.part_lu .section .top_area > div {font:14px/2.2 'Nanum Gothic'; padding:25px 40px; width:50%; box-sizing: border-box; }
+.part_lu .section .top_area:after {position: absolute; top:40px; left:50%; content:''; display: block; height: 100px; width: 1px; background:#e1bb8c;}
+.part_lu .info {font:12px 'Nanum Gothic';}
+.part_lu .word_box {width:386px; padding:14px 25px; background:#f1f7e7; border-radius: 30px; overflow: hidden; margin:0 auto}
+.word_box li{float:left; font:14px 'Noto Sans KR'; width:20%; text-align: center}
+
+.img_content > div {overflow: hidden}
+.img_content .num {float:left; font: 16px "Noto Sans KR";}
+.img_content .num + img {float:left; margin-left:10px}
+.img_content .sentence_box {float:left; margin:5px 0 0 40px; font:16px/2 'Faustina' ;}
+
+.txt_content {width:100%; border:1px solid #b7b7b7; padding:10px 20px;}
+.txt_content li .sentence {font:16px/2.2 'Nanum Gothic'; }
+.txt_content li .sentence:nth-of-type(2)  {margin-left:20px;}
+.txt_content input {width:530px; text-align: left; border-bottom:1px solid #ccc}
+.txt_content em {margin-right: 5px;}
+
+
+/*슬라이더*/
+.slider_image_wrap .slider_image > li {display: none;}
+.slider_image_wrap .slider_image li.on {display: block;}
+
+.slider_thumbnail_area {position: absolute; left:0; bottom:50px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}
