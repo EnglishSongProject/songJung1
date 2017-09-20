@@ -10,8 +10,9 @@
 .part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
 .part_las .sub_tit span {font:15px "Noto Sans KR";  margin-left:14px;}
-.part_las .btn_list{margin-left:5px !important}
-.part_las .btn_list.rol_btn_list{margin-left:548px !important}
+.part_las .rolling .btn_list {z-index:100; position: relative}
+.part_las .btn_list {margin-left:5px !important}
+
 .part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 
 
@@ -52,7 +53,7 @@
 
 /*롤링*/
 .rolling_image_wrap {height:320px;}
-.rolling_image_wrap >ul > li {display: none; position: absolute;}
+.rolling_image_wrap >ul > li {display: none; position: absolute; width: 100%;}
 .rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
 .rolling_image_wrap >ul > li.on {display: block;}
 .rolling_image_wrap .img_txt {position: absolute;  width:100px; font:11px "Noto Sans KR"; line-height: 1.2}
