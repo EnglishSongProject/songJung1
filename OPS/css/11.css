@@ -1,3 +1,72 @@
 @charset "utf-8";
 
-/* layout */
+.part_las_02 .page_tit {position: relative; left: -38px;}
+
+/*listen&speak 공통*/
+.page_tit {margin:10px}
+.info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
+
+.part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit img {margin-right:10px; vertical-align: top;}
+.part_las .sub_tit span {font:15px "Noto Sans KR";  margin-left:14px;}
+.part_las .btn_list {margin-left:5px !important}
+
+.part_las .img_content {position: relative; padding:35px 0 0 42px}
+.part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
+
+/*tip*/
+.btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; margin-right:5px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; }
+.tip_con {font:11px "Nanum Gothic";;}
+
+/*문장*/
+.rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
+.rolling_image_wrap .txt_box .blue {color:#954EA7}
+.rolling_image_wrap .txt_box em {font:16px "Noto Sans KR"; margin-right:5px}
+
+/*Warm up */
+.part_las_02 .wp_text01 {position: absolute; top: 55px; left: 68px;}
+.part_las_02 .wp_text02 {position: absolute; top: 66px; left: 559px;}
+.part_las_02 .wp_input01 {position: absolute; top: 65px; left: 448px; width: 111px; background: transparent}
+
+/*Look and Talk */
+.part_las_02 .section02 input[type="text"]{position: absolute; top: 160px; left:200px; width:20px; font:25px "Nanum Gothic";}
+.part_las_02 .section02 input[type="text"]:nth-of-type(1) {left: 209px;}
+.part_las_02 .section02 input[type="text"]:nth-of-type(2) {left: 421px;}
+.part_las_02 .section02 input[type="text"]:nth-of-type(3) {left: 633px;}
+
+
+/*슬라이더*/
+.slider_image_wrap .slider_image > li {display: none;}
+.slider_image_wrap .slider_image li.on {display: block;}
+
+.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}
+
+
+/*롤링*/
+.rolling_image_wrap {height:320px;}
+.rolling_image_wrap >ul > li {display: none; position: absolute;}
+.rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
+.rolling_image_wrap >ul > li.on {display: block;}
+.rolling_image_wrap .img_txt {position: absolute;  width:100px; font:11px "Noto Sans KR"; line-height: 1.2}
+.rolling_image_wrap .rolling_01 .img_txt {top: 20px;left: 95px; letter-spacing: -0.5px}
+.rolling_image_wrap .rolling_02 .img_txt {top: 10px; left: 132px;}
+.rolling_image_wrap .rolling_03 .img_txt {top: 76px; left: 135px;}
+.rolling_image_wrap .rolling_04 .img_txt {top: 45px; left: 124px; letter-spacing: -0.2px}
+
+.rolling_image_wrap .txt_box {position: absolute; top: 92px; left: 248px; font:16px 'Faustina' ; line-height: 2.0; padding-left:32px}
+
+
+.rolling_image_wrap .txt_box:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: "e.g.";
+    font: 15px 'Noto Sans KR';
+}
+
+.rolling_thumbnail_area {margin-top:40px; width:100%; text-align:center}
+.rolling_thumbnail_area a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.rolling_thumbnail_area a.on {background: url(../images/common/slide_bt_on.png)}
