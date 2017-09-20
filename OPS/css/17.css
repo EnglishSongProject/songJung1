@@ -9,24 +9,26 @@
 
 .first .txt2 p {position: absolute; top: 470px; left: 390px; width: 300px; }
 
-.btn_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 80px; left: 175px; background-size: cover;}
-.btntrans_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 80px; left: 180px; background-size: cover;}
+/*본문위아이콘*/
+.btn_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 30px; left: 125px; background-size: cover;}
+.btntrans_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 30px; left: 130px; background-size: cover;}
 
-.btn_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 450px; left: 335px; background-size: cover;}
-.btntrans_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 450px; left: 340px; background-size: cover;}
+.btn_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 403px; left: 285px; background-size: cover;}
+.btntrans_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 403px; left: 290px; background-size: cover;}
 
 /*본문 문단수*/
 .five {font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 470px; left: 690px; }
-.ten{font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 550px; left: 670px; }
+.ten {font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 665px; left: 680px; }
 
 /*본문해석*/
-.transfer_t {position: absolute; top: 120px; left: 180px; font-size: 15px !important; }
-.transfer_b {position: absolute; top: 21px; font-size: 15px !important; }
+.transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 120px; left: 180px; font-size: 11px !important; color: #1C8A24;}
+.transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 21px;  left: 0px; font-size: 11px !important;color: #1C8A24; }
 
-/*시계*/
+/*시계(Talkng Time)*/
 .talking_time {position: absolute; left: 540px; bottom: 100px;font-family: 'Faustina regular'; }
-.talking_time>img {position: absolute; width: 190px; bottom: 110px; left: -10px; }
-.talking_time div>p {position: relative; display: block; width: 300px; height: 80px; top:70px; left: -5px; transform: rotate(3deg); }
+.talking_time>img {position: absolute; width: 190px; bottom: 120px; left: -10px; }
+.talking_time>div{position: absolute; top: -140px; right:-225px;}
+.talking_time>div>p {position: relative; display: block; width: 300px; height: 80px; top:35px; left: 50px; transform: rotate(3deg); }
 /*한글*/
 .talking_time>p:first-child {position: absolute; font-family: 'Nanum Gothic'; font-size: 11px; }
 /*영어*/
@@ -34,15 +36,73 @@
 /*e.g*/
 .talking_time>div>p:last-child>b {font-family: 'Noto Sans KR regular'; font-size: 11px; }
 
-/*AskAnswer*/
-.ask_and_speak {position: absolute; top: 868px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
-.ask_and_speak>h3 {position: absolute; width: 100px;  left: 50px;}
-.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23;}
+/*아이콘*/
+.repeatbtn {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 12px !important; left: 196px !important; background-size: cover;}
+.bookbtn {position: absolute; display: block; float:left; width: 25px; height: 25px !important; top: 12px !important; left: 222px!important; background-size: cover; }
 
-.repeatbtn {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 43px; left: 110px; background-size: cover;}
+/*popup*/
+.txt01{ display: none; background: url(../images/17/popup.png) no-repeat 0 0; background-size: cover; position: absolute; width:256px; height: 247px; top: -10px; left:40px;}
+.txt01>h3{font-family:"NanumGothicBold";font-size: 14px; position: absolute; color: #fff; top: 43px; left: 42px;}
+.txt01>p{ font-family:"NanumGothicBold";font-size: 12px; position: absolute; left: 40px; top: 80px; }
+.btn_wd {position: absolute; top: 35px; left: 174px;}
+
+.txt02{ display: none; background: url(../images/17/popup_1.png) no-repeat 0 0; background-size: cover; position: absolute; width:256px; height: 247px; top: -10px; left:40px;}
+.txt02>h3{font-family:"NanumGothicBold";font-size: 14px; position: absolute; top: 39px; left: 42px;}
+.btn_repeat {position: absolute; top: 35px; left: 174px;}
+
+/*AskAnswer*/
+.ask_and_speak {position: absolute; top: 855px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
+
+.ask_and_speak > p{position:absolute;top:30px; left: 170px;}
+.ask_and_speak > p input[type="text"]{display:none;}
+
+.ask_and_speak>h3 {position: absolute; width: 200px;  left: 0px; top:27px; }
+.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
+.ask {position: absolute; top: 65px; width:1000px; left: 12px; }
+.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 5px;}
+
+/*.answer {position: absolute; top: -18px; width:1000px; left: 10px; display: inline-block; background: url(../images/common/말풍선.png) no-repeat 0 0; background-size:100% 100%;padding:0 2px; text-align:center;height:25px;}*/
+
+.btn_answer{position: absolute; top: -1px; left: 108px; width: 25px; height: 25px;}
+
+/*.ask {position: absolute; top: 30px;}*/
+/*.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 8px;}*/
+.aa_ask1 {position: relative; display: block; top: 5px; left: 0px;}
+.aa_ask2 {position: relative; display: block; top: 5px; left: 0px;}
+.aa_ask3 {position: relative; display: block; top: 5px; left: 2px;}
+.aa_ask4 {position: relative; display: block; top: 5px; left: 12px;}
+
+.answer {position: relative; top: 30px; height: 35px; padding-top: 30px;}
+.answer li {display: inline-block; position: relative; margin-top: 39px;top: -71px;}
+.aa_answer1 {left: 10px;}
+.aa_answer2 {left: 50px;}
+.aa_answer3 {left: 60px;}
+.aa_answer4 {left: 60px;}
+
+
+.balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
+.balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
+
 
 /*페이지번호*/
 .pagenum_right {position: absolute; left: 570px; bottom:-20px; }
 .pagenum_right>span:first-of-type{font-family: 'Nanum Gothic';font-size: 11px;}
 .pagenum_right>span:last-of-type{font-family: 'Noto Sans KR';font-size: 11px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,11 +1,13 @@
-
 .part_las {background: url(../images/10/bg_lesson01_10.jpg) no-repeat 0 0; background-size: cover}
+
+/*listen&speak 공통*/
 .page_tit {margin:10px}
 .info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
 
 .part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
 .part_las .sub_tit span {font:17px "Noto Sans KR";  margin-left:14px;}
+.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .btn_list {margin-left:5px !important}
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
@@ -14,7 +16,8 @@
 /*Warm up */
 .part_las .wp_text01 {position: absolute; top: 57px; left: 84px;}
 .part_las .wp_text02 {position: absolute; top: 96px; left: 491px; color:#FF0000;}
-.part_las .wp_input01 {position: absolute; top: 65px; left: 483px; width: 116px; background: transparent}
+.part_las .wp_input01 {position: absolute; top: 65px; left: 470px; width: 141px; background: transparent; border: none;}
+input.wp_input01:focus{outline: none;}
 
 /*Lsten and Check  */
 .section02 .num {position: absolute; font:16px "Noto Sans KR";}
@@ -26,7 +29,7 @@
 .section02 label:nth-of-type(4) {top: -53px; left: 447px;}
 
 /*Match and Talk */
-.part_las .eg {position: relative; margin-top:40px; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
+.part_las .eg {position: relative; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
 .part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
 .part_las .eg em { font:18px 'Faustina'; }
 .part_las .eg .blue {color:#a14796}
@@ -44,7 +47,7 @@
 .select_name:nth-of-type(4) span {top:84px; left:66px; }
 .select_name:hover span {color:#a14796}
 
-.target_sentence {position: absolute; bottom:0; left:40px; bottom:34px; border:1px solid red}
+.target_sentence {position: absolute; bottom:0; left:40px; bottom:34px;padding: 1px;}
 .target_sentence span {position: absolute; top:0; display: inline-block; width:100px; font:15px "Noto Sans KR";}
 .target_sentence span:nth-of-type(1) {left:23px}
 .target_sentence span:nth-of-type(2) {left:185px}
@@ -52,7 +55,7 @@
 .target_sentence span:nth-of-type(4) {left:495px}
 
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
-.tip_con {font:11px "Noto Sans KR"; letter-spacing: -0.5px; class="hidden"}
+.tip_con {font:11px "Noto Sans KR"; ;}
 
 /*슬라이더*/
 .slider_image_wrap .slider_image > li {
@@ -62,8 +65,7 @@
 .slider_image_wrap .slider_image li.on {
     display: block;
 }
-
-.slider_thumbnail_area {position: absolute; bottom:100px; width:100%;}
+.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
 .slider_thumbnail {text-align:center}
 .slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
 .slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}
