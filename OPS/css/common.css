@@ -122,7 +122,18 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
 .btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
 
-
+/*tip*/
+.btn_tip {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 37px;
+    height: 21px;
+    background: url(../images/common/tip.png) no-repeat 0 0;
+    text-indent: -1000em;
+    overflow: hidden;
+    margin-right: 5px;
+}
 /*----------------------
 페이지 공통
 ----------------------*/
