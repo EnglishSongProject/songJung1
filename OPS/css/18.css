@@ -26,22 +26,22 @@ h2>img{margin-right:5px;width:25px;height:25px;}
 .Q_A_inner4{left:95px;top:255px;}
 
 /* 문제2 */
-.Q_B{position:absolute;left:50%;top:80px;width:430px;margin-left:-215px;}
-.Q_B dt{float:left;font-family: 'Open Sans';font-weight:200;font-size:14px;line-height:20px;}
-.Q_B dd{font-family: 'Faustina';font-weight:200;font-size:16px;line-height:20px;margin-left:10px;}
+.Q_B{position:absolute;left:50%;top:75px;margin-left:-185px;width:370px;}
+.Q_B dt{float:left;font-family: 'Open Sans';font-weight:200;font-size:14px;line-height:20px;margin-bottom:15px;width:50PX;text-align: right;margin-right:5px;}
+.Q_B dd{font-family: 'Faustina';font-weight:200;font-size:16px;line-height:20px;margin-left:10px;margin-bottom:15px;}
 .Q_B dd input[type="text"]{border-bottom:1px solid #a9a9a9;font:16px 'Faustina';font-weight:200;}
-.Q_B dd input[type="text"]:nth-of-type(1){width:75px;}
-.Q_B dd input[type="text"]:nth-of-type(2){width:60px;}
+.Q_B dd .read_txt_1 input[type="text"]:nth-of-type(1){width:75px;}
+.Q_B dd .read_txt_1 input[type="text"]:nth-of-type(2){width:55px;}
 .Q_B dd span>input[type="text"]:nth-of-type(1){width:40px;}
-.Q_B dd:nth-of-type(4) input[type="text"]:nth-of-type(1){width:70px;}
-.Q_B dd:nth-of-type(4) input[type="text"]:nth-of-type(2){width:40px;}
-.Q_B dd:nth-of-type(4) input[type="text"]:nth-of-type(3){width:60px;}
-.Q_B dd span{display:block;margin-left:50px;}
+.Q_B dd .read_txt_2 span input[type="text"]:nth-of-type(1){width:70px;}
+.Q_B dd .read_txt_2 .ent input[type="text"]:nth-of-type(1){width:40px;}
+.Q_B dd .read_txt_2 .ent input[type="text"]:nth-of-type(2){width:55px;}
+.Q_B dd span.ent{display:block;margin-left:45px;margin-top:15px;}
 
-span.ft_red{display:inline-block;color:red;line-height:15px;margin-top:-5px;border:1px solid red;}
-span.mar_lt1{width:75px;}
-span.mar_lt2{width:60px;}
-span.mar_lt3{width:40px;}
-span.mar_lt4{width:70px;}
-span.mar_lt5{width:40px;}
-span.mar_lt6{width:60px;}
+.Q_B dd span.ft_red{text-align: center;display:inline-block;color:red;line-height:15px;position:absolute;}
+.Q_B dd span.mar_lt1{width:75px;left:92px;top:93px;}
+.Q_B dd span.mar_lt2{width:55px;left:170px;top:93px;}
+.Q_B dd span.mar_lt3{width:40px;left:89px;top:132px;}
+.Q_B dd span.mar_lt4{width:68px;left:201px;top:171px;}
+.Q_B dd span.mar_lt5{width:40px;left:125px;top:210px;}
+.Q_B dd span.mar_lt6{width:55px;left:169px;top:210px;}
