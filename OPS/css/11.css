@@ -16,7 +16,7 @@
 
 /*tip*/
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; margin-right:5px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; }
-.tip_con {font:11px "Nanum Gothic";;}
+.tip_con {font:11px "Nanum Gothic";}
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
