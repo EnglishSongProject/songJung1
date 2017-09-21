@@ -26,4 +26,4 @@
 .sp_box ul:last-child li em{ color:#0101ff;}
 .sp_box ul li > span:hover{color: #9a01cd; }
 .btn_list {position: absolute; right:50px; bottom:50px}
-.btn_list button {display: block}
+.btn_list button {display: block;margin-bottom:10px;}
