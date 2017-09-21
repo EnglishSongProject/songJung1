@@ -26,7 +26,7 @@
                                 <h2 class="sub_tit">
                                     <img src="./images/21/step1.png" alt="step1" onclick="playAudio('./media/audio/L01/021/Step1.mp3', 'single');"/>
                                     <span  class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_01.mp3', 'single');">네 명이 한 모둠이 되어 서로에게 자기소개를 해 봅시다</span>
-                                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
                                 </h2>
                                 <div class="eg mt_20" style="margin-bottom:20px">
                                     <span class="sentence">
@@ -44,10 +44,10 @@
                                     <tr>
                                         <th scope="row">이름</th>
                                         <td height="30">Jina</td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
+                                        <td height="30"><input type="text" name="p21_clear_text" /></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">별명</th>
@@ -81,9 +81,8 @@
                                     <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_02.mp3', 'single');">모둠원을 소개하는 UCC 대본을 만들어 봅시다.</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/021/total.mp3', 'single');">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/021/total.mp3','',this);">mp3전체듣기</button>
                                     </span>
-
                                 </h2>
                                 <div class="img_content mt_20">
                                     <img src="./images/21/bg_wt_step02.png" alt="" />
