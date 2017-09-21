@@ -14,208 +14,249 @@
     </head>
     <body>
         <div class="wrapper part_las part_las_02">
-            <h1 class="page_tit" style="margin-top:0">
+            <h1 class="page_tit" style="margin-left:50px">
                 <img src="./images/11/ptit_las_02.png" alt="listen and speak1" />
             </h1>
             <span class="info" title="study point">소개하고 인사 나누기</span>
 
-            <div class="slider_content">
-                <div class="slider_image_wrap">
-                    <ul class="slider_image">
-                        <li data-num="1">
-                            <!-- section A -->
-                            <div class="section">
-                                <h2 class="sub_tit">
-                                    <img src="./images/10/tit_las_a.png" alt="A" />
-                                    Warm up
-                                    <span>What will the boy say?</span>
-                                    <span class="btn_list">
+    <div class="slider_content">
+        <div class="slider_image_wrap">
+            <ul class="slider_image">
+                <li data-num="1">
+                    <!-- section A -->
+                    <div class="section">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_a.png" alt="A" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01.mp3', 'single');" class="audio_tit">Warm up</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01_1.mp3', 'single');">What will the boy say?</span>
+                            <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_01.mp3','',this);">mp3전체듣기</button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button type="button" id="ls2_wu_t1_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls2_wu_t1_q', 'ls2_wu_t1_a', 'ls2_wu_t1');">답안</button>
                                     </span>
-                                </h2>
-                                <div class="img_content">
-                                    <img src="./images/11/img_las2_01.jpg" alt="" />
-                                    <span class="textbox wp_text01">Sam, this is my dog, Bob. <br/>Bob, this is Sam.</span>
-                                    <span class="textbox wp_text02">,Bob.</span>
-                                    <input type="text" class="textbox wp_input01"/>
-                                </div>
-                            </div>
-                            <!-- section B-->
-                            <div class="section section02 mt_50">
-                                <h2 class="sub_tit">
-                                    <img src="./images/10/tit_las_b.png" alt="C" />
-                                    Listen and Check
-                                    <span>Listen and number the pictures.</span>
-                                    <span class="btn_list">
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                        </h2>
+                        <div class="img_content">
+                            <img src="./images/11/img_las2_01.jpg" alt="" />
+                            <span class="textbox wp_text01"><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02.mp3', 'single');">Sam, this is my dog, Bob.</span>
+                                        <br/><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02_1.mp3', 'single');">Bob, this is Sam.</span></span>
+                            <span class="textbox wp_text02 active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a03.mp3', 'single');">,Bob.</span>
+                            <input id="ls2_wu_t1" type="text" class="textbox wp_input01" maxlength="20"/>
+                            <span id="ls2_wu_t1_a" class="textbox wp_text03 display-none">Nice to meet you</span>
+                        </div>
+                    </div>
+                    <!-- section B-->
+                    <div class="section section02 mt_50">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_b.png" alt="C" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01.mp3', 'single');" class="audio_tit">Listen and Number</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01_1.mp3', 'single');" >Listen and number the pictures.</span>
+                            <span class="btn_list">
+                                        (음원 안 합쳐짐)
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_02.mp3','',this);">mp3전체듣기</button>
                                         <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                        <button id="ls2_lan_t_q" type="button" class="btn_type_02 btn_answer" title="답안" onclick="listenAndNumberCheck('ls2_lan_t_q', 'ls2_lan_t1+ls2_lan_t2+ls2_lan_t3', '1+3+2');">답안</button>
                                     </span>
-                                </h2>
-                                <div class="tip_wrap mt_5">
-                                    <a href="#this" class="btn_tip ml_10">TIP</a>
-                                    <span class="tip_con hide">듣기 전에 그림을 보며 대화 상황을 추측해 보세요.</span>
-                                </div>
-                                <div class="img_content" style="padding-top:20px">
-                                    <img src="./images/11/img_las2_02.jpg" alt="" />
-                                    <input type="text" maxlength="1" />
-                                    <input type="text" maxlength="1" />
-                                    <input type="text" maxlength="1" />
-                                </div>
-                            </div>
-                        </li>
-                        <li data-num="2">
-                            <div class="section clearfix">
-                                <h2 class="sub_tit">
-                                    <img src="./images/10/tit_las_c.png" alt="C" />
-                                      Look and Talk
-                                    <span>Look at the pictures and practice the dialog with your classmates. </span>
-                                    <span class="btn_list mt_5" style="display:block; text-align:right">
-                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
-                                        <button type="button" class="btn_type_02 btn_trans" title="번역">번역</button>
-                                    </span>
-                                </h2>
-                                <div class="img_content" style="padding:0; margin:10px 0 0 8px">
-                                    <div class="rolling">
-                                        <div class="rolling_image_wrap">
-                                            <ul>
-                                                <li data-num="1" class="rolling_01 on">
-                                                    <img src="./images/11/c_rol_01.png" alt="" />
-                                                    <span class="img_txt">
-                                                        English teacher /<br />
-                                                        Mr. Parker /<br />
-                                                        Canada
+                        </h2>
+                        <div class="tip_wrap mt_5">
+                            <a href="#this" class="btn_tip ml_10">TIP</a>
+                            <span class="tip_con hide">듣기 전에 그림을 보며 대화 상황을 추측해 보세요.</span>
+                        </div>
+                        <div class="img_content" style="padding-top:20px">
+                            <img src="./images/11/img_las2_02.jpg" alt="" />
+                            <input id="ls2_lan_t1" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+                            <input id="ls2_lan_t2" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+                            <input id="ls2_lan_t3" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+                        </div>
+                    </div>
+                </li>
+                <li data-num="2">
+                    <div class="section clearfix">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_c.png" alt="C" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_06_01.mp3', 'single');" class="audio_tit">Look and Talk</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_06_01_1.mp3', 'single');">Look at the pictures and practice the dialog with your classmates. </span>
+                        </h2>
+                        <div class="img_content" style="padding:0; margin:10px 0 0 8px">
+                            <div class="rolling">
+                                <div class="rolling_image_wrap">
+                                    <ul>
+                                        <li data-num="1" class="rolling_01 on">
+                                            <p class="btn_list mt_5 rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_a.mp3','',this);">mp3전체듣기</button>
+                                                <button type="button" class="btn_type_02 btn_trans trans1" title="번역">번역</button>
+                                            </p>
+                                            <img src="./images/11/c_rol_01.png" alt="" />
+                                            <span class="img_txt">
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w.mp3', 'single');">English teacher</span> /<br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w_1.mp3', 'single');">Mr. Parker</span> /<br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w_2.mp3', 'single');">Canada</span>
                                                     </span>
-                                                    <ul class="txt_box">
-                                                        <li>
-                                                            <span class="sentence">
-                                                                <em>A:</em>This is my <span class="blue">English teacher ,Mr. Parker. </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01.mp3', 'single');">
+                                                                <em>A:</em>This is my <span class="blue">English teacher ,Mr. Parker. </span><br></br>
                                                             </span>
-                                                            <span class="sentence" >
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01_1.mp3', 'single');">
                                                                 <span class="blue ml_20">He</span> is from  <span class="blue">Canada</span>.
                                                             </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>B:</em> Hi. <span class="blue">Pleased</span> to meet you, <span class="blue">Mr. Parker.</span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c02_01_02_add.mp3', 'single');">
+                                                                <em>B:</em>Hi. <span class="blue">Pleased</span> to meet you, <span class="blue">Mr. Parker.</span>
                                                             </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01_03.mp3', 'single');">
                                                                 <em>C:</em><span class="blue">Nice</span> to meet you, too.
                                                             </span>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li data-num="2" class="rolling_02">
-                                                    <img src="./images/11/c_rol_02.png" alt="" />
-                                                    <span class="img_txt">
-                                                        best friend / <br />
-                                                        Suji  /<br />
-                                                        Korea
-                                                    </span>
-                                                    <ul class="txt_box">
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>A:</em>This is my<span class="blue"> best friend, Suji.</span>
-                                                            </span>
-                                                            <span class="sentence" >
-                                                                <span class="blue ml_20">She</span> is from  <span class="blue">Korea</span>.
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>B:</em> Hi. <span class="blue">Nice</span> to meet you, <span class="blue">Suji.</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>C:</em><span class="blue">Nice</span> to meet you, too.
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li data-num="3" class="rolling_03">
-                                                    <img src="./images/11/c_rol_03.png" alt="" />
-                                                    <span class="img_txt">
-                                                        neighbor / <br />
-                                                        Pei / <br />
-                                                        Thailand
-                                                    </span>
-                                                    <ul class="txt_box">
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>A:</em>This is my<span class="blue"> neighbor, Pei. </span>
-                                                            </span>
-                                                            <span class="sentence" >
-                                                                <span class="blue ml_20">She</span> is from  <span class="blue">Thailand</span>.
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>B:</em> Hi. <span class="blue">Pleased</span> to meet you, <span class="blue">Pei.</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>C:</em><span class="blue">Pleased</span> to meet you, too.
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li data-num="4" class="rolling_04">
-                                                    <img src="./images/11/c_rol_04.png" alt="" />
-                                                    <span class="img_txt">
-                                                        classmate / <br />
-                                                        Eric / <br />
-                                                        France
-                                                    </span>
-                                                    <ul class="txt_box">
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>A:</em>This is my<span class="blue"> classmate, Eric.</span>
-                                                            </span>
-                                                            <span class="sentence" >
-                                                                <span class="blue ml_20">He</span> is from  <span class="blue">France</span>.
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>B:</em> Hi. <span class="blue">Nice</span> to meet you, <span class="blue">Eric.</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="sentence" >
-                                                                <em>C:</em><span class="blue">Nice</span> to meet you, too.
-                                                            </span>
-                                                        </li>
-                                                    </ul>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div class="rolling_thumbnail_area">
-                                            <a data-num="1" href="#this" class="on">1</a>
-                                            <a data-num="2" href="#this">2</a>
-                                            <a data-num="3" href="#this">3</a>
-                                            <a data-num="4" href="#this">4</a>
-                                        </div>
-                                    </div>
+                                            <span class="color-green display-none correct1">이분은 나의 영어 선생님인 Parker 선생님이셔.<br></br>
+                                                    캐나다 출신이셔.<br></br>
+                                                    안녕하세요. 만나 뵙게 되어 반갑습니다, Parker 선생님.<br></br>
+                                                    나도 만나서 반갑구나.
+                                                    </span>
+                                        </li>
+                                        <li data-num="2" class="rolling_02">
+                                                    <span class="btn_list mt_5 rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_b.mp3','',this);">mp3전체듣기</button>
+                                                        <button type="button" class="btn_type_02 btn_trans trans2" title="번역">번역</button>
+                                                    </span>
+                                            <img src="./images/11/c_rol_02.png" alt="" />
+                                            <span class="img_txt">
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w.mp3', 'single');">best friend</span> / <br />
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w_1.mp3', 'single');">Suji</span>  /<br />
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w_2.mp3', 'single');">Korea</span>
+                                                    </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_01.mp3', 'single');">
+                                                                <em>A:</em>This is my<span class="blue"> best friend, Suji.</span>
+                                                            </span>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_01_1.mp3', 'single');">
+                                                                <span class="blue ml_20">She</span> is from  <span class="blue">Korea</span>.
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c03_02_02_add.mp3', 'single');">
+                                                                <em>B:</em>Hi. <span class="blue">Nice</span> to meet you, <span class="blue">Suji.</span>
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_02_03.mp3', 'single');">
+                                                                <em>C:</em><span class="blue">Nice</span> to meet you, too.
+                                                            </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct2">이 아이는 나의 가장 친한 친구 수지야.<br></br>
+                                                    한국 출신이야.<br></br>
+                                                    안녕. 만나서 반가워, 수지야.<br></br>
+                                                    나도 만나서 반가워.
+                                                    </span>
+                                        </li>
+                                        <li data-num="3" class="rolling_03">
+                                                    <span class="btn_list mt_5 rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_c.mp3','',this);">mp3전체듣기</button>
+                                                        <button type="button" class="btn_type_02 btn_trans trans3" title="번역">번역</button>
+                                                    </span>
+                                            <img src="./images/11/c_rol_03.png" alt="" />
+                                            <span class="img_txt">
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w.mp3', 'single');">neighbor</span> / <br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w_1.mp3', 'single');">Pei </span>/ <br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w_2.mp3', 'single');">Thailand</span>
+                                                    </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_01.mp3', 'single');">
+                                                                <em>A:</em>This is my<span class="blue"> neighbor, Pei. </span>
+                                                            </span>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_01_1.mp3', 'single');">
+                                                                <span class="blue ml_20">She</span> is from  <span class="blue">Thailand</span>.
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c04_03_02_add.mp3', 'single');">
+                                                                <em>B:</em>Hi. <span class="blue">Pleased</span> to meet you, <span class="blue">Pei.</span>
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_03_03.mp3', 'single');">
+                                                                <em>C:</em><span class="blue">Pleased</span> to meet you, too.
+                                                            </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct3">이분은 나의 이웃인 Pei 아줌마야.<br></br>
+                                                    태국 출신이셔.<br></br>
+                                                    안녕하세요. 만나 뵙게 되어 반갑습니다, Pei 아줌마.<br></br>
+                                                    나도 만나서 반갑구나.
+                                                    </span>
+                                        </li>
+                                        <li data-num="4" class="rolling_04">
+                                                    <span class="btn_list mt_5 rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_d.mp3','',this);">mp3전체듣기</button>
+                                                        <button type="button" class="btn_type_02 btn_trans trans4" title="번역">번역</button>
+                                                    </span>
+                                            <img src="./images/11/c_rol_04.png" alt="" />
+                                            <span class="img_txt">
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1.mp3', 'single');">classmate</span> / <br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1_1.mp3', 'single');">Eric</span> / <br />
+                                                        <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1_2.mp3', 'single');">France</span>
+                                                    </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                            <span class="sentence" >
+                                                                <em>A:</em>This is my<span class="blue"> classmate, Eric.</span>(음원필요)
+                                                            </span>
+                                                    <span class="sentence" >
+                                                                <span class="blue ml_20">He</span> is from  <span class="blue">France</span>.(음원필요)
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_listenspeak2_10_add.mp3', 'single');">
+                                                                <em>B:</em>Hi. <span class="blue">Nice</span> to meet you, <span class="blue">Eric.</span>
+                                                            </span>
+                                                </li>
+                                                <li>
+                                                            <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_11.mp3', 'single');">
+                                                                <em>C:</em><span class="blue">Nice</span> to meet you, too.
+                                                            </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct4">이 아이는 반 친구인 Eric이야.<br></br>
+                                                    프랑스 출신이야.<br></br>
+                                                    안녕. 만나서 반가워, Eric.<br></br>
+                                                    나도 만나서 반가워.
+                                                    </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rolling_thumbnail_area">
+                                    <a data-num="1" href="#this" class="on">1</a>
+                                    <a data-num="2" href="#this">2</a>
+                                    <a data-num="3" href="#this">3</a>
+                                    <a data-num="4" href="#this">4</a>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slider_thumbnail_area">
-                    <div class="slider_thumbnail">
-                        <a data-num="1" href="#this">1</a>
-                        <a data-num="2" href="#this">2</a>
+                        </div>
                     </div>
-                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider_thumbnail_area">
+            <div class="slider_thumbnail">
+                <a data-num="1" href="#this">1</a>
+                <a data-num="2" href="#this">2</a>
             </div>
         </div>
-    </body>
+    </div>
+    <audio id="myaudio" controls="controls"  style="display: none;">
+        HTML5 audio not supported
+    </audio>
+</div>
+</body>
 </html>

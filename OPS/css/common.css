@@ -11,7 +11,7 @@ fieldset{border:none;}
 legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
 hr, caption {display:none;}
 img {border:none; vertical-align:middle;height:auto;}
-input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0;    color: #333 !important;}
+input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0; color: #333 !important; background: transparent}
 textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
 strong {font-weight:normal;}
 em,i {font-style:normal;}
@@ -26,6 +26,7 @@ a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:underline}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 table {border-collapse: collapse; border-spacing: 0;}
+
 
 
 /*----------------------
@@ -153,17 +154,13 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /*font-color*/
 .color-blue{color:#0101ff;}
-
+.color-red{color: #FF0000 !important;}
 .color-green{
     color: #339900;
 }
-.color-red{
-    color:#FF0000 !important;
-}
 
 /*class:hover*/
-.active-purple:hover {color: #9a01cd; !important; }
-
+.active-purple:hover {color: #9a01cd; }
 
 /*체크박스*/
 input[type=checkbox], input[type=radio] {
@@ -208,7 +205,7 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 }
 
 /*audio popup*/
-#myaudio {position: absolute;  }
+#myaudio {position: absolute;z-index: 100; }
 .popup{position:absolute; display: block; width:230px; height:40px; border:1px solid #ddd; background-color: #fafafa; border-radius: 5px; border:none; box-shadow: 2px 2px 2px #888888 ;}
 .popup:after {position: absolute; top:50%; left:-15px; transform:translateY(-50%); display: block; content:"";border: 8px solid transparent; border-right-color: #fff}
 
