@@ -346,6 +346,9 @@ function listenAndNumberCheck(questionId, inputId, answer) {
             for(var i=0; i<inputId.length; i++){
                 var id = document.getElementById(inputId[i]);
                 id.value=answerArray[i];
+                if(!$(id).hasClass('color-red')){
+                    $(id).addClass('color-red');
+                }
             }
         }
     }else if (questionId.title == '다시풀기'){
