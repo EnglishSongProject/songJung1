@@ -11,6 +11,9 @@
 .sentence{display: block; white-space: nowrap}
 .sentence em {font:14px 'Noto Sans KR';}
 
+/*hover 됐을때 blue지우기*/
+.color-blue:hover{color:#9a01cd}
+
 .part_wt .eg:before { position: absolute; left: 0; top: 4px; content: "e.g."; font: 15px 'Noto Sans KR';}
 .part_wt .section {position: relative; padding: 0 40px;}
 .part_wt .step_01_tb {width:579px; height: 125px;  background: url(../images/21/bg_wt_table.jpg) no-repeat 0 0}
