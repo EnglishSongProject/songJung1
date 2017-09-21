@@ -6,13 +6,9 @@
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/20.css" />
-        <script
-  src="http://code.jquery.com/jquery-1.11.1.min.js"
-  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
-  crossorigin="anonymous"></script>
-        <script>
-
-        </script>
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
     </head>
     <body>
         <div class="first wrapper">
@@ -23,9 +19,9 @@
             <section class="top">
                 <div class="subtit_box">
                     <div class="pin"><span>1</span></div>
-                    <p class="active-purple">나를 소개할 수 있는 핵심어를 골라 네임 텐트를 만들어 봅시다.</p>
+                    <p class="active-purple" onclick="playAudio('./media/audio/L01/020/L01_020_ww_01.mp3', 'single');">나를 소개할 수 있는 핵심어를 골라 네임 텐트를 만들어 봅시다. (전체듣기 음원필요) </p>
                     <div class="btn_list">
-                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
                       <button type="button" class="btn_type_02 btn_mp3" title="mp3듣기">mp3듣기</button>
                     </div><!--btn_list-->
                     <img src="images/20/name.png"></img>
@@ -47,9 +43,9 @@
                     <li>별명</li>
                   </ul>
                   <div class="text">
-                    <input type="text" maxlength="26"/>
-                    <input type="text" maxlength="36"/>
-                    <input type="text" maxlength="36"/>
+                    <input type="text" name="p21_clear_text" maxlength="26"/>
+                    <input type="text" name="p21_clear_text" maxlength="36"/>
+                    <input type="text" name="p21_clear_text" maxlength="36"/>
                     <ul class="checkcheck">
                       <li>이름</li>
                       <li>사는 곳</li>
@@ -75,9 +71,9 @@
             <section class="bottom">
                 <div class="subtit_box">
                   <div class="pin"><span>2</span></div>
-                  <p class="active-purple">수호의 글을  참고하여 자기소개 글을 써 봅시다.</p>
+                  <p class="active-purple" onclick="playAudio('./media/audio/L01/020/L01_020_ww_02.mp3', 'single');">수호의 글을  참고하여 자기소개 글을 써 봅시다. <br/> (전체듣기 음원필요)</p>
                   <div class="btn_list">
-                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
                     <button type="button" class="btn_type_02 btn_mp3" title="mp3듣기">mp3듣기</button>
                   </div><!--btn_list-->
                 </div><!--subtit_box-->
@@ -90,15 +86,18 @@
                 </div><!--bottom_main-->
             </section>
             <img class="girl" src="images/20/girl.png" alt="peer check" width="630" height="197" />
-            <input type="text" class="hia_start" maxlength="15" />
-            <textarea class="hi_i_am" rows="6" cols="35" maxlength="220" />
-            <p class="peer1 active-purple">1. 글 쓴 사람의 특징이 자기소개 글에 잘 나타나 있나요?</p>
-            <p class="peer2 active-purple">2. 'be'동사와 일반동사를 알맞게 사용했나요?</p>
-            <input type="text" class="score1" maxlength="1"/>
-            <input type="text" class="score2" maxlength="1"/>
-            <input type="text" class="score3" maxlength="1"/>
-            <input type="text" class="score4" maxlength="1"/>
-            <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+            <input type="text" class="hia_start" name="p21_clear_text" maxlength="15" />
+            <textarea class="hi_i_am" name="p21_clear_text" rows="6" cols="35" maxlength="220" />
+            <p class="peer1 active-purple" onclick="playAudio('./media/audio/L01/020/L01_020_ww_03.mp3', 'single');">1. 글 쓴 사람의 특징이 자기소개 글에 잘 나타나 있나요?</p>
+            <p class="peer2 active-purple" onclick="playAudio('./media/audio/L01/020/L01_020_ww_04.mp3', 'single');">2. 'be'동사와 일반동사를 알맞게 사용했나요?</p>
+            <input type="text" class="score1" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+            <input type="text" class="score2" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+            <input type="text" class="score3" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+            <input type="text" class="score4" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+            <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>
