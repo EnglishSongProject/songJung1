@@ -39,8 +39,7 @@ label.l_bottom{position: absolute;top:28px;left: 146px;}
 .ask_and_speak #a_text{position: absolute;margin-left: 175px;width: 175px;padding: 3px;display: none;margin-top: -2px;border: 1px solid #999;}
 #answer_check:checked ~ #a_text{display: block;}
 
-.ask_and_speak h3{}
-.ask_and_speak h3:before{content:"2";font-family: 'Noto Sans KR ' !important;font-size: 13px; color:#FF4A23;margin-right: 5px;}
+.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
 .ask_and_speak ul li{float: left;}
 
 .ask_and_speak ul.ask{overflow: hidden;margin-top: 30px;z-index: 10;position:relative;}
@@ -48,6 +47,7 @@ label.l_bottom{position: absolute;top:28px;left: 146px;}
 
 .ask_and_speak ul.answer{overflow: hidden; display:block; position: absolute;padding-bottom: 10px;}
 .ask_and_speak ul.answer li{float: left;}
+.ask > li:hover{cursor: pointer !important;}
 
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
 
