@@ -55,7 +55,7 @@ function playAudio(path, btnId, target, imgId) {
 
                     /*팝업*/
                     removePopup();
-                    popup = document.createElement("div");
+                    var popup = document.createElement("div");
                     popup.className = "popup";
                     target.parentNode.appendChild(popup);
                     popup.style.top = (target.offsetTop - 10) + "px";
@@ -378,4 +378,39 @@ function listenAndNumberCheck(questionId, inputId, answer) {
             }
         }
     }
+}
+function showScriptPopup(target, direction){
+    var popup = document.createElement("div");
+    popup.className = "scriptPopup";
+    target.parentNode.appendChild(popup);
+    switch (direction){
+        case 'bottom-right':
+            popup.style.top = (target.offsetTop - 10) + "px";
+            popup.style.left = (target.offsetLeft + 0) + "px";
+            break;
+        case 'bottom-left' :
+            popup.style.top = (target.offsetTop - 10) + "px";
+            popup.style.left = (target.offsetLeft - 230) + "px";
+            break;
+        case 'bottom':
+            popup.style.top = (target.offsetTop + 5) + "px";
+            popup.style.left = (target.offsetLeft - 115) + "px";
+            break;
+        case 'top-right':
+            popup.style.top = (target.offsetTop - 100) + "px";
+            popup.style.left = (target.offsetLeft + 5) + "px";
+            break;
+        case 'top-left' :
+            popup.style.top = (target.offsetTop - 10) + "px";
+            popup.style.left = (target.offsetLeft - 230) + "px";
+            break;
+        case 'top':
+            popup.style.top = (target.offsetTop + 5) + "px";
+            popup.style.left = (target.offsetLeft - 115) + "px";
+            break;
+        default:
+            popup.style.top = (target.offsetTop - 10) + "px";
+            popup.style.left = (target.offsetLeft + 0) + "px";
+    }
+
 }

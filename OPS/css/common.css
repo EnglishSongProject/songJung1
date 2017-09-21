@@ -216,3 +216,21 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 
 input[type="text"]:focus{outline: none;}
 textarea:focus{outline: none;}
+
+
+
+
+
+
+
+
+
+.scriptPopup{
+    background: url(../images/17/popup_1.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: 256px;
+    height: 247px;
+    z-index: 100;
+}
