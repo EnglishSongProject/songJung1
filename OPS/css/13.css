@@ -20,16 +20,16 @@
 .p13_self_check {position: absolute; display: block; width: 7%; top: 880px; left: 70px; content: url("../images/13/lesson_1_p13_self_check.svg");}
 .p13_self_check + p {font-family: "Nanum Gothic"; font-size: 11px; line-height: 23px; position: absolute; display: block; top: 910px; left: 135px;}
 .p13_self_check_pen {position: absolute; top: 910px; left: 450px;}
-#p13_self_check_pen_1_1 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 467px; background: red;}
-#p13_self_check_pen_1_2 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 499px; background: red;}
-#p13_self_check_pen_1_3 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 531px; background: red;}
-#p13_self_check_pen_1_4 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 563px; background: red;}
-#p13_self_check_pen_1_5 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 595px; background: red;}
-#p13_self_check_pen_2_1 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 467px; background: blue;}
-#p13_self_check_pen_2_2 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 499px; background: blue;}
-#p13_self_check_pen_2_3 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 531px; background: blue;}
-#p13_self_check_pen_2_4 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 563px; background: blue;}
-#p13_self_check_pen_2_5 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 595px; background: blue;}
+#p13_self_check_pen_1_1 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 467px; background: #FF0000; opacity: 0;}
+#p13_self_check_pen_1_2 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 499px; background: #FF0000; opacity: 0;}
+#p13_self_check_pen_1_3 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 531px; background: #FF0000; opacity: 0;}
+#p13_self_check_pen_1_4 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 563px; background: #FF0000; opacity: 0;}
+#p13_self_check_pen_1_5 {position: absolute; display: block; width: 31px; height: 12px; top: 913px; left: 595px; background: #FF0000; opacity: 0;}
+#p13_self_check_pen_2_1 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 467px; background: #0101ff; opacity: 0;}
+#p13_self_check_pen_2_2 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 499px; background: #0101ff; opacity: 0;}
+#p13_self_check_pen_2_3 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 531px; background: #0101ff; opacity: 0;}
+#p13_self_check_pen_2_4 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 563px; background: #0101ff; opacity: 0;}
+#p13_self_check_pen_2_5 {position: absolute; display: block; width: 31px; height: 12px; top: 940px; left: 595px; background: #0101ff; opacity: 0;}
 
 /*슬라이더*/
 .slider_image_wrap .slider_image > li {
