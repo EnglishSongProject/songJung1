@@ -4,14 +4,14 @@
 
 .page_tit{ text-indent: -9999px; display: block;background:url(../images/16/read.png) center center;
   background-repeat:no-repeat; background-size: contain;width:155px; height: 41px;position: relative;}
-.top, .bottom {font-family: 'Faustina';font-size: 19px;line-height: 38px;}
+.first div p{font-family: 'Faustina';font-size: 19px;line-height: 38px;}
 .top,.bottom{padding-left: 20px}
 .top p:hover,.bottom p:hover{cursor: pointer !important;}
 .top{ margin-left: 262px;margin-top: 27px;width: 300px; height: 300px;}
 .bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
 .transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
 .transper_b{display: none;position: absolute;width: 350px;height: 0px; top: 534px; left: 196px;}
-.transper_t p,.transper_b p{font: 11px 'Open Sans'; font-weight: 700; line-height: 38px;}
+.transper_t p,.transper_b p{font-size: 15px !important; color: #339900;}
 
 /*해석보기*/
 
