@@ -440,8 +440,8 @@ function showScriptPopup(target, direction){
             popup.style.left = (target.offsetLeft - 115) + "px";
             break;
         case 'top-right':
-            popup.style.top = (target.offsetTop - 100) + "px";
-            popup.style.left = (target.offsetLeft + 5) + "px";
+            popup.style.top = (target.offsetTop - 230) + "px";
+            popup.style.left = (target.offsetLeft) + "px";
             break;
         case 'top-left' :
             popup.style.top = (target.offsetTop - 10) + "px";
