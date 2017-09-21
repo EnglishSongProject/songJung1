@@ -21,7 +21,7 @@
             <span>서로 친구를 소개하는 릴레이 대화를 연습해 봅시다.</span>
             <span class="btn_list">
                         <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
-                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/013/add/L01_013_com_01_add.mp3','',this);">mp3전체듣기</button>
                     </span>
         </h2>
         <div class="p13_step1_list">
@@ -99,7 +99,9 @@
             <span id="p13_self_check_pen_2_5"></span>
         </div>
     </div>
-
+    <audio id="myaudio" controls="controls"  style="display: none;">
+        HTML5 audio not supported
+    </audio>
 </div>
 </body>
 </html>

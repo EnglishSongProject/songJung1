@@ -24,15 +24,15 @@
                         <li data-num="1">
                             <div class="section">
                                 <h2 class="sub_tit">
-                                    <img src="./images/21/step1.png" alt="step1"/>
-                                    네 명이 한 모둠이 되어 서로에게 자기소개를 해 봅시다
-                                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                                    <img src="./images/21/step1.png" alt="step1" onclick="playAudio('./media/audio/L01/021/Step1.mp3', 'single');"/>
+                                    <span  class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_01.mp3', 'single');">네 명이 한 모둠이 되어 서로에게 자기소개를 해 봅시다</span>
+                                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
                                 </h2>
                                 <div class="eg mt_20" style="margin-bottom:20px">
                                     <span class="sentence">
-                                        Hi. My name is <span class="color-blue">Jina.</span>  My nickname is <span class="color-blue">Good Listener.</span> I’m <span class="color-blue">active.</span>
+                                        <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_01_01.mp3', 'single');">Hi.</span> <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_01_01_1.mp3', 'single');">My name is <span class="color-blue">Jina.</span></span>  <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_01_02.mp3', 'single');">My nickname is <span class="color-blue">Good Listener.</span></span> <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_02.mp3', 'single');">I’m <span class="color-blue">active.</span></span>
                                     </span>
-                                    <span class="sentence">
+                                    <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_03.mp3', 'single');">
                                         My birthday is  <span class="color-blue">November 5th.</span>
                                     </span>
                                 </div>
@@ -44,10 +44,10 @@
                                     <tr>
                                         <th scope="row">이름</th>
                                         <td height="30">Jina</td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
-                                        <td height="30"><input type="text" /></td>
+                                        <td height="30"><input type="text" name="p21_clear_text" /></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
+                                        <td height="30"><input type="text" name="p21_clear_text"/></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">별명</th>
@@ -78,20 +78,19 @@
                             <div class="section section2 mt_40">
                                 <h2 class="sub_tit">
                                     <img src="./images/21/step2.png" alt="step2"/>
-                                    모둠원을 소개하는 UCC 대본을 만들어 봅시다.
+                                    <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_02.mp3', 'single');">모둠원을 소개하는 UCC 대본을 만들어 봅시다.</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/021/total.mp3','',this);">mp3전체듣기</button>
                                     </span>
-
                                 </h2>
                                 <div class="img_content mt_20">
                                     <img src="./images/21/bg_wt_step02.png" alt="" />
                                     <div class="step02_txt">
-                                        <span class="sentence">We’d like to introduce our group members.</span>
-                                        <span class="sentence">This is Jina. Her nickname is Good Listener. She is active.</span>
-                                        <span class="sentence">Her birthday is November 5th..</span>
-                                        <span class="sentence">Now it’s my turn. This is ....</span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_03_01.mp3', 'single');">We’d like to introduce our group members.</span>
+                                        <span class="sentence" ><span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_02_02_01.mp3', 'single');">This is Jina.</span><span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_02_03_01.mp3', 'single');"> Her nickname is Good Listener.</span> <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_02_04_01.mp3', 'single');">She is active.</span></span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_02_05_01.mp3', 'single');">Her birthday is November 5th..</span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_work_03_06.mp3', 'single');">Now it’s my turn. This is ....</span>
                                     </div>
 
                                 </div>
@@ -105,7 +104,7 @@
                             <div class="section section2">
                                 <h2 class="sub_tit">
                                     <img src="./images/21/step3.png" alt="step3"/>
-                                    대본을 바탕으로 UCC를 만들어 발표하고 다른 모둠과 비교해 봅시다.
+                                    <span class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_03.mp3', 'single');">대본을 바탕으로 UCC를 만들어 발표하고 다른 모둠과 비교해 봅시다.</span>
                                     <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
                                     </span>
@@ -118,7 +117,7 @@
                                     <h3 class="hide">Group Check</h3>
                                     <table class="group_ck_tb">
                                         <tr>
-                                            <th scope="row"> 1. 다른 사람을 소개하는 영어 표현을 정확하게 사용했나요? </th>
+                                            <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_04.mp3', 'single');"> 1. 다른 사람을 소개하는 영어 표현을 정확하게 사용했나요? </th>
                                             <td><input type="text" maxlength="1"/></td>
                                             <td><input type="text" maxlength="1"/></td>
                                             <td><input type="text" maxlength="1" /></td>
@@ -127,7 +126,7 @@
                                             <td><input type="text" maxlength="1"/></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"> 2. UCC를 창의적으로 구성했나요?  </th>
+                                            <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_05.mp3', 'single');"> 2. UCC를 창의적으로 구성했나요?  </th>
                                             <td><input type="text" maxlength="1"/></td>
                                             <td><input type="text" maxlength="1"/></td>
                                             <td><input type="text" maxlength="1"/></td>
@@ -140,6 +139,9 @@
                             </div><!-- // section -->
                         </li>
                     </ul>
+                    <audio id="myaudio" controls="controls"  style="display: none;">
+                        HTML5 audio not supported
+                    </audio>
                 </div>
                 <div class="slider_thumbnail_area">
                     <div class="slider_thumbnail">
