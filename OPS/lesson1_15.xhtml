@@ -15,19 +15,19 @@
     <body>
         <div class="intro wrapper">
             <span class="page_tit"></span>
-            <span class="info"> 글을 빨리 읽으며, 소개하고 있는 사람의 이름에 동그라미를 쳐 봅시다.</span>
+            <span class="info"><span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_RT_01.mp3', 'single');"> 글을 빨리 읽으며, 소개하고 있는 사람의 이름에 동그라미를 쳐 봅시다.</span></span>
             <span class="btn_play"></span>
             <div class="section">
                 <img class="reading_time_title"></img>
-                <span class="btn_mp3_a"></span>
+                <span class="btn_mp3_a" onclick="playAudio('./media/audio/L01/015/add/L01_015_RT_01.mp3','',this);"></span>
                 <span class="btn_trans"></span>
                 <p>
-                    Hello, everyone. <br/>
-                    Welcome to Boram Middle School! <br/>
-                    I am your English teacher. <br/>
-                    I am very happy to meet you. <br/>
-                    Today is our first class. <br/>
-                    Let's make a name tent and introduce ourselves. <br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01.mp3', 'single');">Hello, everyone.</span><br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01_01.mp3', 'single');">Welcome to Boram Middle School!</span><br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01_03.mp3', 'single');">I am your English teacher. </span><br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01_04.mp3', 'single');">I am very happy to meet you.  </span><br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01_05.mp3', 'single');">Today is our first class. </span><br/>
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/015/L01_015_read_01_06.mp3', 'single');">Let's make a name tent and introduce ourselves. </span><br/>
                 </p>
                 <p class="correct color-green">
                     모두들, 안녕. <br/>
@@ -41,18 +41,21 @@
             <div class="ask_and_speak">
                 <span class="aa_title"></span>
                 <span class="btn_answer"></span>
-                <h3><b>1.</b>Is this their first English class?</h3>
+                <h3 class="aa_ask1" onclick="playAudio('./media/audio/L01/015/L01_015_read_q_01_1.mp3', 'single');"><b>1.</b>Is this their first English class?></h3>
                 <input type="text" value="Yes, it is." />
                 <ul class="answer">
                     <li class="aa_answer1 balloon">환영하다</li>
                     <li class="aa_answer2 balloon">소개하다</li>
                 </ul>
                 <ul class="ask">
-                    <li class="aa_ask1">• welcome</li>
-                    <li class="aa_ask2">• introduce</li>
+                    <li class="aa_ask1" onclick="playAudio('./media/audio/L01/015/L01_015_w01.mp3', 'single');" >• welcome</li>
+                    <li class="aa_ask2" onclick="playAudio('./media/audio/L01/015/L01_015_w02.mp3', 'single');">• introduce</li>
                 </ul>
             </div>
             <span class="btn_word"></span>
+                <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>
