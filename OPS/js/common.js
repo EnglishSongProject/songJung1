@@ -231,6 +231,7 @@ function blankCheckByCss(questionId, Ids, clearId){
         questionId.title = '답안';
         for(var i=0; i<answerIdArray.length; i++){
             clearId = document.getElementById(clearArray[i]);
+            clearId.value='';
             if(clearId.value != null && clearId.value != ''){
                 clearId.value='';
             }
@@ -313,56 +314,5 @@ function textClear(idForClear) {
     var id = document.getElementById(idForClear);
     if(id.value != null && id.value != ''){
         id.value='';
-    }
-}
-function listenAndNumberCheck(questionId, inputId, answer) {
-    var questionId = document.getElementById(questionId);
-    var answerArray;
-    if(inputId.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
-        answerArray = answer.split('+');
-        inputId = inputId.split('+');
-    }
-    if(questionId.title =='답안'){
-        $(questionId).removeClass('btn_answer');
-        $(questionId).addClass('btn_repeat');
-        questionId.title ='다시풀기';
-        var correctCheck = 0;
-        for(var i=0; i<inputId.length; i++){
-            var id = document.getElementById(inputId[i]);
-            if(id.value==answerArray[i]){
-                correctCheck +=1
-            }
-        }
-        for(var i=0;i<inputId.length;i++){
-            var id = document.getElementById(inputId[i]);
-            if(id.value != null && id.value != ''){
-                $(id).addClass('color-red');
-            }
-        }
-        if(correctCheck == 3){
-            alert('정답입니다.');
-        }else{
-            alert('오답입니다.');
-            for(var i=0; i<inputId.length; i++){
-                var id = document.getElementById(inputId[i]);
-                id.value=answerArray[i];
-                if(!$(id).hasClass('color-red')){
-                    $(id).addClass('color-red');
-                }
-            }
-        }
-    }else if (questionId.title == '다시풀기'){
-        $(questionId).removeClass('btn_repeat');
-        $(questionId).addClass('btn_answer');
-        questionId.title = '답안';
-        for(var i=0;i<inputId.length;i++){
-            var id = document.getElementById(inputId[i]);
-            if(id.value != null && id.value != ''){
-                id.value='';
-                if($(id).hasClass('color-red')){
-                    $(id).removeClass('color-red');
-                }
-            }
-        }
     }
 }
