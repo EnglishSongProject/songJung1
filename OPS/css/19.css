@@ -17,7 +17,7 @@ input[type="text"] {position: relative;}
 .part_lu .section .top_area:after {position: absolute; top:40px; left:50%; content:''; display: block; height: 100px; width: 1px; background:#e1bb8c;}
 .part_lu .info {font:12px 'Nanum Gothic';}
 .part_lu .word_box {width:386px; padding:14px 25px; background:#f1f7e7; border-radius: 30px; overflow: hidden; margin:0 auto}
-.word_box li{float:left; font:14px 'Noto Sans KR'; width:20%; text-align: center}
+.word_box li{float:left; font:14px 'Noto Sans KR'; width:16.5%; text-align: center}
 
 .img_content > div {overflow: hidden}
 .img_content .num {float:left; font: 16px "Noto Sans KR";}
