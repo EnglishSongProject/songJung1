@@ -202,11 +202,12 @@ function blankCheck(questionId, Ids, answers){
     }
 }
 
-function blankCheckByCss(questionId, Ids, clearId){
+function blankCheckByCss(questionId, Ids, clearId, type){
     var questionId = document.getElementById(questionId);
     var answerIdArray;
     var clearArray;
     var answerId;
+    var score = 0;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
     //포함하고 있지 않다면 단일 빈칸 체크임
@@ -222,9 +223,21 @@ function blankCheckByCss(questionId, Ids, clearId){
         $(questionId).addClass('btn_repeat');
         questionId.title ='다시풀기';
         for(var i=0; i<answerIdArray.length; i++){
+            inputId = document.getElementById(clearArray[i]);
             answerId = document.getElementById(answerIdArray[i]);
+
+            if(inputId.value.trim() == answerId.innerHTML) {
+                score++
+            }
+
             answerId.style.display='inline';
         }
+        var notice = score === 3 ? "정답" : "오답"
+        if(type == "type01"){
+            alert(notice + "입니다")
+        }
+        
+
     }else if (questionId.title == '다시풀기'){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
@@ -309,11 +322,26 @@ function radioCorrectCheckSeperForAll(name, answer){
         return 0;
     }
 }
-function textClear(idForClear) {
-    var id = document.getElementById(idForClear);
+
+function textClear(idForClear, nameForClear, Ids) {
+    //var id = document.getElementById(idForClear);
+    var id = idForClear.id;
+    var test =document.getElementsByName(nameForClear);
     if(id.value != null && id.value != ''){
         id.value='';
     }
+    for(var i=0; i<test.length; i++){
+        test[i].checked = false;
+    }
+   var target = document.getElementById(Ids);
+   console.log(target)
+   $(idForClear).toggleClass("btn_repeat btn_answer")
+
+   if($(idForClear).hasClass('btn_answer')){
+        target.style.display = "none";
+   }else if($(idForClear).hasClass('btn_repeat')){
+        target.style.display = "inline";
+   }
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
     var questionId = document.getElementById(questionId);
