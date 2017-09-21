@@ -30,14 +30,14 @@
 .btn_answer + p + span {position: absolute; color: #FF4A23; size: 13px;}
 
 .ask {position: absolute; top: 45px;}
-.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 0; top: 45px;}
+.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 0; top: 40px;}
 .aa_ask1 {position: relative; display: block; top: 50px; left: 10px;}
 .aa_ask2 {position: relative; display: block; top: 50px; left: 30px;}
 
-.answer {position: absolute; top: 10px;}
-.answer li {display: inline-block; position: relative; margin-top: 45px;}
-.aa_answer1 {left: -10px;}
-.aa_answer2 {left: -20px;}
+.answer {position: absolute; top: 50px; height: 30px;}
+.answer li {display: inline-block; position: relative; }
+.aa_answer1 {left: -10px;  }
+.aa_answer2 {left: -6px;}
 
 
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 30px 5px; text-align: center; margin: 0 auto 10px;}
