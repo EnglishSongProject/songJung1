@@ -365,12 +365,18 @@ function textClear(idForClear, nameForClear, Id_a, btnId_q) {
         $(answer).css('display','none');
     }
 }
-function textClearByNames(name) {
+
+function textClearByNames(name,ck_list) {
     var nameArray = document.getElementsByName(name);
+    var ckArray = document.getElementsByName(ck_list);
     for(var i=0; i<nameArray.length; i++){
         nameArray[i].value='';
     }
+    for(var i=0; i<ckArray.length; i++){
+        ckArray[i].checked= false;
+    }
 }
+     
 function listenAndNumberCheck(questionId, inputId, answer) {
     var questionId = document.getElementById(questionId);
     var answerArray;
