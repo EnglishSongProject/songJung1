@@ -205,7 +205,7 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 }
 
 /*audio popup*/
-#myaudio {position: absolute;  }
+#myaudio {position: absolute;z-index: 100; }
 .popup{position:absolute; display: block; width:230px; height:40px; border:1px solid #ddd; background-color: #fafafa; border-radius: 5px; border:none; box-shadow: 2px 2px 2px #888888 ;}
 .popup:after {position: absolute; top:50%; left:-15px; transform:translateY(-50%); display: block; content:"";border: 8px solid transparent; border-right-color: #fff}
 
