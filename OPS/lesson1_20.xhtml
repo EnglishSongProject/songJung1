@@ -5,31 +5,100 @@
         <meta name="viewport" content="width=768, height=1024"/>
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/20.css" />
+        <script
+  src="http://code.jquery.com/jquery-1.11.1.min.js"
+  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
+  crossorigin="anonymous"></script>
+        <script>
+
+        </script>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="first wrapper">
             <h1 class="page_tit">
                 Writing
                 Workshop
             </h1>
-            <div class="section">
-                <h2>
-                    <img src="" alt="1" />
-                    나를 소개할 수 있는 핵심어를 골라 네임 텐트를 만들어 봅시다.
-                </h2>
-                <div>
-
-                </div>
-            </div>
-            <div class="section">
-                <h2>
-                    <img src="" alt="2" />
-                    수호의 글을  참고하여 자기소개 글을 써 봅시다.
-                </h2>
-                <div>
-
-                </div>
-            </div>
+            <section class="top">
+                <div class="subtit_box">
+                    <div class="pin"><span>1</span></div>
+                    <p>나를 소개할 수 있는 핵심어를 골라 네임 텐트를 만들어 봅시다.</p>
+                    <div class="btn_list">
+                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                      <button type="button" class="btn_type_02 btn_mp3" title="mp3듣기">mp3듣기</button>
+                    </div><!--btn_list-->
+                    <img src="images/20/name.png"></img>
+                </div><!--subtit_box-->
+                <div class="top_main">
+                  <img class="right" src="images/20/memo_top.png" alt="main_background" width="389" height="255"/>
+                  <img class="left" src="images/20/card.png" alt="card_shape" width="283" height="188"/>
+                  <p>
+                    <span>Kim Suho</span><br/>
+                    Jejudo, Jeju Middle School,<br/>
+                    nature and science,<br/>
+                    Mr. Halla
+                  </p>
+                  <ul class="minicheck">
+                    <li>이름</li>
+                    <li>사는 곳</li>
+                    <li>학교</li>
+                    <li>좋아하는 것</li>
+                    <li>별명</li>
+                  </ul>
+                  <div class="text">
+                    <input type="text" maxlength="26"/>
+                    <input type="text" maxlength="36"/>
+                    <input type="text" maxlength="36"/>
+                    <ul class="checkcheck">
+                      <li>이름</li>
+                      <li>사는 곳</li>
+                      <li>학교</li>
+                      <li>좋아하는 것</li>
+                      <li>별명</li>
+                    </ul>
+                    <div class="check_box">
+                      <input type="checkbox" id="rbtn_1" class="correct" name="rbtn1"/>
+                		  <label id="check_name" for="rbtn_1"></label>
+                		  <input type="checkbox" id="rbtn_2" class="correct" name="rbtn2"/>
+                		  <label id="check_live" for="rbtn_2"></label>
+                		  <input type="checkbox" id="rbtn_3" class="correct" name="rbtn3"/>
+                		  <label id="check_school" for="rbtn_3"></label>
+                		  <input type="checkbox" id="rbtn_4" class="correct" name="rbtn4"/>
+                		  <label id="check_like" for="rbtn_4"></label>
+                		  <input type="checkbox" id="rbtn_5" class="correct" name="rbtn5"/>
+                		  <label id="check_nick" for="rbtn_5"></label>
+                  </div><!--check_box-->
+                  </div>
+                </div><!--top_main-->
+            </section>
+            <section class="bottom">
+                <div class="subtit_box">
+                  <div class="pin"><span>2</span></div>
+                  <p>수호의 글을  참고하여 자기소개 글을 써 봅시다.</p>
+                  <div class="btn_list">
+                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                    <button type="button" class="btn_type_02 btn_mp3" title="mp3듣기">mp3듣기</button>
+                  </div><!--btn_list-->
+                </div><!--subtit_box-->
+                <div class="bottom_main">
+                  <img class="memo" src="images/20/paper.png" alt="main_background" width="489" height="387"/>
+                  <img class="phone" src="images/20/phone.png" alt="card_shape" width="255" height="409"/>
+                  <img class="pic" src="images/20/pic.png" alt="boy picture" width="69" height="77" />
+                  <p>Hello. I am Suho. I live in Jejudo. I go to Jeju Middle School. I like nature and science. I go to Hallasan National Park every weekend. My nickname is Mr. Halla.</p>
+                  <p class="start">Hi. I am</p>
+                </div><!--bottom_main-->
+            </section>
+            <img class="girl" src="images/20/girl.png" alt="peer check" width="630" height="197" />
+            <input type="text" class="hia_start" maxlength="15" />
+            <textarea class="hi_i_am" rows="6" cols="35" maxlength="220" />
+            <p class="peer1">1. 글 쓴 사람의 특징이 자기소개 글에 잘 나타나 있나요?</p>
+            <p class="peer2">2. 'be'동사와 일반동사를 알맞게 사용했나요?</p>
+            <input type="text" class="score1" maxlength="1"/>
+            <input type="text" class="score2" maxlength="1"/>
+            <input type="text" class="score3" maxlength="1"/>
+            <input type="text" class="score4" maxlength="1"/>
+            <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
         </div>
     </body>
 </html>
