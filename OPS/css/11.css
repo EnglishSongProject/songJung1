@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.part_las_02 .page_tit {position: relative; left: -38px;}
+.part_las_02 {background: url(../images/11/bg_lesson01_11.jpg) no-repeat 0 0; background-size: cover}
 
 /*listen&speak 공통*/
 .page_tit {margin:10px}
@@ -21,7 +21,7 @@
 
 /*tip*/
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; margin-right:5px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; }
-.tip_con {font:11px "Nanum Gothic";}
+.tip_con {font:12px "Nanum Gothic";}
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
