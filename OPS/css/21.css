@@ -1,1 +1,45 @@
 @charset "utf-8";
+
+.part_wt {background: url(../images/21/bg_lesson01_21.jpg) no-repeat 0 0; background-size: cover}
+.part_wt .page_tit {text-align: center}
+.part_wt .page_tit span {display: block;  font: 17px 'Noto Sans KR'; margin-top:22px}
+.part_wt .sub_tit {margin-left:-49px; font:13px 'Noto Sans KR';}
+.part_wt .sub_tit img {position: relative; top:-10px; margin-right:5px}
+
+.part_wt .eg {position: relative; font: 16px 'Faustina'; line-height: 1.7; float: left;   padding-left: 35px; letter-spacing: 0.5px;}
+
+.sentence{display: block; white-space: nowrap}
+.sentence em {font:14px 'Noto Sans KR';}
+
+.part_wt .eg:before { position: absolute; left: 0; top: 4px; content: "e.g."; font: 15px 'Noto Sans KR';}
+.part_wt .section {position: relative; padding: 0 40px;}
+.part_wt .step_01_tb {width:579px; height: 125px;  background: url(../images/21/bg_wt_table.jpg) no-repeat 0 0}
+.part_wt .step_01_tb th, .part_wt table td {font:13px 'Noto Sans KR'; text-align: center; }
+.part_wt .step_01_tb td {font-size:14px; }
+.part_wt .step_01_tb input[type="text"] {width:78px; font: 14px 'Noto Sans KR';}
+
+.img_content {position: relative;}
+.part_wt .step02_txt {position: absolute; top:20px; left:75px ; font: 16px/1.6 'Faustina'; }
+.part_wt .step2_ta_wrap {width:100%; height: 160px; border-radius: 20px; border:3px solid #c6dbf1; }
+.part_wt .img_content .step2_ta {position: absolute; top: 18px; left: 74px; width: 455px; height: 110px; resize:none; font: 16px/1.6 'Faustina';}
+.part_wt .img_content .icon_man {position: absolute; top:19px; left:37px}
+
+.part_wt .group_ck {left:-10px;}
+.part_wt .group_ck:after {content:''; position: absolute; top:0; left:-30px; width:65px; height: 52px; display: block; background: url(../images/21/group.png) no-repeat 0 0}
+
+.part_wt .group_ck {width:593px; height: 125px;  background: url(../images/21/bg_group_ck.png) no-repeat 0 0;}
+.part_wt .group_ck_tb {display: block; width:593px; height:52px; margin-top:37px; float:left}
+.part_wt .group_ck_tb th, .part_wt .group_ck_tb td {font:13px 'Noto Sans KR'; text-align: center; height:25px}
+.part_wt .group_ck_tb th {font:11px 'Nanum Gothic'; width:390px; text-align:left; padding-left:50px; }
+.part_wt .group_ck_tb td {font-size:14px; width:35px}
+.part_wt .group_ck_tb input[type="text"] {width:20px; font:15px 'Nanum Gothic'; text-align: center; vertical-align: baseline;}
+
+
+/*슬라이더*/
+.slider_image_wrap .slider_image > li {display: none;}
+.slider_image_wrap .slider_image li.on {display: block;}
+
+.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}

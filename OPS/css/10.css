@@ -6,7 +6,7 @@
 
 .part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
-.part_las .sub_tit span {font:17px "Noto Sans KR";  margin-left:14px;}
+.part_las .sub_tit span {font:17px "Noto Sans KR";}
 .part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .btn_list {margin-left:5px !important}
 
@@ -55,7 +55,7 @@ input.wp_input01:focus{outline: none;}
 .target_sentence span:nth-of-type(4) {left:495px}
 
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
-.tip_con {font:11px "Noto Sans KR"; ;}
+.tip_con {font:12px "Noto Sans KR"; ;}
 
 /*슬라이더*/
 .slider_image_wrap .slider_image > li {
