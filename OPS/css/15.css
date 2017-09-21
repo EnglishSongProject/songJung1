@@ -11,6 +11,7 @@
 /* 본문 */
 .reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.svg")}
 .section > p {font: 19px 'Faustina'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
+.section > p:hover{cursor: pointer !important;}
 .section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 330px; line-height: 38px; display: none;}
 
 .btn_mp3_a {position: relative; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 100px; background-size: cover;}
@@ -23,6 +24,7 @@
 .ask_and_speak>h3 {position: absolute; width: 200px;  left: 0px; top:30px; }
 .ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
 .ask_and_speak > input {position: relative; display: inline-block; top: 29px; left: 75px;}
+.ask > li:hover{cursor: pointer !important;}
 
 .aa_title {position: relative; display: block; float:left; width: 100px; height: 16px; margin-bottom: 10px; background: url("../images/15/lesson_1_p15_aa_title.png") no-repeat 0 0; background-size: cover}
 .btn_answer {position: relative; display: block; float:left; width: 25px; height: 25px; top: -5px; left: 5px; background-size: cover;}
