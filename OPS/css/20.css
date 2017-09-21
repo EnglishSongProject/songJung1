@@ -77,18 +77,18 @@ textarea.hi_i_am{    width: 280px;
     resize: none;line-height: 33px;
     box-sizing: border-box;
     padding: 0px 7px;}
-img.girl{position:absolute;; z-index: 900;bottom: 18px; right: 0;}
+img.girl{position:absolute;; z-index: 900; bottom: 0px; right: 0;}
 p.peer1,
 p.peer2{position: absolute;z-index: 1000;font-family: 'Nanum Gothic';font-size: 11px;left:205px;}
-.peer1{bottom:99px;}
-.peer2{bottom:66px;}
+.peer1{bottom:82px;}
+.peer2{bottom:49px;}
 input.score1,
 input.score2,
 input.score3,
-input.score4{background:transparent;display: block;position:absolute;z-index: 1000;width:22px;right:213px;bottom: 98px;}
-input.score1{right:213px;bottom: 98px;}
-input.score2{right:177px;bottom: 98px;}
-input.score3{bottom:66px;right:213px;}
-input.score4{bottom:66px;right:177px;}
+input.score4{background:transparent;display: block;position:absolute;z-index: 1000;width:22px;right:213px;bottom: 90px;}
+input.score1{right:213px;bottom: 83px;}
+input.score2{right:177px;bottom: 83px;}
+input.score3{bottom:47px;right:213px;}
+input.score4{bottom:47px;right:177px;}
 
-.wrapper>button{position:absolute;z-index:1000;bottom:117px;right:52px;}
+.wrapper>button{position:absolute;z-index:1000;bottom:93px;right:52px;}
