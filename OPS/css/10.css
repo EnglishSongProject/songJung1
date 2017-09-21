@@ -32,7 +32,7 @@ input.wp_input01:focus{outline: none;}
 .part_las .eg {position: relative; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
 .part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
 .part_las .eg em { font:18px 'Faustina'; }
-.part_las .eg .blue {color:#a14796}
+.part_las .eg .blue {color:#0101ff;}
 
 .select_area {position: absolute; left:40px; top:0}
 .select_name {position: absolute; width:120px; height:120px; }

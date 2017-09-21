@@ -12,5 +12,18 @@ $(document).ready(function () {
 
         $(this).addClass("on").siblings().removeClass("on");
         $slides.eq(idx).show().siblings().hide()
-    })
+    });
+
+    $(".trans1").on("click", function(){
+        $(".correct1").toggle();
+    });
+    $(".trans2").on("click", function(){
+        $(".correct2").toggle();
+    });
+    $(".trans3").on("click", function(){
+        $(".correct3").toggle();
+    });
+    $(".trans4").on("click", function(){
+        $(".correct4").toggle();
+    });
 });

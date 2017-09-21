@@ -7,9 +7,14 @@
 .info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
 
 .part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit img {margin-right:10px; vertical-align: top;}
 .part_las .sub_tit span {font:15px "Noto Sans KR";  margin-left:14px;}
+.part_las .rolling .btn_list {z-index:100; position: relative}
 .part_las .btn_list {margin-left:5px !important}
+
+.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
+
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
 .part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
@@ -20,12 +25,14 @@
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
-.rolling_image_wrap .txt_box .blue {color:#954EA7}
+.rolling_image_wrap .txt_box .sentence:hover{color: #9a01cd; !important;}
+.rolling_image_wrap .txt_box .blue {color:#0101ff}
 .rolling_image_wrap .txt_box em {font:16px "Noto Sans KR"; margin-right:5px}
 
 /*Warm up */
 .part_las_02 .wp_text01 {position: absolute; top: 55px; left: 68px;}
 .part_las_02 .wp_text02 {position: absolute; top: 66px; left: 559px;}
+.part_las_02 .wp_text03 {position: absolute; top: 93px; left: 460px;color:#FF0000;}
 .part_las_02 .wp_input01 {position: absolute; top: 65px; left: 448px; width: 111px; background: transparent}
 
 /*Look and Talk */
@@ -47,10 +54,12 @@
 
 /*롤링*/
 .rolling_image_wrap {height:320px;}
-.rolling_image_wrap >ul > li {display: none; position: absolute;}
+.rolling_image_wrap >ul > li {display: none; position: absolute; width: 100%;}
 .rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
 .rolling_image_wrap >ul > li.on {display: block;}
+.rolling_image_wrap >ul > li > span:last-child{position: absolute;  top: 110px;  left: 300px;  font: 11px 'Open Sans';  font-weight: 700;  line-height: 32px;}
 .rolling_image_wrap .img_txt {position: absolute;  width:100px; font:11px "Noto Sans KR"; line-height: 1.2}
+.rolling_image_wrap .img_txt span:hover{color: #9a01cd;}
 .rolling_image_wrap .rolling_01 .img_txt {top: 20px;left: 95px; letter-spacing: -0.5px}
 .rolling_image_wrap .rolling_02 .img_txt {top: 10px; left: 132px;}
 .rolling_image_wrap .rolling_03 .img_txt {top: 76px; left: 135px;}
