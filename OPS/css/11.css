@@ -25,6 +25,7 @@
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
+.rolling_image_wrap .txt_box .sentence:hover{color: #9a01cd; !important;}
 .rolling_image_wrap .txt_box .blue {color:#0101ff}
 .rolling_image_wrap .txt_box em {font:16px "Noto Sans KR"; margin-right:5px}
 
@@ -57,6 +58,7 @@
 .rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
 .rolling_image_wrap >ul > li.on {display: block;}
 .rolling_image_wrap .img_txt {position: absolute;  width:100px; font:11px "Noto Sans KR"; line-height: 1.2}
+.rolling_image_wrap .img_txt span:hover{color: #9a01cd;}
 .rolling_image_wrap .rolling_01 .img_txt {top: 20px;left: 95px; letter-spacing: -0.5px}
 .rolling_image_wrap .rolling_02 .img_txt {top: 10px; left: 132px;}
 .rolling_image_wrap .rolling_03 .img_txt {top: 76px; left: 135px;}
