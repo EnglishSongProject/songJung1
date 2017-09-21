@@ -15,7 +15,7 @@
         <div class="first wrapper">
             <h1 class="page_tit"><img src="images/14/tit.png" alt="beforeyouread" /></h1>
             <div class="section1">
-    		<button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+    			<button type="button" class="btn_type_02 btn_answer" id="byr_a_q"  title="답안" onclick="textClear('a_text','rbtn1', 'byr_a_a', 'byr_a_q');">답안</button>
                 <h2>
                     <img src="images/14/A.png" alt="A" />
                     새로운 친구를 만났을 때 가장 궁금한 것 세 가지를 고르고, 짝의 것과 비교해 봅시다.
@@ -29,20 +29,20 @@
 					<span class="af"><img src="images/14/YourOwn.png" alt="inputbox"/></span>
 					   <p>
 						<input class="a_text" id="a_text" type="text" />
-						<lable for="a_text"></lable>
+						<span id="byr_a_a" class="txt_answer display-none">likes,hobby,etc.</span>
 					   </p>
                 <div class="section02">
               		<input type="checkbox" id="rbtn_1" class="correct" name="rbtn1"/>
               		 <label for="rbtn_1"></label>
-              		 <input type="checkbox" id="rbtn_2" class="correct" name="rbtn2"/>
+              		 <input type="checkbox" id="rbtn_2" class="correct" name="rbtn1"/>
               		 <label for="rbtn_2"></label>
-              		 <input type="checkbox" id="rbtn_3" class="correct" name="rbtn3"/>
+              		 <input type="checkbox" id="rbtn_3" class="correct" name="rbtn1"/>
               		 <label for="rbtn_3"></label>
-              		 <input type="checkbox" id="rbtn_4" class="correct" name="rbtn4"/>
+              		 <input type="checkbox" id="rbtn_4" class="correct" name="rbtn1"/>
               		 <label for="rbtn_4"></label>
-              		 <input type="checkbox" id="rbtn_5" class="correct" name="rbtn5"/>
+              		 <input type="checkbox" id="rbtn_5" class="correct" name="rbtn1"/>
               		 <label for="rbtn_5"></label>
-              		 <input type="checkbox" id="rbtn_6" class="correct" name="rbtn6"/>
+              		 <input type="checkbox" id="rbtn_6" class="correct" name="rbtn1"/>
               		 <label for="rbtn_6"></label>
                </div>
                 </div>
@@ -52,7 +52,7 @@
                     <img src="images/14/B.png" alt="B" />
                     <span>빈칸에 알맞은 낱말을 골라 문장을 완성해 봅시다.</span>
                     <span class="tip">
-    				<button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+					<button type="button"  id="byr_b_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('byr_b_q','byr_b_a1+byr_b_a2+byr_b_a3','byr_b_t1+byr_b_t2+byr_b_t3','type01');">답안</button>
                     	<span class="btn_tip"></span>
                     	<span class="transfer">
                     		그림의 상황을 생각해 보며, 낱말의 뜻을 유추해 보세요.
@@ -69,20 +69,20 @@
 					<div class="txtbox">
 						<span class="num_1">Now, it's your</span>
 							<p>
-							<input class="a_text1" id="a_text" type="text" />
-							<lable for="a_text1"></lable>
+							<input class="a_text1" id="byr_b_t1" type="text" />
+							<span id="byr_b_a1" class="txt_answer display-none">turn</span>
 						   </p>
 						<span class="num_2">I'd like to</span>
 							<p>
-							<input class="a_text2" id="a_text" type="text" />
-							<lable for="a_text2"></lable>
+							<input class="a_text2" id="byr_b_t2" type="text" />
+							<span id="byr_b_a2" class="txt_answer display-none">introduce</span>
 						   </p>
 						<span class="num_2_1">my friend to you.</span>
 						<span class="num_3">Look, This picture<br/></span>
 						<span class="num_3_1">is</span>
 							<p>
-							<input class="a_text3" id="a_text" type="text" />
-							<lable for="a_text3"></lable>
+							<input class="a_text3" id="byr_b_t3" type="text" />
+							<span id="byr_b_a3" class="txt_answer display-none">fantastic</span>
 						   </p>
                		</div>
                		<ul class="word">

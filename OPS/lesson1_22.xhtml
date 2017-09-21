@@ -6,6 +6,10 @@
         <title>lesson1</title>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/22.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/22.js"></script>
     </head>
     <body>
         <div class="first wrapper">
@@ -13,11 +17,12 @@
                 Solve the Problem
             </h1>
             <div class="section">
-                <h2 class="active-purple">
+                <h2 class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_k.mp3', 'single');">
                     다음 인물과 관련된 이미지를 보고, 자기소개 글을 완성해 봅시다.
                 </h2>
                 <span class="tip">
                   <span class="bt_22">
+                      <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/022/add/L01_022_solve_add_01.mp3','',this);">mp3전체듣기</button>
                       <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
                       <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
                   </span>
@@ -31,22 +36,22 @@
                 <div class="Q_area">
                   <ul>
                     <li>
-                      <span class="active-purple">Hi.</span><span class="active-purple">My name is <input id="Rose_tex" type="text" /><label for="Rose_tex"></label>.</span>
+                      <span class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_01.mp3', 'single');"> Hi.</span><span class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_01_1.mp3', 'single');">My name is <input id="Rose_tex" type="text" /><label for="Rose_tex"></label>.</span>
                     </li>
                     <li class="ft_red">Rose</li>
-                    <li class="active-purple">
+                    <li class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_02.mp3', 'single');">
                       I'm from <input id="USA_tex" type="text" /><label for="USA_tex"></label>.
                     </li>
                     <li class="ft_red">the U.S.A</li>
-                    <li class="active-purple">
+                    <li class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_03.mp3', 'single');">
                       My nickname is <input id="Writer_tex" type="text" /><label for="Writer_tex"></label>.
                     </li>
                     <li class="ft_red">Writer Rose</li>
-                    <li class="active-purple">
+                    <li class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_04.mp3', 'single');">
                       I like <input id="animals_tex" type="text" /><label for="animals_tex"></label>.
                     </li>
                     <li class="ft_red">animals</li>
-                    <li class="active-purple">
+                    <li class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_solve_01_05.mp3', 'single');">
                       I'm good at <input id="coocking_tex" type="text" /><label for="coocking_tex"></label>.
                     </li>
                     <li class="ft_red">cooking</li>
@@ -54,10 +59,11 @@
                 </div>
             </div>
             <div class="section section2">
-                <h1 class="active-purple">
+              <div><img src="images/22/sub_tit_22p.png" alt="Into the world" /></div>
+                <h1 class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_title.mp3', 'single');">
                   <strong>통역사</strong>가 되어봐요
                 </h1>
-                <h2 class="active-purple">
+                <h2 class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02.mp3', 'single');">
                     국제회의에 참석한 각국 대표와 그 나라의 인사말을 연결해 보고,<span> 다양한 언어로 인사해 봅시다.</span>
                 </h2>
                 <span class="btn_lang">
@@ -68,11 +74,11 @@
                   <ul>
                     <li class="dot_Num1">
                       <ul>
-                        <li class="bonjour_txt"><span class="dot_22p dot_22p_1">Bonjour.</span></li>
-                        <li class="hello_txt"><span class="dot_22p dot_22p_2">Hello.</span></li>
-                        <li class="annyeong_txt"><span class="dot_22p dot_22p_3">안녕하세요.</span></li>
-                        <li class="guten_txt"><span class="dot_22p dot_22p_4">Guten Tag.</span></li>
-                        <li class="konni_txt"><span class="dot_22p dot_22p_5">こんにちは。[konnichiwa]</span></li>
+                        <li class="bonjour_txt"><span class="dot_22p dot_22p_1 active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02_01.mp3', 'single');">Bonjour.</span></li>
+                        <li class="hello_txt"><span class="dot_22p dot_22p_2 active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02_02.mp3', 'single');">Hello.</span></li>
+                        <li class="annyeong_txt"><span class="dot_22p dot_22p_3 active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02_03.mp3', 'single');">안녕하세요.</span></li>
+                        <li class="guten_txt"><span class="dot_22p dot_22p_4 active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02_04.mp3', 'single');">Guten Tag.</span></li>
+                        <li class="konni_txt"><span class="dot_22p dot_22p_5 active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_02_05.mp3', 'single');">こんにちは。[konnichiwa]</span></li>
                       </ul>
                     </li>
                     <li class="dot_Num2">
@@ -86,7 +92,14 @@
                     </li>
                   </ul>
                 </div>
+                <div class="pop_up_22">
+                  <button type="button" class="btn_type_02 btn_pop" title="popup_open">위드랑 연결 버튼</button>
+                  <p class="active-purple" onclick="playAudio('./media/audio/L01/022/L01_022_World_06.mp3', 'single');">세계 여러 나라의 인사말을 찾아 친구들과 인사해 봅시다.</p>
+                </div>
             </div>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
     </body>
 </html>

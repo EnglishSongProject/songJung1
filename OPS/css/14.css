@@ -9,7 +9,7 @@
 .section1>h2>img{position: absolute; top:-3px; left: -33px; }
 .section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*다시 아이콘*/
-.btn_repeat{position: absolute; top: 122px; left:555px; }
+#byr_a_q{position: absolute; top: 122px; left:555px; z-index: 100 }
 
 
 /*name*/
@@ -65,6 +65,13 @@
 
 .word{position: absolute;width: 290px; top: 895px; left: 260px; font-family: 'Noto Sans KR'; font-size: 15px;}
 .word>li{float: left; padding-right:40px; }
+
+.txt_answer {position: absolute; font-family: "Nanum Gothic";color: Red; text-align:center; background:#fff; padding: 0px 10px; border:1px solid red; z-index: }
+#byr_a_a {top: 487px; left: 542px; border:none; font-size:20px}
+#byr_b_a1 {top: 69px; left: 30px;}
+#byr_b_a2 {top: 54px; left: 231px;}
+#byr_b_a3 {top: 72px; left: 402px;}
+
 
 
 
