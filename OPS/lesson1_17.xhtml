@@ -13,14 +13,14 @@
     </head>
     <body>
         <div class="first wrapper">
-            <span class="btn_mp3_a btn_1"></span>
+            <span class="btn_mp3_a btn_1" onclick="playAudio('./media/audio/L01/017/L01_017_A01.mp3','',this);"></span>
             <span class="btn_trans btntrans_1"></span>
             <div class="txt1">
                 <p>
-                    My name is Lee Somin.<br />
-                    I like animation movies and comic books.<br />
-                    I’m good at art.<br />
-                    Here is my work.
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_01.mp3', 'single');">My name is Lee Somin.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_02.mp3', 'single');">I like animation movies and comic books.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_03.mp3', 'single');">I’m good at art.</span><br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_04.mp3', 'single');">Here is my work.</span>
                 </p>
             </div>
             <div class="transfer_t">
@@ -32,16 +32,16 @@
             	</p>
             </div>
 
-            <span class="btn_mp3_a btn_2"></span>
+            <span class="btn_mp3_a btn_2" onclick="playAudio('./media/audio/L01/017/L01_017_A02.mp3','',this);"></span>
             <span class="btn_trans btntrans_2"></span>
             <div class="txt2">
                 <p>
-                    My name is Choi Jiseong.<br />
-                    I like P.E. and lunch time.<br />
-                    I’m good at soccer.<br />
-                    My nickname is Future Park Jisung.<br />
-                    Are you good at soccer, too?<br />
-                    Let’s play soccer together.
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_05.mp3', 'single');">My name is Choi Jiseong.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_06.mp3', 'single');">I like P.E. and lunch time.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_07.mp3', 'single');">I’m good at soccer.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_08.mp3', 'single');">My nickname is Future Park Jisung.</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_09.mp3', 'single');">Are you good at soccer, too?</span> <br />
+                    <span class="active-purple" onclick="playAudio('./media/audio/L01/017/L01_017_read_03_10.mp3', 'single');">Let’s play soccer together.</span>
                 </p>
             <div class="transfer_b">
             	<p>
@@ -66,7 +66,7 @@
           <div>
            <span class="btn_repeat repeatbtn"></span>
            <span class="btn_wd bookbtn"></span>
-            <p>
+            <p onclick="playAudio('./media/audio/L01/017/L01_017_Reading_02.mp3', 'single');">
               소개된 친구들 중 친해지고 싶은<br /> 사람이 있다면, 누구인가요?<br />
               왜 그렇게 생각하는지 짝과 함께<br /> 이야기해 봅시다.
             </p>
@@ -93,7 +93,7 @@
             	<input class="a_text" id="a_text" type="text" />
             	<lable for="a_text"></lable>
             </p>
-			<h3><b>3.</b>What is Somin good at?</h3>
+			<h3 onclick="playAudio('./media/audio/L01/017/L01_017_read_q_03_1.mp3', 'single');"><b>3.</b>What is Somin good at?</h3>
     		<button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
 
            <ul class="answer">
@@ -103,11 +103,14 @@
                     <li class="aa_answer4 balloon">~을 잘하다,~에 능숙하다</li>
                 </ul>
                 <ul class="ask">
-                    <li class="aa_ask1">• animation movie</li>
-                    <li class="aa_ask2">• comic book</li>
-                    <li class="aa_ask3">• work</li>
-                    <li class="aa_ask4">• be good at</li>
+                    <li class="aa_ask1" onclick="playAudio('./media/audio/L01/017/L01_017_w01.mp3', 'single');">• animation movie</li>
+                    <li class="aa_ask2" onclick="playAudio('./media/audio/L01/017/L01_017_w02.mp3', 'single');">• comic book</li>
+                    <li class="aa_ask3" onclick="playAudio('./media/audio/L01/017/L01_017_w03.mp3', 'single');">• work</li>
+                    <li class="aa_ask4" onclick="playAudio('./media/audio/L01/017/L01_017_w04.mp3', 'single');">• be good at</li>
                 </ul>
+            <audio id="myaudio" controls="controls"  style="display: none;">
+                HTML5 audio not supported
+            </audio>
         </div>
         <span class="pagenum_right">
           <span>New School, New Friends</span>
