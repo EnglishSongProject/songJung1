@@ -5,6 +5,19 @@
  * Created by wonhuiryu on 2017-09-09.
  */
     // Global variable to track current file name.
+    //OS 분기처리
+var ipadOS = false;
+if (navigator.appVersion.indexOf("iPad")!=-1) ipadOS = true;
+
+var AndroidOS = false;
+if ( navigator.userAgent.toLowerCase().indexOf("android") != -1 ) AndroidOS = true;
+
+var isPc = (AndroidOS == false && ipadOS ) ? true : false;
+
+var WindowsTenOS = false;
+if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
+
+
 var currentFile = "";
 function playAudio(path, btnId, target, imgId) {
     // Check for audio element support.
