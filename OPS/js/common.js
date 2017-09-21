@@ -328,6 +328,12 @@ function textClear(idForClear) {
         id.value='';
     }
 }
+function textClearByNames(name) {
+    var nameArray = document.getElementsByName(name);
+    for(var i=0; i<nameArray.length; i++){
+        nameArray[i].value='';
+    }
+}
 function listenAndNumberCheck(questionId, inputId, answer) {
     var questionId = document.getElementById(questionId);
     var answerArray;
