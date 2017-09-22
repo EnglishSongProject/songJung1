@@ -24,10 +24,10 @@ input[type="text"] {position: relative;}
 .img_content .num + img {float:left; margin-left:10px}
 .img_content .sentence_box {float:left; margin:5px 0 0 40px; font:16px/2 'Faustina' ;}
 
-.txt_content {width:100%; border:1px solid #b7b7b7; padding:10px 20px;}
+.txt_content {width:100%;padding:10px 20px; border: 1px solid #b4ddc8; border-radius: 10px; margin-top:30px;}
 .txt_content li .sentence {font:16px/2.2 'Nanum Gothic'; }
 .txt_content li .sentence:nth-of-type(2)  {margin-left:20px;}
-.txt_content input {width:530px; text-align: left; border-bottom:1px solid #ccc}
+.txt_content input {width:530px; text-align: left; border-bottom: 1px solid #b4ddc8; }
 .txt_content em {margin-right: 5px;}
 
 
