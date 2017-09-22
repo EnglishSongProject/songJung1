@@ -249,7 +249,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
         if(type == "type01"){
             alert(notice + "입니다")
         }
-        
+
 
     }else if (questionId.title == '다시풀기'){
         $(questionId).removeClass('btn_repeat');
@@ -375,8 +375,9 @@ function textClearByNames(name,ck_list) {
     for(var i=0; i<ckArray.length; i++){
         ckArray[i].checked= false;
     }
+
 }
-     
+
 function listenAndNumberCheck(questionId, inputId, answer) {
     var questionId = document.getElementById(questionId);
     var answerArray;
