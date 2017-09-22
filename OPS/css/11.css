@@ -25,7 +25,7 @@
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
-.rolling_image_wrap .txt_box .sentence:hover{color: #9a01cd; !important;}
+.rolling_image_wrap .txt_box .sentence:hover{color: #9a01cd !important;}
 .rolling_image_wrap .txt_box .blue {color:#0101ff}
 .rolling_image_wrap .txt_box em {font:16px "Noto Sans KR"; margin-right:5px}
 
