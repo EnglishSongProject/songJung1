@@ -422,38 +422,19 @@ function listenAndNumberCheck(questionId, inputId, answer) {
         }
     }
 }
-function showScriptPopup(target, direction){
+function showScriptPopupTopLeft(target, top, left){
     var popup = document.createElement("div");
+    var close = document.createElement("span");
+    var top = top;
+    var left = left;
     popup.className = "scriptPopup";
+    close.className = "closeForScriptPopup";
     target.parentNode.appendChild(popup);
-    switch (direction){
-        case 'bottom-right':
-            popup.style.top = (target.offsetTop - 10) + "px";
-            popup.style.left = (target.offsetLeft + 0) + "px";
-            break;
-        case 'bottom-left' :
-            popup.style.top = (target.offsetTop - 10) + "px";
-            popup.style.left = (target.offsetLeft - 230) + "px";
-            break;
-        case 'bottom':
-            popup.style.top = (target.offsetTop + 5) + "px";
-            popup.style.left = (target.offsetLeft - 115) + "px";
-            break;
-        case 'top-right':
-            popup.style.top = (target.offsetTop - 230) + "px";
-            popup.style.left = (target.offsetLeft) + "px";
-            break;
-        case 'top-left' :
-            popup.style.top = (target.offsetTop - 10) + "px";
-            popup.style.left = (target.offsetLeft - 230) + "px";
-            break;
-        case 'top':
-            popup.style.top = (target.offsetTop + 5) + "px";
-            popup.style.left = (target.offsetLeft - 115) + "px";
-            break;
-        default:
-            popup.style.top = (target.offsetTop - 10) + "px";
-            popup.style.left = (target.offsetLeft + 0) + "px";
-    }
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft + left) + "px";
+    close.style.width='20px';
+    close.style.height='20px';
+    popup.appendChild(close);
+
 
 }
