@@ -10,7 +10,7 @@
 .section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*다시 아이콘*/
 #byr_a_q{position: absolute; top: 122px; left:555px; z-index: 100 }
-#byr_b_q{position: absolute; top: 551px; left: 365px;}
+#byr_b_q{position: absolute; top: 551px; left: 365px;} 
 
 /*name*/
 .aa{position: absolute; top: 210px; left: 165px; font-family: 'Noto Sans KR'; font-size: 15px;}
@@ -70,32 +70,3 @@
 #byr_b_a1 {top: 69px; left: 30px;}
 #byr_b_a2 {top: 54px; left: 231px;}
 #byr_b_a3 {top: 72px; left: 402px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
