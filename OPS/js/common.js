@@ -424,17 +424,25 @@ function listenAndNumberCheck(questionId, inputId, answer) {
 }
 function showScriptPopupTopLeft(target, top, left){
     var popup = document.createElement("div");
+    var closeImg = document.createElement('img');
+    var targetId = target.id;
+    closeImg.src='./images/popup/close_pop.png';
+    closeImg.style.width='100%';
+    closeImg.style.marginLeft='215px';
+    closeImg.style.marginTop='5px';
     var close = document.createElement("span");
     var top = top;
     var left = left;
     popup.className = "scriptPopup";
+    $(popup).addClass(targetId);
     close.className = "scriptPopupClose";
     target.parentNode.appendChild(popup);
     popup.style.top = (target.offsetTop - top) + "px";
     popup.style.left = (target.offsetLeft + left) + "px";
     popup.appendChild(close);
-    close.style.top=0;
-    close.style.left=0;
-
-
+    close.appendChild(closeImg);
+    close.addEventListener('click', function () {
+        var removePopup = document.getElementsByClassName('scriptPopup '+targetId);
+        $(removePopup).remove();
+    });
 }

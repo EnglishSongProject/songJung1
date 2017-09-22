@@ -236,8 +236,7 @@ textarea:focus{outline: none;}
     z-index: 100;
 }
 .scriptPopupClose{
-    background-image: url(../images/popup/close_pop.png);
     display: block;
-    width: 19px;
-    height: 19px;
+    width: 25px;
+    height: 25px;
 }
