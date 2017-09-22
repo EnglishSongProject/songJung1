@@ -4,7 +4,7 @@
 .intro {background: url(../images/15/bg_lesson01_15.jpg) no-repeat 0 0; background-size: cover}
 
 /*  Reading Time Title*/
-.page_tit {position: absolute; display: block; width: 200px; height: 120px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.png") no-repeat 0 0; background-size: cover}
+.page_tit {position: absolute; display: block; width: 155px; height: 41px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.png") no-repeat 0 0; background-size: contain}
 .info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
 .btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 560px; background-size: cover;}
 

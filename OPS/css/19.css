@@ -4,7 +4,7 @@
 
 .page_tit {margin: 10px;}
 input[type="text"] {position: relative;}
-.inbutBox {border-bottom:1px solid #6c6c6c; padding:0 0 2px 0}
+.inbutBox {border-bottom:1px solid #6c6c6c; padding:0 0 2px 0; font: 16px 'Faustina'; width:100px}
 .sentence{display: block; white-space: nowrap}
 .sentence em {font:14px 'Noto Sans KR';}
 .icon_tb {display: inline-block; font:11px 'Bubblegum Sans'; width:50px; height: 20px; background: url(../images/19/icon_tb.png) no-repeat 0 0; color:#fff; padding:4px 0 0 8px}
