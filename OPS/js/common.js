@@ -428,13 +428,13 @@ function showScriptPopupTopLeft(target, top, left){
     var top = top;
     var left = left;
     popup.className = "scriptPopup";
-    close.className = "closeForScriptPopup";
+    close.className = "scriptPopupClose";
     target.parentNode.appendChild(popup);
     popup.style.top = (target.offsetTop - top) + "px";
     popup.style.left = (target.offsetLeft + left) + "px";
-    close.style.width='20px';
-    close.style.height='20px';
     popup.appendChild(close);
+    close.style.top=0;
+    close.style.left=0;
 
 
 }
