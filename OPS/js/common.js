@@ -337,25 +337,39 @@ function radioCorrectCheckSeperForAll(name, answer){
     }
 }
 
-function textClear(idForClear, nameForClear, Ids) {
-    //var id = document.getElementById(idForClear);
-    var id = idForClear.id;
-    var test =document.getElementsByName(nameForClear);
-    if(id.value != null && id.value != ''){
-        id.value='';
+//정답을 보여줄 Id
+//버튼 Id
+//소스가 개판이라 죄송합니다.
+function textClear(idForClear, nameForClear, Id_a, btnId_q) {
+    if(nameForClear == undefined){
+        if (idForClear != null && idForClear != '' && idForClear != undefined) {
+            var idForC = document.getElementById(idForClear);
+            idForC.value = '';
+        }
+        return;
     }
-    for(var i=0; i<test.length; i++){
-        test[i].checked = false;
+    var id = document.getElementById(btnId_q);
+    var answer = document.getElementById(Id_a);
+    if ($(id).hasClass('btn_answer')) {
+        $(id).removeClass('btn_answer');
+        $(id).addClass('btn_repeat');
+        $(answer).css('display', 'inline-block');
+    } else if ($(id).hasClass('btn_repeat')) {
+        //singleClear
+        if (idForClear != null && idForClear != '' && idForClear != undefined) {
+            var idForC = document.getElementById(idForClear);
+            idForC.value = '';
+        }
+        //checkWithCheckBox
+        var checkBoxNamesForClear = document.getElementsByName(nameForClear);
+        console.log(checkBoxNamesForClear);
+        for (var i = 0; i < checkBoxNamesForClear.length; i++) {
+            checkBoxNamesForClear[i].checked = false;
+        }
+        $(id).removeClass('btn_repeat');
+        $(id).addClass('btn_answer');
+        $(answer).css('display', 'none');
     }
-   var target = document.getElementById(Ids);
-   console.log(target)
-   $(idForClear).toggleClass("btn_repeat btn_answer")
-
-   if($(idForClear).hasClass('btn_answer')){
-        target.style.display = "none";
-   }else if($(idForClear).hasClass('btn_repeat')){
-        target.style.display = "inline";
-   }
 }
 function textClearByNames(name,ck_list) {
     var nameArray = document.getElementsByName(name);
