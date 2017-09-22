@@ -220,3 +220,12 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 
 input[type="text"]:focus{outline: none;}
 textarea:focus{outline: none;}
+
+/* page_Num */
+
+.pg_Num{display:block;position:absolute;bottom:30px;font-family: 'Nanum Gothic';font-size:12px;letter-spacing: 0.5px;}
+.pg_Num strong{display:inline-block;font-weight:800;font-family: 'Noto Sans KR';font-size:14px;}
+.pgNum_left{left:52px;}
+.pgNum_left strong{margin:0 5px 0 0;}
+.pgNum_right{left:540px;}
+.pgNum_right strong{margin:0 0 0 5px;}
