@@ -55,9 +55,10 @@ function playAudio(path, btnId, target, imgId) {
 
                     /*팝업*/
                     removePopup();
-                    popup = document.createElement("div");
+                    var popup = document.createElement("div");
                     popup.className = "popup";
                     target.parentNode.appendChild(popup);
+
                     popup.style.top = (target.offsetTop - 10) + "px";
                     popup.style.left = (target.offsetLeft + 40) + "px";
                     oAudio.style.top = (target.getBoundingClientRect().top - 6 +  window.scrollY) + "px";
