@@ -4,7 +4,8 @@
 
 /*listen&speak 공통*/
 .page_tit {margin:10px}
-.info {position: absolute; top:53px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box;}
+.info {position: absolute; top:50px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/11/Study_point.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box; font-size: 9px;}
+.info>p{position: absolute; top: 18px;left: 55px;}
 
 .part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
 .part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
