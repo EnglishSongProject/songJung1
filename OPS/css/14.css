@@ -10,7 +10,7 @@
 .section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*다시 아이콘*/
 #byr_a_q{position: absolute; top: 122px; left:555px; z-index: 100 }
-
+#byr_b_q{position: absolute; top: 551px; left: 365px;}
 
 /*name*/
 .aa{position: absolute; top: 210px; left: 165px; font-family: 'Noto Sans KR'; font-size: 15px;}
@@ -42,8 +42,7 @@
 /*tip icon*/
 .btn_tip{position: absolute; top: 552px; left: 400px;}
 .transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 11px;}
-/*답 아이콘*/
-.btn_answer{position: absolute; top: 551px; left: 365px;}
+
 
 /*b 문제*/
 .number {position: absolute;  width:500px; height: 15px; top:630px; left:120px;}
@@ -66,37 +65,8 @@
 .word{position: absolute;width: 290px; top: 895px; left: 260px; font-family: 'Noto Sans KR'; font-size: 15px;}
 .word>li{float: left; padding-right:40px; }
 
-.txt_answer {position: absolute; font-family: "Nanum Gothic";color: Red; text-align:center; background:#fff; padding: 0px 10px; border:1px solid red; z-index: }
+.txt_answer {position: absolute; font-family: "Nanum Gothic";color: Red; text-align:center; background:#fff; padding: 0px 10px; border:1px solid red; z-index: 100}
 #byr_a_a {top: 487px; left: 542px; border:none; font-size:20px}
 #byr_b_a1 {top: 69px; left: 30px;}
 #byr_b_a2 {top: 54px; left: 231px;}
 #byr_b_a3 {top: 72px; left: 402px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
