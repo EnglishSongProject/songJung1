@@ -425,24 +425,37 @@ function listenAndNumberCheck(questionId, inputId, answer) {
 function showScriptPopupTopLeft(target, top, left){
     var popup = document.createElement("div");
     var closeImg = document.createElement('img');
+    var trans = document.createElement('img');
+    var text = document.createElement('div');
     var targetId = target.id;
+    var textInit = document.getElementsByClassName(targetId+' script');
     closeImg.src='./images/popup/close_pop.png';
-    closeImg.style.width='100%';
-    closeImg.style.marginLeft='215px';
-    closeImg.style.marginTop='5px';
-    var close = document.createElement("span");
+    trans.src='./images/common/09.png';
+    trans.style.width='30px';
+    trans.style.height='30px';
+    trans.style.right='40px';
+    trans.style.position='absolute';
+    trans.style.top='5px';
+    closeImg.style.position='absolute';
+    closeImg.style.top='11px';
+    closeImg.style.right='10px';
+    closeImg.style.width='20px';
+    text.style.padding='10px';
+    text.style.marginTop='30px';
     var top = top;
     var left = left;
     popup.className = "scriptPopup";
     $(popup).addClass(targetId);
-    close.className = "scriptPopupClose";
     target.parentNode.appendChild(popup);
     popup.style.top = (target.offsetTop - top) + "px";
     popup.style.left = (target.offsetLeft + left) + "px";
-    popup.appendChild(close);
-    close.appendChild(closeImg);
-    close.addEventListener('click', function () {
+    popup.appendChild(text);
+    popup.appendChild(trans);
+    popup.appendChild(closeImg);
+    closeImg.addEventListener('click', function () {
         var removePopup = document.getElementsByClassName('scriptPopup '+targetId);
         $(removePopup).remove();
     });
+    text.innerHTML=textInit[0].textContent;
+
 }
