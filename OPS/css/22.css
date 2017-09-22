@@ -7,9 +7,8 @@ h1.page_tit{display:block;text-indent:-9999px;overflow:hidden;width:322px;height
 
 .wrapper .section h2{margin-top:5px;font-family: 'Nanum Gothic';font-size:15px;}
 .bt_22{display:inline-block;position:absolute;top:110px;left:470px;}
-.tip_area{position:absolute;left:52px;}
-
-.transfer{line-height:15px;position:absolute;top:8px;width:300px;display:none;}
+.tip_area{position:absolute;left:53px;}
+.transfer{line-height:15px;position:absolute;top:8px;left:50px;width:300px;display:none;}
 /* 문제1 */
 .Q_area{margin-left:375px;margin-top:44px;display:inline-block;}
 .Q_area li{font-family: 'Faustina';font-size:17px;line-height:17px;}
