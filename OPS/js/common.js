@@ -433,6 +433,7 @@ function listenAndNumberCheck(questionId, inputId, answer) {
         }
     }
 }
+//스크립트 팝업
 function showScriptPopupTopLeft(target, top, left){
     var popup = document.createElement("div");
     var closeImg = document.createElement('img');
@@ -491,4 +492,18 @@ function showScriptPopupTopLeft(target, top, left){
         }
     }
 
+}
+//단어팝업
+function showWordPopupTopLeft(target, top, left, word) {
+    var popup = document.createElement("div");
+    var popupWidth = word.toString().length * 20;
+    popup.style.width=popupWidth.toString()+'px';
+    popup.className='wordPopup';
+    popup.innerHTML=word;
+    target.parentNode.appendChild(popup);
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft + left) + "px";
+    popup.addEventListener('click',function () {
+       $(popup).toggle();
+    });
 }
