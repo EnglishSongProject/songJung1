@@ -221,6 +221,24 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
 input[type="text"]:focus{outline: none;}
 textarea:focus{outline: none;}
 
+
+
+
+/*popup*/
+.scriptPopup{
+    background: url(../images/popup/bg_pop1.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 240px;
+    z-index: 100;
+}
+.scriptPopupClose{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
 /* page_Num */
 
 .pg_Num{display:block;position:absolute;bottom:30px;font-family: 'Nanum Gothic';font-size:12px;letter-spacing: 0.5px;}

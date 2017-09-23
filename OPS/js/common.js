@@ -433,3 +433,62 @@ function listenAndNumberCheck(questionId, inputId, answer) {
         }
     }
 }
+function showScriptPopupTopLeft(target, top, left){
+    var popup = document.createElement("div");
+    var closeImg = document.createElement('img');
+    var transBtn = document.createElement('img');
+    var text = document.createElement('div');
+    var targetId = target.id;
+    var textInit = document.getElementsByClassName(targetId+' script');
+    closeImg.src='./images/popup/close_pop.png';
+    transBtn.src='./images/common/09.png';
+    transBtn.style.width='30px';
+    transBtn.style.height='30px';
+    transBtn.style.right='40px';
+    transBtn.style.position='absolute';
+    transBtn.style.top='5px';
+    closeImg.style.position='absolute';
+    closeImg.style.top='11px';
+    closeImg.style.right='10px';
+    closeImg.style.width='20px';
+    text.style.padding='0px 10px';
+    text.style.marginTop='30px';
+    var top = top;
+    var left = left;
+    popup.className = "scriptPopup";
+    $(popup).addClass(targetId);
+    target.parentNode.appendChild(popup);
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft + left) + "px";
+    popup.appendChild(text);
+    popup.appendChild(transBtn);
+    popup.appendChild(closeImg);
+    closeImg.addEventListener('click', function () {
+        var removePopup = document.getElementsByClassName('scriptPopup '+targetId);
+        $(removePopup).remove();
+    });
+    transBtn.addEventListener('click', function () {
+        var displayTrans = document.getElementsByClassName('transText '+targetId);
+        $(displayTrans).toggle();
+    });
+    text.innerHTML=textInit[0].outerHTML;
+    $(text.childNodes).removeClass('display-none');
+    var transText = text.children[0].children;
+    var transTextTop = 61;
+    var textLineHeight = 40;
+    for(var i=0; i<transText.length; i++){
+        if(i%2 != 0){
+            transText[i].style.display='none';
+            transText[i].style.position='absolute';
+            transText[i].style.fontSize='11px';
+            transText[i].style.fontFaceName='Open Sans';
+            transText[i].style.color='#339900';
+            transText[i].style.top=transTextTop.toString()+'px';
+            $(transText[i]).addClass('transText '+targetId);
+            transTextTop += textLineHeight;
+        }else{
+            transText[i].style.lineHeight=textLineHeight.toString()+'px';
+        }
+    }
+
+}
