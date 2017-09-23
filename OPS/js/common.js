@@ -58,6 +58,7 @@ function playAudio(path, btnId, target, imgId) {
                     var popup = document.createElement("div");
                     popup.className = "popup";
                     target.parentNode.appendChild(popup);
+
                     popup.style.top = (target.offsetTop - 10) + "px";
                     popup.style.left = (target.offsetLeft + 40) + "px";
                     oAudio.style.top = (target.getBoundingClientRect().top - 6 +  window.scrollY) + "px";
@@ -249,7 +250,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
         if(type == "type01"){
             alert(notice + "입니다")
         }
-        
+
 
     }else if (questionId.title == '다시풀기'){
         $(questionId).removeClass('btn_repeat');
@@ -335,41 +336,51 @@ function radioCorrectCheckSeperForAll(name, answer){
         return 0;
     }
 }
-//클리어할 텍스트박스 아이디
-//클리어할 체크박스 이름
+
 //정답을 보여줄 Id
 //버튼 Id
 //소스가 개판이라 죄송합니다.
 function textClear(idForClear, nameForClear, Id_a, btnId_q) {
+    if(nameForClear == undefined){
+        if (idForClear != null && idForClear != '' && idForClear != undefined) {
+            var idForC = document.getElementById(idForClear);
+            idForC.value = '';
+        }
+        return;
+    }
     var id = document.getElementById(btnId_q);
     var answer = document.getElementById(Id_a);
-    if($(id).hasClass('btn_answer')){
+    if ($(id).hasClass('btn_answer')) {
         $(id).removeClass('btn_answer');
         $(id).addClass('btn_repeat');
-        $(answer).css('display','inline-block');
-    }else if($(id).hasClass('btn_repeat')){
+        $(answer).css('display', 'inline-block');
+    } else if ($(id).hasClass('btn_repeat')) {
         //singleClear
-        if(idForClear != null && idForClear != '' && idForClear !='undefined'){
+        if (idForClear != null && idForClear != '' && idForClear != undefined) {
             var idForC = document.getElementById(idForClear);
-            idForC.value='';
-            console.log(id);
+            idForC.value = '';
         }
         //checkWithCheckBox
-        var checkBoxNamesForClear =document.getElementsByName(nameForClear);
+        var checkBoxNamesForClear = document.getElementsByName(nameForClear);
         console.log(checkBoxNamesForClear);
-        for(var i=0;i<checkBoxNamesForClear.length;i++){
+        for (var i = 0; i < checkBoxNamesForClear.length; i++) {
             checkBoxNamesForClear[i].checked = false;
         }
         $(id).removeClass('btn_repeat');
         $(id).addClass('btn_answer');
-        $(answer).css('display','none');
+        $(answer).css('display', 'none');
     }
 }
-function textClearByNames(name) {
+function textClearByNames(name,ck_list) {
     var nameArray = document.getElementsByName(name);
+    var ckArray = document.getElementsByName(ck_list);
     for(var i=0; i<nameArray.length; i++){
         nameArray[i].value='';
     }
+    for(var i=0; i<ckArray.length; i++){
+        ckArray[i].checked= false;
+    }
+
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
     var questionId = document.getElementById(questionId);

@@ -21,7 +21,7 @@
                     <div class="pin"><span>1</span></div>
                     <p class="active-purple" onclick="playAudio('./media/audio/L01/020/L01_020_ww_01.mp3', 'single');">나를 소개할 수 있는 핵심어를 골라 네임 텐트를 만들어 봅시다. (전체듣기 음원필요) </p>
                     <div class="btn_list">
-                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text','rbtn1');">다시하기</button>
                       <button type="button" class="btn_type_02 btn_mp3" title="mp3듣기">mp3듣기</button>
                     </div><!--btn_list-->
                     <img src="images/20/name.png"></img>
@@ -56,13 +56,13 @@
                     <div class="check_box">
                       <input type="checkbox" id="rbtn_1" class="correct" name="rbtn1"/>
                 		  <label id="check_name" for="rbtn_1"></label>
-                		  <input type="checkbox" id="rbtn_2" class="correct" name="rbtn2"/>
+                		  <input type="checkbox" id="rbtn_2" class="correct" name="rbtn1"/>
                 		  <label id="check_live" for="rbtn_2"></label>
-                		  <input type="checkbox" id="rbtn_3" class="correct" name="rbtn3"/>
+                		  <input type="checkbox" id="rbtn_3" class="correct" name="rbtn1"/>
                 		  <label id="check_school" for="rbtn_3"></label>
-                		  <input type="checkbox" id="rbtn_4" class="correct" name="rbtn4"/>
+                		  <input type="checkbox" id="rbtn_4" class="correct" name="rbtn1"/>
                 		  <label id="check_like" for="rbtn_4"></label>
-                		  <input type="checkbox" id="rbtn_5" class="correct" name="rbtn5"/>
+                		  <input type="checkbox" id="rbtn_5" class="correct" name="rbtn1"/>
                 		  <label id="check_nick" for="rbtn_5"></label>
                   </div><!--check_box-->
                   </div>
@@ -79,7 +79,7 @@
                 </div><!--subtit_box-->
                 <div class="bottom_main">
                   <img class="memo" src="images/20/paper.png" alt="main_background" width="489" height="387"/>
-                  <img class="phone" src="images/20/phone.png" alt="card_shape" width="255" height="409"/>
+                  <img class="phone" src="images/20/phone.png" alt="card_shape" width="235" height="400"/>
                   <img class="pic" src="images/20/pic.png" alt="boy picture" width="69" height="77" />
                   <p>Hello. I am Suho. I live in Jejudo. I go to Jeju Middle School. I like nature and science. I go to Hallasan National Park every weekend. My nickname is Mr. Halla.</p>
                   <p class="start">Hi. I am</p>
@@ -95,9 +95,13 @@
             <input type="text" class="score3" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
             <input type="text" class="score4" name="p21_clear_text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
             <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+            <div class="pg_Num pgNum_left">
+              <p><strong>20</strong>Lesson 1</p>
+            </div>  
             <audio id="myaudio" controls="controls"  style="display: none;">
                 HTML5 audio not supported
             </audio>
         </div>
+
     </body>
 </html>

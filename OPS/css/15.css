@@ -4,12 +4,12 @@
 .intro {background: url(../images/15/bg_lesson01_15.jpg) no-repeat 0 0; background-size: cover}
 
 /*  Reading Time Title*/
-.page_tit {position: absolute; display: block; width: 200px; height: 120px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.svg") no-repeat 0 0; background-size: cover}
+.page_tit {position: absolute; display: block; width: 155px; height: 41px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.png") no-repeat 0 0; background-size: contain}
 .info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
 .btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 560px; background-size: cover;}
 
 /* 본문 */
-.reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.svg")}
+.reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.png")}
 .section > p {font: 19px 'Faustina'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
 .section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 330px; line-height: 38px; display: none;}
 
@@ -43,5 +43,5 @@
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 30px 5px; text-align: center; margin: 0 auto 10px;}
 .balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
 
-.btn_word {position: relative; display: block; float:left; width: 160px; height: 60px; top: 850px; left: 460px; background-size: cover;}
-
+.btn_word {position: relative; display: block; float:left; width: 118px; height: 50px; top: 850px; left: 488px; background-size: cover;}
+.pg_Num p{color:#fff;}

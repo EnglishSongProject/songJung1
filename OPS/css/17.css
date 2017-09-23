@@ -3,7 +3,7 @@
 /*본문*/
 .first {background: url(../images/17/bg_lesson01.png) no-repeat 0 0; background-size: cover; }
 
-.first div {font-family: 'Faustina'; font-size: 19px; line-height: 38px; }
+.first div.txt_wrap {font-family: 'Faustina'; font-size: 19px; line-height: 38px; }
 
 .first .txt1 p {position: absolute; top: 100px; left: 180px; }
 .txt1 > p:hover{cursor: pointer !important;}
@@ -24,13 +24,15 @@
 
 /*본문해석*/
 .transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 120px; left: 180px; font-size: 11px !important; color: #1C8A24;}
+.transfer_t > p{line-height:38px;}
 .transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 21px;  left: 0px; font-size: 11px !important;color: #1C8A24; }
 
 /*시계(Talkng Time)*/
-.talking_time {position: absolute; left: 540px; bottom: 100px;font-family: 'Faustina regular'; }
-.talking_time>img {position: absolute; width: 190px; bottom: 80px; left: -50px; }
-.talking_time>div{position: absolute; top: -140px; right:-225px;}
-.talking_time>div>p {position: relative; display: block; width: 300px; height: 80px; top:69px; left: 50px; transform: rotate(3deg); }
+.talking_time {position: absolute; left: 460px; bottom: 110px;font-family: 'Faustina regular';display:inline-block; width:300px;height:200px;}
+.talking_time>div{position: absolute; top: -20px; right:0;}
+.talking_time>img {position: absolute; width: 190px; top: -20px; left: 45px; }
+.talking_time>div>p {position: relative; display: block; width: 300px; height: 80px; top:69px; left: 50px; transform: rotate(3deg);}
+.talking_time em{margin-left:17px;}
 /*한글*/
 .talking_time>p:first-child {position: absolute; font-family: 'Nanum Gothic'; font-size: 11px; }
 /*영어*/
@@ -39,8 +41,8 @@
 .talking_time>div>p:last-child>b {font-family: 'Noto Sans KR regular'; font-size: 11px; }
 
 /*아이콘*/
-.repeatbtn {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 24px !important; left: 210px !important; background-size: cover;}
-.bookbtn {position: absolute; display: block; float:left; width: 25px; height: 25px !important; top: 26px !important; left: 245px!important; background-size: cover; }
+.repeatbtn {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 28px !important; left: 220px !important; background-size: cover;}
+.bookbtn {position: absolute; display: block; float:left; width: 25px; height: 25px !important; top: 30px !important; left: 255px!important; background-size: cover;}
 
 /*popup*/
 .txt01{ display: none; background: url(../images/17/popup.png) no-repeat 0 0; background-size: cover; position: absolute; width:256px; height: 247px; top: -10px; left:40px;}
@@ -85,27 +87,4 @@
 
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
 .balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
-
-
-/*페이지번호*/
-.pagenum_right {position: absolute; left: 570px; bottom:-20px; }
-.pagenum_right>span:first-of-type{font-family: 'Nanum Gothic';font-size: 11px;}
-.pagenum_right>span:last-of-type{font-family: 'Noto Sans KR';font-size: 11px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

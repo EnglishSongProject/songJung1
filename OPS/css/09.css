@@ -2,8 +2,8 @@
 
 /* layout */
 
-.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:10px -150px;transform:rotate(-2.5deg);font-family: "Open Sans Bold";}
-.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:5px -150px;width:320px;background:#B4DdC8;text-align:center;font-family: "Open Sans";}
+.main_tit{display:inline-block;font-size:25px;font-weight: 600;letter-spacing: -0.5px;color:#fff;position:relative;left:50%;margin:10px -150px;transform:rotate(-2.5deg);font-family: 'Noto Sans KR';}
+.sub_tit{display:block;font-size:15px;letter-spacing: -0.5px;position:relative;left:50%;margin:5px -160px;width:320px;background:#B4DdC8;text-align:center;font-family: 'Nanum Gothic';}
 .slider_area{height: 770px;margin: 0 auto;position: relative; width: 600px;}
 .slider_area > .slider_content{width:1200px;position: relative;top:0;left:0;}
 .slider_image_wrap{width:600px;position: relative;top:0;left:0;z-index:100;}
@@ -17,17 +17,17 @@ li{font-family: 'Nanum Gothic';font-size:14px;}
 .slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
-input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;}
-.ls_1_t1{width:90px;}
+input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:14px;}
+.ls_1_t1{width:55px;}
 .ls_2_t1{width:42px;}
 .ls_2_t2{width:42px;}
 .ls_2_t3{width:42px;}
 .p09_answer{display:inline-block;font-family: "Nanum Gothic";color:Red;}
-.mar_lt{margin-left:16px;}
+.mar_lt1{margin-left:20px;}
 .mar_lt2{margin-left:21px;}
 .mar_lt3{margin-left:125px;}
 .mar_lt4{margin-left:159px;}
-.mg-l38{margin-left: 38px;}
+
 article dl{margin-top:5px;}
 article dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:16px;}
 article dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';font-size:12px;line-height:18px;}

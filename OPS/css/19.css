@@ -4,7 +4,7 @@
 
 .page_tit {margin: 10px;}
 input[type="text"] {position: relative;}
-.inbutBox {border-bottom:1px solid #6c6c6c; padding:0 0 2px 0}
+.inbutBox {border-bottom:1px solid #6c6c6c; padding:0 0 2px 0; font: 16px 'Faustina'; width:100px}
 .sentence{display: block; white-space: nowrap}
 .sentence em {font:14px 'Noto Sans KR';}
 .icon_tb {display: inline-block; font:11px 'Bubblegum Sans'; width:50px; height: 20px; background: url(../images/19/icon_tb.png) no-repeat 0 0; color:#fff; padding:4px 0 0 8px}
@@ -24,10 +24,10 @@ input[type="text"] {position: relative;}
 .img_content .num + img {float:left; margin-left:10px}
 .img_content .sentence_box {float:left; margin:5px 0 0 40px; font:16px/2 'Faustina' ;}
 
-.txt_content {width:100%; border:1px solid #b7b7b7; padding:10px 20px;}
+.txt_content {width:100%;padding:10px 20px; border: 1px solid #b4ddc8; border-radius: 10px; margin-top:30px;}
 .txt_content li .sentence {font:16px/2.2 'Nanum Gothic'; }
 .txt_content li .sentence:nth-of-type(2)  {margin-left:20px;}
-.txt_content input {width:530px; text-align: left; border-bottom:1px solid #ccc}
+.txt_content input {width:530px; text-align: left; border-bottom: 1px solid #b4ddc8; }
 .txt_content em {margin-right: 5px;}
 
 
@@ -37,5 +37,5 @@ input[type="text"] {position: relative;}
 
 .slider_thumbnail_area {position: absolute; left:0; bottom:50px; width:100%;}
 .slider_thumbnail {text-align:center}
-.slider_thumbnail a {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
-.slider_thumbnail a.on {background: url(../images/common/slide_bt_on.png)}
+.slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}

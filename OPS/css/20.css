@@ -60,15 +60,15 @@
 .bottom .bottom_main{position:relative;}
 .bottom .bottom_main img.phone{left: 55px;}
 .bottom .bottom_main img.memo{right: 0;}
-.bottom .bottom_main img.pic{top:85px; left:85px;}
-.bottom .bottom_main p{font-family: 'Nanum Gothic';font-size: 14px;position: absolute;width: 170px;top:121px;left:98px;transform:rotate(-4deg);line-height:32px;text-align:justify;}
+.bottom .bottom_main img.pic{top:72px; left:89px;}
+.bottom .bottom_main p{font-family: 'Nanum Gothic';font-size: 14px;position: absolute;width: 155px;top:115px;left:98px;transform:rotate(-4deg);line-height:26px;text-align:justify;}
 .bottom .bottom_main p:before{content:"";margin-right:80px}
 .bottom .bottom_main p.start{transform:none;left:355px;top:87px;}
 
 input.hia_start,
 textarea.hi_i_am{font-family: 'Nanum Gothic';font-size: 14px;}
 input.hia_start{background:transparent;position: absolute;margin-top: 92px;left: 548px;text-align:start;width:128px;}
-textarea.hi_i_am{    width: 280px;
+textarea.hi_i_am{  width: 280px;
     height: 198px;
     background:transparent;
     position: absolute;
@@ -77,7 +77,7 @@ textarea.hi_i_am{    width: 280px;
     resize: none;line-height: 33px;
     box-sizing: border-box;
     padding: 0px 7px;}
-img.girl{position:absolute;; z-index: 900; bottom: 0px; right: 0;}
+img.girl{position:absolute; z-index: 900; bottom: 0px; right: 0;}
 p.peer1,
 p.peer2{position: absolute;z-index: 1000;font-family: 'Nanum Gothic';font-size: 11px;left:205px;}
 .peer1{bottom:82px;}

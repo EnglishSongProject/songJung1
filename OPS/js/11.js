@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(".tip_con").toggle()
     });
 
-    $(".rolling_thumbnail_area a").click(function(e){
+    $(".rolling_thumbnail_area button").click(function(e){
         e.preventDefault();
         var $slides = $(".rolling_image_wrap > ul > li");
         var idx = $(this).index();
