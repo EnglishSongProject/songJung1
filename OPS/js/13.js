@@ -31,4 +31,12 @@ $(document).ready(function() {
             $("#"+idStr+i.toString()).css('opacity', '1');
         }
     });
+
+
+    $('.img-popup-none-confirm1').on('click',function () {
+        $('.img-popup-none-confirm1').toggle();
+    });
+    $('.btn_play').on('click',function () {
+        $('.img-popup-none-confirm1').toggle();
+    });
 });

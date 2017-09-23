@@ -17,4 +17,20 @@ $(document).ready(function () {
     $(".trans3").on("click", function(){
         $(".correct3").toggle();
     });
+
+    $(function () {
+
+        $('.img-popup-none-confirm1').on('click',function () {
+            $('.img-popup-none-confirm1').toggle();
+        });
+        $('.btn_play').on('click',function () {
+            $('.img-popup-none-confirm1').toggle();
+        });
+        $('.img-popup-none-confirm2').on('click',function () {
+            $('.img-popup-none-confirm2').toggle();
+        });
+        $('.btn_role').on('click',function () {
+            $('.img-popup-none-confirm2').toggle();
+        });
+    });
 });
