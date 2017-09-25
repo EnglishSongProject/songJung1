@@ -9,6 +9,7 @@
         <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
         <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/18.js"></script>
     </head>
     <body>
         <div class="first wrapper">
@@ -24,9 +25,18 @@
                 본문의 내용과 일치하면 T, 일치하지 않으면 F로 가서 학교 가는 길을 찾아봅시다.
               </h2>
               <div class="bt_A">
-                <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                <button type="button" class="btn_type_02 btn_answer" id="bt_A_a" title="예시 답안">답안</button>
+                <button type="button" class="btn_type_02 btn_repeat"  id="bt_A_r" title="다시하기">다시하기</button>
               </div>
               <p><img src="images/18/bus_image.png" alt="버스 이미지" /></p>
+              <div class="road_school">
+                <img class="load_01" src="./images/18/load_01.png" alt="" />
+                <img class="load_02 display-none" src="./images/18/load_02.png" alt="" />
+                <img class="load_03 display-none" src="./images/18/load_03.png" alt="" />
+                <img class="load_04 display-none" src="./images/18/load_04.png" alt="" />
+                <img class="load_05 display-none" src="./images/18/load_05.png" alt="" />
+                <img class="cir_goal t01" src="./images/18/circle.png" alt=""/>
+              </div>
               <ul class="Q_A">
                 <li class="Q_A_inner1 Q_A_inner">
                   <ul>
@@ -37,13 +47,13 @@
                         <dd class="active-purple" onclick="playAudio('./media/audio/L01/018/L01_018_afte_a01_02.mp3', 'single');">I am a science teacher.</dd>
                       </dl>
                     </li>
-                    <li class="false">F</li>
+                    <li class="false on">F</li>
                   </ul>
                 </li>
 
                 <li class="Q_A_inner2 Q_A_inner">
                   <ul>
-                    <li class="true">T</li>
+                    <li class="true on">T</li>
                     <li>
                       <dl>
                         <dt>Ara</dt>
@@ -63,13 +73,13 @@
                         <dd class="active-purple" onclick="playAudio('./media/audio/L01/018/L01_018_afte_a01_04_Fix.mp3', 'single');">I like action movies.</dd>
                       </dl>
                     </li>
-                    <li class="false">F</li>
+                    <li class="false on">F</li>
                   </ul>
                 </li>
 
                 <li class="Q_A_inner4 Q_A_inner">
                   <ul>
-                    <li class="true">T</li>
+                    <li class="true on">T</li>
                     <li>
                       <dl>
                         <dt>jiseong</dt>
@@ -79,16 +89,15 @@
                     <li class="false">F</li>
                   </ul>
                 </li>
-
-            </ul>
+              </ul>
             </div>
             <div class="section">
-              <h2 class="active-purple" onclick="playAudio('./media/audio/L01/018/L01_018_AR_02.mp3', 'single');">
+              <h2 class="active-purple">
                 <img src="images/18/qnB_icon_18p.png" alt="B" />
                 본문의 내용과 일치하도록 다음 대화를 완성해 봅시다.
               </h2>
               <div class="bt_B">
-                <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                <button type="button" class="btn_type_02 btn_answer"  id="ayr_b_q"  title="답안" onclick="blankCheckByCss('ayr_b_q','ayr_b_t1+ayr_b_t2+ayr_b_t3+ayr_b_t4+ayr_b_t5+ayr_b_t6','ayr_b_a1+ayr_b_a2+ayr_b_a3+ayr_b_a4+ayr_b_a5+ayr_b_a6','type01');">답안</button>
                 <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/018/add/L01_018_AYR_01.mp3','',this);" >mp3전체듣기</button>
               </div>
               <dl class="Q_B">
@@ -100,37 +109,37 @@
                 <dd>
                   <span class="active-purple read_txt_1" onclick="playAudio('./media/audio/L01/018/L01_018_afte_b01_02_01.mp3', 'single');">
                     I like
-                    <input id="A_amimation" type="text"  /><label for="A_amimation"></label>
-                    <input id="A_movies" type="text"  /><label for="A_movies"></label>
+                    <input type="text" id="ayr_b_a1" /><label for="ayr_b_a1"></label>
+                    <input type="text" id="ayr_b_a2" /><label for="ayr_b_a2"></label>
                      and comic books.
                  </span>
-                  <span class="ft_red mar_lt1">animation</span><span class="ft_red mar_lt2">movies</span>
+                  <span class="ft_red mar_lt1" id="ayr_b_t1" style="display:none">animation</span><span class="ft_red mar_lt2" id="ayr_b_t2" style="display:none">movies</span>
                   <span class="active-purple ent" onclick="playAudio('./media/audio/L01/018/L01_018_afte_b01_03_01.mp3', 'single');">
                     I am
-                    <input id="A_good" type="text" /><label for="A_good"></label>
+                    <input type="text" id="ayr_b_a3"/><label for="ayr_b_a3"></label>
                     at art.</span>
                     <span class="active-purple Ara_replace" onclick="playAudio('./media/audio/L01/018/L01_018_afte_b01_03_01_1.mp3', 'single');">How about you, Ara?</span>
 
-                  <span class="ft_red mar_lt3">good</span>
+                  <span class="ft_red mar_lt3" id="ayr_b_t3" style="display:none">good</span>
                 </dd>
                 <dt>Ara : </dt>
                 <dd>
                   <span class="read_txt_2">
                     <span class="active-purple" onclick="playAudio('./media/audio/L01/018/L01_018_afte_b01_05.mp3', 'single');">
                       I like taking trips and
-                      <input id="A_camping" type="text" /><label for="A_camping"></label>
+                      <input id="ayr_b_a4" type="text" /><label for="ayr_b_a3"></label>
                       .
                     </span>
-                      <span class="ft_red mar_lt4">camping</span>
+                      <span class="ft_red mar_lt4" id="ayr_b_t4" style="display:none">camping</span>
                     <span class="active-purple" onclick="playAudio('./media/audio/L01/018/L01_018_afte_b01_06_01.mp3', 'single');">
                       <span class="ent">
                         I'm a good
-                        <input id="A_map" type="text"/><label for="A_map"></label>
-                        <input id="A_reader" type="text" /><label for="A_reader"></label>.
+                        <input id="ayr_b_a5" type="text" /><label for="ayr_b_a5"></label>
+                        <input id="ayr_b_a6" type="text" /><label for="ayr_b_a6"></label>.
                       </span>
                     </span>
-                      <span class="ft_red mar_lt5">map</span>
-                      <span class="ft_red mar_lt6">reader</span>
+                      <span class="ft_red mar_lt5" id="ayr_b_t5" style="display:none">map</span>
+                      <span class="ft_red mar_lt6" id="ayr_b_t6" style="display:none">reader</span>
                   </span>
                 </dd>
               </dl>
