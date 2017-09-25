@@ -75,6 +75,11 @@ input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 .ask_and_speak div#aa_answer5{left:239px; display: none}
 .ask_and_speak div#aa_answer6{right:4px; display: none}
 
+.ask li {
+    margin-right: 22px;
+    margin-top: 0;
+}
+
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
 
 .balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}

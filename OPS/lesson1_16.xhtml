@@ -66,28 +66,14 @@
               <input type="text" id="a_text" />
                 <h3 onclick="playAudio('./media/audio/L01/016/L01_016_read_q_02_1.mp3', 'single');"><b>2.</b>What is Ara’s nickname? </h3>
 
-              <div class="ask">
-              <input class="ask_check" type="checkbox" id="aa_ask1"/>
-              <input class="ask_check" type="checkbox" id="aa_ask2"/>
-              <input class="ask_check" type="checkbox" id="aa_ask3"/>
-              <input class="ask_check" type="checkbox" id="aa_ask4"/>
-              <input class="ask_check" type="checkbox" id="aa_ask5"/>
-              <input class="ask_check" type="checkbox" id="aa_ask6"/>
-
-                  <label for="aa_ask1">• baker</label>
-                  <label for="aa_ask2">• fantastic</label>
-                  <label for="aa_ask3">• turn</label>
-                  <label for="aa_ask4">• active</label>
-                  <label for="aa_ask5">• trip</label>
-                  <label for="aa_ask6">• camping</label>
-
-                  <div class="answer" id="aa_answer1">제빵사</div>
-                  <div class="answer" id="aa_answer2">환상적인</div>
-                  <div class="answer" id="aa_answer3">순번, 차례</div>
-                  <div class="answer" id="aa_answer4">활동적인, 적극적인</div>
-                  <div class="answer" id="aa_answer5">여행</div>
-                  <div class="answer" id="aa_answer6">캠핑, 여행</div>
-              </div>
+              <ul class="ask">
+                  <li class="aa_ask1" onclick="playAudio('./media/audio/L01/016/L01_016_w01.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '제빵사');" >• baker</li>
+                  <li class="aa_ask2" onclick="playAudio('./media/audio/L01/016/L01_016_w02.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '환상적인');">• fantastic</li>
+                  <li class="aa_ask1" onclick="playAudio('./media/audio/L01/016/L01_016_w03.mp3', 'single');showWordPopupTopLeft(this, 35, -45, '순번, 차례');" >• turn</li>
+                  <li class="aa_ask2" onclick="playAudio('./media/audio/L01/016/L01_016_w06.mp3', 'single');showWordPopupTopLeft(this, 35,-80, '활동적인, 적극적인');">• active</li>
+                  <li class="aa_ask1" onclick="playAudio('./media/audio/L01/016/L01_016_w04.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '여행');" >• trip</li>
+                  <li class="aa_ask2" onclick="playAudio('./media/audio/L01/016/L01_016_w05.mp3', 'single');showWordPopupTopLeft(this, 35,-30, '캠핑, 여행');">• camping</li>
+              </ul>
 
 
 
