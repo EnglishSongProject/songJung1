@@ -21,10 +21,17 @@ h1.page_tit{display:block;text-indent:-9999px;overflow: hidden;background: url(.
 /* width:119 height:72*/
 .container>div:nth-of-type(1)>p>img{position:absolute;bottom:340px;left:35px;width:170px;height:103px;z-index: 100;animation: Bus_ani 900ms linear 0s infinite;transform-origin: center;}
 .container>div:nth-of-type(2) {height:400px;}
+<<<<<<< HEAD
+h2{font-family: 'Noto Sans KR';font-size:13px;font-weight:700;}
+h2>img{margin-right:5px;width:25px;height:25px;}
+div.bt_A,div.bt_B{position:absolute;right:126px;top:0;}
+div.bt_B{right:272px;}
+=======
 h2{font-family: 'Noto Sans KR';font-size:13px;}
 h2>img{margin-right:5px;width:25px;height:25px;}
 div.bt_A,div.bt_B{position:absolute;right:141px;top:0;}
 div.bt_B{right:285px;}
+>>>>>>> bf93e49336ea19871c8b5fe819a5955861c6992e
 
 /* 문제1 */
 .Q_A{display:inline-block;position:absolute;left:50%;top:40px;margin-left:-295px;width:585px;height:400px;}
@@ -72,7 +79,7 @@ div.bt_B{right:285px;}
 .cir_goal.t04 {top: 293px; left: 125px;}
 .cir_goal.t05 {top:-10000em}
 
-.Q_A_inner .false, 
+.Q_A_inner .false,
 .Q_A_inner .true{border-radius: 50%;width: 27px;height: 27px;text-align: center;border:3px solid transparent}
 
 
