@@ -29,7 +29,7 @@
 .top .top_main ul.minicheck li:nth-child(4){padding-left: 15px;}
 .top .top_main ul.minicheck li:before{content:"□";margin-right:3px;}
 .top .top_main .text{position:absolute;width:375px;height: 174px;top:30px;left:280px;}
-.top .top_main .text input{display: block;border-bottom:1px solid #d0d0d0;background:transparent;font-size:16px; line-height: 35px !important;}
+.top .top_main .text input{display: block;border-bottom:1px solid #d0d0d0;background:transparent;font-size:16px; line-height: 35px !important; height:35px}
 .top .top_main .text input:first-child{margin-left: 80px;width:205px;}
 .top .top_main .text input:nth-child(2),
 .top .top_main .text input:nth-child(3){margin-left:57px;width:270px;}

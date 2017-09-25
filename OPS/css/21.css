@@ -27,7 +27,7 @@
 .part_wt .step02_txt ul li{line-height:23px;}
 .part_wt .step02_txt>span{position:absolute;top:72px;}
 .part_wt .step2_ta_wrap {width:100%; height: 160px; border-radius: 20px; border:3px solid #c6dbf1;background:url(../images/21/line.png) no-repeat center 50px;}
-.part_wt .img_content .step2_ta {position: absolute; top: 18px; left: 74px; width: 455px; height: 125px; resize:none; font: 16px/1.6 'Faustina';line-height:30px;background:transparent;}
+.part_wt .img_content .step2_ta {position: absolute; top: 18px; left: 74px; width: 455px; height: 117px; resize:none; font: 16px/1.6 'Faustina';line-height:30px;background:transparent;}
 .part_wt .img_content .icon_man {position: absolute; top:19px; left:37px}
 
 .part_wt .group_ck {left:-10px;}
