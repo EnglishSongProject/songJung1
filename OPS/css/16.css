@@ -42,7 +42,7 @@ label.l_bottom{position: absolute;top:28px;left: 146px;}
 .ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
 .ask_and_speak ul li{float: left;}
 
-.ask_and_speak ul.ask{position:absolute;overflow: hidden;padding-top: 35px;padding-right:5px;z-index: 10;}
+.ask_and_speak ul.ask{position:absolute;padding-top: 35px;padding-right:5px;z-index: 10;}
 .ask_and_speak ul.ask li{padding-right: 17px; display: inline-block;cursor: pointer;}
 
 .ask_and_speak ul.answer{overflow: hidden; display:block; position: absolute;padding-bottom: 10px;}
