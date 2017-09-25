@@ -27,9 +27,13 @@ function playAudio(path, btnId, target, imgId) {
     // Check for audio element support.
     if (window.HTMLAudioElement) {
         try {
-            if (path !== currentFile) {
+            // 열려있는 sing 듣기 해제
+            if($('.single').length){
+                $('.single').detach()
+            }
 
-                //열려있는 오디오 팝업 해제
+            if (path !== currentFile) {
+                //열려있는 전체듣기 팝업 해제
                 if(currentFile !== ""){
                     document.getElementById("myaudio").currentTime = 0;
                     document.getElementById("myaudio").pause();
@@ -85,20 +89,11 @@ function playAudio(path, btnId, target, imgId) {
             }
 
             if(btnId == 'single'){
-                if(document.getElementById('myaudio')){
-                    document.getElementById('myaudio').pause();
-                    document.getElementById('myaudio').currentTime = 0
-                    $('.audio-popup').hide();
-                }
-
                 var oAudio = document.createElement('audio');
                 oAudio.className = "single";
                 oAudio.src = path;
                 var wrapper = document.querySelector('.wrapper');
 
-                if($('.single').length){
-                    $('.single').remove()
-                }
                 wrapper.appendChild(oAudio);
 
                 if(imgId != null && imgId != 'undefined'){
