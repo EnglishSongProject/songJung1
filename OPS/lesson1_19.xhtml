@@ -43,12 +43,11 @@
                                     <img src="./images/19/dot_org.jpg" alt="" class="mr_5"/>
                                     ‘be’동사는 ‘~이다, ~이 있다’라는 뜻을 나타내고, 일반동사는주어의 동작이나 상태를 나타내요.
                                 </p>
-                                <h3 class="sub_tit mt_50 active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_LU_01.mp3', 'single');">
+                                <h3 class="sub_tit mt_50">
                                     <span class="icon_tb">Write</span>
-                                    빈칸에 알맞는 낱말을 골라 문장을 완성해 봅시다
+                                    <span class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_LU_01.mp3', 'single');">빈칸에 알맞는 낱말을 골라 문장을 완성해 봅시다.</span>
                                     <span class="btn_list  ml_10">
-                                        <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                                        <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
+                                        <button type="button" id="byr_b_q" class="btn_type_02 btn_answer" title="예시 답안" onclick="blankCheckByCss('byr_b_q','byr_b_a1+byr_b_a2+byr_b_a3+byr_b_a4+byr_b_a5+byr_b_a6','byr_b_t1+byr_b_t2+byr_b_t3+byr_b_t4+byr_b_t5+byr_b_t6','type02');">답안</button>
                                     </span>
                                 </h3>
                                 <div class="word_box mt_40">
@@ -67,13 +66,16 @@
                                         <img src="./images/19/a_1.jpg" alt="" />
                                         <div class="sentence_box">
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_10.mp3', 'single');">
-                                                My name  <input type="text" class="inbutBox"/> Han Muhyeon.
+                                                My name  <input type="text" class="inbutBox" id="byr_b_t1"/> Han Muhyeon.
+                                                <span id="byr_b_a1" class="display-none">is</span>
                                             </span>
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_11.mp3', 'single');">
-                                                I <input type="text" class="inbutBox"/> a music teacher.
+                                                I <input type="text" class="inbutBox" id="byr_b_t2"/> a music teacher.
+                                                <span id="byr_b_a2" class="display-none">am</span>
                                             </span>
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_12.mp3', 'single');">
-                                                I <input type="text" class="inbutBox"/> the piano every day.
+                                                I <input type="text" class="inbutBox" id="byr_b_t3"/> the piano every day.
+                                                <span id="byr_b_a3" class="display-none">play</span>
                                             </span>
                                         </div>
                                     </div>
@@ -82,13 +84,16 @@
                                         <img src="./images/19/a_2.jpg" alt="" />
                                         <div class="sentence_box">
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_13.mp3', 'single');">
-                                                Hana and Duri   <input type="text" class="inbutBox"/>  sports.
+                                                Hana and Duri   <input type="text" class="inbutBox" id="byr_b_t4"/>  sports.
+                                                <span id="byr_b_a4" class="display-none">like</span>
                                             </span>
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_14.mp3', 'single');">
-                                                They  <input type="text" class="inbutBox"/>  soccer games on TV every day.
+                                                They  <input type="text" class="inbutBox" id="byr_b_t5"/>  soccer games on TV every day.
+                                                <span id="byr_b_a5" class="display-none">watch</span>
                                             </span>
                                             <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_15.mp3', 'single');">
-                                                They  <input type="text" class="inbutBox"/>  good at baseball.
+                                                They  <input type="text" class="inbutBox" id="byr_b_t6"/>  good at baseball.
+                                                <span id="byr_b_a6" class="display-none">are</span>
                                             </span>
                                         </div>
                                     </div>
@@ -141,29 +146,29 @@
                                             </span>
                                             <span class="sentence">
                                                 <em>A</em>
-                                                <input type="text" class="inbutBox" />
+                                                <input type="text" class="inbutBox"/>
                                             </span>
                                         </li>
                                         <li>
                                             <span class="sentence">
                                                 <span class="num">2.</span>
                                                 <em>Q</em>
-                                                <input type="text" class="inbutBox" />
+                                                <input type="text" class="inbutBox"/>
                                             </span>
                                             <span class="sentence">
                                                 <em>A</em>
-                                                <input type="text" class="inbutBox" />
+                                                <input type="text" class="inbutBox"/>
                                             </span>
                                         </li>
                                         <li>
                                             <span class="sentence">
                                                 <span class="num">3.</span>
                                                 <em>Q</em>
-                                                <input type="text" class="inbutBox" />
+                                                <input type="text" class="inbutBox"/>
                                             </span>
                                             <span class="sentence">
                                                 <em>A</em>
-                                                <input type="text" class="inbutBox" />
+                                                <input type="text" class="inbutBox"/>
                                             </span>
                                         </li>
                                     </ul>
