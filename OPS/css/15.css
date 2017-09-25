@@ -9,7 +9,7 @@
 .btn_play {position: absolute; display: block; width: 25px; height: 25px; top: 55px; left: 560px; background-size: cover;}
 
 /* 본문 */
-.reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px; content: url("../images/15/lesson_1_p15_title.png")}
+.reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px;}
 .section > p {font: 19px 'Faustina'; position: absolute; top: 310px; left: 150px; line-height: 38px;}
 .section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 330px; line-height: 38px; display: none;}
 

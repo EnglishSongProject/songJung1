@@ -310,10 +310,9 @@ var imageSlide = {
     buttonAction : {
 
         prevImageShow : function(){
-            console.log(this)
             var slide = this.getElementsByClassName('slider_image')[0];
             var thumbnail = this.getElementsByClassName('slider_thumbnail')[0];
-            var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('num'));
+            var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('data-num'));
             if(index === 1) {
                 return false;
             }else{
@@ -329,7 +328,7 @@ var imageSlide = {
         nextImageShow : function(){
             var slide = this.getElementsByClassName('slider_image')[0];
             var thumbnail = this.getElementsByClassName('slider_thumbnail')[0];
-            var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('num'));
+            var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('data-num'));
 
             if(index === slide.children.length) {
                 return false;
