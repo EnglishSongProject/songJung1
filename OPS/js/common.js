@@ -85,6 +85,22 @@ function playAudio(path, btnId, target, imgId) {
             }
 
             if(btnId == 'single'){
+                if(document.getElementById('myaudio')){
+                    document.getElementById('myaudio').pause();
+                    document.getElementById('myaudio').currentTime = 0
+                    $('.audio-popup').hide();
+                }
+
+                var oAudio = document.createElement('audio');
+                oAudio.className = "single";
+                oAudio.src = path;
+                var wrapper = document.querySelector('.wrapper');
+
+                if($('.single').length){
+                    $('.single').remove()
+                }
+                wrapper.appendChild(oAudio);
+
                 if(imgId != null && imgId != 'undefined'){
                     var imgClassForNone = document.getElementsByClassName('class-for-none');
                     for(var i=0; i<imgClassForNone.length; i++){
@@ -93,16 +109,17 @@ function playAudio(path, btnId, target, imgId) {
                     var imgId = document.getElementById(imgId);
                     imgId.style.display='block';
                 }
-                popup.style.display='none';
-
                 if (oAudio.paused){
                     oAudio.play();
                 }else{
+                    oAudio.pause();
                     return;
                 }
+                return
             }else {
                 var oAudio = document.getElementById("myaudio");
                 var popup = document.querySelector(".audio-popup");
+                oAudio.addEventListener("timeupdate",updateProgress);
 
                 if (oAudio.paused && popup.style.display == "none") {
                     var $target = $(target);
@@ -176,7 +193,6 @@ function playAudio(path, btnId, target, imgId) {
         }
     });
 
-    oAudio.addEventListener("timeupdate",updateProgress)
 
     var progressBar = document.querySelector(".progress_bar");
     progressBar.addEventListener("click",function(e){
@@ -397,6 +413,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
     var answerIdArray;
     var clearArray;
     var answerId;
+    var inputId;
     var score = 0;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
@@ -422,7 +439,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
 
             answerId.style.display='inline';
         }
-        var notice = score === 3 ? "정답" : "오답"
+        var notice = score === answerIdArray.length ? "정답" : "오답"
         if(type == "type01"){
             alert(notice + "입니다")
         }
@@ -671,8 +688,13 @@ function showScriptPopupTopLeft(target, top, left){
 }
 //단어팝업
 function showWordPopupTopLeft(target, top, left, word) {
+    var wordPopups = document.getElementsByClassName('wordPopup');
+    for(var i=0;i<wordPopups.length;i++){
+        $(wordPopups[i]).remove();
+    }
     var popup = document.createElement("div");
     var popupWidth = word.toString().length * 20;
+    console.log(target);
     popup.style.width=popupWidth.toString()+'px';
     popup.className='wordPopup';
     popup.innerHTML=word;
@@ -680,6 +702,6 @@ function showWordPopupTopLeft(target, top, left, word) {
     popup.style.top = (target.offsetTop - top) + "px";
     popup.style.left = (target.offsetLeft + left) + "px";
     popup.addEventListener('click',function () {
-       $(popup).toggle();
+       $(popup).remove();
     });
 }
