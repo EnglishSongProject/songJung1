@@ -23,8 +23,8 @@ h1.page_tit{display:block;text-indent:-9999px;overflow: hidden;background: url(.
 .container>div:nth-of-type(2) {height:400px;}
 h2{font-family: 'Open Sans';font-size:13px;font-weight:bold;}
 h2>img{margin-right:5px;width:25px;height:25px;}
-div.bt_A,div.bt_B{position:absolute;right:130px;top:0;}
-div.bt_B{right:250px;}
+div.bt_A,div.bt_B{position:absolute;right:100px;top:0;}
+div.bt_B{right:255px;}
 
 /* 문제1 */
 .Q_A{display:inline-block;position:absolute;left:50%;top:40px;margin-left:-295px;width:585px;height:400px;}
@@ -36,26 +36,45 @@ div.bt_B{right:250px;}
 .Q_A_inner1{left:290px;top:65px;}
 .Q_A_inner1 dt{top:56px;}
 .Q_A_inner1 dd{width:90px;top:8px;margin-left:-20px;}
-.Q_A_inner1 .true{right:6px;top:17px;}
-.Q_A_inner1 .false{right:10px;top:51px;}
-
+.Q_A_inner1 .true{right: -3px; top: 14px;}
+.Q_A_inner1 .false{ right: -1px; top: 47px}
 .Q_A_inner2{left:330px;top:220px;}
 .Q_A_inner2 dt{top:32px;left:2px;}
 .Q_A_inner2 dd{width:110px;top:33px;margin-left:-45px;}
-.Q_A_inner2 .true{left:7px;top:51px;}
-.Q_A_inner2 .false{right:93px;top:1px;}
+.Q_A_inner2 .true{left: -4px; top: 48px;}
+.Q_A_inner2 .false{right: 80px; top: -1px;}
 
-.Q_A_inner3{left:45px;top:100px;}
+.Q_A_inner3 {left:45px;top:100px;}
 .Q_A_inner3 dt{top:53px;left:2px;}
 .Q_A_inner3 dd{width:90px;top:28px;margin-left:-35px;}
-.Q_A_inner3 .true{left:40px;}
-.Q_A_inner3 .false{left:67px;bottom:0;}
+.Q_A_inner3 .true{left: 29px; top: -2px;}
+.Q_A_inner3 .false{left: 56px; bottom: -3px;}
 
 .Q_A_inner4{left:95px;top:255px;}
 .Q_A_inner4 dt{top:45px;left:2px;}
 .Q_A_inner4 dd{width:80px;margin-left:-35px;top:20px;}
-.Q_A_inner4 .true{right:6px;top:21px;}
-.Q_A_inner4 .false{left:69px;bottom:5px;}
+.Q_A_inner4 .true{right: -5px; top: 17px;}
+.Q_A_inner4 .false{ right: 80px;  top: 67px;}
+
+.road_school img {position: absolute}
+.load_01 {top: 65px; left: 167.5px;}
+.load_02 {top: 168px;left: 491px;}
+.load_03 {top: 130px; left: 191px;}
+.load_04 {top: 238px; left: 78px;}
+.load_05 {top: 324px; left: 285px;}
+
+.Q_A_inner .true:hover,
+.Q_A_inner .false:hover { color:red; cursor: pointer}
+
+.cir_goal.t01 {top: 102px; left: 322px;}
+.cir_goal.t02 {top: 269px; left: 362px;}
+.cir_goal.t03 {top: 142px; left: 73px;}
+.cir_goal.t04 {top: 293px; left: 125px;}
+.cir_goal.t05 {top:-10000em}
+
+.Q_A_inner .false, 
+.Q_A_inner .true{border-radius: 50%;width: 27px;height: 27px;text-align: center;border:3px solid transparent}
+
 
 /* 문제2 */
 .Q_B{position:absolute;left:50%;top:75px;margin-left:-185px;width:370px;}
