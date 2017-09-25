@@ -94,7 +94,10 @@ function playAudio(path, btnId, target, imgId) {
                     imgId.style.display='block';
                 }
                 popup.style.display='none';
-
+                oAudio.addEventListener("ended", function (e) {
+                        oAudio.pause();
+                        oAudio.currentTime = 0;
+                });
                 if (oAudio.paused){
                     oAudio.play();
                 }else{
@@ -103,6 +106,7 @@ function playAudio(path, btnId, target, imgId) {
             }else {
                 var oAudio = document.getElementById("myaudio");
                 var popup = document.querySelector(".audio-popup");
+                oAudio.addEventListener("timeupdate",updateProgress);
 
                 if (oAudio.paused && popup.style.display == "none") {
                     var $target = $(target);
@@ -176,7 +180,6 @@ function playAudio(path, btnId, target, imgId) {
         }
     });
 
-    oAudio.addEventListener("timeupdate",updateProgress)
 
     var progressBar = document.querySelector(".progress_bar");
     progressBar.addEventListener("click",function(e){
@@ -397,6 +400,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
     var answerIdArray;
     var clearArray;
     var answerId;
+    var inputId;
     var score = 0;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
@@ -422,7 +426,7 @@ function blankCheckByCss(questionId, Ids, clearId, type){
 
             answerId.style.display='inline';
         }
-        var notice = score === 3 ? "정답" : "오답"
+        var notice = score === answerIdArray.length ? "정답" : "오답"
         if(type == "type01"){
             alert(notice + "입니다")
         }
