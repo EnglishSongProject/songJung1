@@ -17,7 +17,7 @@ li{font-family: 'Nanum Gothic';font-size:14px;}
 .slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
-input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:14px;}
+input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:14px;line-height:20px;margin-top:-3px;}
 .ls_1_t1{width:55px;}
 .ls_2_t1{width:42px;}
 .ls_2_t2{width:42px;}
@@ -36,12 +36,12 @@ article dd ul li{font-size: 12px;}
 article dd ul li:hover{color: #9a01cd;}
 
 li article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:30px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
-.rol_01 article:first-of-type h1{transform:rotate(-3deg);}
+/*.rol_01 article:first-of-type h1{transform:rotate(-3deg);}
 .rol_01 article:nth-of-type(2) h1{transform:rotate(5deg);}
 .rol_01 article:last-of-type h1{transform:rotate(1deg);}
 .rol_02 article:first-of-type h1{transform:rotate(3deg);}
 .rol_02 article:nth-of-type(2) h1{transform:rotate(-5deg);}
-.rol_02 article:last-of-type h1{transform:rotate(2deg);}
+.rol_02 article:last-of-type h1{transform:rotate(2deg);}*/
 
 li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
 .a_check{background:url(../images/09/a_check_bt.png) no-repeat 0 0;}
