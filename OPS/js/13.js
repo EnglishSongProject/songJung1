@@ -12,7 +12,7 @@ $(document).ready(function() {
         }
         //해당 클릭 수 만큼 opacity넣기
         for(var i=1;i<idTh+1;i++){
-            $("#"+idStr+i.toString()).css('opacity', '1');
+            $("#"+idStr+i.toString()).css('opacity', '0.3');
         }
     });
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
         //해당 클릭 수 만큼 opacity넣기
         for(var i=1;i<idTh+1;i++){
-            $("#"+idStr+i.toString()).css('opacity', '1');
+            $("#"+idStr+i.toString()).css('opacity', '0.3');
         }
     });
 
