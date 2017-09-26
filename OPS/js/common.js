@@ -419,7 +419,9 @@ function blankCheckByCss(questionId, Ids, clearId, type){
         answerIdArray = [Ids];
         clearArray = [clearId];
     }
-    if(questionId.title =='답안'){
+    console.log(answerIdArray);
+    console.log(clearArray);
+    if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
         questionId.title ='다시풀기';
@@ -430,16 +432,17 @@ function blankCheckByCss(questionId, Ids, clearId, type){
             if(inputId.value.trim() == answerId.innerHTML) {
                 score++
             }
-
-            answerId.style.display='inline';
+            if(type!='type02'){
+                answerId.style.display='inline';
+            }
         }
         var notice = score === answerIdArray.length ? "정답" : "오답"
-        if(type == "type01"){
-            alert(notice + "입니다")
+        if(type == "type01" || type == "type02"){
+            alert(notice + "입니다");
         }
 
 
-    }else if (questionId.title == '다시풀기'){
+    }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
         questionId.title = '답안';
@@ -560,6 +563,8 @@ function textClear(idForClear, nameForClear, Id_a, btnId_q) {
 }
 function textClearByNames(name,ck_list) {
     var nameArray = document.getElementsByName(name);
+    console.log(name);
+    console.log(nameArray);
     var ckArray = document.getElementsByName(ck_list);
     for(var i=0; i<nameArray.length; i++){
         nameArray[i].value='';
