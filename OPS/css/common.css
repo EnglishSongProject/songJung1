@@ -148,7 +148,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /*----------------------
 페이지 공통
 ----------------------*/
-.wrapper {user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:0px;top:0px;width:768px;height:1024px;position: relative; padding:53px; box-sizing: border-box;}
+.wrapper {user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:0px;top:0px;width:768px;height:1024px;position: relative; padding:53px; box-sizing: border-box; z-index: 1}
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
