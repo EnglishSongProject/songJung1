@@ -30,4 +30,10 @@
 
 $(document).ready(function () {
     imageSlide.init();
+
+    $('#p23_text_pop_btn').on('click', function () {
+       $('.p23_text_pop_txt').css('display', 'block');
+    });
+
+
 });

@@ -19,9 +19,10 @@ section .Subtit_Wrap p{font-family: 'Open Sans';margin-right:10px;font-size:13px
 section .Subtit_Wrap p:hover{color:#991869}
 section .Subtit_Wrap button{margin-right:10px;margin-top:-2px;}
 button.btn_bochung,
-button.btn_simhwa{position: relative; display:inline-block;width:60px;height:37px;background-size:cover;cursor: pointer;text-indent:-9999px;margin-top:-7px !important;}
-button.btn_bochung{background-image: url("../images/23/bochung.png");}
-button.btn_simhwa{background-image: url("../images/23/simhwa.png");}
+button.btn_simhwa{position: relative; display:inline-block;width:37px;height:28px;background-size:cover;cursor: pointer;text-indent:-9999px;margin-top:-7px !important;}
+button.btn_bochung{background-image: url("../images/23/05.png");margin-left:175px;}
+button.btn_bochung.marginL{margin-left: 156px !important;}
+button.btn_simhwa{background-image: url("../images/23/06.png");}
 
 dl dt span{font-family: 'Open Sans';font-size:14px;}
 dl dt span:hover{color:black;}
@@ -59,11 +60,12 @@ dl dt span:hover{color:black;}
 .questionBox p.question_2_Q span,
 .questionBox p.question_2_A span{font-family: 'Noto Sans KR';font-size:15px;padding-right:5px;padding-left:23px;}
 .questionBox p.red1,
-.questionBox p.red2{position:absolute;color:red;}
+.questionBox p.red2{position:absolute;color:red;display:none;}
 .questionBox p.red1{left:174px;}
 .questionBox p.red2{left:263px;}
 .questionBox p.question_2_Q{margin-top:10px;}
 .questionBox p.question_2_A input{border-bottom:1px solid black;margin:0 5px;width:80px;}
+.questionBox.question_2 p{padding-right: 10px;}
 
 /*문제3*/
 .questionBox.question_3{height:180px;}
@@ -71,7 +73,7 @@ dl dt span:hover{color:black;}
 .questionBox img#redgirl{right:58px;top:60px;}
 .Subtit_Wrap span.orange{padding-left:0 !important;}
 .questionBox .Q_3_1,
-.questionBox .Q_3_2{font-family: 'Faustina';font-size:15px;padding:10px 25px;border-radius:8px;position:absolute;}
+.questionBox .Q_3_2{font-family: 'Faustina';font-size:15px;padding:8px 25px;border-radius:8px;position:absolute;}
 .questionBox .Q_3_1{background-color:#f0f4c3;left:155px;top:20px; }
 .questionBox Q_3_1::after{    border-bottom: 10px solid #222;
     border-left: 10px solid transparent;height: 0;
@@ -79,12 +81,12 @@ dl dt span:hover{color:black;}
     width: 0;}
 .questionBox .Q_3_2{background-color:#deedce;left:215px;top:77px;width:250px;}
 .questionBox .Q_3_2 input{width:250px;padding:3px;font-family: 'Faustina';font-size:15px;}
-.questionBox.question_3>span{color:red;font-family: 'Faustina';font-size:15px;position:absolute;top:127px;left:248px;}
+.questionBox.question_3>span{color:red;font-family: 'Faustina';font-size:15px;position:absolute;top:127px;left:248px;display:none;}
 .Subtit_Wrap button.btn_repeat{margin-left:0 !important;}
 
 /*section2*/
 /*문제4-5*/
-.greenline{border:1px solid #d6eace;margin-left: 63px;width:502px;border-radius:5px;box-sizing:border-box;padding: 10px;}
+.greenline{border:1px solid #d6eace;margin-left: 63px;width:545px;border-radius:5px;box-sizing:border-box;padding:10px 0 10px 37px;margin-top:10px;}
 .greenline p{font-family: 'Faustina';font-size:15px;}
 .greenline p span.line{border-bottom:1px solid black; width:80px;display: inline-block;margin:0 5px 0 2px;margin-bottom: -4px;}
 .greenline p.put_in{margin-left:15px;}
@@ -92,7 +94,7 @@ dl dt span:hover{color:black;}
 .question_4 dl dt{font-family: 'Faustina';font-size:15px !important;}
 .question_4 dl dt span,
 .question_5 dl dt span{padding-right: 5px;}
-.questionBox.question_4{height:100px;margin-top:40px;}
+.questionBox.question_4{height:100px;margin-top:45px;}
 .questionBox.question_5{height:100px;}
 .questionBox.question_5 dl{}
 .questionBox.question_5 dl dt{width:50% !important;font-family: 'Nanum Gothic';font-size:12px;}
@@ -117,9 +119,9 @@ dl dt span:hover{color:black;}
 .slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
 .slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}
 
-section.btnWrap{position:absolute;width:100%; bottom:100px;}
-.btn{position: relative; display:inline-block;width:103px;height:44px;background-size:cover;cursor: pointer;}
-.btn_selfreview{background-image: url(../images/23/018_01.png);width:121px !important;}
-.btn_rating{background-image: url(../images/23/018_03.png);}
-.btn_game{background-image: url(../images/23/019_2.png);}
-.btn_word_1{background-image: url(../images/23/018_2.png);}
+section.btnWrap{position:absolute;bottom:100px;right:50px;}
+.btn{position: relative; display:inline-block;width:81px;height:35px;background-size:cover;cursor: pointer;}
+.btn_selfreview{background-image: url(../images/23/01.png);width:81px !important;}
+.btn_rating{background-image: url(../images/23/03.png);}
+.btn_game{background-image: url(../images/23/02.png);}
+.btn_word_1{background-image: url(../images/23/04.png);}
