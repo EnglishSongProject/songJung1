@@ -284,3 +284,6 @@ textarea:focus{outline: none;}
 .progress_bar {width:127px;height:17px; background: #fff; display:inline-block; border-radius: 3px; vertical-align: middle; margin-right:10px}
 .controll_bar {position: absolute; top: 9px; left: 67px; width:17px; height:18px; background: url(../images/common/audio_pop/controllbar.png) no-repeat 0 0; border-radius: 1px; }
 .btn_audio_close {background:url(../images/common/audio_pop/btn_close.png) no-repeat 0 0 ;display: inline-block; width:18px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
+
+/*video*/
+.zoom_img_wrap{display:none;position: absolute;top: 0;left: 0;bottom: 0;right: 0; z-index: 10; background: rgba(255, 255, 255, 1) !important;}
