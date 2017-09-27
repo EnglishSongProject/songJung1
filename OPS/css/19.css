@@ -17,9 +17,9 @@ input[type="text"] {position: relative;}
 .part_lu .section .top_area:after {position: absolute; top:32px; left:50%; content:''; display: block; height: 100px; width: 1px; background:#e1bb8c;}
 .part_lu .section .top_area .sentence {line-height: 1.7}
 
-.part_lu .info{position: relative; top: -17px; left: 22px; font:12px 'Nanum Gothic'; width:560px;  padding:12px 20px 0 57px; box-sizing: border-box;}
+.part_lu .info{position: relative; top: -17px; left: 22px; font:12px 'Nanum Gothic'; width:560px;  padding:10px 20px 0 57px; box-sizing: border-box; line-height: 1.5}
 .section1 .info {height:39px; background: url(../images/19/bg_notice.png) no-repeat 0 0;}
-.section2 .info {height:59px; background: url(../images/19/bg_notice_02.png) no-repeat 0 0;}
+.section2 .info {height:55px; background: url(../images/19/bg_notice_02.png) no-repeat 0 0;}
 
 .part_lu .word_box {width:386px; padding:14px 25px; background:#f1f7e7; border-radius: 30px; overflow: hidden; margin:0 auto}
 .word_box li{float:left; font:14px 'Noto Sans KR'; width:16.5%; text-align: center}
@@ -32,10 +32,10 @@ input[type="text"] {position: relative;}
 
 #byr_b_a1 ,#byr_b_a2,#byr_b_a3,#byr_b_a4,#byr_b_a5,#byr_b_a6 {position:absolute; top:0; margin-left:15px}
 
-.txt_content {width:100%;padding:15px 20px; border: 1px solid #b4ddc8; border-radius: 10px; margin-top:30px; box-sizing:border-box}
+.txt_content {width:100%;padding:20px 20px 25px; border: 1px solid #b4ddc8; border-radius: 10px; margin-top:30px; box-sizing:border-box}
 .txt_content li .sentence {font:16px/2.2 'Nanum Gothic'; }
 .txt_content li .sentence:nth-of-type(2)  {margin-left:20px;}
-.txt_content input {width:530px; text-align: left; border-bottom: 1px solid #b4ddc8; line-height: 1.6}
+.txt_content input {width:490px; text-align: left; border-bottom: 1px solid #b4ddc8; line-height: 1.6}
 .txt_content em {margin-right: 5px;}
 
 
