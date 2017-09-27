@@ -11,7 +11,17 @@ $(document).ready(function () {
         var idx = $(this).index();
 
         $(this).addClass("on").siblings().removeClass("on");
-        $slides.eq(idx).show().siblings().hide()
+        $slides.eq(idx).show().siblings().hide();
+
+        // 진행중인 오디오 해제
+        if($("#myaudio").length > 0) {
+            $(".audio-popup").hide().detach();
+            currentFile = ''
+        }
+
+        if($('.single').length){
+            $('.single').detach()
+        }
     });
 
     $(".trans1").on("click", function(){

@@ -22,8 +22,7 @@ var currentFile = "";
 var currentPopup = null;
 var currentAudio = null;
 
-function playAudio(path, btnId, target, imgId) {
-
+function playAudio(path, btnId, target, imgId, direction) {
     // Check for audio element support.
     if (window.HTMLAudioElement) {
         try {
@@ -119,8 +118,13 @@ function playAudio(path, btnId, target, imgId) {
                 if (oAudio.paused && popup.style.display == "none") {
                     var $target = $(target);
                     // 팝업 위치
+
+                    if(direction == 'right'){
+                        popup.style.left = ($target.offset().left -260) + "px";
+                    }else{
+                        popup.style.left = ($target.offset().left + 40) + "px";
+                    }
                     popup.style.top = ($target.offset().top - 10) + "px";
-                    popup.style.left = ($target.offset().left + 40) + "px";
                     popup.style.display='block';
 
                     audioPlay();
@@ -273,7 +277,6 @@ function playAudio(path, btnId, target, imgId) {
 var imageSlide = {
 
     init : function(){
-
         var slide_content = document.getElementsByClassName('slider_content');
         for(var i=0,j=slide_content.length; i<j; i++){
             var slider_image = slide_content[i].getElementsByClassName('slider_image')[0];
@@ -300,6 +303,8 @@ var imageSlide = {
         this.classList.add('on');
         slide.getElementsByClassName('on')[0].classList.remove('on');
         slide.children[index-1].classList.add('on');
+
+        imageSlide.closePopup()
     },
 
     buttonAction : {
@@ -317,6 +322,7 @@ var imageSlide = {
                 thumbnail.children[index-2].classList.add('on');
             }
 
+            imageSlide.closePopup()
 
         },
 
@@ -334,6 +340,8 @@ var imageSlide = {
                 thumbnail.getElementsByClassName('on')[0].classList.remove('on');
                 thumbnail.children[index].classList.add('on');
             }
+
+            imageSlide.closePopup()
         }
     },
     swipe : {
@@ -362,14 +370,20 @@ var imageSlide = {
                 }
             }
         }
+    },
+
+    closePopup : function(){
+            if($("#myaudio").length > 0) {
+                $(".audio-popup").hide().detach();
+                currentFile = ''
+            }
+
+            if($('.single').length){
+                $('.single').detach()
+            }
     }
 }
-function removePopup(){
-    var popup = document.querySelector(".popup");
-    if(popup){
-        popup.parentNode.removeChild(popup);
-    }
-}
+
 
 function blankCheck(questionId, Ids, answers){
 

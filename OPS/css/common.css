@@ -273,7 +273,7 @@ textarea:focus{outline: none;}
 /*audio popup*/
 #myaudio {position: absolute;z-index: 100; }
 
-.audio-popup{position:absolute; display: block; width:246px; height:36px;  background-color: #a1c8ee; border-radius:10px; border:none; box-shadow: 2px 2px 2px #888888 ; padding:6px 0 0 18px; box-sizing: border-box;}
+.audio-popup{position:absolute; display: block; width:246px; height:36px;  background-color: #a1c8ee; border-radius:10px; border:none; box-shadow: 2px 2px 2px #888888 ; padding:6px 0 0 18px; box-sizing: border-box; z-index:9999}
 .btn_audio_play, .btn_audio_pause, .btn_audio_stop {background-size: contain; background-repeat: no-repeat; background-position: 0 0; overflow: hidden; text-indent: -999em;}
 
 
