@@ -63,8 +63,8 @@
 #prog_ball{	position:absolute; left:0px; top:-2px; width:20px; height:20px;	cursor:pointer; z-index:4;}
 
 /*자막, 대본*/
-#prog_cap{	position:absolute; left:320px; top:40px; z-index:3; cursor:pointer;}
-#prog_sct{	position:absolute; left:360px; top:40px; z-index:3; cursor:pointer;}
+#prog_cap{	position:absolute; left:550px; top:40px; z-index:3; cursor:pointer;}
+#prog_sct{	position:absolute; left:660px; top:40px; z-index:3; cursor:pointer;}
 
 
 /*동영상 시간*/

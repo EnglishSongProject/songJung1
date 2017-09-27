@@ -696,18 +696,18 @@ $(document).ready(function(){
 
 
 	//영, 한영, 한
-	var btn_en = document.querySelector('.btn_en');
+/*	var btn_en = document.querySelector('.btn_en');
 	btn_en.addEventListener('click', function () {
 		showhideScript(0);	
-	}, false);
+	}, false);*/
 	var btn_ek = document.querySelector('.btn_ek');
 	btn_ek.addEventListener('click', function () {
 		showhideScript(1);			
 	}, false);
-	var btn_kr = document.querySelector('.btn_kr');
+/*	var btn_kr = document.querySelector('.btn_kr');
 	btn_kr.addEventListener('click', function () {
 		showhideScript(2);			
-	}, false);
+	}, false);*/
 
 });
 

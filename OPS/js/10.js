@@ -3,7 +3,7 @@
  */
 var pageNum = 10; //video.js에서 페이지 이미지 경로로 활용됨
 var mediaInfo = [
-    {
+/*    {
         //하나의 동영상
 
         //동영상 제목
@@ -37,7 +37,7 @@ var mediaInfo = [
             [2, 2, 'Hello, Mina.', '미나, 안녕.'],
             [3, 3, 'Hello, Jack.', '잭, 안녕.']
         ]
-    },
+    },*/
 
 
 
@@ -87,7 +87,7 @@ var mediaInfo = [
             [8, 1, 'c', '씨이'],
             [9, 2, 'Black and White', '색을 달리해서 표현하고 있어.']
         ]
-    },
+    }/*,
 
     {
         //하나의 동영상
@@ -121,7 +121,7 @@ var mediaInfo = [
             [1, 1, 'English', '한글자막'],
             [2, 2, 'Say', '말하다.']
         ]
-    }
+    }*/
 
 ];
 $(document).ready(function () {
@@ -146,10 +146,10 @@ $(document).ready(function () {
         $('.zoom_img_wrap.a').show();
         mediaInit(0); //video2.js, 이곳에서 동영상 팝업 내부의 모든 요소를 다시 세팅한다.
     });*/
-    $('.mediabtn_1').on('click',function(){
+    $('.mediabtn_0').on('click',function(){
         layerAclose();
         $('.zoom_img_wrap.a').show();
-        mediaInit(1);
+        mediaInit(0);
     });
 
     $('.btn_media_close').on('click',function(){
