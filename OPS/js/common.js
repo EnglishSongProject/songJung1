@@ -697,24 +697,4 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.lineHeight=textLineHeight.toString()+'px';
         }
     }
-
-}
-//단어팝업
-function showWordPopupTopLeft(target, top, left, word) {
-    var wordPopups = document.getElementsByClassName('wordPopup');
-    for(var i=0;i<wordPopups.length;i++){
-        $(wordPopups[i]).remove();
-    }
-    var popup = document.createElement("div");
-    var popupWidth = word.toString().length * 20;
-    console.log(target);
-    popup.style.width=popupWidth.toString()+'px';
-    popup.className='wordPopup';
-    popup.innerHTML=word;
-    target.parentNode.appendChild(popup);
-    popup.style.top = (target.offsetTop - top) + "px";
-    popup.style.left = (target.offsetLeft + left) + "px";
-    popup.addEventListener('click',function () {
-       $(popup).remove();
-    });
 }

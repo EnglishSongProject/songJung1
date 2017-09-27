@@ -11,8 +11,8 @@ fieldset{border:none;}
 legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
 hr, caption {display:none;}
 img {border:none; vertical-align:middle;height:auto;}
-input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0; color: #333 !important; background: transparent}
-textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
+input {cursor:text;font-family:"Nanum Gothic";vertical-align:middle;text-align:center; font-size:14px; border:0; color: #333 !important; background: transparent}
+textarea {font-family:"Nanum Gothic";font-size:14px; border:0;}
 strong {font-weight:normal;}
 em,i {font-style:normal;}
 fieldset,img {border:0 none}
@@ -120,6 +120,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_view {background-image: url(../images/common/014.png)}
 .btn_wd {background-image: url(../images/common/011_3.png)}
 .btn_pop {background-image: url(../images/common/015.png)}
+.btn_write {background-image: url(../images/common/016.png)}
 
 /* btn_type_03 */
 .btn_word {background-image: url(../images/common/018_2.png)}
