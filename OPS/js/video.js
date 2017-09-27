@@ -696,19 +696,19 @@ $(document).ready(function(){
 
 
 	//영, 한영, 한
-/*	var btn_en = document.querySelector('.btn_en');
-	btn_en.addEventListener('click', function () {
-		showhideScript(0);	
-	}, false);*/
 	var btn_ek = document.querySelector('.btn_ek');
+	var btn_en = document.querySelector('.btn_en');
 	btn_ek.addEventListener('click', function () {
+		btn_ek.style.display='none';
+		btn_en.style.display='block';
 		showhideScript(1);			
 	}, false);
-/*	var btn_kr = document.querySelector('.btn_kr');
-	btn_kr.addEventListener('click', function () {
-		showhideScript(2);			
-	}, false);*/
 
+	btn_en.addEventListener('click', function () {
+		btn_en.style.display='none';
+		btn_ek.style.display='block';
+		showhideScript(0);
+	}, false);
 });
 
 
@@ -723,23 +723,11 @@ function showhideScript(num){
 		txt = $('#txt_en' + i);
 		who.css('visibility', (num == 0 || num == 1) ? "visible" : "hidden");
 		txt.css('visibility', (num == 0 || num == 1) ? "visible" : "hidden");
-	
+
 		who = $('#who_kr' + i);
 		txt = $('#txt_kr' + i);
 		who.css('visibility', (num == 1 || num == 2) ? "visible" : "hidden");
 		txt.css('visibility', (num == 1 || num == 2) ? "visible" : "hidden");
-	}
-
-
-	var iconList = ['icon_en','icon_ke','icon_kr'];
-	var imgList = ['player_ke_en','player_ke_ke','player_ke_kr'];
-	for (i=0;i<3;i++){
-		var obj = document.getElementById(iconList[i]);
-		if (i == num){
-			obj.src = imgPath+imgList[i] + "1.png";
-		}else{
-			obj.src = imgPath+imgList[i] + "0.png";
-		}
 	}
 }
 

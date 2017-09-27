@@ -108,9 +108,9 @@
 
 
  /* 영, 한영, 한 */
-.sc_paper .haneng	{ position: absolute; top:0px; right:30px; width:160px; height:30px; background: url(../images/common/player/player_kebg.png) no-repeat 0 0;}
-.sc_paper .haneng .btn_en { position: absolute; top:2px; left:2px;  cursor:pointer;}
+.sc_paper .haneng	{ position: absolute; top:0px; right:30px; width:160px; height:30px;}
+/*.sc_paper .haneng .btn_en { position: absolute; top:2px; left:2px;  cursor:pointer;}
 .sc_paper .haneng .btn_ek { position: absolute; top:2px; left:32px; cursor:pointer;}
-.sc_paper .haneng .btn_kr { position: absolute; top:2px; left:62px; cursor:pointer;}
+.sc_paper .haneng .btn_kr { position: absolute; top:2px; left:62px; cursor:pointer;}*/
 
 
