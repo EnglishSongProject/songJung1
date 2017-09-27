@@ -100,6 +100,10 @@
                                 <div class="img_content step2_ta_wrap mt_30">
                                     <img src="./images/21/face_man.png" class="icon_man" alt=""/>
                                     <textarea class="step2_ta" name="p21_clear_text" rows="5" maxlength="205"></textarea>
+                                    <p class="re_btP21">
+                                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기"  onclick="textClear('ls_4_t_area');">다시하기</button>
+                                      <a href="#" ><span class="close_icon"><img src="images/21/popup_close.png" alt="close icon" /></span></a>
+                                    </p>
                                 </div>
                             </div><!-- // section -->
                         </li>
@@ -116,39 +120,6 @@
                                 <div class="img_content mt_20" style="text-align:center">
                                     <img src="./images/21/bg_wt_step03.png"  alt="" />
                                 </div>
-                                <div class="img_content group_ck">
-                                    <h3 class="hide">Group Check</h3>
-                                    <h4>5점 만점</h4>
-                                    <table class="group_ck_tb">
-                                        <tr class="group_first">
-                                            <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_04.mp3', 'single');"></th>
-                                            <td>모둠1</td>
-                                            <td>모둠2</td>
-                                            <td>모둠3</td>
-                                            <td>모둠4</td>
-                                            <td>모둠5</td>
-                                            <td>모둠6</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_04.mp3', 'single');"> 1. 다른 사람을 소개하는 영어 표현을 정확하게 사용했나요? </th>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_05.mp3', 'single');"> 2. UCC를 창의적으로 구성했나요?  </th>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                            <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
-                                        </tr>
-                                    </table>
-                                </div>
                             </div><!-- // section -->
                         </li>
                     </ul>
@@ -159,6 +130,39 @@
                         <button type="button" data-num="2">2</button>
                     </div>
                 </div>
+            </div>
+            <div class="img_content group_ck">
+                <h3 class="hide">Group Check</h3>
+                <h4>5점 만점</h4>
+                <table class="group_ck_tb">
+                    <tr class="group_first">
+                        <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_04.mp3', 'single');"></th>
+                        <td>모둠1</td>
+                        <td>모둠2</td>
+                        <td>모둠3</td>
+                        <td>모둠4</td>
+                        <td>모둠5</td>
+                        <td>모둠6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_04.mp3', 'single');"> 1. 다른 사람을 소개하는 영어 표현을 정확하게 사용했나요? </th>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="active-purple" onclick="playAudio('./media/audio/L01/021/L01_021_wt_05.mp3', 'single');"> 2. UCC를 창의적으로 구성했나요?  </th>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                        <td><input type="text" maxlength="1" name="p21_clear_text" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/></td>
+                    </tr>
+                </table>
             </div>
             <div class="pg_Num pgNum_right">
               <p>New School, New Friends<strong>21</strong></p>
