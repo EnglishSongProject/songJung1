@@ -7,7 +7,15 @@
 
      $("#btn_itw").on("click",function(){
     
-     })
+     });
+
+     $(".btn_answer").on("click", function(){
+
+	 });
+
+     $(".btn_repeat").on("click", function(){
+		$(".svgContainer>path").removeAttr("d");
+	 });
  });
 
 
@@ -220,7 +228,7 @@ DragDrop.prototype.createDragDrop = function (param) {
             var newLeft = (dragObj.newX + param.width) / GameManager.event.zoomRate;
             var newTop = (dragObj.newY + param.height) / GameManager.event.zoomRate;
 
-            if (answerLine !== null) {
+           if (answerLine != null) {
                 answerLine.setAttribute('d', 'M '+ left +' '+ top + ' L '+ newLeft +' '+ newTop);
             }
         },
@@ -426,7 +434,6 @@ QUIZ.dragLine = {
 		top = param.top + param.height;
 
 		if (type) {
-			obj.style.pointerEvents = 'none';
 			obj.classList.add(this.name + 'Complete');
 			targetPath.setAttribute('d', 'M '+ left +' '+ top + ' L '+ dropLeft +' '+ dropTop);
 		} else {
