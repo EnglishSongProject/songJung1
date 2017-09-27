@@ -16,7 +16,6 @@ $(document).ready(function(){
 
     $(".btn_wp").on("click",function(){
         var idx = $(this).index();
-        $('.wpopup').eq(idx).toggle();
+        $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide()
     })
-
 });
