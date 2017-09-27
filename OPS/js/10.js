@@ -11,7 +11,7 @@ var mediaInfo = [
 
         folder: [
             // 동영상 경로
-            './media/video/listen1_ani.mp4'
+            './media/video/L01_010_listen1_ani'
         ],
 
         role:[['Who','누구'],['Jack','잭'],['Mina','미나']],
@@ -49,7 +49,7 @@ var mediaInfo = [
 
         folder: [
             // 동영상 경로
-            './media/video/listen1_ani.mp4'
+            './media/video/L01_010_listen1_ani'
         ],
 
         role:[['Man','남자'],['Woman','여자'],['Animal','동물']],
@@ -93,11 +93,11 @@ var mediaInfo = [
         //하나의 동영상
 
         //동영상 제목
-        title: "동영상 제목2",
+        title: "동영상 제목3",
 
         folder: [
             // 동영상 경로
-            './media/video/listen1_ani.mp4'
+            './media/video/L01_010_listen1_ani'
         ],
 
         role:[['Man','남자'],['Woman','여자'],['Animal','동물']],

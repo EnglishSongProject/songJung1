@@ -370,7 +370,7 @@ function mediaType(idx) {
 	
 	// 비디오 태그 생성
 	//<div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
-	var posterStr = './media/'+ splitSrc[2] +'/'+ splitSrc[3] +'.jpg';
+	var posterStr = './media/'+ splitSrc[2] +'/'+ splitSrc[3] +'.png';
 	videoContainerHTML = '<video bgcolor="#ffffff" id="vdo" title="movie" poster="' + posterStr + '" class="vdos" controls="" webkit-playsinline="" playsinline=""><source src="'+ src +'.mp4" type="video/mp4"></source></video>';
 	videoContainerHTML += '<img class="thumImg" src="' + posterStr + '" />';
 	videoContainer.innerHTML = videoContainerHTML;
@@ -379,29 +379,40 @@ function mediaType(idx) {
 	//section: 구간재생 아이콘 설정
 	var section = sc.section;
 	var thumbStr = "<div class='thumb_box'><img id='thumb_box' src='" + imgPath + "thumbbox.png' /></div>";
-	for (var i=0;i<=section.length;i++){
-		var di = section.length - i; //오른쪽을 먼저 배치함
-		var lineOne = section[i]; // 동영상 구간 재생 [시작시간, 종료시간], 이미지는 규칙적임
-		var thImg = thumbPath + pageNum + "/thumb" + (idxr) + "_" +  di + ".png";
-		var dstr = "<div class='thumb_one' id='tb"+di+"' style='right:" + (i * 70) + "px;'><img id='th" + di + "' src='" + thImg + "' /></div>";
-
-		thumbStr+=dstr;
-		console.log(dstr);
+	var isNormalPlayer = document.getElementsByClassName('thumb_list');
+	var isNormalCount=0;
+	for(var ii=0; ii<isNormalPlayer.length; ii++){
+		if($(isNormalPlayer[i]).hasClass('normal')){
+			isNormalCount += 1;
+		}
 	}
-	//console.log(thumbStr);
 
-	var thumbList = document.querySelector('.thumb_list');
-	thumbList.innerHTML = thumbStr;
+	//구간재생(롤플레이가 있다면)
+	if(isNormalCount != 0){
+		for (var i=0;i<=section.length;i++){
+			var di = section.length - i; //오른쪽을 먼저 배치함
+			var lineOne = section[i]; // 동영상 구간 재생 [시작시간, 종료시간], 이미지는 규칙적임
+			var thImg = thumbPath + pageNum + "/thumb" + (idxr) + "_" +  di + ".png";
+			var dstr = "<div class='thumb_one' id='tb"+di+"' style='right:" + (i * 70) + "px;'><img id='th" + di + "' src='" + thImg + "' /></div>";
 
-	sectionIdx = 0;
-	var box = document.querySelector('.thumb_box');
-	box.style.right = ((section.length * 70) - 2) + "px";
+			thumbStr+=dstr;
+			console.log(dstr);
+		}
+		//console.log(thumbStr);
 
-	for (var i=0;i<=section.length;i++){		
-		$("#th" + i).bind("mousedown", function(){
-			sectionIdx = targetNum($(this));
-			sectionPlay();
-		});
+		var thumbList = document.querySelector('.thumb_list');
+		thumbList.innerHTML = thumbStr;
+
+		sectionIdx = 0;
+		var box = document.querySelector('.thumb_box');
+		box.style.right = ((section.length * 70) - 2) + "px";
+
+		for (var i=0;i<=section.length;i++){
+			$("#th" + i).bind("mousedown", function(){
+				sectionIdx = targetNum($(this));
+				sectionPlay();
+			});
+		}
 	}
 
 
@@ -664,7 +675,7 @@ $(document).ready(function(){
 		var em = document.querySelector('.caption_wrap');
 		var tm = document.querySelector('.script_wrap');
 		var scy = [50, 0];
-		if (em.style.display == 'none'){
+		if (em.style.display == '' || em.style.display =='none'){
 			em.style.display = 'block';
 			tm.style.top = scy[0] + "px";
 		}else{
@@ -677,7 +688,7 @@ $(document).ready(function(){
 	var btn_sct = document.querySelector('#prog_sct');
 	btn_sct.addEventListener('click', function () {
 		var em = document.querySelector('.script_wrap');
-		if (em.style.display == 'none'){
+		if (em.style.display == '' || em.style.display =='none'){
 			em.style.display = 'block';
 		}else{
 			em.style.display = 'none';
