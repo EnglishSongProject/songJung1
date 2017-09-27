@@ -2,9 +2,10 @@
 
 .part_wt {background: url(../images/21/bgbgbgbg.png) no-repeat 0 0; background-size: cover}
 .part_wt .page_tit {text-align: center}
+.part_wt .page_tit img{width:200px;}
 .part_wt .page_tit span {display: block;  font: 17px 'Noto Sans KR'; margin-top:22px}
 .part_wt .sub_tit {margin-left:-49px; font:13px 'Noto Sans KR';}
-.part_wt .sub_tit img {position: relative; top:-10px; margin-right:5px}
+.part_wt .sub_tit img {position: relative; top:-10px; margin-right:5px;}
 
 .part_wt .eg {position: relative; font: 16px 'Faustina'; line-height: 1.7; float: left;   padding-left: 35px; letter-spacing: 0.5px;}
 
@@ -34,11 +35,20 @@
 .part_wt .group_ck:after {content:''; position: absolute; top:0; left:-30px; width:65px; height: 52px; display: block; background: url(../images/21/group.png) no-repeat 0 0}
 
 .part_wt .group_ck {width:593px; height: 125px;  background: url(../images/21/bg_group_ck.png) no-repeat 0 0;}
-.part_wt .group_ck_tb {display: block; width:593px; height:52px; margin-top:37px; float:left}
+.part_wt .group_ck h4{ position: absolute;left: 374px; top: -2px; font-size: 18px; color: #fff; transform: rotate(-14deg);font-family: 'SangSangAnt';}
+.part_wt .group_ck_tb {display: block; width:593px; height:52px; margin-top:18px; float:left}
 .part_wt .group_ck_tb th, .part_wt .group_ck_tb td {font:13px 'Noto Sans KR'; text-align: center; height:25px}
 .part_wt .group_ck_tb th {font:11px 'Nanum Gothic'; width:390px; text-align:left; padding-left:50px; }
 .part_wt .group_ck_tb td {font-size:14px; width:35px}
 .part_wt .group_ck_tb input[type="text"] {width:20px; font:15px 'Nanum Gothic'; text-align: center; vertical-align: baseline;}
+
+.group_ck_tb .group_first th{height:15px;}
+.group_ck_tb .group_first td{position:absolute;top:17px;left:560px;font-size: 18px; width: 30px; height:18px;display:inline-block;font-family: 'SangSangAnt';color:#80181d;}
+.group_ck_tb .group_first td:nth-last-of-type(6){left:391px;}
+.group_ck_tb .group_first td:nth-last-of-type(5){left:426px;}
+.group_ck_tb .group_first td:nth-last-of-type(4){left:459px;}
+.group_ck_tb .group_first td:nth-last-of-type(3){left:493px;}
+.group_ck_tb .group_first td:nth-last-of-type(2){left:527px;}
 
 
 /*슬라이더*/
