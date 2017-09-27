@@ -674,13 +674,12 @@ $(document).ready(function(){
 		//console.log('#prog_cap.click');
 		var em = document.querySelector('.caption_wrap');
 		var tm = document.querySelector('.script_wrap');
-		var scy = [50, 0];
 		if (em.style.display == '' || em.style.display =='none'){
 			em.style.display = 'block';
-			tm.style.top = scy[0] + "px";
+			tm.style.top = "500px";
 		}else{
 			em.style.display = 'none';
-			tm.style.top = scy[1] + "px";
+			tm.style.top = "500px";
 		}
 	}, false);
 
