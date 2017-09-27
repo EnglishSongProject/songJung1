@@ -1,6 +1,6 @@
 
 /* CSS Document */
-$(function () {
+/*$(function () {
 
     $('.self_check').on('click',function () {
         $('.img-popup-none-confirm1').toggle();
@@ -26,4 +26,8 @@ $(function () {
     $('.img-popup-none-confirm4').on('click',function () {
         $('.img-popup-none-confirm4').toggle();
     });
+});*/
+
+$(document).ready(function () {
+    imageSlide.init();
 });
