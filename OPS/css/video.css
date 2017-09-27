@@ -64,6 +64,7 @@
 
 /*자막, 대본*/
 #prog_cap{	position:absolute; left:550px; top:40px; z-index:3; cursor:pointer;}
+#prog_cap2{	position:absolute; left:590px; top:40px; z-index:3; cursor:pointer;}
 #prog_sct{	position:absolute; left:660px; top:40px; z-index:3; cursor:pointer;}
 
 
