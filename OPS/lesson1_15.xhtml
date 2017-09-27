@@ -46,13 +46,13 @@
             <div class="ask_and_speak">
                 <span class="aa_title"></span>
                 <span class="btn_list">
-                    <button type="button" class="btn_type_02 btn_write" title="쓰기"></button>
-                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="ap_q" onclick="blankCheckByCss('ap_q', 'ap_aws', 'a_text');"></button>
+                    <button type="button" class="btn_type_02 btn_write" title="쓰기" id="aa_wr"></button>
+                    <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="aa_q" onclick="blankCheckByCss('aa_q', 'aa_aws', 'aa_input');"></button>
                 </span>
 
                 <h3 class="aa_ask1" onclick="playAudio('./media/audio/L01/015/L01_015_read_q_01_1.mp3', 'single');"><b>1.</b>Is this their first English class?</h3>
-                <input type="text" id="a_text"/>
-                <span id="ap_aws">Yes, it is</span>
+                <input type="text" id="aa_input"/>
+                <span id="aa_aws">Yes, it is</span>
                 <ul class="ask">
                     <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/015/L01_015_w01.mp3', 'single');">
                         • welcome
@@ -64,7 +64,7 @@
             </div>
             <span class="btn_word"></span>
             <div class="pg_Num pgNum_right">
-              <p>New School, New Friends<strong>15</strong></p>
+               <p>New School, New Friends<strong>15</strong></p>
             </div>
         </div>
     </body>

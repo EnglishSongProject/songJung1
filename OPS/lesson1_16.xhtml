@@ -64,26 +64,27 @@
               <img src="images/16/AA.png" alt="ask_and_answer"/>
               <input type="checkbox" id="answer_check"/>
               <span class="btn_list">
-                    <button type="button" class="btn_type_02 btn_write" title="쓰기"></button>
-                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="ap_q" onclick="blankCheckByCss('ap_q', 'ap_aws', 'a_text');"></button>
+                    <button type="button" class="btn_type_02 btn_write" title="쓰기" id="aa_wr"></button>
+                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="aa_q" onclick="blankCheckByCss('aa_q', 'aa_aws', 'aa_input');"></button>
                 </span>
-              <input type="text" id="a_text" />
+                <input type="text" id="aa_input" />
+                <span id="aa_aws">Her nickname is song Navi</span>
                 <h3 onclick="playAudio('./media/audio/L01/016/L01_016_read_q_02_1.mp3', 'single');"><b>2.</b>What is Ara’s nickname? </h3>
 
-              <ul class="ask">
-                  <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w01.mp3', 'single');">• baker</li>
-                  <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w02.mp3', 'single');">• fantastic</li>
-                  <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w03.mp3', 'single');">• turn</li>
-                  <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w06.mp3', 'single');">• active</li>
-                  <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w04.mp3', 'single');">• trip</li>
-                  <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w05.mp3', 'single');">• camping</li>
-              </ul>
-				  <div class="wpopup pop_ask1 display-none">제빵사</div>
-				<div class="wpopup pop_ask2 display-none">환상적인</div>
-				<div class="wpopup pop_ask3 display-none">순번,차례</div>
-				<div class="wpopup pop_ask4 display-none">활동적인,적극적인</div>
-				<div class="wpopup pop_ask5 display-none">여행</div>
-				<div class="wpopup pop_ask6 display-none">캠핑,여행</div>
+            <ul class="ask">
+                <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w01.mp3', 'single');">• baker</li>
+                <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w02.mp3', 'single');">• fantastic</li>
+                <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w03.mp3', 'single');">• turn</li>
+                <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w06.mp3', 'single');">• active</li>
+                <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w04.mp3', 'single');">• trip</li>
+                <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/016/L01_016_w05.mp3', 'single');">• camping</li>
+            </ul>
+            <div class="wpopup pop_ask1 display-none">제빵사</div>
+            <div class="wpopup pop_ask2 display-none">환상적인</div>
+            <div class="wpopup pop_ask3 display-none">순번,차례</div>
+            <div class="wpopup pop_ask4 display-none">활동적인,적극적인</div>
+            <div class="wpopup pop_ask5 display-none">여행</div>
+            <div class="wpopup pop_ask6 display-none">캠핑,여행</div>
             </div><!--ask_and_speak-->
             <div class="pg_Num pgNum_left">
               <p><strong>16</strong>Lesson 1</p>

@@ -88,19 +88,32 @@
                 </div>
             </div>
             <div class="ask_and_speak">
-                <img src="images/17/AA.png" alt="Ask_and_Answer"/>
-                <p>
-                    <input class="a_text" id="a_text" type="text" />
-                    <label for="a_text"></label>
-                </p>
-                <h3 onclick="playAudio('./media/audio/L01/017/L01_017_read_q_03_1.mp3', 'single');"><b>3.</b>What is Somin good at?</h3>
-                <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                <ul class="ask">
-                    <li class="aa_ask1" onclick="playAudio('./media/audio/L01/017/L01_017_w01.mp3', 'single');showWordPopupTopLeft(this, 35,10, '만화영화');">• animation movie</li>
-                    <li class="aa_ask2" onclick="playAudio('./media/audio/L01/017/L01_017_w02.mp3', 'single');showWordPopupTopLeft(this, 35,10, '만화책');">• comic book</li>
-                    <li class="aa_ask3" onclick="playAudio('./media/audio/L01/017/L01_017_w03.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '작품');">• work</li>
-                    <li class="aa_ask4" onclick="playAudio('./media/audio/L01/017/L01_017_w04.mp3', 'single');showWordPopupTopLeft(this, 35,-100, '~을 잘하다,~에 능숙하다');">• be good at</li>
-                </ul>
+                    <img src="images/17/AA.png" alt="Ask_and_Answer"/>
+                    <p>
+                        <input class="a_text" id="a_text" type="text" />
+                        <label for="a_text"></label>
+                    </p>
+                    <h3 onclick="playAudio('./media/audio/L01/017/L01_017_read_q_03_1.mp3', 'single');"><b>3.</b>What is Somin good at?</h3>
+                    <span class="btn_list">
+                        <button type="button" class="btn_type_02 btn_write" title="쓰기" id="aa_wr"></button>
+                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="aa_q" onclick="blankCheckByCss('aa_q', 'aa_aws', 'aa_input');"></button>
+                    </span>
+                    <input type="text" id="aa_input" />
+                    <span id="aa_aws">She is good at art</span>
+                    <ul class="ask">
+                        <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/017/L01_017_w01.mp3', 'single')">• animation movie</li>
+                        <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/017/L01_017_w02.mp3', 'single')">• comic book</li>
+                        <li class="aa_ask3 btn_wp" onclick="playAudio('./media/audio/L01/017/L01_017_w03.mp3', 'single')">• work</li>
+                        <li class="aa_ask4 btn_wp" onclick="playAudio('./media/audio/L01/017/L01_017_w04.mp3', 'single')">• be good at</li>
+                    </ul>
+                    <div class="wpopup pop_ask1 display-none">만화영화</div>
+                    <div class="wpopup pop_ask2 display-none">만화책</div>
+                    <div class="wpopup pop_ask3 display-none">작품</div>
+                    <div class="wpopup pop_ask4 display-none">~을 잘하다, <br/>~에 능숙하다</div>
+                </div>
+                <div class="pg_Num pgNum_right">
+                    <p>New School, New Friends<strong>17</strong></p>
+                </div>
             </div>
             <div class="pg_Num pgNum_right">
                 <p>New School, New Friends<strong>17</strong></p>

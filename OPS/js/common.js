@@ -699,22 +699,31 @@ function showScriptPopupTopLeft(target, top, left){
     }
 
 }
-//단어팝업
-function showWordPopupTopLeft(target, top, left, word) {
-    var wordPopups = document.getElementsByClassName('wordPopup');
-    for(var i=0;i<wordPopups.length;i++){
-        $(wordPopups[i]).remove();
-    }
-    var popup = document.createElement("div");
-    var popupWidth = word.toString().length * 20;
-    console.log(target);
-    popup.style.width=popupWidth.toString()+'px';
-    popup.className='wordPopup';
-    popup.innerHTML=word;
-    target.parentNode.appendChild(popup);
-    popup.style.top = (target.offsetTop - top) + "px";
-    popup.style.left = (target.offsetLeft + left) + "px";
-    popup.addEventListener('click',function () {
-       $(popup).remove();
+
+
+$(document).ready(function(){
+
+    // ask & answer
+    var $input = $("#aa_input");
+    $("#aa_wr").on("click",function(){
+        $input.toggle().removeAttr('disabled').focus();
+        $("#aa_aws").hide();
     });
-}
+
+    $("#aa_q").on('click',function(){
+        
+        $input.show()
+        if($(this).hasClass('btn_answer')){
+            $input.removeAttr('disabled').focus();
+        }else{
+            $input.attr('disabled','true')
+        }
+    })
+
+    // 단어사전 토글
+    $(".btn_wp").on("click",function(){
+        var idx = $(this).index();
+        $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
+    })
+})
+    
