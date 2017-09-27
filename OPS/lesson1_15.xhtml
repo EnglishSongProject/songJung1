@@ -45,13 +45,22 @@
             </div>
             <div class="ask_and_speak">
                 <span class="aa_title"></span>
-                <span class="btn_answer"></span>
+                <span class="btn_list">
+                    <button type="button" class="btn_type_02 btn_write" title="쓰기"></button>
+                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="ap_q" onclick="blankCheckByCss('ap_q', 'ap_aws', 'a_text');"></button>
+                </span>
+
                 <h3 class="aa_ask1" onclick="playAudio('./media/audio/L01/015/L01_015_read_q_01_1.mp3', 'single');"><b>1.</b>Is this their first English class?</h3>
-                <input type="text" value="Yes, it is." />
+                <input type="text" id="a_text"/>
+                <span id="ap_aws">Yes, it is</span>
                 <ul class="ask">
-                    <li class="aa_ask1" onclick="playAudio('./media/audio/L01/015/L01_015_w01.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '환영하다');" >• welcome</li>
-                    <li class="aa_ask2" onclick="playAudio('./media/audio/L01/015/L01_015_w02.mp3', 'single');showWordPopupTopLeft(this, 35,-10, '소개하다');">• introduce</li>
+                    <li class="aa_ask1 btn_wp" onclick="playAudio('./media/audio/L01/015/L01_015_w01.mp3', 'single');">
+                        • welcome
+                    </li>
+                    <li class="aa_ask2 btn_wp" onclick="playAudio('./media/audio/L01/015/L01_015_w02.mp3', 'single');">• introduce</li>
                 </ul>
+                <div class="wpopup pop_ask1 display-none">환영하다</div>
+                <div class="wpopup pop_ask2 display-none">소개하다</div>
             </div>
             <span class="btn_word"></span>
             <div class="pg_Num pgNum_right">
