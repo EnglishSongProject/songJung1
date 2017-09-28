@@ -1,0 +1,41 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>lesson1</title>
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sim.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/sim.js"></script>
+    </head>
+<body>
+	<div class="first wrapper sim sim_3">
+    <button type="button" class="btn_close"></button>
+		<h1 class="bs_page_tit">
+              <img src="images/23/sim_tit.png" alt="simhua title" />
+            </h1>
+            <div class="sim_wrap">
+            <div class="subtit_wrap">
+              <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+            	<p class="subtit">주어진 정보를 바탕으로 두 사람이 서로를 소개하는 대화문을 써 봅시다.</p>
+            	<button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy_3" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy_3','sim_3_answer','sim_txtarea')">답안</button>
+            </div>
+              <ul class="wordbox">
+
+				  <li class="orangebox"><ul><li>Boram</li><li>chocolate</li><li>riding a bike</li><li>active</li></ul></li>
+				  <li class="bluebox"><ul><li>Seho</li><li>book</li><li>painting</li><li>kind</li></ul></li>
+              </ul>
+              <div class="typingbox"><textarea name="sim_clear_text" id="sim_txtarea" maxlength="300" rows="4"></textarea></div>
+              <div class="answer display-none" id="sim_3_answer">
+              	<p>예시 정답</p>
+              	<p>Boram: Hi, My name is Boram. Nice to meet you.</p>
+              	<p>Seho: Nice to meet you, too. I'm Seho. Let me introduce myself. I like<span></span> books and painting. I'm kind. </p>
+              </div>
+            </div><!--sim_wrap-->
+	</div>
+</body>
+</html>

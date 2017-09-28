@@ -7,12 +7,15 @@
         <meta name="format-detection" content="telephone=no"/>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/23.css" />
+        <link rel="stylesheet" href="css/sim.css" />
+        <link rel="stylesheet" href="css/bo.css" />
         <link rel="stylesheet" href="./css/self_review.css" />
         <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
         <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="./js/common.js"></script>
         <script type="text/javascript" src="./js/23.js"></script>
         <script type="text/javascript" src="./js/self_review.js"></script>
+        <script type="text/javascript" src="./js/sim.js"></script>
     </head>
     <body>
         <div class="first wrapper">
@@ -31,8 +34,8 @@
                         <p onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_01.mp3', 'single');">대화를 듣고, 물음에 답해 봅시다.</p>
                         <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_01_full.mp3','',this);">mp3전체듣기</button>
                         <button type="button" class="btn_type_011" title="대화 내용보기" onclick="">대화내용보기</button>
-                        <button type="button" class="btn_bochung marginL" title="보충" onclick="">보충</button>
-                        <button type="button" class="btn_simhwa" title="심화" onclick="">심화</button>
+                        <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="btn_bochung1">보충</button>
+                        <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim1">심화</button>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_1">
                         <div class="question">
@@ -85,8 +88,8 @@
                         <span>[4-5]</span>
                         <p onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_05.mp3', 'single');">다음 글을 읽고, 물음에 답해 봅시다.</p>
                         <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_full.mp3','',this);">mp3전체듣기</button>
-                        <button type="button" class="btn_bochung" title="보충" onclick="">보충</button>
-                        <button type="button" class="btn_simhwa" title="심화" onclick="">심화</button>
+                        <button type="button" class="btn_bochung" title="보충" onclick="" id="btn_bochung2">보충</button>
+                        <button type="button" class="btn_simhwa" title="심화" onclick=""  id="btn_sim2">심화</button>
                       </div><!--Subtit_Wrap-->
                       <div class="greenline">
                         <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_01.mp3', 'single');">Today is our first class.</p>
@@ -127,8 +130,8 @@
                         <img class="Subtit" src="images/23/speak.png" alt="listen image" />
                         <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_12.mp3', 'single');"><span class="orange">6</span>반 친구 중 한 명을 골라 소개해 봅시다.</p>
                         <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('p23_clear_text');">다시하기</button>
-                        <button type="button" class="btn_bochung" title="보충" onclick="">보충</button>
-                        <button type="button" class="btn_simhwa" title="심화" onclick="">심화</button>
+                        <button type="button" class="btn_bochung" title="보충" onclick="" id="btn_bochung3">보충</button>
+                        <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim3">심화</button>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_6">
                         <textarea name="p23_clear_text" rows="3" maxlength=""></textarea>
@@ -297,5 +300,151 @@
             </div>
             <button class="btn_close">닫기</button>
         </div>
+        <div class="wrapper sim sim_1">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/sim_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="sim_wrap">
+                    <div class="subtit_wrap">
+                      <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+                    	<p class="subtit">인물에 관한 정보를 완성해 봅시다.</p>
+                      <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy','pop_answer1+pop_answer2+pop_answer3+pop_answer4+pop_answer5+pop_answer6','sim_1_1_a+sim_1_1_b+sim_1_2_a+sim_1_2_b+sim_1_3_a+sim_1_4_a');">답안</button>
+                    </div>
+                    <ul class="inmul_sim">
+      				        <li>
+      				          <input type="text" id="sim_1_1_a" />is<input type="text" id="sim_1_1_b" />'s sister.
+      				        </li>
+                      <li>
+                         <input type="text" id="sim_1_2_a" />is<input type="text" id="sim_1_2_b" />'s friend.
+                      </li>
+                      <li>
+                        Sora is<input type="text" id="sim_1_3_a" />years old.
+                      </li>
+                      <li>
+                        Brian is from<input type="text" id="sim_1_4_a" />
+                      </li>
+                    </ul>
+                    <div class="wordpup display-none" id="pop_answer1">Sora [Somin]</div>
+                    <div class="wordpup display-none" id="pop_answer2">Somin [Sora]</div>
+                    <div class="wordpup display-none" id="pop_answer3">Brian [Sora]</div>
+                    <div class="wordpup display-none" id="pop_answer4">Sora [Brian]</div>
+                    <div class="wordpup display-none" id="pop_answer5">13</div>
+                    <div class="wordpup display-none" id="pop_answer6">Canada</div>
+
+                  </div><!--sim_wrap-->
+      	</div>
+        <div class="wrapper sim sim_2">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/sim_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="sim_wrap">
+                     <div class="subtit_wrap">
+                      <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+                    	<p class="subtit">선생님에 관한 글을 완성해 봅시다.</p>
+                      <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy_2" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy_2','pop_answer2_1+pop_answer2_2+pop_answer2_3+pop_answer2_4+pop_answer2_5+pop_answer2_6','sim_2_a+sim_2_b+sim_2_c+sim_2_d+sim_2_e+sim_2_f');">답안</button>
+                    </div>
+                    <p class="khs_sim">
+                      My teacher's name is<input type="text" id="sim_2_a" />. He made his<input type="text" id="sim_2_b" />. He likes <input type="text" id="sim_2_c" />
+                      and <input type="text" id="sim_2_d" />.<span>He is not a great</span>  <input type="text" id="sim_2_e" /> but his cheesecake is <input type="text" id="sim_2_f" />
+                    </p>
+      			        <div class="wordpup display-none" id="pop_answer2_1">Kang Hosik</div>
+                    <div class="wordpup display-none" id="pop_answer2_2">name tent</div>
+                    <div class="wordpup display-none" id="pop_answer2_3">cookies</div>
+                    <div class="wordpup display-none" id="pop_answer2_4">doughnuts</div>
+                    <div class="wordpup display-none" id="pop_answer2_5">baker</div>
+                    <div class="wordpup display-none" id="pop_answer2_6">fantastic</div>
+                  </div><!--sim_wrap-->
+      	</div>
+        <div class="wrapper sim sim_3">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/sim_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="sim_wrap">
+                  <div class="subtit_wrap">
+                    <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+                  	<p class="subtit">주어진 정보를 바탕으로 두 사람이 서로를 소개하는 대화문을 써 봅시다.</p>
+                  	<button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy_3" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy_3','sim_3_answer','sim_txtarea')">답안</button>
+                  </div>
+                    <ul class="wordbox">
+
+      				  <li class="orangebox"><ul><li>Boram</li><li>chocolate</li><li>riding a bike</li><li>active</li></ul></li>
+      				  <li class="bluebox"><ul><li>Seho</li><li>book</li><li>painting</li><li>kind</li></ul></li>
+                    </ul>
+                    <div class="typingbox"><textarea name="sim_clear_text" id="sim_txtarea" maxlength="300" rows="4"></textarea></div>
+                    <div class="answer display-none" id="sim_3_answer">
+                    	<p>예시 정답</p>
+                    	<p>Boram: Hi, My name is Boram. Nice to meet you.</p>
+                    	<p>Seho: Nice to meet you, too. I'm Seho. Let me introduce myself. I like<span></span> books and painting. I'm kind. </p>
+                    </div>
+                  </div><!--sim_wrap-->
+      	</div>
+        <div class="wrapper bo bo_1">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/bo_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="bo_wrap">
+                    <div class="subtit_wrap">
+                      <img src="images/23/bo_subtit_img.png" alt="말풍선" />
+                    	<p class="subtit">대화에 나오지 않는 사람을 골라 봅시다.</p>
+                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                    </div>
+                    <ul class="bo_Q_1">
+                      <li><span>①</span>소민</li>
+                      <li><span>②</span>소라</li>
+                      <li><span>③</span>Brian</li>
+                      <li><span>④</span>Billy</li>
+                    </ul>
+
+                  </div>
+      	</div>
+        <div class="wrapper bo bo_2">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/bo_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="bo_wrap">
+                    <div class="subtit_wrap">
+                      <img src="images/23/bo_subtit_img.png" alt="말풍선" />
+                    	<p class="subtit">본문 내용과 일치하는 것은?</p>
+                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                    </div>
+                    <ul class="bo_Q_2">
+                      <li><span>①</span>오늘은 두 번째 영어 수업 시간이다.</li>
+                      <li><span>②</span>학생들은 치즈케이크를 좋아한다.</li>
+                      <li><span>③</span>선생님의 이름은 알 수 없다.</li>
+                      <li><span>④</span>자기소개를 하는 시간이다.</li>
+                    </ul>
+
+                  </div>
+      	</div>
+        <div class="wrapper bo bo_3">
+          <button type="button" class="btn_close"></button>
+      		<h1 class="bs_page_tit">
+                    <img src="images/23/bo_tit.png" alt="simhua title" />
+                  </h1>
+                  <div class="bo_wrap">
+                    <div class="subtit_wrap">
+                      <img src="images/23/bo_subtit_img.png" alt="말풍선" />
+                    	<p class="subtit">주어진 낱말을 사용하여 자신을 소개해 봅시다.</p>
+                      <button type="button" class="btn_type_02 btn_answer" id="bo_btn_sy_3" title="예시 답안" onclick="blankCheckByCss('bo_btn_sy_3','bo_3_answer','bo_txtarea')">답안</button>
+                    </div>
+                    <ul class="bo_Q_3">
+                      <li>introduce</li>
+                      <li>am</li>
+                      <li>like</li>
+                      <li>good at</li>
+                    </ul>
+      			  <div class="bo_txtbox"><textarea id="bo_txtarea"></textarea></div>
+                    <div class="ex_answer display-none" id="bo_3_answer">
+                      <p>예시 정답</p>
+                      <p>Him I'm Jimin. I'd like to introduce myself.</p>
+                      <p>I like listening to K-pop and I'm good at singing. I'm friendly.</p>
+                    </div>
+                  </div>
+      	</div>
     </body>
 </html>
