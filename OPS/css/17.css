@@ -82,8 +82,7 @@
 .aa_answer4 {left: 60px;}
 .btn_list {position: relative; top: -1px; margin-left: 10px;}
 
-.wpopup {position: absolute; width: 92px; height: 20px; text-align: left; color: #339900; font: 11px 'Open Sans'; font-weight: 700;
-}
+.wpopup {position: absolute; width: 92px; height: 20px; text-align: left; color: #339900; font: 11px 'Open Sans'; font-weight: 700;}
 .pop_ask1 {top:102px; left:43px;}
 .pop_ask2 {top:102px; left:170px;}
 .pop_ask3 {top:102px; left:263px;}
@@ -94,4 +93,4 @@
 
 /* ask & answer */
 #aa_input {position: relative; top: 31px; left: 6px; width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; font-family: 'Open Sans'; font-size: 13px; }
-#aa_aws {position: absolute; top: 60px; left: 180px; width: 114px; color: #f00; display: none; z-index: 999;}
+#aa_aws {position: absolute; top: 60px; left: 180px; width: 114px; color: #f00; display: none; z-index: 999; }
