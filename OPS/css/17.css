@@ -5,11 +5,10 @@
 
 .first div.txt_wrap {font-family: 'Faustina'; font-size: 19px; line-height: 38px; }
 
-.first .txt1 p {position: absolute; top: 100px; left: 180px; }
-.txt1 > p:hover{cursor: pointer !important;}
+.first .txt1 p {position: absolute; top: 100px; left: 180px; z-index: 100}
 
 .first .txt2 p {position: absolute; top: 470px; left: 390px; width: 450px;}
-.txt2 > p:hover{cursor: pointer !important;}
+
 
 /*본문위아이콘*/
 .btn_1 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 25px; left: 125px; background-size: cover;}

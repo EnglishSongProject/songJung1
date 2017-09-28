@@ -6,7 +6,6 @@
   background-repeat:no-repeat; background-size: contain;width:155px; height: 41px;position: relative;}
 .top, .bottom {font-family: 'Faustina';font-size: 19px;line-height: 38px;}
 .top,.bottom{padding-left: 20px}
-.top p:hover,.bottom p:hover{cursor: pointer !important;}
 .top{ margin-left: 262px;margin-top: 27px;width: 300px; height: 300px;}
 .bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
 .transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
@@ -55,7 +54,7 @@ input[type=checkbox]#aa_ask5:checked ~ #aa_answer5,
 input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 
 
-.ask_and_speak .ask{position:absolute;padding-top: 50px;padding-right:5px;z-index: 10;}
+.ask_and_speak .ask{position:absolute; top:153px;padding-right:5px;z-index: 10;}
 .ask_and_speak .ask label{padding-right: 14px; display: inline-block;cursor: pointer;}
 
 .ask_and_speak div.answer{display:none; position:relative;}
@@ -74,8 +73,6 @@ input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 .ask_and_speak div#aa_answer4{left:146px; display: none}
 .ask_and_speak div#aa_answer5{left:239px; display: none}
 .ask_and_speak div#aa_answer6{right:4px; display: none}
-
-.ask{top: 105px;}
 
 .ask li {
     margin-right: 17px;
