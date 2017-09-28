@@ -616,7 +616,7 @@ $(document).ready(function(){
 	});
 
 
-	applyCookieVol();
+	/*applyCookieVol();*/
 	setProg(per);
 
 	//재생 버튼
@@ -851,7 +851,7 @@ function btnCapture(button){
 
 
 //사운드 볼륨 관련
-function applyCookieVol(){	
+/*function applyCookieVol(){
 	var savedVol = 100;
 
 	if(window.localStorage) {
@@ -876,7 +876,7 @@ function applyCookieVol(){
 	
 	vol = savedVol/100;
 	setVol(vol);
-}
+}*/
 function getCookie(cookieName)	{
 	var search = cookieName + "=";
 	var cookie = document.cookie;
