@@ -291,12 +291,20 @@ textarea:focus{outline: none;}
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     background-color: #000;
 }
 .videoWrap video {
     width: 100%;
-    height: 100%;
+    height: auto;
     cursor: pointer;
+}
+
+.videoWrap .thumImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

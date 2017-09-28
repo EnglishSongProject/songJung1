@@ -95,6 +95,7 @@ function setCaption(){
 		var ctime = vdo.currentTime;
 		var info = mediaInfo[idxr]; //sync:, syncText:
 		var str = "";
+		var str2 = '';
 		//[1.500, 08.000],
 		//[8.001, 21.000]
 
@@ -126,7 +127,7 @@ function setCaption(){
 			
 			var vObj = $("#vdo"); //JQuery
 			str = txtInfo[2]; //영문자막
-
+			str2 = txtInfo[3];
 
 			var whoNum = txtInfo[1];			
 
@@ -165,6 +166,7 @@ function setCaption(){
 			}
 		}		
 		document.querySelector('.txt_one').innerHTML = str;
+		document.querySelector('.txt_two').innerHTML = str2;
 
 
 		//재생중에 해당
@@ -674,12 +676,94 @@ $(document).ready(function(){
 		//console.log('#prog_cap.click');
 		var em = document.querySelector('.caption_wrap');
 		var tm = document.querySelector('.script_wrap');
-		if (em.style.display == '' || em.style.display =='none'){
-			em.style.display = 'block';
-			tm.style.top = "500px";
-		}else{
-			em.style.display = 'none';
-			tm.style.top = "500px";
+		var isTrans = document.getElementById('isTrans');
+		//자막이 꺼져 있다면
+		if(isTrans.innerHTML == 'off'){
+			//자막을 열고
+			if($(em).hasClass('display-none')){
+				$(em).removeClass('display-none');
+			}
+			//영어자막을 오픈한다
+			if($('.txt_one').hasClass('display-none')){
+				$('.txt_one').removeClass('display-none');
+			}
+			//한글자막을 숨긴다
+			if(!$('.txt_two').hasClass('display-none')){
+				$('.txt_two').addClass('display-none');
+			}
+			tm.style.top = "407px";
+			isTrans.innerHTML='on';
+			//자막이 펼쳐져 있는 경우 (1 : 영어자막이 펼쳐진 경우, 2: 한글자막이 펼쳐진 경우)
+		}else if(isTrans.innerHTML =='on'){
+			//영어자막이 펼쳐진 경우
+			if(!$('.txt_one').hasClass('display-none')){
+				//자막을 닫아야함.
+				if(!$(em).hasClass('display-none')){
+					$(em).addClass('display-none');
+				}else{
+					$(em).removeClass('display-none');
+					tm.style.top = "407px";
+				}
+				isTrans.innerHTML='off';
+			}
+
+			//한글자막이 펼쳐진 경우(자막교체만)
+			if(!$('.txt_two').hasClass('display-none')){
+				$('.txt_two').addClass('display-none');
+				if($('.txt_one').hasClass('display-none')){
+					$('.txt_one').removeClass('display-none');
+				}
+				isTrans.innerHTML='on';
+			}
+
+		}
+	}, false);
+
+	var btn_cap2 = document.querySelector('#prog_cap2');
+	btn_cap2.addEventListener('click', function (e) {
+		//console.log('#prog_cap.click');
+		var em = document.querySelector('.caption_wrap');
+		var tm = document.querySelector('.script_wrap');
+		var isTrans = document.getElementById('isTrans');
+		//자막이 꺼져 있다면
+		if(isTrans.innerHTML == 'off'){
+			//자막을 열고
+			if($(em).hasClass('display-none')){
+				$(em).removeClass('display-none');
+			}
+			//한글자막을 오픈한다
+			if($('.txt_two').hasClass('display-none')){
+				$('.txt_two').removeClass('display-none');
+			}
+			//영어자막을 숨긴다
+			if(!$('.txt_one').hasClass('display-none')){
+				$('.txt_one').addClass('display-none');
+			}
+			tm.style.top = "407px";
+			isTrans.innerHTML='on';
+			//자막이 펼쳐져 있는 경우 (1 : 영어자막이 펼쳐진 경우, 2: 한글자막이 펼쳐진 경우)
+		}else if(isTrans.innerHTML =='on'){
+			//한글자막이 펼쳐진 경우
+			if(!$('.txt_two').hasClass('display-none')){
+				//자막을 닫아야함.
+				if(!$(em).hasClass('display-none')){
+					$(em).addClass('display-none');
+				}else{
+					$(em).removeClass('display-none');
+					tm.style.top = "407px";
+				}
+				isTrans.innerHTML='off';
+			}
+
+			//영어자막이 펼쳐진 경우(자막교체만)
+			if(!$('.txt_one').hasClass('display-none')){
+				$('.txt_one').addClass('display-none');
+				if($('.txt_two').hasClass('display-none')){
+					$('.txt_two').removeClass('display-none');
+				}
+				isTrans.innerHTML='on';
+			}
+
 		}
 	}, false);
 

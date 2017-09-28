@@ -38,7 +38,7 @@
 
 
 /* 컨트롤러의 배경 반복 */
-.controller { position: absolute; top: 636px; left: 0; right: 0; width: 768px; height: 100px; overflow:hidden;}
+.controller { position: absolute; top: 540px; left: 0; right: 0; width: 768px; height: 100px; overflow:hidden;}
 .controller .bg	{ position: absolute;  width: 768px; height: 100px; background: url(../images/common/player/player_controller_bg.png) repeat 0 0;}
 
 
@@ -89,10 +89,11 @@
 .sc_paper { position: absolute; top:236px; left:0px; width:768px; height:300px; } /*top: 컨트롤러top + 컨트롤로 height */
 
 /* 한줄 자막 */
-.sc_paper .caption_wrap {position:absolute; left:0px; top:350px;  width:768px; height:50px; overflow:hidden;}
+.sc_paper .caption_wrap {position:absolute; left:0px; top:254px;  width:768px; height:50px; overflow:hidden;}
 .sc_paper .caption_wrap .caption_bg{ position:absolute; left:0px; top:0px; width:768px; height:50px; background: url(../images/common/player/player_caption_bg.png) no-repeat 0 0;} /* 한줄 자막 */
 .sc_paper .caption_wrap .caption_txt{	position:absolute; left:28px; top:16px; width:700px;}
 .sc_paper .caption_wrap .txt_one{width:700px; height:28px; overflow:hidden;}
+.sc_paper .caption_wrap .txt_two{width:700px; height:28px; overflow:hidden;}
 
 
 
