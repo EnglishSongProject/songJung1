@@ -531,7 +531,7 @@ function onTimeupdate() {
 
 
 //동영상 컨트롤러 관련
-var progLimit = [0, 740];
+var progLimit = [0, 373];
 var per = 0; //재생 시간
 var ispaused = true; //사용자 동작 전에 재생중이었는지 저장함
 
