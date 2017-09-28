@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sim h1.bs_page_tit img{margin-left:60px;margin-top: 33px;}
+
+.sim {
+    position: absolute; top:0; left:0;
+    padding-top:24px; background: #fff url(../images/23/sim_bg.png) no-repeat 0 0; background-size: cover; display: none}
+
+button.btn_close{}
+
+.sim_wrap{position: relative; background-color:#faf7f4;margin-top:55px;border-radius:18px;padding:25px 20px 45px 20px;  font-family: 'Nanum Gothic'; font-size: 15px; font-weight: 500;}
+.sim_wrap .subtit_wrap{overflow:hidden;}
+.sim_wrap .subtit_wrap img,
+.sim_wrap .subtit_wrap p{float:left; margin-right: 10px;font-weight: 600;}
+.sim_wrap .subtit_wrap img{margin-right:10px;}
+
+
+
+
+/*sim1*/
+ul.inmul_sim{position: relative;/* */ padding-left: 29px; padding-top:8px; }
+ul.inmul_sim li{line-height: 45px;}
+ul.inmul_sim li::before{content:" • ";}
+ul.inmul_sim li input{font-family: 'Nanum Gothic'; font-size: 15px; border-bottom: 1px solid black; width: 130px; margin: -2px 7px 0 7px; }
+input#sim_1_1_a{}
+
+input#sim_1_1_b{}
+
+input#sim_1_2_a{}
+
+input#sim_1_2_b{}
+
+input#sim_1_3_a{}
+
+input#sim_1_4_a{}
+
+
+.wordpup {position: absolute; width:167px; height:20px;  text-align: left; color:red; font-family: 'Nanum Gothic'; font-size: 15px;}
+#pop_answer1 {top:93px; left:93px;}
+#pop_answer2 {top:93px; left:246px;}
+#pop_answer3 {top:139px; left:97px;}
+#pop_answer4 {top:139px; left:250px;}
+#pop_answer5 {top:183px; left:175px;}
+#pop_answer6 {top:229px; left:175px;}
+
+/*sim2*/
+
+.sim_wrap .khs_sim{padding: 20px 34px;/* */ line-height: 45px; font-family: 'Nanum Gothic'; font-size: 15px; width:622px;box-sizing: border-box;}
+
+.sim_wrap .khs_sim span{padding-left: 19px;}
+.sim_wrap .khs_sim input {font-family: 'Nanum Gothic'; font-size: 15px; border-bottom: 1px solid black; width: 130px; margin: -2px 7px 0 7px; }
+
+#pop_answer2_1 {top:105px; left:230px;}
+#pop_answer2_2 {top:105px; left:470px;}
+#pop_answer2_3 {top:152px; left:154px;}
+#pop_answer2_4 {top:152px; left:320px;}
+#pop_answer2_5 {top:197px; left:105px;}
+#pop_answer2_6 {top:197px; left:390px;}
+
+
+/*sim3*/
+.sim_3 .sim_wrap{ height: 550px;}
+
+ul.wordbox{overflow: hidden; box-sizing: border-box; width:310px;margin: 0 auto; padding-top: 30px;}
+ul.wordbox .orangebox,
+.wordbox .bluebox{float: left; border-radius: 18px; width: 120px; height: 150px; text-align: center; padding:15px; line-height: 36px; font-family: 'Nanum Gothic'; font-size: 15px;}
+ul.wordbox .orangebox ul li:first-of-type{color: #e84417;}
+.wordbox .bluebox ul li:first-of-type{color: #2a6882;}
+.wordbox li.orangebox{background-color:#fdecdb; margin-right: 10px;}
+.wordbox li.bluebox{background-color:#dbeef5;}
+
+.typingbox{width: 500px; height: 200px; margin: 0 auto; /*border: 1px solid red;*/ margin-top: 20px; background: url(../images/23/002.png) no-repeat; background-position-y:50px  }
+
+.typingbox textarea#sim_txtarea{width: 95%; height: 150px; background: transparent; resize: none; font-family: 'Nanum Gothic'; font-size: 15px; line-height: 36px; padding: 16px 10px 0 10px;}
+
+.sim_3 .answer{width: 500px; height: 100px; margin: 0 auto;}
+
+.sim_3 .answer p:first-child{color:#c67963; font-weight: 600; }
+.sim_3 .answer p{ font-family: 'Nanum Gothic'; font-size: 15px; line-height: 26px;width: 500px;margin:0 auto;}
+
+.sim_3 .answer p span{width: 39px; display: inline-block;}
