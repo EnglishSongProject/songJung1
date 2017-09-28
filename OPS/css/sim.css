@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper{position:relative;background: url("../images/23/sim_bg.png") no-repeat 0 0; background-size: cover}
+.page_tit{ margin-left:60px; margin-top: 4px; }
