@@ -1441,9 +1441,16 @@ function toggleWord(){
 function setSpellcheck(){
     var ta =document.getElementsByTagName('textarea');
     var ip =document.getElementsByTagName('input');
-    for(var i=0; i<ta.length;i++){
-        ta[i].setAttribute('spellcheck','false');
-        ip[i].setAttribute('spellcheck','false');
+
+    if(ta){
+        for(var i=0; i<ta.length;i++){
+            ta[i].setAttribute('spellcheck','false');
+        }
+    }
+    if(ip){
+        for(var i=0; i<ip.length;i++){
+            ip[i].setAttribute('spellcheck','false');
+        }
     }
 }
 
@@ -1456,7 +1463,7 @@ function openPopup(popupId){
             $this.find("textarea").val("");
         })
         $(".popup .btn_close").on('click',function(){
-            var $this = $(this).parent();
+            var $this = $(this).parent('.popup');
             $this.hide();
         })
     }
