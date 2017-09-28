@@ -303,16 +303,15 @@ scriptPopup
 /*audio popup*/
 #myaudio {position: absolute;z-index: 100; }
 
-.audio-popup{position:absolute; display: block; width:246px; height:36px;  background-color: #a1c8ee; border-radius:10px; border:none; box-shadow: 2px 2px 2px #888888 ; padding:6px 0 0 18px; box-sizing: border-box; z-index:9999}
-.btn_audio_play, .btn_audio_pause, .btn_audio_stop {background-size: contain; background-repeat: no-repeat; background-position: 0 0; overflow: hidden; text-indent: -999em;}
+.audio-popup{position:absolute; display: block; width:210px; height:37px;  background-color: #ebf6ef; border-radius:10px; border:none; box-shadow: 2px 2px 2px #888888 ; padding:7px 0 0 20px; box-sizing: border-box; z-index:9999}
+.btn_audio_play, .btn_audio_pause, .btn_audio_stop {background-repeat: no-repeat; background-position: 0 0; overflow: hidden; text-indent: -999em;}
 
-
-.btn_audio_play, .btn_audio_pause, .btn_audio_stop {display: inline-block; width:16px; height:17px; text-indent: -999em; overflow: hidden; vertical-align: middle}
-.btn_audio_play {background-image: url("../images/common/audio_pop/play.png"); margin-right:7px}
-.btn_audio_pause {background-image: url("../images/common/audio_pop/pause.png"); margin-right:7px}
-.btn_audio_stop  {background-image: url("../images/common/audio_pop/stop.png");  margin-right:14px}
-.progress_bar {width:127px;height:17px; background: #fff; display:inline-block; border-radius: 3px; vertical-align: middle; margin-right:10px}
-.controll_bar {position: absolute; top: 9px; left: 67px; width:17px; height:18px; background: url(../images/common/audio_pop/controllbar.png) no-repeat 0 0; border-radius: 1px; }
+.btn_audio_play, .btn_audio_pause, .btn_audio_stop {display: inline-block; width:16px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
+.btn_audio_play {background-image: url("../images/common/audio_pop/play.png"); margin-right:12px}
+.btn_audio_pause {background-image: url("../images/common/audio_pop/pause.png"); margin-right:12px}
+.btn_audio_stop  {background-image: url("../images/common/audio_pop/stop.png");  margin-right:14px; width:18px}
+.progress_bar {width:88px;height:18px; background: url("../images/common/audio_pop/progressbar.png"); display:inline-block; border-radius: 3px; vertical-align: middle; margin-right:12px}
+.controll_bar {position: absolute; top:10px; left: 67px; width:14px; height:18px; background: url(../images/common/audio_pop/controllbar.png) no-repeat 0 0; border-radius: 1px; }
 .btn_audio_close {background:url(../images/common/audio_pop/btn_close.png) no-repeat 0 0 ;display: inline-block; width:18px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
 
 /*video*/
