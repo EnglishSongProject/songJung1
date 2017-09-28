@@ -45,7 +45,7 @@ var mediaInfo = [
         //하나의 동영상
 
         //동영상 제목
-        title: "동영상 제목2",
+        title: "What will the girl say?",
 
         folder: [
             // 동영상 경로
