@@ -141,25 +141,15 @@ $(document).ready(function () {
         $(".correct3").toggle();
     });
 
-/*    $('.mediabtn_0').on('click',function(){
-        layerAclose(); //common.js
-        $('.zoom_img_wrap.a').show();
-        mediaInit(0); //video2.js, 이곳에서 동영상 팝업 내부의 모든 요소를 다시 세팅한다.
-    });*/
     $('.mediabtn_0').on('click',function(){
         layerAclose();
         $('.zoom_img_wrap.a').show();
         mediaInit(0);
     });
-<<<<<<< HEAD
-});
-=======
 
     $('.btn_media_close').on('click',function(){
         mediaClose(); //video.js
         AllOff();
         $('.zoom_img_wrap').hide();
     });
-
 });
->>>>>>> feature/SONG_P10_DEV2
