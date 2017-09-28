@@ -40,8 +40,8 @@
 .section2>h2>img{position: absolute; top:550px; }
 .section2>h2>span:nth-of-type(1){position: relative; top: 460px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*tip icon*/
-.btn_tip{position: absolute; top: 552px; left: 400px;}
-.transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 11px;}
+.btn_tip{position: absolute; top: 554px; left: 400px;}
+.transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 13px;font-weight:100;}
 
 
 /*b 문제*/
