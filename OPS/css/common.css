@@ -309,3 +309,11 @@ textarea:focus{outline: none;}
     width: 100%;
     height: 100%;
 }
+.btn_trans_video {background-image: url(../images/common/controls/vdo/translate_btn.png); width: 40px; height: 25px;}
+.btn_caption_en_off{background-image: url(../images/common/player/player_controller_cap1_off.png); width: 60px; height: 25px;}
+.btn_caption_en_on{background-image: url(../images/common/player/player_controller_cap1_on.png); width: 60px; height: 25px; }
+.btn_caption_kr_off{background-image: url(../images/common/player/player_controller_cap2_off.png); width: 60px; height: 25px;}
+.btn_caption_kr_on{background-image: url(../images/common/player/player_controller_cap2_on.png); width: 60px; height: 25px;}
+.btn_caption_kr_on{background-image: url(../images/common/player/player_controller_cap2_on.png); width: 60px; height: 25px;}
+.btn_script_off{background-image: url(../images/common/player/script_btn_off.png);width: 25px; height: 25px;}
+.btn_script_on{background-image: url(../images/common/player/script_btn_on.png);width: 25px; height: 25px;}

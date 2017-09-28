@@ -693,6 +693,10 @@ $(document).ready(function(){
 			}
 			tm.style.top = "407px";
 			isTrans.innerHTML='on';
+			if($('#prog_cap').hasClass('btn_caption_en_off')){
+				$('#prog_cap').removeClass('btn_caption_en_off');
+				$('#prog_cap').addClass('btn_caption_en_on');
+			}
 			//자막이 펼쳐져 있는 경우 (1 : 영어자막이 펼쳐진 경우, 2: 한글자막이 펼쳐진 경우)
 		}else if(isTrans.innerHTML =='on'){
 			//영어자막이 펼쳐진 경우
@@ -705,14 +709,24 @@ $(document).ready(function(){
 					tm.style.top = "407px";
 				}
 				isTrans.innerHTML='off';
+				if($('#prog_cap').hasClass('btn_caption_en_on')){
+					$('#prog_cap').removeClass('btn_caption_en_on');
+					$('#prog_cap').addClass('btn_caption_en_off');
+				}
 			}
 
 			//한글자막이 펼쳐진 경우(자막교체만)
 			if(!$('.txt_two').hasClass('display-none')){
 				$('.txt_two').addClass('display-none');
+
 				if($('.txt_one').hasClass('display-none')){
 					$('.txt_one').removeClass('display-none');
 				}
+				$('#prog_cap').removeClass('btn_caption_en_off');
+				$('#prog_cap').addClass('btn_caption_en_on');
+				$('#prog_cap2').addClass('btn_caption_kr_off');
+				$('#prog_cap2').removeClass('btn_caption_kr_on');
+
 				isTrans.innerHTML='on';
 			}
 
@@ -741,6 +755,10 @@ $(document).ready(function(){
 			}
 			tm.style.top = "407px";
 			isTrans.innerHTML='on';
+			if($('#prog_cap2').hasClass('btn_caption_kr_off')){
+				$('#prog_cap2').removeClass('btn_caption_kr_off');
+				$('#prog_cap2').addClass('btn_caption_kr_on');
+			}
 			//자막이 펼쳐져 있는 경우 (1 : 영어자막이 펼쳐진 경우, 2: 한글자막이 펼쳐진 경우)
 		}else if(isTrans.innerHTML =='on'){
 			//한글자막이 펼쳐진 경우
@@ -753,6 +771,10 @@ $(document).ready(function(){
 					tm.style.top = "407px";
 				}
 				isTrans.innerHTML='off';
+				if($('#prog_cap2').hasClass('btn_caption_kr_on')){
+					$('#prog_cap2').removeClass('btn_caption_kr_on');
+					$('#prog_cap2').addClass('btn_caption_kr_off');
+				}
 			}
 
 			//영어자막이 펼쳐진 경우(자막교체만)
@@ -761,6 +783,10 @@ $(document).ready(function(){
 				if($('.txt_two').hasClass('display-none')){
 					$('.txt_two').removeClass('display-none');
 				}
+				$('#prog_cap').removeClass('btn_caption_en_on');
+				$('#prog_cap').addClass('btn_caption_en_off');
+				$('#prog_cap2').removeClass('btn_caption_kr_off');
+				$('#prog_cap2').addClass('btn_caption_kr_on');
 				isTrans.innerHTML='on';
 			}
 
@@ -773,8 +799,16 @@ $(document).ready(function(){
 		var em = document.querySelector('.script_wrap');
 		if (em.style.display == '' || em.style.display =='none'){
 			em.style.display = 'block';
+			if($(btn_sct).hasClass('btn_script_off')){
+				$(btn_sct).removeClass('btn_script_off');
+				$(btn_sct).addClass('btn_script_on');
+			}
 		}else{
 			em.style.display = 'none';
+			if($(btn_sct).hasClass('btn_script_on')){
+				$(btn_sct).removeClass('btn_script_on');
+				$(btn_sct).addClass('btn_script_off');
+			}
 		}
 	}, false);
 
@@ -984,7 +1018,7 @@ function setProg(rate){
 	pObj.style.width =  parseInt(cx) + "px";
 
 	pObj = document.getElementById('prog_ball');
-	pObj.style.left =  parseInt(cx - 10) + "px";
+	pObj.style.left =  parseInt(cx + 120) + "px";
 
 	setCaption();
 }
