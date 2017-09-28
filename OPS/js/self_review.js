@@ -1,7 +1,7 @@
 $(document).ready(function () {
     imageSlide.init();
 
-    $(".btn_selfcheck").on("click",function() {
+    $(".btn_selfreview").on("click",function() {
         $(".popup_self_review").fadeToggle(200);
     })
 
