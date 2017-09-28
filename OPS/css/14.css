@@ -55,7 +55,7 @@
 .num_2{position: absolute; top: 27px;left: 168px;}
 .num_2_1{position: absolute; top: 50px;left: 180px;}
 .num_3{position: absolute; top: 26px;left: 375px;}
-.num_3_1{position: absolute; top: 48px;left: 389px;}
+.num_3_1{position: absolute; top: 46px;left: 389px;}
 
 .a_text1{position: absolute; /*border: 1px solid red;*/ top: 43px; width: 70px;left:20px; background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
 .a_text2{position: absolute; /*border: 1px solid blue;*/ top: 27px; width: 70px;left:231px;  background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
