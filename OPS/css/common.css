@@ -121,6 +121,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_wd {background-image: url(../images/common/011_3.png)}
 .btn_pop {background-image: url(../images/common/015.png)}
 .btn_write {background-image: url(../images/common/020.png)}
+.btn_net {background-image: url(../images/common/021.png)}
+
 
 /* btn_type_03 */
 .btn_word {background-image: url(../images/common/018_2.png)}
@@ -128,6 +130,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /* btn_type_04 */
 .btn_pmovie {background-image: url(../images/common/04.png)}
+
 
 /* 슬라이드 버튼 */
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
@@ -216,9 +219,30 @@ textarea {overflow: auto}
 textarea:focus{outline: none;}
 
 
+/*----------------------
+popup
+----------------------*/
+
+.popup{position: absolute; padding:17px 23px; display: block; background-size: cover; width:250px; height: 250px; box-sizing: border-box; z-index: 100}
+.popup h3{ display: inline-block; font-family:"Nanum Gothic";font-size: 13px;color: #fff; background: #a9d338; border-radius:20px; padding:7px 15px}
+.popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
+
+/*popup --popup_type02 */
+.popup_type02 {background: url(../images/popup/bg_pop2.png) no-repeat 0 0;}
+.popup_type02 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+
+/*popup --popup_type03 */
+.popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0;}
+.popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+.popup_type03 button {position: absolute; top: 15px; right: 45px;}
+.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:100%; margin-top:30px; text-align: left; resize:none; background: transparent; }
 
 
-/*popup*/
+
+/*----------------------
+scriptPopup
+----------------------*/
+
 .scriptPopup{
     background: url(../images/popup/bg_pop1.png) no-repeat 0 0;
     background-size: cover;
@@ -251,6 +275,11 @@ textarea:focus{outline: none;}
     margin-left: -5px;
 }
 /* page_Num */
+
+
+/*----------------------
+페이징
+----------------------*/
 
 .pg_Num{display:block;position:absolute;bottom:30px;font-family: 'Nanum Gothic';font-size:12px;letter-spacing: 0.5px;}
 .pg_Num strong{display:inline-block;font-weight:800;font-family: 'Noto Sans KR';font-size:14px;}

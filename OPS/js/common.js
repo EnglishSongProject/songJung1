@@ -17,6 +17,11 @@ var isPc = (AndroidOS == false && ipadOS ) ? true : false;
 var WindowsTenOS = false;
 if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
 
+$(document).ready(function(){
+    checkAskAnswer();
+    toggleWord();
+    setSpellcheck();
+})
 
 var currentFile = "";
 var currentPopup = null;
@@ -1401,13 +1406,7 @@ $(document).ready(function(){
                 transText[i].style.lineHeight=textLineHeight.toString()+'px';
             }
         }
-
     }
-})
-
-$(document).ready(function(){
-    checkAskAnswer();
-    toggleWord();
 })
 
 // ask & answer 문제풀이
@@ -1436,4 +1435,30 @@ function toggleWord(){
         var idx = $(this).index();
         $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
     })
+}
+
+// setSpellcheck
+function setSpellcheck(){
+    var ta =document.getElementsByTagName('textarea');
+    var ip =document.getElementsByTagName('input');
+    for(var i=0; i<ta.length;i++){
+        ta[i].setAttribute('spellcheck','false');
+        ip[i].setAttribute('spellcheck','false');
+    }
+}
+
+// popup
+function openPopup(popupId){
+    $("#"+popupId).show();
+    function initEvent(){
+        $(".popup .btn_repeat").on('click',function(){
+            var $this = $(this).parent();
+            $this.find("textarea").val("");
+        })
+        $(".popup .btn_close").on('click',function(){
+            var $this = $(this).parent();
+            $this.hide();
+        })
+    }
+    initEvent();
 }
