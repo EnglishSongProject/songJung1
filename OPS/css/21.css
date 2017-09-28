@@ -20,7 +20,7 @@
 .part_wt .step_01_tb {width:579px; height: 125px;  background: url(../images/21/bg_wt_table.jpg) no-repeat 0 0}
 .part_wt .step_01_tb th, .part_wt table td {font:13px 'Noto Sans KR'; text-align: center; }
 .part_wt .step_01_tb td {font-size:14px; }
-.part_wt .step_01_tb input[type="text"] {width:78px; font: 14px 'Noto Sans KR';}
+.part_wt .step_01_tb input[type="text"] {width:78px; font: 14px 'Noto Sans KR'; margin-top: -6px;}
 
 .img_content {position: relative;}
 .part_wt .step02_txt {position: absolute; top:20px; left:75px ; font: 16px/1.6 'Faustina'; }

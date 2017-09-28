@@ -3,7 +3,7 @@
 /* layout */
 .first{background:url(../images/22/bg_22p.jpg) no-repeat 0 0;}
 h1.page_tit{display:block;text-indent:-9999px;overflow:hidden;width:322px;height:53px;background:url(../images/22/page_tit_22p.png) no-repeat 0 0;}
-.section2{margin-top:90px;position:relative;}
+.section2{margin-top:88px;position:relative;}
 
 .wrapper .section h2{margin-top:5px;font-family: 'Nanum Gothic';font-size:15px;}
 .bt_22{display:inline-block;position:absolute;top:110px;left:470px;}
@@ -11,8 +11,9 @@ h1.page_tit{display:block;text-indent:-9999px;overflow:hidden;width:322px;height
 .transfer{line-height:15px;position:absolute;top:8px;left:50px;width:300px;display:none;}
 /* 문제1 */
 .Q_area{margin-left:375px;margin-top:44px;display:inline-block;}
+.Q_area > ul {margin-top:5px;}
 .Q_area li{font-family: 'Faustina';font-size:17px;line-height:17px; height:21px }
-.Q_area li input[type="text"]{background:rgba(0,0,0,0);border-bottom:1px solid #a9a9a9;width:41px;font-family: 'Faustina';font-size:17px;line-height:17px;}
+.Q_area li input[type="text"]{background:rgba(0,0,0,0);border-bottom:1px solid #a9a9a9;width:41px;font-family: 'Faustina';font-size:17px;line-height:17px;    margin-top: -5px;}
 .Q_area li:nth-of-type(3) input[type="text"]{width:71px;}
 .Q_area li:nth-of-type(5) input[type="text"]{width:90px;}
 .Q_area li:nth-of-type(7) input[type="text"]{width:61px;}

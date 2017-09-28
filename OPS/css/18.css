@@ -80,7 +80,7 @@ div.bt_B{right:272px;}
 .Q_B{position:absolute;left:50%;top:75px;margin-left:-185px;width:370px;}
 .Q_B dt{float:left;font-family: 'Open Sans';font-weight:200;font-size:14px;line-height:20px;margin-bottom:15px;width:50PX;text-align: right;margin-right:5px;}
 .Q_B dd{font-family: 'Faustina';font-weight:200;font-size:16px;line-height:20px;margin-bottom:15px;margin-left:10px;}
-.Q_B dd input[type="text"]{border-bottom:1px solid #a9a9a9;font:16px 'Faustina';font-weight:200;}
+.Q_B dd input[type="text"]{border-bottom:1px solid #a9a9a9;font:16px 'Faustina';font-weight:200;margin-top:-4px;}
 .Q_B dd .read_txt_1 input[type="text"]:nth-of-type(1){width:75px;}
 .Q_B dd .read_txt_1 input[type="text"]:nth-of-type(2){width:55px;}
 .Q_B dd span>input[type="text"]:nth-of-type(1){width:40px;}
@@ -97,8 +97,4 @@ div.bt_B{right:272px;}
 .Q_B dd span.mar_lt5{width:40px;left:125px;top:210px;}
 .Q_B dd span.mar_lt6{width:55px;left:169px;top:210px;}
 
-.Ara_replace {
-    position: absolute;
-    left: 173px;
-    top: 109px;
-}
+.Ara_replace { position: absolute; left: 173px; top: 107px;}
