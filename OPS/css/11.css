@@ -18,6 +18,7 @@
 
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
+.part_las .img_content input[type="text"]{top: 66px;}
 .part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
 
 /*tip*/

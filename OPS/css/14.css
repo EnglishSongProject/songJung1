@@ -40,8 +40,8 @@
 .section2>h2>img{position: absolute; top:550px; }
 .section2>h2>span:nth-of-type(1){position: relative; top: 460px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
 /*tip icon*/
-.btn_tip{position: absolute; top: 552px; left: 400px;}
-.transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 11px;}
+.btn_tip{position: absolute; top: 554px; left: 400px;}
+.transfer {display: none; position: absolute; top: 555px; left: 442px; font-family: 'Noto Sans KR'; font-size: 13px;font-weight:100;}
 
 
 /*b 문제*/
@@ -55,7 +55,7 @@
 .num_2{position: absolute; top: 27px;left: 168px;}
 .num_2_1{position: absolute; top: 50px;left: 180px;}
 .num_3{position: absolute; top: 26px;left: 375px;}
-.num_3_1{position: absolute; top: 48px;left: 389px;}
+.num_3_1{position: absolute; top: 46px;left: 389px;}
 
 .a_text1{position: absolute; /*border: 1px solid red;*/ top: 43px; width: 70px;left:20px; background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
 .a_text2{position: absolute; /*border: 1px solid blue;*/ top: 27px; width: 70px;left:231px;  background: rgba(0,0,0,0);font-family: 'Faustina'; font-size: 16px; }
