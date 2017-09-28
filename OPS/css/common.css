@@ -311,7 +311,7 @@ scriptPopup
 .btn_audio_pause {background-image: url("../images/common/audio_pop/pause.png"); margin-right:12px}
 .btn_audio_stop  {background-image: url("../images/common/audio_pop/stop.png");  margin-right:14px; width:18px}
 .progress_bar {width:88px;height:18px; background: url("../images/common/audio_pop/progressbar.png"); display:inline-block; border-radius: 3px; vertical-align: middle; margin-right:12px}
-.controll_bar {position: absolute; top:10px; left: 67px; width:14px; height:18px; background: url(../images/common/audio_pop/controllbar.png) no-repeat 0 0; border-radius: 1px; }
+.controll_bar {position: absolute; top:10px; left: 75px; width:14px; height:18px; background: url(../images/common/audio_pop/controllbar.png) no-repeat 0 0; border-radius: 1px; }
 .btn_audio_close {background:url(../images/common/audio_pop/btn_close.png) no-repeat 0 0 ;display: inline-block; width:18px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
 
 /*video*/
