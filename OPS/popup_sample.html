@@ -12,11 +12,15 @@
     <script type="text/javascript" src="./js/17.js"></script>
 
     <style>
-
+        .popup {display: none}
     </style>
 </head>
 <body>
-    <div class="popup popup_type02 hide" id="pop1" style="left:0;">
+    <span class="btn_list">
+        <button type="button" class="btn_type_02 btn_write" title="쓰기" onclick ="openPopup('pop1')")></button>
+        <button type="button" class="btn_type_02 btn_answer" title="예시 답안"  onclick = "openPopup('pop2')")></button>
+    </span>
+    <div class="popup popup_type02" id="pop1">
         <h3>위드랑 연결 안내</h3>
         <p>위드랑 사이트에 접속해서<br />
             선생님과 이야기 하고,<br />
@@ -25,7 +29,7 @@
         </p>
         <button class="btn_close">닫기</button>
     </div>
-    <div class="popup popup_type03 hide" id="pop2" style="left:300px;">
+    <div class="popup popup_type03" id="pop2">
         <textarea name="name" rows="8" id="tta"></textarea>
         <button type="button" class="btn_type_02 btn_repeat" title="다시하기">다시하기</button>
         <button class="btn_close">닫기</button>
