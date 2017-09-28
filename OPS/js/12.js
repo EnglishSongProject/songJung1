@@ -1,6 +1,8 @@
 // JavaScript Document
 
-$(function () {
+
+$(document).ready(function() {
+      imageSlide.init();
 
     $('.simhwa').on('click',function () {
         $('.img-popup-none-confirm').toggle();

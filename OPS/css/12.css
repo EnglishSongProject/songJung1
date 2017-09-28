@@ -1,79 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
-/*back*/
-.wrapper{background: url("../images/12/bg.png") no-repeat 0 0; background-size: cover}
-/*page_tit*/
-.page_tit{position: relative; width: 220px; height: 30px; /*border: 1px solid red;*/}
-/*A*/
-.top_wrap{position: relative; width: 660px; height: 350px;/* border: 1px solid red;*/}
-/*Active Listening - A*/
-.sub_tit1 img{position: absolute;top:35px;  width: 25px; height: 26px; }
-/*Active Listening*/
-.A_tit{position: absolute;  font-family: 'Bubblegum Sans'; font-size: 22px; top: 33px; margin-left:34px; }
-/*btn_list*/
-.one{position:absolute;width: 90px; height:25px; top: 36px; left: 170px;/* border: 1px solid green;*/ }
-/*left zone*/
-.A_left {position: absolute; top: 130px; left: 50px; width: 180px;height: 180px; /*border: 1px solid blue;*/}
-.A_left span{ font-family: 'Nanum Gothic'; font-weight: 600; color: #fff; font-size: 19px;/* border: 1px solid red;*/}
-.leftzone{position: relative;width: 155px;height: 45px; text-align: left; padding-left: 20px; background-color: #70d3eb; border-radius:11px;}
-.A_a{ top: 0px;}
-.A_b{ top: 20px;}
-.A_c{ top: 40px;}
-/*rightzone*/
-.A_right {position: absolute; top: 125px; left: 300px; width: 280px; height: 180px; /*border: 1px solid red;*/}
-.A_a_play{position: absolute;  width: 280px; height: 180px; z-index: 3; background-color: pink;/* border: 1px solid blue;*/}
-.A_b_play{position: absolute;  width: 280px; height: 180px; z-index: 2; background-color: green; /*border: 1px solid blue;*/}
-.A_b_play{position: absolute;  width: 280px; height: 180px; z-index: 2; background-color: green; /*border: 1px solid blue;*/}
-.A_c_play{position: absolute; width: 280px; height: 180px; z-index: 1; background-color: yellow; /*border: 1px solid blue;*/}
-
-/*B*/
-.under_wrap{position: relative; top: 50px; width: 690px; height: 450px;/* border: 1px solid red;*/}
-/*Active Speaking - B*/
-.sub_tit2 img{position: absolute;top:2px;  width: 25px; height: 26px; }
-/*Active Speaking*/
-.B_tit{position: absolute;  font-family: 'Bubblegum Sans'; font-size: 22px; top: 0px; margin-left:34px; }
-/*btn_list*/
-.two{position:absolute;width: 90px; height:25px; top: 4px; left: 170px;/* border: 1px solid green;*/ }
-/*B_txt*/
-.B_txt{position: absolute;top: 55px; left: 32px; font-family: 'Noto Sans KR'; font-size: 15px; /*border: 1px solid lime;*/ }
-/*three_word*/
-.three_word{position: absolute; top: 130px; left: 130px; width: 470px; height: 80px;font-family: 'Noto Sans KR'; font-size: 14px; /* border: 1px solid red;*/}
-.Name{position: absolute; top:11px; left: 18px;}
-.Age{position: absolute; top:11px; left: 277px;}
-.NickName{position: absolute; top:55px; left: 115px;}
-
-/*Sound_input*/
-.Sound_input01{position: absolute; top: 11px; left: 85px; width: 130px; height: 23px; background: transparent; font-family: 'Noto Sans KR'; font-size: 14px; /*border: 1px solid red;*/}
-.Sound_input02{position: absolute; top: 11px; left: 335px; width: 130px; height: 23px; background: transparent;font-family: 'Noto Sans KR'; font-size: 14px; /*border: 1px solid red;*/}
-.Sound_input03{position: absolute; top: 54px; left: 195px; width: 130px; height: 23px; background: transparent;font-family: 'Noto Sans KR'; font-size: 14px; /*border: 1px solid red;*/}
 
 
-/*for_example*/
-.for_example{ position: absolute; width: 250px; height: 120px;top: 215px; left:165px;/* border: 1px solid blue;*/ }
-
-/*e.g*/
-.eg_txt_a{position: absolute; top: 20px;font-family: 'Noto Sans KR'; color: #595B60; font-size: 15px;}
-/*e.g글자*/
-.all_eg_fontstyle{ position: relative; font-family: 'Faustina';font-size: 16px; left: 30px; top: 18px; font-weight: 500;}
-
-/*sound*/
-.sound_wrap{position: absolute; width: 230px; height: 200px;top: 725px; left:510px;font-family: 'Noto Sans KR'; font-size: 14px;/* border: 1px solid blue; */ }
-.S_tit{position: absolute; font-family: 'Nanum Gothic'!important; font-size: 15px; color: #fff; left: 20px;}
-/*btn_list*/
-.third{position: absolute; width: 25px; height: 25px; top: -2px; left: 77px; font-weight: 400;}
-/*small_1*/
-.small_1{position: relative; top: 60px; width: 65px; height: 25px;left: 20px;    /*border: 1px solid orange;*/ }
-/*small_2*/
-.small_2{position: relative; top: 10px; width: 65px; height: 25px;left: 120px;  /*border: 1px solid orange;*/ }
-/*big*/
-.big{position: relative; width: 150px; height: 30px; top:20px;  left:20px; font-size: 15px; /*border: 1px solid lime;*/ }
+/* layout */
+.wrapper{/*background:url(../images/12/12_5_001.png) no-repeat 0 0;*/ background-size: cover;border:1px solid yellow;}
 
 
 
+.page_tit{width: 235px; height: 70px;margin-top:-45px;margin-left:-53px;}
 
+/*  container_wrap  */
+.header_wrap{position: relative; width: 660px;}
+.sub_tit1{margin-top:41px;}
+.sub_tit1 img{width: 25px; height: 26px;}
+.A_tit{font-family: 'Bubblegum Sans'; font-size: 22px;}
+.one{width:115px; height:25px;}
 
-
-
-
-
-
+/* container_wrap */
+.container_wrap{border:1px solid red;margin-top:50px;}
+.container_inner{}
+.content_1{border:1px solid #000;text-align:center;position:relative;left:50%;width:400px;margin-left:-200px;}
+.content_1 span{position:absolute;right:25px;bottom:15px;cursor: pointer;}
+.content_2{border:1px solid #a6d8e5;}
