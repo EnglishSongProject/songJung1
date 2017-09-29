@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sim h1.bs_page_tit img{margin-left:60px;margin-top: 33px;}
+
+.sim {
+    position: absolute; top:0; left:0;
+    padding-top:24px; background: #fff url(../images/23/sim_bg.png) no-repeat 0 0; background-size: cover; }
+
+button.btn_close{}
+
+.sim_wrap{position: relative; background-color:#faf7f4;margin-top:55px;border-radius:18px;padding:25px 20px 45px 20px;  font-family: 'Nanum Gothic'; font-size: 15px; font-weight: 500;}
+.sim_wrap .subtit_wrap{overflow:hidden;}
+.sim_wrap .subtit_wrap img,
+.sim_wrap .subtit_wrap p{float:left; margin-right: 10px;font-weight: 600;}
+.sim_wrap .subtit_wrap img{margin-right:10px;}
+
+
+.sim_5 .sim_wrap{height:390px;}
+ul.sim_5_A{padding-left: 34px;margin-top:15px;}
+ul.sim_5_A li{line-height:30px;padding-bottom: 30px;}
+ul.sim_5_A li:nth-of-type(3){margin-bottom:20px;}
+ul.sim_5_A li input{border-bottom:1px solid black;margin-left:2px; width:305px;font-family: 'Nanum Gothic'; font-size: 15px;text-align: left;padding-bottom:2px;}
+ul.sim_5_A li span{margin-left:19px;}
+input[type='text']#sim_5_1{}
+input[type='text']#sim_5_2{}
+input[type='text']#sim_5_3{}
+input[type='text']#sim_5_4{}
+.sentence{font-family: 'Nanum Gothic'; font-size: 15px;color:red;position: absolute;}
+#sentence1_5{top:127px;left:92px;}
+#sentence2_5{top:214px;left:92px;}
+#sentence3_5{top:304px;left:92px;}
+#sentence4_5{top:415px;left:92px;}

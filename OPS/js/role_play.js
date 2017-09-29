@@ -8,8 +8,10 @@ $(document).ready(function(){
         $(".role_play").hide();
     })
 
+    role_play()
+})
 
-
+function role_play(){
     var checkbox = $("input[type=checkbox]");
     var $btnTrns = $(".btn_trans");
     var $btnPlay =  $(".r_btn_play");
@@ -32,16 +34,11 @@ $(document).ready(function(){
     ]
     rpAudio.src = audioList[0];
 
-    function clearAll(e){
-        for(var i=0; i< checkbox.length ; i++){
-            checkbox[i].checked = false;
-        }
-        e.target.checked = true
-    }
+    // 체크박스
+    // $("input[type=checkbox]").on("click",function(){
+    //
+    // })
 
-    for(var i=0; i< checkbox.length ; i++){
-        checkbox[i].addEventListener("change", clearAll)
-    }
 
     // 해석 온오프
     $btnTrns.on("click",function(){
@@ -109,33 +106,36 @@ $(document).ready(function(){
     }
 
     rpAudio.addEventListener("timeupdate",updateProgress);
+    rpAudio.addEventListener("ended", function (e) {
+        stopAudio();
+    });
+
+    function initEvent(){
+        $progressBar.on("click",function(e){
+            var moveX = e.pageX -  $controllBar.width() / 2
+            $controllBar.offset({
+                left:moveX
+            })
+            rpAudio.currentTime = getCerrentTime(moveX)
+        })
+
+        /* 마우스 드래그, 터치 이벤트 */
+        $controllBar.get(0).addEventListener('mousedown', mouseDown, false);
+        $controllBar.get(0).addEventListener('touchstart', mouseDown, false);
+
+        window.addEventListener('mouseup', mouseUp, false);
+        window.addEventListener('touchend', mouseUp, false);
+    }
 
     function updateProgress(){
         var curX = (rpAudio.currentTime / rpAudio.duration * $progressBar.width()) + $progressBar.offset().left;
         $controllBar.offset({
             left:curX
         })
-
         console.log(rpAudio.currentTime)
-
     }
 
-    $progressBar.on("click",function(e){
-        var moveX = e.pageX -  $controllBar.width() / 2
-        $controllBar.offset({
-            left:moveX
-        })
-        rpAudio.currentTime = getCerrentTime(moveX)
-    })
-
-
-    /* 마우스 드래그, 터치 이벤트 */
-    $controllBar.get(0).addEventListener('mousedown', mouseDown, false);
-    $controllBar.get(0).addEventListener('touchstart', mouseDown, false);
-
-    window.addEventListener('mouseup', mouseUp, false);
-    window.addEventListener('touchend', mouseUp, false);
-
+    /*drag , 터치 관련 함수*/
     var activeControl = false;
     function mouseDown() {
         activeControl = true;
@@ -191,4 +191,8 @@ $(document).ready(function(){
     function getCerrentTime(posX) {
         return (posX - $progressBar.offset().left) / ($progressBar.width()) * rpAudio.duration
     }
-})
+
+    initEvent();
+
+
+}
