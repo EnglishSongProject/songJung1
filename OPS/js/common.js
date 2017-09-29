@@ -1413,7 +1413,7 @@ $(document).ready(function(){
 function checkAskAnswer(){
     var $input = $("#aa_input");
     $("#aa_wr").on("click",function(){
-        $input.toggle().removeAttr('disabled').focus();
+        $input.toggle().removeAttr('disabled');
         //$("#aa_aws").hide();
         if($("#aa_q").hasClass('btn_repeat')){
             blankCheckByCss('aa_q', 'aa_aws', 'aa_input')
@@ -1422,7 +1422,7 @@ function checkAskAnswer(){
     $("#aa_q").on('click',function(){
         $input.show()
         if($(this).hasClass('btn_answer')){
-            $input.removeAttr('disabled').focus();
+            $input.removeAttr('disabled');
         }else{
             $input.attr('disabled','true')
         }
