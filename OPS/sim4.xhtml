@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>lesson1</title>
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sim4.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <!--<script type="text/javascript" src="./js/sim.js"></script>-->
+
+    </head>
+<body>
+	<div class="wrapper  sim sim_4">
+    <button type="button" class="btn_close"></button>
+		        <h1 class="bs_page_tit">
+              <img src="images/23/sim_tit.png" alt="simhua title" />
+            </h1>
+            <div class="sim_wrap">
+              <div class="subtit_wrap">
+                <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+              	<p class="subtit">인물에 관한 정보를 완성해 봅시다.</p>
+                <button type="button" class="btn_type_02 btn_answer" id="sim_4_C" title="예시 답안" onclick="blankCheckByCss('sim_4_C','sentence1+sentence2+sentence3+sentence4','sim_4_1+sim_4_2+sim_4_3+sim_4_4')">답안</button>
+              </div>
+              <ul class="sim_4_A">
+				        <li>
+				          1. 지나는 학교 도서관에 있다. (Jina, at the school library)<br/><span></span><input type="text" id="sim_4_1" />
+				        </li>
+                <li>
+                  2. 이 영어책들은 윌리엄에게 쉽다. (these English books, easy, to William)<br/><span></span><input type="text" id="sim_4_2" />
+                </li>
+                <li>
+                  3. 나는 하루에 물 다섯 잔을 마신다. (drink, 5 glasses of water, a day)<br/><span></span><input type="text" id="sim_4_3" />
+                </li>
+                <li>
+                  4. 나의 부모님은 토요일마다 테니스를 하신다. (my parents, play, on Saturdays)<br/><span></span><input type="text" id="sim_4_4" />
+                </li>
+              </ul>
+              <div class="sentence display-none" id="sentence1">Jina is at the school library.</div>
+              <div class="sentence display-none" id="sentence2">These English books are easy yo William.</div>
+              <div class="sentence display-none" id="sentence3">I drink 5 glasses of water a day.</div>
+              <div class="sentence display-none" id="sentence4">My parents play tennis on Saturdays.</div>
+
+            </div><!--sim_wrap-->
+	</div>
+</body>
+</html>
