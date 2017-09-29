@@ -125,9 +125,9 @@ function playAudio(path, btnId, target, imgId, direction) {
                     // 팝업 위치
 
                     if(direction == 'right'){
-                        popup.style.left = ($target.offset().left -260) + "px";
+                        popup.style.left = ($target.offset().left -216) + "px";
                     }else{
-                        popup.style.left = ($target.offset().left + 40) + "px";
+                        popup.style.left = ($target.offset().left + 28) + "px";
                     }
                     popup.style.top = ($target.offset().top - 10) + "px";
                     popup.style.display='block';
