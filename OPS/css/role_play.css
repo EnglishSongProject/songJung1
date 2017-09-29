@@ -29,7 +29,7 @@
 
 /*플레이버튼*/
 .btn_wrap {display: inline-block; height:21px;  line-height:21px}
-.btn_play {width:19px; height:21px; background:url(../images/role_play/btn_play.png) no-repeat 0 0; margin-left:35px}
+.r_btn_play {width:19px; height:21px; background:url(../images/role_play/btn_play.png) no-repeat 0 0; margin-left:35px}
 .btn_stop {width:19px; height:21px; background:url(../images/role_play/btn_stop.png) no-repeat 0 0; margin-left:12px}
 .btn_pause {width:19px; height:21px; background:url(../images/role_play/btn_pause.png) no-repeat 0 0; margin-left:35px}
 .progress_bar {width:385px; height:21px; background:url(../images/role_play/progressbar.png) no-repeat 0 0; margin: 0px 15px;}
