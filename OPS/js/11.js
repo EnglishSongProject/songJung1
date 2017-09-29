@@ -33,7 +33,7 @@ var mediaInfo = [
         syncText: [
             [1, 1, 'Sam, this is my dog, Bob.', 'Sam, 이 개는 나의 개, Bob이야.'],
             [2, 2, "Bob, this is Sam.", 'Bob, 이 아이는 Sam이야.'],
-            [3, 2, 'Nice to meet you, Bob.', '만나서 반가워, Bob.'],
+            [3, 2, 'Nice to meet you, Bob.', '만나서 반가워, Bob.']
         ]
     }
 ];
