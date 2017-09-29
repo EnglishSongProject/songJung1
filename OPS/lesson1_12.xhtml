@@ -44,16 +44,18 @@
                             <dt class="Guess_dt">Guess</dt>
                             <dd class="Guess_dd">
                               <h1>What are they doing?</h1>
-                              <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
-                              <p><img src="images/12/Guess_image.png" alt="Guess image" /></p>
+                              <p class="button_gr"><button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button></p>
+                              <p class="video_img"><img src="images/12/Guess_image.png" alt="Guess image" /></p>
                               <textarea id="txt_Guess"></textarea>
                             </dd>
                             <dt class="Listen_dt">Listen</dt>
                             <dd class="Listen_dd">
-                              <button type="button" id="Listen_dd_A" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss(,,);"></button>
-                              <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
+                              <p class="button_gr">
+                                <button type="button" id="Listen_dd_A" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss(,,);"></button>
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
+                              </p>
                               <div>
-                                <p>Which is NOT true about Mr.jackson?</p>
+                                <h1>Which is NOT true about Mr.Jackson?</h1>
                                 <ul>
                                   <li><span>1</span>He is an English teacher.</li>
                                   <li><span>2</span>He is from Canada.</li>
@@ -62,13 +64,51 @@
                               </div>
                             </dd>
                             <dt class="LA_dt">Listen again</dt>
-                            <dd class="LA_dd"></dd>
+                            <dd class="LA_dd">
+                              <p class="button_gr">
+                                <button type="button" id="Listen_dd_A" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss(,,);"></button>
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
+                              </p>
+                              <div>
+                                <h1>Complate Jiwon's talk</h1>
+                                <ul class="bubble_talk">
+                                  <li>
+                                    I am
+                                    <input type="checkbox" id="check_1" value="" /><label for="check_1">10</label>
+                                    <input type="checkbox" id="check_2" value="" /><label for="check_2">11</label> years old.
+                                  </li>
+                                  <li>
+                                    I have a
+                                    <input type="checkbox" id="check_3" value="" /><label for="check_3">brother</label>
+                                    <input type="checkbox" id="check_4" value="" /><label for="check_4">sister.</label>
+                                  </li>
+                                  <li>
+                                    I like
+                                    <input type="checkbox" id="check_5" value="" /><label for="check_5">English</label>
+                                    <input type="checkbox" id="check_6" value="" /><label for="check_6">music.</label>
+                                  </li>
+                                </ul>
+                                <img class="girl_img" src="images/12/girl_img.png" alt="소녀 이미지" />
+                              </div>
+                            </dd>
                           </dl>
                         </article>
                       </section>
                     </div>
                   </li>
                   <li data-num="2" class="">
+                    <div class="header_wrap">
+                      <h2 class="sub_tit1">
+                        <img src="./images/12/B.png" alt="B" />
+                        <span class="B_tit">Active Speaking</span>
+                        <span class="btn_list one">
+                          <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기">mp3전체듣기</button>
+                          <button type="button" class="btn_type_02 btn_sp" title="대본">한글</button>
+                        </span>
+                      </h2>
+                    </div>
+                    <div class="container_wrap">
+                    </div>
                   </li>
                 </ul>
               </div>
