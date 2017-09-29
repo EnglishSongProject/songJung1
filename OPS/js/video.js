@@ -422,7 +422,7 @@ function mediaType(idx) {
 		initVdo();
 	});	
 
-	showhideScript(0); //영어보기가 기본
+	showhideScript(3); //아무것도 없는 것이 기본
 }
 function sectionPlay(){
 	var vdo = document.querySelector('#vdo');
@@ -548,7 +548,7 @@ var propVolume = "soundvolume";
 var propSpk = "soundspk";
 var volLimit = [0, 58];
 
-var scLimit = [2, 198]; //대본 스크롤바 이동영역
+var scLimit = [2, 348]; //대본 스크롤바 이동영역
 
 
 $(document).ready(function(){
@@ -691,7 +691,7 @@ $(document).ready(function(){
 			if(!$('.txt_two').hasClass('display-none')){
 				$('.txt_two').addClass('display-none');
 			}
-			tm.style.top = "407px";
+			tm.style.top = "369px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap').hasClass('btn_caption_en_off')){
 				$('#prog_cap').removeClass('btn_caption_en_off');
@@ -706,7 +706,7 @@ $(document).ready(function(){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "407px";
+					tm.style.top = "369px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap').hasClass('btn_caption_en_on')){
@@ -753,7 +753,7 @@ $(document).ready(function(){
 			if(!$('.txt_one').hasClass('display-none')){
 				$('.txt_one').addClass('display-none');
 			}
-			tm.style.top = "407px";
+			tm.style.top = "369px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap2').hasClass('btn_caption_kr_off')){
 				$('#prog_cap2').removeClass('btn_caption_kr_off');
@@ -768,7 +768,7 @@ $(document).ready(function(){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "407px";
+					tm.style.top = "369px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap2').hasClass('btn_caption_kr_on')){
@@ -814,18 +814,23 @@ $(document).ready(function(){
 
 
 	//영, 한영, 한
-	var btn_ek = document.querySelector('.btn_ek');
-	var btn_en = document.querySelector('.btn_en');
-	btn_ek.addEventListener('click', function () {
-		btn_ek.style.display='none';
-		btn_en.style.display='block';
-		showhideScript(1);			
-	}, false);
-
-	btn_en.addEventListener('click', function () {
-		btn_en.style.display='none';
-		btn_ek.style.display='block';
-		showhideScript(0);
+	var btn_trans = document.querySelector('.btn_trans_video_off.num1');
+	var isShow = document.querySelector('.script_wrap.num1.off');
+	btn_trans.addEventListener('click', function () {
+		//자막 가리기
+		if($(isShow).hasClass('off')){
+			$(isShow).removeClass('off');
+			$(isShow).addClass('on');
+			showhideScript(1);
+			$(btn_trans).removeClass('btn_trans_video_off');
+			$(btn_trans).addClass('btn_trans_video_on');
+		}else{
+			$(isShow).removeClass('on');
+			$(isShow).addClass('off');
+			showhideScript(3);
+			$(btn_trans).removeClass('btn_trans_video_on');
+			$(btn_trans).addClass('btn_trans_video_off');
+		}
 	}, false);
 });
 
@@ -1025,7 +1030,7 @@ function setProg(rate){
 
 function setSc(cy){
 	var tm = document.querySelector('.sc_ball');
-	tm.style.top =  parseInt(cy) + "px";
+	tm.style.top =  parseInt(cy-2) + "px";
 	var rate = (cy - scLimit[0])/Math.abs(scLimit[0] - scLimit[1]);
 	
 	var overH = Math.max(0, scriptHeight - scriptMax);

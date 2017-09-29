@@ -125,9 +125,13 @@ function playAudio(path, btnId, target, imgId, direction) {
                     // 팝업 위치
 
                     if(direction == 'right'){
+<<<<<<< HEAD
                         popup.style.left = ($target.offset().left -220) + "px";
+=======
+                        popup.style.left = ($target.offset().left -216) + "px";
+>>>>>>> 6ad9a26386913ed118c555f1bd9689620adf3dd0
                     }else{
-                        popup.style.left = ($target.offset().left + 40) + "px";
+                        popup.style.left = ($target.offset().left + 28) + "px";
                     }
                     popup.style.top = ($target.offset().top - 10) + "px";
                     popup.style.display='block';
@@ -1413,7 +1417,7 @@ $(document).ready(function(){
 function checkAskAnswer(){
     var $input = $("#aa_input");
     $("#aa_wr").on("click",function(){
-        $input.toggle().removeAttr('disabled').focus();
+        $input.toggle().removeAttr('disabled');
         //$("#aa_aws").hide();
         if($("#aa_q").hasClass('btn_repeat')){
             blankCheckByCss('aa_q', 'aa_aws', 'aa_input')
@@ -1422,7 +1426,7 @@ function checkAskAnswer(){
     $("#aa_q").on('click',function(){
         $input.show()
         if($(this).hasClass('btn_answer')){
-            $input.removeAttr('disabled').focus();
+            $input.removeAttr('disabled');
         }else{
             $input.attr('disabled','true')
         }
