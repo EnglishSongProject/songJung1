@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     var checkbox = $("input[type=checkbox]");
     var $btnTrns = $(".btn_trans");
-    var $btnPlay =  $(".btn_play");
+    var $btnPlay =  $(".r_btn_play");
     var $btnPause =  $(".btn_pause");
     var $btnStop =  $(".btn_stop");
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     $(".btn_play_toggle").on("click",function(e){
         var btn = $(e.target);
-        if(btn.hasClass("btn_play")){
+        if(btn.hasClass("r_btn_play")){
             playAudio()
         }else if(btn.hasClass("btn_pause")){
             pauseAudio()
@@ -90,19 +90,19 @@ $(document).ready(function(){
 
     function playAudio(){
         rpAudio.play()
-        $(".btn_play_toggle").removeClass("btn_play").addClass("btn_pause")
+        $(".btn_play_toggle").removeClass("r_btn_play").addClass("btn_pause")
     }
 
     function pauseAudio(){
         rpAudio.pause();
-        $(".btn_play_toggle").removeClass("btn_pause").addClass("btn_play")
+        $(".btn_play_toggle").removeClass("btn_pause").addClass("r_btn_play")
     }
 
     function stopAudio(){
         rpAudio.pause();
         rpAudio.currentTime = 0;
 
-        $(".btn_play_toggle").removeClass("btn_pause").addClass("btn_play");
+        $(".btn_play_toggle").removeClass("btn_pause").addClass("r_btn_play");
         $controllBar.offset({
             left:276
         })
