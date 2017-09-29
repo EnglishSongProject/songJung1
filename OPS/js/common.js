@@ -125,11 +125,7 @@ function playAudio(path, btnId, target, imgId, direction) {
                     // 팝업 위치
 
                     if(direction == 'right'){
-<<<<<<< HEAD
-                        popup.style.left = ($target.offset().left -220) + "px";
-=======
                         popup.style.left = ($target.offset().left -216) + "px";
->>>>>>> 6ad9a26386913ed118c555f1bd9689620adf3dd0
                     }else{
                         popup.style.left = ($target.offset().left + 28) + "px";
                     }
