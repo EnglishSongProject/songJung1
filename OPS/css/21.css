@@ -20,7 +20,7 @@
 .part_wt .step_01_tb {width:579px; height: 125px;  background: url(../images/21/bg_wt_table.jpg) no-repeat 0 0}
 .part_wt .step_01_tb th, .part_wt table td {font:13px 'Noto Sans KR'; text-align: center; }
 .part_wt .step_01_tb td {font-size:14px; }
-.part_wt .step_01_tb input[type="text"] {width:78px; font: 14px 'Noto Sans KR'; margin-top: -6px;}
+.part_wt .step_01_tb input[type="text"] {width:78px; font: 14px 'Noto Sans KR'; margin-top: -4px;}
 
 .img_content {position: relative;}
 .part_wt .step02_txt {position: absolute; top:20px; left:75px ; font: 16px/1.6 'Faustina'; }
@@ -39,9 +39,9 @@
 .part_wt .group_ck h4{ position: absolute;left: 374px; top: -2px; font-size: 18px; color: #fff; transform: rotate(-14deg);font-family: 'SangSangAnt';}
 .part_wt .group_ck_tb {display: block; width:593px; height:52px; margin-top:18px; float:left}
 .part_wt .group_ck_tb th, .part_wt .group_ck_tb td {font:13px 'Noto Sans KR'; text-align: center; height:25px}
-.part_wt .group_ck_tb th {font:11px 'Nanum Gothic'; width:390px; text-align:left; padding-left:50px; }
+.part_wt .group_ck_tb th {font:11px 'Nanum Gothic'; width:390px; text-align:left; padding-left:50px;  padding-top: 2px;}
 .part_wt .group_ck_tb td {font-size:14px; width:35px}
-.part_wt .group_ck_tb input[type="text"] {width:20px; font:15px 'Nanum Gothic'; text-align: center; vertical-align: baseline;}
+.part_wt .group_ck_tb input[type="text"] {width:20px; font:15px 'Nanum Gothic'; text-align: center; vertical-align: baseline; padding-top: 2px;}
 
 .group_ck_tb .group_first th{height:15px;}
 .group_ck_tb .group_first td{position:absolute;top:17px;left:560px;font-size: 18px; width: 30px; height:18px;display:inline-block;font-family: 'SangSangAnt';color:#80181d;}
