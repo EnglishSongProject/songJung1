@@ -46,13 +46,25 @@
 .bookbtn {position: absolute; display: block; float:left; width: 25px; height: 25px !important; top: 30px !important; left: 255px!important; background-size: cover;}*/
 
 /*popup*/
-#txt01{position: absolute;  top: 30px; left: 9px; display: none}
-#txt02{position: absolute;  top: 30px; left: 9px; display: none}
+#txt01{position: absolute;  top: 30px; left: 9px; display: none;}
+#txt02{position: absolute;  top: 30px; left: 9px; display: none; }
+
+.hide textarea{line-height: 26px; margin-top:26px; height: 160px;}
+
+/* Chrome, Safari용 스크롤 바 */
+.talking_time .scrollbar{overflow: auto;}
+
+.scrollbar::-webkit-scrollbar{width: 17px; height: 70px;}
+.scrollbar::-webkit-scrollbar:vertical{-webkit-border-radius: 70px; border-radius:70px;  background: url('../images/popup/scroll_bar_1.png') no-repeat;}
+.scrollbar::-webkit-scrollbar-button:start:decrement { height: 3px;} 
+.scrollbar::-webkit-scrollbar-button:end:increment{ height: 3px;}
+.scrollbar::-webkit-scrollbar-button:track:end{ margin-bottom: 10px; }
+.scrollbar::-webkit-scrollbar-thumb{ display: block; background: url('../images/popup/scroll_btn.png') no-repeat;}
 
 /*AskAnswer*/
 .ask_and_speak {position: absolute; top: 855px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
 
-.ask_and_speak > p{position:absolute;top:30px; left: 170px;}
+.ask_and_speak > p{position:absolute;top:30px; left: 165px;}
 .ask_and_speak > p input[type="text"]{display:none;}
 
 .ask_and_speak>h3 {position: absolute; width: 200px;  left: 0px; top:33px}
