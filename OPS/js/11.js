@@ -5,7 +5,7 @@ var mediaInfo = [
         //하나의 동영상
 
         //동영상 제목
-        title: "What will the girl say?",
+        title: "What will the boy say?",
 
         folder: [
             // 동영상 경로
@@ -24,16 +24,16 @@ var mediaInfo = [
 
         // 동영상 텍스트 씽크 [순번, 시작시간, 종료시간]
         sync: [
-            [1, 2.5, 4],
-            [2, 4.3, 6.5],
-            [3, 7, 10]
+            [1, 2.5, 5],
+            [2, 5.5, 7.5],
+            [3, 8, 11]
         ],
 
         // 동영상 텍스트 [순번, 사람번호, 영어, 한글]
         syncText: [
-            [1, 1, 'How are you doing?', '어떻게 지내니?'],
-            [2, 2, "I'm good.", '좋아.'],
-            [3, 2, 'Not so good.', '별로 좋지 않아']
+            [1, 1, 'Sam, this is my dog, Bob.', 'Sam, 이 개는 나의 개, Bob이야.'],
+            [2, 2, "Bob, this is Sam.", 'Bob, 이 아이는 Sam이야.'],
+            [3, 2, 'Nice to meet you, Bob.', '만나서 반가워, Bob.'],
         ]
     }
 ];

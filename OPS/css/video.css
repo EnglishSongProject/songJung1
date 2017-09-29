@@ -18,7 +18,7 @@
 #video_header{ position: absolute; top: 0px; left: 0; right: 0; width: 768px; height: 60px; margin: 0 auto;}
 .media_icon{ position:absolute; left:0px; top:0px;}
 .media_title{ position:absolute; left:80px; top:20px;}
-.btn_media_close{ position:absolute; right:22px; top:17px; cursor: pointer; }
+.btn_media_close{ position:absolute; right:66px; top:17px; cursor: pointer; }
 .btn_media_close > img {width: 22px; height: 22px;}
 
 
@@ -61,7 +61,7 @@
 /* 볼 */
 #prog_gray{	position:absolute; left:120px; top:12px; width:373px; height:10px;	z-index:1;}
 #prog_color{ position:absolute; left:120px; top:12px; width:373px; height:20px; overflow:hidden; z-index:2;}
-#prog_mouse{ position:absolute; left:0px; top:0px; width:373px; height:10px; cursor:pointer; z-index:3; opacity:0;}
+#prog_mouse{ position:absolute; left:120px; top:12px; width:373px; height:10px; cursor:pointer; z-index:3; opacity:0;}
 #prog_ball{	position:absolute; top:12px; width:20px; height:20px;	cursor:pointer; z-index:4;}
 
 /*자막, 대본*/
