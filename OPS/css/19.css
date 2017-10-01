@@ -66,7 +66,7 @@ button.btn_simhwa{background-image: url("../images/23/06.png");left:100px;}
 .bo_wrap{position: relative; background-color:#f5f9fd;margin-top:55px;border-radius:18px;padding:25px 20px 45px 20px;  font-family: 'Nanum Gothic'; font-size: 15px; font-weight: 500;}
 .bo_wrap .subtit_wrap{overflow:hidden;}
 .bo_wrap .subtit_wrap img,
-.bo_wrap .subtit_wrap p{float:left; margin-right: 10px;font-weight: 600; }
+.bo_wrap .subtit_wrap p{float:left; font-weight: 600; }
 .bo_wrap .subtit_wrap img{margin-right:10px;}
 
 .sim h1.bs_page_tit img{margin-left:60px;margin-top: 33px;}
@@ -78,7 +78,7 @@ button.btn_simhwa{background-image: url("../images/23/06.png");left:100px;}
 .sim_wrap{position: relative; background-color:#faf7f4;margin-top:55px;border-radius:18px;padding:25px 20px 45px 20px;  font-family: 'Nanum Gothic'; font-size: 15px; font-weight: 500;}
 .sim_wrap .subtit_wrap{overflow:hidden;}
 .sim_wrap .subtit_wrap img,
-.sim_wrap .subtit_wrap p{float:left; margin-right: 10px;font-weight: 600;}
+.sim_wrap .subtit_wrap p{float:left; font-weight: 600;}
 .sim_wrap .subtit_wrap img{margin-right:10px;}
 
 

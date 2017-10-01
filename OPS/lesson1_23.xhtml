@@ -39,7 +39,7 @@
                                <button type="button" class="btn_type_011" title="대화 내용보기" onclick="">대화내용보기</button>
                           </span>
                           <span class="btn_add_list">
-                        <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="btn_bochung1">보충</button>
+                        <button type="button" class="btn_bochung marginL mr_5" title="보충" onclick="" id="btn_bochung1">보충</button>
                         <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim1">심화</button>
                           </span>
                       </div><!--Subtit_Wrap-->
@@ -83,11 +83,14 @@
                           <p class="red2" id="good">good</p>
                       </div><!--questionBox-->
                       <div class="Subtit_Wrap">
-                        <img class="Subtit" src="images/23/speak.png" alt="listen image" />
-                        <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_04.mp3', 'single');"><span class="orange">3</span>남자아이의 말에 적절한 응답을 해 봅시다.</p>
-                        <span class="btn_list">
-                             <button type="button" class="btn_type_02 btn_answer" id="byr_b_q" title="예시 답안" onclick="blankCheckByCss('byr_b_q', 'p23_3_a', 'p23_3')">답안</button>
-                        </span>
+                          <div>
+                              <img class="Subtit" src="images/23/speak.png" alt="listen image" />
+                              <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_04.mp3', 'single');"><span class="orange">3</span>남자아이의 말에 적절한 응답을 해 봅시다.
+                              </p>
+                              <span class="btn_list">
+                                 <button type="button" class="btn_type_02 btn_answer" id="byr_b_q" title="예시 답안" onclick="blankCheckByCss('byr_b_q', 'p23_3_a', 'p23_3')">답안</button>
+                              </span>
+                          </div>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_3">
                         <img src="images/23/boy.png" alt="boy" id="brownboy" />
@@ -352,7 +355,9 @@
                     <div class="subtit_wrap">
                       <img src="images/23/sim_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">인물에 관한 정보를 완성해 봅시다.</p>
-                      <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy','pop_answer1+pop_answer2+pop_answer3+pop_answer4+pop_answer5+pop_answer6','sim_1_1_a+sim_1_1_b+sim_1_2_a+sim_1_2_b+sim_1_3_a+sim_1_4_a');">답안</button>
+                        <span class="btn_list">
+                             <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy','pop_answer1+pop_answer2+pop_answer3+pop_answer4+pop_answer5+pop_answer6','sim_1_1_a+sim_1_1_b+sim_1_2_a+sim_1_2_b+sim_1_3_a+sim_1_4_a');">답안</button>
+                        </span>
                     </div>
                     <ul class="inmul_sim">
       				        <li>
@@ -386,7 +391,9 @@
                      <div class="subtit_wrap">
                       <img src="images/23/sim_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">선생님에 관한 글을 완성해 봅시다.</p>
-                      <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy_2" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy_2','pop_answer2_1+pop_answer2_2+pop_answer2_3+pop_answer2_4+pop_answer2_5+pop_answer2_6','sim_2_a+sim_2_b+sim_2_c+sim_2_d+sim_2_e+sim_2_f');">답안</button>
+                         <span class="btn_list">
+                             <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy_2" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy_2','pop_answer2_1+pop_answer2_2+pop_answer2_3+pop_answer2_4+pop_answer2_5+pop_answer2_6','sim_2_a+sim_2_b+sim_2_c+sim_2_d+sim_2_e+sim_2_f');">답안</button>
+                         </span>
                     </div>
                     <p class="khs_sim">
                       My teacher's name is<input type="text" id="sim_2_a" />. He made his<input type="text" id="sim_2_b" />. He likes <input type="text" id="sim_2_c" />
@@ -433,7 +440,9 @@
                     <div class="subtit_wrap">
                       <img src="images/23/bo_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">대화에 나오지 않는 사람을 골라 봅시다.</p>
-                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q3" onclick="checkBoxCheckForMulti('p23_r1_q3', 'p23_r1_o_a3', '3' );">답안</button>
+                        <span class="btn_list">
+                            <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q3" onclick="checkBoxCheckForMulti('p23_r1_q3', 'p23_r1_o_a3', '3' );">답안</button>
+                        </span>
                     </div>
                     <ul class="bo_Q_1">
                         <li><input type="radio" id="p23_r1_o3" class="correct radio_1_b" name="p23_r1_o_a3"/>
@@ -461,7 +470,9 @@
                     <div class="subtit_wrap">
                       <img src="images/23/bo_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">본문 내용과 일치하는 것은?</p>
-                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q4" onclick="checkBoxCheckForMulti('p23_r1_q4', 'p23_r1_o_a4', '3' );">답안</button>
+                        <span class="btn_list">
+                             <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q4" onclick="checkBoxCheckForMulti('p23_r1_q4', 'p23_r1_o_a4', '3' );">답안</button>
+                        </span>
                     </div>
                     <ul class="bo_Q_2">
                         <li><input type="radio" id="p23_r1_o4" class="correct radio_1_b" name="p23_r1_o_a4"/>
@@ -515,7 +526,9 @@
                           <li data-num="1" class="all_Slide sliderNum_1">
                             <h1 onclick="playAudio('./media/audio/L01/023/L01_023_SELF_01.mp3', 'single');" class="active-purple"><span>A</span>'Wrap Up'으로 실력 확인하기</h1>
                             <h2 onclick="playAudio('./media/audio/L01/023/L01_023_SELF_02.mp3', 'single');" class="active-purple">나의 실력을 확인해 봅시다.</h2>
-                            <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('')">다시하기</button>
+                              <span class="btn_list">
+                                  <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('')">다시하기</button>
+                              </span>
                             <section>
                               <article class="content_1">
                                 <ul>
@@ -617,7 +630,9 @@
                             <ul>
                               <li onclick="playAudio('./media/audio/L01/023/L01_023_SELF_12.mp3', 'single');" class="active-purple">
                                 가장 흥미로웠던 내용은 무엇인가요?
-                               <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('')">다시하기</button>
+                                  <span class="btn_list">
+                                      <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('')">다시하기</button>
+                                  </span>
                                <textarea></textarea>
                               </li>
                               <li onclick="playAudio('./media/audio/L01/023/L01_023_SELF_13.mp3', 'single');" class="active-purple">
