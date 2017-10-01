@@ -56,7 +56,8 @@ function playAudio(path, btnId, target, imgId, direction) {
                 oAudio.id = "myaudio";
                 oAudio.controls = false;
                 oAudio.src = path;
-                currentAudio = oAudio
+                currentAudio = oAudio;
+
 
                 var audioControls = document.createElement('div');
                 audioControls.className = 'audio_controls';
@@ -108,49 +109,55 @@ function playAudio(path, btnId, target, imgId, direction) {
                     var imgId = document.getElementById(imgId);
                     imgId.style.display='block';
                 }
-                if (oAudio.paused){
-                    oAudio.play();
-                }else{
-                    oAudio.pause();
-                    return;
-                }
+
+                $(oAudio).on('loadedmetadata', function() {
+                    if (oAudio.paused){
+                        oAudio.play();
+                    }else{
+                        oAudio.pause();
+                        return;
+                    }
+                });
                 return
             }else {
                 var oAudio = document.getElementById("myaudio");
                 var popup = document.querySelector(".audio-popup");
-                oAudio.addEventListener("timeupdate",updateProgress);
 
-                if (oAudio.paused && popup.style.display == "none") {
-                    var $target = $(target);
-                    // 팝업 위치
-
-                    if(direction == 'right'){
-                        popup.style.left = ($target.offset().left -216) + "px";
-                        popup.style.top = ($target.offset().top - 10) + "px";
-                    }
-                    else if(direction == "top"){
-                        popup.style.left = ($target.offset().left) + "px";
-                        popup.style.top = ($target.offset().top -42) + "px";
-                    }
-                    else{
-                        popup.style.left = ($target.offset().left + 28) + "px";
-                        popup.style.top = ($target.offset().top - 10) + "px";
-                    }
-                    popup.style.display='block';
-
-                    audioPlay();
-                }else {
-                    audioStop();
-                    popup.style.display='none';
-                }
-
-                oAudio.addEventListener("ended", function (e) {
-                    if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
-                        popup.style.display='none';
-                        oAudio.pause();
-                        oAudio.currentTime = 0;
-                    }
+                oAudio.addEventListener('loadedmetadata', function() {
+                    oAudio.addEventListener("timeupdate",updateProgress);
                 });
+            if (oAudio.paused && popup.style.display == "none") {
+                var $target = $(target);
+                // 팝업 위치
+
+                if(direction == 'right'){
+                    popup.style.left = ($target.offset().left -216) + "px";
+                    popup.style.top = ($target.offset().top - 10) + "px";
+                }
+                else if(direction == "top"){
+                    popup.style.left = ($target.offset().left) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
+                }
+                else{
+                    popup.style.left = ($target.offset().left + 28) + "px";
+                    popup.style.top = ($target.offset().top - 10) + "px";
+                }
+                popup.style.display='block';
+
+                audioPlay();
+            }else {
+                audioStop();
+                popup.style.display='none';
+            }
+
+            oAudio.addEventListener("ended", function (e) {
+                if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
+                    popup.style.display='none';
+                    oAudio.pause();
+                    oAudio.currentTime = 0;
+                }
+            });
+
             }
         }
         catch (e) {
@@ -168,9 +175,15 @@ function playAudio(path, btnId, target, imgId, direction) {
         $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
     }
     function audioStop(){
-        oAudio.pause();
-        oAudio.currentTime  = 0;
-        $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
+        try {
+            oAudio.pause();
+            oAudio.currentTime  = 0;
+            $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
+        }
+        catch (e) {
+            // Fail silently but show in F12 developer tools console
+            if(window.console && console.error("Error:" + e));
+        }
     }
     function audioClose(){
         popup.style.display='none';
@@ -202,7 +215,6 @@ function playAudio(path, btnId, target, imgId, direction) {
             currentFile = ""
         }
     });
-
 
     var progressBar = document.querySelector(".progress_bar");
     progressBar.addEventListener("click",function(e){
@@ -706,7 +718,6 @@ function showScriptPopupTopLeft(target, top, left){
     }
 
 }
-
 
 $(document).ready(function(){
     /**

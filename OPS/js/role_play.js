@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 function role_play(){
-    var checkbox = $("input[type=checkbox]");
+    var $btnPlaystop = $(".btn_playstop")
     var $btnTrns = $(".btn_rtrans");
     var $btnPlay =  $(".btn_rplay");
     var $btnPause =  $(".btn_rpause");
@@ -19,6 +19,7 @@ function role_play(){
     var $playerPanel =$(".player_panel");
     var $current = $selectPlayer.eq(0);
     var rpAudio = $("#pAudio").get(0);
+    var request;
 
     var selectedSide  = 'all';
     var timeLine = 2.69;
@@ -44,7 +45,7 @@ function role_play(){
 
     function initEvent(){
         // 오디오 이벤트
-        $(".btn_playstop").on("click",function(e){
+        $btnPlaystop.on("click",function(e){
             var btn = $(e.target);
             if(btn.hasClass("btn_rplay")){
                 playAudio()
@@ -61,23 +62,23 @@ function role_play(){
         $selectPlayer.click(function(e){
             var $this = $(this);
             var idx = $this.index();
-            if($current){
-                $current.removeClass("on");
-                $playerPanel.eq($current.index()).hide();
-            }
-            $this.addClass("on");
-            $playerPanel.eq(idx).show();
+
 
             // 해당 오디오 선택
             rpAudio.src = role_player_list[idx].audio;
             timeLine = role_player_list[idx].timeLine;
 
-            $current  = $this;
-
+            // 오디오 로드
             $(rpAudio).on('loadedmetadata', function() {
                 resetAudio();
+                if($current){
+                    $current.removeClass("on");
+                    $playerPanel.eq($current.index()).hide();
+                }
+                $this.addClass("on");
+                $playerPanel.eq(idx).show();
+                $current  = $this;
             });
-            //resetAudio();
         });
 
         // 체크박스 선택
@@ -155,7 +156,7 @@ function role_play(){
     }
 
     function checkSide(){
-        if(selectedSide == "sideA"){
+          if(selectedSide == "sideA"){
             if(rpAudio.currentTime <  timeLine){
                 rpAudio.muted = true
             }else{
@@ -194,15 +195,19 @@ function role_play(){
     }
 
     function stopAudio(){
-        rpAudio.pause();
-        rpAudio.currentTime = 0;
-        $controllBar.offset({
-            left:276
-        })
-        $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
-
+        try {
+            rpAudio.pause();
+            rpAudio.currentTime = 0;
+            $controllBar.offset({
+                left:276
+            })
+            $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
+        }
+        catch (e) {
+            // Fail silently but show in F12 developer tools console
+            if(window.console && console.error("Error:" + e));
+        }
     }
-
 
     function updateProgress(){
         var curX = (rpAudio.currentTime / rpAudio.duration * $progressBar.width()) + $progressBar.offset().left;
