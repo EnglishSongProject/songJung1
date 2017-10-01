@@ -149,11 +149,20 @@ input[type=checkbox].checkbox_3_b:checked, label.checkbox_3_b:before, input[type
 input[type=checkbox].checkbox_4_b:checked, label.checkbox_4_b:before, input[type=radio].radio_4_b:checked, label.radio_4_b:before{
     background: url(../images/common/num_04.png)  no-repeat 0 0;
 }
+input[type=radio].true_false.true:checked, label.true_false.true:before{
+    
+}
+input[type=radio].true_false.true:checked, label.true_false.true:before{
+
+}
 .bo_Q_1_s, .bo_Q_2_s{
     position: absolute;
     margin-top: 3px;
 }
 .bo_Q_2_s{
     margin-top: -1px;
+}
+.true_false{
+    display: block !important;
 }
 

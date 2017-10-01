@@ -35,4 +35,18 @@ $(document).ready(function () {
        $('.p23_text_pop_txt').css('display', 'block');
     });
 
+    var count = $('#self_check_ox_count').text();
+    var selfCheckClass='self_check_ox_';
+    for(var i=0; i<count;i++){
+        var selfCheckParam = selfCheckClass+i;
+        var clearForCheck = $('\.'+selfCheckParam);
+        console.log(clearForCheck);
+        $(clearForCheck).on('click', function () {
+            for(var y=0; y<2;y++){
+                $(clearForCheck).css('color', 'red');
+            }
+            $(this).css('color', 'red');
+        });
+    }
+
 });
