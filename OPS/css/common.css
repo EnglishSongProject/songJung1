@@ -169,6 +169,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /*class:hover*/
 .active-purple:hover {color: #9a01cd; }
+.active-blue:hover {color:#0101ff;}
 
 /*체크박스*/
 input[type=checkbox], input[type=radio] {
@@ -351,3 +352,8 @@ scriptPopup
 .btn_caption_kr_on{background-image: url(../images/common/player/player_controller_cap2_on.png); width: 60px; height: 25px;}
 .btn_script_off{background-image: url(../images/common/player/script_btn_on.png);width: 25px; height: 25px;}
 .btn_script_on{background-image: url(../images/common/player/script_btn_off.png);width: 25px; height: 25px;}
+
+
+/*정답체크*/
+.btn_check{background: url(../images/common/check.png); }
+.btn_check_answer{background: url(../images/common/check_answer.png);  }

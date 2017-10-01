@@ -35,5 +35,4 @@ $(document).ready(function () {
        $('.p23_text_pop_txt').css('display', 'block');
     });
 
-
 });

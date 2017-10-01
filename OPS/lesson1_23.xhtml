@@ -35,24 +35,29 @@
                         <span>[1-2]</span>
                         <p onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_01.mp3', 'single');">대화를 듣고, 물음에 답해 봅시다.</p>
                         <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_01_full.mp3','',this);">mp3전체듣기</button>
-                        <button type="button" class="btn_type_011" title="대화 내용보기" onclick="">대화내용보기</button>
+                        <button type="button" class="btn_type_02 btn_sp" title="대화 내용보기" onclick="">대화내용보기</button>
                         <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="btn_bochung1">보충</button>
                         <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim1">심화</button>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_1">
                         <div class="question">
                           <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_02.mp3', 'single');"><span>1</span>소민이가 소개하는 두 사람을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안"  id="p23_c1_q" onclick="checkBoxCheckForMulti('p23_c1_q', 'p23_c1_o_a', '1+2' );">답안</button>
                         </div>
                         <img src="images/23/no.1.png" alt="no.1 boy" id="boy1" />
-                        <img src="images/23/no.2.png" alt="no.2 girl" id="girl1" />
+                          <img src="images/23/no.2.png" alt="no.2 girl" id="girl1" />
                         <img src="images/23/no.3.png" alt="no.3 boy" id="boy2" />
                         <img src="images/23/no.4.png" alt="no.4 girl" id="girl2" />
-                        <dl class="number">
-                          <dt>①</dt>
-                          <dt>②</dt>
-                          <dt>③</dt>
-                          <dt>④</dt>
+                        <dl class="number"><!--23-->
+                          <dt><input type="checkbox" id="p23_c1_o" class="correct checkbox_1_b" name="p23_c1_o_a"/>
+                              <label for="p23_c1_o" class="checkbox_1_b"></label></dt>
+                          <dt><input type="checkbox"  id="p23_c2_o" class="correct checkbox_2_b" name="p23_c1_o_a"/>
+                              <label for="p23_c2_o" class="checkbox_2_b"></label></dt>
+                          <dt><input type="checkbox"  id="p23_c3_o" class="correct checkbox_3_b" name="p23_c1_o_a"/>
+                              <label for="p23_c3_o" class="checkbox_3_b"></label></dt>
+                          <dt><input type="checkbox"  id="p23_c4_o" class="correct checkbox_4_b" name="p23_c1_o_a"/>
+                              <label for="p23_c4_o" class="checkbox_4_b"></label>
+                          </dt>
                           <dd>Brian,<br/> New Zealand</dd>
                           <dd>Sora, 14</dd>
                           <dd>Brian,<br/> Canada</dd>
@@ -104,28 +109,46 @@
                       <div class="questionBox question_4">
                         <div class="question">
                           <p class="question_4 active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_06.mp3', 'single');"><span>4</span>빈칸에 알맞은 낱말을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                          <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('');">다시하기</button>
+                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안"  id="p23_r1_q" onclick="checkBoxCheckForMulti('p23_r1_q', 'p23_r1_o_a', '2' );">답안</button>
                         </div>
                         <input type="checkbox" id="no.1" />
                         <dl class="number">
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_11.mp3', 'single');"><span>①</span>be</dt>
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_12.mp3', 'single');"><span>②</span>take</dt>
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_13.mp3', 'single');"><span>③</span>introduce</dt>
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_14.mp3', 'single');"><span>④</span>meet</dt>
+                            <dt><input type="radio" id="p23_r1_o" class="correct radio_1_b" name="p23_r1_o_a"/>
+                                <label for="p23_r1_o" class="radio_1_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_11.mp3', 'single');">be</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r2_o" class="correct radio_2_b" name="p23_r1_o_a"/>
+                                <label for="p23_r2_o" class="radio_2_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_12.mp3', 'single');">take</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r3_o" class="correct radio_3_b" name="p23_r1_o_a"/>
+                                <label for="p23_r3_o" class="radio_3_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_13.mp3', 'single');">introduce</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r4_o" class="correct radio_4_b" name="p23_r1_o_a"/>
+                                <label for="p23_r4_o" class="radio_4_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_14.mp3', 'single');">introduce</span>
+                            </dt>
                         </dl>
                       </div><!--questionBox-->
                       <div class="questionBox question_5">
                         <div class="question">
                           <p class="question_4 active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_07.mp3', 'single');"><span>5</span>윗글의 다음에 이어질 상황으로 알맞은 것을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                          <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q2" onclick="checkBoxCheckForMulti('p23_r1_q2', 'p23_r1_o_a2', '0' );">답안</button>
                         </div>
                         <dl class="number">
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_08.mp3', 'single');"><span>①</span>학생들이 자신을 소개한다.</dt>
+                            <dt><input type="radio" id="p23_r1_o2" class="correct radio_1_b" name="p23_r1_o_a2"/>
+                                <label for="p23_r1_o2" class="radio_1_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_08.mp3', 'single');">학생들이 자신을 소개한다.</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r2_o2" class="correct radio_2_b" name="p23_r1_o_a2"/>
+                                <label for="p23_r2_o2" class="radio_2_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_09.mp3', 'single');">학생들이 선생님에게 질문한다.</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r3_o2" class="correct radio_3_b" name="p23_r1_o_a2"/>
+                                <label for="p23_r3_o2" class="radio_3_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_10.mp3', 'single');">영어 수업이 시작된다.</span>
+                            </dt>
+                            <dt><input type="radio"  id="p23_r4_o2" class="correct radio_4_b" name="p23_r1_o_a2"/>
+                                <label for="p23_r4_o2" class="radio_4_b"></label><span class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_11.mp3', 'single');">선생님이 학생들에게 케이크를 준다.</span>
+                            </dt>
+<!--                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_08.mp3', 'single');"><span>①</span>학생들이 자신을 소개한다.</dt>
                           <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_09.mp3', 'single');"><span>②</span>학생들이 선생님에게 질문한다.</dt>
                           <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_10.mp3', 'single');"><span>③</span>영어 수업이 시작된다.</dt>
-                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_11.mp3', 'single');"><span>④</span>선생님이 학생들에게 케이크를 준다.</dt>
+                          <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_11.mp3', 'single');"><span>④</span>선생님이 학생들에게 케이크를 준다.</dt>-->
                         </dl>
                       </div><!--questionBox-->
                       <div class="Subtit_Wrap">
@@ -392,13 +415,21 @@
                     <div class="subtit_wrap">
                       <img src="images/23/bo_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">대화에 나오지 않는 사람을 골라 봅시다.</p>
-                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q3" onclick="checkBoxCheckForMulti('p23_r1_q3', 'p23_r1_o_a3', '3' );">답안</button>
                     </div>
                     <ul class="bo_Q_1">
-                      <li><span>①</span>소민</li>
-                      <li><span>②</span>소라</li>
-                      <li><span>③</span>Brian</li>
-                      <li><span>④</span>Billy</li>
+                        <li><input type="radio" id="p23_r1_o3" class="correct radio_1_b" name="p23_r1_o_a3"/>
+                            <label for="p23_r1_o3" class="radio_1_b"></label><span class="bo_Q_1_s">소민</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r2_o3" class="correct radio_2_b" name="p23_r1_o_a3"/>
+                            <label for="p23_r2_o3" class="radio_2_b"></label><span class="bo_Q_1_s">소라</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r3_o3" class="correct radio_3_b" name="p23_r1_o_a3"/>
+                            <label for="p23_r3_o3" class="radio_3_b"></label><span class="bo_Q_1_s">Brian</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r4_o3" class="correct radio_4_b" name="p23_r1_o_a3"/>
+                            <label for="p23_r4_o3" class="radio_4_b"></label><span class="bo_Q_1_s">Billy</span>
+                        </li>
                     </ul>
 
                   </div>
@@ -412,13 +443,21 @@
                     <div class="subtit_wrap">
                       <img src="images/23/bo_subtit_img.png" alt="말풍선" />
                     	<p class="subtit">본문 내용과 일치하는 것은?</p>
-                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                      <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p23_r1_q4" onclick="checkBoxCheckForMulti('p23_r1_q4', 'p23_r1_o_a4', '3' );">답안</button>
                     </div>
                     <ul class="bo_Q_2">
-                      <li><span>①</span>오늘은 두 번째 영어 수업 시간이다.</li>
-                      <li><span>②</span>학생들은 치즈케이크를 좋아한다.</li>
-                      <li><span>③</span>선생님의 이름은 알 수 없다.</li>
-                      <li><span>④</span>자기소개를 하는 시간이다.</li>
+                        <li><input type="radio" id="p23_r1_o4" class="correct radio_1_b" name="p23_r1_o_a4"/>
+                            <label for="p23_r1_o4" class="radio_1_b"></label><span class="bo_Q_2_s">오늘은 두 번째 영어 수업 시간이다.</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r2_o4" class="correct radio_2_b" name="p23_r1_o_a4"/>
+                            <label for="p23_r2_o4" class="radio_2_b"></label><span class="bo_Q_2_s">학생들은 치즈케이크를 좋아한다.</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r3_o4" class="correct radio_3_b" name="p23_r1_o_a4"/>
+                            <label for="p23_r3_o4" class="radio_3_b"></label><span class="bo_Q_2_s">선생님의 이름은 알 수 없다.</span>
+                        </li>
+                        <li><input type="radio"  id="p23_r4_o4" class="correct radio_4_b" name="p23_r1_o_a4"/>
+                            <label for="p23_r4_o4" class="radio_4_b"></label><span class="bo_Q_2_s">자기소개를 하는 시간이다.</span>
+                        </li>
                     </ul>
 
                   </div>
