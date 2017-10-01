@@ -134,6 +134,7 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /* 버튼간격 */
 .btn_list {position: relative; display: inline-block; margin-left:5px !important;}
+.btn_list button {vertical-align: middle}
 
 /* 슬라이드 버튼 */
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}

@@ -12,12 +12,11 @@ section .Subtit_Wrap{overflow:hidden;padding:25px 0 0 0;height:40px;line-height:
 section .Subtit_Wrap img,
 section .Subtit_Wrap span,
 section .Subtit_Wrap p,
-section .Subtit_Wrap button{float:left}
+.btn_add_list button {float:left}
 section .Subtit_Wrap img{margin-right:10px;}
 section .Subtit_Wrap span{font-family: 'Open Sans';color:#85868A;margin-right:10px;font-size:13px;}
-section .Subtit_Wrap p{font-family: 'Open Sans';margin-right:10px;font-size:13px;}
+section .Subtit_Wrap p{font-family: 'Open Sans';font-size:13px;}
 section .Subtit_Wrap p:hover{color:#991869}
-section .Subtit_Wrap button{margin-right:10px;margin-top:-2px;}
 button.btn_bochung,
 button.btn_simhwa{position: relative; display:inline-block;width:37px;height:28px;background-size:cover;cursor: pointer;text-indent:-9999px;margin-top:-7px !important;}
 button.btn_bochung{background-image: url("../images/23/05.png");margin-left:175px;}
@@ -30,8 +29,7 @@ dl dt span:hover{color:black;}
 /*section1*/
 .questionBox{position:relative;}
 .questionBox .question{overflow:hidden;margin-bottom:10px;}
-.questionBox .question p,
-.questionBox .question button{float:left;}
+.questionBox .question p{float:left;}
 .questionBox .question p{font-family: 'Open Sans';font-size:13px;}
 .questionBox .question button{}
 .questionBox .question span,
@@ -40,7 +38,6 @@ dl dt span:hover{color:black;}
 
 /*문제1*/
 .questionBox.question_1{height:210px;}
-.questionBox.question_1 p{margin-right:10px;}
 .questionBox img#boy1{top:45px;left:98px;}
 .questionBox img#girl1{top:45px;left:253px;}
 .questionBox img#boy2{top:45px;left:398px;}
@@ -65,7 +62,6 @@ dl dt span:hover{color:black;}
 .questionBox p.red2{left:263px;}
 .questionBox p.question_2_Q{margin-top:10px;}
 .questionBox p.question_2_A input{border-bottom:1px solid black;margin:0 5px;width:80px;}
-.questionBox.question_2 p{padding-right: 10px;}
 
 /*문제3*/
 .questionBox.question_3{height:180px;}
@@ -125,3 +121,4 @@ section.btnWrap{position:absolute;bottom:100px;right:50px;}
 .btn_rating{background-image: url(../images/23/03.png);}
 .btn_game{background-image: url(../images/23/02.png);}
 .btn_word_1{background-image: url(../images/23/04.png);}
+

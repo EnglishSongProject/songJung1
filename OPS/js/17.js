@@ -1,11 +1,9 @@
 $(document).ready(function(){
 	"use strict";
-     $(".btntrans_1").on("click", function(){
-         $(".transfer_t").toggle();
-     });
-	 $(".btntrans_2").on("click", function(){
-         $(".transfer_b").toggle();
-     });
+    $(".btn_trans").on("click", function(){
+        $(this).parent().parent().next('.correct').toggle();
+        console.log('a')
+    });
 	// $(".btn_wd").on("click", function(){
     //     $(".txt01").toggle();
     // });

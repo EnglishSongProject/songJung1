@@ -27,3 +27,4 @@
 .sp_box ul li > span:hover{color: #9a01cd; }
 .btn_bottom {position: absolute; right:50px; bottom:50px}
 .btn_bottom button {display: block;margin-bottom:10px;}
+.intro .btn_list {vertical-align: middle}

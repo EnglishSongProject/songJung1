@@ -34,15 +34,21 @@
                         <img class="Subtit" src="images/23/listen.png" alt="listen image" />
                         <span>[1-2]</span>
                         <p onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_01.mp3', 'single');">대화를 듣고, 물음에 답해 봅시다.</p>
-                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_01_full.mp3','',this);">mp3전체듣기</button>
-                        <button type="button" class="btn_type_011" title="대화 내용보기" onclick="">대화내용보기</button>
-                        <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="btn_bochung1">보충</button>
-                        <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim1">심화</button>
+                          <span class="btn_list">
+                              <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_01_full.mp3','',this);">mp3전체듣기</button>
+                               <button type="button" class="btn_type_011" title="대화 내용보기" onclick="">대화내용보기</button>
+                          </span>
+                          <span class="btn_add_list">
+                              <button type="button" class="btn_bochung marginL mr_5" title="보충" onclick="" id="btn_bochung1">보충</button>
+                              <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim1">심화</button>
+                          </span>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_1">
                         <div class="question">
                           <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_02.mp3', 'single');"><span>1</span>소민이가 소개하는 두 사람을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                            <span class="btn_list" style="padding-left:0">
+                                <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                            </span>
                         </div>
                         <img src="images/23/no.1.png" alt="no.1 boy" id="boy1" />
                         <img src="images/23/no.2.png" alt="no.2 girl" id="girl1" />
@@ -62,7 +68,9 @@
                       <div class="questionBox question_2">
                           <div class="question">
                             <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_03.mp3', 'single');"><span>2</span>대화 내용과 일치하도록 빈칸을 완성해 봅시다.</p>
-                            <button type="button" class="btn_type_02 btn_answer" id="byr_a_q" title="예시 답안" onclick="blankCheckByCss('byr_a_q','pretty+good','p23_2_1+p23_2_2');">답안</button>
+                              <span class="btn_list" style="padding:0px">
+                                   <button type="button" class="btn_type_02 btn_answer" id="byr_a_q" title="예시 답안" onclick="blankCheckByCss('byr_a_q','pretty+good','p23_2_1+p23_2_2');">답안</button>
+                              </span>
                           </div>
                           <p class="question_2_Q active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_02_01.mp3', 'single');"><span>Q:</span> How is Somin doing today?</p>
                           <p class="question_2_A active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_02_02.mp3', 'single');"><span>A:</span> She is <input type="text" id="p23_2_1" name="p23_clear_text" maxlength="10" /><input id="p23_2_2" type="text" name="p23_clear_text" maxlength="6" />today.</p>
@@ -72,7 +80,9 @@
                       <div class="Subtit_Wrap">
                         <img class="Subtit" src="images/23/speak.png" alt="listen image" />
                         <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_04.mp3', 'single');"><span class="orange">3</span>남자아이의 말에 적절한 응답을 해 봅시다.</p>
-                        <button type="button" class="btn_type_02 btn_answer" id="byr_b_q" title="예시 답안" onclick="blankCheckByCss('byr_b_q', 'p23_3_a', 'p23_3')">답안</button>
+                        <span class="btn_list">
+                             <button type="button" class="btn_type_02 btn_answer" id="byr_b_q" title="예시 답안" onclick="blankCheckByCss('byr_b_q', 'p23_3_a', 'p23_3')">답안</button>
+                        </span>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_3">
                         <img src="images/23/boy.png" alt="boy" id="brownboy" />
@@ -89,7 +99,9 @@
                         <img class="Subtit" src="images/23/read.png" alt="listen image" />
                         <span>[4-5]</span>
                         <p onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_05.mp3', 'single');">다음 글을 읽고, 물음에 답해 봅시다.</p>
-                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_full.mp3','',this);">mp3전체듣기</button>
+                          <span class="btn_list">
+                            <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/023/L01_023_wrap_04_full.mp3','',this);">mp3전체듣기</button>
+                          </span>
                         <button type="button" class="btn_bochung" title="보충" onclick="" id="btn_bochung2">보충</button>
                         <button type="button" class="btn_simhwa" title="심화" onclick=""  id="btn_sim2">심화</button>
                       </div><!--Subtit_Wrap-->
@@ -104,8 +116,10 @@
                       <div class="questionBox question_4">
                         <div class="question">
                           <p class="question_4 active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_06.mp3', 'single');"><span>4</span>빈칸에 알맞은 낱말을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                          <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('');">다시하기</button>
+                            <span class="btn_list" style="padding-left:0">
+                                 <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('');">다시하기</button>
+                            </span>
                         </div>
                         <input type="checkbox" id="no.1" />
                         <dl class="number">
@@ -118,8 +132,10 @@
                       <div class="questionBox question_5">
                         <div class="question">
                           <p class="question_4 active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_07.mp3', 'single');"><span>5</span>윗글의 다음에 이어질 상황으로 알맞은 것을 골라 봅시다.</p>
-                          <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
-                          <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+                            <span class="btn_list" style="padding-left:0">
+                                <button type="button" class="btn_type_02 btn_answer" title="예시 답안">답안</button>
+                                <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p21_clear_text');">다시하기</button>
+                            </span>
                         </div>
                         <dl class="number">
                           <dt class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_08.mp3', 'single');"><span>①</span>학생들이 자신을 소개한다.</dt>
@@ -131,9 +147,11 @@
                       <div class="Subtit_Wrap">
                         <img class="Subtit" src="images/23/speak.png" alt="listen image" />
                         <p class="active-purple" onclick="playAudio('./media/audio/L01/023/L01_023_wu_kor_12.mp3', 'single');"><span class="orange">6</span>반 친구 중 한 명을 골라 소개해 봅시다.</p>
-                        <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('p23_clear_text');">다시하기</button>
-                        <button type="button" class="btn_bochung" title="보충" onclick="" id="btn_bochung3">보충</button>
-                        <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim3">심화</button>
+                          <span class="btn_list">
+                               <button type="button" class="btn_type_02 btn_repeat ml_10" title="다시하기" onclick="textClearByNames('p23_clear_text');">다시하기</button>
+                                <button type="button" class="btn_bochung" title="보충" onclick="" id="btn_bochung3">보충</button>
+                                <button type="button" class="btn_simhwa" title="심화" onclick="" id="btn_sim3">심화</button>
+                          </span>
                       </div><!--Subtit_Wrap-->
                       <div class="questionBox question_6">
                         <textarea name="p23_clear_text" rows="3" maxlength=""></textarea>
