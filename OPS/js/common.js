@@ -388,13 +388,11 @@ var imageSlide = {
                 $(".audio-popup").hide().detach();
                 currentFile = ''
             }
-
             if($('.single').length){
                 $('.single').detach()
             }
     }
-}
-
+};
 
 function blankCheck(questionId, Ids, answers){
 
