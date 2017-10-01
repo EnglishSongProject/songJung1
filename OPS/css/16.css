@@ -8,8 +8,8 @@
 .top,.bottom{padding-left: 20px}
 .top{ margin-left: 262px;margin-top: 27px;width: 300px; height: 300px;}
 .bottom{ margin-left: 122px;margin-top: 25px;width: 300px; height: 250px;}
-.transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 177px; left: 334px;}
-.transper_b{display: none;position: absolute;width: 350px;height: 0px; top: 534px; left: 196px;}
+.transper_t{display: none; position: absolute;width: 300px;height: 0px; top: 180px; left: 334px;}
+.transper_b{display: none;position: absolute;width: 350px;height: 0px; top: 504px; left: 196px;}
 .transper_t p,.transper_b p{font: 11px 'Open Sans'; font-weight: 700; line-height: 38px;}
 
 /*해석보기*/
@@ -22,27 +22,13 @@ cursor: pointer;}
 .btn_mp3_a.b_top{top:20px; left:279px;}
 .btn_mp3_a.b_bottom{top:20px; left:140px;}
 
-/*label-commom파일 스타일제거*/
-input[type=checkbox] + label:before{display:none}
-input[type=checkbox] + label{padding-left: 0;}
-
-label.l_top {position: absolute;top:28px;left: 285px;}
-label.l_bottom{position: absolute;top:28px;left: 146px;}
-
-.top span,.bottom span{font-family: 'Nanum Gothic';font-size: 9px; position: absolute;display: block;}
-.top span{top: 319px;right: 130px}
-.bottom span{bottom: 367px;right: 300px;}
-
-
 /*aks and answer*/
-.ask_and_speak{position: relative;padding-top: 90px;padding-left: 284px;font-family: 'Open Sans';font-size: 13px;}
+.ask_and_speak{position: absolute; top: 862px; left: 335px; font-family: 'Open Sans'; font-size: 13px;}
 .ask_and_speak img{margin-top: -15px;}
 .ask_and_speak #a_text{position: absolute;margin-left: 175px;width: 175px;padding: 3px;display: none;margin-top: -2px;border: 1px solid #999;}
 #answer_check:checked ~ #a_text{display: block;}
 
-
 .ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
-.ask_and_speak ul li{float: left;}
 
 input[type=checkbox].ask_check{display: none;}
 input[type=checkbox] + label{margin-right: 0}
@@ -53,31 +39,7 @@ input[type=checkbox]#aa_ask4:checked ~ #aa_answer4,
 input[type=checkbox]#aa_ask5:checked ~ #aa_answer5,
 input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 
-
-.ask_and_speak .ask{position:absolute; top:153px;padding-right:5px;z-index: 10;}
-.ask_and_speak .ask label{padding-right: 14px; display: inline-block;cursor: pointer;}
-
-.ask_and_speak div.answer{display:none; position:relative;}
-.ask_and_speak div.answer{position: absolute;display:inline-block;background: #d0c156;padding: 3px 14px; text-align: center;padding-bottom: 20px;height:5px;bottom:25px;}
-.ask_and_speak div.answer:after{content: '';
-    position: absolute;
-    border-top: 10px solid #d0c156;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    bottom: -9px;
-    left: 50%;
-    margin-left: -5px;}
-.ask_and_speak div#aa_answer1{left:-8px; display: none}
-.ask_and_speak div#aa_answer2{left:53px; display: none}
-.ask_and_speak div#aa_answer3{left:115px; display: none}
-.ask_and_speak div#aa_answer4{left:146px; display: none}
-.ask_and_speak div#aa_answer5{left:239px; display: none}
-.ask_and_speak div#aa_answer6{right:4px; display: none}
-
-.ask li {
-    margin-right: 17px;
-    margin-top: 12px;
-}
+.ask li { display: inline-block; margin-right: 17px; margin-top: 12px;}
 
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
 
@@ -86,14 +48,14 @@ input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 #answer_btn{cursor: pointer;}
 
 .wpopup {position: absolute; width:92px; height:20px;  text-align: left; color:#339900; font: 11px 'Open Sans';font-weight: 700;}
-.pop_ask1 {top:188px; left:291px;}
-.pop_ask2 {top:188px; left:350px;}
-.pop_ask3 {top:188px; left:425px;}
-.pop_ask4 {top:188px; left:478px;}
-.pop_ask5 {top:188px; left:536px;}
-.pop_ask6 {top:188px; left:587px;}
+.pop_ask1 {top: 77px; left: 7px;}
+.pop_ask2 {top: 77px; left: 70px;}
+.pop_ask3 {top: 77px; left: 145px;}
+.pop_ask4 {top: 77px; left: 201px;}
+.pop_ask5 {top: 77px; left: 267px;}
+.pop_ask6 {top: 77px; left: 321px;}
 .btn_list {position: relative; top:-8px; margin-left:10px }
 
 /* ask & answer */
-#aa_input {position: relative; top: 24px; width: 172px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; z-index: 999;  font-family: 'Open Sans'; font-size: 13px; }
+#aa_input {position: relative; top: 24px; width:120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; z-index: 999;  font-family: 'Open Sans'; font-size: 13px; }
 #aa_aws {position: absolute; top: 142px; left: 476px; width:180px; color:#f00; display: none; }

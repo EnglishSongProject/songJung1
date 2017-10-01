@@ -17,10 +17,12 @@
             <h1 class="page_tit">
                 Reading time
             </h1>
-            <button type="button" class="btn_type_02 btn_mp3_a b_top" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/add/L01_016_RT_01.mp3','',this);">mp3전체듣기</button>
-            <input type="checkbox" id="btn_top"></input>
-            <label for="btn_top" class="btn_type_02 btn_trans l_top"></label>
+
             <div class="top" style ="position:relative;z-index:100">
+                <span class="btn_list">
+                     <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/add/L01_016_RT_01.mp3','',this);">mp3전체듣기</button>
+                    <button type="button" class="btn_type_02 btn_trans" id="btn_top" title="번역">번역</button>
+                </span>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_01.mp3', 'single');">Here’s my name tent.</p>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_02.mp3', 'single');">My name is Kang Hosik.</p>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_03.mp3', 'single');">I like cookies and doughnuts.</p>
@@ -29,7 +31,7 @@
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_06.mp3', 'single');">Now it’s your turn.</p>
                 <span>5</span>
             </div>
-            <div class="transper_t color-green">
+            <div class="transper_t color-green correct">
                 <p>
                     여기 제 네임 텐트가 있어요.<br/>
                     제 이름은 강호식입니다.<br/>
@@ -39,10 +41,11 @@
                     이제 여러분 차례에요.
                 </p>
             </div>
-            <button type="button" class="btn_type_02 btn_mp3_a b_bottom" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/add/L01_016_RT_02.mp3','',this);">mp3전체듣기</button>
-            <input type="checkbox" id="btn_bottom"></input>
-            <label for="btn_bottom" class="btn_type_02 btn_trans l_bottom"></label>
             <div class="bottom"  style ="position:relative;z-index:100">
+                <span class="btn_list">
+                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/016/add/L01_016_RT_02.mp3','',this);">mp3전체듣기</button>
+                <button type="button" class="btn_type_02 btn_trans" id="btn_bottom" title="번역">번역</button>
+            </span>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_07.mp3', 'single');">My name is Song Ara.</p>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_08_01.mp3', 'single');">I am active.</p>
                 <p class="active-purple" onclick="playAudio('./media/audio/L01/016/L01_016_read_02_08_02.mp3', 'single');">I like taking trips and camping.</p>
@@ -51,7 +54,7 @@
                 <span>10</span>
             </div>
 
-            <div class="transper_b color-green">
+            <div class="transper_b color-green correct">
                 <p>
                     제 이름은 송아라입니다.<br/>
                     저는 활동적입니다.<br/>
@@ -64,8 +67,8 @@
               <img src="images/16/AA.png" alt="ask_and_answer"/>
               <input type="checkbox" id="answer_check"/>
               <span class="btn_list">
-                    <button type="button" class="btn_type_02 btn_write" title="쓰기" id="aa_wr"></button>
-                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="aa_q" onclick="blankCheckByCss('aa_q', 'aa_aws', 'aa_input');"></button>
+                    <button type="button" class="btn_type_02 btn_write" title="쓰기" id="aa_wr">쓰기</button>
+                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="aa_q" onclick="blankCheckByCss('aa_q', 'aa_aws', 'aa_input');">답안</button>
                 </span>
                 <input type="text" id="aa_input" />
                 <span id="aa_aws">Her nickname is song Navi</span>

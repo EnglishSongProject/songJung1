@@ -1,123 +1,139 @@
-
 $(document).ready(function(){
     $(".btn_role").on("click",function(){
         $(".role_play").show();
-    })
-
-    $(".role_play .btn_close").on("click",function(){
-        $(".role_play").hide();
-    })
-
+    });
     role_play()
-})
+});
 
 function role_play(){
     var checkbox = $("input[type=checkbox]");
-    var $btnTrns = $(".btn_trans");
-    var $btnPlay =  $(".r_btn_play");
-    var $btnPause =  $(".btn_pause");
-    var $btnStop =  $(".btn_stop");
+    var $btnTrns = $(".btn_rtrans");
+    var $btnPlay =  $(".btn_rplay");
+    var $btnPause =  $(".btn_rpause");
+    var $btnStop =  $(".btn_rstop");
 
-    var $progressBar = $(".progress_bar");
-    var $controllBar = $(".controll_bar");
-
+    var $progressBar = $(".progress_rbar");
+    var $controllBar = $(".controll_rbar");
     var $interpret = $(".interpret");
     var $selectPlayer = $(".player_img span");
     var $playerPanel =$(".player_panel");
     var $current = $selectPlayer.eq(0);
     var rpAudio = $("#pAudio").get(0);
-    var audioList = [
-        "./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3",
-        "./media/audio/L01/010/add/L01_010_LS1_add_03_b.mp3",
-        "./media/audio/L01/010/add/L01_010_LS1_add_03_c.mp3",
-        "./media/audio/L01/010/add/L01_010_LS1_add_03_d.mp3"
-    ]
-    rpAudio.src = audioList[0];
 
-    // 체크박스
-    // $("input[type=checkbox]").on("click",function(){
-    //
-    // })
-
-
-    // 해석 온오프
-    $btnTrns.on("click",function(){
-        var $this = $(this)
-        var $current = null;
-        if($this.hasClass("trans_off")){
-            $this.removeClass("trans_off").addClass("trans_on")
-            $interpret.css({
-                display: "block"
-            })
-        }else if($this.hasClass("trans_on")){
-            $this.removeClass("trans_on").addClass("trans_off")
-            $interpret.css({
-                display: "none"
-            })
+    var selectedSide  = 'all';
+    var timeLine = 2.69;
+    var role_player_list = [
+        {
+            audio: "./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3",
+            timeLine: 2.69
+        },
+        {
+            audio: "./media/audio/L01/010/add/L01_010_LS1_add_03_b.mp3",
+            timeLine: 2.50
+        },
+        {
+            audio:  "./media/audio/L01/010/add/L01_010_LS1_add_03_c.mp3",
+            timeLine: 2.60
+        },
+        {
+            audio:  "./media/audio/L01/010/add/L01_010_LS1_add_03_d.mp3",
+            timeLine: 2.19
         }
-    })
-
-    // 플레이어 선택
-    $selectPlayer.click(function(e){
-        var $this = $(this);
-        var idx = $this.index();
-        if($current){
-            $current.removeClass("on");
-            $playerPanel.eq($current.index()).hide();
-        }
-        $this.addClass("on");
-        $playerPanel.eq(idx).show();
-        rpAudio.src = audioList[idx];
-        stopAudio();
-        $current  = $this;
-    })
-
-    $(".btn_play_toggle").on("click",function(e){
-        var btn = $(e.target);
-        if(btn.hasClass("r_btn_play")){
-            playAudio()
-        }else if(btn.hasClass("btn_pause")){
-            pauseAudio()
-        }
-    });
-
-    $btnStop.on("click",function(){
-        stopAudio();
-    })
-
-    function playAudio(){
-        rpAudio.play()
-        $(".btn_play_toggle").removeClass("r_btn_play").addClass("btn_pause")
-    }
-
-    function pauseAudio(){
-        rpAudio.pause();
-        $(".btn_play_toggle").removeClass("btn_pause").addClass("r_btn_play")
-    }
-
-    function stopAudio(){
-        rpAudio.pause();
-        rpAudio.currentTime = 0;
-
-        $(".btn_play_toggle").removeClass("btn_pause").addClass("r_btn_play");
-        $controllBar.offset({
-            left:276
-        })
-    }
-
-    rpAudio.addEventListener("timeupdate",updateProgress);
-    rpAudio.addEventListener("ended", function (e) {
-        stopAudio();
-    });
+    ];
+    var checkbox = document.querySelectorAll("input[type=checkbox]");
 
     function initEvent(){
+        // 오디오 이벤트
+        $(".btn_playstop").on("click",function(e){
+            var btn = $(e.target);
+            if(btn.hasClass("btn_rplay")){
+                playAudio()
+            }else if(btn.hasClass("btn_rpause")){
+                pauseAudio()
+            }
+        });
+
+        $btnStop.on("click",function(){
+            stopAudio();
+        });
+
+        // 플레이어 선택
+        $selectPlayer.click(function(e){
+            var $this = $(this);
+            var idx = $this.index();
+            if($current){
+                $current.removeClass("on");
+                $playerPanel.eq($current.index()).hide();
+            }
+            $this.addClass("on");
+            $playerPanel.eq(idx).show();
+
+            // 해당 오디오 선택
+            rpAudio.src = role_player_list[idx].audio;
+            timeLine = role_player_list[idx].timeLine;
+
+            $current  = $this;
+
+            $(rpAudio).on('loadedmetadata', function() {
+                resetAudio();
+            });
+            //resetAudio();
+        });
+
+        // 체크박스 선택
+        for(var i=0; i < checkbox.length; i++){
+            checkbox[i].addEventListener("change",function(){
+                if(this.checked == true){
+                    for(var i=0; i< checkbox.length; i++){
+                        checkbox[i].checked = false
+                    }
+                    this.checked = true
+                }else{
+                    this.checked = false
+                }
+                stopAudio();
+
+                //어느 플레이어가 선택되었는지 체크
+                for(var i=0; i < checkbox.length; i++){
+                    if(checkbox[i].checked){
+                        selectedSide = checkbox[i].id;
+                    break;
+                    }
+                    selectedSide = "all"
+                }
+                console.log(selectedSide)
+            })
+        }
+
+        //  진행바 클릭시 해당부분으로 이동
         $progressBar.on("click",function(e){
             var moveX = e.pageX -  $controllBar.width() / 2
             $controllBar.offset({
                 left:moveX
-            })
+            });
             rpAudio.currentTime = getCerrentTime(moveX)
-        })
+        });
+
+        // 해석 온오프
+        $btnTrns.on("click",function(){
+            var $this = $(this);
+            if($this.hasClass("trans_off")){
+                $this.removeClass("trans_off").addClass("trans_on")
+                $interpret.css({
+                    display: "block"
+                })
+            }else if($this.hasClass("trans_on")){
+                $this.removeClass("trans_on").addClass("trans_off")
+                $interpret.css({
+                    display: "none"
+                })
+            }
+        });
+
+        rpAudio.addEventListener("timeupdate",updateProgress);
+        rpAudio.addEventListener("ended", function (e) {
+            stopAudio();
+        });
 
         /* 마우스 드래그, 터치 이벤트 */
         $controllBar.get(0).addEventListener('mousedown', mouseDown, false);
@@ -125,14 +141,76 @@ function role_play(){
 
         window.addEventListener('mouseup', mouseUp, false);
         window.addEventListener('touchend', mouseUp, false);
+
+        // 팝업창 닫을 때 오디오 초기화, 첫번째 플레이어 선택, 해석끄기, 팝업창 숨기기
+        $(".role_play .btn_close").on("click",function(){
+            resetAudio();
+            $selectPlayer.eq(0).click();
+            $btnTrns.removeClass("trans_on").addClass("trans_off")
+            $interpret.css({
+                display: "none"
+            });
+            $(".role_play").hide();
+        })
     }
+
+    function checkSide(){
+        if(selectedSide == "sideA"){
+            if(rpAudio.currentTime <  timeLine){
+                rpAudio.muted = true
+            }else{
+                rpAudio.muted = false
+            }
+        }else if(selectedSide == "sideB"){
+            if( rpAudio.currentTime  > timeLine){
+                rpAudio.muted = true
+            }else{
+                rpAudio.muted = false
+            }
+
+        }else if(selectedSide == "all"){
+            rpAudio.muted = false
+        }
+    }
+
+    // 초기화
+    function resetAudio(){
+        stopAudio();
+        selectedSide = "all";
+        for(var i=0; i< checkbox.length; i++){
+            checkbox[i].checked = false
+        }
+    }
+
+    // 오디오 관련 함수
+    function playAudio(){
+        rpAudio.play();
+        $(".btn_playstop").removeClass("btn_rplay").addClass("btn_rpause");
+    }
+
+    function pauseAudio(){
+        rpAudio.pause();
+        $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay")
+    }
+
+    function stopAudio(){
+        rpAudio.pause();
+        rpAudio.currentTime = 0;
+        $controllBar.offset({
+            left:276
+        })
+        $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
+
+    }
+
 
     function updateProgress(){
         var curX = (rpAudio.currentTime / rpAudio.duration * $progressBar.width()) + $progressBar.offset().left;
         $controllBar.offset({
             left:curX
-        })
-        console.log(rpAudio.currentTime)
+        });
+
+       checkSide();
     }
 
     /*drag , 터치 관련 함수*/
@@ -159,11 +237,12 @@ function role_play(){
 
             // change current time
             posX -=  $('.controll_bar').width() / 2;
-            rpAudio.currentTime = getCerrentTime(posX)
+            rpAudio.currentTime = getCerrentTime(posX);
             rpAudio.addEventListener("timeupdate",updateProgress,false);
         }
         activeControl = false;
     }
+
     function moveControll(event){
         var moveX = 0;
         if (event.touches) {
@@ -191,8 +270,5 @@ function role_play(){
     function getCerrentTime(posX) {
         return (posX - $progressBar.offset().left) / ($progressBar.width()) * rpAudio.duration
     }
-
     initEvent();
-
-
 }

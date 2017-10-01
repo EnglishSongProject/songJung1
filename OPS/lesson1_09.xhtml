@@ -25,9 +25,9 @@
                           <article>
                             <h1 class="inner_tit">Listen &amp;  Speak 1</h1>
                             <h2 onclick="playAudio('./media/audio/L01/009/L01_009_intro2_02.mp3', 'single');">안부를 묻고 답해요.</h2>
-                            <p class="bg_icon">
-                              <button type="button" id="ls_1_t_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls_1_t_q', 'ls_1_t1_a', 'ls_1_t1' );"></button>
-                            </p>
+                            <span class="btn_list">
+                                <button type="button" id="ls_1_t_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls_1_t_q', 'ls_1_t1_a', 'ls_1_t1' );">답안</button>
+                            </span>
                             <assessmentItem data-qid="p09_text1" data-response-type="fillInTheBlank">
                               <itemBody>
                                 <ul>
@@ -48,9 +48,11 @@
                           <article>
                             <h1 class="inner_tit">Listen &amp;  Speak 2</h1>
                             <h2 onclick="playAudio('./media/audio/L01/009/L01_009_intro2_04.mp3', 'single');">소개하고 인사를 나눠요.</h2>
-                            <p class="bg_icon">
-                              <button type="button" id="ls_2_t_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls_2_t_q', 'ls_2_t_a1+ls_2_t_a2+ls_2_t_a3', 'ls_2_t1+ls_2_t2+ls_2_t3');"></button>
-                            </p>
+                            <span class="btn_list">
+                              <button type="button" id="ls_2_t_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls_2_t_q', 'ls_2_t_a1+ls_2_t_a2+ls_2_t_a3', 'ls_2_t1+ls_2_t2+ls_2_t3');">
+                                답안
+                              </button>
+                            </span>
                             <ul>
                               <li onclick="playAudio('./media/audio/L01/009/L01_009_sp2_a02.mp3', 'single');" class="active-purple">
                                 <span class="ls02_span_01">A:</span>
@@ -79,9 +81,9 @@
                             <article>
                               <h1 class="inner_tit">Reading Time</h1>
                               <h2 onclick="playAudio('./media/audio/L01/009/L01_009_intro2_06.mp3', 'single');">선생님과 친구들이 네임 텐트를 만들어  자기소개 하는 글을 읽어요.</h2>
-                              <p class="bg_icon">
+                              <span class="btn_list">
                                 <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('ls_3_t_area')">다시하기</button>
-                              </p>
+                              </span>
                                 <dl onclick="playAudio('./media/audio/L01/009/L01_009_intro2_07.mp3', 'single');">
                                   <dt>Self Check</dt>
                                   <dd class="sol">자신을 소개할 때 어떤 것을 말하고 싶나요?</dd>

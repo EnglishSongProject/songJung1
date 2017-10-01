@@ -1461,11 +1461,11 @@ function openPopup(popupId){
         $(".popup .btn_repeat").on('click',function(){
             var $this = $(this).parent();
             $this.find("textarea").val("");
-        })
+        });
         $(".popup .btn_close").on('click',function(){
             var $this = $(this).parent('.popup');
             $this.hide();
-        })
+        });
     }
     initEvent();
 }

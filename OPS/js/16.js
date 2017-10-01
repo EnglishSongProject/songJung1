@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(){
     $(".btn_trans").on("click", function(){
-        $(".correct").toggle();
+        $(this).parent().parent().next('.correct').toggle();
     });
     $('.img-popup-none-confirm1').on('click',function () {
         $('.img-popup-none-confirm1').toggle();
@@ -10,4 +10,3 @@ $(document).ready(function(){
         $('.img-popup-none-confirm1').toggle();
     });
 });
-

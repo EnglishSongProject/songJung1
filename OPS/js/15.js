@@ -8,5 +8,4 @@ $(document).ready(function(){
     $('.btn_play').on('click',function () {
         $('.img-popup-none-confirm1').toggle();
     });
-
 });

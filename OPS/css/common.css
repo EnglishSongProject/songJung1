@@ -11,8 +11,8 @@ fieldset{border:none;}
 legend {position: absolute ; width: 0; height: 0; font-size: 0; line-height: 0; overflow:hidden; visibility:hidden; text-indent:-9999px;}
 hr, caption {display:none;}
 img {border:none; vertical-align:middle;height:auto;}
-input {cursor:text;font-family:"NanumGothicBold";vertical-align:middle;text-align:center; font-size:14px; border:0; color: #333 !important; background: transparent}
-textarea {font-family:"NanumGothicBold";font-size:14px; border:0;}
+input {cursor:text;font-family:"Nanum Gothic";vertical-align:baseline;text-align:center; font-size:14px; border:0; color: #333 !important; background: transparent}
+textarea {font-family:"Nanum Gothic";font-size:14px; border:0;}
 strong {font-weight:normal;}
 em,i {font-style:normal;}
 fieldset,img {border:0 none}
@@ -132,6 +132,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 /* btn_type_04 */
 .btn_pmovie {background-image: url(../images/common/04.png)}
 
+/* 버튼간격 */
+.btn_list {position: relative; display: inline-block; margin-left:5px !important;}
 
 /* 슬라이드 버튼 */
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
