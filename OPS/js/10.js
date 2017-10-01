@@ -40,6 +40,10 @@ var mediaInfo = [
 ];
 $(document).ready(function () {
     imageSlide.init();
+    $(".btn_play").click(function(){
+        imageSlide.closePopup();
+    });
+
     $(".select_name").on("click",function(e){
         e.preventDefault();
         var idx = $(this).index();

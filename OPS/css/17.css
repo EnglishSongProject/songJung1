@@ -5,10 +5,12 @@
 
 .first div.txt_wrap {font-family: 'Faustina'; font-size: 19px; line-height: 38px; }
 
-.first .txt1 > p {position: absolute; top: 54px; left: 150px; width: 450px; z-index: 100}
+.first .txt1 > p {position: absolute; top: 46px; left: 150px; width: 450px; z-index: 100}
 
 .first .txt2 > p {position: absolute; top: 429px; left: 390px; width: 450px; z-index: 100}
 
+.txt1 .btn_list {top: 34px; left: -81px;}
+.txt2 .btn_list {top: 34px; left: -81px;}
 
 /*본문위아이콘*/
 .btn_2 {position: relative; display: block; float:left; width: 25px; height: 25px; top: 395px; left: 285px; background-size: cover;}
@@ -19,8 +21,7 @@
 .ten {font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 665px; left: 680px; }
 
 /*본문해석*/
-.transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 113px;
-    left: 151px; font-size: 11px !important; color: #1C8A24;}
+.transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 108px; left: 151px; font-size: 11px !important; color: #1C8A24;}
 .transfer_t > p{line-height:38px;}
 .transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 487px;
     left: 393px; font-size: 11px !important;color: #1C8A24; }

@@ -10,9 +10,9 @@
 
 /* 본문 */
 .reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px;}
-.section > p {font: 19px 'Faustina'; position: absolute; top: 284px; left: 150px; line-height: 38px;}
+.section > p {font: 19px 'Faustina'; position: absolute; top: 307px; left: 150px; line-height: 38px; }
 .section > p span {display: block}
-.section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 341px; line-height: 38px; display: none;}
+.section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 327px; line-height: 38px; display: none;}
 
 
 /* Ask And Answer */
@@ -52,3 +52,4 @@
 .pop_ask1 {top:86px; left:19px;}
 .pop_ask2 {top:86px; left:117px;}
 
+.part_rt .section .btn_list {position:absolute; top:0; left:-80px}

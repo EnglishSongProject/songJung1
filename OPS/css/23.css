@@ -12,7 +12,7 @@ section .Subtit_Wrap{overflow:hidden;padding:25px 0 0 0;height:40px;line-height:
 section .Subtit_Wrap img,
 section .Subtit_Wrap span,
 section .Subtit_Wrap p,
-.btn_add_list button {float:left}
+section .btn_add_list button {float:left; }
 section .Subtit_Wrap img{margin-right:10px;}
 section .Subtit_Wrap span{font-family: 'Open Sans';color:#85868A;margin-right:10px;font-size:13px;}
 section .Subtit_Wrap p{font-family: 'Open Sans';font-size:13px;}

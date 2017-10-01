@@ -8,7 +8,7 @@
 .top{padding-top: 20px;overflow: hidden;height:310px;}
 .top .subtit_box,
 .bottom .subtit_box{position: relative;overflow: hidden;padding-bottom:20px;}
-.top .subtit_box div{float: left;    padding-top: 11px;}
+.top .subtit_box div{float: left; padding-top: 14px;}
 .pin{position:absolute;z-index: 100;width:60px;height: 77px;background: url(../images/20/pin.png) no-repeat 0 0;background-size:cover;}
 .pin span{position: absolute;top:5px;left: 34px;font-family: 'Noto Sans KR';font-size: 22px;color:#fff;}
 .top .subtit_box p,
@@ -55,7 +55,7 @@
 
 .bottom{}
 .bottom .subtit_box{}
-.bottom .btn_list{float: left;padding-top: 11px; margin-left: -79px;}
+.bottom .btn_list{float: left;padding-top: 14px; margin-left: -79px;}
 .bottom .bottom_main{position:relative;}
 .bottom .bottom_main img.phone{left: 55px;}
 .bottom .bottom_main img.memo{right: 0;}
