@@ -44,7 +44,7 @@ padding-top:24px; background: #fff; background-size: cover; display: none}
 .content_1 dl.tbody dd > ul > li:nth-of-type(1){font-weight:800;}
 .content_1 dl.tbody dd > ul > li:nth-of-type(2){width: 340px;font-size:12px;padding-left:10px;box-sizing: border-box;}
 .content_1 dl.tbody dd > ul > li ul{margin-left:2px;display: inline-block;width:100%;}
-.content_1 dl.tbody dd > ul > li ul li{display: inline-block;width:48%;text-align:center;}
+.content_1 dl.tbody dd > ul > li ul li{display: inline-block;width:48%;text-align:center; padding-top: 2px;}
 
 /* sliderNum_1 > content_2 */
 .content_2{margin-top:50px;}

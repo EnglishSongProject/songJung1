@@ -515,7 +515,7 @@
                           <li data-num="1" class="all_Slide sliderNum_1">
                             <h1 onclick="playAudio('./media/audio/L01/023/L01_023_SELF_01.mp3', 'single');" class="active-purple"><span>A</span>'Wrap Up'으로 실력 확인하기</h1>
                             <h2 onclick="playAudio('./media/audio/L01/023/L01_023_SELF_02.mp3', 'single');" class="active-purple">나의 실력을 확인해 봅시다.</h2>
-                            <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('')">다시하기</button>
+                            <button type="button" class="btn_type_02 btn_repeat" title="다시하기" id="true_false_wrap">다시하기</button>
                             <section>
                               <article class="content_1">
                                 <ul>
@@ -523,14 +523,19 @@
                                     <li>채점</li>
                                     <li>평가 영역</li>
                                 </ul>
+                                  <span id="self_check_ox_count" class="display-none">6</span>
                                 <dl class="tbody">
                                     <dt><p>1</p></dt>
                                     <dd>
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false true"   name="p23 tf_0"></input></li>
-                                            <li><input type="radio" class="true_false false"  name="p23 tf_0"></input></li>
+                                              <li>
+                                                  <button type="button" class="btn_true_false true tf_0">O</button>
+                                              </li>
+                                              <li>
+                                                  <button type="button" class="btn_true_false false tf_0">X</button>
+                                              </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_03.mp3', 'single');" class="active-purple">다른 사람을 소개하는 표현을 듣고 이해할 수 있다.</p></li>
@@ -541,8 +546,12 @@
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false true"   name="p23 tf_1"></input></li>
-                                            <li><input type="radio" class="true_false false"  name="p23 tf_1"></input></li>
+                                            <li>
+                                                <button type="button" class="btn_true_false true tf_1">O</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn_true_false false tf_1">X</button>
+                                            </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_04.mp3', 'single');" class="active-purple">안부를 묻고 답하는 표현을 쓸 수 있다.</p></li>
@@ -553,8 +562,12 @@
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false true"  name="p23 tf_2"/></li>
-                                            <li><input type="radio" class="true_false false" name="p23 tf_2"/></li>
+                                            <li>
+                                                <button type="button" class="btn_true_false true tf_2">O</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn_true_false false tf_2">X</button>
+                                            </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_05.mp3', 'single');" class="active-purple">다른 사람의 소개를 듣고, 소개에 답할 수 있다.</p></li>
@@ -565,8 +578,12 @@
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false true"  name="p23 tf_3"/></li>
-                                            <li><input type="radio" class="true_false false"  name="p23 tf_3"/></li>
+                                            <li>
+                                                <button type="button" class="btn_true_false true tf_3">O</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn_true_false false tf_3">X</button>
+                                            </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_06.mp3', 'single');" class="active-purple">'~을 소개하다'라는 표현을 사용할 수 있다.</p></li>
@@ -577,8 +594,12 @@
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false  true"   name="p23 tf_4"/></li>
-                                            <li><input type="radio" class="true_false  false"  name="p23 tf_4"/></li>
+                                            <li>
+                                                <button type="button" class="btn_true_false true tf_4">O</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn_true_false false tf_4">X</button>
+                                            </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_07.mp3', 'single');" class="active-purple">자기소개 글을 읽고 이해할 수 있다.</p></li>
@@ -589,8 +610,12 @@
                                       <ul>
                                         <li>
                                           <ul>
-                                            <li><input type="radio" class="true_false  true"   name="p23 tf_5"/></li>
-                                            <li><input type="radio" class="true_false  false"  name="p23 tf_5"/></li>
+                                            <li>
+                                                <button type="button" class="btn_true_false true tf_5">O</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn_true_false false tf_5">X</button>
+                                            </li>
                                           </ul>
                                         </li>
                                         <li><p onclick="playAudio('./media/audio/L01/023/L01_023_SELF_08.mp3', 'single');" class="active-purple">'be'동사를 사용해 다른 사람을 소개하는 문장을 쓸 수 있다.</p></li>

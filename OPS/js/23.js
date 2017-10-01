@@ -35,18 +35,31 @@ $(document).ready(function () {
        $('.p23_text_pop_txt').css('display', 'block');
     });
 
+    //OX 리스트 갯수 받아옴
     var count = $('#self_check_ox_count').text();
-    var selfCheckClass='self_check_ox_';
+    //radio 형식 구현하여 click 이벤트에 바운딩
+    var selfCheckClass='tf_';
     for(var i=0; i<count;i++){
         var selfCheckParam = selfCheckClass+i;
         var clearForCheck = $('\.'+selfCheckParam);
-        console.log(clearForCheck);
-        $(clearForCheck).on('click', function () {
-            for(var y=0; y<2;y++){
-                $(clearForCheck).css('color', 'red');
-            }
-            $(this).css('color', 'red');
-        });
+
+        var y=0;
+        for(y;y<clearForCheck.length;y++){
+            $(clearForCheck[y]).on('click', function () {
+                for(var z=0; z<2;z++){
+                    $('\.'+this.classList[2]).removeClass('on');
+                }
+                $(this).addClass('on');
+            });
+        }
     }
+
+    //OX 체크 제거 함수
+    $('#true_false_wrap').on('click', function () {
+       var trueFalseList = $('.btn_true_false');
+        for(i=0; i<trueFalseList.length; i++){
+            $(trueFalseList[i]).removeClass('on');
+        }
+    });
 
 });

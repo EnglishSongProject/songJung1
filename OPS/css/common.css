@@ -357,4 +357,18 @@ scriptPopup
 
 /*정답체크*/
 .btn_check{background: url(../images/common/check.png); }
-.btn_check_answer{background: url(../images/common/check_answer.png);  }
+.btn_check_answer{background: url(../images/common/check_answer.png);}
+
+/*.btn_true_false.true{height: 20px; width: 20px;}
+.btn_true_false.false{height: 20px; width: 20px;}*/
+.btn_true_false.true.on:before, .btn_true_false.false.on:before{display: block;content: "";width: 53px;height: 55px;background: url(../images/common/check_answer.png) no-repeat;position: absolute;top: 6px;left: 55px;}
+.btn_true_false.false.on:before{left: 110px;}
+
+
+
+.btn_true_false.true, .btn_true_false.false {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
