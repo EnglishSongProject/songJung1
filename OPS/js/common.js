@@ -500,10 +500,8 @@ function radioCheck(questionId, names, answers) {
             totalForCorrect += radioCorrectCheckSeperForAll(answerNameArray[i], answerArray[i]);
         }
         if (totalForCorrect == answerNameArray.length) {
-            alert('정답입니다.');
             //정답일때 radiobox 컨트롤
         } else {
-            alert('오답입니다.');
             //오답일때 radiobox 컨트롤
         }
         for(var i=0; i<answerNameArray.length;i++) {
@@ -618,9 +616,9 @@ function listenAndNumberCheck(questionId, inputId, answer) {
             }
         }
         if(correctCheck == 3){
-            alert('정답입니다.');
+            //정답컨트롤
         }else{
-            alert('오답입니다.');
+            //정답컨트롤
             for(var i=0; i<inputId.length; i++){
                 var id = document.getElementById(inputId[i]);
                 id.value=answerArray[i];
@@ -1204,10 +1202,8 @@ $(document).ready(function(){
                 totalForCorrect += radioCorrectCheckSeperForAll(answerNameArray[i], answerArray[i]);
             }
             if (totalForCorrect == answerNameArray.length) {
-                alert('정답입니다.');
                 //정답일때 radiobox 컨트롤
             } else {
-                alert('오답입니다.');
                 //오답일때 radiobox 컨트롤
             }
             for(var i=0; i<answerNameArray.length;i++) {
@@ -1322,9 +1318,9 @@ $(document).ready(function(){
                 }
             }
             if(correctCheck == 3){
-                alert('정답입니다.');
+//정답컨트롤
             }else{
-                alert('오답입니다.');
+//오답컨트롤
                 for(var i=0; i<inputId.length; i++){
                     var id = document.getElementById(inputId[i]);
                     id.value=answerArray[i];
@@ -1468,4 +1464,41 @@ function openPopup(popupId){
         });
     }
     initEvent();
+}
+
+function checkBoxCheckForMulti(btnId, checkboxName, answerArray) {
+    //체크박스는 무조건 2개 이상이므로 따로 예외처리를 하지 않는다.
+    var btnId = $('#'+btnId);
+    var checkboxName = document.getElementsByName(checkboxName);
+    var answerArray = answerArray;
+    if(answerArray.length > 1){
+        answerArray = answerArray.split('+');
+    }
+    //전부 체크 해제 및 correct 클래스로 변경
+    for (var i = 0; i < checkboxName.length; i++) {
+        checkboxName[i].checked = false;
+        if ($(checkboxName[i]).hasClass('false')) {
+            $(checkboxName[i]).removeClass('false');
+            $(checkboxName[i]).addClass('correct');
+        }
+    }
+
+    //버튼 토글(정답체크)
+    if($(btnId).hasClass('btn_answer')) {
+        $(btnId).removeClass('btn_answer');
+        $(btnId).addClass('btn_repeat');
+
+        //해당 답안 체크 및 false 클래스로 변경(이름이 false이지 체크하는 css 클래스임)
+        for (var y = 0; y < answerArray.length; y++) {
+            checkboxName[answerArray[y]].checked = true;
+            if ($(checkboxName[answerArray[y]]).hasClass('correct')) {
+                $(checkboxName[answerArray[y]]).removeClass('correct');
+                $(checkboxName[answerArray[y]]).addClass('false');
+            }
+        }
+        //버튼 토글(초기화)
+    }else if($(btnId).hasClass('btn_repeat')){
+        $(btnId).removeClass('btn_repeat');
+        $(btnId).addClass('btn_answer');
+    }
 }

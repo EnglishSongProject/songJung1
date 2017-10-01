@@ -28,18 +28,15 @@
                             <span class="btn_list">
                                 <button type="button" id="ls_1_t_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls_1_t_q', 'ls_1_t1_a', 'ls_1_t1' );">답안</button>
                             </span>
-                            <assessmentItem data-qid="p09_text1" data-response-type="fillInTheBlank">
-                              <itemBody>
                                 <ul>
-                                  <li onclick="playAudio('./media/audio/L01/009/L01_009_sp1_a02.mp3', 'single');" class="active-purple"><span>A:</span>How are you doing today?</li>
-                                  <li onclick="playAudio('./media/audio/L01/009/L01_009_intro_06w.mp3', 'single');" class="active-purple"><span>B:</span><input id="ls_1_t1" class="ls_1_t1" type="text" maxlength="11" />
-                                    <label for="ls_1_t1"></label>.</li>
+                                  <li class="active-purple"><span>A:</span>How are you doing today?</li>
+                                  <li class="active-purple"><span onclick="playAudio('./media/audio/L01/009/L01_009_intro_06w.mp3', 'single');">B:</span>
+                                    <input id="ls_1_t1" class="ls_1_t1" type="text" maxlength="11" />
+                                    <label for="ls_1_t1" onclick="playAudio('./media/audio/L01/009/L01_009_intro_06w.mp3', 'single');"></label>.
+                                  </li>
                                   <li class="p09_answer"><span id="ls_1_t1_a" class="mar_lt1 display-none">Good</span>
                                   </li>
                                 </ul>
-                              </itemBody>
-                              <correctResponse></correctResponse>
-                            </assessmentItem>
                               <dl onclick="playAudio('./media/audio/L01/009/L01_009_intro2_03.mp3', 'single');">
                                 <dt>Self Check</dt>
                                 <dd class="sol"> 안부를 묻는 친구의 말에 답할 수 있나요?</dd>
