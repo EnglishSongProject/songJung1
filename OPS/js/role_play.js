@@ -38,7 +38,7 @@ function role_play(){
         },
         {
             audio:  "./media/audio/L01/010/add/L01_010_LS1_add_03_d.mp3",
-            timeLine: 2.19
+            timeLine: 1.95
         }
     ];
     var checkbox = document.querySelectorAll("input[type=checkbox]");
