@@ -44,13 +44,13 @@
 
 
 /*슬라이더*/
-.slider_image_wrap .slider_image > li {display: none;}
-.slider_image_wrap .slider_image li.on {display: block;}
+/*.slider_image_wrap .slider_image > li {display: none;}*/
+/*.slider_image_wrap .slider_image li.on {display: block;}*/
 
-.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
-.slider_thumbnail {text-align:center}
-.slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
-.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}
+/*.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}*/
+/*.slider_thumbnail {text-align:center}*/
+/*.slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}*/
+/*.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}*/
 
 
 /*롤링*/
@@ -78,5 +78,5 @@
 }
 
 .rolling_thumbnail_area {margin-top:40px; width:100%; text-align:center}
-.rolling_thumbnail_area button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.rolling_thumbnail_area button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
 .rolling_thumbnail_area button.on {background: url(../images/common/slide_bt_on.png)}

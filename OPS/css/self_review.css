@@ -44,13 +44,15 @@
 .btn_close {position: absolute; top: 15px; right: 10px;width:16px; height:16px; padding:15px;  background: url(../images/self_review/btn_close.png) no-repeat center; overflow: hidden; text-indent: -999em; z-index: 9999}
 
 /*슬라이더*/
-.popup_self_review .slider_image_wrap .slider_image > li {display: none;}
-.popup_self_review .slider_image_wrap .slider_image li.on {display: block;}
+/*.popup_self_review .slider_image_wrap .slider_image > li {display: none;}*/
+/*.popup_self_review .slider_image_wrap .slider_image li.on {display: block;}*/
 
-.popup_self_review .slider_thumbnail_area {position: absolute; left:0; bottom:70px; width:100%; margin: -50px auto;}
-.popup_self_review .slider_thumbnail {text-align:center}
-.popup_self_review .slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
-.popup_self_review .slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}
+/*.popup_self_review .slider_thumbnail_area {position: absolute; left:0; bottom:70px; width:100%; margin: -50px auto;}*/
+/*.popup_self_review .slider_thumbnail {text-align:center}*/
+/*.popup_self_review .slider_thumbnail button {display: inline-block; width:20px; height:20px; text-indent:-999em; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}*/
+/*.popup_self_review .slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}*/
+
+.popup_self_review .slider_thumbnail_area {bottom:70px;}
 
 
 

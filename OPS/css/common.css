@@ -136,10 +136,6 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_list {position: relative; display: inline-block; margin-left:5px !important; vertical-align: middle}
 .btn_list button {vertical-align: middle}
 
-/* 슬라이드 버튼 */
-.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
-.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
-
 /*tip*/
 .btn_tip {
     position: relative;
@@ -153,13 +149,10 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
     margin-right: 5px;
 }
 
-/*----------------------
-페이지 공통
-----------------------*/
-.wrapper {user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:0px;top:0px;width:768px;height:1024px;position: relative; padding:53px; box-sizing: border-box; z-index: 1}
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}
 .tit_step {font-family: "Noto Sans KR"; font-size: 9px;}
+.bold {font-weight: bold !important}
 
 /*font-color*/
 .color-blue{color:#0101ff;}
@@ -168,9 +161,33 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
     color: #339900;
 }
 
+
 /*class:hover*/
 .active-purple:hover {color: #9a01cd; }
 .active-blue:hover {color:#0101ff;}
+
+/*display-none*/
+.display-none{
+    display: none;
+}
+
+/*----------------------
+페이지 공통
+----------------------*/
+
+.wrapper {user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:0px;top:0px;width:768px;height:1024px;position: relative; padding:53px; box-sizing: border-box; z-index: 1}
+
+/* 슬라이드 */
+.slider_image_wrap .slider_image > li {display: none;}
+.slider_image_wrap .slider_image li.on {display: block;}
+.slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
+.slider_thumbnail {text-align:center}
+.slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
+.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}
+
+.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
+.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
+
 
 /*체크박스*/
 input[type=checkbox], input[type=radio] {
@@ -185,7 +202,6 @@ input[type=checkbox] + label, input[type=radio] + label{
     font-size: 13px;
 }
 input[type=checkbox]+ label:before, input[type=radio] + label:before {
-
     content: "";
     display: inline-block;
     width: 20px;
@@ -214,10 +230,6 @@ input[type=checkbox]:checked.false + label:before, input[type=radio]:checked.fal
     color: red;
 }
 
-/*display-none*/
-.display-none{
-    display: none;
-}
 
 input[type="text"]:focus{outline: none;}
 textarea {overflow: auto}
@@ -304,7 +316,6 @@ scriptPopup
     left: 0;
 }
 
-
 /*audio popup*/
 #myaudio {position: absolute;z-index: 100; }
 
@@ -354,7 +365,6 @@ scriptPopup
 .btn_script_off{background-image: url(../images/common/player/script_btn_on.png);width: 25px; height: 25px;}
 .btn_script_on{background-image: url(../images/common/player/script_btn_off.png);width: 25px; height: 25px;}
 
-
 /*정답체크*/
 .btn_check{background: url(../images/common/check.png); }
 .btn_check_answer{background: url(../images/common/check_answer.png);}
@@ -363,8 +373,6 @@ scriptPopup
 .btn_true_false.false{height: 20px; width: 20px;}*/
 .btn_true_false.true.on:before, .btn_true_false.false.on:before{display: block;content: "";width: 53px;height: 55px;background: url(../images/common/check_answer.png) no-repeat;position: absolute;top: 6px;left: 55px;}
 .btn_true_false.false.on:before{left: 110px;}
-
-
 
 .btn_true_false.true, .btn_true_false.false {
     height: 30px;
