@@ -1,5 +1,6 @@
 // JavaScript Document
-
+var pageNum = 12; //video.js에서 페이지 이미지 경로로 활용됨
+var playMode = 'role';
 
 $(document).ready(function() {
       imageSlide.init();
@@ -9,4 +10,15 @@ $(document).ready(function() {
 
       });
 
+    $('.mediabtn_0').on('click',function(){
+        layerAclose();
+        $('.zoom_img_wrap.a').show();
+        mediaInit(0);
+    });
+
+    $('.btn_media_close').on('click',function(){
+        mediaClose(); //video.js
+        AllOff();
+        $('.zoom_img_wrap').hide();
+    });
 });

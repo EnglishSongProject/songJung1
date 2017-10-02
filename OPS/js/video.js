@@ -12,8 +12,7 @@ var timeID;
 var scriptHeight = 0; //자막파일의 최종높이
 var scriptMax = 280;
 
-//따라 말하기 기능
-var playMode = 'normal'; //normal:보면서 듣기, repeat:따라 말하기, role:역할놀이
+//따라 말하기 기능 //normal:보면서 듣기, repeat:따라 말하기, role:역할놀이
 var roleNum = 1; //롤플레잉시 묵음을 할 사람 이름 0:그냥 재생, 1~n: 사람 번호
 var repeatInfo = {seq:-1, wait:false, pauseTime:0, pauseCount:0, delay:0, limit:[20, 160] };
 var scriptIdx = 0; //따라 말하기에서 현재 스크립트 위치를 참조함
@@ -237,7 +236,6 @@ function mediaType(idx) {
 	//타이틀 
 	document.querySelector('.media_tt').innerHTML = mediaInfo[idx].title;
 
-
 	//영한 자막 생성
 	/*
 	syncText: [
@@ -291,7 +289,7 @@ function mediaType(idx) {
 
 		
 		//글kr - 한글 자막 생성
-		var who_k = sc.role[whoIdx][1] + ":";
+		var who_k = '';
 		var str_k = lineOne[3];
 		pos_y =  margin_top + (i*rowSize_kr) + margin_han;
 		var k_who = "<div class='txt_who'"
@@ -303,7 +301,7 @@ function mediaType(idx) {
 			+ "'>"
 			+ who_k +"</div>";
 
-		var k_str = "<div class='txt_txt'"
+		var k_str = "<div class='txt_txt video_trans'"
 			+ " id='txt_kr" + i + "'"
 			+ " style='position:absolute; left:" + sc.rolePos[2] + "px;"
 			+ " top:"+ pos_y +"px;"
@@ -420,7 +418,79 @@ function mediaType(idx) {
 
 	setTimeout(function () {
 		initVdo();
-	});	
+		// 전체화면 버튼
+		var fullsize = document.querySelector('.fullsize');
+		var vdo = vdo = document.querySelector('#vdo');
+		fullsize.addEventListener('click', function(e) {
+			var page_1 = document.querySelector('.page_1'),
+				pageContainer = document.querySelector('.pageContainer'),
+				videoWrap = document.querySelector('.videoWrap');
+			if (vdo.requestFullscreen) {
+				if (vdo.fullScreenElement) {
+					vdo.cancelFullScreen();
+					vdo.controls = false;
+				} else {
+					vdo.requestFullscreen();
+					vdo.controls = true;
+				}
+
+			} else if (vdo.msRequestFullscreen) {
+				if (vdo.msFullscreenElement) {
+					vdo.msExitFullscreen();
+					vdo.controls = false;
+				} else {
+					vdo.msRequestFullscreen();
+					vdo.controls = true;
+				}
+
+			} else if (vdo.mozRequestFullscreen) {
+				if (vdo.mozFullScreenElement) {
+					vdo.mozCancelFullScreen();
+					vdo.controls = false;
+				} else {
+					vdo.mozRequestFullScreen();
+					vdo.controls = true;
+				}
+
+			} else if (vdo.webkitRequestFullscreen) {
+				if (vdo.webkitFullscreenElement) {
+					vdo.webkitCancelFullScreen();
+					vdo.controls = false;
+
+				} else {
+					vdo.webkitRequestFullscreen();
+					vdo.controls = true;
+				}
+			}
+
+			setTimeout(function () {
+				var state = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+				var event = state ? 'FullscreenOn' : 'FullscreenOff';
+
+				if(event == 'FullscreenOn') {
+					vdo.controls = true;
+				} else if(event == 'FullscreenOff') {
+					vdo.controls = false;
+
+				}
+			}, 200);
+
+		}, false);
+
+		document.body.addEventListener('mousedown', function(e) {
+			setTimeout(function () {
+				var state = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+				var event = state ? 'FullscreenOn' : 'FullscreenOff';
+
+				if(event == 'FullscreenOn') {
+					vdo.controls = true;
+				} else if(event == 'FullscreenOff') {
+					vdo.controls = false;
+				}
+				// console.log('body : ' + event);
+			}, 200);
+		});
+	}, 20);
 
 	showhideScript(3); //아무것도 없는 것이 기본
 }
@@ -446,7 +516,7 @@ function sectionPlay(){
 	var play = document.querySelector('#play');
 	document.querySelector('.thumImg').style.display = 'none';	
 	play.src = './images/common/controls/vdo/btnPause.png';
-	vdo.play();	
+	vdo.play();
 }
 function showSectionThumb(){
 	var thx = $('#tb' + sectionIdx).position().left -2;
@@ -691,7 +761,7 @@ $(document).ready(function(){
 			if(!$('.txt_two').hasClass('display-none')){
 				$('.txt_two').addClass('display-none');
 			}
-			tm.style.top = "369px";
+			tm.style.top = "365px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap').hasClass('btn_caption_en_off')){
 				$('#prog_cap').removeClass('btn_caption_en_off');
@@ -706,7 +776,7 @@ $(document).ready(function(){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "369px";
+					tm.style.top = "365px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap').hasClass('btn_caption_en_on')){
@@ -753,7 +823,7 @@ $(document).ready(function(){
 			if(!$('.txt_one').hasClass('display-none')){
 				$('.txt_one').addClass('display-none');
 			}
-			tm.style.top = "369px";
+			tm.style.top = "365px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap2').hasClass('btn_caption_kr_off')){
 				$('#prog_cap2').removeClass('btn_caption_kr_off');
@@ -768,7 +838,7 @@ $(document).ready(function(){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "369px";
+					tm.style.top = "365px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap2').hasClass('btn_caption_kr_on')){

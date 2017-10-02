@@ -7,10 +7,13 @@
             <meta name="format-detection" content="telephone=no"/>
             <link rel="stylesheet" href="./css/common.css" />
             <link rel="stylesheet" href="./css/12.css" />
+            <link rel="stylesheet" type="text/css" href="css/video.css" />
+            <link rel="stylesheet" href="css/radio_check.css" />
             <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
             <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="./js/common.js"></script>
             <script type="text/javascript" src="./js/12.js"></script>
+            <script type="text/javascript" src="js/video.js"></script>
         </head>
     <body>
       <div class="wrapper">
@@ -27,7 +30,7 @@
                         <img src="./images/12/A.png" alt="A" class="mr_10"/>
                         <span class="A_tit active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a01.mp3', 'single');">Active Listening</span>
                         <span class="btn_list one">
-                          <button type="button" class="btn_type_02 btn_play" title="영상 플레이">영상 플레이</button>
+                          <button type="button" class="btn_type_02 btn_play mediabtn_0" title="영상 플레이">영상 플레이</button>
                           <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/012/add/rollplay_all.mp3','',this);" >mp3전체듣기</button>
                           <button type="button" class="btn_type_02 btn_sp" title="대본">대본</button>
                         </span>
@@ -53,17 +56,28 @@
                               <ul class="Listen_dd" id="Tab_2">
                                 <li>
                                   <p class="button_gr">
-                                  <button type="button" id="Listen_dd_A" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss(,,);"></button>
-                                  <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
+                                  <button type="button" class="btn_type_02 btn_answer" title="예시 답안" id="p12_r1_q3" onclick="checkBoxCheckForMulti('p12_r1_q3', 'p12_r1_o_a3', '2' );">답안</button>
+
                                 </p>
                                 </li>
                                 <li>
                                   <div>
                                     <h1 class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_1.mp3', 'single');">Which is NOT true about Mr.Jackson?</h1>
                                     <ul>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w02_1.mp3', 'single');"><span>1</span>He is an English teacher.</li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w03_1.mp3', 'single');"><span>2</span>He is from Canada.</li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w04_1.mp3', 'single');"><span>3</span>He is Jiwon's teacher.</li>
+                                      <li>
+                                        <input type="radio" id="p12_r1_o3" class="correct radio_1_b" name="p12_r1_o_a3"/>
+                                        <label for="p12_r1_o3" class="radio_1_b"></label>
+                                        <span class="active-purple p12_tab_t" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w02_1.mp3', 'single');">He is an English teacher.</span>
+                                      </li>
+                                      <li>
+                                        <input type="radio"  id="p12_r2_o3" class="correct radio_2_b" name="p12_r1_o_a3"/>
+                                        <label for="p12_r2_o3" class="radio_2_b"></label>
+                                        <span class="active-purple p12_tab_t" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w03_1.mp3', 'single');">He is from Canada.</span>
+                                      </li>
+                                      <li><input type="radio"  id="p12_r3_o3" class="correct radio_3_b" name="p12_r1_o_a3"/>
+                                        <label for="p12_r3_o3" class="radio_3_b"></label>
+                                        <span class="active-purple p12_tab_t" onclick="playAudio('./media/audio/L01/012/L01_012_act_a02_w04_1.mp3', 'single');">He is Jiwon's teacher.</span>
+                                      </li>
                                     </ul>
                                   </div>
                                 </li>
@@ -73,29 +87,29 @@
                               <ul class="LA_dd" id="Tab_3">
                                 <li>
                                   <p class="button_gr">
-                                    <!-- <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/012/add/','',this);">mp3전체듣기</button> -->
-                                    <button type="button" id="Listen_dd_A" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss(,,);"></button>
-                                    <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear('txt_Guess');">다시하기</button>
+                                    <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/012/add/','',this,'','top');">mp3전체듣기</button>
+                                    <button type="button" class="btn_type_02 btn_answer" title="답안" id="p12_r2_o4" onclick="radioCheck('p12_r2_o4', 'radio_1+radio_2+radio_3', '0+1+0');" >답안</button>
                                   </p>
                                 </li>
                                 <li>
                                   <div>
-                                    <h1 class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_1.mp3', 'single');">Complate Jiwon's talk</h1>
+                                    <h1 class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_1.mp3', 'single');">Complete Jiwon's talk</h1>
                                     <ul class="bubble_talk">
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">
-                                        I am
-                                        <input type="checkbox" id="check_1" value="" /><label for="check_1">10</label>
-                                        <input type="checkbox" id="check_2" value="" /><label for="check_2">11</label> years old.
+                                      <li class="active-purple">
+                                        <span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">I am</span>
+                                        <input type="radio" id="check_1" value="" name="radio_1"/><label for="check_1"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">10</span></label>
+                                        <input type="radio" id="check_2" value="" name="radio_1"/><label for="check_2"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">11</span></label>
+                                        <span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">years old.</span>
                                       </li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_03_re.mp3', 'single');">
-                                        I have a
-                                        <input type="checkbox" id="check_3" value="" /><label for="check_3">brother</label>
-                                        <input type="checkbox" id="check_4" value="" /><label for="check_4">sister.</label>
+                                      <li class="active-purple">
+                                        <span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_03_re.mp3', 'single');">I have a</span>
+                                        <input type="radio" id="check_3" value="" name="radio_2"/><label for="check_3"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_03_re.mp3', 'single');">brother</span></label>
+                                        <input type="radio" id="check_4" value="" name="radio_2"/><label for="check_4"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_03_re.mp3', 'single');">sister.</span></label>
                                       </li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">
-                                        I like
-                                        <input type="checkbox" id="check_5" value="" /><label for="check_5">English</label>
-                                        <input type="checkbox" id="check_6" value="" /><label for="check_6">music.</label>
+                                      <li class="active-purple">
+                                        <span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">I like</span>
+                                        <input type="radio" id="check_5" value="" name="radio_3"/><label for="check_5"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">English</span></label>
+                                        <input type="radio" id="check_6" value="" name="radio_3"/><label for="check_6"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">music.</span></label>
                                       </li>
                                     </ul>
                                     <img class="girl_img" src="images/12/girl_img.png" alt="소녀 이미지" />
@@ -170,6 +184,92 @@
           <div class="pg_Num pgNum_left">
             <p><strong>12</strong>Lesson 1</p>
           </div>
+        <div class="zoom_img_wrap a"><!-- common.css -->
+          <!-- innerHTML -->
+          <div class='video_header'>
+            <div class='media_title'><div class='media_titlefont'><div class='media_tt'>Media title</div></div></div>
+            <div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='본문보기'/></div><!-- 10.js에서 처리 -->
+          </div>
+          <div id="vwrap" ><!-- 10.css -->
+            <div class="pageContainer"><!-- video2.js에서 사용-->bb
+              <div class="page_1">
+                <div class="videoWrap"></div>
+              </div>
+              <div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
+            </div>
+          </div>
+
+          <div class='waiter' id='waiter_wrap'>
+            <div class='bg'><!-- 따라말하기 타이머 --> </div>
+            <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>
+          </div>
+
+
+
+
+          <div class='controller'>
+            <div class='bg'><!-- 배경 가로반복--> </div>
+
+            <!-- 비디오 컨트롤러 -->
+            <div class='progController'>
+              <div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div>
+              <div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>
+
+              <div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><!-- black -->
+              <div id='prog_color'><img src='images/common/player/prog_color.png' /></div><!-- red -->
+              <div id='prog_mouse'><img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><!-- mouse -->
+              <div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>
+              <!-- time -->
+              <div class='prog_pos'><div class='media_timefont'><div class='time_pos'>00:00</div></div></div>
+              <div class='prog_dur'><div class='media_timefont'><div class='time_dur'>00:00</div></div></div>
+              <div class='fullsize btn_full_screen'></div>
+              <!-- 자막, 대본 -->
+              <div id='prog_cap' class="btn_caption_en_off"></div>
+              <div id='prog_cap2' class="btn_caption_kr_off"></div>
+              <div id='prog_sct' class="btn_script_off"></div>
+
+            </div>
+            <!-- 구간 이미지 -->
+            <div class='thumb_list'></div>
+            <span class="display-none" id="isTrans">off</span>
+
+
+            <!-- 볼륨 컨트롤러 mute기능 -->
+            <!--                    <div class='volController'>
+                                    <div id='vol_spk'><img id='img_spk' src='images/common/player/mov_spk1.png' ondragstart='return false' /></div>
+                                    <div id='vol_gray'><img src='images/common/player/mov_vol0.png' /></div>&lt;!&ndash; black &ndash;&gt;
+                                    <div id='vol_color'><img src='images/common/player/mov_vol1.png' /></div>&lt;!&ndash; red &ndash;&gt;
+                                    <div id='vol_mouse'><img src='images/common/player/mov_vol0.png' ondragstart='return false' /></div>&lt;!&ndash; mouse &ndash;&gt;
+                                </div>-->
+          </div>
+
+
+
+          <div class='sc_paper'>
+            <div class='caption_wrap display-none'>
+              <div class='caption_bg'></div>
+              <div class='caption_txt'>
+                <div class='media_captionfont'>
+                  <div class='txt_one display-none'></div>
+                  <div class='txt_two display-none'></div>
+                </div><!-- 자막 -->
+              </div>
+            </div>
+
+            <div class='script_wrap num1 off display-none'>
+              <div class='script_txt'>
+                <div class='media_scriptfont'><div class='txt_sct'></div></div><!-- 스크립트 -->
+              </div>
+              <div class='scController'>
+                <div class='sc_bg'><img src='images/common/player/scroll_bg.png' ondragstart='return false'/></div>
+                <div class='sc_ball'><img src='images/common/player/scroll_ball.png' ondragstart='return false'/></div>
+              </div>
+              <div class='haneng'>
+                <button class="btn_trans_video_off num1"></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </body>
 </html>
