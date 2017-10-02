@@ -59,11 +59,11 @@
 .rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
 .rolling_image_wrap >ul > li.on {display: block;}
 .rolling_image_wrap >ul > li > span:last-child{position: absolute;  top: 110px;  left: 300px;  font: 11px 'Open Sans';  font-weight: 700;  line-height: 32px;}
-.rolling_image_wrap .img_txt {position: absolute;  width:100px; font:11px "Noto Sans KR"; line-height: 1.2}
+.rolling_image_wrap .img_txt {position: absolute;  width:100px; font:12px "Noto Sans KR"; line-height: 1.2}
 .rolling_image_wrap .img_txt span:hover{color: #9a01cd;}
-.rolling_image_wrap .rolling_01 .img_txt {top: 20px;left: 95px; letter-spacing: -0.5px}
-.rolling_image_wrap .rolling_02 .img_txt {top: 10px; left: 132px;}
-.rolling_image_wrap .rolling_03 .img_txt {top: 76px; left: 135px;}
+.rolling_image_wrap .rolling_01 .img_txt {top: 18px;left: 95px; letter-spacing: -0.5px}
+.rolling_image_wrap .rolling_02 .img_txt {top: 9px; left: 132px;}
+.rolling_image_wrap .rolling_03 .img_txt {top: 74px; left: 135px;}
 .rolling_image_wrap .rolling_04 .img_txt {top: 45px; left: 124px; letter-spacing: -0.2px}
 
 .rolling_image_wrap .txt_box {position: absolute; top: 92px; left: 248px; font:16px 'Faustina' ; line-height: 2.0; padding-left:32px}
@@ -78,5 +78,5 @@
 }
 
 .rolling_thumbnail_area {margin-top:40px; width:100%; text-align:center}
-.rolling_thumbnail_area button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
-.rolling_thumbnail_area button.on {background: url(../images/common/slide_bt_on.png)}
+.rolling_thumbnail_area button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px; font-family: "Noto Sans KR";}
+.rolling_thumbnail_area button.on {background: url(../images/common/slide_bt_on.png); font-weight:700}

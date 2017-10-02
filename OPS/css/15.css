@@ -45,7 +45,7 @@
 .pg_Num p{color:#333;}
 
 /* ask & answer */
-#aa_input {width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none;  font-family: 'Open Sans'; font-size: 13px; }
+#aa_input {width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border:none; display: none;  font-family: 'Open Sans'; font-size: 13px; }
 #aa_aws {position: absolute;  top: 64px; left: 248px; width:80px; color:#f00; display: none; z-index: 999; }
 
 .wpopup {position: absolute; width:67px; height:20px;  text-align: left; color:#339900; font: 11px 'Open Sans';font-weight: 700;}

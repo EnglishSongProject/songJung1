@@ -7,18 +7,18 @@
 .page_tit>img{position: absolute; top: 55px; left: 52px;}
 /*A question*/
 .section1>h2>img{position: absolute; top:-3px; left: -33px; }
-.section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic';font-weight: 900; font-size: 13px;}
+.section1>h2{position: relative; top: 72px; left: 35px; font-family: 'Nanum Gothic'; font-size: 15px;}
 
 /*name*/
-.aa{position: absolute; top: 210px; left: 165px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.aa{position: absolute; top: 210px; left: 165px; font-family: 'Noto Sans KR'; font-size: 17px;}
 /*nickname*/
-.ab{position: absolute; top: 210px; left: 570px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.ab{position: absolute; top: 210px; left: 570px; font-family: 'Noto Sans KR'; font-size: 17px;}
 /*school*/
-.ac{position: absolute; top: 326px; left: 162px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.ac{position: absolute; top: 326px; left: 162px; font-family: 'Noto Sans KR'; font-size: 17px;}
 /*birthday*/
-.ad{position: absolute; top: 326px; left: 575px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.ad{position: absolute; top: 326px; left: 575px; font-family: 'Noto Sans KR'; font-size: 17px;}
 /*family*/
-.ae{position: absolute; top: 441px; left: 164px; font-family: 'Noto Sans KR'; font-size: 15px;}
+.ae{position: absolute; top: 441px; left: 164px; font-family: 'Noto Sans KR'; font-size: 17px;}
 
 /*radio btn*/
 .section02 label:nth-of-type(1) {top: 145px; left: 30px;}

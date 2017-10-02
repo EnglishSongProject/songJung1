@@ -58,7 +58,6 @@ function playAudio(path, btnId, target, imgId, direction) {
                 oAudio.src = path;
                 currentAudio = oAudio;
 
-
                 var audioControls = document.createElement('div');
                 audioControls.className = 'audio_controls';
 
@@ -109,55 +108,47 @@ function playAudio(path, btnId, target, imgId, direction) {
                     var imgId = document.getElementById(imgId);
                     imgId.style.display='block';
                 }
-
-                $(oAudio).on('loadedmetadata', function() {
-                    if (oAudio.paused){
-                        oAudio.play();
-                    }else{
-                        oAudio.pause();
-                        return;
-                    }
-                });
+                if (oAudio.paused){
+                    oAudio.play();
+                }else{
+                    oAudio.pause();
+                    return;
+                }
                 return
             }else {
                 var oAudio = document.getElementById("myaudio");
                 var popup = document.querySelector(".audio-popup");
+                oAudio.addEventListener("timeupdate",updateProgress);
 
-                oAudio.addEventListener('loadedmetadata', function() {
-                    oAudio.addEventListener("timeupdate",updateProgress);
-                });
-            if (oAudio.paused && popup.style.display == "none") {
-                var $target = $(target);
-                // 팝업 위치
+                if (oAudio.paused && popup.style.display == "none") {
+                    var $target = $(target);
+                    // 팝업 위치
+                    if(direction == 'right'){
+                        popup.style.left = ($target.offset().left -216) + "px";
+                        popup.style.top = ($target.offset().top - 10) + "px";
+                    }
+                    else if(direction == "top"){
+                        popup.style.left = ($target.offset().left) + "px";
+                        popup.style.top = ($target.offset().top -42) + "px";
+                    }
+                    else{
+                        popup.style.left = ($target.offset().left + 28) + "px";
+                        popup.style.top = ($target.offset().top - 10) + "px";
+                    }
+                    popup.style.display='block';
 
-                if(direction == 'right'){
-                    popup.style.left = ($target.offset().left -216) + "px";
-                    popup.style.top = ($target.offset().top - 10) + "px";
-                }
-                else if(direction == "top"){
-                    popup.style.left = ($target.offset().left) + "px";
-                    popup.style.top = ($target.offset().top -42) + "px";
-                }
-                else{
-                    popup.style.left = ($target.offset().left + 28) + "px";
-                    popup.style.top = ($target.offset().top - 10) + "px";
-                }
-                popup.style.display='block';
-
-                audioPlay();
-            }else {
-                audioStop();
-                popup.style.display='none';
-            }
-
-            oAudio.addEventListener("ended", function (e) {
-                if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
+                    audioPlay();
+                }else {
+                    audioStop();
                     popup.style.display='none';
-                    oAudio.pause();
-                    oAudio.currentTime = 0;
                 }
-            });
-
+                oAudio.addEventListener("ended", function (e) {
+                    if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
+                        popup.style.display='none';
+                        oAudio.pause();
+                        oAudio.currentTime = 0;
+                    }
+                });
             }
         }
         catch (e) {
@@ -1093,7 +1084,6 @@ $(document).ready(function(){
                 }
             }
         },
-
         closePopup : function(){
                 if($("#myaudio").length > 0) {
                     $(".audio-popup").hide().detach();
@@ -1105,7 +1095,6 @@ $(document).ready(function(){
                 }
         }
     }
-
 
     function blankCheck(questionId, Ids, answers){
 

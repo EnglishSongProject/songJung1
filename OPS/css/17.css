@@ -3,7 +3,7 @@
 /*본문*/
 .first {background: url(../images/17/bg_lesson01.png) no-repeat 0 0; background-size: cover; }
 
-.first div.txt_wrap {font-family: 'Faustina'; font-size: 19px; line-height: 38px; }
+.first div.txt_wrap {font-family: 'Faustina'; font-size: 20px; line-height: 38px; }
 
 .first .txt1 > p {position: absolute; top: 46px; left: 150px; width: 450px; z-index: 100}
 
@@ -21,9 +21,9 @@
 .ten {font-family: 'Nanum Gothic'; font-size: 9px; position: absolute; top: 665px; left: 680px; }
 
 /*본문해석*/
-.transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 108px; left: 151px; font-size: 11px !important; color: #1C8A24;}
+.transfer_t {font-family: 'Open Sans'; display: none; position: absolute; top: 108px; left: 151px; font-size: 12px !important; color: #1C8A24;}
 .transfer_t > p{line-height:38px;}
-.transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 487px;
+.transfer_b {font-family: 'Open Sans';display: none; position: absolute; top: 490px;
     left: 393px; font-size: 11px !important;color: #1C8A24; }
 
 /*시계(Talkng Time)*/
@@ -31,6 +31,7 @@
 .talking_time>div{position: absolute; top: -20px; right:0;}
 .talking_time>img {position: absolute; width: 190px; top: -20px; left: 45px; }
 .talking_time>div>p {position: relative; display: block; width: 300px; height: 80px; top:80px; left: 50px; transform: rotate(3deg);}
+.talking_time>div>p:nth-of-type(2) {position: relative; display: block; width: 300px; height: 80px; top:80px; left: 50px; transform: rotate(3deg); font-size: 16px;}
 .talking_time em{margin-left:17px;}
 .talking_time .btn_list {position: absolute;top: 51px; left: 204px; transform: rotate(3deg);}
 
@@ -56,13 +57,13 @@
 
 .scrollbar::-webkit-scrollbar{width: 17px; height: 70px;}
 .scrollbar::-webkit-scrollbar:vertical{-webkit-border-radius: 70px; border-radius:70px;  background: url('../images/popup/scroll_bar_1.png') no-repeat;}
-.scrollbar::-webkit-scrollbar-button:start:decrement { height: 3px;} 
+.scrollbar::-webkit-scrollbar-button:start:decrement { height: 3px;}
 .scrollbar::-webkit-scrollbar-button:end:increment{ height: 3px;}
 .scrollbar::-webkit-scrollbar-button:track:end{ margin-bottom: 10px; }
 .scrollbar::-webkit-scrollbar-thumb{ display: block; background: url('../images/popup/scroll_btn.png') no-repeat;}*/
 
 /*AskAnswer*/
-.ask_and_speak {position: absolute; top: 855px; left:53px; font-family: 'Open Sans'; font-size: 13px; }
+.ask_and_speak {position: absolute; top: 855px; left:53px; font-family: 'Open Sans'; font-size: 14px; }
 
 .ask_and_speak > p{position:absolute;top:30px; left: 165px;}
 .ask_and_speak > p input[type="text"]{display:none;}
@@ -70,7 +71,7 @@
 .ask_and_speak>h3 {position: absolute; width: 200px;  left: 0px; top:33px}
 .ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 13px; color: #FF4A23; padding-right: 5px;}
 .ask {position: absolute; top: 70px; width:1000px; left: 12px; }
-.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 5px;}
+.ask li {display: inline-block; position: relative; margin-right: 22px; margin-top: 0px;}
 
 /*.answer {position: absolute; top: -18px; width:1000px; left: 10px; display: inline-block; background: url(../images/common/말풍선.png) no-repeat 0 0; background-size:100% 100%;padding:0 2px; text-align:center;height:25px;}*/
 
@@ -89,16 +90,17 @@
 .aa_answer4 {left: 60px;}
 .ask_and_speak .btn_list {position: relative; top: -1px; margin-left: 10px;}
 
-.wpopup {position: absolute; width: 92px; height: 20px; text-align: left; color: #339900; font: 11px 'Open Sans'; font-weight: 700;}
+.wpopup {position: absolute; width: 92px; height: 20px; text-align: left; color: #339900; font: 12px 'Open Sans'; font-weight: 700;}
 .btn_wd {position: absolute; top: 35px; left: 174px;}
-.pop_ask1 {top:102px; left:43px;}
-.pop_ask2 {top:102px; left:170px;}
-.pop_ask3 {top:102px; left:263px;}
-.pop_ask4 {top:102px; left:338px;}
+.pop_ask1 {top:96px; left:43px;}
+.pop_ask2 {top:96px; left:170px;}
+.pop_ask3 {top:96px; left:263px;}
+.pop_ask4 {top:96px; left:338px;}
 
 .balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 20px 5px; text-align: center; margin: 0 auto 10px;}
 .balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
 
 /* ask & answer */
-#aa_input {position: relative; top: 31px; left: 6px; width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; font-family: 'Open Sans'; font-size: 13px; }
-#aa_aws {position: absolute; top: 60px; left: 180px; width: 114px; color: #f00; display: none; z-index: 999; }
+#aa_input {position: relative; top: 31px; left: 6px; width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border:none; display: none; font-family: 'Open Sans'; font-size: 14
+	px; }
+#aa_aws {position: absolute; top: 60px; left: 188px; width: 114px; color: #f00; display: none; z-index: 999; }
