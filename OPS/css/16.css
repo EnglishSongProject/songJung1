@@ -14,6 +14,10 @@
 
 .section > p {font: 19px 'Faustina'; position: absolute; line-height: 38px;}
 .section > p span {display: block}
+.section #line_5,
+.section #line_10{position:absolute;font-family: 'Nanum Gothic';font-size:9px;}
+.section #line_5{top:185px;left:232px;}
+.section #line_10{top:147px;right:-24px;}
 .section > p.correct {font: 11px 'Open Sans'; font-weight: 700; position: absolute; top: 341px; line-height: 38px; display: none;}
 .section .btn_list {position: absolute; top:0; left:-86px}
 
