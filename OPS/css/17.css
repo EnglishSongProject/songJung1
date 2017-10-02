@@ -56,7 +56,7 @@
 
 .scrollbar::-webkit-scrollbar{width: 17px; height: 70px;}
 .scrollbar::-webkit-scrollbar:vertical{-webkit-border-radius: 70px; border-radius:70px;  background: url('../images/popup/scroll_bar_1.png') no-repeat;}
-.scrollbar::-webkit-scrollbar-button:start:decrement { height: 3px;} 
+.scrollbar::-webkit-scrollbar-button:start:decrement { height: 3px;}
 .scrollbar::-webkit-scrollbar-button:end:increment{ height: 3px;}
 .scrollbar::-webkit-scrollbar-button:track:end{ margin-bottom: 10px; }
 .scrollbar::-webkit-scrollbar-thumb{ display: block; background: url('../images/popup/scroll_btn.png') no-repeat;}*/
@@ -100,5 +100,5 @@
 .balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
 
 /* ask & answer */
-#aa_input {position: relative; top: 31px; left: 6px; width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; font-family: 'Open Sans'; font-size: 13px; }
+#aa_input {position: relative; top: 31px; left: 6px; width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border:none; display: none; font-family: 'Open Sans'; font-size: 13px; }
 #aa_aws {position: absolute; top: 60px; left: 180px; width: 114px; color: #f00; display: none; z-index: 999; }

@@ -62,5 +62,5 @@ input[type=checkbox]#aa_ask6:checked ~ #aa_answer6{display:block;}
 .btn_list {position: relative; top:-8px; margin-left:10px }
 
 /* ask & answer */
-#aa_input {position: relative; top: 24px; width:120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border: 1px solid #999; display: none; z-index: 999;  font-family: 'Open Sans'; font-size: 13px; }
+#aa_input {position: relative; top: 24px; width:120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border:none; display: none; z-index: 999;  font-family: 'Open Sans'; font-size: 13px; }
 #aa_aws {position: absolute; top: 142px; left: 476px; width:180px; color:#f00; display: none; }
