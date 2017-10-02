@@ -35,12 +35,6 @@ article dd ul li{font-size: 12px;}
 article dd ul li:hover{color: #9a01cd;}
 
 li article h1{font-family: 'Bubblegum Sans';font-size:16px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:30px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
-/*.rol_01 article:first-of-type h1{transform:rotate(-3deg);}
-.rol_01 article:nth-of-type(2) h1{transform:rotate(5deg);}
-.rol_01 article:last-of-type h1{transform:rotate(1deg);}
-.rol_02 article:first-of-type h1{transform:rotate(3deg);}
-.rol_02 article:nth-of-type(2) h1{transform:rotate(-5deg);}
-.rol_02 article:last-of-type h1{transform:rotate(2deg);}*/
 
 li article h2{font-size:13px;font-family: 'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
 .a_check{background:url(../images/09/a_check_bt.png) no-repeat 0 0;}
