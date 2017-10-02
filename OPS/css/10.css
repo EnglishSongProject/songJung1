@@ -3,16 +3,18 @@
 /*listen&speak 공통*/
 .page_tit {margin:10px}
 .info {position: absolute; top:60px; right:55px; display: inline-block; width:155px; height: 43px; padding:12px 0 0 50px; background: url(../images/10/sp_info.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box; font-size: 9px;}
-.info>p{position: absolute; top: 8px; left: 34px;}
+.info>p{position: absolute; top: 8px; left: 34px; font-size:12px; font-weight:bold}
 
-.part_las .sub_tit {font:24px "Bubblegum Sans"; margin-top:30px; }
-.part_las .sub_tit img {margin-right:10px; vertical-align: top;}
-.part_las .sub_tit span {font:17px "Noto Sans KR";}
-.part_las .sub_tit .audio_tit{font:24px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit {font:30px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit img { vertical-align: top;}
+.part_las .sub_tit span {font:17px "Noto Sans KR"; margin-left:10px; font-weight:bold;
+    position: relative; top:-2px}
+.part_las .sub_tit .audio_tit{font:30px "Bubblegum Sans"; margin-top:30px;
+    position: relative; top:-3px ; left:-3px}
 
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
-.part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5}
+.part_las .textbox {font:17px "Nanum Gothic"; text-align: center; line-height: 1.5; font-weight: 700}
 
 /*Warm up */
 .part_las .wp_text01 {position: absolute; top: 57px; left: 84px;}
@@ -21,7 +23,7 @@
 input.wp_input01:focus{outline: none;}
 
 /*Lsten and Check  */
-.section02 .num {position: absolute; font:16px "Noto Sans KR";}
+.section02 .num {position: absolute; font:19px "Noto Sans KR";}
 .section02 .num:nth-of-type(1) {top: 30px; left: 25px;}
 .section02 .num:nth-of-type(2) {top: 30px; left: 352px}
 .section02 label:nth-of-type(1) {top: -121px; left: 245px;}
@@ -30,8 +32,8 @@ input.wp_input01:focus{outline: none;}
 .section02 label:nth-of-type(4) {top: -53px; left: 447px;}
 
 /*Match and Talk */
-.part_las .eg {position: relative; font:18px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
-.part_las .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
+.part_las .eg {position: relative; font:20px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
+.part_las .eg:before {position: absolute; left:0; top:5px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
 .part_las .eg em { font:18px 'Faustina'; }
 .part_las .eg .blue {color:#0101ff;}
 .part_las .eg div > span{position: absolute;  top: 18px;  font-size: 11px;  line-height: 30px;  color: #339900;}
@@ -42,22 +44,22 @@ input.wp_input01:focus{outline: none;}
 .select_name:nth-of-type(2) {left:153px}
 .select_name:nth-of-type(3) {left:321px}
 .select_name:nth-of-type(4) {left:483px}
-.select_name span {position: absolute;font:13px 'Noto Sans KR' ;}
-.select_name:nth-of-type(1) span {top:64px; left:71px; }
-.select_name:nth-of-type(2) span {top:60px; left:76px; }
-.select_name:nth-of-type(3) span {top:58px; left:75px; }
-.select_name:nth-of-type(4) span {top:58px; left:66px; }
+.select_name span {position: absolute;font:15px 'Noto Sans KR' ;}
+.select_name:nth-of-type(1) span {top: 63px; left: 67px; }
+.select_name:nth-of-type(2) span {top: 58px; left:76px; }
+.select_name:nth-of-type(3) span {top:56px; left:75px; }
+.select_name:nth-of-type(4) span {top:55px; left:66px; }
 .select_name:hover span {color:#a14796}
 
-.target_sentence {position: absolute; bottom:0; left:40px; bottom:34px;padding: 1px;}
-.target_sentence span {position: absolute; top:0; display: inline-block; width:100px; font:15px "Noto Sans KR";}
+.target_sentence {position: absolute;left: 32px; bottom: 35px;;padding: 1px;}
+.target_sentence span {position: absolute; top:0; display: inline-block; width: 110px; font:17px "Noto Sans KR";}
 .target_sentence span:nth-of-type(1) {left:23px}
 .target_sentence span:nth-of-type(2) {left:185px}
 .target_sentence span:nth-of-type(3) {left:345px}
 .target_sentence span:nth-of-type(4) {left:495px}
 
-.btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
-.tip_con {font:12px "Noto Sans KR";}
+.btn_tip {position: relative; top: 7px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
+.tip_con {font:13px "Noto Sans KR";}
 
 /*!*슬라이더*!*/
 /*.slider_image_wrap .slider_image > li {*/

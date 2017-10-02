@@ -98,7 +98,9 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /* 버튼 */
 .btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
-.btn_type_02 {display: inline-block; width:25px; height:25px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_02 {display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;
+    position: relative; top:-1px
+}
 .btn_type_03 {display: inline-block; width:118px; height:50px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
 .btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 
@@ -181,8 +183,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .slider_image_wrap .slider_image li.on {display: block;}
 .slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
 .slider_thumbnail {text-align:center}
-.slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px; font-family: "Noto Sans KR"; }
-.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png); font-weight:700}
+.slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px; font-family: "Noto Sans KR"; text-indent:-999em}
+.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png); font-weight:700; text-indent:-999em}
 
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
 .btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
@@ -297,13 +299,13 @@ scriptPopup
 페이징
 ----------------------*/
 
-.pg_Num{display:block;position:absolute;bottom:30px;font-family: 'Nanum Gothic';font-size:12px;letter-spacing: 0.5px;}
-.pg_Num strong{display:inline-block;font-weight:800;font-family: 'Noto Sans KR';font-size:14px;}
+.pg_Num{display:block;position:absolute;bottom:30px;font-family: 'Nanum Gothic';font-size:12px;letter-spacing: 0.5px; font-weight: bold;}
+.pg_Num strong{display:inline-block;font-weight:800;font-family: 'Noto Sans KR';font-size:14px; vertical-align:-2px }
 .pgNum_left{left:52px;}
-.pgNum_left strong{margin:0 5px 0 0;}
+.pgNum_left strong{margin:0 10px 0 0;}
 .pgNum_right{left:540px;}
-.pgNum_right strong{margin:0 0 0 5px;}
-
+.pgNum_right strong{margin:0 0 0 10px;}
+.pg_Num p {line-height:1.5; vertical-align: top}
 
 .img-popup-none-confirm, .img-popup-none-confirm1, .img-popup-none-confirm2{
     width: 768px;
