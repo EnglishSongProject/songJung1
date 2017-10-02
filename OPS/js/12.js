@@ -1,11 +1,12 @@
 // JavaScript Document
 
-$(function () {
 
-    $('.simhwa').on('click',function () {
-        $('.img-popup-none-confirm').toggle();
-    });
-    $('.img-popup-none-confirm').on('click',function () {
-        $('.img-popup-none-confirm').toggle();
-    });
+$(document).ready(function() {
+      imageSlide.init();
+      $("ul.Tab_area > li").click(function(){
+        $("ul.Tab_area > li").removeClass("li_on")
+        $(this).addClass("li_on");
+
+      });
+
 });
