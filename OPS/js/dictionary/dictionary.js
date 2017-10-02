@@ -3,15 +3,10 @@ $(document).ready(function(){
     words.map(function (item) {
         var wordSpan = "<span class='active-purple' name='" + item.name +"' >" + item.name + "</span>";
         // 단어 생성
-        $("#words").append(wordSpan).scroll(function(){
-            var elem = $("#words");
-        //    if ( elem.scrollHeight - elem.scrollTop() - elem.outerHeight()) {
-                elem.get(0).scrollHeight = elem.get(0).scrollHeight - elem.scrollTop() - elem.outerHeight()
-                console.log(elem.get(0).scrollHeight - elem.scrollTop() - elem.outerHeight())
-                //console.log(elem.scrollHeight - elem.scrollTop() - elem.outerHeight());
-         //   }
-        });
 
+        setTimeout(function(){
+            $("#words").append(wordSpan);
+        },100);
 
         // 단어 클릭시
         $("#words").on("click", "span", function() {
