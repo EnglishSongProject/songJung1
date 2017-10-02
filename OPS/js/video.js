@@ -13,7 +13,6 @@ var scriptHeight = 0; //자막파일의 최종높이
 var scriptMax = 280;
 
 //따라 말하기 기능 //normal:보면서 듣기, repeat:따라 말하기, role:역할놀이
-var roleNum = 1; //롤플레잉시 묵음을 할 사람 이름 0:그냥 재생, 1~n: 사람 번호
 var repeatInfo = {seq:-1, wait:false, pauseTime:0, pauseCount:0, delay:0, limit:[20, 160] };
 var scriptIdx = 0; //따라 말하기에서 현재 스크립트 위치를 참조함
 var sectionIdx = 0; //normal에서 구간재생시 쓰임
@@ -146,12 +145,14 @@ function setCaption(){
 				}
 
 			}else{
-				//role				
-				if (whoNum == roleNum){					
-					vObj.prop('muted', true); //mute
-				}else{
-					vObj.prop('muted', false);
-					roleMute.on = false;
+				//role
+				if(roleNum != 0){
+					if (whoNum == roleNum) {
+						vObj.prop('muted', true); //mute
+					} else {
+						vObj.prop('muted', false);
+						roleMute.on = false;
+					}
 				}
 			}
 
@@ -601,7 +602,6 @@ function onTimeupdate() {
 
 
 //동영상 컨트롤러 관련
-var progLimit = [0, 373];
 var per = 0; //재생 시간
 var ispaused = true; //사용자 동작 전에 재생중이었는지 저장함
 
@@ -1093,7 +1093,7 @@ function setProg(rate){
 	pObj.style.width =  parseInt(cx) + "px";
 
 	pObj = document.getElementById('prog_ball');
-	pObj.style.left =  parseInt(cx + 120) + "px";
+	pObj.style.left =  parseInt(cx + progBallLeft) + "px";
 
 	setCaption();
 }
