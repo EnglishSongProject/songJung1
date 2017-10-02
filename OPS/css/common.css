@@ -28,7 +28,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 table {border-collapse: collapse; border-spacing: 0;}
 
 
-
 /*----------------------
 폰트
 ----------------------*/
@@ -182,8 +181,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .slider_image_wrap .slider_image li.on {display: block;}
 .slider_thumbnail_area {position: absolute; left:0; bottom:100px; width:100%;}
 .slider_thumbnail {text-align:center}
-.slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px}
-.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png)}
+.slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px; font-family: "Noto Sans KR"; }
+.slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png); font-weight:700}
 
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
 .btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}

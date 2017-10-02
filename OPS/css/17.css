@@ -23,7 +23,7 @@
 /*본문해석*/
 .transfer_t {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 108px; left: 151px; font-size: 11px !important; color: #1C8A24;}
 .transfer_t > p{line-height:38px;}
-.transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 487px;
+.transfer_b {font-family: 'Open Sans';font-weight: 700;display: none; position: absolute; top: 490px;
     left: 393px; font-size: 11px !important;color: #1C8A24; }
 
 /*시계(Talkng Time)*/
