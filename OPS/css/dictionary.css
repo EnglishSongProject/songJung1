@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 배경 */
+.intro {background: url(../images/dictionary/bg_dictionary.jpg) no-repeat 0 0; background-size: cover}
+.header_tit {position: absolute; display: block; top: 50px; content: url("../images/dictionary/title_word.png");}
+.close_icon {position: absolute; display: block; top: 20px; left: 720px;}
+
+#flashcard {position: absolute; display: block; width: 300px; height: 150px; border-radius: 15px; top: 230px; left: 420px; background: #ffffff;}
+#flashcard_example {position: absolute; display: block; width: 300px; height: 80px; border-radius: 15px; top: 450px; left: 420px; background: #ffffff;}
+
+.btn_mp3_a {position: relative; display: block; float:left; width: 25px; height: 25px; top: 180px; left: 330px; background-size: cover;}
+
+/* 단어 리스트 */
+.word_list {position: absolute; display: block; width: 280px; height: 370px; border-radius: 15px; top: 230px; left: 50px; background: #ffffff; overflow: auto;}
+#words span {display: block; padding: 10px 30px 10px 40px; font-size: 20px}
+
+/* 단어 */
+#word {text-align: center; margin-top: 12%; font-size: 40px; color: #b57d43;}
+#word_meaning {text-align: center; margin-top: 70px;}
+#description {text-align: center; margin-top: 9%; font-size: 15px; width: 300px; height: 80px;}
+#description2 {text-align: center;}
