@@ -158,20 +158,20 @@ function setCaption(){
 			}
 
 		}else{
-			//자막이 비는 시간
+/*			//자막이 비는 시간
 			if (playMode == 'repeat'){
 				if (repeatInfo.seq != -1){
 					console.log  ("재생중인 자막의 끝");
 					setPause();
 				}		
-			}
+			}*/
 		}		
 		document.querySelector('.txt_one').innerHTML = str;
 		document.querySelector('.txt_two').innerHTML = str2;
 
 
 		//재생중에 해당
-		if (playMode == 'repeat'){
+/*		if (playMode == 'repeat'){
 			if (seq == -1){
 				//자막이 없음
 				repeatInfo.seq = -1;
@@ -184,7 +184,7 @@ function setCaption(){
 				}else{
 				}
 			}
-		}		
+		}		*/
 	}	
 }
 
