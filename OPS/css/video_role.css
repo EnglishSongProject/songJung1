@@ -1,0 +1,27 @@
+/*1. 동영상 진행바 컨트롤러*/
+
+.progController { position:absolute; left:10px; top:10px; width:373px;}
+#prog_play{ position:absolute; left:255px; top:12px; cursor:pointer;}
+#prog_stop{ position:absolute; left:290px; top:12px; cursor:pointer;}
+
+/* 볼 */
+#prog_gray{	position:absolute; left:340px; top:12px; width:200px; height:10px;	z-index:1;}
+#prog_color{ position:absolute; left:340px; top:12px; width:200px; height:20px; overflow:hidden; z-index:2;}
+#prog_gray > img, #prog_color > img { width: 200px;}
+#prog_mouse{ position:absolute; left:340px; top:12px; width:200px; height:10px; cursor:pointer; z-index:3; opacity:0;}
+#prog_ball{	position:absolute; top:12px; width:20px; height:20px;	cursor:pointer; z-index:4;}
+
+/*자막, 대본*/
+#prog_cap{	position:absolute; left:570px; top:12px; z-index:3; cursor:pointer;}
+#prog_cap2{	position:absolute; left:590px; top:12px; z-index:3; cursor:pointer;}
+#prog_sct{	position:absolute; left:660px; top:12px; z-index:3; cursor:pointer;}
+
+
+/*동영상 시간*/
+.prog_pos{	position:absolute; left: 340px; top:25px; width:60px; height:50px; overflow:hidden; }
+.prog_dur{	position:absolute; left:400px; top:25px; width:60px; height:50px; overflow:hidden; }
+
+.role_list{position: absolute; top: -6px;left: 20px;}
+.role_list li{float: left; width: 50px; height: 50px; margin-right: 20px; border: 3px solid gray; border-radius: 3px;}
+.role_list li.on{border-color: yellow;}
+.role_list li > img{width: 50px; height: 50px;}
