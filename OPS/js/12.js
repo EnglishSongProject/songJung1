@@ -89,89 +89,55 @@ $(document).ready(function() {
     });
 
     $('#role_1, #role_2, #role_3').on('click',function () {
-
-        var whoNum = this.id.substr(this.id.length -1, 1);
-        var info = mediaInfo[idxr];
-        var text = info.syncText;
-        var sync = info.sync;
-        var arrayForMute = new Array();
-
-        //해당 싱크 텍스트의 순서만 받아와 배열에 푸시해준다.
-        for(var i=0; i<text.length;i++){
-            if(text[i][1] == whoNum){
-                var y=0
-                for(y; y<sync.length;y++){
-                    if(sync[y][0] == text[i][0]){
-                        arrayForMute.push(sync[y]);
-                    }
-                }
-            }
-        }
-        //어레이 뮤트로 온과 오프 이벤트를 걸어주면 됨.
-        console.log(arrayForMute);
         //뮤트온
         if(!$(this).hasClass('on')){
             $(this).addClass('on');
-            var vObj = $("#vdo");
-            vObj[0].addEventListener("timeupdate", function () {
-/*                for(var i=0; i<arrayForMute.length;i++){
-                        console.log(vObj[0].currentTime);
-                }*/
-                for(var i=0; i<arrayForMute.length;i++){
-                    if(arrayForMute[i][1]<vObj[0].currentTime&&vObj[0].currentTime<arrayForMute[i][2]){
-                        vObj.prop('muted', true);
-                        console.log(arrayForMute[i]);
-                    }else{
-                        vObj.prop('muted', false);
-                        console.log(arrayForMute[i]);
-                    }
-                }
-/*                if(5<vObj[0].currentTime&&vObj[0].currentTime<10){
-                    vObj.prop('muted', true);
-                }else{
-                    vObj.prop('muted', false);
-                }*/
-            }, false);
-
             //뮤트 오프
         }else{
             $(this).removeClass('on');
         }
 
-        /*var vdo = document.querySelector('#vdo');
-        var vObj = $("#vdo");
-        var ctime = vdo.currentTime;
-        var info = mediaInfo[idxr]; //sync:, syncText:
-        var txtInfo = null;
-        var seq = -1;
-        //17번의 반복문을 돌린다.(현재 진행되고 있는 플레이 구간)
-        for (var i=0;i<info.sync.length;i++){
-            //싱크 [i]번째의 두번째 값(재생시작시간)이 현재 진행 시각보다 이하이고
-            //싱크 [i]번째의 세번째 값(재생 종료시간)이 현재 진행
-            if (ctime>=info.sync[i][1] && ctime<=info.sync[i][2]){
-                seq = i;
-                txtInfo = info.syncText[i];
-                console.log(txtInfo);
-                break;
+        //롤리스트 아래의 on인 것들을 배열로 받는다.(다중 뮤트 기능 구현)
+        var role_List = $('.role_list');
+        var arrayFormuteOn = new Array();
+
+        for(var z=0; z<role_List[0].childNodes.length; z++){
+            if($(role_List[0].childNodes[z]).hasClass('on')){
+                arrayFormuteOn.push(role_List[0].childNodes[z]);
             }
         }
-        var whoNum = txtInfo[1];
-        console.log(whoNum);
 
-        var muteClassList = $('.role_list');
-        var muteChilds = muteClassList[0].children;
+        var info = mediaInfo[idxr];
+        var text = info.syncText;
+        var sync = info.sync;
+        var arrayForMute = new Array();
+        var vObj = $("#vdo");
+        var muteForRoleList = new Array();
 
-        for(var i=0; i<muteChilds.length; i++){
-            if($(muteChilds[i]).hasClass('on')){
-                //id 뒤의 숫자만 따로 추출
-      /!*          arrayForMute.push(muteChilds[i].id.substr(muteChilds[i].id.length -1,1));*!/
-                if(whoNum == muteChilds[i].id.substr(muteChilds[i].id.length -1,1)){
-                    vObj.prop('muted', true); //mute
-                }else {
-                    vObj.prop('muted', false);
-                    roleMute.on = false;
+        //해당 싱크 텍스트의 순서만 받아와 배열에 푸시해준다.
+        for(var i=0; i<text.length;i++){
+            //뮤트할 롤 배열만큼 반복문을 돌려준다.
+            for (var y=0; y<arrayFormuteOn.length; y++){
+                var whoNum = arrayFormuteOn[y].id.substr(this.id.length -1, 1);
+                if(text[i][1] == whoNum) {
+                    muteForRoleList.push(whoNum);
+                    arrayForMute.push(sync[i]);
                 }
             }
-        }*/
+        }
+        //요소 중복제거 스크립트
+        muteForRoleList = muteForRoleList.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+
+        //어레이 뮤트로 온과 오프 이벤트를 걸어주면 됨.
+        console.log('뮤트할 롤 넘버'+ muteForRoleList+'뮤트할 것'+arrayForMute+' 뮤트할 갯수'+arrayForMute.length);
+
+        //jquery html = javascript innerhtml
+        for(var i=0; i<muteForRoleList.length; i++){
+            $('#muteForRole_'+muteForRoleList[i]).html('');
+        }
+
+        vObj[0].addEventListener("timeupdate", function () {
+            if()
+        });
     });
 });
