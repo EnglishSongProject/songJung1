@@ -90,10 +90,10 @@ $(document).ready(function() {
 
     $('#role_1, #role_2, #role_3').on('click',function () {
         //뮤트온
-        if(!$(this).hasClass('on')){
+        if (!$(this).hasClass('on')) {
             $(this).addClass('on');
             //뮤트 오프
-        }else{
+        } else {
             $(this).removeClass('on');
         }
 
@@ -101,8 +101,8 @@ $(document).ready(function() {
         var role_List = $('.role_list');
         var arrayFormuteOn = new Array();
 
-        for(var z=0; z<role_List[0].childNodes.length; z++){
-            if($(role_List[0].childNodes[z]).hasClass('on')){
+        for (var z = 0; z < role_List[0].childNodes.length; z++) {
+            if ($(role_List[0].childNodes[z]).hasClass('on')) {
                 arrayFormuteOn.push(role_List[0].childNodes[z]);
             }
         }
@@ -115,32 +115,42 @@ $(document).ready(function() {
         var muteForRoleList = new Array();
 
         //해당 싱크 텍스트의 순서만 받아와 배열에 푸시해준다.
-        for(var i=0; i<text.length;i++){
+        for (var i = 0; i < text.length; i++) {
             //뮤트할 롤 배열만큼 반복문을 돌려준다.
-            for (var y=0; y<arrayFormuteOn.length; y++){
-                var whoNum = arrayFormuteOn[y].id.substr(this.id.length -1, 1);
-                if(text[i][1] == whoNum) {
+            for (var y = 0; y < arrayFormuteOn.length; y++) {
+                var whoNum = arrayFormuteOn[y].id.substr(this.id.length - 1, 1);
+                if (text[i][1] == whoNum) {
                     muteForRoleList.push(whoNum);
                     arrayForMute.push(sync[i]);
                 }
             }
         }
         //요소 중복제거 스크립트
-        muteForRoleList = muteForRoleList.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+        muteForRoleList = muteForRoleList.reduce(function (a, b) {
+            if (a.indexOf(b) < 0) a.push(b);
+            return a;
+        }, []);
 
         //어레이 뮤트로 온과 오프 이벤트를 걸어주면 됨.
-        console.log('뮤트할 롤 넘버'+ muteForRoleList+'뮤트할 것'+arrayForMute+' 뮤트할 갯수'+arrayForMute.length);
+        console.log('뮤트할 롤 넘버' + muteForRoleList + '뮤트할 것' + arrayForMute + ' 뮤트할 갯수' + arrayForMute.length);
 
         //뮤트 조건 넣는 로직
-        var textForEval='if(';
-        for(var i=0; i<arrayForMute.length; i++){
-            textForEval += '(' + arrayForMute[i][1].toString() + '<vObj[0].currentTime&&vObj.currentTime<' + arrayForMute[i][2].toString() +')||';
-        }
-        textForEval = textForEval.substr(0, textForEval.length -2);
-        textForEval += '){vObj.prop(\'muted\', true);}else{vObj.prop(\'muted\', false);}'
-        var elementForEval = $('#textForEval_m');
-        elementForEval.innerHTML=textForEval;
+        if(arrayForMute.length != 0){
+            var textForEval = 'if(';
+            for (var i = 0; i < arrayForMute.length; i++) {
+                textForEval += '(' + arrayForMute[i][1].toString() + '<vObj[0].currentTime&&vObj[0].currentTime<' + arrayForMute[i][2].toString() + ')||';
+            }
+            textForEval = textForEval.substr(0, textForEval.length - 2);
+            textForEval += '){vObj.prop(\'muted\', true);}else{vObj.prop(\'muted\', false);}'
 
-        
+            console.log(textForEval);
+            vObj[0].addEventListener("timeupdate", function () {
+                eval(textForEval);
+            });
+        }else{
+            vObj[0].addEventListener("timeupdate", function () {
+                vObj.prop('muted', false);
+            });
+        }
     });
 });
