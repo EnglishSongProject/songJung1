@@ -125,15 +125,8 @@ $(document).ready(function() {
                 }
             }
         }
-        //요소 중복제거 스크립트
-        muteForRoleList = muteForRoleList.reduce(function (a, b) {
-            if (a.indexOf(b) < 0) a.push(b);
-            return a;
-        }, []);
-
-        //어레이 뮤트로 온과 오프 이벤트를 걸어주면 됨.
-        console.log('뮤트할 롤 넘버' + muteForRoleList + '뮤트할 것' + arrayForMute + ' 뮤트할 갯수' + arrayForMute.length);
-
+/*        setWaiter();
+        removeWaiter();*/
         //뮤트 조건 넣는 로직
         if(arrayForMute.length != 0){
             var textForEval = 'if(';

@@ -12,77 +12,8 @@ var timeID;
 var scriptHeight = 0; //자막파일의 최종높이
 var scriptMax = 280;
 
-//따라 말하기 기능 //normal:보면서 듣기, repeat:따라 말하기, role:역할놀이
 //롤플레잉시 묵음을 할 사람 이름 0:그냥 재생, 1~n: 사람 번호
-var repeatInfo = {seq:-1, wait:false, pauseTime:0, pauseCount:0, delay:0, limit:[20, 160] };
-var scriptIdx = 0; //따라 말하기에서 현재 스크립트 위치를 참조함
 var sectionIdx = 0; //normal에서 구간재생시 쓰임
-
-function setPause(){
-	var vdo = document.querySelector('#vdo');
-	if (ispaused || vdo.paused){
-		return;
-	}
-
-	vdo.pause();	
-
-	var info = mediaInfo[idxr]; //sync:, syncText:
-	var ctime = info.sync[repeatInfo.seq]; //[1, 5.00, 9.00](순번, 시작시간, 끝시간)
-	repeatInfo.delay = Math.abs(ctime[2] - ctime[1]) * 1000;
-
-	//console.log("ctime: " + ctime);
-	//console.log("delaytime: " + delaytime);
-
-	repeatInfo.pauseTime = new Date().getTime() + repeatInfo.delay;
-	repeatInfo.pauseCount = 0;
-	repeatInfo.wait = true;
-
-	var waiter = document.getElementById('waiter_wrap');
-	waiter.style.visibility = "visible";
-	setWaiter();
-}
-function removeWaiter(){
-	var waiter = document.getElementById('waiter_wrap');
-	waiter.style.visibility = "hidden";
-	repeatInfo.seq = -1;
-	repeatInfo.wait = false;
-}
-function setWaiter(){
-	//repeatInfo.pauseTime
-
-	var now = new Date().getTime();
-	var past = repeatInfo.pauseTime - now;
-	//console.log(past);
-	
-	var vdo = document.querySelector('#vdo');
-	var ball = document.getElementById('waitBall');
-	var waiter = document.getElementById('waiter_wrap');
-
-	if (past<=0){
-		repeatInfo.wait = false;
-		repeatInfo.seq = -1;
-
-		//waiter 꺼주기		
-		waiter.style.visibility = "hidden";	
-		ball.style.left = repeatInfo.limit[0] + "px";
-		removeWaiter();
-		vdo.play();
-	}else{
-		var d = Math.max(0, repeatInfo.delay - past);
-		var w = Math.abs(repeatInfo.limit[1] - repeatInfo.limit[0]);
-		var rate = Math.max(0, Math.min(1, d/repeatInfo.delay));
-		var cx = parseInt(repeatInfo.limit[0] + (w * rate));
-		ball.style.left =  parseInt(cx) + "px";
-		console.log([ball, cx, ball.style.left]);
-	}
-}
-
-
-
-function setJump(){	
-	removeWaiter();
-	setCaption();
-}
 
 function setCaption(){
 
@@ -114,8 +45,7 @@ function setCaption(){
 			//console.log([ctime, stime[0], stime[1]]);
 			if (ctime>=stime[1]){
 				console.log  ("구간 재생의 끝> 재생 가능한 상태로");
-				ispaused = false;						
-				removeWaiter();
+				ispaused = false;
 				//
 				vdo.pause();
 				play.src = './images/common/controls/vdo/btnPlay.png';
@@ -135,16 +65,6 @@ function setCaption(){
 			if (playMode == 'normal'){
 				//모든 목소리 정상 재생
 
-			}else if (playMode == 'repeat'){
-
-				//현재 표시할 자막이 있음
-				if (repeatInfo.seq == seq){
-					//이미 진입한 자막과 같다
-				}else{
-					console.log ("새로 진입");
-					repeatInfo.seq = seq;
-				}
-
 			}else{
 				//role
 				if(roleNum != 0){
@@ -157,40 +77,11 @@ function setCaption(){
                 }
 			}
 
-		}else{
-/*			//자막이 비는 시간
-			if (playMode == 'repeat'){
-				if (repeatInfo.seq != -1){
-					console.log  ("재생중인 자막의 끝");
-					setPause();
-				}		
-			}*/
-		}		
+		}
 		document.querySelector('.txt_one').innerHTML = str;
 		document.querySelector('.txt_two').innerHTML = str2;
-
-
-		//재생중에 해당
-/*		if (playMode == 'repeat'){
-			if (seq == -1){
-				//자막이 없음
-				repeatInfo.seq = -1;
-
-			}else{
-				//표시할 자막이 있음
-				if (repeatInfo.seq == -1){
-					//자막이 없었음, 새로 진입
-					repeatInfo.seq = seq;
-				}else{
-				}
-			}
-		}		*/
 	}	
 }
-
-
-
-
 function mediaInit(idx) {
 	idxr = idx;
 	//
@@ -202,14 +93,16 @@ function mediaInit(idx) {
 	}	
 }
 
+function removeWaiter(){
+    var waiter = document.getElementById('waiter_wrap');
+    waiter.style.visibility = "hidden";
+}
+function setWaiter() {
+    var waiter = document.getElementById('waiter_wrap');
+    waiter.style.visibility = "visible";
+}
 function mediaClose(){
 	clearInterval(timeID);
-	repeatInfo.wait = false;
-	repeatInfo.seq = -1;
-
-	var waiter = document.getElementById('waiter_wrap');
-	waiter.style.visibility = "visible";
-
 
 	var vdo = document.querySelector('#vdo');
 	if(vdo){		
@@ -501,7 +394,6 @@ function sectionPlay(){
 	var play = document.querySelector('#play')
 
 	ispaused = false;
-	removeWaiter();
 	setCaption();
 
 	if (sectionIdx == 0){
@@ -547,7 +439,6 @@ function initVdo(){
 	vdo.currentTime = 0;	
 
 	ispaused = false;
-	removeWaiter();
 	setCaption();
 	setProg(0);
 
@@ -595,9 +486,6 @@ function onTimeupdate() {
 	if (vdo.paused){
 	}else{
 		setProg(rate);		
-	}	
-	if (repeatInfo.wait){
-		setWaiter();			
 	}
 }
 
@@ -698,12 +586,7 @@ $(document).ready(function(){
 		document.querySelector('.thumImg').style.display = 'none';
 		
 
-		if(vdo.paused) {			
-			if (playMode == 'repeat' && repeatInfo.wait){
-				removeWaiter();
-				play.src = './images/common/controls/vdo/btnPlay.png';
-				vdo.pause();
-			}else{
+		if(vdo.paused) {
 				//재생
 				if (playMode == "normal" && sectionIdx !=0){
 					var stime = mediaInfo[idxr].section[sectionIdx-1];
@@ -714,7 +597,6 @@ $(document).ready(function(){
 				}
 				play.src = './images/common/controls/vdo/btnPause.png';
 				vdo.play();
-			}
 		} else {
 			//일시 정지
 			play.src = './images/common/controls/vdo/btnPlay.png';
@@ -735,7 +617,6 @@ $(document).ready(function(){
 		vdo.pause();
 
 		//
-		removeWaiter();
 		setProg(0);
 	}, false);
 
