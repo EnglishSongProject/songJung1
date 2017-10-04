@@ -131,13 +131,16 @@ $(document).ready(function() {
         //어레이 뮤트로 온과 오프 이벤트를 걸어주면 됨.
         console.log('뮤트할 롤 넘버'+ muteForRoleList+'뮤트할 것'+arrayForMute+' 뮤트할 갯수'+arrayForMute.length);
 
-        //jquery html = javascript innerhtml
-        for(var i=0; i<muteForRoleList.length; i++){
-            $('#muteForRole_'+muteForRoleList[i]).html('');
+        //뮤트 조건 넣는 로직
+        var textForEval='if(';
+        for(var i=0; i<arrayForMute.length; i++){
+            textForEval += '(' + arrayForMute[i][1].toString() + '<vObj[0].currentTime&&vObj.currentTime<' + arrayForMute[i][2].toString() +')||';
         }
+        textForEval = textForEval.substr(0, textForEval.length -2);
+        textForEval += '){vObj.prop(\'muted\', true);}else{vObj.prop(\'muted\', false);}'
+        var elementForEval = $('#textForEval_m');
+        elementForEval.innerHTML=textForEval;
 
-        vObj[0].addEventListener("timeupdate", function () {
-            if()
-        });
+        
     });
 });
