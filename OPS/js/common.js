@@ -428,7 +428,7 @@ function blankCheck(questionId, Ids, answers){
     }
 }
 
-function blankCheckByCss(questionId, Ids, clearId, type){
+function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionName){
     var questionId = document.getElementById(questionId);
     var answerIdArray;
     var clearArray;
@@ -445,8 +445,6 @@ function blankCheckByCss(questionId, Ids, clearId, type){
         answerIdArray = [Ids];
         clearArray = [clearId];
     }
-    console.log(answerIdArray);
-    console.log(clearArray);
     if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
@@ -464,9 +462,9 @@ function blankCheckByCss(questionId, Ids, clearId, type){
         }
         var notice = score === answerIdArray.length ? "정답" : "오답"
         if(type == "type01" || type == "type02"){
-            alert(notice + "입니다");
+/*            alert(notice + "입니다");
+* 추후 정답 체크할 시, 필요할 로직*/
         }
-
 
     }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
@@ -479,6 +477,10 @@ function blankCheckByCss(questionId, Ids, clearId, type){
             }
             answerId = document.getElementById(answerIdArray[i]);
             answerId.style.display='none';
+        }
+
+        if(type == 'type03'){
+            retryDragging(dragName,savePositionName);
         }
     }
 }
@@ -576,7 +578,6 @@ function textClear(idForClear, nameForClear, Id_a, btnId_q) {
         }
         //checkWithCheckBox
         var checkBoxNamesForClear = document.getElementsByName(nameForClear);
-        console.log(checkBoxNamesForClear);
         for (var i = 0; i < checkBoxNamesForClear.length; i++) {
             checkBoxNamesForClear[i].checked = false;
         }

@@ -381,4 +381,7 @@ scriptPopup
     font-size: 15px;
     font-weight: 700;
 }
+.ui-draggable-dragging{
+    font-size: 30px;
+}
 
