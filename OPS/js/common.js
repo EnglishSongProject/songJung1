@@ -15,7 +15,7 @@ if ( navigator.userAgent.toLowerCase().indexOf("android") != -1 ) AndroidOS = tr
 var isPc = (AndroidOS == false && ipadOS ) ? true : false;
 
 var WindowsTenOS = false;
-if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
+if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;   
 
 $(document).ready(function(){
     checkAskAnswer();
@@ -23,40 +23,85 @@ $(document).ready(function(){
     setSpellcheck();
 })
 
+// 오디오 팝업
 var currentFile = "";
 var currentPopup = null;
 var currentAudio = null;
 
 function playAudio(path, btnId, target, imgId, direction) {
+    var isPlaying = false;
+
     // Check for audio element support.
     if (window.HTMLAudioElement) {
-        try {
-            // 열려있는 sing 듣기 해제
-            if($('.single').length){
+        
+        //  열려 있는 사운드 닫기
+        if (path !== currentFile && currentFile !== "") {
+            
+            // 싱글 듣기 닫기
+            if ($('.single').length) {
                 $('.single').detach()
             }
 
-            if (path !== currentFile) {
-                //열려있는 전체듣기 팝업 해제
-                if(currentFile !== ""){
-                    document.getElementById("myaudio").currentTime = 0;
-                    document.getElementById("myaudio").pause();
-                    $(".audio-popup").detach();
-                }
+            // 전체 듣기 닫기
+            if (currentAudio != 'single') {
+                var audio = $("#myaudio").get(0);
+                audio.currentTime = 0;
+                audio.pause();
+                $(audio).detach();
+                $(".audio-popup").hide().detach();
+            }
+        }
+
+        //  싱글 듣기 
+        if(btnId == 'single'){
+            var oAudio = document.getElementById('myaudio');
+            var wrapper = document.querySelector('.wrapper');
+
+            if (path !== currentFile){
+                oAudio = document.createElement('audio');
+                oAudio.className = "single";
+                oAudio.id = "myaudio";
+                oAudio.src = path;
                 currentFile = path;
+                wrapper.appendChild(oAudio);
+            }
 
-                // 오디오 팝업 생성
-                var popup = document.createElement('div');
-                currentPopup = popup;
+            try {
+                if(!oAudio.paused){
+                    oAudio.currentTime = 0;
+                }
+                oAudio.play();
+            }
+            catch (e) {
+                // Fail silently but show in F12 developer tools console
+                if(window.console && console.error("Error:" + e));
+            }
 
+            if(imgId != null && imgId != 'undefined'){
+                var imgClassForNone = document.getElementsByClassName('class-for-none');
+                for(var i=0; i<imgClassForNone.length; i++){
+                    imgClassForNone[i].style.display='none';
+                }
+                var imgId = document.getElementById(imgId);
+                imgId.style.display='block';
+            }
+
+            currentAudio = 'single';
+            
+            // 전체 듣기 팝업
+        }else {
+            var oAudio = document.getElementById("myaudio");
+            var popup = document.querySelector(".audio-popup");
+
+            if (path != currentFile){
+                popup = document.createElement('div');
+                oAudio = document.createElement('audio');
                 popup.className = 'audio-popup';
                 popup.style.display = "none";
-
-                var oAudio = document.createElement('audio');
                 oAudio.id = "myaudio";
                 oAudio.controls = false;
                 oAudio.src = path;
-                currentAudio = oAudio;
+                currentFile = path;
 
                 var audioControls = document.createElement('div');
                 audioControls.className = 'audio_controls';
@@ -92,82 +137,58 @@ function playAudio(path, btnId, target, imgId, direction) {
                 wrapper.appendChild(popup);
             }
 
-            if(btnId == 'single'){
-                var oAudio = document.createElement('audio');
-                oAudio.className = "single";
-                oAudio.src = path;
-                var wrapper = document.querySelector('.wrapper');
-
-                wrapper.appendChild(oAudio);
-
-                if(imgId != null && imgId != 'undefined'){
-                    var imgClassForNone = document.getElementsByClassName('class-for-none');
-                    for(var i=0; i<imgClassForNone.length; i++){
-                        imgClassForNone[i].style.display='none';
-                    }
-                    var imgId = document.getElementById(imgId);
-                    imgId.style.display='block';
+            // 전체 듣기 팝업창 토글
+            if (oAudio.paused && popup.style.display == "none") {
+                var $target = $(target);
+                
+                // 팝업 위치 설정
+                if(direction == 'right'){
+                    popup.style.left = ($target.offset().left -216) + "px";
+                    popup.style.top = ($target.offset().top - 10) + "px";
                 }
-                if (oAudio.paused){
-                    oAudio.play();
-                }else{
-                    oAudio.pause();
-                    return;
+                else if(direction == "top"){
+                    popup.style.left = ($target.offset().left) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
                 }
-                return
+                else{
+                    popup.style.left = ($target.offset().left + 28) + "px";
+                    popup.style.top = ($target.offset().top - 10) + "px";
+                }
+                
+                popup.style.display='block';
+                audioPlay();
             }else {
-                var oAudio = document.getElementById("myaudio");
-                var popup = document.querySelector(".audio-popup");
-                oAudio.addEventListener("timeupdate",updateProgress);
-
-                if (oAudio.paused && popup.style.display == "none") {
-                    var $target = $(target);
-                    // 팝업 위치
-                    if(direction == 'right'){
-                        popup.style.left = ($target.offset().left -216) + "px";
-                        popup.style.top = ($target.offset().top - 10) + "px";
-                    }
-                    else if(direction == "top"){
-                        popup.style.left = ($target.offset().left) + "px";
-                        popup.style.top = ($target.offset().top -42) + "px";
-                    }
-                    else{
-                        popup.style.left = ($target.offset().left + 28) + "px";
-                        popup.style.top = ($target.offset().top - 10) + "px";
-                    }
-                    popup.style.display='block';
-
-                    audioPlay();
-                }else {
-                    audioStop();
-                    popup.style.display='none';
-                }
-                oAudio.addEventListener("ended", function (e) {
-                    if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
-                        popup.style.display='none';
-                        oAudio.pause();
-                        oAudio.currentTime = 0;
-                    }
-                });
+                popup.style.display='none';
+                audioStop();
             }
-        }
-        catch (e) {
-            // Fail silently but show in F12 developer tools console
-            //if(window.console && console.error("Error:" + e));
+            
+            // 재생 끝나면 자동닫기
+            oAudio.addEventListener("ended", function (e) {
+                if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
+                    popup.style.display='none';
+                    oAudio.pause();
+                    oAudio.currentTime = 0;
+                }
+            });
+            currentAudio = 'all';
+            audioEvent();
         }
     }
 
     function audioPlay(){
         oAudio.play();
+        isPlaying = true;
         $(".btn_play_toggle").removeClass("btn_audio_play").addClass("btn_audio_pause")
     }
     function audioPause(){
         oAudio.pause();
+        isPlaying = false;
         $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
     }
     function audioStop(){
         try {
             oAudio.pause();
+            isPlaying = false;
             oAudio.currentTime  = 0;
             $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
         }
@@ -192,38 +213,47 @@ function playAudio(path, btnId, target, imgId, direction) {
         }
     }
 
-    /*오디오 재생 이벤트*/
-    $(audioControls).on("click","button",function(e){
-        var btn = $(e.target);
-        if(btn.hasClass("btn_audio_play")){
-            audioPlay()
-        }else if(btn.hasClass("btn_audio_pause")){
-            audioPause()
-        }else if(btn.hasClass("btn_audio_stop")){
-            audioStop()
-        }else if(btn.hasClass("btn_audio_close")){
-            audioClose();
-            currentFile = ""
-        }
-    });
+    function audioEvent(){
+        /*오디오 재생 이벤트*/
+        $(audioControls).on("click","button",function(e){
+            var btn = $(e.target);
+            if(btn.hasClass("btn_audio_play")){
+                audioPlay()
+            }else if(btn.hasClass("btn_audio_pause")){
+                audioPause()
+            }else if(btn.hasClass("btn_audio_stop")){
+                audioStop()
+            }else if(btn.hasClass("btn_audio_close")){
+                audioClose();
+                currentFile = ""
+            }
+        });
+        oAudio.addEventListener("timeupdate",updateProgress);
 
-    var progressBar = document.querySelector(".progress_bar");
-    progressBar.addEventListener("click",function(e){
-        var moveX = e.pageX -  $('.controll_bar').width() / 2
-        $('.controll_bar').offset({
-            left:moveX
+        var progressBar = document.querySelector(".progress_bar");
+        progressBar.addEventListener("click",function(e){
+            try {
+                var moveX = e.pageX -  $('.controll_bar').width() / 2
+                $('.controll_bar').offset({
+                    left:moveX
+                })
+                oAudio.currentTime = getCerrentTime(moveX)
+            }
+            catch (e) {
+                // Fail silently but show in F12 developer tools console
+                if(window.console && console.error("Error:" + e));
+            }
         })
-        oAudio.currentTime = getCerrentTime(moveX)
-    })
 
+        /* 마우스 드래그, 터치 이벤트 */
+        var controllBar = document.querySelector(".controll_bar");
+        controllBar.addEventListener('mousedown', mouseDown, false);
+        controllBar.addEventListener('touchstart', mouseDown, false);
 
-    /* 마우스 드래그, 터치 이벤트 */
-    var controllBar = document.querySelector(".controll_bar");
-    controllBar.addEventListener('mousedown', mouseDown, false);
-    controllBar.addEventListener('touchstart', mouseDown, false);
+        window.addEventListener('mouseup', mouseUp, false);
+        window.addEventListener('touchend', mouseUp, false);
+    }
 
-    window.addEventListener('mouseup', mouseUp, false);
-    window.addEventListener('touchend', mouseUp, false);
 
     var activeControl = false;
     function mouseDown() {
@@ -231,6 +261,7 @@ function playAudio(path, btnId, target, imgId, direction) {
         window.addEventListener('mousemove', moveControll, true);
         window.addEventListener('touchmove', moveControll, true);
         oAudio.removeEventListener('timeupdate', updateProgress, false);
+        oAudio.pause();
     }
 
     function mouseUp(event) {
@@ -248,8 +279,18 @@ function playAudio(path, btnId, target, imgId, direction) {
 
             // change current time
             posX -=  $('.controll_bar').width() / 2;
-            oAudio.currentTime = getCerrentTime(posX)
-            oAudio.addEventListener("timeupdate",updateProgress,false);
+
+            try {
+                oAudio.currentTime = getCerrentTime(posX);
+                oAudio.addEventListener("timeupdate",updateProgress,false);
+                if(isPlaying){
+                    oAudio.play();
+                }
+            }
+            catch (e) {
+                // Fail silently but show in F12 developer tools console
+                if(window.console && console.error("Error:" + e));
+            }
         }
         activeControl = false;
     }
@@ -731,262 +772,7 @@ $(document).ready(function(){
     var WindowsTenOS = false;
     if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
 
-
-    var currentFile = "";
-    var currentPopup = null;
-    var currentAudio = null;
-
-    function playAudio(path, btnId, target, imgId, direction) {
-        // Check for audio element support.
-        if (window.HTMLAudioElement) {
-            try {
-                // 열려있는 sing 듣기 해제
-                if($('.single').length){
-                    $('.single').detach()
-                }
-
-                if (path !== currentFile) {
-                    //열려있는 전체듣기 팝업 해제
-                    if(currentFile !== ""){
-                        document.getElementById("myaudio").currentTime = 0;
-                        document.getElementById("myaudio").pause();
-                        $(".audio-popup").detach();
-                    }
-                    currentFile = path;
-
-                    // 오디오 팝업 생성
-                    var popup = document.createElement('div');
-                    currentPopup = popup;
-
-                    popup.className = 'audio-popup';
-                    popup.style.display = "none";
-
-                    var oAudio = document.createElement('audio');
-                    oAudio.id = "myaudio";
-                    oAudio.controls = false;
-                    oAudio.src = path;
-                    currentAudio = oAudio
-
-                    var audioControls = document.createElement('div');
-                    audioControls.className = 'audio_controls';
-
-                    var play = document.createElement('button');
-                    play.className = "btn_play_toggle btn_audio_pause";
-                    play.textContent = "play";
-
-                    var stop = document.createElement('button');
-                    stop.className = "btn_audio_stop";
-                    stop.textContent = "stop";
-
-                    var close = document.createElement('button');
-                    close.className = "btn_audio_close";
-                    close.textContent = "close";
-
-                    var progressBar = document.createElement('div');
-                    progressBar.className = "progress_bar";
-
-                    var controllBar = document.createElement('div');
-                    controllBar.className ="controll_bar";
-
-                    audioControls.appendChild(play);
-                    audioControls.appendChild(stop);
-                    audioControls.appendChild(progressBar);
-                    audioControls.appendChild(controllBar);
-                    audioControls.appendChild(close);
-
-                    popup.appendChild(oAudio);
-                    popup.appendChild(audioControls);
-
-                    var wrapper = document.querySelector('.wrapper');
-                    wrapper.appendChild(popup);
-                }
-
-                if(btnId == 'single'){
-                    var oAudio = document.createElement('audio');
-                    oAudio.className = "single";
-                    oAudio.src = path;
-                    var wrapper = document.querySelector('.wrapper');
-
-                    wrapper.appendChild(oAudio);
-
-                    if(imgId != null && imgId != 'undefined'){
-                        var imgClassForNone = document.getElementsByClassName('class-for-none');
-                        for(var i=0; i<imgClassForNone.length; i++){
-                            imgClassForNone[i].style.display='none';
-                        }
-                        var imgId = document.getElementById(imgId);
-                        imgId.style.display='block';
-                    }
-                    if (oAudio.paused){
-                        oAudio.play();
-                    }else{
-                        oAudio.pause();
-                        return;
-                    }
-                    return
-                }else {
-                    var oAudio = document.getElementById("myaudio");
-                    var popup = document.querySelector(".audio-popup");
-                    oAudio.addEventListener("timeupdate",updateProgress);
-
-                    if (oAudio.paused && popup.style.display == "none") {
-                        var $target = $(target);
-                        // 팝업 위치
-
-                        if(direction == 'right'){
-                            popup.style.left = ($target.offset().left -260) + "px";
-                        }else{
-                            popup.style.left = ($target.offset().left + 40) + "px";
-                        }
-                        popup.style.top = ($target.offset().top - 10) + "px";
-                        popup.style.display='block';
-
-                        audioPlay();
-                    }else {
-                        audioStop();
-                        popup.style.display='none';
-                    }
-
-                    oAudio.addEventListener("ended", function (e) {
-                        if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
-                            popup.style.display='none';
-                            oAudio.pause();
-                            oAudio.currentTime = 0;
-                        }
-                    });
-                }
-            }
-            catch (e) {
-                // Fail silently but show in F12 developer tools console
-                //if(window.console && console.error("Error:" + e));
-            }
-        }
-
-        function audioPlay(){
-            oAudio.play();
-            $(".btn_play_toggle").removeClass("btn_audio_play").addClass("btn_audio_pause")
-        }
-        function audioPause(){
-            oAudio.pause();
-            $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
-        }
-        function audioStop(){
-            oAudio.pause();
-            oAudio.currentTime  = 0;
-            $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
-        }
-        function audioClose(){
-            popup.style.display='none';
-            audioStop();
-            $(".audio-popup").detach();
-        }
-        function updateProgress(){
-            //   (음성진행시간 / 전체시간 *  (진행바 넓이 - 컨트롤바  크기)) + 진행바 좌표
-            if(popup.style.display !== "none"){
-                var curX = (oAudio.currentTime / oAudio.duration * ($('.progress_bar').width() - $('.controll_bar').width())) + $('.progress_bar').offset().left
-
-                $('.controll_bar').offset({
-                    left:curX
-                })
-            }
-        }
-
-        /*오디오 재생 이벤트*/
-        $(audioControls).on("click","button",function(e){
-            var btn = $(e.target);
-            if(btn.hasClass("btn_audio_play")){
-                audioPlay()
-            }else if(btn.hasClass("btn_audio_pause")){
-                audioPause()
-            }else if(btn.hasClass("btn_audio_stop")){
-                audioStop()
-            }else if(btn.hasClass("btn_audio_close")){
-                audioClose();
-                currentFile = ""
-            }
-        });
-
-
-        var progressBar = document.querySelector(".progress_bar");
-        progressBar.addEventListener("click",function(e){
-            var moveX = e.pageX -  $('.controll_bar').width() / 2
-            $('.controll_bar').offset({
-                left:moveX
-            })
-            oAudio.currentTime = getCerrentTime(moveX)
-        })
-
-
-        /* 마우스 드래그, 터치 이벤트 */
-        var controllBar = document.querySelector(".controll_bar");
-        controllBar.addEventListener('mousedown', mouseDown, false);
-        controllBar.addEventListener('touchstart', mouseDown, false);
-
-        window.addEventListener('mouseup', mouseUp, false);
-        window.addEventListener('touchend', mouseUp, false);
-
-        var activeControl = false;
-        function mouseDown() {
-            activeControl = true;
-            window.addEventListener('mousemove', moveControll, true);
-            window.addEventListener('touchmove', moveControll, true);
-            oAudio.removeEventListener('timeupdate', updateProgress, false);
-        }
-
-        function mouseUp(event) {
-            if (activeControl == true) {
-                var posX = 0;
-                if (event.touches) {
-                    posX = event.changedTouches[0].pageX;
-                }
-                else {
-                    posX = event.pageX;
-                }
-
-                window.removeEventListener('mousemove', moveControll, true);
-                window.removeEventListener('touchmove', moveControll, true);
-
-                // change current time
-                posX -=  $('.controll_bar').width() / 2;
-                oAudio.currentTime = getCerrentTime(posX)
-                oAudio.addEventListener("timeupdate",updateProgress,false);
-            }
-            activeControl = false;
-        }
-
-        function moveControll(event){
-            var $progressBar = $(".progress_bar");
-            var $controllBar = $(".controll_bar")
-            var moveX = 0;
-            if (event.touches) {
-                moveX = event.touches[0].pageX;
-            }
-            else {
-                event.preventDefault();
-                moveX = event.pageX;
-            }
-
-            moveX -=  $('.controll_bar').width() / 2;
-
-            var startX =$progressBar.offset().left
-            var endX = $progressBar.offset().left + $progressBar.width() - $controllBar.width()
-
-            if(moveX < startX){
-                moveX = startX
-            }else if(moveX > endX){
-                moveX = endX
-            }
-
-            $('.controll_bar').offset({
-                left:moveX
-            })
-        }
-
-        function getCerrentTime(posX) {
-            return (posX - $('.progress_bar').offset().left) / ($('.progress_bar').width() - $('.controll_bar').width()) * oAudio.duration
-        }
-    }
-
+        
     //슬라이더 js
     var imageSlide = {
 
