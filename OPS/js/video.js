@@ -1093,8 +1093,6 @@ function setRoles(){
 			}
 		}
 	}
-	/*        setWaiter();
-	 removeWaiter();*/
 	//뮤트 조건 넣는 로직
 	if(arrayForMute.length != 0){
 		var textForEval = 'if(';
@@ -1102,7 +1100,7 @@ function setRoles(){
 			textForEval += '(' + arrayForMute[i][1].toString() + '<vObj[0].currentTime&&vObj[0].currentTime<' + arrayForMute[i][2].toString() + ')||';
 		}
 		textForEval = textForEval.substr(0, textForEval.length - 2);
-		textForEval += '){vObj.prop(\'muted\', true);}else{vObj.prop(\'muted\', false);}'
+		textForEval += '){vObj.prop(\'muted\', true);setWaiter()}else{vObj.prop(\'muted\', false);removeWaiter();}'
 
 		console.log(textForEval);
 		vObj[0].addEventListener("timeupdate", function () {
