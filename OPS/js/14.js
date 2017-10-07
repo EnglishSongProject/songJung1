@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 });
 
+//텍스트 드래그 추후 인풋창에 텍스트를 넣는 것이 아닌 해당 영역에 들어가야함.
 $(function () {
     var draggableList = $('.p14_draggable')[0].children;
     var droppableList = $('.p14_droppable');
@@ -81,17 +82,17 @@ function draggableSet(draggableList, droppableList, lastDragId) {
         $(dropArea).attr('class', dropSetList[i].id);
         dropSetList[i].parentNode.appendChild(dropArea);
 
+
+        //todo 추후 드랍 쪽에서 이벤트 관리를 해주어야함.
         $(dropArea).droppable({
             drop:function (event, ui) {
                 var draggingWord = $('#'+lastDragId+'_lastDrag');
                 var inputText = $('#'+this.classList[0]);
                 //값이 있다면
                 if($(inputText).val()){
-/*                    console.log(inputText);
-                    console.log(draggingWord);*/
-                    //같은 단어에 재 드래그 할 시,
-                    if($(inputText).val() == draggingWord){
+                    if($(inputText).val() == draggingWord[0].innerHTML){
                         //다른 단어가 들어올 시,
+                        console.log('같은 단어인데 사라짐??');
                     }else{
 
                         //이전 값을 원래 위치로 돌려야함
@@ -102,11 +103,8 @@ function draggableSet(draggableList, droppableList, lastDragId) {
                             if(!isNumber(savePositionTextArray[i])){
                                 var idForRetry = $('#'+savePositionTextArray[i]);
                                 if($(inputText).val() == idForRetry[0].innerHTML){
-                                    console.log(savePositionTextArray[i+1].toString() +'px');
-                                    console.log(savePositionTextArray[i+2].toString() +'px');
                                     $(idForRetry).css('top', savePositionTextArray[i+1].toString()+'px');
                                     $(idForRetry).css('left', savePositionTextArray[i+2].toString()+'px');
-                                    console.log(idForRetry);
                                 }
                             }
                         }
