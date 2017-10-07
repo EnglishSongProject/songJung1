@@ -292,6 +292,7 @@ QUIZ.dragLine = {
         this.append(quizNum);
         QUIZ.objCount[quizNum-1] += this.dragLineObj.length;
 
+        console.log(this.dragLineObj);
         for (var i = 0; i < this.dragLineObj.length; i++) {
             this.dragLineObj[i].style.cursor = 'pointer';
             this.dragLineObj[i].setAttribute('value', i + 1);
@@ -374,8 +375,8 @@ QUIZ.dragLine = {
                         var dLeft = QSAll('.dLeft');
                         var dRight = QSAll('.dRight');
 
-                        dLeft[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';
-                        dRight[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';
+/*                        dLeft[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';
+                        dRight[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';*/
 
                         result = true;
                     }
@@ -387,7 +388,6 @@ QUIZ.dragLine = {
     },
 
     setDragObjPosition: function (quizNum, dragObj, param, type) {
-        console.log('setDragObjPosition')
         var obj = dragObj.element !== undefined ? dragObj.element : dragObj,
             idx = obj.getAttribute('value') - 1,
             top, left, targetPath, value, dropTop, dropLeft;
