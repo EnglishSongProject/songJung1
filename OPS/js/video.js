@@ -1,4 +1,3 @@
-
 //======================================= 동영상 팝업의 위치 설정하기
 var imgPath = "images/common/player/";
 var thumbPath = "images/";
@@ -12,76 +11,8 @@ var timeID;
 var scriptHeight = 0; //자막파일의 최종높이
 var scriptMax = 280;
 
-//따라 말하기 기능 //normal:보면서 듣기, repeat:따라 말하기, role:역할놀이
-var repeatInfo = {seq:-1, wait:false, pauseTime:0, pauseCount:0, delay:0, limit:[20, 160] };
-var scriptIdx = 0; //따라 말하기에서 현재 스크립트 위치를 참조함
+//롤플레잉시 묵음을 할 사람 이름 0:그냥 재생, 1~n: 사람 번호
 var sectionIdx = 0; //normal에서 구간재생시 쓰임
-
-function setPause(){
-	var vdo = document.querySelector('#vdo');
-	if (ispaused || vdo.paused){
-		return;
-	}
-
-	vdo.pause();	
-
-	var info = mediaInfo[idxr]; //sync:, syncText:
-	var ctime = info.sync[repeatInfo.seq]; //[1, 5.00, 9.00](순번, 시작시간, 끝시간)
-	repeatInfo.delay = Math.abs(ctime[2] - ctime[1]) * 1000;
-
-	//console.log("ctime: " + ctime);
-	//console.log("delaytime: " + delaytime);
-
-	repeatInfo.pauseTime = new Date().getTime() + repeatInfo.delay;
-	repeatInfo.pauseCount = 0;
-	repeatInfo.wait = true;
-
-	var waiter = document.getElementById('waiter_wrap');
-	waiter.style.visibility = "visible";
-	setWaiter();
-}
-function removeWaiter(){
-	var waiter = document.getElementById('waiter_wrap');
-	waiter.style.visibility = "hidden";
-	repeatInfo.seq = -1;
-	repeatInfo.wait = false;
-}
-function setWaiter(){
-	//repeatInfo.pauseTime
-
-	var now = new Date().getTime();
-	var past = repeatInfo.pauseTime - now;
-	//console.log(past);
-	
-	var vdo = document.querySelector('#vdo');
-	var ball = document.getElementById('waitBall');
-	var waiter = document.getElementById('waiter_wrap');
-
-	if (past<=0){
-		repeatInfo.wait = false;
-		repeatInfo.seq = -1;
-
-		//waiter 꺼주기		
-		waiter.style.visibility = "hidden";	
-		ball.style.left = repeatInfo.limit[0] + "px";
-		removeWaiter();
-		vdo.play();
-	}else{
-		var d = Math.max(0, repeatInfo.delay - past);
-		var w = Math.abs(repeatInfo.limit[1] - repeatInfo.limit[0]);
-		var rate = Math.max(0, Math.min(1, d/repeatInfo.delay));
-		var cx = parseInt(repeatInfo.limit[0] + (w * rate));
-		ball.style.left =  parseInt(cx) + "px";
-		console.log([ball, cx, ball.style.left]);
-	}
-}
-
-
-
-function setJump(){	
-	removeWaiter();
-	setCaption();
-}
 
 function setCaption(){
 
@@ -113,111 +44,73 @@ function setCaption(){
 			//console.log([ctime, stime[0], stime[1]]);
 			if (ctime>=stime[1]){
 				console.log  ("구간 재생의 끝> 재생 가능한 상태로");
-				ispaused = false;						
-				removeWaiter();
+				ispaused = false;
 				//
 				vdo.pause();
 				play.src = './images/common/controls/vdo/btnPlay.png';
 			}
 		}
-		
+
 		if (txtInfo){
-			
+
 			var vObj = $("#vdo"); //JQuery
 			str = txtInfo[2]; //영문자막
 			str2 = txtInfo[3];
 
-			var whoNum = txtInfo[1];			
+			var whoNum = txtInfo[1];
 
 			//-------------------
 			//롤플레이에 의한 묵음
 			if (playMode == 'normal'){
 				//모든 목소리 정상 재생
 
-			}else if (playMode == 'repeat'){
-
-				//현재 표시할 자막이 있음
-				if (repeatInfo.seq == seq){
-					//이미 진입한 자막과 같다
-				}else{
-					console.log ("새로 진입");
-					repeatInfo.seq = seq;
-				}
-
 			}else{
 				//role
 				if(roleNum != 0){
-					if (whoNum == roleNum) {
+					if (whoNum == roleNum){
 						vObj.prop('muted', true); //mute
-					} else {
+					}else{
 						vObj.prop('muted', false);
 						roleMute.on = false;
 					}
 				}
 			}
 
-		}else{
-			//자막이 비는 시간
-			if (playMode == 'repeat'){
-				if (repeatInfo.seq != -1){
-					console.log  ("재생중인 자막의 끝");
-					setPause();
-				}		
-			}
-		}		
+		}
 		document.querySelector('.txt_one').innerHTML = str;
 		document.querySelector('.txt_two').innerHTML = str2;
-
-
-		//재생중에 해당
-		if (playMode == 'repeat'){
-			if (seq == -1){
-				//자막이 없음
-				repeatInfo.seq = -1;
-
-			}else{
-				//표시할 자막이 있음
-				if (repeatInfo.seq == -1){
-					//자막이 없었음, 새로 진입
-					repeatInfo.seq = seq;
-				}else{
-				}
-			}
-		}		
-	}	
+	}
 }
-
-
-
-
 function mediaInit(idx) {
 	idxr = idx;
 	//
 	var wrap = document.querySelector('#vwrap'),
-	videoWrap = wrap.getElementsByClassName('videoWrap');
+		videoWrap = wrap.getElementsByClassName('videoWrap');
 	AllOff();
 	if(videoWrap.length > 0) {
 		mediaType(idx);
-	}	
+	}
 }
 
-function mediaClose(){
-	clearInterval(timeID);
-	repeatInfo.wait = false;
-	repeatInfo.seq = -1;
-
+function removeWaiter(){
+	var waiter = document.getElementById('waiter_wrap');
+	waiter.style.visibility = "hidden";
+}
+function setWaiter() {
 	var waiter = document.getElementById('waiter_wrap');
 	waiter.style.visibility = "visible";
-
+}
+function mediaClose(){
+	clearInterval(timeID);
 
 	var vdo = document.querySelector('#vdo');
-	if(vdo){		
+	if(vdo){
 		vdo.currentTime = 0;
 		setProg(0);
 		$('#vdo').remove();
-	}	
+	}
 	var videoContainer = document.querySelector('.videoContainer');
-	if (videoContainer){		
+	if (videoContainer){
 		$('.videoContainer').remove();
 	}
 
@@ -233,24 +126,24 @@ function mediaType(idx) {
 	var wrap = document.querySelector('#vwrap'),
 		ani = wrap.getElementsByClassName('ani'),
 		videoWrap = wrap.getElementsByClassName('videoWrap');
-	
+
 	//타이틀 
 	document.querySelector('.media_tt').innerHTML = mediaInfo[idx].title;
 
 	//영한 자막 생성
 	/*
-	syncText: [
-		// 동영상 텍스트
-		[1, 1, 'There is a map. Austrailia and Republic south africa is in where.', '남반구에 위치한 오스트레일리아나 남아프리카 공화국에는 이런 지도가 있대.'],
-		[1, 2, 'Whe is?', '왜 그럴까?']		
-		]
+	 syncText: [
+	 // 동영상 텍스트
+	 [1, 1, 'There is a map. Austrailia and Republic south africa is in where.', '남반구에 위치한 오스트레일리아나 남아프리카 공화국에는 이런 지도가 있대.'],
+	 [1, 2, 'Whe is?', '왜 그럴까?']
+	 ]
 
-		role:[['Teacher','선생님'],['Student','학생']],
-		rolePos:[100, 50, 200], //'선생님:'의 넓이와 콜론의 x좌표 
+	 role:[['Teacher','선생님'],['Student','학생']],
+	 rolePos:[100, 50, 200], //'선생님:'의 넓이와 콜론의 x좌표
 
-		*/
+	 */
 	var who = '';
-	var strAll = '';	
+	var strAll = '';
 	var rowSize_en = 50;
 	var rowSize_kr = 50;
 	var pos_fy = 10;
@@ -273,7 +166,7 @@ function mediaType(idx) {
 		pos_y =  margin_top + (i*rowSize_en);
 		var e_who = "<div class='txt_who'"
 			+ " id='who_en" + i + "'"
-			+ " style='position:absolute; text-align:right;"				
+			+ " style='position:absolute; text-align:right;"
 			+ " width:"+ sc.rolePos[0] +"px;"
 			+ "left:"+ sc.rolePos[1] +"px;"
 			+ "top:"+ pos_y +"px;"
@@ -288,14 +181,14 @@ function mediaType(idx) {
 			+ str_e +"</div>";
 		strAll += e_who + e_str;
 
-		
+
 		//글kr - 한글 자막 생성
 		var who_k = '';
 		var str_k = lineOne[3];
 		pos_y =  margin_top + (i*rowSize_kr) + margin_han;
 		var k_who = "<div class='txt_who'"
 			+ " id='who_kr" + i + "'"
-			+ " style='position:absolute; text-align:right;"			
+			+ " style='position:absolute; text-align:right;"
 			+ " width:"+ sc.rolePos[0] +"px;"
 			+ "left:"+ sc.rolePos[1] +"px;"
 			+ "top:"+ pos_y +"px;"
@@ -316,7 +209,7 @@ function mediaType(idx) {
 
 
 	//높이 정렬하기	
-	var who;	
+	var who;
 	var txt;
 	var maxHeight = 0;
 	pos_y = margin_top;
@@ -350,7 +243,7 @@ function mediaType(idx) {
 		em.style.display = 'none';
 	}
 
-	
+
 
 
 	var ani_p = ani[0];
@@ -368,7 +261,7 @@ function mediaType(idx) {
 	var videoContainer = createElement('div', videoWrap_p, 'videoContainer');
 	var videoContainerHTML = '';//document.querySelector('.videoContainer');
 	var splitSrc = src.split('/', '4');
-	
+
 	// 비디오 태그 생성
 	//<div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
 	var posterStr = './media/'+ splitSrc[2] +'/'+ splitSrc[3] +'.png';
@@ -376,7 +269,7 @@ function mediaType(idx) {
 	videoContainerHTML += '<img class="thumImg" src="' + posterStr + '" />';
 	videoContainer.innerHTML = videoContainerHTML;
 
-	
+
 	//section: 구간재생 아이콘 설정
 	var section = sc.section;
 	var thumbStr = "<div class='thumb_box'><img id='thumb_box' src='" + imgPath + "thumbbox.png' /></div>";
@@ -500,7 +393,6 @@ function sectionPlay(){
 	var play = document.querySelector('#play')
 
 	ispaused = false;
-	removeWaiter();
 	setCaption();
 
 	if (sectionIdx == 0){
@@ -515,7 +407,7 @@ function sectionPlay(){
 
 	var vdo = document.querySelector('#vdo');
 	var play = document.querySelector('#play');
-	document.querySelector('.thumImg').style.display = 'none';	
+	document.querySelector('.thumImg').style.display = 'none';
 	play.src = './images/common/controls/vdo/btnPause.png';
 	vdo.play();
 }
@@ -530,7 +422,7 @@ function showSectionThumb(){
 function targetNum(obj){
 	//클래스 이름 중 맨 뒤의 한자리 숫자를 리턴함
 	//var obj = $(this);
-	var classname = obj.attr('id');	
+	var classname = obj.attr('id');
 	var num = classname.charAt(classname.length-1);
 	return parseInt(num);
 }
@@ -543,10 +435,9 @@ function initVdo(){
 
 	vdo.controls = false;
 	vdo.paused = false;
-	vdo.currentTime = 0;	
+	vdo.currentTime = 0;
 
 	ispaused = false;
-	removeWaiter();
 	setCaption();
 	setProg(0);
 
@@ -588,15 +479,12 @@ function onTimeupdate() {
 	curtime.innerHTML = curmins + ':' + cursecs;
 	durtime.innerHTML = durmins + ':' + dursecs;
 
-	
+
 	//console.log ([vdo.currentTime, vdo.duration]);
 	var rate = Math.min(1, vdo.currentTime/vdo.duration);
 	if (vdo.paused){
 	}else{
-		setProg(rate);		
-	}	
-	if (repeatInfo.wait){
-		setWaiter();			
+		setProg(rate);
 	}
 }
 
@@ -640,7 +528,7 @@ $(document).ready(function(){
 		barDown(event);
 	});
 	$("#prog_mouse").bind("onmouseup", function(){
-		barUp(event);		
+		barUp(event);
 	});
 
 	//볼륨 컨트롤 버튼동작
@@ -695,32 +583,26 @@ $(document).ready(function(){
 		var vdo = document.querySelector('#vdo');
 		var play = document.querySelector('#play');
 		document.querySelector('.thumImg').style.display = 'none';
-		
 
-		if(vdo.paused) {			
-			if (playMode == 'repeat' && repeatInfo.wait){
-				removeWaiter();
-				play.src = './images/common/controls/vdo/btnPlay.png';
-				vdo.pause();
-			}else{
-				//재생
-				if (playMode == "normal" && sectionIdx !=0){
-					var stime = mediaInfo[idxr].section[sectionIdx-1];
-					if (vdo.currentTime>=stime[1]){
-						//구간 재생이 종료되어 되돌림
-						vdo.currentTime = stime[0];
-					}
+
+		if(vdo.paused) {
+			//재생
+			if (playMode == "normal" && sectionIdx !=0){
+				var stime = mediaInfo[idxr].section[sectionIdx-1];
+				if (vdo.currentTime>=stime[1]){
+					//구간 재생이 종료되어 되돌림
+					vdo.currentTime = stime[0];
 				}
-				play.src = './images/common/controls/vdo/btnPause.png';
-				vdo.play();
 			}
+			play.src = './images/common/controls/vdo/btnPause.png';
+			vdo.play();
 		} else {
 			//일시 정지
 			play.src = './images/common/controls/vdo/btnPlay.png';
 			vdo.pause();
 		}
 	}, false);
-	
+
 
 
 	// 정지 버튼
@@ -734,7 +616,6 @@ $(document).ready(function(){
 		vdo.pause();
 
 		//
-		removeWaiter();
 		setProg(0);
 	}, false);
 
@@ -940,7 +821,7 @@ function OnButtonUp () {
 			}
 		}
 		capturedButton = null;
-	}	
+	}
 	document.onmousemove = null;
 	barUp();
 	dragOn = 0;
@@ -961,31 +842,31 @@ function btnCapture(button){
 
 //사운드 볼륨 관련
 /*function applyCookieVol(){
-	var savedVol = 100;
+ var savedVol = 100;
 
-	if(window.localStorage) {
-		for(var key in localStorage) {			
-			if (key == propVolume){
-				savedVol = parseInt(localStorage.getItem(key));				
-			}else if (key == propSpk){
-				spk = parseInt(localStorage.getItem(key));
-			}
-		}
-	}else{
-		var cookieVol = getCookie(propVolume);
-		if (cookieVol){
-			savedVol = parseInt(cookieVol);
-		}
-		var cookieSpk = getCookie(propSpk);
-		if (cookieSpk){
-			spk = parseInt(cookieSpk);
-		}
-	}
-	//
-	
-	vol = savedVol/100;
-	setVol(vol);
-}*/
+ if(window.localStorage) {
+ for(var key in localStorage) {
+ if (key == propVolume){
+ savedVol = parseInt(localStorage.getItem(key));
+ }else if (key == propSpk){
+ spk = parseInt(localStorage.getItem(key));
+ }
+ }
+ }else{
+ var cookieVol = getCookie(propVolume);
+ if (cookieVol){
+ savedVol = parseInt(cookieVol);
+ }
+ var cookieSpk = getCookie(propSpk);
+ if (cookieSpk){
+ spk = parseInt(cookieSpk);
+ }
+ }
+ //
+
+ vol = savedVol/100;
+ setVol(vol);
+ }*/
 function getCookie(cookieName)	{
 	var search = cookieName + "=";
 	var cookie = document.cookie;
@@ -993,7 +874,7 @@ function getCookie(cookieName)	{
 	// 현재 쿠키가 존재할 경우
 	if( cookie.length > 0)	{
 		startIndex = cookie.indexOf( cookieName );
-		if(startIndex != -1){		
+		if(startIndex != -1){
 			startIndex += cookieName.length;
 			endIndex = cookie.indexOf( ";", startIndex );
 			if( endIndex == -1){
@@ -1013,7 +894,7 @@ function getCookie(cookieName)	{
 
 
 function setCookie( cookieName, cookieValue, expireDate){
-	var today = new Date();	
+	var today = new Date();
 	if(window.localStorage) {
 		localStorage.setItem(cookieName, cookieValue);
 	}else{
@@ -1049,11 +930,11 @@ function barDrag(event){
 	var cx = event.clientX - fx;
 	var cy = event.clientY - fy - dragxy;
 	//cx = Math.max(limit[0], Math.min(limit[1], cx)) - limit[0];
-	
+
 	var rate = cx/w;
 	//console.log ("rate: " + [cx, rate]);
 
-	if (dragOn == 1){		
+	if (dragOn == 1){
 		setProg(rate);
 		if (rate == 0){
 			document.querySelector('.thumImg').style.display = 'block';
@@ -1063,7 +944,7 @@ function barDrag(event){
 			vdo.currentTime = vdo.duration * rate;
 			//console.log(vdo.currentTime);
 		}
-	}else if (dragOn == 2){		
+	}else if (dragOn == 2){
 		setVol(rate);
 	}else if (dragOn == 3){
 		cy = Math.max(limit[0], Math.min(limit[1], cy));
@@ -1081,15 +962,15 @@ function barUp(){
 			vdo.play();
 		}
 	}
-	dragOn = 0;	
+	dragOn = 0;
 }
 
 function setProg(rate){
-	per = Math.max(0, Math.min(1, rate));		
+	per = Math.max(0, Math.min(1, rate));
 	var w = Math.abs(progLimit[0] - progLimit[1]);
 	var cx = parseInt(progLimit[0] + (per * w));
 
-	var pObj = document.getElementById('prog_color');	
+	var pObj = document.getElementById('prog_color');
 	pObj.style.width =  parseInt(cx) + "px";
 
 	pObj = document.getElementById('prog_ball');
@@ -1102,7 +983,7 @@ function setSc(cy){
 	var tm = document.querySelector('.sc_ball');
 	tm.style.top =  parseInt(cy-2) + "px";
 	var rate = (cy - scLimit[0])/Math.abs(scLimit[0] - scLimit[1]);
-	
+
 	var overH = Math.max(0, scriptHeight - scriptMax);
 	var sch = parseInt(-overH * rate);
 
@@ -1130,8 +1011,8 @@ function showVol(rate){
 	if (spk == 0){
 		rate = 0;
 	}
-	
-	var snd = document.getElementById('vol_color');		
+
+	var snd = document.getElementById('vol_color');
 	var w = Math.abs(volLimit[0] - volLimit[1]);
 	snd.style.width = (volLimit[0] + (rate * w)) + "px";
 
@@ -1141,10 +1022,10 @@ function showVol(rate){
 	if (element){
 		element.volume = rate;
 	}
-	
 
 
-	
+
+
 
 	var speaker = document.getElementById('img_spk');
 	if (spk == 0){
@@ -1181,4 +1062,55 @@ function createElement (type, targetElement, className, width, height) {
 
 	targetElement.appendChild(createObject);
 	return createObject;
+}
+
+function setRoles(){
+	//롤리스트 아래의 on인 것들을 배열로 받는다.(다중 뮤트 기능 구현)
+	var role_List = $('.role_list');
+	var arrayFormuteOn = new Array();
+
+	for (var z = 0; z < role_List[0].childNodes.length; z++) {
+		if ($(role_List[0].childNodes[z]).hasClass('on')) {
+			arrayFormuteOn.push(role_List[0].childNodes[z]);
+		}
+	}
+
+	var info = mediaInfo[idxr];
+	var text = info.syncText;
+	var sync = info.sync;
+	var arrayForMute = new Array();
+	var vObj = $("#vdo");
+	var muteForRoleList = new Array();
+
+	//해당 싱크 텍스트의 순서만 받아와 배열에 푸시해준다.
+	for (var i = 0; i < text.length; i++) {
+		//뮤트할 롤 배열만큼 반복문을 돌려준다.
+		for (var y = 0; y < arrayFormuteOn.length; y++) {
+			var whoNum = arrayFormuteOn[y].id.substr(arrayFormuteOn[y].id.length - 1, 1);
+			if (text[i][1] == whoNum) {
+				muteForRoleList.push(whoNum);
+				arrayForMute.push(sync[i]);
+			}
+		}
+	}
+	/*        setWaiter();
+	 removeWaiter();*/
+	//뮤트 조건 넣는 로직
+	if(arrayForMute.length != 0){
+		var textForEval = 'if(';
+		for (var i = 0; i < arrayForMute.length; i++) {
+			textForEval += '(' + arrayForMute[i][1].toString() + '<vObj[0].currentTime&&vObj[0].currentTime<' + arrayForMute[i][2].toString() + ')||';
+		}
+		textForEval = textForEval.substr(0, textForEval.length - 2);
+		textForEval += '){vObj.prop(\'muted\', true);}else{vObj.prop(\'muted\', false);}'
+
+		console.log(textForEval);
+		vObj[0].addEventListener("timeupdate", function () {
+			eval(textForEval);
+		});
+	}else{
+		vObj[0].addEventListener("timeupdate", function () {
+			vObj.prop('muted', false);
+		});
+	}
 }

@@ -19,10 +19,12 @@ function role_play(){
     var $playerPanel =$(".player_panel");
     var $current = $selectPlayer.eq(0);
     var rpAudio = $("#pAudio").get(0);
-    var request;
 
     var selectedSide  = 'all';
     var timeLine = 2.69;
+    var isPlaying = false;
+    var timeID = null;
+    
     var role_player_list = [
         {
             audio: "./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3",
@@ -102,7 +104,7 @@ function role_play(){
                     }
                     selectedSide = "all"
                 }
-                console.log(selectedSide)
+                
             })
         }
 
@@ -131,7 +133,8 @@ function role_play(){
             }
         });
 
-        rpAudio.addEventListener("timeupdate",updateProgress);
+        //rpAudio.addEventListener("timeupdate",updateProgress);
+       
         rpAudio.addEventListener("ended", function (e) {
             stopAudio();
         });
@@ -186,22 +189,38 @@ function role_play(){
     // 오디오 관련 함수
     function playAudio(){
         rpAudio.play();
+        isPlaying = true
         $(".btn_playstop").removeClass("btn_rplay").addClass("btn_rpause");
+
+        if (timeID){
+            clearInterval(timeID);
+        }
+        timeID = setInterval(updateProgress,10);
+        
     }
 
     function pauseAudio(){
         rpAudio.pause();
-        $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay")
+        isPlaying = false
+        $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
+
+        clearInterval(timeID);
+        timeID = null;
+        
     }
 
     function stopAudio(){
         try {
             rpAudio.pause();
+            isPlaying = false;
             rpAudio.currentTime = 0;
             $controllBar.offset({
                 left:276
             })
             $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
+
+            clearInterval(timeID);
+            timeID = null;
         }
         catch (e) {
             // Fail silently but show in F12 developer tools console
@@ -224,7 +243,11 @@ function role_play(){
         activeControl = true;
         window.addEventListener('mousemove', moveControll, true);
         window.addEventListener('touchmove', moveControll, true);
-        rpAudio.removeEventListener('timeupdate', updateProgress, false);
+
+        //rpAudio.removeEventListener('timeupdate', updateProgress, false);
+        clearInterval(timeID);
+        timeID = null;
+        rpAudio.pause();
     }
 
     function mouseUp(event) {
@@ -243,7 +266,14 @@ function role_play(){
             // change current time
             posX -=  $('.controll_bar').width() / 2;
             rpAudio.currentTime = getCerrentTime(posX);
-            rpAudio.addEventListener("timeupdate",updateProgress,false);
+            //rpAudio.addEventListener("timeupdate",updateProgress,false);
+
+            if(isPlaying){
+                rpAudio.play();
+                if(timeID == null){
+                    timeID = setInterval(updateProgress,10);
+                }
+            }
         }
         activeControl = false;
     }

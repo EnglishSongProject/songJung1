@@ -332,7 +332,7 @@ scriptPopup
 .btn_audio_close {background:url(../images/common/audio_pop/btn_close.png) no-repeat 0 0 ;display: inline-block; width:18px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
 
 /*video*/
-.zoom_img_wrap{display:none;position: absolute;top: 0;left: 0;bottom: 0;right: 0; z-index: 200; background: rgba(255, 255, 255, 1) !important;width: 768px;
+.zoom_img_wrap{z-index:200;display:none;position: absolute;top: 0;left: 0;bottom: 0;right: 0; background: rgba(255, 255, 255, 1) !important;width: 768px;
     height: 1024px;}
 .videoWrap .videoContainer {
     position: absolute;
@@ -380,5 +380,8 @@ scriptPopup
     width: 30px;
     font-size: 15px;
     font-weight: 700;
+}
+.ui-draggable-dragging{
+    font-size: 30px;
 }
 

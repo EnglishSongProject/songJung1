@@ -1,7 +1,8 @@
 var pageNum = 11; //video.js에서 페이지 이미지 경로로 활용됨
 var playMode = 'normal';
-var progBallLeft = 120;
+var roleNum = 0;
 var progLimit = [0, 373];
+var progBallLeft = 120;
 var mediaInfo = [
 
     {

@@ -94,7 +94,6 @@
                                 </li>
                                 <li>
                                   <div>
-<<<<<<< HEAD
                                     <h1 class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_1.mp3', 'single');">Complete Jiwon's talk</h1>
                                     <ul class="bubble_talk">
                                       <li class="active-purple">
@@ -112,24 +111,6 @@
                                         <span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">I like</span>
                                         <input type="radio" id="check_5" value="" name="radio_3"/><label for="check_5"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">English</span></label>
                                         <input type="radio" id="check_6" value="" name="radio_3"/><label for="check_6"><span onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">music.</span></label>
-=======
-                                    <h1 class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_1.mp3', 'single');">Complete Jiwon's talk.</h1>
-                                    <ul class="bubble_talk">
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_02_re.mp3', 'single');">
-                                        I am
-                                        <input type="checkbox" id="check_1" value="" /><label for="check_1"> 10</label>
-                                        <input type="checkbox" id="check_2" value="" /><label for="check_2"> 11</label> years old.
-                                      </li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_03_re.mp3', 'single');">
-                                        I have a
-                                        <input type="checkbox" id="check_3" value="" /><label for="check_3"> brother</label>
-                                        <input type="checkbox" id="check_4" value="" /><label for="check_4"> sister</label>.
-                                      </li>
-                                      <li class="active-purple" onclick="playAudio('./media/audio/L01/012/L01_012_act_a03_04_re.mp3', 'single');">
-                                        I like
-                                        <input type="checkbox" id="check_5" value="" /><label for="check_5"> English</label>
-                                        <input type="checkbox" id="check_6" value="" /><label for="check_6"> music</label>.
->>>>>>> feature/SONG_P09_LAST_RE
                                       </li>
                                     </ul>
                                     <img class="girl_img" src="images/12/girl_img.png" alt="소녀 이미지" />
@@ -221,10 +202,13 @@
 
           <div class='waiter' id='waiter_wrap'>
             <div class='bg'><!-- 따라말하기 타이머 --> </div>
-            <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>
+         <!--   <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>-->
           </div>
 
-
+<!--          <div class="speaker">
+            <div class='speaker_timer'>&lt;!&ndash; 따라말하기 타이머 &ndash;&gt; </div>
+            <div class='speaker_bar' id='speakerBall'><img src='images/common/player/waiter_ball.png' /></div>
+          </div>-->
 
 
           <div class='controller'>
@@ -247,9 +231,17 @@
               <div id='prog_cap' class="btn_caption_en_off"></div>
               <div id='prog_cap2' class="btn_caption_kr_off display-none"></div>
               <div id='prog_sct' class="btn_script_off"></div>
-              <div class="role_1"><img src="./images/role_play/Sumi.jpg"/></div>
-              <div class="role_2"><img src="./images/role_play/Jackson.jpg"/></div>
-              <div class="role_3"><img src="./images/role_play/Jiwon.jpg"/></div>
+              <ul class="role_list">
+                <li id="role_1" class="">
+                  <img src="./images/role_play_real/Sumi.JPG"/>
+                </li>
+                <li id="role_2" class="">
+                  <img src="./images/role_play_real/Jackson.JPG"/>
+                </li>
+                <li id="role_3" class="">
+                  <img src="./images/role_play_real/Jiwon.JPG"/>
+                </li>
+              </ul>
             </div>
             <!-- 구간 이미지 -->
             <div class='thumb_list'></div>

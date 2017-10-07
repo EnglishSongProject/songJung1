@@ -59,10 +59,31 @@
 
 
 .word{position: absolute;width: 290px; top: 895px; left: 260px; font-family: 'Noto Sans KR'; font-size: 15px;}
-.word>li{float: left; padding-right:40px; }
+.word>li{float: left; padding-right:40px;position: absolute; }
+.word>li:nth-child(1){ }
+.word>li:nth-child(2){left: 105px;}
+.word>li:nth-child(3){left: 220px; }
 
 .txt_answer {position: absolute; font-family: "Nanum Gothic";color: Red; text-align:center; background:#fff; padding: 0px 10px; border:1px solid red; z-index: 100}
 #byr_a_a {top: 487px; left: 542px; border:none; font-size:20px}
 #byr_b_a1 {top: 69px; left: 30px;}
 #byr_b_a2 {top: 54px; left: 231px;}
 #byr_b_a3 {top: 72px; left: 402px;}
+
+.p14_droppable > li{
+    width: 120px;
+    height: 50px;
+    position: absolute;
+}
+.p14_droppable > li:nth-child(1){
+    left: 135px;
+    top: 670px;
+}
+.p14_droppable > li:nth-child(2){
+    left: 330px;
+    top: 665px;
+}
+.p14_droppable > li:nth-child(3){
+    left: 510px;
+    top: 670px;
+}
