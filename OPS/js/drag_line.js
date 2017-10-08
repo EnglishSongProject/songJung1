@@ -263,7 +263,6 @@ QUIZ = (function(){
 
         start: function (quizNum, quizName) {
             this.quizNameArray.push(quizName);
-            console.log(quizName);
 /*            console.log(quizNum);*/
             for (var i = 0; i < quizName.length; i++) this[quizName[i]]['init'](quizNum);
         }
@@ -291,8 +290,6 @@ QUIZ.dragLine = {
 
         this.append(quizNum);
         QUIZ.objCount[quizNum-1] += this.dragLineObj.length;
-
-        console.log(this.dragLineObj);
         for (var i = 0; i < this.dragLineObj.length; i++) {
             this.dragLineObj[i].style.cursor = 'pointer';
             this.dragLineObj[i].setAttribute('value', i + 1);
@@ -370,16 +367,11 @@ QUIZ.dragLine = {
 
             if (comparePosition || allDap) {
                 for (var j = 0; j < dropValue.length; j++) {
-                    if (dragObjValue == dropValue[j]) {
-
                         var dLeft = QSAll('.dLeft');
                         var dRight = QSAll('.dRight');
-
 /*                        dLeft[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';
                         dRight[dragObjValue-1].childNodes[0].style.backgroundColor = '#000';*/
-
                         result = true;
-                    }
                 }
                 if (result === undefined) result = false;
             }
@@ -388,6 +380,12 @@ QUIZ.dragLine = {
     },
 
     setDragObjPosition: function (quizNum, dragObj, param, type) {
+        console.log('포지션이 돌아감');
+        console.log(dragObj.element);
+        console.log(param);
+        console.log(this);
+        console.log(getMousePosition());
+
         var obj = dragObj.element !== undefined ? dragObj.element : dragObj,
             idx = obj.getAttribute('value') - 1,
             top, left, targetPath, value, dropTop, dropLeft;

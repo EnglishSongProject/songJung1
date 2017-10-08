@@ -19,4 +19,8 @@
    $(".pop_up_22 button").on('click', function(){
      $(".pop_up_22 p").toggle();
    });
+
+     $(document).mousemove(function(e){
+         getMousePosition(e);
+     });
  });

@@ -1299,3 +1299,6 @@ function isNumber(s) {
     if (s == '' || isNaN(s)) return false;
     return true;
 }
+function getMousePosition(e) {
+    return e;
+}
