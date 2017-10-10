@@ -1076,8 +1076,8 @@ function setRoles(){
 	}
 
 	var info = mediaInfo[idxr];
-	var text = info.syncText;
-	var sync = info.sync;
+	var text = info.arrayForMute;
+	var sync = info.arrayForMute;
 	var arrayForMute = new Array();
 	var vObj = $("#vdo");
 	var muteForRoleList = new Array();
@@ -1087,7 +1087,7 @@ function setRoles(){
 		//뮤트할 롤 배열만큼 반복문을 돌려준다.
 		for (var y = 0; y < arrayFormuteOn.length; y++) {
 			var whoNum = arrayFormuteOn[y].id.substr(arrayFormuteOn[y].id.length - 1, 1);
-			if (text[i][1] == whoNum) {
+			if (text[i][0] == whoNum) {
 				muteForRoleList.push(whoNum);
 				arrayForMute.push(sync[i]);
 			}
@@ -1102,7 +1102,6 @@ function setRoles(){
 		textForEval = textForEval.substr(0, textForEval.length - 2);
 		textForEval += '){vObj.prop(\'muted\', true);setWaiter()}else{vObj.prop(\'muted\', false);removeWaiter();}'
 
-		console.log(textForEval);
 		vObj[0].addEventListener("timeupdate", function () {
 			eval(textForEval);
 		});

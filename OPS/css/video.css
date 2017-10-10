@@ -27,9 +27,8 @@
 
 
 /* role에서의 시간 그래프 */
-.waiter { position:absolute; left:0px; right:0px; top:400px; width:200px; margin:0 auto; visibility:hidden;}
-.waiter .bg	{ position: absolute;  width:200px; height: 60px; 
-				background: url(../images/common/player/waiter_bg.png) no-repeat 0 0;}
+.waiter { position:absolute; left: 100px; right:0px;     top: 320px ;width:200px; margin:0 auto; visibility:hidden;}
+.waiter > img {position: relative;  width:100px; height: 100px;     animation: mic_ani 900ms linear 0s infinite;}
 .waiter .bar{ position:absolute; left:20px; top:16px; width:28px; height:28px;}
 .video_header{ height: 60px; background-color: #ebf6ee;}
 
@@ -132,4 +131,8 @@
 	width: 25px;
 	height: 25px;
 }
-
+@keyframes mic_ani {
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
