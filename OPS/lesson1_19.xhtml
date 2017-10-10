@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <title>lesson1</title>
+    <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/19.css" />
+    <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/19.js"></script>
+</head>
+    <body>
+        <div class="wrapper part_lu">
+            <h1 class="page_tit">
+                <img src="./images/19/ptit_lu.png" alt="listen and speak1" />
+            </h1>
+            <div class="slider_content mt_35">
+                <div class="slider_image_wrap">
+                    <ul class="slider_image">
+                        <li data-num="1" >
+                            <div class="section section1">
+                                <h2>
+                                    <img src="./images/19/icon_a.jpg" alt="A" />
+                                </h2>
+                                <div class="top_area">
+                                    <div class="right fl">
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_01.mp3', 'single');">I <em class="color-blue">am</em> your English teacher. </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_02.mp3', 'single');">You <em class="color-blue">are</em> good at soccer. </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_03.mp3', 'single');">He <em class="color-blue">is</em> Kang Hosik.  </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_04.mp3', 'single');">They <em class="color-blue">are</em> my friend.  </span>
+                                    </div>
+                                    <div class="left fl">
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_05.mp3', 'single');">I <em class="color-blue">like</em> cookies and doughnuts. </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_06.mp3', 'single');">You <em class="color-blue">speak</em> English very well.</span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_07.mp3', 'single');">They <em class="color-blue">play</em> soccer at lunch time.  </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_08.mp3', 'single');">We <em class="color-blue">love</em> music.</span>
+                                    </div>
+                                </div>
+                                <p class="info">
+                                    ‘be’동사는 ‘~이다, ~이 있다’라는 뜻을 나타내고, 일반동사는주어의 동작이나 상태를 나타내요.
+                                </p>
+                                <h3 class="sub_tit mt_50">
+                                    <span class="icon_tb">Write</span>
+                                    <span class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_LU_01.mp3', 'single');">빈칸에 알맞는 낱말을 골라 문장을 완성해 봅시다.</span>
+                                    <span class="btn_list  ml_10">
+                                        <button type="button" id="byr_b_q" class="btn_type_02 btn_answer" title="예시 답안" onclick="blankCheckByCss('byr_b_q','byr_b_a1+byr_b_a2+byr_b_a3+byr_b_a4+byr_b_a5+byr_b_a6','byr_b_t1+byr_b_t2+byr_b_t3+byr_b_t4+byr_b_t5+byr_b_t6','type01');">답안</button>
+                                    </span>
+                                </h3>
+                                <div class="word_box mt_25">
+                                    <ul>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w1.mp3', 'single');">am</li>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w2.mp3', 'single');">are</li>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w3.mp3', 'single');">is</li>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w4.mp3', 'single');">like</li>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w5.mp3', 'single');">play</li>
+                                        <li class="active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_09_w6.mp3', 'single');">watch</li>
+                                    </ul>
+                                </div>
+                                <div class="img_content mt_40">
+                                    <div>
+                                        <span class="num">1.</span>
+                                        <img src="./images/19/a_1.jpg" alt="" />
+                                        <div class="sentence_box">
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_10.mp3', 'single');">
+                                                My name  <input type="text" class="inbutBox" id="byr_b_t1"/> Han Muhyeon.
+                                                <span id="byr_b_a1" class="display-none color-red">is</span>
+                                            </span>
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_11.mp3', 'single');">
+                                                I <input type="text" class="inbutBox" id="byr_b_t2"/> a music teacher.
+                                                <span id="byr_b_a2" class="display-none color-red">am</span>
+                                            </span>
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_12.mp3', 'single');">
+                                                I <input type="text" class="inbutBox" id="byr_b_t3"/> the piano every day.
+                                                <span id="byr_b_a3" class="display-none color-red">play</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mt_35">
+                                        <span class="num">2.</span>
+                                        <img src="./images/19/a_2.jpg" alt="" />
+                                        <div class="sentence_box">
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_13.mp3', 'single');">
+                                                Hana and Duri   <input type="text" class="inbutBox" id="byr_b_t4"/>  sports.
+                                                <span id="byr_b_a4" class="display-none color-red">like</span>
+                                            </span>
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_14.mp3', 'single');">
+                                                They  <input type="text" class="inbutBox" id="byr_b_t5"/>  soccer games on TV every day.
+                                                <span id="byr_b_a5" class="display-none color-red">watch</span>
+                                            </span>
+                                            <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_a01_15.mp3', 'single');">
+                                                They  <input type="text" class="inbutBox" id="byr_b_t6"/>  good at baseball.
+                                                <span id="byr_b_a6" class="display-none color-red">are</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- // section -->
+                            <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="p19_btn_bochung">보충</button>
+                            <button type="button" class="btn_simhwa" title="심화" onclick="" id="p19_btn_sim">심화</button>
+                        </li>
+                        <li data-num="2">
+                            <div class="section section2">
+                                <h2>
+                                    <img src="./images/19/icon_b.jpg" alt="B" />
+                                </h2>
+                                <div class="top_area">
+                                    <div class="right fl">
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_01.mp3', 'single');">I <em class="color-blue">am not </em> a great baker. </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_02.mp3', 'single');">You <em class="color-blue">are not</em> a good singer. </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_03.mp3', 'single');">He <em class="color-blue"> is not </em> from New Zealand </span>
+                                    </div>
+                                    <div class="left fl">
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_04.mp3', 'single');"><em class="color-blue">Are you </em> good at soccer? </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_05_plus.mp3', 'single');">- Yes, I am. / No, I’m not.</span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_06.mp3', 'single');"><em class="color-blue">Is he </em> from Busan? </span>
+                                        <span class="sentence active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_lang_b01_07_plus.mp3', 'single');">- Yes, he is. / No, he isn’t.</span>
+                                    </div>
+                                </div>
+                                <p class="info">
+                                    ‘be’동사의 부정문은 ‘be’동사 뒤에 ‘not’을 붙여 만들고,의문문은 주어와 ‘be’동사의위치를 바꿔 만들어요.
+                                </p>
+                                <h3 class="sub_tit active-purple" onclick="playAudio('./media/audio/L01/019/L01_019_LU_02.mp3', 'single');" style="letter-spacing:-0.7px">
+                                    <span class="icon_tb" >Speak</span>
+                                    <img src="./images/19/bx1.jpg" alt="파란" style="margin-left:-5px"/>
+                                    말풍선을 이용하여 질문을,
+                                    <img src="./images/19/bx2.jpg" alt="빨간"/>
+                                    말풍선을 이용하여 대답을 만들어 짝과 대화해 봅시다.
+                                    <span class="btn_list">
+                                        <button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('tk_a');">다시하기</button>
+                                    </span>
+                                </h3>
+                                <div class="tk_box">
+                                    <img src="./images/19/bg_b_tk.png" alt="" />
+                                </div>
+                                <div class="txt_content">
+                                    <ul>
+                                        <li>
+                                            <span class="sentence">
+                                                <span class="num">1.</span>
+                                                <em>Q</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                            <span class="sentence">
+                                                <em>A</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="sentence">
+                                                <span class="num">2.</span>
+                                                <em>Q</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                            <span class="sentence">
+                                                <em>A</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="sentence">
+                                                <span class="num">3.</span>
+                                                <em>Q</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                            <span class="sentence">
+                                                <em>A</em>
+                                                <input type="text" class="inbutBox" name="tk_a"/>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- // section -->
+                            <button type="button" class="btn_bochung marginL" title="보충" onclick="" id="p19_btn_bochung_2">보충</button>
+                            <button type="button" class="btn_simhwa" title="심화" onclick="" id="p19_btn_sim_2">심화</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper  bo bo_4">
+                  <button type="button" class="btn_close"></button>
+              		<h1 class="bs_page_tit">
+                            <img src="images/23/bo_tit.png" alt="simhua title" />
+                          </h1>
+                          <div class="bo_wrap">
+                            <div class="subtit_wrap">
+                              <img src="images/23/bo_subtit_img.png" alt="말풍선" />
+                            	<p class="subtit">괄호 안에서 알맞은 것을 골라 봅시다.</p>
+                                <span class="btn_list">
+                                    <button type="button" class="btn_type_02 btn_answer" id="bo_4_a" title="예시 답안" onclick="blankCheckByCss('bo_4_a','a_c_1+a_c_2+a_c_3+a_c_4','be_v_is+be_v_are_1+love+play');">답안</button>
+                                </span>
+
+                            </div>
+                            <ul class="bo_Q_4">
+                              <li>1. Sujin (<input type="radio" name="be" id="be_v_am" value="am"/><label for="be_v_am">am</label>/<input type="radio" name="be" id="be_v_are" value="are"/><label for="be_v_are">are</label>/<input  type="radio" name="be" id="be_v_is" value="is"/><label for="be_v_is">is</label>) happy now.</li>
+                              <li>2. The boys (<input type="radio" name="be_1" id="be_v_am_1" value="am"/><label for="be_v_am_1">am</label>/<input type="radio" name="be_1" id="be_v_are_1" value="are"/><label for="be_v_are_1">are</label>/<input  type="radio" name="be_1" id="be_v_is_1" value="is"/><label for="be_v_is_1">is</label>) good at basketball.</li>
+                              <li>3. I (<input type="radio" name="mood" id="love" value="love"/><label for="love">love</label>/<input type="radio" name="mood" id="speak" value="speak"/><label for="speak">speak</label>/<input  type="radio" name="mood" id="paly" value="play"/><label for="play">play</label>) my friends.</li>
+                              <li>4. Jay and Sue (<input type="radio" name="move" id="do" value="do"/><label for="do">do</label>/<input type="radio" name="move" id="make" value="make"/><label for="make">make</label>/<input  type="radio" name="move" id="play" value="play"/><label for="play">play</label>) the guitar every day.</li>
+                            </ul>
+                            <div class="answer_check display-none" id="a_c_1"></div>
+                            <div class="answer_check display-none" id="a_c_2"></div>
+                            <div class="answer_check display-none" id="a_c_3"></div>
+                            <div class="answer_check display-none" id="a_c_4"></div>
+                          </div>
+              	</div>
+                <div class="wrapper  sim sim_4">
+                  <button type="button" class="btn_close"></button>
+              		        <h1 class="bs_page_tit">
+                            <img src="images/23/sim_tit.png" alt="simhua title" />
+                          </h1>
+                          <div class="sim_wrap">
+                            <div class="subtit_wrap">
+                              <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+                            	<p class="subtit">인물에 관한 정보를 완성해 봅시다.</p>
+                                <span class="btn_list">
+                                    <button type="button" class="btn_type_02 btn_answer" id="sim_4_C" title="예시 답안" onclick="blankCheckByCss('sim_4_C','sentence1+sentence2+sentence3+sentence4','sim_4_1+sim_4_2+sim_4_3+sim_4_4')">답안</button>
+                                </span>
+                            </div>
+                            <ul class="sim_4_A">
+              				        <li>
+              				          1. 지나는 학교 도서관에 있다. (Jina, at the school library)<br/><span></span><input type="text" id="sim_4_1" />
+              				        </li>
+                              <li>
+                                2. 이 영어책들은 윌리엄에게 쉽다. (these English books, easy, to William)<br/><span></span><input type="text" id="sim_4_2" />
+                              </li>
+                              <li>
+                                3. 나는 하루에 물 다섯 잔을 마신다. (drink, 5 glasses of water, a day)<br/><span></span><input type="text" id="sim_4_3" />
+                              </li>
+                              <li>
+                                4. 나의 부모님은 토요일마다 테니스를 하신다. (my parents, play, on Saturdays)<br/><span></span><input type="text" id="sim_4_4" />
+                              </li>
+                            </ul>
+                            <div class="sentence_sim4 display-none" id="sentence1">Jina is at the school library.</div>
+                            <div class="sentence_sim4 display-none" id="sentence2">These English books are easy yo William.</div>
+                            <div class="sentence_sim4 display-none" id="sentence3">I drink 5 glasses of water a day.</div>
+                            <div class="sentence_sim4 display-none" id="sentence4">My parents play tennis on Saturdays.</div>
+
+                          </div><!--sim_wrap-->
+              	</div>
+                <div class="wrapper  bo bo_5">
+                  <button type="button" class="btn_close"></button>
+              		<h1 class="bs_page_tit">
+                            <img src="images/23/bo_tit.png" alt="simhua title" />
+                          </h1>
+                          <div class="bo_wrap">
+                            <div class="subtit_wrap">
+                              <img src="images/23/bo_subtit_img.png" alt="말풍선" />
+                            	<p class="subtit">괄호 안에서 알맞은 것을 골라 봅시다.</p>
+                                <span class="btn_list">
+                                    <button type="button" class="btn_type_02 btn_answer" id="bo_5_a" title="예시 답안" onclick="blankCheckByCss('bo_5_a','a5_c_1+a5_c_2+a5_c_3+a5_c_4','isnt+rnot+areu+itis');">답안</button>
+                                </span>
+                            </div>
+                            <ul class="bo_Q_5">
+                              <li>1. Hamin (<input type="radio" name="benot" id="isnt" value="isn't"/><label for="isnt">isn't</label>/<input type="radio" name="benot" id="arent" value="aren't"/><label for="arent">aren't</label>) very tall.</li>
+                              <li>2. Grandma's glasses (<input type="radio" name="arenot" id="rnot" value="are not"/><label for="rnot">are not</label>/<input type="radio" name="arenot" id="notr" value="not are"/><label for="notr">not are</label>) on the tabel.</li>
+                              <li>3. (<input type="radio" name="ayou" id="areu" value="are you"/><label for="areu">Are you</label>/<input type="radio" name="ayou" id="uare" value="you are"/><label for="uare">You are</label>) Suho's English teacher?</li>
+                              <li>4. (<input type="radio" name="inc" id="itis" value="it is"/><label for="itis">It is</label>/<input type="radio" name="inc" id="isit" value="is it"/><label for="isit">Is it</label>) your new bike?</li>
+                            </ul>
+                            <div class="answer_check display-none" id="a5_c_1"></div>
+                            <div class="answer_check display-none" id="a5_c_2"></div>
+                            <div class="answer_check display-none" id="a5_c_3"></div>
+                            <div class="answer_check display-none" id="a5_c_4"></div>
+                          </div>
+              	</div>
+                <div class="wrapper  sim sim_5">
+                  <button type="button" class="btn_close"></button>
+              		        <h1 class="bs_page_tit">
+                            <img src="images/23/sim_tit.png" alt="simhua title" />
+                          </h1>
+                          <div class="sim_wrap">
+                            <div class="subtit_wrap">
+                              <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+                            	<p class="subtit">빈칸에 알맞은 말을 써넣어 대화를 완성해 봅시다.</p>
+                                <span class="btn_list">
+                                     <button type="button" class="btn_type_02 btn_answer" id="sim_5_C" title="예시 답안" onclick="blankCheckByCss('sim_5_C','sentence1_5+sentence2_5+sentence3_5+sentence4_5','sim_5_1+sim_5_2+sim_5_3+sim_5_4')">답안</button>
+                                </span>
+                            </div>
+                            <ul class="sim_5_A">
+              				        <li>
+              				          1. A: Are you late for the school?<br/><span>B: </span><input type="text" id="sim_5_1" />
+              				        </li>
+                              <li>
+                                2. A: Is it cold in your room at night?<br/><span>B: </span><input type="text" id="sim_5_2" />
+                              </li>
+                              <li>
+                                3. A: Are your brothers good at playing soccer?<br/><span>B: </span><input type="text" id="sim_5_3" />
+                              </li>
+                              <li>
+                                4. A: Is a lion a member of a cat?<br/><span>B: </span><input type="text" id="sim_5_4" />
+                              </li>
+                            </ul>
+                            <div class="sentence_sim5 display-none" id="sentence1_5">NO, I'm not.</div>
+                            <div class="sentence_sim5 display-none" id="sentence2_5">Yes, it is.</div>
+                            <div class="sentence_sim5 display-none" id="sentence3_5">No, <span>they aren't</span><br/>[they're not]</div>
+                            <div class="sentence_sim5 display-none" id="sentence4_5">Yes, it is.</div>
+
+                          </div><!--sim_wrap-->
+              	</div>
+                <div class="slider_thumbnail_area">
+                    <div class="slider_thumbnail">
+                        <button type="button" data-num="1" class="on">1</button>
+                        <button type="button" data-num="2">2</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pg_Num pgNum_right">
+              <p>New School, New Friends<strong>19</strong></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,20 +1,12 @@
 /**
- * Created by sr01-02 on 2017-10-11.
+ * Created by sr01-02 on 2017-09-15.
  */
-$(document).ready(function () {
-    $('.mediabtn_0').on('click',function(){
-        layerAclose();
-        $('.zoom_img_wrap.a').show();
-        mediaInit(0);
-    });
+$(function () {
 
-    $('.btn_media_close').on('click',function(){
-        mediaClose(); //video.js
-        AllOff();
-        $('.zoom_img_wrap').hide();
+    $('.img-popup-none-confirm').on('click',function () {
+       $('.img-popup-none-confirm').toggle();
     });
-
-    $(".btn_trans.btn_type_02").on("click", function(){
-        $(".correct").toggle();
+    $('.btn_word').on('click',function () {
+        $('.img-popup-none-confirm').toggle();
     });
 });

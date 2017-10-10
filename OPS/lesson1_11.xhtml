@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>lesson1</title>
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/11.css" />
+        <link rel="stylesheet" type="text/css" href="css/video.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/11.js"></script>
+        <script type="text/javascript" src="js/video.js"></script>
+    </head>
+    <body>
+        <div class="wrapper part_las part_las_02">
+            <h1 class="page_tit" style="margin-left:50px">
+                <img src="./images/11/ptit_las_02.png" alt="listen and speak1" />
+            </h1>
+            <div class="info" title="study point"><p>소개하고 인사 나누기</p> </div>
+
+    <div class="slider_content">
+        <div class="slider_image_wrap">
+            <ul class="slider_image">
+                <li data-num="1">
+                    <!-- section A -->
+                    <div class="section">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_a.png" alt="A" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01.mp3', 'single');" class="audio_tit ">Warm up</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01_1.mp3', 'single');">What will the boy say?</span>
+                            <span class="btn_list">
+                                        <button type="button" class="btn_type_02 btn_play mediabtn_0" title="영상 플레이">영상 플레이</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_01.mp3','',this);">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc1" title="대본" onclick="showScriptPopupTopLeft(this, -20, 20);">대본</button>
+                                        <button type="button" id="ls2_wu_t1_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls2_wu_t1_q', 'ls2_wu_t1_a', 'ls2_wu_t1');">답안</button>
+                            </span>
+                        </h2>
+                        <div class="lac_2_sc1 script display-none">
+                            <p>test 1 sadsadsadsadsad </p>
+                            <p>test 2 sadsadsa dsa</p>
+                            <p>test 3 d assad sad sadsad </p>
+                        </div>
+                        <div class="img_content">
+                            <img src="./images/11/img_las2_01.jpg" alt="" />
+                            <span class="textbox wp_text01"><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02.mp3', 'single');">Sam, this is my dog, Bob.</span>
+                                        <br/><span class="active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a02_1.mp3', 'single');">Bob, this is Sam.</span></span>
+                            <span class="textbox wp_text02 active-purple" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a03.mp3', 'single');">,Bob.</span>
+                            <input id="ls2_wu_t1" type="text" class="textbox wp_input01" maxlength="20"/>
+                            <span id="ls2_wu_t1_a" class="textbox wp_text03 display-none"> Nice to meet you</span>
+                        </div>
+                    </div>
+                    <!-- section B-->
+                    <div class="section section02 mt_50">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_b.png" alt="C" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01.mp3', 'single');" class="audio_tit">Listen and Number</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01_1.mp3', 'single');" >Listen and number the pictures.</span>
+                            <span class="btn_list">
+                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_02.mp3','',this,'','right');">mp3전체듣기</button>
+                                <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc2" title="대본" onclick="showScriptPopupTopLeft(this, -25,  -150);">대본</button>
+                                <button id="ls2_lan_t_q" type="button" class="btn_type_02 btn_answer" title="답안" onclick="listenAndNumberCheck('ls2_lan_t_q', 'ls2_lan_t1+ls2_lan_t2+ls2_lan_t3', '1+3+2');">답안</button>
+                            </span>
+                        </h2>
+                        <div class="lac_2_sc2 script display-none">
+                            <p>2번째 대본 test 1 sadsadsadsadsad </p>
+                            <p>test 2 sadsadsa dsa</p>
+                            <p>test 3 d assad sad sadsad </p>
+                        </div>
+                        <div class="tip_wrap mt_5">
+                            <button type="button" class="btn_tip ml_10">TIP</button>
+                            <span class="tip_con hide">듣기 전에 그림을 보며 대화 상황을 추측해 보세요.</span>
+                        </div>
+                        <div class="img_content" style="padding-top:20px">
+                            <img src="./images/11/img_las2_02.jpg" alt="" />
+                            <input id="ls2_lan_t1" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/>
+                            <input id="ls2_lan_t2" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/>
+                            <input id="ls2_lan_t3" type="text" maxlength="1" onkeyup="this.value=this.value.replace(/[^\d]/,'');"/>
+                        </div>
+                    </div>
+                </li>
+                <li data-num="2">
+                    <div class="section section03 clearfix">
+                        <h2 class="sub_tit">
+                            <img src="./images/10/tit_las_c.png" alt="C" />
+                            <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_06_01.mp3', 'single');" class="audio_tit">Look and Talk</span>
+                            <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_06_01_1.mp3', 'single');" >Look at the pictures and practice the dialog with your classmates. </span>
+                        </h2>
+                        <div class="img_content" style="padding:0; margin:10px 0 0 8px">
+                            <div class="rolling">
+                                <div class="rolling_image_wrap mt_30">
+                                    <ul>
+                                        <li data-num="1" class="rolling_01 on">
+                                            <img src="./images/11/c_rol_01.png" alt="" />
+                                            <span class="btn_list rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_a.mp3','',this,'','right');">mp3전체듣기</button>
+                                                <button type="button" class="btn_type_02 btn_trans trans1" title="번역">번역</button>
+                                            </span>
+                                            <span class="img_txt">
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w.mp3', 'single');">English teacher</span> /<br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w_1.mp3', 'single');">Mr. Parker</span> /<br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_w_2.mp3', 'single');">Canada</span>
+                                            </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01.mp3', 'single');">
+                                                        <em>A:</em>This is my <span class="blue">English teacher, Mr. Parker. </span><br/>
+                                                    </span>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01_1.mp3', 'single');">
+                                                        <span class="blue ml_20">He</span> is from  <span class="blue">Canada</span>.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c02_01_02_add.mp3', 'single');">
+                                                        <em>B:</em>Hi. <span class="blue"> Pleased</span> to meet you, <span class="blue">Mr. Parker.</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c02_01_03.mp3', 'single');">
+                                                        <em>C:</em><span class="blue">Nice</span> to meet you, too.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct1">이분은 나의 영어 선생님인 Parker 선생님이셔.<br/>
+                                                캐나다 출신이셔.<br/>
+                                                안녕하세요. 만나 뵙게 되어 반갑습니다, Parker 선생님.<br/>
+                                                나도 만나서 반갑구나.
+                                            </span>
+                                        </li>
+                                        <li data-num="2" class="rolling_02">
+                                            <span class="btn_list rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_b.mp3','',this,'','right');">mp3전체듣기</button>
+                                                <button type="button" class="btn_type_02 btn_trans trans2" title="번역">번역</button>
+                                            </span>
+                                            <img src="./images/11/c_rol_02.png" alt="" />
+                                            <span class="img_txt">
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w.mp3', 'single');">best friend</span> / <br />
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w_1.mp3', 'single');">Suji</span>  /<br />
+                                                    <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_w_2.mp3', 'single');">Korea</span>
+                                                    </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_01.mp3', 'single');">
+                                                        <em>A:</em>This is my<span class="blue"> best friend, Suji.</span>
+                                                    </span>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_01_1.mp3', 'single');">
+                                                        <span class="blue ml_20">She</span> is from  <span class="blue">Korea</span>.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c03_02_02_add.mp3', 'single');">
+                                                        <em>B:</em>Hi. <span class="blue"> Nice</span> to meet you, <span class="blue">Suji.</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c03_02_03.mp3', 'single');">
+                                                        <em>C:</em><span class="blue">Nice</span> to meet you, too.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct2">이 아이는 나의 가장 친한 친구 수지야.<br/>
+                                                한국 출신이야.<br/>
+                                                안녕. 만나서 반가워, 수지야.<br/>
+                                                나도 만나서 반가워.
+                                            </span>
+                                        </li>
+                                        <li data-num="3" class="rolling_03">
+                                           <span class="btn_list rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_c.mp3','',this,'','right');">mp3전체듣기</button>
+                                                <button type="button" class="btn_type_02 btn_trans trans3" title="번역">번역</button>
+                                            </span>
+                                            <img src="./images/11/c_rol_03.png" alt="" />
+                                            <span class="img_txt">
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w.mp3', 'single');">neighbor</span> / <br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w_1.mp3', 'single');">Pei </span>/ <br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_w_2.mp3', 'single');">Thailand</span>
+                                            </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_01.mp3', 'single');">
+                                                        <em>A:</em>This is my<span class="blue"> neighbor, Pei. </span>
+                                                    </span>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_01_1.mp3', 'single');">
+                                                        <span class="blue ml_20">She</span> is from  <span class="blue">Thailand</span>.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_011_sp2_c04_03_02_add.mp3', 'single');">
+                                                        <em>B:</em>Hi. <span class="blue">Pleased</span> to meet you, <span class="blue">Pei.</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_011_sp2_c04_03_03.mp3', 'single');">
+                                                        <em>C:</em><span class="blue">Pleased</span> to meet you, too.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct3">이분은 나의 이웃인 Pei 아줌마야.<br/>
+                                                    태국 출신이셔.<br/>
+                                                    안녕하세요. 만나 뵙게 되어 반갑습니다, Pei 아줌마.<br/>
+                                                    나도 만나서 반갑구나.
+                                                    </span>
+                                        </li>
+                                        <li data-num="4" class="rolling_04">
+                                           <span class="btn_list rol_btn_list" style="display:block; text-align:right;height: 10px;">
+                                                <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_03_d.mp3','',this,'','right');">mp3전체듣기</button>
+                                                <button type="button" class="btn_type_02 btn_trans trans4" title="번역">번역</button>
+                                            </span>
+                                            <img src="./images/11/c_rol_04.png" alt="" />
+                                            <span class="img_txt">
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1.mp3', 'single');">classmate</span> / <br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1_1.mp3', 'single');">Eric</span> / <br />
+                                                <span onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_07_1_2.mp3', 'single');">France</span>
+                                            </span>
+                                            <ul class="txt_box">
+                                                <li>
+                                                    <span class="sentence" >
+                                                        <em>A:</em>This is my<span class="blue"> classmate, Eric.</span>(음원필요)
+                                                    </span>
+                                                    <span class="sentence" >
+                                                        <span class="blue ml_20">He</span> is from  <span class="blue">France</span>.(음원필요)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/add/L01_listenspeak2_10_add.mp3', 'single');">
+                                                        <em>B:</em> Hi. <span class="blue">Nice</span> to meet you, <span class="blue">Eric.</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="sentence" onclick="playAudio('./media/audio/L01/011/L01_listenspeak2_11.mp3', 'single');">
+                                                        <em>C:</em><span class="blue">Nice</span> to meet you, too.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <span class="color-green display-none correct4">이 아이는 반 친구인 Eric이야.<br/>
+                                                프랑스 출신이야.<br/>
+                                                안녕. 만나서 반가워, Eric.<br/>
+                                                나도 만나서 반가워.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rolling_thumbnail_area">
+                                    <button type="button" data-num="1" class="on">1</button>
+                                    <button type="button" data-num="2">2</button>
+                                    <button type="button" data-num="1">3</button>
+                                    <button type="button" data-num="2">4</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider_thumbnail_area">
+            <div class="slider_thumbnail">
+                <button type="button" data-num="1">1</button>
+                <button type="button" data-num="2">2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pg_Num pgNum_right">
+      <p>New School, New Friends<strong>11</strong></p>
+    </div>
+            <div class="zoom_img_wrap a"><!-- common.css -->
+                <!-- innerHTML -->
+                <div class='video_header'>
+                    <div class='media_title'><div class='media_titlefont'><div class='media_tt'>Media title</div></div></div>
+                    <div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='본문보기'/></div><!-- 10.js에서 처리 -->
+                </div>
+                <div id="vwrap" ><!-- 10.css -->
+                    <div class="pageContainer"><!-- video2.js에서 사용-->bb
+                        <div class="page_1">
+                            <div class="videoWrap"></div>
+                        </div>
+                        <div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
+                    </div>
+                </div>
+
+                <div class='waiter' id='waiter_wrap'>
+                    <div class='bg'><!-- 따라말하기 타이머 --> </div>
+                    <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>
+                </div>
+
+
+
+
+                <div class='controller'>
+                    <div class='bg'><!-- 배경 가로반복--> </div>
+
+                    <!-- 비디오 컨트롤러 -->
+                    <div class='progController'>
+                        <div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div>
+                        <div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>
+
+                        <div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><!-- black -->
+                        <div id='prog_color'><img src='images/common/player/prog_color.png' /></div><!-- red -->
+                        <div id='prog_mouse'><img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><!-- mouse -->
+                        <div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>
+                        <!-- time -->
+                        <div class='prog_pos'><div class='media_timefont'><div class='time_pos'>00:00</div></div></div>
+                        <div class='prog_dur'><div class='media_timefont'><div class='time_dur'>00:00</div></div></div>
+                        <div class='fullsize btn_full_screen'></div>
+                        <!-- 자막, 대본 -->
+                        <div id='prog_cap' class="btn_caption_en_off"></div>
+                        <div id='prog_cap2' class="btn_caption_kr_off"></div>
+                        <div id='prog_sct' class="btn_script_off"></div>
+
+                    </div>
+                    <!-- 구간 이미지 -->
+                    <div class='thumb_list'></div>
+                    <span class="display-none" id="isTrans">off</span>
+
+
+                    <!-- 볼륨 컨트롤러 mute기능 -->
+                    <!--                    <div class='volController'>
+                                            <div id='vol_spk'><img id='img_spk' src='images/common/player/mov_spk1.png' ondragstart='return false' /></div>
+                                            <div id='vol_gray'><img src='images/common/player/mov_vol0.png' /></div>&lt;!&ndash; black &ndash;&gt;
+                                            <div id='vol_color'><img src='images/common/player/mov_vol1.png' /></div>&lt;!&ndash; red &ndash;&gt;
+                                            <div id='vol_mouse'><img src='images/common/player/mov_vol0.png' ondragstart='return false' /></div>&lt;!&ndash; mouse &ndash;&gt;
+                                        </div>-->
+                </div>
+
+
+
+                <div class='sc_paper'>
+                    <div class='caption_wrap display-none'>
+                        <div class='caption_bg'></div>
+                        <div class='caption_txt'>
+                            <div class='media_captionfont'>
+                                <div class='txt_one display-none'></div>
+                                <div class='txt_two display-none'></div>
+                            </div><!-- 자막 -->
+                        </div>
+                    </div>
+
+                    <div class='script_wrap num1 off display-none'>
+                        <div class='script_txt'>
+                            <div class='media_scriptfont'><div class='txt_sct'></div></div><!-- 스크립트 -->
+                        </div>
+                        <div class='scController'>
+                            <div class='sc_bg'><img src='images/common/player/scroll_bg.png' ondragstart='return false'/></div>
+                            <div class='sc_ball'><img src='images/common/player/scroll_ball.png' ondragstart='return false'/></div>
+                        </div>
+                        <div class='haneng'>
+                            <button class="btn_trans_video_off num1"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</body>
+</html>

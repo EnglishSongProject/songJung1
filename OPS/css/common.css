@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*----------------------
 reset
@@ -98,7 +98,9 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 
 /* 버튼 */
 .btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
-.btn_type_02 {display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; position: absolute;}
+.btn_type_02 {display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;
+    position: relative; top:-1px
+}
 .btn_type_03 {display: inline-block; width:118px; height:50px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
 .btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 
@@ -330,7 +332,7 @@ scriptPopup
 .btn_audio_close {background:url(../images/common/audio_pop/btn_close.png) no-repeat 0 0 ;display: inline-block; width:18px; height:18px; text-indent: -999em; overflow: hidden; vertical-align: middle}
 
 /*video*/
-.zoom_img_wrap{z-index:1000000000;display:none;position: absolute;top: 0;left: 0;bottom: 0;right: 0; background: rgba(255, 255, 255, 1) !important;width: 768px;
+.zoom_img_wrap{z-index:200;display:none;position: absolute;top: 0;left: 0;bottom: 0;right: 0; background: rgba(255, 255, 255, 1) !important;width: 768px;
     height: 1024px;}
 .videoWrap .videoContainer {
     position: absolute;

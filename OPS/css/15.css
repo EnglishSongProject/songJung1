@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 배경 */
+.part_rt {background: url(../images/15/bg_lesson01_15.jpg) no-repeat 0 0; background-size: cover}
+
+/*  Reading Time Title*/
+.page_tit {position: absolute; display: block; width: 155px; height: 41px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.png") no-repeat 0 0; background-size: contain}
+.info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
+
+
+/* 본문 */
+.reading_time_title {position: absolute; width: 600px; height: 210px; top: 80px; left: 70px;}
+.section > p {font: 20px 'Faustina'; position: absolute; top: 307px; left: 150px; line-height: 38px; }
+.section > p span {display: block}
+.section > p.correct {font: 12px 'Open Sans'; position: absolute; top: 328px; line-height: 38px; display: none;}
+
+
+/* Ask And Answer */
+.ask_and_speak {position: absolute; top: 890px; left:103px; font-family: 'Open Sans'; font-size: 13px; }
+.ask_and_speak > p{position:absolute;top:30px; left: 170px;}
+.ask_and_speak > p input[type="text"]{display:none;}
+.ask_and_speak>h3 {position: absolute; width: 230px;  left: 0px; top:30px; z-index: 999; font-size: 14px; }
+.ask_and_speak>h3>b{font-family: 'Noto Sans KR'; font-size: 14px; color: #FF4A23; padding-right: 5px;}
+.ask_and_speak > input {position: relative; display: inline-block; top: 29px; left: 60px; vertical-align: baseline;}
+
+.aa_title {display: inline-block;  width: 100px; height: 16px; background: url("../images/15/lesson_1_p15_aa_title.png") no-repeat 0 0; background-size: cover; vertical-align: middle;}
+
+.btn_answer + p {position: absolute; display: block; top: 25px;}
+.btn_answer + p + span {position: absolute; color: #FF4A23; size: 13px;}
+
+.ask {position: absolute; top: 25px;}
+.ask li {display: inline-block; position: relative; font-size: 14px; margin-right: 10px; margin-top: 0; top: 45px;}
+.aa_ask1 {position: relative; display: block; top: 50px; left: 10px;}
+.aa_ask2 {position: relative; display: block; top: 50px; left: 30px;}
+
+.answer {position: absolute; top: 50px; height: 30px;}
+.answer li {display: inline-block; position: relative; }
+.aa_answer1 {left: -10px;  }
+.aa_answer2 {left: -6px;}
+
+.balloon {display: inline-block; position: relative; background: #D0D0D0; padding: 5px 30px 5px; text-align: center; margin: 0 auto 10px;}
+.balloon:after {content: ''; position: absolute; border-top: 10px solid #D0D0D0; border-right: 5px solid transparent; border-left: 5px solid transparent; bottom: -9px; left: 50%; margin-left: -5px;}
+
+.btn_word {position: relative; display: block; float:left; width: 118px; height: 50px; top: 850px; left: 488px; background-size: cover;}
+.pg_Num p{color:#333;}
+
+/* ask & answer */
+#aa_input {width: 120px; padding: 3px; background: rgba(255,255,255,0.3); margin-top: -2px; border:none; display: none;  font-family: 'Open Sans'; font-size: 13px; }
+#aa_aws {position: absolute;  top: 60px; left: 273px; width:80px; color:#f00; display: none; z-index: 999; }
+
+.wpopup {position: absolute; width:67px; height:20px;  text-align: left; color:#339900; font: 12px 'Open Sans';font-weight: 700;}
+.pop_ask1 {top:92px; left:20px;}
+.pop_ask2 {top:92px; left:130px;}
+
+.part_rt .section .btn_list {position:absolute; top:0; left:-80px}

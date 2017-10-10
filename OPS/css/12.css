@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* layout */
+.wrapper{/*background:url(../images/12/12_5_001.png) no-repeat 0 0;*/ background-size: cover;}
+
+/*
+.slider_area{height: 770px;margin: 0 auto;position: relative; width: 600px;}
+.slider_area > .slider_content{width:600px;position: relative;top:0;left:0;}
+.slider_image_wrap{width:600px;position: absolute;bottom:0;left:0;z-index:100;}
+.slider_image > li{display:none;width:100%;position:absolute;left:0;top:0;}
+.slider_image > li:nth-of-type(2){display:none;width:100%;position:absolute;left:600px;top:0;}
+.slider_image > li.on{display:block;left:0;}
+.slider_thumbnail_area { height: 850px; left: 50%; margin-left:-100px; overflow: hidden; position: relative; top:0; width: 200px;}
+.slider_thumbnail_area ul {text-align: center;width:74px; position: relative; top:800px;left:50%;margin-left:-37px;}
+.slider_thumbnail_area ul li {width: 20px; height: 20px; border:none; border-radius: 15px; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; text-indent: -9999px; margin: 0 5px;cursor: pointer;display: inline-block;}
+.slider_area .slider_thumbnail_area ul li.on { background: url(../images/common/slide_bt_on.png) no-repeat 0 0; border:none;}
+.slider_thumbnail_area ul li:last-child { margin-right: 10px;}*/
+
+/* 페이지 타이틀 이미지 */
+.page_tit{width: 235px; height: 70px;margin-top:-45px;margin-left:-53px;}
+
+/*  container_wrap  */
+.header_wrap{position: relative; width: 660px;}
+.sub_tit1{margin-top:41px;}
+.sub_tit1 img{width: 25px; height: 26px;margin-top: -5px;}
+.A_tit,.B_tit{font-family: 'Bubblegum Sans'; font-size: 22px;}
+.one{width:115px; height:25px;margin-left:10px;}
+
+/* container_wrap */
+.container_wrap{margin-top:50px;height:672px;}
+.container_inner{}
+
+  /* content_1 */
+.content_1{text-align:center;position:relative;left:50%;width:400px;margin-left:-200px;}
+.content_1 span{position:absolute;right:25px;bottom:15px;cursor: pointer;}
+
+  /* content_2 */
+.content_2{height:357px;width:595px;margin:0 auto;margin-top:50px;}
+.content_2 > ul.Tab_area{position:relative;width:595px;height:325px;}
+.content_2 > ul.Tab_area > li{background:#e1e5eb;width:200px; height:55px;line-height:54px;color:#71839b;font-family: 'Noto Sans KR';font-weight:800;font-size:20px;padding-left:30px;box-sizing: border-box;border-radius:15px;margin-top:20px;}
+.content_2 > ul.Tab_area > li:nth-of-type(1){margin-top:0;}
+.content_2 > ul.Tab_area > li.li_on{background:#fae1d9;color:#e97a56;}
+
+.content_2 > ul.Tab_area > li > ul{z-index: 10;position:absolute;left:180px;top:0;width:415px;height:325px;background:#fae1d9;padding:20px;box-sizing: border-box;border-radius:15px;color:#000;}
+.content_2 > ul.Tab_area > li > ul:nth-of-type(1){text-align:center;}
+.content_2 > ul.Tab_area > li > ul > li:nth-of-type(1){text-align: center;}
+.content_2 > ul.Tab_area > li > ul > li:nth-of-type(3){}
+.content_2 > ul.Tab_area > li.li_on > ul{;z-index: 100;}
+
+.content_2 > ul.Tab_area > li > ul > li{position:relative;}
+.content_2 > ul.Tab_area > li > ul li h1{float:left;margin-left:17px;text-align: left;;display:inline-block;width:239px;height:30px;line-height:30px;font-family: 'Noto Sans KR';font-weight:800;font-size:17px;}
+.content_2 > ul.Tab_area > li > ul li:nth-of-type(2) h1,
+<<<<<<< HEAD
+.content_2 > ul.Tab_area > li > ul li:nth-of-type(3) h1{background:none;font-family: 'Noto Sans KR';font-weight:100;font-size:13px;text-align:left;margin-top:50px;width: 230px;height: 20px;line-height: 20px;}
+.content_2 > ul.Tab_area > li > ul .button_gr{position:absolute;right:20px;top:-10px;z-index: 100;}
+=======
+.content_2 > ul.Tab_area > li > ul li:nth-of-type(3) h1{    background: none;
+    font-family: 'Noto Sans KR';
+    font-weight: 800;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 50px;
+    width: 300px;
+    height: 20px;
+    line-height: 20px;}
+.content_2 > ul.Tab_area > li > ul .button_gr{position:absolute;right:20px;top:-10px;}
+>>>>>>> feature/SONG_P09_LAST_RE
+
+.content_2 > ul.Tab_area > li > ul .video_img{margin-top:40px;}
+.content_2 > ul.Tab_area > li > ul textarea{width:338px; height:50px;resize: none;margin-top:18px;border-radius:10px;padding:5px;box-sizing: border-box;line-height:15px;    font-size: 16px;}
+
+.content_2 > ul.Tab_area > li > ul div ul{clear: both;display:inline-block;margin-top:10px;text-align: left;width:90%;}
+<<<<<<< HEAD
+.content_2 > ul.Tab_area > li > ul div ul li{font-family: 'Faustina';font-size:16px;font-weight:100;line-height:13px;margin:10px 0 0 0;}
+.content_2 > ul.Tab_area > li > ul div ul li:nth-of-type(1) span.p12_tab_t{position: absolute;  top: 95px;}
+.content_2 > ul.Tab_area > li > ul div ul li:nth-of-type(2) span.p12_tab_t{position: absolute;  top: 129px;}
+.content_2 > ul.Tab_area > li > ul div ul li:nth-of-type(3) span.p12_tab_t{position: absolute;  top: 163px;}
+
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul{width:365px;height:190px;background:url(../images/12/Talk_bubble.png) no-repeat 0 20px;padding:60px 0 0 15px;box-sizing:border-box;}
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul li{font-family: 'Nanum Gothic';font-size:14px;font-weight: bold;margin:15px 0 0 18px;vertical-align: top;}
+=======
+.content_2 > ul.Tab_area > li > ul:nth-of-type(3) div ul{clear: both;display:inline-block;margin-top:10px;text-align: left;width:90%;}
+.content_2 > ul.Tab_area > li > ul div ul li{    font-family: 'Faustina';
+    font-size: 19px;
+    font-weight: 100;
+    line-height: 19px;
+    margin: 10px 0 0 0;}
+.content_2 > ul.Tab_area > li > ul div ul li span{    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 5px;
+    margin-top: 2px;}
+
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul{
+  width: 349px;
+  height: 219px;
+  background: url(../images/12/Talk_bubble.png) no-repeat 0 20px;
+  background-size: 320px;
+  padding: 50px 0 0 10px;
+  box-sizing: border-box;
+  margin-left: -36px;
+  margin-top: 1px;}
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul li{    font-family: 'Nanum Gothic';
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 0 18px;
+    vertical-align: top;}
+>>>>>>> feature/SONG_P09_LAST_RE
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul li input[type="checkbox"]{}
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul li input[type="checkbox"]+ label:before{display:inline-block;width:13px;height:13px;margin-left:8px;bottom: 4px;}
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div .girl_img{float:right;position:absolute;right:-8px;bottom:-15px;}
+.content_2 > ul.Tab_area > li:nth-of-type(3) > ul > li div ul li input[type="checkbox"]:checked + label:before{text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,);font-size: 13px;font-weight: 800;text-align: center; line-height: 10px;}
+input[type=checkbox] + label, input[type=radio] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    padding: 3px 2px;
+    padding-left: 25px;
+    padding-right:5px;
+    margin-right: 0;
+    font-size: 17px;
+}
+/* container_2 */
+/*.container_2{border:1px solid red;}*/
+.header_wrap h3{font-family: 'Noto Sans KR';font-weight:800;font-size:17px;margin-top:15px;padding-left:38px;display:inline-block;}
+.container_2{margin-top: 21px;}
+.container_2 section{height:420px;}
+/*.container_2 section article{border:1px solid black;}*/
+.container_2 section article:first-of-type{height:250px;background:url(../images/12/B_bg_1.png) no-repeat 0 0;background-size:contain;position:relative;}
+.container_2 section article:first-of-type ul{position:absolute;}
+.container_2 section article:first-of-type ul:first-of-type{top: 35px;left: 153px;;width:435px;height:67px;}
+.container_2 section article:first-of-type ul:first-of-type li{font-family: 'Noto Sans KR';font-weight:800;font-size:15px;position:absolute;left:-13px;}
+.container_2 section article:first-of-type ul:first-of-type li:nth-child(2){top:0;left:258px;}
+.container_2 section article:first-of-type ul:first-of-type li:nth-child(3){top: 45px; left: 83px;}
+.container_2 section article:first-of-type ul:first-of-type li input[type="text"]{width:123px;margin-left:23px;margin-top:-4px;font-family: 'Noto Sans KR';font-weight:100;font-size:13px;}
+.container_2 section article:first-of-type ul:first-of-type li:nth-child(2) input[type="text"]{margin-left:31px;}
+.container_2 section article:first-of-type ul:first-of-type li:nth-child(3) input[type="text"]{margin-left:11px;}
+
+.container_2 section article:first-of-type ul:last-of-type{top:51%;left:160px;}
+.container_2 section article:first-of-type ul:last-of-type li{font-family: 'Faustina';font-size:18px;font-weight:700;margin-left:29px;}
+.container_2 section article:first-of-type ul:last-of-type li:first-of-type{margin-left:0;}
+.container_2 section article:first-of-type ul:last-of-type li em{font-family: 'Noto Sans KR';font-weight:100;font-size: 15px;margin-right:3px;}
+.container_2 section article:first-of-type ul:last-of-type li span{color: #9a01cd;}
+
+.container_2 .Sound_12P{width:315px;height:240px;background:url(../images/12/B_sound.png) no-repeat 0 0;background-size:contain;position:relative;left:374px;top:-56px;}
+.container_2 .Sound_12P > h1{color:#fff;font-family: 'Nanum Gothic';font-size:17px;font-weight: 800;position:relative;left:62px;top:29px;}
+.container_2 .Sound_12P > h1 span{position:absolute;top:-3px;}
+.container_2 .Sound_12P ul{font-family: 'Noto Sans KR';font-weight:100;font-size:15px;}
+.container_2 .Sound_12P > ul > li{height:77px;}
+.container_2 .Sound_12P > ul > li:first-of-type{margin-top:60px;}
+.container_2 .Sound_12P > ul > li > ul{position:relative;height:48px;}
+.container_2 .Sound_12P ul li:first-of-type ul li{display:inline-block;position:absolute;top:-4px;font-size:17px;}
+.container_2 .Sound_12P ul li:first-of-type ul li:nth-of-type(1){left:50px;}
+.container_2 .Sound_12P ul li:first-of-type ul li:nth-of-type(2){left:150px;}
+.container_2 .Sound_12P ul li:first-of-type ul li:nth-of-type(3){left:50px;top:20px;}
+.container_2 .Sound_12P ul li:first-of-type ul li:nth-of-type(4){left:101px;top:20px;}
+
+.container_2 .Sound_12P ul li:last-of-type{margin-left: 49px;}
+<<<<<<< HEAD
+.container_2 .Sound_12P ul li:last-of-type ul li{margin-bottom:10px;}
+
+.bubble_talk > li >  input[type=radio] + label:before{
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+}
+.bubble_talk > li > input[type=radio]:checked + label:before{
+    font-size: 18px;
+}
+=======
+.container_2 .Sound_12P ul li:last-of-type ul li{margin-bottom:10px;font-size: 17px; margin-left:0;}
+.ft_bold{font-weight:bold;}
+>>>>>>> feature/SONG_P09_LAST_RE

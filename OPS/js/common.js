@@ -39,7 +39,7 @@ function playAudio(path, btnId, target, imgId, direction) {
             
             // 싱글 듣기 닫기
             if ($('.single').length) {
-                $('.single').detach();
+                $('.single').detach()
             }
 
             // 전체 듣기 닫기
@@ -51,13 +51,12 @@ function playAudio(path, btnId, target, imgId, direction) {
                 $(".audio-popup").hide().detach();
             }
         }
-        var single_on = document.getElementsByClassName('single_on');
 
         //  싱글 듣기 
         if(btnId == 'single'){
             var oAudio = document.getElementById('myaudio');
             var wrapper = document.querySelector('.wrapper');
-            currentAudio = 'single';
+
             if (path !== currentFile){
                 oAudio = document.createElement('audio');
                 oAudio.className = "single";
@@ -65,28 +64,13 @@ function playAudio(path, btnId, target, imgId, direction) {
                 oAudio.src = path;
                 currentFile = path;
                 wrapper.appendChild(oAudio);
-                $(single_on).css('color', '#2B2E34');
-                $(single_on).removeClass('single_on');
             }
+
             try {
                 if(!oAudio.paused){
                     oAudio.currentTime = 0;
-                }else{
-                    oAudio.play();
-                    if(imgId != 'undefined') {
-                        $(target).addClass('single_on');
-                        $(target).css('color', '#9a01cd');
-                    }
                 }
-
-                oAudio.addEventListener("ended", function (e) {
-                    if (currentAudio == 'single') {
-                        if(imgId != 'undefined') {
-                            $(target).css('color', '#2B2E34');
-                            $(target).removeClass('single_on');
-                        }
-                    }
-                });
+                oAudio.play();
             }
             catch (e) {
                 // Fail silently but show in F12 developer tools console
@@ -101,11 +85,11 @@ function playAudio(path, btnId, target, imgId, direction) {
                 var imgId = document.getElementById(imgId);
                 imgId.style.display='block';
             }
+
+            currentAudio = 'single';
             
             // 전체 듣기 팝업
         }else {
-            $(single_on).css('color', '#2B2E34');
-            $(single_on).removeClass('single_on');
             var oAudio = document.getElementById("myaudio");
             var popup = document.querySelector(".audio-popup");
 
@@ -148,7 +132,6 @@ function playAudio(path, btnId, target, imgId, direction) {
 
                 popup.appendChild(oAudio);
                 popup.appendChild(audioControls);
-                popup.style.zIndex=1000000000;
 
                 var wrapper = document.querySelector('.wrapper');
                 wrapper.appendChild(popup);
@@ -168,8 +151,8 @@ function playAudio(path, btnId, target, imgId, direction) {
                     popup.style.top = ($target.offset().top -42) + "px";
                 }
                 else{
-                    popup.style.left = ($target.offset().left + 36) + "px";
-                    popup.style.top = ($target.offset().top - 6) + "px";
+                    popup.style.left = ($target.offset().left + 28) + "px";
+                    popup.style.top = ($target.offset().top - 10) + "px";
                 }
                 
                 popup.style.display='block';
@@ -1237,7 +1220,6 @@ function checkAskAnswer(){
 function toggleWord(){
     $(".btn_wp").on("click",function(){
         var idx = $(this).index();
-        console.log(this);
         $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
     })
 }
@@ -1319,19 +1301,4 @@ function isNumber(s) {
 }
 function getMousePosition(e) {
     return e;
-}
-/*top: 20px;
-left: 16px;*/
-function showWordTopLeft(target, meaning, top, left) {
-    if($('.word_on').length){
-        $('.word_on').detach();
-    }
-    var meanText = document.createElement('span');
-    meanText.innerHTML=meaning;
-    meanText.style.color='#339900';
-    meanText.style.position='absolute';
-    meanText.style.top = (top).toString() + 'px';
-    meanText.style.left = (left).toString() + 'px';
-    $(meanText).addClass('word_on');
-    target.appendChild(meanText);
 }

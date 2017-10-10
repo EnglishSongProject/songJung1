@@ -1,0 +1,51 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>lesson1</title>
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sim.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/sim.js"></script>
+    </head>
+<body>
+	<div class="first wrapper  sim sim_1">
+    <button type="button" class="btn_close"></button>
+		<h1 class="bs_page_tit">
+              <img src="images/23/sim_tit.png" alt="simhua title" />
+            </h1>
+            <div class="sim_wrap">
+              <div class="subtit_wrap">
+                <img src="images/23/sim_subtit_img.png" alt="말풍선" />
+              	<p class="subtit">인물에 관한 정보를 완성해 봅시다.</p>
+                <button type="button" class="btn_type_02 btn_answer" id="sim_btn_sy" title="예시 답안" onclick="blankCheckByCss('sim_btn_sy','pop_answer1+pop_answer2+pop_answer3+pop_answer4+pop_answer5+pop_answer6','sim_1_1_a+sim_1_1_b+sim_1_2_a+sim_1_2_b+sim_1_3_a+sim_1_4_a');">답안</button>
+              </div>
+              <ul class="inmul_sim">
+				        <li>
+				          <input type="text" id="sim_1_1_a" />is<input type="text" id="sim_1_1_b" />'s sister.
+				        </li>
+                <li>
+                   <input type="text" id="sim_1_2_a" />is<input type="text" id="sim_1_2_b" />'s friend.
+                </li>
+                <li>
+                  Sora is<input type="text" id="sim_1_3_a" />years old.
+                </li>
+                <li>
+                  Brian is from<input type="text" id="sim_1_4_a" />
+                </li>
+              </ul>
+              <div class="wordpup display-none" id="pop_answer1">Sora [Somin]</div>
+              <div class="wordpup display-none" id="pop_answer2">Somin [Sora]</div>
+              <div class="wordpup display-none" id="pop_answer3">Brian [Sora]</div>
+              <div class="wordpup display-none" id="pop_answer4">Sora [Brian]</div>
+              <div class="wordpup display-none" id="pop_answer5">13</div>
+              <div class="wordpup display-none" id="pop_answer6">Canada</div>
+
+            </div><!--sim_wrap-->
+	</div>
+</body>
+</html>
