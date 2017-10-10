@@ -1,26 +1,6 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
-<Metadata>
-<Export>
-<curriculum  value="2015 개정"/>
-<authorization_type  value="국정"/>
-<grade_group  value="중학교"/>
-<grade  value=""/>
-<course_name  value=""/>
-<textbook_title  value="선택"/>
-<title  value="lesson1"/>
-<lesson  value="레슨1"/>
-<publisher  value=""/>
-<producer  value=""/>
-<created  value="2017-09-22"/>
-<subject />
-<description />
-<website_link   value=""/>
-<creator_code   value="1"/>
-<creator>
-<item   value=""/>
-</creator>
-<right_holder>
-<item   value=""/>
-</right_holder>
-</Export>
-</Metadata>
+<?xml version="1.0" encoding="UTF-8" ?>
+<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+   <rootfiles>
+      <rootfile full-path="OPS/package.opf" media-type="application/oebps-package+xml"/>
+   </rootfiles>
+</container>
