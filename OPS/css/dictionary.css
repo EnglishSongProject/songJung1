@@ -1,14 +1,15 @@
 @charset "utf-8";
 
 /* 배경 */
-.intro {background: url(../images/dictionary/bg_dictionary.jpg) no-repeat 0 0; background-size: cover}
+.intro_word {background: url(../images/dictionary/bg_dictionary.jpg) no-repeat 0 0; background-size: cover; position: absolute; width: 768px;
+    height: 1024px; z-index: 10}
 .header_tit {position: absolute; display: block; top: 50px; content: url("../images/dictionary/title_word.png");}
 .close_icon {position: absolute; display: block; top: 20px; left: 720px;}
 
 #flashcard {position: absolute; display: block; width: 300px; height: 150px; border-radius: 15px; top: 230px; left: 420px; background: #ffffff;}
 #flashcard_example {position: absolute; display: block; width: 300px; height: 80px; border-radius: 15px; top: 450px; left: 420px; background: #ffffff;}
 
-.btn_mp3_a {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 380px; background-size: cover;}
+.word.btn_mp3_a {position: absolute; display: block; float:left; width: 25px; height: 25px; top: 230px; left: 380px; background-size: cover;}
 
 /* 단어 리스트 */
 .word_list {position: absolute; display: block; width: 280px; height: 370px; border-radius: 15px; top: 230px; left: 50px; background: #ffffff; overflow: auto;}

@@ -36,15 +36,18 @@
                             <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_a01_1.mp3', 'single');">What will the boy say?</span>
                             <span class="btn_list">
                                         <button type="button" class="btn_type_02 btn_play mediabtn_0" title="영상 플레이">영상 플레이</button>
-                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_01.mp3','',this);">mp3전체듣기</button>
-                                        <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc1" title="대본" onclick="showScriptPopupTopLeft(this, -20, 20);">대본</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_01.mp3','',this,'','top');">mp3전체듣기</button>
+                                        <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc1" title="대본" onclick="showScriptPopupTopLeft(this, -30, -30);">대본</button>
                                         <button type="button" id="ls2_wu_t1_q" class="btn_type_02 btn_answer" title="답안" onclick="blankCheckByCss('ls2_wu_t1_q', 'ls2_wu_t1_a', 'ls2_wu_t1');">답안</button>
                             </span>
                         </h2>
                         <div class="lac_2_sc1 script display-none">
-                            <p>test 1 sadsadsadsadsad </p>
-                            <p>test 2 sadsadsa dsa</p>
-                            <p>test 3 d assad sad sadsad </p>
+                            <p>G: Sam, this is my dog, Bob.</p>
+                            <span>Sam, 이 개는 나의 개, Bob이야.</span>
+                            <p>G: Bob, this is Sam.</p>
+                            <span>Bob, 이 아이는 Sam이야.</span>
+                            <p>B: Nice to meet you, Bob.</p>
+                            <span>만나서 반가워, Bob.</span>
                         </div>
                         <div class="img_content">
                             <img src="./images/11/img_las2_01.jpg" alt="" />
@@ -62,8 +65,8 @@
                             <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01.mp3', 'single');" class="audio_tit">Listen and Number</span>
                             <span onclick="playAudio('./media/audio/L01/011/L01_011_sp2_b01_1.mp3', 'single');" >Listen and number the pictures.</span>
                             <span class="btn_list">
-                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_02.mp3','',this,'','right');">mp3전체듣기</button>
-                                <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc2" title="대본" onclick="showScriptPopupTopLeft(this, -25,  -150);">대본</button>
+                                <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/011/add/L01_011_LS2_add_02.mp3','',this,'','top-left');">mp3전체듣기</button>
+                                <button type="button" class="btn_type_02 btn_sp" id="lac_2_sc2" title="대본" onclick="showScriptPopupTopLeft(this, -35,  -180);">대본</button>
                                 <button id="ls2_lan_t_q" type="button" class="btn_type_02 btn_answer" title="답안" onclick="listenAndNumberCheck('ls2_lan_t_q', 'ls2_lan_t1+ls2_lan_t2+ls2_lan_t3', '1+3+2');">답안</button>
                             </span>
                         </h2>
