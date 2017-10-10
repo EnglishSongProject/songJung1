@@ -15,7 +15,7 @@ if ( navigator.userAgent.toLowerCase().indexOf("android") != -1 ) AndroidOS = tr
 var isPc = (AndroidOS == false && ipadOS ) ? true : false;
 
 var WindowsTenOS = false;
-if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;   
+if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
 
 $(document).ready(function(){
     checkAskAnswer();
@@ -33,13 +33,13 @@ function playAudio(path, btnId, target, imgId, direction) {
 
     // Check for audio element support.
     if (window.HTMLAudioElement) {
-        
+
         //  열려 있는 사운드 닫기
         if (path !== currentFile && currentFile !== "") {
-            
+
             // 싱글 듣기 닫기
             if ($('.single').length) {
-                $('.single').detach()
+                $('.single').detach();
             }
 
             // 전체 듣기 닫기
@@ -51,12 +51,13 @@ function playAudio(path, btnId, target, imgId, direction) {
                 $(".audio-popup").hide().detach();
             }
         }
+        var single_on = document.getElementsByClassName('single_on');
 
-        //  싱글 듣기 
+        //  싱글 듣기
         if(btnId == 'single'){
             var oAudio = document.getElementById('myaudio');
             var wrapper = document.querySelector('.wrapper');
-
+            currentAudio = 'single';
             if (path !== currentFile){
                 oAudio = document.createElement('audio');
                 oAudio.className = "single";
@@ -64,13 +65,28 @@ function playAudio(path, btnId, target, imgId, direction) {
                 oAudio.src = path;
                 currentFile = path;
                 wrapper.appendChild(oAudio);
+                $(single_on).css('color', '#2B2E34');
+                $(single_on).removeClass('single_on');
             }
-
             try {
                 if(!oAudio.paused){
                     oAudio.currentTime = 0;
+                }else{
+                    oAudio.play();
+                    if(imgId != 'undefined') {
+                        $(target).addClass('single_on');
+                        $(target).css('color', '#9a01cd');
+                    }
                 }
-                oAudio.play();
+
+                oAudio.addEventListener("ended", function (e) {
+                    if (currentAudio == 'single') {
+                        if(imgId != 'undefined') {
+                            $(target).css('color', '#2B2E34');
+                            $(target).removeClass('single_on');
+                        }
+                    }
+                });
             }
             catch (e) {
                 // Fail silently but show in F12 developer tools console
@@ -86,10 +102,10 @@ function playAudio(path, btnId, target, imgId, direction) {
                 imgId.style.display='block';
             }
 
-            currentAudio = 'single';
-            
             // 전체 듣기 팝업
         }else {
+            $(single_on).css('color', '#2B2E34');
+            $(single_on).removeClass('single_on');
             var oAudio = document.getElementById("myaudio");
             var popup = document.querySelector(".audio-popup");
 
@@ -132,6 +148,7 @@ function playAudio(path, btnId, target, imgId, direction) {
 
                 popup.appendChild(oAudio);
                 popup.appendChild(audioControls);
+                popup.style.zIndex=1000000000;
 
                 var wrapper = document.querySelector('.wrapper');
                 wrapper.appendChild(popup);
@@ -140,7 +157,7 @@ function playAudio(path, btnId, target, imgId, direction) {
             // 전체 듣기 팝업창 토글
             if (oAudio.paused && popup.style.display == "none") {
                 var $target = $(target);
-                
+
                 // 팝업 위치 설정
                 if(direction == 'right'){
                     popup.style.left = ($target.offset().left -216) + "px";
@@ -151,17 +168,17 @@ function playAudio(path, btnId, target, imgId, direction) {
                     popup.style.top = ($target.offset().top -42) + "px";
                 }
                 else{
-                    popup.style.left = ($target.offset().left + 28) + "px";
-                    popup.style.top = ($target.offset().top - 10) + "px";
+                    popup.style.left = ($target.offset().left + 36) + "px";
+                    popup.style.top = ($target.offset().top - 6) + "px";
                 }
-                
+
                 popup.style.display='block';
                 audioPlay();
             }else {
                 popup.style.display='none';
                 audioStop();
             }
-            
+
             // 재생 끝나면 자동닫기
             oAudio.addEventListener("ended", function (e) {
                 if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
@@ -428,13 +445,13 @@ var imageSlide = {
     },
 
     closePopup : function(){
-            if($("#myaudio").length > 0) {
-                $(".audio-popup").hide().detach();
-                currentFile = ''
-            }
-            if($('.single').length){
-                $('.single').detach()
-            }
+        if($("#myaudio").length > 0) {
+            $(".audio-popup").hide().detach();
+            currentFile = ''
+        }
+        if($('.single').length){
+            $('.single').detach()
+        }
     }
 };
 
@@ -503,8 +520,8 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
         }
         var notice = score === answerIdArray.length ? "정답" : "오답"
         if(type == "type01" || type == "type02"){
-/*            alert(notice + "입니다");
-* 추후 정답 체크할 시, 필요할 로직*/
+            /*            alert(notice + "입니다");
+             * 추후 정답 체크할 시, 필요할 로직*/
         }
 
     }else if ($(questionId).hasClass('btn_repeat')){
@@ -772,7 +789,7 @@ $(document).ready(function(){
     var WindowsTenOS = false;
     if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
 
-        
+
     //슬라이더 js
     var imageSlide = {
 
@@ -872,14 +889,14 @@ $(document).ready(function(){
             }
         },
         closePopup : function(){
-                if($("#myaudio").length > 0) {
-                    $(".audio-popup").hide().detach();
-                    currentFile = ''
-                }
+            if($("#myaudio").length > 0) {
+                $(".audio-popup").hide().detach();
+                currentFile = ''
+            }
 
-                if($('.single').length){
-                    $('.single').detach()
-                }
+            if($('.single').length){
+                $('.single').detach()
+            }
         }
     }
 
@@ -1220,6 +1237,7 @@ function checkAskAnswer(){
 function toggleWord(){
     $(".btn_wp").on("click",function(){
         var idx = $(this).index();
+        console.log(this);
         $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
     })
 }
@@ -1301,4 +1319,19 @@ function isNumber(s) {
 }
 function getMousePosition(e) {
     return e;
+}
+/*top: 20px;
+ left: 16px;*/
+function showWordTopLeft(target, meaning, top, left) {
+    if($('.word_on').length){
+        $('.word_on').detach();
+    }
+    var meanText = document.createElement('span');
+    meanText.innerHTML=meaning;
+    meanText.style.color='#339900';
+    meanText.style.position='absolute';
+    meanText.style.top = (top).toString() + 'px';
+    meanText.style.left = (left).toString() + 'px';
+    $(meanText).addClass('word_on');
+    target.appendChild(meanText);
 }
