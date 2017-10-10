@@ -1320,6 +1320,18 @@ function isNumber(s) {
 function getMousePosition(e) {
     return e;
 }
-function showWordBottomLeft(target, meaning, bottom, left) {
-    console.log(this);
+/*top: 20px;
+left: 16px;*/
+function showWordTopLeft(target, meaning, top, left) {
+    if($('.word_on').length){
+        $('.word_on').detach();
+    }
+    var meanText = document.createElement('span');
+    meanText.innerHTML=meaning;
+    meanText.style.color='#339900';
+    meanText.style.position='absolute';
+    meanText.style.top = (top).toString() + 'px';
+    meanText.style.left = (left).toString() + 'px';
+    $(meanText).addClass('word_on');
+    target.appendChild(meanText);
 }
