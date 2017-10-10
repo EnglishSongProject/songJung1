@@ -13,4 +13,8 @@ $(document).ready(function () {
         AllOff();
         $('.zoom_img_wrap').hide();
     });
+
+    $(".btn_trans.btn_type_02").on("click", function(){
+        $(".correct").toggle();
+    });
 });

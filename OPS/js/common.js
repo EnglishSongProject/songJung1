@@ -1237,6 +1237,7 @@ function checkAskAnswer(){
 function toggleWord(){
     $(".btn_wp").on("click",function(){
         var idx = $(this).index();
+        console.log(this);
         $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
     })
 }
@@ -1318,4 +1319,7 @@ function isNumber(s) {
 }
 function getMousePosition(e) {
     return e;
+}
+function showWordBottomLeft(target, meaning, bottom, left) {
+    console.log(this);
 }

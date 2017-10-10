@@ -149,7 +149,7 @@ function mediaType(idx) {
 	var pos_fy = 10;
 	var margin_top = 20;
 	var margin_han = 25;
-	var margin_row = 20;
+	var margin_row = 25;
 	var i;
 
 	for (var i=0;i<sc.syncText.length;i++){
