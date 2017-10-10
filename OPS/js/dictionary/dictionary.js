@@ -42,7 +42,6 @@ $(document).ready(function(){
         var lesson = this.innerHTML;
         words.map(function (item) {
             if(item.unit == lesson){
-                console.log('일치'+lesson);
                 var itemNameForTag =  item.name.replace(/[^A-Za-z\d_-]+/g,''); // 문자열공백,특수문자제거
                 var wordSpan = "<span class='active-purple' name='" + itemNameForTag +"'>" + item.name + "</span>";
                 $(function () {
@@ -52,10 +51,15 @@ $(document).ready(function(){
 
         });
     });
+
+    $('.word_catagory').on('click', function () {
+        var wordCatagories = $('.word_catagory');
+        console.log(wordCatagories);
+console.log(this);
+    });
 });
 function allWordsLoad() {
     words.map(function (item) {
-        console.log(item);
         var itemNameForTag = item.name.replace(/[^A-Za-z\d_-]+/g, ''); // 문자열공백,특수문자제거
         var wordSpan = "<span class='active-purple' name='" + itemNameForTag + "'>" + item.name + "</span>";
         $(function () {

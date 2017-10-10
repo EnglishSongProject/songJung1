@@ -21,8 +21,9 @@
 #description2 {text-align: center;}
 .word_catagory_list{
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 180px;
+    left: 60px;
+    line-height: 25px;
 }
 .word_catagory_list li{
     float: left;
@@ -30,22 +31,25 @@
 }
 .lesson_btn_list{
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 200px;
 }
 .lesson_btn_list li {
+    text-align: center;
     float: left;
     margin-right: 20px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 20px;
+    background-color: #2ab437;
 }
 .lesson_btn_list li:first-child {
     float: left;
     margin-right: 20px;
     width: 40px;
-    height: 20px;
-    border: 1px solid black;
+    height: 25px;
+    border-radius: 10px;
 }
 .alp_btn_list{
     position: absolute;
@@ -58,4 +62,7 @@
 }
 .lesson_btn_list li.on, .alp_btn_list li.on{
     background-color: white;
+}
+input[type=checkbox], input[type=radio] {
+    display: inline-block;
 }
