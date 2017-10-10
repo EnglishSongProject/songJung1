@@ -2,11 +2,10 @@
  * Created by sr01-02 on 2017-09-15.
  */
 $(function () {
-
-    $('.img-popup-none-confirm').on('click',function () {
-       $('.img-popup-none-confirm').toggle();
+    $('.btn_word').on('click', function () {
+       $('.intro_word').css('display', 'block');
     });
-    $('.btn_word').on('click',function () {
-        $('.img-popup-none-confirm').toggle();
-    });
+    $('.close_icon').on('click',function () {
+        $('.intro_word').css('display', 'none');
+    })
 });

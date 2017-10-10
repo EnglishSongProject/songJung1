@@ -167,6 +167,10 @@ function playAudio(path, btnId, target, imgId, direction) {
                     popup.style.left = ($target.offset().left) + "px";
                     popup.style.top = ($target.offset().top -42) + "px";
                 }
+                else if(direction == "top-left"){
+                    popup.style.left = ($target.offset().left - 40) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
+                }
                 else{
                     popup.style.left = ($target.offset().left + 36) + "px";
                     popup.style.top = ($target.offset().top - 6) + "px";
@@ -1201,6 +1205,7 @@ $(document).ready(function(){
                 transText[i].style.display='none';
                 transText[i].style.position='absolute';
                 transText[i].style.fontSize='11px';
+                transText[i].style.left='19px';
                 transText[i].style.fontFaceName='Open Sans';
                 transText[i].style.color='#339900';
                 transText[i].style.top=transTextTop.toString()+'px';

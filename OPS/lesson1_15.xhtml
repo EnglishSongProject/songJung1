@@ -7,9 +7,14 @@
         <meta name="format-detection" content="telephone=no"/>
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/15.css" />
+        <link rel="stylesheet" type="text/css" href="css/video.css" />
+        <link rel="stylesheet" href="./css/dictionary.css" />
         <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
         <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="js/video.js"></script>
+        <script type="text/javascript" src="./js/dictionary/dictionary.js"></script>
+        <script type="text/javascript" src="./js/dictionary/contents.js"></script>
         <script type="text/javascript" src="./js/15.js"></script>
     </head>
     <body>
@@ -24,7 +29,7 @@
                 <span class="active-purple bold" onclick="playAudio('./media/audio/L01/015/L01_015_RT_01.mp3', 'single');"> 글을 빨리 읽으며, 소개하고 있는 사람의 이름에 동그라미를 쳐 봅시다.
                 </span>
                  <span class="btn_list">
-                    <button type="button" class="btn_type_02 btn_play mediabtn" title="영상 플레이">
+                    <button type="button" class="btn_type_02 btn_play mediabtn_0" title="영상 플레이">
                         영상 플레이
                     </button>
                 </span>
@@ -73,9 +78,148 @@
                 <div class="wpopup pop_ask1 display-none bold">환영하다</div>
                 <div class="wpopup pop_ask2 display-none bold">소개하다</div>
             </div>
-            <span class="btn_word"></span>
+            <button type="button" class="btn_type_03 btn_word" title="낱말 사전">낱말 사전</button>
             <div class="pg_Num pgNum_right">
                <p>New School, New Friends<strong>15</strong></p>
+            </div>
+        </div>
+        <div class="zoom_img_wrap a"><!-- common.css -->
+            <!-- innerHTML -->
+            <div class='video_header'>
+                <div class='media_title'><div class='media_titlefont'><div class='media_tt'>Media title</div></div></div>
+                <div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='본문보기'/></div><!-- 10.js에서 처리 -->
+            </div>
+            <div id="vwrap" ><!-- 10.css -->
+                <div class="pageContainer"><!-- video2.js에서 사용-->bb
+                    <div class="page_1">
+                        <div class="videoWrap"></div>
+                    </div>
+                    <div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
+                </div>
+            </div>
+
+            <div class='waiter' id='waiter_wrap'>
+                <div class='bg'><!-- 따라말하기 타이머 --> </div>
+                <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>
+            </div>
+            <div class='controller'>
+                <div class='bg'><!-- 배경 가로반복--> </div>
+
+                <!-- 비디오 컨트롤러 -->
+                <div class='progController'>
+                    <div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div>
+                    <div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>
+
+                    <div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><!-- black -->
+                    <div id='prog_color'><img src='images/common/player/prog_color.png' /></div><!-- red -->
+                    <div id='prog_mouse'><img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><!-- mouse -->
+                    <div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>
+                    <!-- time -->
+                    <div class='prog_pos'><div class='media_timefont'><div class='time_pos'>00:00</div></div></div>
+                    <div class='prog_dur'><div class='media_timefont'><div class='time_dur'>00:00</div></div></div>
+                    <div class='fullsize btn_full_screen'></div>
+                    <!-- 자막, 대본 -->
+                    <div id='prog_cap' class="btn_caption_en_off"></div>
+                    <div id='prog_cap2' class="btn_caption_kr_off display-none"></div>
+                    <div id='prog_sct' class="btn_script_off"></div>
+
+                </div>
+                <!-- 구간 이미지 -->
+                <div class='thumb_list'></div>
+                <span class="display-none" id="isTrans">off</span>
+
+
+                <!-- 볼륨 컨트롤러 mute기능 -->
+                <!--                    <div class='volController'>
+                                        <div id='vol_spk'><img id='img_spk' src='images/common/player/mov_spk1.png' ondragstart='return false' /></div>
+                                        <div id='vol_gray'><img src='images/common/player/mov_vol0.png' /></div>&lt;!&ndash; black &ndash;&gt;
+                                        <div id='vol_color'><img src='images/common/player/mov_vol1.png' /></div>&lt;!&ndash; red &ndash;&gt;
+                                        <div id='vol_mouse'><img src='images/common/player/mov_vol0.png' ondragstart='return false' /></div>&lt;!&ndash; mouse &ndash;&gt;
+                                    </div>-->
+            </div>
+            <div class='sc_paper'>
+                <div class='caption_wrap display-none'>
+                    <div class='caption_bg'></div>
+                    <div class='caption_txt'>
+                        <div class='media_captionfont'>
+                            <div class='txt_one display-none'></div>
+                            <div class='txt_two display-none'></div>
+                        </div><!-- 자막 -->
+                    </div>
+                </div>
+
+                <div class='script_wrap num1 off display-none'>
+                    <div class='script_txt'>
+                        <div class='media_scriptfont'><div class='txt_sct'></div></div><!-- 스크립트 -->
+                    </div>
+                    <div class='scController'>
+                        <div class='sc_bg'><img src='images/common/player/scroll_bg.png' ondragstart='return false'/></div>
+                        <div class='sc_ball'><img src='images/common/player/scroll_ball.png' ondragstart='return false'/></div>
+                    </div>
+                    <div class='haneng'>
+                        <button class="btn_trans_video_off num1"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro_word display-none wrapper" id="container">
+            <h1 class="header_tit">Self Check</h1>
+            <a href="#" ><span class="close_icon"><img src="images/dictionary/close_word.png" alt="close icon" /></span></a>
+            <ul class="word_catagory_list">
+                <li>단원</li>
+                <li class="display-none">알파벳</li>
+            </ul>
+            <ul class="lesson_btn_list">
+                <li class="on">전체</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>sp</li>
+            </ul>
+            <ul class="alp_btn_list display-none">
+                <li>전체</li>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+                <li>g</li>
+                <li>h</li>
+                <li>i</li>
+                <li>j</li>
+                <li>k</li>
+                <li>l</li>
+                <li>m</li>
+                <li>n</li>
+                <li>o</li>
+                <li>p</li>
+                <li>q</li>
+                <li>r</li>
+                <li>s</li>
+                <li>t</li>
+                <li>u</li>
+                <li>v</li>
+                <li>w</li>
+                <li>x</li>
+                <li>y</li>
+                <li>z</li>
+            </ul>
+            <div id="words" class="word_list bold"></div>
+            <div class="word btn_mp3_a" id="btn_mp3_a"></div>
+            <div id="flashcard">
+                <div id="word" class="bold"></div>
+                <div id="word_meaning"></div>
+            </div>
+            <div id="flashcard_example">
+                <div id="description" class="bold"></div>
+                <div id="description2"></div>
             </div>
         </div>
     </body>
