@@ -5,10 +5,10 @@
     <dc:creator id="creator">Unset</dc:creator>
     <dc:language>ko</dc:language>
     <dc:identifier id="pub-id">Unset</dc:identifier>
-    <dc:date>2017-10-10T09:29:14Z</dc:date>
+    <dc:date>2017-10-10T11:51:46Z</dc:date>
     <dc:publisher>Unset</dc:publisher>
     <dc:rights>Unset</dc:rights>
-	<meta property="dcterms:modified">2017-10-10T09:29:14Z</meta>
+	<meta property="dcterms:modified">2017-10-10T11:51:46Z</meta>
 	<meta property="rendition:layout">pre-paginated</meta>
 	<meta property="rendition:orientation">landscape</meta>
 	<meta property="rendition:spread">auto</meta>
@@ -43,6 +43,10 @@
 <item id="jsD20" href="data_20.js" media-type="text/javascript"/>
 <item id="jsD21" href="data_21.js" media-type="text/javascript"/>
 <item id="jsD22" href="data_22.js" media-type="text/javascript"/>
+<item id="jsD23" href="data_23.js" media-type="text/javascript"/>
+<item id="jsD24" href="data_24.js" media-type="text/javascript"/>
+<item id="jsD25" href="data_25.js" media-type="text/javascript"/>
+<item id="jsD26" href="data_26.js" media-type="text/javascript"/>
 <item id="css1" href="css/bxPageTransition.css" media-type="text/css"/>
 <item id="page1" href="index_01.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 <item id="page2" href="index_02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
@@ -67,6 +71,10 @@
 <item id="page21" href="index_21.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 <item id="page22" href="index_22.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 <item id="page23" href="index_23.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page24" href="index_24.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page25" href="index_25.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page26" href="index_26.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item id="page27" href="index_27.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
 <item id="a1" href="asset/I/45f57cf968e34f46b38846d276fc4474.jpg" media-type="image/jpeg"/>
 <item id="a2" href="asset/I/bb959ee4132344e69b8ce04497e23349.png" media-type="image/png"/>
 <item id="a3" href="asset/I/ecf5345831eb477ab336f4d12f207828.png" media-type="image/png"/>
@@ -248,6 +256,25 @@
 <item id="a179" href="asset/I/257633ed56104c7e96853dbfea14844d.png" media-type="image/png"/>
 <item id="a180" href="asset/I/6d2d3fca0177497095eb69e148e66440.png" media-type="image/png"/>
 <item id="a181" href="asset/I/fe2fbb684e9b4af0a1ccb87095edfe24.png" media-type="image/png"/>
+<item id="a182" href="asset/I/2504caa47dd445efb23ad0b7ef70b25f.png" media-type="image/png"/>
+<item id="a183" href="asset/I/f9d50f7a16d74aebaa43b54d3d65bbb4.png" media-type="image/png"/>
+<item id="a184" href="asset/I/da71f2cd94254126aca8a23b04e3731b.png" media-type="image/png"/>
+<item id="a185" href="asset/I/eedf96eb00c0499fa52dd416a0c9cc91.png" media-type="image/png"/>
+<item id="a186" href="asset/I/75f1bf5416584b34a283340814a21913.png" media-type="image/png"/>
+<item id="a187" href="asset/I/016732f8cd8d4927801b40bc1fa32e94.png" media-type="image/png"/>
+<item id="a188" href="asset/I/297e215483974fe28857c6e047b8c877.png" media-type="image/png"/>
+<item id="a189" href="asset/I/814180cb60b34d7eb683d19ed5a61fb5.png" media-type="image/png"/>
+<item id="a190" href="asset/I/de9db65ff49745a19d644ef725bbd08c.png" media-type="image/png"/>
+<item id="a191" href="asset/I/53680e8bcdf54a4d88c435d07fa10fa8.png" media-type="image/png"/>
+<item id="a192" href="asset/I/74ef7d6f556a4421bc7be7c215225eb9.png" media-type="image/png"/>
+<item id="a193" href="asset/I/8bc1e43a97de4bbabddb18432851d49a.png" media-type="image/png"/>
+<item id="a194" href="asset/I/21da33dad574487d9aa164ed69c0cfe3.png" media-type="image/png"/>
+<item id="a195" href="asset/I/52f57f3c755f4d21acff310a18a79da3.png" media-type="image/png"/>
+<item id="a196" href="asset/I/0fc3275cd3e143c1bb17128942132b60.png" media-type="image/png"/>
+<item id="a197" href="asset/I/f689b8c8322b405987a5297860235cb1.png" media-type="image/png"/>
+<item id="a198" href="asset/I/16b0fada7278436cb0495c97a9bfce98.png" media-type="image/png"/>
+<item id="a199" href="asset/I/df137d9f40254ef79ba53778170331e4.png" media-type="image/png"/>
+<item id="a200" href="asset/I/653dea17a36f4859934294063befbd55.png" media-type="image/png"/>
 <item id="f1" href="fonts/BubblegumSans/font.css" media-type="text/css"/>
 <item id="f1_1" href="fonts/BubblegumSans/BubblegumSans-Regular.woff" media-type="application/font-woff"/>
 <item id="f1_2" href="fonts/BubblegumSans/OFL.txt" media-type="text/plain"/>
@@ -313,5 +340,9 @@
 <itemref idref="page21" properties="rendition:spread-none rendition:orientation-landscape"/>
 <itemref idref="page22" properties="rendition:spread-none rendition:orientation-landscape"/>
 <itemref idref="page23" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page24" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page25" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page26" properties="rendition:spread-none rendition:orientation-landscape"/>
+<itemref idref="page27" properties="rendition:spread-none rendition:orientation-landscape"/>
 </spine>
 </package>
