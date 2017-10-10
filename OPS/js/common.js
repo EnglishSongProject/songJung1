@@ -51,12 +51,12 @@ function playAudio(path, btnId, target, imgId, direction) {
                 $(".audio-popup").hide().detach();
             }
         }
+        var single_on = document.getElementsByClassName('single_on');
 
         //  싱글 듣기 
         if(btnId == 'single'){
             var oAudio = document.getElementById('myaudio');
             var wrapper = document.querySelector('.wrapper');
-            var single_on = document.getElementsByClassName('single_on');
             currentAudio = 'single';
             if (path !== currentFile){
                 oAudio = document.createElement('audio');
@@ -104,6 +104,8 @@ function playAudio(path, btnId, target, imgId, direction) {
             
             // 전체 듣기 팝업
         }else {
+            $(single_on).css('color', '#2B2E34');
+            $(single_on).removeClass('single_on');
             var oAudio = document.getElementById("myaudio");
             var popup = document.querySelector(".audio-popup");
 
