@@ -5574,6 +5574,6 @@ var words = [
         description2: "젊은 사람들은 비디오 클립 보는 것을 더 좋아한다.",
         unit: '2',
         mp3: 'young'
-    },
+    }
 
 ];
