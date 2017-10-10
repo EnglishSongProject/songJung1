@@ -1,12 +1,6 @@
 $(document).ready(function(){
-    // Load words
-    words.map(function (item) {
-        var itemNameForTag =  item.name.replace(/[^A-Za-z\d_-]+/g,''); // 문자열공백,특수문자제거
-        var wordSpan = "<span class='active-purple' name='" + itemNameForTag +"'>" + item.name + "</span>";
-        $(function () {
-            $('#words').append(wordSpan);
-        })
-    });
+
+    allWordsLoad();
 
     // 단어 클릭시
     $("#words").on("click", "span", function() {
@@ -25,63 +19,48 @@ $(document).ready(function(){
             }
         })
     });
-});
 
+    $('.lesson_btn_list').on('click', 'li', function () {
 
-/*$(function () {
-    // Load words
-    words.map(function (item) {
-        var wordSpan = "<span class='active-purple' name='" + item.name +"' >" + item.name + "</span>";
-        // 단어 생성
-        $("#words").append(wordSpan);
-
-        // 단어 클릭시
-        $("#words").on("click", "span", function() {
-            var englishWord = $(this).text();
-            $("#flashcard > #word").text(englishWord);
-            if(englishWord == item.name){
-                $("#flashcard > #word_meaning").text(item.meaning);
-                $("#flashcard_example > #description").text(item.description);
-                $("#flashcard_example > #description2").text(item.description2);
+        var lessonBtnList = $('.lesson_btn_list');
+        lessonBtnList = lessonBtnList[0].children;
+        for(var i =0; i<lessonBtnList.length; i++){
+            if($(lessonBtnList[i]).hasClass('on')){
+                $(lessonBtnList[i]).removeClass('on');
             }
+        }
+        $(this).addClass('on');
+        $("#words > span").detach();
+
+
+        if(this.innerHTML == '전체'){
+            $("#words > span").detach();
+            allWordsLoad();
+        }
+
+
+        var lesson = this.innerHTML;
+        words.map(function (item) {
+            if(item.unit == lesson){
+                console.log('일치'+lesson);
+                var itemNameForTag =  item.name.replace(/[^A-Za-z\d_-]+/g,''); // 문자열공백,특수문자제거
+                var wordSpan = "<span class='active-purple' name='" + itemNameForTag +"'>" + item.name + "</span>";
+                $(function () {
+                    $('#words').append(wordSpan);
+                })
+            }
+
         });
     });
-});*/
-
-/*    // 무한 scroll
-    $("#words").scroll( function() {
-        var elem = $("#words");
-
-        if ( elem.scrollHeight - elem.scrollTop() - elem.outerHeight()) {
-
-            var wordSpan = "<span class='active-purple' name='" + words.name +"' >" + words.name + "</span>";
-            $("#words").append(wordSpan);
-        }
-    });*/
-
-
-
-
-
-
-
-/*
-// Load words
-words.map(function (item) {
-
-    var wordSpan = "<span class='active-purple' name='" + item.name +"' >" + item.name + "</span>";
-    // 단어 생성
-    $("#words").append(wordSpan);
-
-    // 단어 클릭시
-    $("#words").on("click", "span", function() {
-        var englishWord = $(this).text();
-        $("#flashcard > #word").text(englishWord);
-        if(englishWord == item.name){
-            $("#flashcard > #word_meaning").text(item.meaning);
-            $("#flashcard_example > #description").text(item.description);
-            $("#flashcard_example > #description2").text(item.description2);
-        }
+});
+function allWordsLoad() {
+    words.map(function (item) {
+        console.log(item);
+        var itemNameForTag = item.name.replace(/[^A-Za-z\d_-]+/g, ''); // 문자열공백,특수문자제거
+        var wordSpan = "<span class='active-purple' name='" + itemNameForTag + "'>" + item.name + "</span>";
+        $(function () {
+            $('#words').append(wordSpan);
+        })
     });
-});*/
+}
 
