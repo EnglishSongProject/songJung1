@@ -3,13 +3,13 @@
 /* 배경 */
 .intro {background: url("../images/13/bg_lesson01_13.jpg") no-repeat 0 0; background-size: cover}
 .p13_ct {position: absolute; display: block; top: 43px; content: url("../images/13/lesson_1_p13_ct.png");}
-.sub_tit > span {padding-left: 15px;}
+.sub_tit > span {padding-left: 15px;  font:20px "Noto Sans KR";}
 
 /* Step 1 */
-.p13_step1_list {text-align: center;}
+.p13_step1_list {text-align: center; font-size:17px;font-weight: 700}
 #p13_step1_list_a {position: absolute; display: block; top: 60px; left: 170px; width: 27px; height: 25px; background: url("../images/13/lesson_1_p13_step1_a.png") no-repeat 0 0; background-size: cover}
-#p13_step1_list_b {position: absolute; display: block; top: 155px; left: 170px; width: 27px; height: 25px; background: url("../images/13/lesson_1_p13_step1_b.png") no-repeat 0 0; background-size: cover}
-#p13_step1_list_c {position: absolute; display: block; top: 250px; left: 170px; width: 27px; height: 25px; background: url("../images/13/lesson_1_p13_step1_c.png") no-repeat 0 0; background-size: cover}
+#p13_step1_list_b {position: absolute; display: block; top: 138px; left: 170px; width: 27px; height: 25px; background: url("../images/13/lesson_1_p13_step1_b.png") no-repeat 0 0; background-size: cover}
+#p13_step1_list_c {position: absolute; display: block; top: 224px; left: 170px; width: 27px; height: 25px; background: url("../images/13/lesson_1_p13_step1_c.png") no-repeat 0 0; background-size: cover}
 .p13_step1 {position: absolute; top: 130px;}
 .p13_step1 p {padding: 16px; margin-left: 200px; font-family: "Faustina"; font-size: 20px;}
 
