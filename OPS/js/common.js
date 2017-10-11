@@ -168,8 +168,11 @@ function playAudio(path, btnId, target, imgId, direction) {
                     popup.style.top = ($target.offset().top -42) + "px";
                 }
                 else if(direction == "top-left"){
-                    popup.style.left = ($target.offset().left - 40) + "px";
+                    popup.style.left = ($target.offset().left - 100) + "px";
                     popup.style.top = ($target.offset().top -42) + "px";
+                }else if(direction == "top-right"){
+                    popup.style.left = ($target.offset().left - 100) + "px";
+                    popup.style.top = ($target.offset().top -70) + "px";
                 }
                 else{
                     popup.style.left = ($target.offset().left + 36) + "px";
