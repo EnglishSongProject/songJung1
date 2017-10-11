@@ -17,7 +17,7 @@
 .part_las .sub_tit .audio_tit{font: 30px "Bubblegum Sans"; margin-top: 30px; position: relative;
     top: -3px; left: -3px;}
 .part_las .sub_tit img {vertical-align: top;}
-.part_las .sub_tit span {font: 17px "Noto Sans KR";  margin-left: 10px; font-weight: bold;  position: relative; top: -2px; }
+.part_las .sub_tit span {font: 20px "Noto Sans KR";  margin-left: 10px; font-weight: bold;  position: relative; top: -2px; }
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
 .part_las .img_content input[type="text"]{top: 66px;}
@@ -29,7 +29,7 @@
 
 /*tip*/
 .btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; margin-right:5px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; }
-.tip_con {font:13px "Nanum Gothic"; vertical-align: bottom;}
+.tip_con {font:700 13px "Nanum Gothic"; vertical-align: bottom; }
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}
@@ -66,7 +66,7 @@
 .rolling_image_wrap >ul > li img {position: absolute; top:0; left:0;}
 .rolling_image_wrap >ul > li.on {display: block;}
 .rolling_image_wrap >ul > li > span:last-child{position: absolute;  top: 110px;  left: 300px;  font: 11px 'Open Sans';  font-weight: 700;  line-height: 32px;}
-.rolling_image_wrap .img_txt {position: absolute;  width:100px; font:12px "Noto Sans KR"; line-height: 1.2}
+.rolling_image_wrap .img_txt {position: absolute;  width:100px; font:12px "Noto Sans KR"; line-height: 1.2; font-weight: 700}
 .rolling_image_wrap .img_txt span:hover{color: #9a01cd;}
 .rolling_image_wrap .rolling_01 .img_txt {top: 18px;left: 95px; letter-spacing: -0.5px}
 .rolling_image_wrap .rolling_02 .img_txt {top: 9px; left: 132px;}

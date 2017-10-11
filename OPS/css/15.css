@@ -5,7 +5,7 @@
 
 /*  Reading Time Title*/
 .page_tit {position: absolute; display: block; width: 155px; height: 41px; top: 30px; left: 70px; background: url("../images/15/lesson_1_p15_reading_time.png") no-repeat 0 0; background-size: contain}
-.info {position: absolute; top: 60px; left: 235px; font-size: 11px;}
+.info {position: absolute; top: 60px; left: 235px; font-size: 13px;}
 
 
 /* 본문 */
