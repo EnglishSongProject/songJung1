@@ -138,17 +138,14 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_list button {vertical-align: middle}
 
 /*tip*/
-.btn_tip {
-    position: relative;
-    top: 5px;
-    display: inline-block;
-    width: 37px;
-    height: 21px;
-    background: url(../images/common/tip.png) no-repeat 0 0;
-    text-indent: -1000em;
-    overflow: hidden;
-    margin-right: 5px;
-}
+.tip_wrap {}
+.btn_tip {position: relative; display: inline-block; width: 40px; height:20px; background: url(../images/common/tip.png) no-repeat 0 0 ; margin-right: 5px; font:700 14px "Faustina"}
+.btn_tip:before {content:"Tip"; position: absolute; top:0 ;  top: -1px; left: 9px;}
+.tip_con { font:700 13px "Nanum Gothic"; vertical-align: baseline}
+
+
+
+
 
 /*폰트*/
 .tit_type_01 {font-family: "Bubblegum Sans"; font-size: 15px;}

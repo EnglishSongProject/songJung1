@@ -8,13 +8,14 @@
 .page_tit .t2 .num{color:#000}
 .page_tit .tand {font-family: "Nanum Gothic"; font-size:20px; font-weight: 700; width:25px; height:27px; background: url("../images/10/and.png") no-repeat 0 0; display: inline-block; color:#fff; text-align:center}
 
+.tit_las {display: inline-block; width:23px; height:26px; background: url(../images/10/tit_las.png) no-repeat 0 0; color:#fff; font:24px "Bubblegum Sans" !important; text-align:center; vertical-align: baseline}
+
 .info {position: absolute; top:70px; right:55px; display: inline-block; width: 139px; height: 37px;padding:12px 0 0 50px; background: url(../images/11/Study_point.png) no-repeat 0 0;  font:11px 'Nanum Gothic'; box-sizing: border-box; font-size: 9px; background-size:contain}
 .info>p{position: absolute; top: 10px; left: 45px; font-size:12px; font-weight:bold}
 
-.part_las .sub_tit {font:30px "Bubblegum Sans"; margin-top:30px; }
+.part_las .sub_tit {font:30px "Bubblegum Sans"; margin-top:30px;}
 .part_las .sub_tit img { vertical-align: top;}
-.part_las .sub_tit span {font:20px "Noto Sans KR"; margin-left:10px; font-weight:bold;
-    position: relative; top:-2px}
+.part_las .sub_tit span {font:20px "Noto Sans KR"; margin-left:10px; font-weight:bold; position: relative; vertical-align: top;}
 .part_las .sub_tit .audio_tit{font:30px "Bubblegum Sans"; margin-top:30px;
     position: relative; top:-3px ; left:-3px}
 
@@ -37,7 +38,7 @@ input.wp_input01:focus{outline: none;}
 .section02 label:nth-of-type(4) {top: -53px; left: 447px;}
 
 /*Match and Talk */
-.part_las .eg {position: relative; font:20px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
+.part_las .eg {position: relative; font:22px 'Faustina' ;line-height: 1.7; float:left; padding-left:35px; letter-spacing: 0.5px}
 .part_las .eg:before {position: absolute; left:0; top:5px; content:"e.g."; font: 17px 'Noto Sans KR'; color:#595B60}
 .part_las .eg em { font:18px 'Faustina'; }
 .part_las .eg .blue {color:#0101ff;}
@@ -63,8 +64,7 @@ input.wp_input01:focus{outline: none;}
 .target_sentence span:nth-of-type(3) {left:345px}
 .target_sentence span:nth-of-type(4) {left:495px}
 
-.btn_tip {position: relative; top: 7px; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
-.tip_con {font:13px "Noto Sans KR";}
+
 
 /*!*슬라이더*!*/
 /*.slider_image_wrap .slider_image > li {*/

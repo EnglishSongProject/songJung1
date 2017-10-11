@@ -9,6 +9,8 @@
 .page_tit .t2 .num{color:#000}
 .page_tit .tand {font-family: "Nanum Gothic"; font-size:20px; font-weight: 700; width:25px; height:27px; background: url("../images/10/and.png") no-repeat 0 0; display: inline-block; color:#fff; text-align:center}
 
+.tit_las {display: inline-block; width:23px; height:26px; background: url(../images/10/tit_las.png) no-repeat 0 0; color:#fff; font:24px "Bubblegum Sans" !important; text-align:center; vertical-align: baseline}
+
 .info {position: absolute; top: 70px; right: 40px; display: inline-block; width: 159px; height: 37px;  padding: 12px 0 0 50px; background: url(../images/11/Study_point.png) no-repeat 0 0; font: 11px 'Nanum Gothic';  box-sizing: border-box; font-size: 9px; background-size: contain;}
 .info>p{position: absolute; top: 10px; left: 36px; font-size:12px; font-weight:bold;
     letter-spacing:-0.5px;}
@@ -17,7 +19,7 @@
 .part_las .sub_tit .audio_tit{font: 30px "Bubblegum Sans"; margin-top: 30px; position: relative;
     top: -3px; left: -3px;}
 .part_las .sub_tit img {vertical-align: top;}
-.part_las .sub_tit span {font: 20px "Noto Sans KR";  margin-left: 10px; font-weight: bold;  position: relative; top: -2px; }
+.part_las .sub_tit span {font: 20px "Noto Sans KR";  margin-left: 10px; font-weight: bold;  position: relative;     vertical-align: top;}
 
 .part_las .img_content {position: relative; padding:35px 0 0 42px}
 .part_las .img_content input[type="text"]{top: 66px;}
@@ -28,8 +30,8 @@
 .section03 .rol_btn_list {top:-51px}
 
 /*tip*/
-.btn_tip {position: relative; top: 5px; display: inline-block; width:37px; height:21px; margin-right:5px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; }
-.tip_con {font:700 13px "Nanum Gothic"; vertical-align: bottom; }
+
+
 
 /*문장*/
 .rolling_image_wrap .txt_box .sentence{display: block; white-space: nowrap}

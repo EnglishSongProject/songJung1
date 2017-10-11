@@ -191,7 +191,9 @@ function playAudio(path, btnId, target, imgId, direction) {
                 if(parseInt(oAudio.currentTime) >=  parseInt(oAudio.duration)){
                     popup.style.display='none';
                     oAudio.pause();
-                    oAudio.currentTime = 0;
+                    if (!isNaN(oAudio.duration)) {
+                        oAudio.currentTime  = 0;
+                    }
                 }
             });
             currentAudio = 'all';
@@ -213,7 +215,9 @@ function playAudio(path, btnId, target, imgId, direction) {
         try {
             oAudio.pause();
             isPlaying = false;
-            oAudio.currentTime  = 0;
+            if (!isNaN(oAudio.duration)) {
+                oAudio.currentTime  = 0;
+            }
             $(".btn_play_toggle").removeClass("btn_audio_pause").addClass("btn_audio_play")
         }
         catch (e) {
@@ -261,7 +265,10 @@ function playAudio(path, btnId, target, imgId, direction) {
                 $('.controll_bar').offset({
                     left:moveX
                 })
-                oAudio.currentTime = getCerrentTime(moveX)
+                if (!isNaN(oAudio.duration)) {
+                    oAudio.currentTime = getCerrentTime(moveX)
+                }
+               
             }
             catch (e) {
                 // Fail silently but show in F12 developer tools console
