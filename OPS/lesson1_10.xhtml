@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>lesson1</title>
+        <meta name="viewport" content="width=768,height=1024,initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/10.css" />
+        <link rel="stylesheet" type="text/css" href="css/video.css" />
+        <link rel="stylesheet" type="text/css" href="css/role_play.css" />
+        <script type="text/javascript" src="./js/DTCaliperSensor.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="js/10.js"></script>
+        <script type="text/javascript" src="js/video.js"></script>
+        <script type="text/javascript" src="js/role_play.js"></script>
+    </head>
+    <body>
+        <div class="wrapper part_las">
+            <h1 class="page_tit" style="margin-top:0px">
+                <span class="t1">listen</span>
+                <span class="tand">&amp;</span>
+                <span class="t2">speak <span class="num">1</span></span>
+            </h1>
+            <div class="info" title="study point"><p> 안부 묻고 답하기</p></div>
+
+            <div class="slider_content">
+                <div class="slider_image_wrap">
+                    <ul class="slider_image">
+                        <li data-num="1">
+                            <!-- section A -->
+                            <div class="section">
+                                <h2 class="sub_tit">
+                                    <img src="./images/10/tit_las_a.png" alt="A" />
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a01.mp3','single');">Warm up</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a01_1.mp3','single');">What will the girl say?</span>
+                                    <span class="btn_list">
+                                        <button type="button" class="btn_type_02 btn_play mediabtn_0" title="영상 플레이">영상 플레이</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_01.mp3','',this,'','top');">mp3전체 듣기</button>
+                                        <button type="button" class="btn_type_02 btn_sp" id="lac_1_sc1" title="대본" onclick="showScriptPopupTopLeft(this, -35, -50);">대본</button>
+                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_wu_t1_q" onclick="blankCheckByCss('ls1_wu_t1_q', 'ls1_wu_t1_a', 'ls1_wu_t1');">답안</button>
+                                    </span>
+                                </h2>
+                                <div class="lac_1_sc1 script display-none">
+                                    <p>B: How are you doing?</p>
+                                    <span>어떻게 지내니?</span>
+                                    <p>G: I'm good.</p>
+                                    <span>좋아.</span>
+                                    <p>G: Not so good.</p>
+                                    <span>별로 좋지 않아.</span>
+                                </div>
+                                <div class="img_content">
+                                    <img src="./images/10/img_las_01.jpg" alt="" />
+                                    <span class="textbox wp_text01" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_a02.mp3','single');">How are you <br/>doing?</span>
+                                    <span class="textbox wp_text02 display-none" id="ls1_wu_t1_a">Not so good.</span>
+                                    <input type="text" class="textbox wp_input01" maxlength="12" id="ls1_wu_t1"/>
+                                </div>
+                            </div>
+                            <!-- section B-->
+                            <div class="section section02" style="margin-top:75px">
+                                <h2 class="sub_tit">
+                                    <img src="./images/10/tit_las_b.png" alt="C" />
+
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_b01.mp3','single');">Listen and Check</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_b01_1.mp3','single');">How is each student doing?</span>
+                                    <span class="btn_list">
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_02.mp3','',this,'','top-left');">mp3전체 듣기</button>
+                                        <button type="button" class="btn_type_02 btn_sp" id="lac_1_sc2" title="대본" onclick="showScriptPopupTopLeft(this, -30, -160);">대본</button>
+                                        <button type="button" class="btn_type_02 btn_answer" title="답안" id="ls1_lac_r1_q" onclick="radioCheck('ls1_lac_r1_q', 'lac_1+lac_2', '0+1');" >답안</button>
+                                    </span>
+                                </h2>
+                                <div class="lac_1_sc2 script display-none">
+                                    <p>G: How are you doing, David?</p>
+                                    <span>David, 어떻게 지내니?</span>
+                                    <p>B: Great. I'm happy with my new school.</p>
+                                    <span>좋아 나는 새 학교가 마음에 들어.</span>
+                                    <p>B: How's it going, Dayun?</p>
+                                    <span>다윤아, 어떻게 지내니?</span>
+                                    <p>G: Not so good. i have a headache.</p>
+                                    <span>별로 좋지 않아. 두통이 있어.</span>
+                                </div>
+                                <div class="img_content">
+                                    <span class="num">1.</span>
+                                    <span class="num">2.</span>
+                                    <img src="./images/10/img_las_02.jpg" alt="" />
+                                    <input type="radio" id="lac_1_r1" class="correct" name="lac_1"/>
+                                    <label for="lac_1_r1"></label>
+                                    <input type="radio" id="lac_2_r1" class="correct" name="lac_2"/>
+                                    <label for="lac_2_r1"></label>
+                                    <input type="radio" id="lac_1_r2" class="correct" name="lac_1"/>
+                                    <label for="lac_1_r2"></label>
+                                    <input type="radio" id="lac_2_r2" class="correct" name="lac_2"/>
+                                    <label for="lac_2_r2"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-num="2">
+                            <div class="section">
+                                <h2 class="sub_tit">
+                                    <img src="./images/10/tit_las_c.png" alt="C" />
+                                    <span class="audio_tit" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c01.mp3','single');">Match and Talk</span>
+                                    <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c01_1.mp3','single');">How is each person doing today?</span>
+                                    <span class="btn_list">
+                                        <button type="button" class="btn_type_02 btn_role" title="롤플레이">롤플레이</button>
+                                        <button type="button" class="btn_type_02 btn_mp3_a" title="mp3전체 듣기" onclick="playAudio('./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3','', this,'','top-left');">mp3전체 듣기</button>
+                                        <button type="button" class="btn_type_02 btn_trans trans3" title="번역">번역</button>
+                                    </span>
+                                </h2>
+                                <div class="img_content">
+                                    <img src="./images/10/img_las_03.jpg" alt="" />
+                                    <div class="select_area">
+                                        <div class="select_name"  onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_w.mp3','single','', 'ls_mat_c1');">
+                                            <span>Jason</span>
+                                        </div>
+                                        <div class="select_name" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_w.mp3','single','', 'ls_mat_c2');">
+                                            <span>Minji</span>
+                                        </div>
+                                        <div class="select_name"  onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_w.mp3','single','', 'ls_mat_c3');">
+                                            <span>Sui</span>
+                                        </div>
+                                        <div class="select_name"  onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_w.mp3','single','', 'ls_mat_c4');">
+                                            <span>Anna</span>
+                                        </div>
+                                        <img src="./images/10/1.png" style="margin-top: 113px;margin-left: 35px;" class="display-none class-for-none" id="ls_mat_c1"/>
+                                        <img src="./images/10/2.png" style="margin-top: 113px;margin-left: 40px;" class="display-none class-for-none"  id="ls_mat_c2"/>
+                                        <img src="./images/10/3.png" style="margin-top: 113px;margin-left: 39px;" class="display-none class-for-none"  id="ls_mat_c3"/>
+                                        <img src="./images/10/4.png" style="margin-top: 113px;margin-left: 38px;" class="display-none class-for-none"  id="ls_mat_c4"/>
+                                    </div>
+                                    <div class="target_sentence">
+                                        <span>I’m great.</span>
+                                        <span class="ml_5" >I’m fine.</span>
+                                        <span class="ml_5" >Not bad.</span>
+                                        <span>Not so good.</span>
+                                    </div>
+                                </div>
+                                <div class="tip_wrap mt_60">
+                                    <button type="button" class="btn_tip">TIP</button>
+                                    <span class="tip_con hide" style="display: none; position: absolute; margin-top: 8px;">"I'm great."과 "I'm fine."의 "I'm"은 생략하고 말할 수도 있어요.</span>
+                                </div>
+
+                                <div class="eg mt_5">
+                                    <div>
+                                        <ul>
+                                            <li><em>A</em>:<span  onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_01.mp3', 'single');" class="active-purple"><span class="blue ml_5"> Jason</span>, how are you doing today?</span></li>
+                                            <li><em>B</em>:<span class="blue ml_5" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_02.mp3', 'single');"> I’m great.</span></li>
+                                        </ul>
+                                        <span class="correct3 display-none">제이슨, 요즘 어때?<br/>
+                                            잘 지내.
+                                        </span>
+                                    </div>
+                                    <div class="hide">
+                                        <ul>
+                                            <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_01.mp3', 'single');" class="active-purple"><span class="blue ml_5" > Minji</span>, how are you doing today?</span></li>
+                                            <li><em>B</em>:<span class="blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_02.mp3', 'single');"> Not so good</span></li>
+                                        </ul>
+                                        <span class="correct3 display-none">민지, 요즘 어때?<br/>
+                                            그저 그래.
+                                        </span>
+                                    </div>
+                                    <div class="hide">
+                                        <ul>
+                                            <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_01.mp3', 'single');" class="active-purple"><span class="blue ml_5"> Siu</span>, how are you doing today?</span></li>
+                                            <li><em>B</em>:<span class="blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_02.mp3', 'single');"> Not bad.</span></li>
+                                        </ul>
+                                        <span class="correct3 display-none">시우, 요즘 어때?<br/>
+                                            나쁘지 않아.
+                                        </span>
+                                    </div>
+                                    <div class="hide">
+                                        <ul>
+                                            <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_01.mp3', 'single');" class="active-purple"><span class="blue ml_5"> Anna</span>, how are you doing today?</span></li>
+                                            <li><em>B</em>:<span class="blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_02.mp3', 'single');"> I’m fine.</span></li>
+                                        </ul>
+                                        <span class="correct3 display-none">애나, 요즘 어때?<br/>
+                                            잘 지내.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider_thumbnail_area">
+                    <div class="slider_thumbnail">
+                        <button type="button" data-num="1">1</button>
+                        <button type="button" data-num="2">2</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pg_Num pgNum_left">
+              <p><strong>10</strong>Lesson 1</p>
+            </div>
+
+
+            <div class="zoom_img_wrap a"><!-- common.css -->
+                <!-- innerHTML -->
+                <div class='video_header'>
+                    <div class='media_title'><div class='media_titlefont'><div class='media_tt'>Media title</div></div></div>
+                    <div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='본문보기'/></div><!-- 10.js에서 처리 -->
+                </div>
+                <div id="vwrap" ><!-- 10.css -->
+                    <div class="pageContainer"><!-- video2.js에서 사용-->bb
+                        <div class="page_1">
+                            <div class="videoWrap"></div>
+                        </div>
+                        <div class="txt">*동영상의 대표 이미지를 poster로 지정해야 함</div>
+                    </div>
+                </div>
+
+                <div class='waiter' id='waiter_wrap'>
+                    <div class='bg'><!-- 따라말하기 타이머 --> </div>
+                    <div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div>
+                </div>
+                <div class='controller'>
+                    <div class='bg'><!-- 배경 가로반복--> </div>
+
+                    <!-- 비디오 컨트롤러 -->
+                    <div class='progController'>
+                        <div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div>
+                        <div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>
+
+                        <div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><!-- black -->
+                        <div id='prog_color'><img src='images/common/player/prog_color.png' /></div><!-- red -->
+                        <div id='prog_mouse'><img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><!-- mouse -->
+                        <div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>
+                        <!-- time -->
+                        <div class='prog_pos'><div class='media_timefont'><div class='time_pos'>00:00</div></div></div>
+                        <div class='prog_dur'><div class='media_timefont'><div class='time_dur'>00:00</div></div></div>
+                        <div class='fullsize btn_full_screen'></div>
+                        <!-- 자막, 대본 -->
+                        <div id='prog_cap' class="btn_caption_en_off"></div>
+                        <div id='prog_cap2' class="btn_caption_kr_off"></div>
+                        <div id='prog_sct' class="btn_script_off"></div>
+
+                    </div>
+                    <!-- 구간 이미지 -->
+                    <div class='thumb_list'></div>
+                    <span class="display-none" id="isTrans">off</span>
+
+
+                    <!-- 볼륨 컨트롤러 mute기능 -->
+<!--                    <div class='volController'>
+                        <div id='vol_spk'><img id='img_spk' src='images/common/player/mov_spk1.png' ondragstart='return false' /></div>
+                        <div id='vol_gray'><img src='images/common/player/mov_vol0.png' /></div>&lt;!&ndash; black &ndash;&gt;
+                        <div id='vol_color'><img src='images/common/player/mov_vol1.png' /></div>&lt;!&ndash; red &ndash;&gt;
+                        <div id='vol_mouse'><img src='images/common/player/mov_vol0.png' ondragstart='return false' /></div>&lt;!&ndash; mouse &ndash;&gt;
+                    </div>-->
+                </div>
+                <div class='sc_paper'>
+                    <div class='caption_wrap display-none'>
+                        <div class='caption_bg'></div>
+                        <div class='caption_txt'>
+                            <div class='media_captionfont'>
+                                <div class='txt_one display-none'></div>
+                                <div class='txt_two display-none'></div>
+                            </div><!-- 자막 -->
+                        </div>
+                    </div>
+
+                    <div class='script_wrap num1 off display-none'>
+                        <div class='script_txt'>
+                            <div class='media_scriptfont'><div class='txt_sct'></div></div><!-- 스크립트 -->
+                        </div>
+                        <div class='scController'>
+                            <div class='sc_bg'><img src='images/common/player/scroll_bg.png' ondragstart='return false'/></div>
+                            <div class='sc_ball'><img src='images/common/player/scroll_ball.png' ondragstart='return false'/></div>
+                        </div>
+                        <div class='haneng'>
+                            <button class="btn_trans_video_off num1"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 롤플레이 팝업 -->
+        <div class="role_play display-none">
+            <h1>Role_Play</h1>
+            <div class="player_img">
+                <span class="player01 on"  title="jason"/>
+                <span class="player02"  title="minji"/>
+                <span class="player03"  title="siu"/>
+                <span class="player04"  title="anna"/>
+            </div>
+            <div class="panel_list">
+                <div class="player_panel">
+                    <ul>
+                        <li>
+                            <em>A</em>: <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Jason</span>, how are you doing today?</span>
+                            <span class="interpret">제이슨, 요즘 어때?</span>
+                        </li>
+                        <li>
+                            <em>B</em>:<span class="color-blue ml_5" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_02.mp3', 'single');"> I’m great.</span>
+                            <span class="interpret">잘 지내.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="player_panel hide">
+                    <ul>
+                        <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5" > Minji</span>, how are you doing today?</span>
+                            <span class="interpret">민지, 요즘 어때?</span>
+                        </li>
+                        <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_02.mp3', 'single');"> Not so good</span>
+                            <span class="interpret">그저 그래. </span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="player_panel hide">
+                    <ul>
+                        <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Siu</span>, how are you doing today?</span>
+                            <span class="interpret">시우, 요즘 어때?</span>
+                        </li>
+                        <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_02.mp3', 'single');"> Not bad.</span>
+                            <span class="interpret">나쁘지 않아. </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="player_panel hide">
+                    <ul>
+                        <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Anna</span>, how are you doing today?</span>
+                            <span class="interpret">애나, 요즘 어때?</span>
+                        </li>
+                        <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_02.mp3', 'single');"> I’m fine.</span>
+                            <span class="interpret">잘 지내. </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="player_controller">
+                <div class="select_player">
+                    <input type="checkbox" id="sideA" />
+                    <label for="sideA"></label>
+                    <span class="mr_20">A</span>
+                    <input type="checkbox" id="sideB"/>
+                    <label for="sideB"></label>
+                    <span>B</span>
+                </div>
+                <div class="btn_wrap">
+                    <button class="btn_playstop btn_rplay"></button>
+                    <button class="btn_rstop"></button>
+                    <button class="progress_rbar"></button>
+                    <span class="controll_rbar"></span>
+                    <button class="btn_rtrans trans_off"></button>
+                </div>
+            </div>
+            <audio id="pAudio" src="./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3"></audio>
+            <img class="btn_close" src="images/common/player/pop_media_close.png" alt="닫기" />
+        </div> <!-- 롤플레이 팝업 -->
+    </body>
+</html>

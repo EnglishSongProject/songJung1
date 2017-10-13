@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+.bo {
+    position: absolute; top:0; left:0;
+    padding-top:24px; background: #fff url(../images/23/bo_bg.png) no-repeat 0 0; background-size: cover; display: none}
+.bo h1.bs_page_tit img{ margin-left:60px; margin-top:33px;}
+
+button.btn_close{}
+
+.bo_wrap{position: relative; background-color:#f5f9fd;margin-top:55px;border-radius:18px;padding:25px 20px 45px 20px;  font-family: 'Nanum Gothic'; font-size: 15px; font-weight: 500;}
+.bo_wrap .subtit_wrap{overflow:hidden;}
+.bo_wrap .subtit_wrap img,
+.bo_wrap .subtit_wrap p{float:left; font-weight: 600; }
+.bo_wrap .subtit_wrap img{margin-right:10px;}
+
+/*bo1*/
+ul.bo_Q_1{  font-family: 'Nanum Gothic'; font-size: 15px; padding-left: 35px; padding-top: 10px; }
+ul.bo_Q_1 li{float: left; width: 25%;}
+
+
+/*bo2*/
+.bo_2 .bo_wrap{height: 140px;}
+ul.bo_Q_2{ font-family: 'Nanum Gothic'; font-size: 15px; padding-left: 35px; padding-top: 10px; }
+ul.bo_Q_2 li{line-height: 30px; }
+
+
+/*bo3*/
+.bo_3 .bo_wrap{height: 380px;}
+
+ul.bo_Q_3{ overflow: hidden; background-color:#cceaf5; border-radius: 13px; width: 250px; padding: 0 30px 0 45px; margin: 20px auto;}
+ul.bo_Q_3 li{float: left; padding: 8px;}
+
+.bo_txtbox{width: 500px; height: 200px; margin: 0 auto; /*border: 1px solid red;*/ margin-top: 20px; background: url(../images/23/004.png) no-repeat; background-position-y:50px  }
+.bo_txtbox textarea#bo_txtarea{width: 95%; height: 150px; background: transparent; resize: none; font-family: 'Nanum Gothic'; font-size: 15px; line-height: 36px; padding: 16px 10px 0 10px;}
+
+.ex_answer{width: 500px; height: 100px; margin: 0 auto;}
+.ex_answer p{font-family: 'Nanum Gothic'; font-size: 15px; line-height: 30px;width:500px;margin:0 auto;}
+.ex_answer p:first-child{color:#1e4b67; font-weight: 600;}
+
+/*bo4*/
+
+
+/*bo5*/
