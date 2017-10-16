@@ -39,10 +39,10 @@ function searchLoad(){
 
     $("#bt_A_a").click(function(){
        if(checkedNum == 5){
-          alert("정답입니다");
+           //정답
           showAnswer()
        }else{
-          alert("오답입니다");
+           //오답
           showAnswer()
           checkedNum = 6
        }

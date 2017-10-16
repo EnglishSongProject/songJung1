@@ -5,4 +5,8 @@ $(function () {
     setAudio();
     //textDrag p07_droppable, p07_draggable
     setTextDrag('p07');
+
+    $(".btn_tip").on("click",function(){
+        $(".tip_con").toggle();
+    });
 })

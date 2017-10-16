@@ -29,12 +29,6 @@ $(document).ready(function () {
         $(".correct3").toggle();
     });
 
-    $('.mediabtn_0').on('click', function () {
-        layerAclose();
-        $('.zoom_img_wrap.a').show();
-        mediaInit(0);
-    });
-
     $('.btn_media_close').on('click', function () {
         mediaClose(); //video.js
         AllOff();
