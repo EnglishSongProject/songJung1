@@ -25,7 +25,6 @@ $(document).ready(function(){
 
 // 오디오 팝업
 var currentFile = "";
-var currentPopup = null;
 var currentAudio = null;
 
 function playAudio(path, btnId, target, imgId, direction) {
@@ -159,28 +158,25 @@ function playAudio(path, btnId, target, imgId, direction) {
                 var $target = $(target);
 
                 // 팝업 위치 설정
-                if(direction == 'right'){
+                if(direction == 'left'){
                     popup.style.left = ($target.offset().left -216) + "px";
                     popup.style.top = ($target.offset().top - 10) + "px";
                 }
-                else if(direction == "top"){
-                    popup.style.left = ($target.offset().left) + "px";
-                    popup.style.top = ($target.offset().top -42) + "px";
+                else if(direction == 'right'){
+                    popup.style.left = ($target.offset().left + 36) + "px";
+                    popup.style.top = ($target.offset().top - 6) + "px";
                 }
-                else if(direction == "top-left"){
-                    popup.style.left = ($target.offset().left - 100) + "px";
+                else if(direction == 'top-left'){
+                    popup.style.left = ($target.offset().left - 50) + "px";
                     popup.style.top = ($target.offset().top -42) + "px";
-                }else if(direction == "top-right"){
-                    popup.style.left = ($target.offset().left - 100) + "px";
-                    popup.style.top = ($target.offset().top -70) + "px";
                 }
                 else if(direction == 'top-left-much'){
                     popup.style.left = ($target.offset().left - 120) + "px";
                     popup.style.top = ($target.offset().top -42) + "px";
                 }
                 else{
-                    popup.style.left = ($target.offset().left + 36) + "px";
-                    popup.style.top = ($target.offset().top - 6) + "px";
+                    popup.style.left = ($target.offset().left) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
                 }
 
                 popup.style.display='block';
@@ -1213,7 +1209,6 @@ $(document).ready(function(){
                 transText[i].style.display='none';
                 transText[i].style.position='absolute';
                 transText[i].style.fontSize='11px';
-                transText[i].style.left='19px';
                 transText[i].style.fontFaceName='Open Sans';
                 transText[i].style.color='#339900';
                 transText[i].style.top=transTextTop.toString()+'px';
@@ -1347,8 +1342,6 @@ function showWordTopLeft(target, meaning, top, left) {
     meanText.style.left = (left).toString() + 'px';
     $(meanText).addClass('word_on');
     target.appendChild(meanText);
-<<<<<<< HEAD
-=======
 }
 
 
@@ -1496,5 +1489,4 @@ function setDictionary() {
 
     $(dictionLayerClass).append(dictionInnerHtml);
     $('body').append(dictionLayerClass);
->>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 }

@@ -272,11 +272,7 @@ scriptPopup
     min-height: 200px;
     height: auto;
     padding: 5px;
-<<<<<<< HEAD
-    z-index: 100;
-=======
     z-index: 1000000001;
->>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 }
 .scriptPopupClose{
     display: block;
@@ -395,8 +391,6 @@ scriptPopup
 .transText{
     left: 25px;
 }
-<<<<<<< HEAD
-=======
 .radio_check{
     position: absolute;
     z-index: 1000000000;
@@ -411,4 +405,3 @@ scriptPopup
     z-index: 1000000000;
 }
 
->>>>>>> f59347a00d91517d2763ead9a7d212a034817398

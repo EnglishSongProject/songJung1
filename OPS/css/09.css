@@ -16,11 +16,7 @@ li{font-family: 'Nanum Gothic';font-size:17px;font-weight:bold;}
 .slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
 .first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
-<<<<<<< HEAD
-input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:15px;line-height:20px;margin-top:-3px;}
-=======
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:17px;line-height:20px;margin-top:-3px; }
->>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 .ls_1_t1{width:145px;}
 .ls_2_t1{width:100px;}
 .ls_2_t2{width:100px;}
@@ -42,23 +38,12 @@ article dd ul li:hover{color: #9a01cd;}
 
 li article h1{font-family: 'Bubblegum Sans';font-size:20px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:33px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
 
-<<<<<<< HEAD
-li article h2{font-size:15px;font-family:'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:25px;}
-
-
-
-textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box;height: 114px;padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;resize: none;}
-article:nth-of-type(1) textarea{ min-height: 102px;max-height: 102px;}
-article:nth-of-type(2) textarea{ min-height: 118px;max-height: 118px;}
-li:nth-of-type(2) article:nth-of-type(3) textarea{ min-height: 120px;max-height: 120px;}
-=======
 li article h2{font-size:16px;font-family:'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:30px;}
 
 textarea{ border: 1px solid #b4ddc8; border-radius: 10px; box-sizing: border-box;height: 114px;padding: 5px; position: absolute;left: 10px; margin-top: 15px; width: 580px;resize: none; font: 15px/1.7 'Nanum Gothic' }
 article:nth-of-type(1) textarea{ min-height: 85px;max-height: 85px;}
 article:nth-of-type(2) textarea{ min-height: 100px;max-height: 100px;}
 article:nth-of-type(3) textarea{ min-height: 100px;max-height: 100px;}
->>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 
 .slider_thumbnail_area { height: 765px; left: 50%; margin-left: -50%; overflow: hidden; position: relative; top:0; width: 50%;}
 .slider_thumbnail_area ul {text-align: center;width:74px; position: relative; top:730px;left:50%;margin-left:-37px;}
