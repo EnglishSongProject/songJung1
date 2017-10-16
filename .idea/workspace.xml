@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4917529e-e438-451a-acc0-96fe74387e90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/css/15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/15.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/15_mediaInfo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OPS/media/audio/L01/022/add/L01_022_solve_add_01.mp3" afterPath="$PROJECT_DIR$/OPS/media/audio/L01/022/L01_022_solve_add_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/index_12.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/index_15.xhtml" afterPath="$PROJECT_DIR$/OPS/index_15.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/js/drag_line.js" afterPath="$PROJECT_DIR$/OPS/js/drag_line.js" />
     </list>
     <ignored path="aspen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index_15.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_15.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/index_15.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="19">
               <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_12.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OPS/index_12.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1007">
+              <caret line="18" column="106" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -58,16 +62,6 @@
               <folding>
                 <marker date="1507984134000" expanded="true" signature="40121:40232" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_07.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/index_07.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="101" column="74" selection-start-line="101" selection-start-column="74" selection-end-line="101" selection-end-column="74" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -304,6 +298,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sr01-02\Documents\songJung1\OPS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sr01-02\Documents\songJung1\OPS\media\audio\L01\022" />
       <recent name="C:\Users\sr01-02\Documents\songJung1\OPS\media\audio\L01\022\add" />
@@ -312,11 +309,8 @@
       <recent name="C:\Users\sr01-02\Documents\네이트온 받은 파일\aspen\OPS\css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index_15.xhtml">
+  <component name="RunManager" selected="JavaScript Debug.index_12.xhtml">
     <configuration default="false" name="index_01.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aspen/OPS/index_01.xhtml">
-      <method />
-    </configuration>
-    <configuration default="false" name="index_22.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aspen/OPS/index_22.xhtml">
       <method />
     </configuration>
     <configuration default="false" name="index_03.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aspen/OPS/index_03.xhtml">
@@ -326,6 +320,9 @@
       <method />
     </configuration>
     <configuration default="false" name="index_03.xhtml (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_03.xhtml">
+      <method />
+    </configuration>
+    <configuration default="false" name="index_12.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_12.xhtml">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -744,18 +741,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_22.xhtml" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_12.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_22.xhtml" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_12.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -770,12 +767,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508043979765</updated>
       <workItem from="1508043981023" duration="28824000" />
-      <workItem from="1508118186568" duration="7325000" />
+      <workItem from="1508118186568" duration="7536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36149000" />
+    <option name="totallyTimeSpent" value="36360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -829,13 +826,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OPS/media/audio/L01/013/L01_013_com_01_add.mp3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="0" column="2957" selection-start-line="0" selection-start-column="2957" selection-end-line="0" selection-end-column="2957" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/css/06.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1268,8 +1258,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_15.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="19">
           <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_12.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1007">
+          <caret line="18" column="106" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
           <folding />
         </state>
       </provider>
