@@ -39,29 +39,29 @@
 	<ul class="tabArea">
 		<li class="TabBt_G  on"><span class="audio_play" data-name="L01_012_act_a01_01" data-type="no-color">Guess</span>
 			<ul class="tabInner_1">
-				<li><button type="button" class="btn_type_02 btn_repeat" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
+				<li><button type="button" class="btn_type_02 btn_repeat" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear('p05_txt_1');">다시하기</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a01_01_1">What are they doing?</h1></li>
 				<li><img src="asset/I/6afdd3b528e34cf2a297f35dfb09d01f.png" alt="roleplay이미지" /></li>
-				<li><textarea></textarea></li>
+				<li><textarea id="p05_txt_1"></textarea></li>
 			</ul>
 		</li>
 		<li class="TabBt_L"><span class="audio_play" data-name="L01_012_act_a02" data-type="no-color">Listen</span>
 			<ul class="tabInner_2">
-				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
+				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="정답" onclick="checkBoxCheckForMulti(this, 'p12_r1_o_a3', '2' );" >다시하기</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a02_1">Which is NOT true about Mr. Jackson?</h1></li>
-				<li class="audio_play" data-name="L01_012_act_a02_w02_1"><input type="radio" name="Tab2_Q" id="Tab2_num1" /><label for="Tab2_num1">1</label> He is an English teacher.</li>
-				<li class="audio_play" data-name="L01_012_act_a02_w03_1"><input type="radio" name="Tab2_Q" id="Tab2_num2" /><label for="Tab2_num2">2</label> He is from Canada.</li>
-				<li class="audio_play" data-name="L01_012_act_a02_w04_1"><input type="radio" name="Tab2_Q" id="Tab2_num3" /><label for="Tab2_num3">3</label> He is Jiwon’s teacher.</li>
+				<li class="audio_play" data-name="L01_012_act_a02_w02_1"><input type="radio"	class="correct" name="p12_r1_o_a3" id="Tab2_num1" /><label for="Tab2_num1">1</label> He is an English teacher.</li>
+				<li class="audio_play" data-name="L01_012_act_a02_w03_1"><input type="radio"	class="correct" name="p12_r1_o_a3" id="Tab2_num2" /><label for="Tab2_num2">2</label> He is from Canada.</li>
+				<li class="audio_play" data-name="L01_012_act_a02_w04_1"><input type="radio"	class="correct" name="p12_r1_o_a3" id="Tab2_num3" /><label for="Tab2_num3">3</label> He is Jiwon’s teacher.</li>
 			</ul>
 		</li>
 		<li class="TabBt_LA"><span class="audio_play" data-name="L01_012_act_a03" data-type="no-color">Listen Again</span>
 			<ul class="tabInner_3">
-				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
+				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="정답"  onclick="radioCheck(this, 'radio_1+radio_2+radio_3', '0+1+0');" >정답</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a03_1">Complete Jiwon’s talk.</h1></li>
 				<li class="bubble_yel">
-						<div class="audio_play" data-name="L01_012_act_a03_02_re">I am <div><input type="radio" name="Q_1" id="year10"/><label for="year10">10</label></div><div><input type="radio" name="Q_1" id="year11"/><label for="year11" style="margin-left:5px">11</label></div> years old.</div>
-						<div class="audio_play" data-name="L01_012_act_a03_03_re">I have a <div><input type="radio" name="Q_2" id="brother"/><label for="brother" style="margin-right:5px !important"> brother </label></div><div><input type="radio" name="Q_2" id="sister"/><label for="sister"> sister </label></div>.</div>
-						<div class="audio_play" data-name="L01_012_act_a03_04_re">I like  <div><input type="radio" name="Q_3" id="English"/><label for="English" style="margin-right:5px !important"> English </label></div><div><input type="radio" name="Q_3" id="music" /><label for="music"> music </label></div>.</div>
+						<div class="audio_play" data-name="L01_012_act_a03_02_re">I am <div><input type="radio" class="correct" name="radio_1" id="year10"/><label for="year10">10</label></div><div><input type="radio" class="correct" name="radio_1" id="year11"/><label for="year11" style="margin-left:5px">11</label></div> years old.</div>
+						<div class="audio_play" data-name="L01_012_act_a03_03_re">I have a <div><input type="radio" class="correct" name="radio_2" id="brother"/><label for="brother" style="margin-right:5px !important"> brother </label></div><div><input type="radio" class="correct" name="radio_2" id="sister"/><label for="sister"> sister </label></div>.</div>
+						<div class="audio_play" data-name="L01_012_act_a03_04_re">I like  <div><input type="radio" class="correct" name="radio_3" id="English"/><label for="English" style="margin-right:5px !important"> English </label></div><div><input type="radio" class="correct" name="radio_3" id="music" /><label for="music"> music </label></div>.</div>
 						<img src="asset/I/c31e7582cc3946d8b1cbee5e5677de11.png" alt="소녀 이미지" class="G_img"/>
 				</li>
               </ul>
@@ -111,12 +111,17 @@
 <div class="btn_list" style="left:257px;top:596px;" >
 	<button type="button" class="btn_type_02 btn_mp3_a audio_play" data-name="Sequence_01" data-type="multi"  title="mp3전체 듣기" >mp3전체듣기</button>
 	<button type="button" class="btn_type_02 btn_trans" title="대본">한글</button>
-	<button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClear();">다시하기</button>
+	<button type="button" class="btn_type_02 btn_repeat" title="다시하기" onclick="textClearByNames('p05_txt_2');">다시하기</button>
 </div>
 <button type="button" class="btn_sounds" title="발음듣기" >소리듣기</button>
-<input type="text" id="A_name" />
-<input type="text" id="A_age" />
-<input type="text" id="A_nickname" />
+<input type="text" name="p05_txt_2" id="A_name" />
+<input type="text" name="p05_txt_2" id="A_age" />
+<input type="text" name="p05_txt_2" id="A_nickname" />
+<div class="transText">
+	이 아이는 내 단짝 친구 다현이야.<br></br>
+	그녀는 14살이야.<br></br>
+	그녀의 별명은 도서관 소녀야.
+</div>
 
 </body>
 </html>

@@ -52,4 +52,6 @@ $(function () {
 
     setDictionary();
 
-})
+    setAudio();
+    setPopVideo();
+});

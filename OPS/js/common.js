@@ -509,7 +509,6 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
         answerIdArray = [Ids];
         clearArray = [clearId];
     }
-    console.log($(questionId));
     if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
@@ -550,7 +549,6 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
     }
 }
 function radioCheck(questionId, names, answers) {
-    var questionId = document.getElementById(questionId);
     var answerNameArray;
     var answerArray;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
@@ -565,7 +563,7 @@ function radioCheck(questionId, names, answers) {
     }
     var totalForCorrect=0;
 
-    if(questionId.title =='답안') {
+    if($(questionId).hasClass('btn_answer')) {
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
         questionId.title ='다시풀기';
@@ -590,7 +588,7 @@ function radioCheck(questionId, names, answers) {
             $(name[answerArray[i]]).addClass('false');
         }
 
-    }else if (questionId.title == '다시풀기'){
+    }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
         questionId.title = '답안';
@@ -666,16 +664,14 @@ function textClearByNames(name,ck_list) {
 
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
-    var questionId = document.getElementById(questionId);
     var answerArray;
     if(inputId.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
         answerArray = answer.split('+');
         inputId = inputId.split('+');
     }
-    if(questionId.title =='답안'){
+    if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
-        questionId.title ='다시풀기';
         var correctCheck = 0;
         for(var i=0; i<inputId.length; i++){
             var id = document.getElementById(inputId[i]);
@@ -701,10 +697,9 @@ function listenAndNumberCheck(questionId, inputId, answer) {
                 }
             }
         }
-    }else if (questionId.title == '다시풀기'){
+    }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
-        questionId.title = '답안';
         for(var i=0;i<inputId.length;i++){
             var id = document.getElementById(inputId[i]);
             if(id.value != null && id.value != ''){
@@ -1246,10 +1241,14 @@ function checkAskAnswer(){
 // ask & answer 단어사전 토글
 function toggleWord(){
     $(".btn_wp").on("click",function(){
-        var idx = $(this).index();
-        console.log(this);
-        $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
+        var idx = $(".btn_wp").index(this);
+        $('.intro_word').eq(idx).toggle().siblings('.intro_word').hide()
     })
+
+    $(".btn_trans").on("click", function(){
+        var idx = $(".btn_trans").index(this);
+        $('.trans_text').eq(idx).toggle();
+    });
 }
 
 // setSpellcheck
@@ -1287,7 +1286,6 @@ function openPopup(popupId){
 
 function checkBoxCheckForMulti(btnId, checkboxName, answerArray) {
     //체크박스는 무조건 2개 이상이므로 따로 예외처리를 하지 않는다.
-    var btnId = $('#'+btnId);
     var checkboxName = document.getElementsByName(checkboxName);
     var answerArray = answerArray;
     if(answerArray.length > 1){

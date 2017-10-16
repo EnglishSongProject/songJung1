@@ -58,6 +58,7 @@ body {padding:0; margin:0; background-color:#ffffff;  font-family:'Nanum Gothic'
 a{outline:none; text-decoration:none; padding:0px; border:0;}
 input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !important;vertical-align: baseline !important}
 
+
 /*----------------------
 사용자 정의 클래스
 ----------------------*/
@@ -237,6 +238,8 @@ input[type="text"]:focus{outline: none;}
 textarea {overflow: auto}
 textarea:focus{outline: none;}
 
+.intro_word {display: none}
+
 
 /*----------------------
 popup
@@ -408,4 +411,3 @@ scriptPopup
 .trans_text{
     display: none;
 }
-
