@@ -1,0 +1,5 @@
+$(function () {
+    setAudio();
+    setDictionary();
+	setPopVideo();
+});

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* <div><img src="images/18/bus_image.png" alt="버스 이미지"/></div> */
+
+@keyframes Bus_ima{
+	0%{transform:scale(1.3);}
+	50%{transform:scale(1.0);}
+	100%{transform:scale(1.3);}
+}
+.BusImages{position:absolute;left:117px;top:175px;z-index:100088888;display:inline-block;transform:scale(1.0);animation:Bus_ima 1000ms infinite 0s;}
