@@ -1441,8 +1441,9 @@ function setDictionary() {
 
     dictionInnerHtml += "<h1 class='header_tit'>Self Check</h1>";
     dictionInnerHtml += "<a href='' ><span class='word_close_icon'><img src='images/dictionary/close_word.png' alt='close icon' /></span></a>"
+    dictionInnerHtml += "<div class='dic_head'>";
     dictionInnerHtml += "<ul class='word_catagory_list'><li>단원</li><li class='display-none'>알파벳</li></ul>";
-    dictionInnerHtml += "<ul class='lesson_btn_list'><li class='on'>전체</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>sp</li></ul>";
+    dictionInnerHtml += "<ul class='lesson_btn_list'><li class='on'>전체</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>sp</li></ul></div>";
     dictionInnerHtml += "<div id='words' class='word_list bold'></div>";
     dictionInnerHtml += "<div class='word btn_mp3_a' id='btn_mp3_a'></div>";
     dictionInnerHtml += "<div id='flashcard'><div id='word' class='bold'></div><div id='word_meaning'></div></div>";
@@ -1451,9 +1452,6 @@ function setDictionary() {
     $(dictionLayerClass).append(dictionInnerHtml);
     $('body').append(dictionLayerClass);
 }
-<<<<<<< HEAD
-
-
 function blankCheckByCss2(questionId, Ids, clearId, type){
     var questionId = document.getElementById(questionId);
     var answerIdArray;
@@ -1508,7 +1506,6 @@ function blankCheckByCss2(questionId, Ids, clearId, type){
         }
     }
 }
-=======
 function PageStop() {
     if(document.querySelector('.page_video')){
         var video = document.querySelector('.page_video');
@@ -1527,4 +1524,3 @@ function setShowScriptPopup() {
         });
     }
 }
->>>>>>> 13f840b4e4330656ad0fac8e85617fd72ea51219
