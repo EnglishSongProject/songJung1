@@ -93,7 +93,7 @@ function eventSelector (eventType, e) {
 
 // 화면 스케일(리사이즈) 설정
 function initScale() {
-    var wrap = document.querySelector('.wrapper');
+    var wrap = document.querySelector('body');
 
     GameManager.event.clientWidth = document.body.clientWidth;
     GameManager.event.clientHeight = document.body.clientHeight;
@@ -151,6 +151,8 @@ function soundEvent (target, src) {
 // svg : 생성
 function CESVG (target, type) {
     var svgContainer = document.createElementNS('http://www.w3.org/2000/svg', type);
+    $(svgContainer).css('width', 'inherit');
+    $(svgContainer).css('height', 'inherit');
     target.appendChild(svgContainer);
     return svgContainer;
 }
@@ -319,6 +321,7 @@ QUIZ.dragLine = {
         this.path = QSAll('.quiz_'+ quizNum +' .svgContainer > path');
 
         for (var i = 0; i < this.path.length; i++) {
+            $(this.path[i]).css('z-index', '1000000001');
             this.path[i].setAttribute('class', 'answerLine');
             this.path[i].setAttribute('value', this.dragLineObj[i].getAttribute('value'));
         }
@@ -380,12 +383,6 @@ QUIZ.dragLine = {
     },
 
     setDragObjPosition: function (quizNum, dragObj, param, type) {
-        console.log('포지션이 돌아감');
-        console.log(dragObj.element);
-        console.log(param);
-        console.log(this);
-        console.log(getMousePosition());
-
         var obj = dragObj.element !== undefined ? dragObj.element : dragObj,
             idx = obj.getAttribute('value') - 1,
             top, left, targetPath, value, dropTop, dropLeft;

@@ -1,0 +1,27 @@
+.contentContainer{
+    top:695px;
+    left: 50px;
+    width: 662px;
+    height: 190px;
+    position: absolute;
+    z-index: 1000000001;
+}
+.svgContainer path {
+    stroke: #8e73ad;
+    stroke-width: 4px;
+}
+.dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    text-align: center;
+}
+.dot .hold {position: relative; display: inline-block;padding: 6px 6px;border-radius: 50%;background: #8e73ad;}
+.drawBox, .dropBox {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+/*    z-index: 1000000002;*/
+}
