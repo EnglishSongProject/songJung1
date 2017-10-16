@@ -1,10 +1,5 @@
-
 $(function () {
     setAudio();
-    setPopVideo();
+    setDictionary();
+	setPopVideo();
 });
-
-/*
-$(document).ready(function() {
-    imageSlide.init();
-});*/
