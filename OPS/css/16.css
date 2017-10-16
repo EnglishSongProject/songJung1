@@ -20,36 +20,42 @@
 
 #bo_1 {
     position: absolute;
-    top: 50px;
+    top: 22px !important;
     display: none;
+    height:313px !important
 }
 
 #bo_2 {
     position: absolute;
-    top: 300px;
+    top: 542px !important;
     display: none;
+    height:413px !important
 }
 
 #bo_3 {
     position: absolute;
-    top: 330px;
+    top: 430px !important;
     display: none;
+    height:584px !important
 }
 
 #sim_1 {
     position: absolute;
-    top: 50px ;
+    top: 22px !important;
     display: none;
+    height: 501px !important
 }
 
 #sim_2 {
     position: absolute;
-    top: 300px;
+    top: 542px !important;
     display: none;
+    height:454px !important
 }
 
 #sim_3 {
     position: absolute;
-    top: 330px;
+    top: 430px !important;
     display: none;
+    height:724px !important
 }
