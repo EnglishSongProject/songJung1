@@ -1,0 +1,16 @@
+.radio_check label:nth-of-type(1) {
+    top: -367px;
+    left: 300px;
+}
+.radio_check label:nth-of-type(2) {
+    top: -367px;
+    left: 575px;
+}
+.radio_check label:nth-of-type(3) {
+    top: -320px;
+    left: 212px;
+}
+.radio_check label:nth-of-type(4) {
+    top: -320px;
+    left: 487px;
+}

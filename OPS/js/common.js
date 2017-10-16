@@ -25,7 +25,6 @@ $(document).ready(function(){
 
 // 오디오 팝업
 var currentFile = "";
-var currentPopup = null;
 var currentAudio = null;
 
 function playAudio(path, btnId, target, imgId, direction) {
@@ -56,7 +55,7 @@ function playAudio(path, btnId, target, imgId, direction) {
         //  싱글 듣기
         if(btnId == 'single'){
             var oAudio = document.getElementById('myaudio');
-            var wrapper = document.querySelector('.wrapper');
+            var wrapper = document.querySelector('body');
             currentAudio = 'single';
             if (path !== currentFile){
                 oAudio = document.createElement('audio');
@@ -150,7 +149,7 @@ function playAudio(path, btnId, target, imgId, direction) {
                 popup.appendChild(audioControls);
                 popup.style.zIndex=1000000000;
 
-                var wrapper = document.querySelector('.wrapper');
+                var wrapper = document.querySelector('body');
                 wrapper.appendChild(popup);
             }
 
@@ -159,24 +158,25 @@ function playAudio(path, btnId, target, imgId, direction) {
                 var $target = $(target);
 
                 // 팝업 위치 설정
-                if(direction == 'right'){
+                if(direction == 'left'){
                     popup.style.left = ($target.offset().left -216) + "px";
                     popup.style.top = ($target.offset().top - 10) + "px";
                 }
-                else if(direction == "top"){
-                    popup.style.left = ($target.offset().left) + "px";
-                    popup.style.top = ($target.offset().top -42) + "px";
-                }
-                else if(direction == "top-left"){
-                    popup.style.left = ($target.offset().left - 100) + "px";
-                    popup.style.top = ($target.offset().top -42) + "px";
-                }else if(direction == "top-right"){
-                    popup.style.left = ($target.offset().left - 100) + "px";
-                    popup.style.top = ($target.offset().top -70) + "px";
-                }
-                else{
+                else if(direction == 'right'){
                     popup.style.left = ($target.offset().left + 36) + "px";
                     popup.style.top = ($target.offset().top - 6) + "px";
+                }
+                else if(direction == 'top-left'){
+                    popup.style.left = ($target.offset().left - 50) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
+                }
+                else if(direction == 'top-left-much'){
+                    popup.style.left = ($target.offset().left - 120) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
+                }
+                else{
+                    popup.style.left = ($target.offset().left) + "px";
+                    popup.style.top = ($target.offset().top -42) + "px";
                 }
 
                 popup.style.display='block';
@@ -494,12 +494,12 @@ function blankCheck(questionId, Ids, answers){
 }
 
 function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionName){
-    var questionId = document.getElementById(questionId);
     var answerIdArray;
     var clearArray;
     var answerId;
     var inputId;
     var score = 0;
+    console.log(Ids);
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
     //포함하고 있지 않다면 단일 빈칸 체크임
@@ -522,7 +522,7 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
                 score++
             }
             if(type!='type02'){
-                answerId.style.display='inline';
+                answerId.style.display='inline-block';
             }
         }
         var notice = score === answerIdArray.length ? "정답" : "오답"
@@ -640,6 +640,7 @@ function textClear(idForClear, nameForClear, Id_a, btnId_q) {
         if (idForClear != null && idForClear != '' && idForClear != undefined) {
             var idForC = document.getElementById(idForClear);
             idForC.value = '';
+
         }
         //checkWithCheckBox
         var checkBoxNamesForClear = document.getElementsByName(nameForClear);
@@ -1208,7 +1209,6 @@ $(document).ready(function(){
                 transText[i].style.display='none';
                 transText[i].style.position='absolute';
                 transText[i].style.fontSize='11px';
-                transText[i].style.left='19px';
                 transText[i].style.fontFaceName='Open Sans';
                 transText[i].style.color='#339900';
                 transText[i].style.top=transTextTop.toString()+'px';
@@ -1342,4 +1342,151 @@ function showWordTopLeft(target, meaning, top, left) {
     meanText.style.left = (left).toString() + 'px';
     $(meanText).addClass('word_on');
     target.appendChild(meanText);
+}
+
+
+
+//새로운 음성재생 모듈
+function setAudio(){
+
+    if($('.audio_play').length == 0) return;
+
+    $('.audio_play').each(function () {
+        if($(this).attr('data-type') == 'multi'){
+            $(this).on('click', function () {
+                playAudio(audioPath + $(this).attr('data-name') + '.mp3' ,'',this,'', $(this).attr('datasrc'));
+            });
+        }else if($(this).attr('data-type') == 'no-color'){
+            $(this).on('click', function () {
+                playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this, 'undefined');
+            });
+        }else{
+            $(this).on('click', function () {
+                playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this);
+            });
+        }
+    });
+}
+//비디오 재생 모듈
+var progBallLeft;
+var progLimit;
+function setPopVideo() {
+    if($('.video_play').length == 0) return;
+
+    $('.video_play').each(function (index) {
+        var transText;
+        var btnClass = 'video_play_btn'+index.toString();
+        $(this).addClass(btnClass);
+        switch($(this).attr('data-type')){
+            case 'en-script':
+                //boola boola
+                progBallLeft = 120;
+                progLimit = [0, 373];
+                transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off display-none'></div><div id='prog_sct' class='btn_script_off'></div>";
+                break;
+            case 'en_kr-script':
+                //boola boola
+                progBallLeft = 120;
+                progLimit = [0, 373];
+                transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off'></div><div id='prog_sct' class='btn_script_off'></div>";
+                break;
+            case 'role-script':
+                progLimit = [0, 200];
+                progBallLeft = 340;
+                transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off'></div><div id='prog_sct' class='btn_script_off'></div>";
+                //boola boola
+                break;
+            case 'no-script':
+                progBallLeft = 120;
+                progLimit = [0, 373];
+                transText = "<div id='prog_cap' class='btn_caption_en_off display-none'></div><div id='prog_cap2' class='btn_caption_kr_off display-none'></div><div id='prog_sct' class='btn_script_off display-none'></div>";
+                //boola boola
+                break;
+        }
+        var layerClass = document.createElement('div');
+        var innerHtmlText = '';
+        var layerClassForSeper = 'video_'+index.toString();
+        $(layerClass).addClass('zoom_img_wrap');
+        $(layerClass).addClass(layerClassForSeper);
+        innerHtmlText += "<div class='video_header'><div class='media_title'>";
+        innerHtmlText += "<div class='media_titlefont'><div class='media_tt'>Media title</div></div>";
+        innerHtmlText += "<div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='닫기'/></div></div>";
+        innerHtmlText += "<div id='vwrap' ><div class='pageContainer'><div class='page_1'><div class='videoWrap'></div></div>";
+        innerHtmlText += "<div class='txt'>*동영상의 대표 이미지를 poster로 지정해야 함</div></div></div>";
+        innerHtmlText += "<div class='waiter' id='waiter_wrap'><div class='bg'></div><div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div></div><div class='controller'><div class='bg'></div>";
+        innerHtmlText += "<div class='progController'><div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div><div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>";
+        innerHtmlText += "<div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><div id='prog_color'><img src='images/common/player/prog_color.png' /></div><div id='prog_mouse'>";
+        innerHtmlText += "<img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>"
+        innerHtmlText += "<div class='prog_pos'><div class='media_timefont'><div class='time_pos'>00:00</div></div></div><div class='prog_dur'><div class='media_timefont'><div class='time_dur'>00:00</div></div></div>";
+        innerHtmlText += "<div class='fullsize btn_full_screen'></div>"+transText+"</div>";
+        innerHtmlText += "<div class='thumb_list'></div><span class='display-none' id='isTrans'>off</span></div>";
+        innerHtmlText += "<div class='sc_paper'><div class='caption_wrap display-none'><div class='caption_bg'></div><div class='caption_txt'><div class='media_captionfont'><div class='txt_one display-none'></div>";
+        innerHtmlText += "<div class='txt_two display-none'></div></div></div></div>";
+        innerHtmlText += "<div class='sc_paper'><div class='caption_wrap display-none'><div class='caption_bg'></div><div class='caption_txt'><div class='media_captionfont'>";
+        innerHtmlText += "<div class='txt_one display-none'></div><div class='txt_two display-none'></div></div></div></div>";
+        innerHtmlText += "<div class='script_wrap num1 off display-none'><div class='script_txt'><div class='media_scriptfont'><div class='txt_sct'></div></div></div>";
+        innerHtmlText += "<div class='scController'><div class='sc_bg'><img src='images/common/player/scroll_bg.png' ondragstart='return false'/></div><div class='sc_ball'><img src='images/common/player/scroll_ball.png' ondragstart='return false'/></div></div>";
+        innerHtmlText += "<div class='haneng'>";
+        if($(this).attr('data-type') != 'en-script'){
+            innerHtmlText += "<button class='btn_trans_video_off num1'></button>";
+        }else{
+            innerHtmlText += "<button class='btn_trans_video_off num1 display-none'></button>";
+        }
+        innerHtmlText += "</div></div></div></div></div>";
+
+        layerClass.innerHTML=innerHtmlText;
+        $('body').append(layerClass);
+        mediaInit(index, progLimit, progBallLeft);
+
+        $('\.'+btnClass).on('click', function () {
+                $('\.'+layerClassForSeper).show();
+                //닫기 구현
+                $('.btn_media_close').on('click',function(){
+                    mediaClose(); //video.js
+                    AllOff();
+                    $('.zoom_img_wrap').hide();
+                    mediaInit(index, progLimit, progBallLeft);
+                    setController();
+                });
+        });
+    });
+}
+function setTextDrag(num) {
+    var draggableList = $('\.'+num+'_draggable')[0].children;
+    var droppableList = $('\.'+num+'_droppable');
+    draggableSet(draggableList, droppableList, num);
+    //고유값
+    retryDraggableSet(draggableList, num);
+    saveDraggingText(draggableList, num);
+}
+//사전 재생모듈
+function setDictionary() {
+
+    var diction = $('.btn_word');
+
+    $(diction).on('click', function () {
+        $('.intro_word').css('display', 'block');
+    });
+
+    $('.word_close_icon').on('click',function () {
+        $('.intro_word').css('display', 'none');
+    });
+
+    var dictionLayerClass = document.createElement('div');
+    var dictionInnerHtml='';
+    $(dictionLayerClass).addClass('intro_word');
+    $(dictionLayerClass).addClass('display-none');
+    $(dictionLayerClass).addClass('wrapper');
+
+    dictionInnerHtml += "<h1 class='header_tit'>Self Check</h1>";
+    dictionInnerHtml += "<a href='' ><span class='word_close_icon'><img src='images/dictionary/close_word.png' alt='close icon' /></span></a>"
+    dictionInnerHtml += "<ul class='word_catagory_list'><li>단원</li><li class='display-none'>알파벳</li></ul>";
+    dictionInnerHtml += "<ul class='lesson_btn_list'><li class='on'>전체</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>sp</li></ul>";
+    dictionInnerHtml += "<div id='words' class='word_list bold'></div>";
+    dictionInnerHtml += "<div class='word btn_mp3_a' id='btn_mp3_a'></div>";
+    dictionInnerHtml += "<div id='flashcard'><div id='word' class='bold'></div><div id='word_meaning'></div></div>";
+    dictionInnerHtml += "<div id='flashcard_example'><div id='description' class='bold'></div><div id='description2'></div></div>";
+
+    $(dictionLayerClass).append(dictionInnerHtml);
+    $('body').append(dictionLayerClass);
 }

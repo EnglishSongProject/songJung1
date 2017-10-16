@@ -1,7 +1,9 @@
 //======================================= 동영상 팝업의 위치 설정하기
 var imgPath = "images/common/player/";
 var thumbPath = "images/";
-
+var progLimit;
+var progBallLeft;
+var playMode = 'normal';
 
 // ******************************************************************************
 // 미디어 컨트롤 : 초기 설정
@@ -81,8 +83,10 @@ function setCaption(){
 		document.querySelector('.txt_two').innerHTML = str2;
 	}
 }
-function mediaInit(idx) {
+function mediaInit(idx, limit, ballLeft) {
 	idxr = idx;
+	progLimit = limit;
+	progBallLeft = ballLeft;
 	//
 	var wrap = document.querySelector('#vwrap'),
 		videoWrap = wrap.getElementsByClassName('videoWrap');
@@ -90,6 +94,7 @@ function mediaInit(idx) {
 	if(videoWrap.length > 0) {
 		mediaType(idx);
 	}
+	setController();
 }
 
 function removeWaiter(){
@@ -113,8 +118,6 @@ function mediaClose(){
 	if (videoContainer){
 		$('.videoContainer').remove();
 	}
-
-
 }
 
 
@@ -386,7 +389,7 @@ function mediaType(idx) {
 		});
 	}, 20);
 
-	showhideScript(3); //아무것도 없는 것이 기본
+	showhideScript(0);
 }
 function sectionPlay(){
 	var vdo = document.querySelector('#vdo');
@@ -509,7 +512,7 @@ var volLimit = [0, 58];
 var scLimit = [2, 348]; //대본 스크롤바 이동영역
 
 
-$(document).ready(function(){
+function setController() {
 	//동영상 컨트롤 동작
 	$("#prog_ball").bind("mousedown", function(){
 		var vdo = document.querySelector('#vdo');
@@ -567,7 +570,7 @@ $(document).ready(function(){
 		var ball_Half_H = parseInt($('.sc_ball').height() /2);
 		var pos = event.clientY - ($('.sc_paper').position().top + $('.script_wrap').position().top + $('.scController').position().top);
 		pos -= ball_Half_H;
-		//console.log("dragxy: " + event.clientY);		
+		//console.log("dragxy: " + event.clientY);
 		var limit = scLimit;
 		var pos = Math.max(limit[0], Math.min(limit[1], pos));
 		setSc(pos);
@@ -642,7 +645,7 @@ $(document).ready(function(){
 			if(!$('.txt_two').hasClass('display-none')){
 				$('.txt_two').addClass('display-none');
 			}
-			tm.style.top = "365px";
+			tm.style.top = "125px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap').hasClass('btn_caption_en_off')){
 				$('#prog_cap').removeClass('btn_caption_en_off');
@@ -657,7 +660,7 @@ $(document).ready(function(){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "365px";
+					tm.style.top = "125px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap').hasClass('btn_caption_en_on')){
@@ -704,7 +707,7 @@ $(document).ready(function(){
 			if(!$('.txt_one').hasClass('display-none')){
 				$('.txt_one').addClass('display-none');
 			}
-			tm.style.top = "365px";
+			tm.style.top = "125px";
 			isTrans.innerHTML='on';
 			if($('#prog_cap2').hasClass('btn_caption_kr_off')){
 				$('#prog_cap2').removeClass('btn_caption_kr_off');
@@ -712,14 +715,14 @@ $(document).ready(function(){
 			}
 			//자막이 펼쳐져 있는 경우 (1 : 영어자막이 펼쳐진 경우, 2: 한글자막이 펼쳐진 경우)
 		}else if(isTrans.innerHTML =='on'){
-			//한글자막이 펼쳐진 경우
+			//한글자막이 펼쳐진 경우s
 			if(!$('.txt_two').hasClass('display-none')){
 				//자막을 닫아야함.
 				if(!$(em).hasClass('display-none')){
 					$(em).addClass('display-none');
 				}else{
 					$(em).removeClass('display-none');
-					tm.style.top = "365px";
+					tm.style.top = "125px";
 				}
 				isTrans.innerHTML='off';
 				if($('#prog_cap2').hasClass('btn_caption_kr_on')){
@@ -778,12 +781,13 @@ $(document).ready(function(){
 		}else{
 			$(isShow).removeClass('on');
 			$(isShow).addClass('off');
-			showhideScript(3);
+			showhideScript(0);
 			$(btn_trans).removeClass('btn_trans_video_on');
 			$(btn_trans).addClass('btn_trans_video_off');
 		}
 	}, false);
-});
+}
+
 
 
 function showhideScript(num){
