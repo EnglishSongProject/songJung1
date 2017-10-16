@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4917529e-e438-451a-acc0-96fe74387e90" name="Default" comment="">
 <<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/index_05.xhtml" afterPath="$PROJECT_DIR$/OPS/index_05.xhtml" />
+=======
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/index_02.xhtml" afterPath="$PROJECT_DIR$/OPS/index_02.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/index_04.xhtml" afterPath="$PROJECT_DIR$/OPS/index_04.xhtml" />
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/js/common.js" afterPath="$PROJECT_DIR$/OPS/js/common.js" />
 =======
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/16_mediaInfo.js" />
@@ -47,8 +51,8 @@
       <file leaf-file-name="index_03.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3287">
-              <caret line="200" column="35" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
+            <state relative-caret-position="-1140">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
 =======
       <file leaf-file-name="index_16.xhtml" pinned="false" current-in-tab="true">
@@ -74,6 +78,10 @@
       <file leaf-file-name="index_04.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="498">
+              <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+=======
             <state relative-caret-position="465">
               <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
 =======
@@ -83,24 +91,29 @@
             <state relative-caret-position="459">
               <caret line="59" column="204" lean-forward="true" selection-start-line="59" selection-start-column="204" selection-end-line="59" selection-end-column="204" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_05.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
+      <file leaf-file-name="index_13.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_13.xhtml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_15.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OPS/index_15.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="323">
-              <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPS/js/01.js">
-          <provider selected="true" editor-type-id="text-editor">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+=======
 <<<<<<< HEAD
             <state relative-caret-position="95">
               <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
@@ -108,11 +121,20 @@
             <state relative-caret-position="279">
               <caret line="134" column="40" lean-forward="false" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="40" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="index_14.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_14.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+              <folding />
+=======
       <file leaf-file-name="package.opf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/package.opf">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,10 +149,18 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="index_05.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+=======
 <<<<<<< HEAD
       <file leaf-file-name="04.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/js/04.js">
@@ -141,11 +171,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="05.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/js/05.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+=======
 <<<<<<< HEAD
       <file leaf-file-name="04_mediaInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/js/04_mediaInfo.js">
@@ -169,11 +207,19 @@
             <state relative-caret-position="368">
               <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="05_mediaInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/js/05_mediaInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+=======
 <<<<<<< HEAD
       <file leaf-file-name="index_07.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/index_07.xhtml">
@@ -187,19 +233,25 @@
             <state relative-caret-position="80">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
+=======
+<<<<<<< HEAD
       <file leaf-file-name="index_01.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OPS/index_01.xhtml">
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="66" column="193" selection-start-line="66" selection-start-column="193" selection-end-line="66" selection-end-column="193" />
+            <state relative-caret-position="498">
+              <caret line="591" column="48" selection-start-line="591" selection-start-column="48" selection-end-line="591" selection-end-column="48" />
               <folding>
-                <marker date="1508071566770" expanded="true" signature="21401:21406" ph="..." />
+                <marker date="1508144335607" expanded="true" signature="58237:58241" ph="{...}" />
               </folding>
 =======
       <file leaf-file-name="index_02.xhtml" pinned="false" current-in-tab="false">
@@ -300,7 +352,6 @@
         <option value="$PROJECT_DIR$/OPS/js/05_mediaInfo.js" />
         <option value="$PROJECT_DIR$/OPS/css/16.css" />
         <option value="$PROJECT_DIR$/OPS/css/05.css" />
-        <option value="$PROJECT_DIR$/OPS/index_05.xhtml" />
         <option value="$PROJECT_DIR$/OPS/js/05.js" />
         <option value="$PROJECT_DIR$/OPS/js/12.js" />
         <option value="$PROJECT_DIR$/OPS/index_14.xhtml" />
@@ -311,6 +362,11 @@
         <option value="$PROJECT_DIR$/OPS/js/03.js" />
         <option value="$PROJECT_DIR$/OPS/index_03.xhtml" />
         <option value="$PROJECT_DIR$/OPS/index_02.xhtml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/OPS/index_04.xhtml" />
+        <option value="$PROJECT_DIR$/OPS/js/common.js" />
+        <option value="$PROJECT_DIR$/OPS/index_05.xhtml" />
+=======
         <option value="$PROJECT_DIR$/OPS/js/common.js" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/OPS/index_04.xhtml" />
@@ -319,6 +375,7 @@
         <option value="$PROJECT_DIR$/OPS/js/16.js" />
         <option value="$PROJECT_DIR$/OPS/index_16.xhtml" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
       </list>
     </option>
   </component>
@@ -461,11 +518,12 @@
     </key>
   </component>
 <<<<<<< HEAD
+  <component name="RunManager" selected="JavaScript Debug.index_15.xhtml">
+=======
+<<<<<<< HEAD
   <component name="RunManager" selected="JavaScript Debug.index_05.xhtml">
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
     <configuration default="false" name="index_03.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_03.xhtml">
-      <method />
-    </configuration>
-    <configuration default="false" name="index_01.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_01.xhtml">
       <method />
     </configuration>
     <configuration default="false" name="index_02.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_02.xhtml">
@@ -573,6 +631,9 @@
       <envs />
       <patterns />
 >>>>>>> feature/16_dev
+    </configuration>
+    <configuration default="false" name="index_15.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_15.xhtml">
+      <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -905,18 +966,18 @@
     <configuration name="index_12.xhtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/songJung1/aspen/OPS/index_12.xhtml" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_02.xhtml" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_04.xhtml" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_02.xhtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_04.xhtml" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_04.xhtml" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_02.xhtml" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_01.xhtml" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_15.xhtml" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_05.xhtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_03.xhtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_04.xhtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_02.xhtml" />
       </list>
     </recent_temporary>
   </component>
@@ -935,20 +996,28 @@
       <updated>1508043979765</updated>
       <workItem from="1508043981023" duration="28824000" />
 <<<<<<< HEAD
+      <workItem from="1508118186568" duration="24784000" />
+=======
+<<<<<<< HEAD
       <workItem from="1508118186568" duration="21987000" />
 =======
       <workItem from="1508118186568" duration="19703000" />
       <workItem from="1508140101841" duration="2699000" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="53608000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="50811000" />
 =======
     <option name="totallyTimeSpent" value="51226000" />
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -966,7 +1035,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01904762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1013,6 +1082,9 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/OPS/index_12.xhtml">
+=======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/OPS/index_11.xhtml">
 =======
     <entry file="file://$PROJECT_DIR$/OPS/css/12.css">
@@ -1027,6 +1099,7 @@
     <entry file="file://$PROJECT_DIR$/OPS/js/12_mediaInfo.js" />
     <entry file="file://$PROJECT_DIR$/OPS/css/video_role.css">
 >>>>>>> feature/16_dev
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="80" lean-forward="false" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
@@ -1091,6 +1164,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/OPS/css/09.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1099,6 +1174,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
     <entry file="file://$PROJECT_DIR$/OPS/js/02_mediaInfo.js">
 =======
     <entry file="file://$PROJECT_DIR$/OPS/js/08_mediaInfo.js" />
@@ -1145,6 +1221,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/OPS/css/16.css">
+=======
     <entry file="file://$PROJECT_DIR$/OPS/js/10.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1153,6 +1232,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_10.xhtml">
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="37" column="105" lean-forward="false" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
@@ -1185,6 +1265,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml" />
     <entry file="file://$PROJECT_DIR$/OPS/css/05.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1194,6 +1276,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
     <entry file="file://$PROJECT_DIR$/OPS/js/12.js">
 =======
     <entry file="file://$PROJECT_DIR$/OPS/css/03.css" />
@@ -1264,6 +1347,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/OPS/index_17.xhtml">
+=======
     <entry file="file://$PROJECT_DIR$/OPS/js/16_mediaInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1273,6 +1359,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_15.xhtml">
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1380,7 +1467,7 @@
         <state relative-caret-position="197">
           <caret line="66" column="193" selection-start-line="66" selection-start-column="193" selection-end-line="66" selection-end-column="193" />
           <folding>
-            <marker date="1508071566770" expanded="true" signature="21401:21406" ph="..." />
+            <marker date="1508142245771" expanded="true" signature="22292:22297" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1393,6 +1480,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3287">
@@ -1431,6 +1520,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+>>>>>>> 9529cbf5b0108eaa971d1ced9667210e07f52ae9
     <entry file="file://$PROJECT_DIR$/OPS/js/04_mediaInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1457,16 +1547,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_04.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+        <state relative-caret-position="498">
+          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_03.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/05_mediaInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/05.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="591" column="48" selection-start-line="591" selection-start-column="48" selection-end-line="591" selection-end-column="48" />
+          <folding>
+            <marker date="1508144335607" expanded="true" signature="58237:58241" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_13.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_14.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/index_15.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>

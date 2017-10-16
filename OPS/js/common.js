@@ -549,7 +549,6 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
     }
 }
 function radioCheck(questionId, names, answers) {
-    var questionId = document.getElementById(questionId);
     var answerNameArray;
     var answerArray;
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
@@ -564,7 +563,7 @@ function radioCheck(questionId, names, answers) {
     }
     var totalForCorrect=0;
 
-    if(questionId.title =='답안') {
+    if($(questionId).hasClass('btn_answer')) {
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
         questionId.title ='다시풀기';
@@ -589,7 +588,7 @@ function radioCheck(questionId, names, answers) {
             $(name[answerArray[i]]).addClass('false');
         }
 
-    }else if (questionId.title == '다시풀기'){
+    }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
         questionId.title = '답안';
@@ -1287,7 +1286,6 @@ function openPopup(popupId){
 
 function checkBoxCheckForMulti(btnId, checkboxName, answerArray) {
     //체크박스는 무조건 2개 이상이므로 따로 예외처리를 하지 않는다.
-    var btnId = $('#'+btnId);
     var checkboxName = document.getElementsByName(checkboxName);
     var answerArray = answerArray;
     if(answerArray.length > 1){
