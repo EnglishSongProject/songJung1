@@ -37,4 +37,9 @@ $(function () {
 		$('.btn_sounds').show();
 	});
 });
+function videoPlayCheck(){
+	if (window.HTMLVideoElement) {
+
+	}
+};
 
