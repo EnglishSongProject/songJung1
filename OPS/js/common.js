@@ -509,7 +509,6 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
         answerIdArray = [Ids];
         clearArray = [clearId];
     }
-    console.log($(questionId));
     if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
@@ -666,16 +665,14 @@ function textClearByNames(name,ck_list) {
 
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
-    var questionId = document.getElementById(questionId);
     var answerArray;
     if(inputId.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
         answerArray = answer.split('+');
         inputId = inputId.split('+');
     }
-    if(questionId.title =='답안'){
+    if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
-        questionId.title ='다시풀기';
         var correctCheck = 0;
         for(var i=0; i<inputId.length; i++){
             var id = document.getElementById(inputId[i]);
@@ -701,10 +698,9 @@ function listenAndNumberCheck(questionId, inputId, answer) {
                 }
             }
         }
-    }else if (questionId.title == '다시풀기'){
+    }else if ($(questionId).hasClass('btn_repeat')){
         $(questionId).removeClass('btn_repeat');
         $(questionId).addClass('btn_answer');
-        questionId.title = '답안';
         for(var i=0;i<inputId.length;i++){
             var id = document.getElementById(inputId[i]);
             if(id.value != null && id.value != ''){
