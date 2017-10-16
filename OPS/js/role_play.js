@@ -24,22 +24,22 @@ function role_play(){
     var timeLine = 2.69;
     var isPlaying = false;
     var timeID = null;
-    
+
     var role_player_list = [
         {
-            audio: "./media/audio/L01/010/add/L01_010_LS1_add_03_a.mp3",
+            audio: "./media/audio/L01/010/L01_010_LS1_add_03_a.mp3",
             timeLine: 2.69
         },
         {
-            audio: "./media/audio/L01/010/add/L01_010_LS1_add_03_b.mp3",
+            audio: "./media/audio/L01/010/L01_010_LS1_add_03_b.mp3",
             timeLine: 2.50
         },
         {
-            audio:  "./media/audio/L01/010/add/L01_010_LS1_add_03_c.mp3",
+            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_c.mp3",
             timeLine: 2.60
         },
         {
-            audio:  "./media/audio/L01/010/add/L01_010_LS1_add_03_d.mp3",
+            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_d.mp3",
             timeLine: 1.95
         }
     ];
@@ -104,7 +104,7 @@ function role_play(){
                     }
                     selectedSide = "all"
                 }
-                
+
             })
         }
 
@@ -134,7 +134,7 @@ function role_play(){
         });
 
         //rpAudio.addEventListener("timeupdate",updateProgress);
-       
+
         rpAudio.addEventListener("ended", function (e) {
             stopAudio();
         });
@@ -196,7 +196,7 @@ function role_play(){
             clearInterval(timeID);
         }
         timeID = setInterval(updateProgress,10);
-        
+
     }
 
     function pauseAudio(){
@@ -206,7 +206,7 @@ function role_play(){
 
         clearInterval(timeID);
         timeID = null;
-        
+
     }
 
     function stopAudio(){

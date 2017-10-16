@@ -499,7 +499,6 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
     var answerId;
     var inputId;
     var score = 0;
-    console.log(Ids);
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
     //포함하고 있지 않다면 단일 빈칸 체크임
@@ -510,6 +509,7 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
         answerIdArray = [Ids];
         clearArray = [clearId];
     }
+    console.log($(questionId));
     if($(questionId).hasClass('btn_answer')){
         $(questionId).removeClass('btn_answer');
         $(questionId).addClass('btn_repeat');
@@ -737,8 +737,8 @@ function showScriptPopupTopLeft(target, top, left){
     closeImg.style.width='20px';
     text.style.padding='0px 10px';
     text.style.marginTop='30px';
-    var top = top;
-    var left = left;
+    console.log(top);
+    console.log(left);
     popup.className = "scriptPopup";
     $(popup).addClass(targetId);
     target.parentNode.appendChild(popup);
@@ -755,6 +755,7 @@ function showScriptPopupTopLeft(target, top, left){
         var displayTrans = document.getElementsByClassName('transText '+targetId);
         $(displayTrans).toggle();
     });
+
     text.innerHTML=textInit[0].outerHTML;
     $(text.childNodes).removeClass('display-none');
     var transText = text.children[0].children;
@@ -765,6 +766,7 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.display='none';
             transText[i].style.position='absolute';
             transText[i].style.fontSize='11px';
+            transText[i].style.fontWeight='bold';
             transText[i].style.fontFaceName='Open Sans';
             transText[i].style.color='#339900';
             transText[i].style.top=transTextTop.toString()+'px';

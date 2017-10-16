@@ -74,14 +74,14 @@ font-family: 'Nanum Gothic';font-size:18px !important;font-weight:bold !importan
 .roleplayBt img{width:80px;position:absolute;right:10px;bottom:10px;cursor: pointer;}
 
 
-.sounds_bk{display:/* none */inline-block;background: url(../asset/I/a15b61cdff564258a6d4f122f4faa0de.png)no-repeat 0 0;background-size:cover; position:absolute;left:516px;top:783px;width: 248px;height: 187px;z-index:100007799}
+.sounds_bk{display:none;background: url(../asset/I/a15b61cdff564258a6d4f122f4faa0de.png)no-repeat 0 0;background-size:cover; position:absolute;left:516px;top:783px;width: 248px;height: 187px;z-index:100007799}
 .sounds_bk span{position:absolute;right:33px;top:46px;}
 .sounds_bk span img{width:15px; height:15px;}
 .sounds_bk ul:nth-of-type(1){width:160px;margin-left:48px;margin-top:15px;}
 .sounds_bk ul:nth-of-type(1) li{width:73px;}
 
 .sounds_bk ul:nth-of-type(2){margin-top:19px;width:200px;margin-left:46px;}
-.sounds_bk ul:nth-of-type(2) li{line-height:21px;font-size:17px;font-family: 'Open Sans';font-size:14px;}
+.sounds_bk ul:nth-of-type(2) li{line-height:25px;font-size:17px;font-family: 'Open Sans';font-size:14px;}
 .sounds_bk ul li{font-weight:400;display:inline-block;}
 .sounds_bk > p{font-family: 'Nanum Gothic';font-size:15px;font-weight:800;margin-left:48px;margin-top:15px;color:#fff;}
 .sounds_bk em{font-style: normal;color: rgb(1, 1, 255);font-weight:600;}

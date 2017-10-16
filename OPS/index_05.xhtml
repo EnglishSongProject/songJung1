@@ -20,6 +20,12 @@
 <!--${WGTS_LIBS}-->
 
 <title>Digital Textbook</title>
+	<style>
+		.tabInner_2 li label:before{
+			background: none;
+			border: none;
+		}
+	</style>
 </head>
 <body style="padding:0;background-color:#ffffff;font-family:Arial, Tahoma, Verdana, sans-serif;margin:0;">
 <div style="user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:-1px;top:0px;width:772px;height:1024px;z-index:100007256;" class="apxWgt1" data-apx-id="123137A37_">
@@ -33,7 +39,7 @@
 	<ul class="tabArea">
 		<li class="TabBt_G  on"><span class="audio_play" data-name="L01_012_act_a01_01" data-type="no-color">Guess</span>
 			<ul class="tabInner_1">
-				<button type="button" class="btn_type_02 btn_repeat" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button>
+				<li><button type="button" class="btn_type_02 btn_repeat" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a01_01_1">What are they doing?</h1></li>
 				<li><img src="asset/I/6afdd3b528e34cf2a297f35dfb09d01f.png" alt="roleplay이미지" /></li>
 				<li><textarea></textarea></li>
@@ -41,7 +47,7 @@
 		</li>
 		<li class="TabBt_L"><span class="audio_play" data-name="L01_012_act_a02" data-type="no-color">Listen</span>
 			<ul class="tabInner_2">
-				<button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button>
+				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a02_1">Which is NOT true about Mr. Jackson?</h1></li>
 				<li class="audio_play" data-name="L01_012_act_a02_w02_1"><input type="radio" name="Tab2_Q" id="Tab2_num1" /><label for="Tab2_num1">1</label> He is an English teacher.</li>
 				<li class="audio_play" data-name="L01_012_act_a02_w03_1"><input type="radio" name="Tab2_Q" id="Tab2_num2" /><label for="Tab2_num2">2</label> He is from Canada.</li>
@@ -50,7 +56,7 @@
 		</li>
 		<li class="TabBt_LA"><span class="audio_play" data-name="L01_012_act_a03" data-type="no-color">Listen Again</span>
 			<ul class="tabInner_3">
-				<button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button>
+				<li><button type="button" class="btn_type_02 btn_answer" style="position:absolute;z-index:1000000000;top:17px;left:344px" title="다시하기" onclick="textClear();">다시하기</button></li>
 				<li><h1 class="audio_play" data-name="L01_012_act_a03_1">Complete Jiwon’s talk.</h1></li>
 				<li class="bubble_yel">
 						<div class="audio_play" data-name="L01_012_act_a03_02_re">I am <div><input type="radio" name="Q_1" id="year10"/><label for="year10">10</label></div><div><input type="radio" name="Q_1" id="year11"/><label for="year11" style="margin-left:5px">11</label></div> years old.</div>
@@ -67,7 +73,7 @@
 	<div class="sounds_bk">
 		<p>Sounds</p>
 		<span>
-			<button><img src="asset/I/29749c9cc8e84072b325d32288753332.png" alt="닫기" /></button>
+			<button class="close_sounds_pop"><img src="asset/I/29749c9cc8e84072b325d32288753332.png" alt="닫기" /></button>
 		</span>
 		<ul>
 			<li class="audio_play" data-name="L01_012_act_b_sc01">n<em>i</em>ckname</li>

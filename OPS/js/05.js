@@ -26,5 +26,15 @@ $(function () {
 		}
 		setRoles();
 	});
+
+	$('.btn_sounds').on('click', function () {
+		$(this).hide();
+		$('.sounds_bk').show();
+	});
+
+	$('.close_sounds_pop').on('click', function () {
+		$('.sounds_bk').hide();
+		$('.btn_sounds').show();
+	});
 });
 

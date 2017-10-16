@@ -1,0 +1,55 @@
+.popup { display: none; z-index: 999999999999 !important; background: #FFFFFF;}
+
+#self_check_div {
+    position: absolute;
+    top: 0;
+    left: 768px;
+    transition: 0.5s;
+    z-index: 999999999991;
+}
+
+#self_check_div.on {
+    left: 46px;
+}
+
+#self_check {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 999999999999;
+}
+
+#bo_1 {
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+#bo_2 {
+    position: absolute;
+    top: 300px;
+    display: none;
+}
+
+#bo_3 {
+    position: absolute;
+    top: 330px;
+    display: none;
+}
+
+#sim_1 {
+    position: absolute;
+    top: 50px ;
+    display: none;
+}
+
+#sim_2 {
+    position: absolute;
+    top: 300px;
+    display: none;
+}
+
+#sim_3 {
+    position: absolute;
+    top: 330px;
+    display: none;
+}
