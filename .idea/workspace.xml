@@ -2,134 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4917529e-e438-451a-acc0-96fe74387e90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/00a88d68f1fa440088d78d22c340a219.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/02d2beb58d534204a58a55e88c486116.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/031c31c99ea84bafa838c364379e33fc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/0610ab8d149c4252a1c304612b197167.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/06beea3602244edd8bfdda360114bc58.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/0709bc60a16a476e83b37de91012a367.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/0941ace3ce6b41b5aa71d0d324835f6f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/0998b1b473334d668437c2b863ece3ff.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/0b9ec3c3253b4dc7abaecac25ff43f30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/14e537119fe749ee97079d4f9a3d3ebe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/172bc5d5c2ae45b096c4cb533b392773.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/1b88b37e96f240eba1e09c39cfd09473.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/24e3f2b45d2245ab9a96b677be03068e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/2518063339c44ddebe5b6b3f9af1ee18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/28d5729591684adbb89e6ae96cccff4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/28fa34757e2a432dbdce1fbea21f271c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/29749c9cc8e84072b325d32288753332.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/2a3d0f9eefde40ad85a5381664450c6e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/2bb2631a4013412cbe9a180cb59bd2ed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/2ea150f904de40d598622d83a6c80af8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/2fdc197996094788aaf1df0c26c865f6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/31ba505e37834d0ca0336f7c2cdb872f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/3689f1c06b264373b21db3fbf90141d6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/3a765d014c444c3db98d3f07c64e1cae.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/3b6fb3c246484ceeb6d1cec51871273f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/3c31c87fbcb040e9abcabb1a39a15874.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/3d15be13b954498595a6bdd408fd79b5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/4397b8c3682f4e96b11b2cbf0aa76362.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/43e94595505a47c8acdfd81081b419d1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/4d334318c62943119744c687488cc2c7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/4e21cfa9e767454f85736195ee678091.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/534b6d74477a42adabdde22ba61094e1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/53d06aa0e8fc4216b1a7e5a4b21235ae.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/56213fdeab7546e3a1d0094ae369ce85.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/5a789201c8b64f60a8894d52ca71d618.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/5b902ca372034626bc8d14a98f4df629.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/5cd08b4bca074b249b686de7deff4802.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/5ea7f0e135e44b1188e365c944c7ec37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6157e0e3f1f84790878046417a2775b0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/61773b4d853845c5a656da4c6dcda0ab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/69eddf6325364deea3b9950c3b7b1cc1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6afdd3b528e34cf2a297f35dfb09d01f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6b0ba691550f4b4582f35bd883f452b0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6bebada3297849eebfcdcf358dcf14dd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6cf64bb413d64314ac3d533cbd468699.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/6d76ea2a79044a208430cb34da3c5511.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/720e0a1186304a27990874a1136bb51e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/754a2e713d52491991327e31f3013f65.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/75c470a4c66a4e1aa56d9f012ebdf879.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/7d5a770d3fb74affa44230efa4520c35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/7eda593ca1834b20b80f0d09a34f0c26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/7f6dd4f6671140fa86944a80fc8c7f29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/85547dc732f5443fadc458b4308a4482.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/881e639ae5f54743ad488edc97c07518.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/88cd2c4b1bf14df1840286ddeb047579.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/88dc8ebdb1a24a5ab8eab45a10629197.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/89c97807c9724e1f9cbf955d051f2a5e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/8f893e557afe42f3b50b6243ea41e804.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/9951c70cee2945fcb38d63977f70d8a3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/9d8081deb1654f1da9cb2c9905be8fd4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/9e78bdd3f0ca408e875ca65272d9e04b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/a15b61cdff564258a6d4f122f4faa0de.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/a192041132b24ee38aa283f22cd0d2d0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/a235e58f8f914f04bba395fed85005ac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/a6eab4ab38884e57bd342b9a1e4e77cb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/a6fc986216ee431a97e5f714e72156ab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/aa78d1b85ce8488db0b3db647b269f84.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/aa8c2a8fab90498ab21a40177d32980a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ac83698ecd404264b715e5c4a4355e3d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ad6f8ddda76e46ac9a29f7a5ed9c2a50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/add12eac2eea45bf9176b381b42597f0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b00104d6dffa487a80f2c3d5fdfe3475.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b3a3838dee5d4afbad21eed1ca533237.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b5b77bd6eafd445396caff24a193ebcc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b623651399104252acd610d54a532663.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b65417503d974cbdad9a6b1d4e0975e3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/b656276d0e004cb3a1954fbd70243fb4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/bb6e3fe73dfa416291e28ae6f6e4995d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/bc086c70c8fc4109b2b1a164f39e8778.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c0f05eb0951d460d86d146febe34ad3c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c168f6e3f5d34f3484efa9098ae06c5c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c31e7582cc3946d8b1cbee5e5677de11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c3527e9868894bfd916f408f6c8fca25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c3f4d7615a5c441da95e6df6401a95b3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c73451027a9746c29122a8f36759f644.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c8479bbc298c4b66b4540cb6906054fb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/c97a05d2d1734fde8951c84d3c6068fc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/cb8f8be8f196493f82d383e3588a29f9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/cd47575c757f43e18b258c2a90fd5ec1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/cda48ca9f2274f50b9f0667ffe0a91bc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/cfc995e2a684495e8290328ed042a421.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/d15b672d575842dbb6c0b267b295b3aa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/d31153ffec6d49fcb8d82c1567b7f777.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/d4e4f4bcf6164de4921003ee21c5d1d7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/d5a96dccd2d0483a8e2f3cca52d6605a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/d6edb81a4b7a4311913f41549ccbb768.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/defa808359914ad4a69a523726e9f4ba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/e000c9f08caa4602a45525c056e07b2a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/e13242c3c7e44a4c99890fcc7b0a51c6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/e3e5a44e7414446598946f06033087bc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/e596e07dad2043889cc2e205e920a2ff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/e9aeb9a781774a95abe430e5da095e3e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ea6c79812ecd4c218ac214275c48c77f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ec9e6aa0052347b8ba23e1555f577ef7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ee45247f118a48278faf9d164f922c60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/ee8288a0677747cfa35d5e2f886591ce.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/f0b7274569ca4203a1a8934d903d956c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/f113b5956c844f3e88636f31cc5e929b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/f1257ec819ec4feb988e949e7f7c0d39.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/f419ac477ccb4f82bc79a707affdadd9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/f52e81bae2884dca8d23264c486bdd7f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/fbcefb7ac8bb40fca4c7409fd4495708.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/fbcf5e4f94aa4351b0b0e2a8163be00b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/asset/I/sound.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/css/05.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/css/12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/css/video_role.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/index_05.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/05.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/05_mediaInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/12.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OPS/js/12_mediaInfo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OPS/media/audio/L01/012/add/Sequence_01.mp3" afterPath="$PROJECT_DIR$/OPS/media/audio/L01/012/Sequence_01.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OPS/media/audio/L01/012/add/rollplay_all.mp3" afterPath="$PROJECT_DIR$/OPS/media/audio/L01/012/rollplay_all.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/css/bxPageTransition.css" afterPath="$PROJECT_DIR$/OPS/css/bxPageTransition.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/css/video.css" afterPath="$PROJECT_DIR$/OPS/css/video.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/index_12.xhtml" afterPath="$PROJECT_DIR$/OPS/index_12.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OPS/js/common.js" afterPath="$PROJECT_DIR$/OPS/js/common.js" />
     </list>
     <ignored path="aspen.iws" />
@@ -224,10 +97,10 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="1402" column="76" selection-start-line="1402" selection-start-column="76" selection-end-line="1402" selection-end-column="76" />
+            <state relative-caret-position="484">
+              <caret line="1405" column="38" selection-start-line="1405" selection-start-column="38" selection-end-line="1405" selection-end-column="38" />
               <folding>
-                <marker date="1508130288167" expanded="true" signature="58307:58311" ph="{...}" />
+                <marker date="1508131076952" expanded="true" signature="58370:58374" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -932,12 +805,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508043979765</updated>
       <workItem from="1508043981023" duration="28824000" />
-      <workItem from="1508118186568" duration="10809000" />
+      <workItem from="1508118186568" duration="11453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39633000" />
+    <option name="totallyTimeSpent" value="40277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1060,6 +933,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,14 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OPS/js/05_mediaInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/index_05.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1398">
@@ -1422,12 +1288,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OPS/js/05_mediaInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OPS/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="1402" column="76" selection-start-line="1402" selection-start-column="76" selection-end-line="1402" selection-end-column="76" />
+        <state relative-caret-position="484">
+          <caret line="1405" column="38" selection-start-line="1405" selection-start-column="38" selection-end-line="1405" selection-end-column="38" />
           <folding>
-            <marker date="1508130288167" expanded="true" signature="58307:58311" ph="{...}" />
+            <marker date="1508131076952" expanded="true" signature="58370:58374" ph="{...}" />
           </folding>
         </state>
       </provider>

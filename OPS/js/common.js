@@ -1398,11 +1398,11 @@ function setPopVideo() {
             case 'role-script':
                 progLimit = [0, 200];
                 progBallLeft = 340;
-                transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off'></div><div id='prog_sct' class='btn_script_off'></div>";
+                transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off display-none'></div><div id='prog_sct' class='btn_script_off'></div>";
                 roleText += "<ul class='role_list'><li id='role_1' class=''>";
                 roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li>";
-                roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li>";
-                roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li></ul>";
+                roleText += "<li id='role_2' class=''><img src='"+roleImgPath+imgArray[1]+"'/></li>";
+                roleText += "<li id='role_3' class=''><img src='"+roleImgPath+imgArray[2]+"'/></li></ul>";
                 transText += roleText;
                 //boola boola
                 break;
