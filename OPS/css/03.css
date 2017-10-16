@@ -14,3 +14,34 @@
     top: -320px;
     left: 487px;
 }
+
+.C_tap{width:390px; height:70px; z-index:100008888;top:890px; left:94px;background-color:transparent;}
+/*Match and Talk */
+.C_tap .eg {position: relative;top:-3px;left:0; font:22px 'Faustina' ;line-height: 1; float:left; padding-left:45px; letter-spacing: 0.5px}
+.C_tap .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 20px 'Noto Sans KR'; color:#595B60}
+.C_tap .eg em { font:18px 'Faustina'; }
+.C_tap .eg .blue {color:#0101ff;}
+.C_tap .eg div > span{position: absolute;  top: 18px;  font-size: 11px;  line-height: 30px;  color: #339900;}
+
+.select_area {position: absolute; left:40px; top:28px}
+.select_name {position: absolute; width:120px; height:120px; top:0}
+.select_name:nth-of-type(1) {left:0px}
+.select_name:nth-of-type(2) {left:153px}
+.select_name:nth-of-type(3) {left:321px}
+.select_name:nth-of-type(4) {left:483px}
+.select_name span {position: absolute;font:15px 'Noto Sans KR' ;}
+.select_name:nth-of-type(1) span {top: 63px; left: 67px; }
+.select_name:nth-of-type(2) span {top: 58px; left:76px; }
+.select_name:nth-of-type(3) span {top:56px; left:75px; }
+.select_name:nth-of-type(4) span {top:55px; left:66px; }
+.select_name:hover span {color:#a14796}
+
+.target_sentence {position: absolute;left: 32px; bottom: 35px;;padding: 1px;}
+.target_sentence span {position: absolute; top:0; display: inline-block; width: 110px; font:17px "Noto Sans KR";}
+.target_sentence span:nth-of-type(1) {left:23px}
+.target_sentence span:nth-of-type(2) {left:185px}
+.target_sentence span:nth-of-type(3) {left:345px}
+.target_sentence span:nth-of-type(4) {left:495px}
+
+.btn_tip {position:absolute; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
+.tip_con {font:13px "Noto Sans KR"; display:none;}
