@@ -33,6 +33,21 @@
         @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff');}
     </style>
     <title>Digital Textbook</title>
+    <style>
+        .imsi-label-ssibal{
+            font-family: 'Open Sans';
+            font-size: 15px !important;
+            display: inline-block;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            padding-left: 6px;
+            padding-right: 6px;
+            border: none;
+            background: none;
+        }
+    </style>
 </head>
 <body style="padding:0;background-color:#ffffff;font-family:Arial, Tahoma, Verdana, sans-serif;margin:0;">
 <div style="user-select:text;-ms-user-select:text;-webkit-user-select:text;-moz-user-select:text;overflow:hidden;left:-2px;top:0px;width:768px;height:1024px;z-index:100006855;" class="apxWgt1" data-apx-id="119003A16_">
@@ -40,7 +55,6 @@
     <img src="asset/I/6c5ff49334a24a7fa4f8561b49636520.png" style="left:722px;top:23px;width:48px;height:138px;z-index:1000069210;" class="apxWgt1" data-apx-id="119069A16_" id="self_check"/>
     <button type="button" class="btn_mp3_a btn_type_02 audio_play" style="left:397px;top:60px;width:30px;height:30px;z-index:100006933;"
             data-name="L01_023_wrap_01_full" data-type="multi"></button>
-    <img src="asset/I/f28396bad2914f39b25e257c6904e034.png" style="left:429px;top:60px;width:30px;height:30px;z-index:100006934;" class="apxWgt1" data-apx-id="119082A16_"/>
     <div style="left:44px;top:68px;width:63px;height:19px;z-index:100006863;font:bold 20px Noto Sans;color:#2C8159;text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:19px;" class="apxWgt1" data-apx-id="119011A16_">LISTEN</div>
     <div style="left:144px;top:70px;width:31px;height:13px;z-index:100006862;font:bold 15px Noto Sans KR;color:rgb(133,134,138);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:13px;" class="apxWgt1" data-apx-id="119010A16_">[1-2]</div>
     <div style="left:182px;top:71px;width:208px;height:13px;z-index:100006864;font:bold 15px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:13px;" class="apxWgt1 audio_play" data-apx-id="119012A16_" data-name="L01_023_wu_kor_01">대화를 듣고, 물음에 답해 봅시다.</div>
@@ -50,20 +64,32 @@
     <div style="left:93px;top:101px;width:29px;height:27px;z-index:100006949;font:bold 13px Nanum Gothic;color:#FFFFFF;text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:27px;" class="apxWgt1" data-apx-id="119419A16_" id="sim_1_button">심화</div>
     <div style="left:152px;top:99px;width:8px;height:14px;z-index:100006865;font:20px Fredoka One;color:#ed9228;text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119013A16_">1</div>
     <div style="left:170px;top:100px;width:263px;height:13px;z-index:100006866;font:bold 15px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:13px;" class="apxWgt1 audio_play" data-apx-id="119014A16_" data-name="L01_023_wu_kor_02">소민이가 소개하는 두 사람을 골라 봅시다.</div>
-    <div style="left:197px;top:133px;width:14px;height:14px;z-index:100006857;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119005A16_">①</div>
+    <div style="left:197px;top:133px;width:14px;height:14px;z-index:100006857;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119005A16_">
+        <input type="checkbox" id="p23_c1_o" class="correct checkbox_1_b" name="p23_c1_o_a"/>
+        <label for="p23_c1_o" class="checkbox_1_b"></label>
+    </div>
     <img src="asset/I/4379635420a24647ae68934c4fdcaaa3.png" style="left:212px;top:138px;width:63px;height:71px;z-index:100006867;" class="apxWgt1" data-apx-id="119015A16_"/>
-    <div style="left:316px;top:133px;width:14px;height:14px;z-index:100006858;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119006A16_">②</div>
+    <div style="left:316px;top:133px;width:14px;height:14px;z-index:100006858;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119006A16_">
+        <input type="checkbox"  id="p23_c2_o" class="correct checkbox_2_b" name="p23_c1_o_a"/>
+        <label for="p23_c2_o" class="checkbox_2_b"></label>
+    </div>
     <img src="asset/I/45b6b78fe21542f3983c1ae1693f1a8e.png" style="left:340px;top:138px;width:41px;height:70px;z-index:100006868;" class="apxWgt1" data-apx-id="119016A16_"/>
-    <div style="left:424px;top:133px;width:14px;height:14px;z-index:100006860;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119008A16_">③</div>
+    <div style="left:424px;top:133px;width:14px;height:14px;z-index:100006860;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119008A16_">
+        <input type="checkbox"  id="p23_c3_o" class="correct checkbox_3_b" name="p23_c1_o_a"/>
+        <label for="p23_c3_o" class="checkbox_3_b"></label>
+    </div>
     <img src="asset/I/8ace0a2aa7b348d8bf06aec8b21d2c47.png" style="left:445px;top:137px;width:58px;height:71px;z-index:100006869;" class="apxWgt1" data-apx-id="119017A16_"/>
-    <div style="left:531px;top:134px;width:15px;height:14px;z-index:100006861;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119009A16_">④</div>
+    <div style="left:531px;top:134px;width:15px;height:14px;z-index:100006861;font:17px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119009A16_">
+        <input type="checkbox"  id="p23_c4_o" class="correct checkbox_4_b" name="p23_c1_o_a"/>
+        <label for="p23_c4_o" class="checkbox_4_b"></label>
+    </div>
     <img src="asset/I/1a0f7df4184c4844bf53b0bf84d6a958.png" style="left:561px;top:137px;width:46px;height:71px;z-index:100006870;" class="apxWgt1" data-apx-id="119018A16_"/>
     <div style="left:193px;top:217px;width:92px;height:33px;z-index:100006871;font:13px Nanum Gothic;color:#000000;text-align:center;word-wrap:break-word;line-height:16.9px;display:table;" class="apxWgt1" data-apx-id="119019A16_"><div style="display:table-cell;vertical-align:middle">Brian,<br/>New Zealand</div></div>
     <div style="left:335px;top:216px;width:47px;height:11px;z-index:100006859;font:13px Nanum Gothic;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:11px;letter-spacing:-0.42857142857142855px;" class="apxWgt1" data-apx-id="119007A16_">Sora, 14</div>
     <div style="left:423px;top:216px;width:92px;height:33px;z-index:100006872;font:13px Nanum Gothic;color:#000000;text-align:center;word-wrap:break-word;line-height:16.9px;display:table;" class="apxWgt1" data-apx-id="119020A16_"><div style="display:table-cell;vertical-align:middle">Brian,<br/>Canada</div></div>
     <div style="left:558px;top:216px;width:47px;height:11px;z-index:100006873;font:13px Nanum Gothic;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:11px;letter-spacing:-0.42857142857142855px;" class="apxWgt1" data-apx-id="119021A16_">Sora, 13</div>
     <button xmlns="http://www.w3.org/1999/xhtml" type="button" class="btn_type_02 btn_answer" title="답안" style="left:425px;top:261px;width:30px;height:30px;z-index:100006935;" onclick="blankCheckByCss(this, 'ls_1_1a+ls_1_2a', 'p16_wu_t1+p16_wu_t2')">답안</button>
-    <button xmlns="http://www.w3.org/1999/xhtml" type="button" class="btn_type_02 btn_answer" title="답안" style="left:363px;top:89px;width:30px;height:30px;z-index:100006935;">답안</button>
+    <button xmlns="http://www.w3.org/1999/xhtml" type="button" class="btn_type_02 btn_answer" title="답안" style="left:363px;top:89px;width:30px;height:30px;z-index:100006935;" onclick="checkBoxCheckForMulti(this, 'p23_c1_o_a', '1+2' );">답안</button>
     <div style="left:147px;top:270px;width:13px;height:14px;z-index:100006881;font:20px Fredoka One;color:#ed9228;text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:14px;" class="apxWgt1" data-apx-id="119029A16_">2</div>
     <div style="left:169px;top:271px;width:295px;height:13px;z-index:100006874;font:bold 15px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:13px;" class="apxWgt1 audio_play" data-apx-id="119022A16_" data-name="L01_023_wu_kor_03">대화 내용과 일치하도록 빈칸을 완성해 봅시다.</div>
     <div style="left:198px;top:298px;width:31px;height:15px;z-index:100006875;font:18px Noto Sans KR;color:rgb(43,46,52);text-align:left;overflow:visible;text-align:left;white-space:pre;line-height:15px;letter-spacing:1.6666666666666667px;" class="apxWgt1" data-apx-id="119023A16_">  Q:</div>
