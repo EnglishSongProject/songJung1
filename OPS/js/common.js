@@ -499,6 +499,7 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
     var answerId;
     var inputId;
     var score = 0;
+
     //해당 문자가 + 기호를 포함하고 있는가 확인한다.
     //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
     //포함하고 있지 않다면 단일 빈칸 체크임
@@ -517,6 +518,8 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
             inputId = document.getElementById(clearArray[i]);
             answerId = document.getElementById(answerIdArray[i]);
 
+            console.log(inputId,answerId)
+
             if(inputId.value.trim() == answerId.innerHTML) {
                 score++
             }
@@ -528,6 +531,7 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
         if(type == "type01" || type == "type02"){
             /*            alert(notice + "입니다");
              * 추후 정답 체크할 시, 필요할 로직*/
+
         }
 
     }else if ($(questionId).hasClass('btn_repeat')){
@@ -936,60 +940,7 @@ $(document).ready(function(){
         }
     }
 
-    function blankCheckByCss(questionId, Ids, clearId, type){
-        var questionId = document.getElementById(questionId);
-        var answerIdArray;
-        var clearArray;
-        var answerId;
-        var inputId;
-        var score = 0;
-        //해당 문자가 + 기호를 포함하고 있는가 확인한다.
-        //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
-        //포함하고 있지 않다면 단일 빈칸 체크임
-        if(Ids.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
-            answerIdArray =  Ids.split('+');
-            clearArray = clearId.split('+');
-        }else{//단일일경우(단일 빈칸체크일 경우
-            answerIdArray = [Ids];
-            clearArray = [clearId];
-        }
-        console.log(answerIdArray);
-        console.log(clearArray);
-        if($(questionId).hasClass('btn_answer')){
-            $(questionId).removeClass('btn_answer');
-            $(questionId).addClass('btn_repeat');
-            questionId.title ='다시풀기';
-            for(var i=0; i<answerIdArray.length; i++){
-                inputId = document.getElementById(clearArray[i]);
-                answerId = document.getElementById(answerIdArray[i]);
 
-                if(inputId.value.trim() == answerId.innerHTML) {
-                    score++
-                }
-                if(type!='type02'){
-                    answerId.style.display='inline';
-                }
-            }
-            var notice = score === answerIdArray.length ? "정답" : "오답"
-            if(type == "type01" || type == "type02"){
-                alert(notice + "입니다");
-            }
-
-
-        }else if ($(questionId).hasClass('btn_repeat')){
-            $(questionId).removeClass('btn_repeat');
-            $(questionId).addClass('btn_answer');
-            questionId.title = '답안';
-            for(var i=0; i<answerIdArray.length; i++){
-                clearId = document.getElementById(clearArray[i]);
-                if(clearId.value != null && clearId.value != ''){
-                    clearId.value='';
-                }
-                answerId = document.getElementById(answerIdArray[i]);
-                answerId.style.display='none';
-            }
-        }
-    }
     function radioCheck(questionId, names, answers) {
         var questionId = document.getElementById(questionId);
         var answerNameArray;
@@ -1499,4 +1450,60 @@ function setDictionary() {
 
     $(dictionLayerClass).append(dictionInnerHtml);
     $('body').append(dictionLayerClass);
+}
+
+
+function blankCheckByCss2(questionId, Ids, clearId, type){
+    var questionId = document.getElementById(questionId);
+    var answerIdArray;
+    var clearArray;
+    var answerId;
+    var inputId;
+    var score = 0;
+    //해당 문자가 + 기호를 포함하고 있는가 확인한다.
+    //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
+    //포함하고 있지 않다면 단일 빈칸 체크임
+    if(Ids.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
+        answerIdArray =  Ids.split('+');
+        clearArray = clearId.split('+');
+    }else{//단일일경우(단일 빈칸체크일 경우
+        answerIdArray = [Ids];
+        clearArray = [clearId];
+    }
+    console.log(answerIdArray);
+    console.log(clearArray);
+    if($(questionId).hasClass('btn_answer')){
+        $(questionId).removeClass('btn_answer');
+        $(questionId).addClass('btn_repeat');
+        questionId.title ='다시풀기';
+        for(var i=0; i<answerIdArray.length; i++){
+            inputId = document.getElementById(clearArray[i]);
+            answerId = document.getElementById(answerIdArray[i]);
+
+            if(inputId.value.trim() == answerId.innerHTML) {
+                score++
+            }
+            if(type!='type02'){
+                answerId.style.display='inline';
+            }
+        }
+        var notice = score === answerIdArray.length ? "정답" : "오답"
+        if(type == "type01" || type == "type02"){
+            //alert(notice + "입니다");
+        }
+
+
+    }else if ($(questionId).hasClass('btn_repeat')){
+        $(questionId).removeClass('btn_repeat');
+        $(questionId).addClass('btn_answer');
+        questionId.title = '답안';
+        for(var i=0; i<answerIdArray.length; i++){
+            clearId = document.getElementById(clearArray[i]);
+            if(clearId.value != null && clearId.value != ''){
+                clearId.value='';
+            }
+            answerId = document.getElementById(answerIdArray[i]);
+            answerId.style.display='none';
+        }
+    }
 }

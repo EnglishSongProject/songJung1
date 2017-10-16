@@ -8,3 +8,25 @@
 	100%{transform:scale(1.3);}
 }
 .BusImages{position:absolute;left:117px;top:175px;z-index:100088888;display:inline-block;transform:scale(1.0);animation:Bus_ima 1000ms infinite 0s;}
+
+.r_true_01, .r_false_01,
+.r_true_02, .r_false_02,
+.r_true_03, .r_false_03,
+.r_true_04, .r_false_04 {border-radius: 50%;width: 27px!important;height: 27px !important;text-align: center;border: 3px solid transparent; text-align:center !important; line-height: 20px !important; cursor: pointer; z-index: 9999999999}
+
+
+.road_school {position: absolute;  z-index: 100003149;top: 130px; left: 62px;}
+
+.road_school img {position: absolute}
+.load_01 {top: 65px; left: 167.5px;}
+.load_02 {top: 168px;left: 491px;}
+.load_03 {top: 130px; left: 191px;}
+.load_04 {top: 238px; left: 78px;}
+.load_05 {top: 324px; left: 285px;}
+
+.cir_goal {position: absolute;}
+.cir_goal.t01 {top: 102px; left: 322px;}
+.cir_goal.t02 {top: 269px; left: 362px;}
+.cir_goal.t03 {top: 142px; left: 73px;}
+.cir_goal.t04 {top: 293px; left: 125px;}
+.cir_goal.t05 {top:-10000em}
