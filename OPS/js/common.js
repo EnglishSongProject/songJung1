@@ -1376,6 +1376,11 @@ function setPopVideo() {
     $('.video_play').each(function (index) {
         var transText;
         var btnClass = 'video_play_btn'+index.toString();
+        var roleText='';
+        var imgPath;
+        if($(this).attr('datasrc')){
+            var imgArray = $(this).attr('datasrc').split(',');
+        }
         $(this).addClass(btnClass);
         switch($(this).attr('data-type')){
             case 'en-script':
@@ -1394,6 +1399,11 @@ function setPopVideo() {
                 progLimit = [0, 200];
                 progBallLeft = 340;
                 transText = "<div id='prog_cap' class='btn_caption_en_off'></div><div id='prog_cap2' class='btn_caption_kr_off'></div><div id='prog_sct' class='btn_script_off'></div>";
+                roleText += "<ul class='role_list'><li id='role_1' class=''>";
+                roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li>";
+                roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li>";
+                roleText += "<img src='"+roleImgPath+imgArray[0]+"'/></li></ul>";
+                transText += roleText;
                 //boola boola
                 break;
             case 'no-script':

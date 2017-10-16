@@ -1,0 +1,99 @@
+/* CSS Document */
+
+.tapBox{
+	position:absolute;
+	left: 64px;
+    top: 178px;
+    width: 643px;
+    height: 356px;
+    z-index: 100007265;
+    overflow: hidden;
+	/*border:1px solid black;*/}
+
+.tabArea{position:relative;height: 100%; margin:0;}
+.TabBt_G,
+.TabBt_L,
+.TabBt_LA{display:block;width: 240px;height: 50px;border-radius: 10px 0 0 10px;background-color:#e1e5eb;padding-left: 38px;box-sizing: border-box;line-height: 50px;cursor: pointer;margin-bottom:15px;}
+.TabBt_G>span,
+.TabBt_L>span,
+.TabBt_LA>span{color:#71839B;font-size: 20px;font-family: 'Open Sans';font-weight: bold;cursor: pointer;}
+.TabBt_G{}
+.TabBt_L{}
+.TabBt_LA{}
+.on{z-index:100007777;background: #FAE1D9;}
+.on>span{color:#E97A56;}
+.on>ul{z-index:100007777}
+
+.tabInner_1,
+.tabInner_2,
+.tabInner_3{width: 400px;height:356px;position: absolute;z-index:100007775;left:240px;top:0;background: #FAE1D9;border-radius:0 15px 15px 15px;padding:0 30px;box-sizing: border-box; cursor:auto}
+
+.tabInner_1 h1,
+.tabInner_2 h1,
+.tabInner_3 h1{font-family: 'Noto Sans KR';font-weight:bold;font-size:18px;width:375px;margin-bottom:10px;margin-top:40px;color:#333;}
+
+.tabInner_1 textarea{margin-top:7px;border:none;border-radius:10px;padding:5px;box-sizing: border-box;font-family: 'Open Sans';font-size:15px;height:65px;resize:none;width:340px;}
+
+.tabInner_2 li{margin-bottom:-2px;font-family: 'Faustina';font-size:21px;}
+.tabInner_2 li>span{    font-family: 'Open Sans';
+    font-size: 15px;
+    border: 1px solid black;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;}
+.tabInner_2 li label{font-family: 'Open Sans';font-size:15px !important;border:1px solid black;display:inline-block;height:20px;border-radius: 50%;text-align: center;line-height: 20px; padding-left:6px;padding-right:6px;background-color:transparent !important;}
+.tabInner_2 li input[type=radio] + .tabInner_2 li label:before {
+    content: "";
+    display: inline-block;
+    margin-right:0 !important;
+    position: absolute;
+    bottom:0;
+    background-color:transparent !important;
+    border-radius:50%;
+    border:none !important;
+}
+/*input[type=checkbox]:checked + label:before, input[type=radio]:checked + label:before {background:transparent;border:none;}*/
+
+.tabInner_3{}
+.tabInner_3 .bubble_yel{background: url(../asset/I/2fdc197996094788aaf1df0c26c865f6.png) no-repeat 0 0;background-size:cover;width:295px;height:165px;margin-top:49px;line-height:0;}
+.tabInner_3 .bubble_yel div{font-family: 'Nanum Gothic';display:inline-block;font-size:18px;font-weight:bold;height: 30px;line-height:30px;}
+.tabInner_3 .bubble_yel>div{padding-left:23px; vertical-align:middle;}
+.tabInner_3 .bubble_yel div:nth-of-type(1){padding-top:20px;}
+.tabInner_3 .bubble_yel  label{display:inline-block;background: #fff;border-radius:15px; margin-right:0px !important;
+font-family: 'Nanum Gothic';font-size:18px !important;font-weight:bold !important;height: 30px;line-height:30px;padding-right:4px;}
+.tabInner_3 .G_img{position:absolute;right:12px;bottom:0;}
+
+
+
+
+.roleplay_video{display:none;width:230px;height:150px; background: url(../asset/I/5ea7f0e135e44b1188e365c944c7ec37.png) no-repeat 0 0;background-size:cover;margin-top:13px;position:relative;left:64px;top:371px;z-index:1000073333;}
+.roleplayBt{width:230px;height:150px;display:inline-block;position:relative;}
+.roleplayBt img{width:80px;position:absolute;right:10px;bottom:10px;cursor: pointer;}
+
+
+.sounds_bk{display:/* none */inline-block;background: url(../asset/I/a15b61cdff564258a6d4f122f4faa0de.png)no-repeat 0 0;background-size:cover; position:absolute;left:516px;top:783px;width: 248px;height: 187px;z-index:100007799}
+.sounds_bk span{position:absolute;right:33px;top:46px;}
+.sounds_bk span img{width:15px; height:15px;}
+.sounds_bk ul:nth-of-type(1){width:160px;margin-left:48px;margin-top:15px;}
+.sounds_bk ul:nth-of-type(1) li{width:73px;}
+
+.sounds_bk ul:nth-of-type(2){margin-top:19px;width:200px;margin-left:46px;}
+.sounds_bk ul:nth-of-type(2) li{line-height:21px;font-size:17px;font-family: 'Open Sans';font-size:14px;}
+.sounds_bk ul li{font-weight:400;display:inline-block;}
+.sounds_bk > p{font-family: 'Nanum Gothic';font-size:15px;font-weight:800;margin-left:48px;margin-top:15px;color:#fff;}
+.sounds_bk em{font-style: normal;color: rgb(1, 1, 255);font-weight:600;}
+
+.btn_sounds{background-image: url(../asset/I/sound.png);position:absolute;z-index:100007777;top:865px; left:637px;
+display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;}
+
+#A_name,
+#A_age,
+#A_nickname{position:absolute; z-index:1000000000;border-bottom:none !important;width:135px; height:22px;font-family: 'Noto Sans KR';font-size:15px; text-align:center;}
+#A_name{top:716px; left:273px;}
+#A_age{top:716px; left:525px;}
+#A_nickname{top:760px; left:384px;}
+
+input[type=checkbox]+ label:before, input[type=radio] + label:before{line-height:30px;}

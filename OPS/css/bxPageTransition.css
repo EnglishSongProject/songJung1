@@ -771,9 +771,6 @@
 @keyframes flipOutBottom {
 	to { transform: rotateX(-90deg);}
 }
-
-div[data-aspen-rich] div {font-family: inherit; color: inherit; font-size: inherit; font-style: inherit;}
-div[data-aspen-rich] span {font-family: inherit; color: inherit; font-size: inherit; font-style: inherit;}
 .wyswyg-exe-container {line-height:normal;}
 .wyswyg-exe-container span {display:block;position:absolute;}
 .wyswyg-exe-container img {display:block;position:absolute;}
