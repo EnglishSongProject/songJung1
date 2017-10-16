@@ -69,7 +69,7 @@ font-family: 'Nanum Gothic';font-size:18px !important;font-weight:bold !importan
 
 
 
-.roleplay_video{display:none;width:230px;height:150px; background: url(../asset/I/5ea7f0e135e44b1188e365c944c7ec37.png) no-repeat 0 0;background-size:cover;margin-top:13px;position:relative;left:64px;top:371px;z-index:1000073333;}
+.roleplay_video{display:none;width:230px;height:150px; background-size:cover;margin-top:13px;position:relative;left:64px;top:371px;z-index:1000073333; background-color: black;}
 .roleplayBt{width:230px;height:150px;display:inline-block;position:relative;}
 .roleplayBt img{width:80px;position:absolute;right:10px;bottom:10px;cursor: pointer;}
 
