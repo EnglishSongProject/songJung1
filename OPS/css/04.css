@@ -1,0 +1,26 @@
+
+
+
+.C_tap{width:625px; height:70px; z-index:100008888;top:859px; left:108px;background-color:transparent;}
+/*Match and Talk */
+.C_tap .eg {position: relative;top:-3px;left:0; font:22px 'Faustina' ;line-height: 1; float:left; padding-left:40px;}
+.C_tap .eg:before {position: absolute; left:0; top:1px; content:"e.g."; font: 20px 'Noto Sans KR'; color:#595B60}
+.C_tap .eg em { font:18px 'Faustina'; }
+.C_tap .eg .blue {color:#0101ff;}
+.C_tap .eg div > span{position: absolute;  top: 19px;  font-size: 11px;  line-height: 28px;  color: #339900;}
+
+.C_tap .eg ul li:nth-of-type(2),
+.C_tap .eg ul li:nth-of-type(3){margin-top: -5px;}
+
+
+.select_area {position: absolute; left:40px; top:28px}
+.select_name{position:absolute;z-index:100007777;width:100px;height:227px;background-color:transparent;/*border:1px solid black;*/cursor:pointer;}
+#LT_1{top:597px;left:75px;}
+#LT_2{top:605px;left:222px;}
+#LT_3{top:602px;left:382px;}
+#LT_4{top:607px;left:530px;}
+.select_name span {position: absolute;font:15px 'Noto Sans KR' ;z-index:100008888}
+.select_name#LT_1 span {top:0px; left:0px; }
+.select_name#LT_2 span {top: 58px; left:76px; }
+.select_name#LT_3 span {top:56px; left:75px; }
+.select_name#LT_4 span {top:55px; left:66px; }

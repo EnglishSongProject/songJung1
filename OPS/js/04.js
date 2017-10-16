@@ -1,6 +1,7 @@
 /**
  * Created by sr01-02 on 2017-10-15.
  */
+<<<<<<< HEAD
 
 $(document).ready(function () {
 	
@@ -21,6 +22,15 @@ $(document).ready(function () {
     }
 }
 	
+=======
+ 
+ $(document).ready(function () {
+
+    setAudio();
+    setPopVideo();
+
+
+>>>>>>> 7b759fd0d3500a2bcd3fea6250f1ac18c6126e92
     imageSlide.init();
     $(".btn_play").click(function(){
         imageSlide.closePopup();
@@ -40,6 +50,7 @@ $(document).ready(function () {
     $(".trans3").on("click", function(){
         $(".correct3").toggle();
     });
+<<<<<<< HEAD
 
     $('.mediabtn_0').on('click',function(){
         layerAclose();
@@ -52,4 +63,6 @@ $(document).ready(function () {
         AllOff();
         $('.zoom_img_wrap').hide();
     });
+=======
+>>>>>>> 7b759fd0d3500a2bcd3fea6250f1ac18c6126e92
 });
