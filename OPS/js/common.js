@@ -661,7 +661,6 @@ function textClearByNames(name,ck_list) {
     for(var i=0; i<ckArray.length; i++){
         ckArray[i].checked= false;
     }
-
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
     var answerArray;
@@ -1449,6 +1448,7 @@ function setPopVideo() {
         mediaInit(index, progLimit, progBallLeft);
 
         $('\.'+btnClass).on('click', function () {
+                PageStop();
                 $('\.'+layerClassForSeper).show();
                 //닫기 구현
                 $('.btn_media_close').on('click',function(){
@@ -1499,4 +1499,8 @@ function setDictionary() {
 
     $(dictionLayerClass).append(dictionInnerHtml);
     $('body').append(dictionLayerClass);
+}
+function PageStop() {
+var video = document.querySelector('.page_video');
+    video.pause();
 }
