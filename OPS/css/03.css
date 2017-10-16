@@ -45,3 +45,11 @@
 
 .btn_tip {position:absolute; display: inline-block; width:37px; height:21px; background: url(../images/common/tip.png) no-repeat 0 0; text-indent: -1000em; overflow: hidden; margin-right:5px}
 .tip_con {font:13px "Noto Sans KR"; display:none;}
+
+/*사다리*/
+#ls_mat_c1,
+#ls_mat_c2,
+#ls_mat_c3,
+#ls_mat_c4{width:563px;top:597px;left:70px;}
+
+
