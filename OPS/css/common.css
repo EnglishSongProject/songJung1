@@ -56,7 +56,7 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 body {padding:0; margin:0; background-color:#ffffff;  font-family:'Nanum Gothic',sans-serif; font-size:14px;}
 a{outline:none; text-decoration:none; padding:0px; border:0;}
-
+input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !important;vertical-align: baseline !important}
 
 /*----------------------
 사용자 정의 클래스
@@ -134,8 +134,8 @@ a{outline:none; text-decoration:none; padding:0px; border:0;}
 .btn_pmovie {background-image: url(../images/common/04.png)}
 
 /* 버튼간격 */
-.btn_list {position: relative; display: inline-block; margin-left:5px !important; vertical-align: middle}
-.btn_list button {vertical-align: middle}
+.btn_list {position: absolute; display: inline-block; margin-left:5px !important; vertical-align: middle; z-index: 1000000000}
+.btn_list button {vertical-align: middle; left: 5px;}
 
 /*tip*/
 .btn_tip {
@@ -272,7 +272,11 @@ scriptPopup
     min-height: 200px;
     height: auto;
     padding: 5px;
+<<<<<<< HEAD
     z-index: 100;
+=======
+    z-index: 1000000001;
+>>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 }
 .scriptPopupClose{
     display: block;
@@ -391,3 +395,20 @@ scriptPopup
 .transText{
     left: 25px;
 }
+<<<<<<< HEAD
+=======
+.radio_check{
+    position: absolute;
+    z-index: 1000000000;
+}
+.audio_play{}
+.video_play{}
+.zoom_img_wrap{z-index: 1000000000;}
+.ui-draggable-dragging{
+    font-size: 30px !important;
+}
+.intro_word.wrapper{
+    z-index: 1000000000;
+}
+
+>>>>>>> f59347a00d91517d2763ead9a7d212a034817398

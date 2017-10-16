@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 
 .intro {background: url(../images/08/bg_lesson01.jpg) no-repeat 0 0; background-size: cover}
@@ -28,3 +29,5 @@
 .btn_bottom {position: absolute; right:50px; bottom:50px}
 .btn_bottom button {display: block;margin-bottom:10px;}
 .intro .btn_list {vertical-align: middle; margin-left: 9px !important;}
+=======
+>>>>>>> f59347a00d91517d2763ead9a7d212a034817398

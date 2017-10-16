@@ -4,7 +4,11 @@
 .intro_word {background: url(../images/dictionary/bg_dictionary.jpg) no-repeat 0 0; background-size: cover; position: absolute; width: 768px;
     height: 1024px; z-index: 10}
 .header_tit {position: absolute; display: block; top: 50px; content: url("../images/dictionary/title_word.png");}
+<<<<<<< HEAD
 .close_icon {position: absolute; display: block; top: 20px; left: 720px;}
+=======
+.word_close_icon {position: absolute; display: block; top: 20px; left: 720px;}
+>>>>>>> f59347a00d91517d2763ead9a7d212a034817398
 
 #flashcard {position: absolute; display: block; width: 300px; height: 150px; border-radius: 15px; top: 230px; left: 420px; background: #ffffff;}
 #flashcard_example {position: absolute; display: block; width: 300px; height: 80px; border-radius: 15px; top: 450px; left: 420px; background: #ffffff;}
