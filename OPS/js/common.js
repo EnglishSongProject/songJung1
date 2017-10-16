@@ -1501,6 +1501,8 @@ function setDictionary() {
     $('body').append(dictionLayerClass);
 }
 function PageStop() {
-var video = document.querySelector('.page_video');
-    video.pause();
+    if(document.querySelector('.page_video')){
+        var video = document.querySelector('.page_video');
+        video.pause();
+    }
 }
