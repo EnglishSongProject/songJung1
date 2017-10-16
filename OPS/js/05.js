@@ -3,6 +3,7 @@ $(function () {
     setAudio();
     setDictionary();
 	setPopVideo();
+
 	$(".tabArea>li").click(function(){
 		$(".tabArea>li").removeClass("on");
 		$(this).addClass("on");
@@ -37,4 +38,5 @@ $(function () {
 		$('.btn_sounds').show();
 	});
 });
+
 

@@ -665,7 +665,6 @@ function textClearByNames(name,ck_list) {
     for(var i=0; i<ckArray.length; i++){
         ckArray[i].checked= false;
     }
-
 }
 function listenAndNumberCheck(questionId, inputId, answer) {
     var answerArray;
@@ -1400,6 +1399,7 @@ function setPopVideo() {
         mediaInit(index, progLimit, progBallLeft);
 
         $('\.'+btnClass).on('click', function () {
+                PageStop();
                 $('\.'+layerClassForSeper).show();
                 //닫기 구현
                 $('.btn_media_close').on('click',function(){
@@ -1451,6 +1451,7 @@ function setDictionary() {
     $(dictionLayerClass).append(dictionInnerHtml);
     $('body').append(dictionLayerClass);
 }
+<<<<<<< HEAD
 
 
 function blankCheckByCss2(questionId, Ids, clearId, type){
@@ -1507,3 +1508,23 @@ function blankCheckByCss2(questionId, Ids, clearId, type){
         }
     }
 }
+=======
+function PageStop() {
+    if(document.querySelector('.page_video')){
+        var video = document.querySelector('.page_video');
+        video.pause();
+    }
+}
+function setShowScriptPopup() {
+    var scriptBtnArray = $('.btn_sp');
+    var scriptArray = $('.script');
+    for (var i = 0; i < scriptBtnArray.length; i++) {
+        $(this).attr('id', 'script_' + i.toString());
+        $(scriptArray[i]).addClass('script_' + i.toString());
+        var topLeft = $(scriptArray[i]).attr('datasrc').split(',');
+        $(scriptBtnArray[i]).on('click', function () {
+            showScriptPopupTopLeft(this, topLeft[0], topLeft[1]);
+        });
+    }
+}
+>>>>>>> 13f840b4e4330656ad0fac8e85617fd72ea51219
