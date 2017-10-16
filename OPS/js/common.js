@@ -1246,10 +1246,14 @@ function checkAskAnswer(){
 // ask & answer 단어사전 토글
 function toggleWord(){
     $(".btn_wp").on("click",function(){
-        var idx = $(this).index();
-        console.log(this);
-        $('.wpopup').eq(idx).toggle().siblings('.wpopup').hide();
+        var idx = $(".btn_wp").index(this);
+        $('.intro_word').eq(idx).toggle().siblings('.intro_word').hide()
     })
+
+    $(".btn_trans").on("click", function(){
+        var idx = $(".btn_trans").index(this);
+        $('.trans_text').eq(idx).toggle();
+    });
 }
 
 // setSpellcheck
