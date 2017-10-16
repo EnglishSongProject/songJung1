@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     setAudio();
     setPopVideo();
+    imageSlide.init();
 
     $("#p13_self_check_pen_1_1, #p13_self_check_pen_1_2, #p13_self_check_pen_1_3, #p13_self_check_pen_1_4, #p13_self_check_pen_1_5").on("click",function(){
         var obj = $(this);
@@ -35,4 +36,3 @@ $(document).ready(function() {
         }
     });
 });
-
