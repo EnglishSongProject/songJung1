@@ -1,5 +1,11 @@
 $(function () {
+    var $currentPopup = null;
+
     $("#self_check").click(function(){
+        if($currentPopup){
+            closePopup($currentPopup)
+        }
+
         $("#self_check_div").toggleClass("on");
 
         if($("#self_check_div").hasClass("on")){
@@ -10,45 +16,60 @@ $(function () {
     });
 
     $("#bo_1_button").click(function(){
-       $("#bo_1").show();
+        openPopup($("#bo_1"));
     });
 
     $("#bo_2_button").click(function(){
-        $("#bo_2").show();
+        openPopup($("#bo_2"));
     });
 
     $("#bo_3_button").click(function(){
-        $("#bo_3").show();
+        openPopup($("#bo_3"));
     });
 
     $("#sim_1_button").click(function(){
-        $("#sim_1").show();
+        openPopup($("#sim_1"));
     });
 
     $("#sim_2_button").click(function(){
-        $("#sim_2").show();
+        openPopup($("#sim_2"));
     });
 
     $("#sim_3_button").click(function(){
-        $("#sim_3").show();
+        openPopup($("#sim_3"));
     });
 
     $("#btn_self_review").click(function(){
-        $("#self_review_div").show();
+        openPopup($("#self_review_div"));
     });
 
     $("#btn_danwon").click(function(){
-       $("#danwon").show();
+        openPopup($("#danwon"));
     });
 
+    $(".btn_pu_close").on('click',function(){
+        if($currentPopup){
+            closePopup($currentPopup)
+        }
+    });
+
+    // 단원평가
      $("#danwon").click(function(){
-        $(".popup").hide();
+        $(this).hide();
      });
 
+    function openPopup($Item){
+        if($currentPopup){
+            $currentPopup.hide();
+        }
+        $Item.show();
+        $currentPopup = $Item;
+    }
 
-    $(".btn_pu_close").click(function(){
-       $(".popup").hide();
-    });
+    function closePopup($Item){
+        $Item.hide();
+        $Item = null;
+    }
 
     setDictionary();
 
