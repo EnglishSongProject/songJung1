@@ -38,8 +38,6 @@ table {border-collapse: collapse; border-spacing: 0;}
 @font-face {font-family: 'Fredoka One';font-style: normal;font-weight: 400;src: url(../fonts/FredokaOne/FredokaOne-Regular.woff) format('woff');}
 @font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 400;src: url(../fonts/NanumGothic/NanumGothic-Regular.woff) format('woff');}
 @font-face {font-family: 'Nanum Gothic';font-style: normal;font-weight: 700;src: url(../fonts/NanumGothic/NanumGothic-Bold.woff) format('woff');}
-@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 400;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-ExtraBold.woff) format('woff');}
-@font-face {font-family: 'Nanum Myeongjo';font-style: normal;font-weight: 700;src: url(../fonts/NanumMyeongjo/NanumMyeongjo-Regular.woff) format('woff');}
 @font-face {font-family: 'Nanum Pen';font-style: normal;font-weight: 700;src: url(../fonts/NanumPen/NanumPen-Regular.woff) format('woff');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(../fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(../fonts/NotoSansKR/NotoSansKR-Bold.woff) format('woff');}
@@ -251,8 +249,8 @@ popup
 .popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
 
 /*popup --popup_type02 */
-.wido_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
-.wido_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+.wide_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
+.wide_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 
 
 
@@ -406,7 +404,17 @@ scriptPopup
 .trans_text{
     display: none;
 }
+/*textarea*/
 .popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0; padding-left: 11px;}
 .popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 .popup_type03 button {position: absolute; top: 15px; right: 45px;}
 .popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent; }
+
+/*input*/
+.popup_type04 {background: url(../images/popup/bg_pop3_1.png) no-repeat 0 0; padding-left: 11px;}
+.popup_type04 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+.popup_type04 button {position: absolute; top: 15px; right: 45px;}
+.popup_type04 input { font-family:"Nanum Gothic";width: 150px;height: 30px;border: 1px solid #949da3; position: absolute;
+    top: 14px;}
+.popup_type04 .answer { font-family:"Nanum Gothic";position: absolute; top: 14px; color: red;
+    top:50px;left: 10px;}

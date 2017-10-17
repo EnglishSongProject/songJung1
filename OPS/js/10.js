@@ -1,22 +1,14 @@
 
 $(function () {
+    //audio_play
     setAudio();
+    //video_play
     setPopVideo();
+    //btn_write
     setShowWritePopup();
-    $(".btn_net").on("click",function(){
-        showWiduPopup(this)
-    });
+    //btn_wide
+    setShowWidePopup();
+    //btn_write_input
+    setShowInputPopup();
+
 });
-
-
-function showWiduPopup(target){
-    var $popup = $(".wido_popup");
-
-    //var position = $(target).attr('datasrc').split(',');
-    $popup.show();
-
-    $(".popup .btn_close").on('click',function(){
-        var $this = $(this).parent();
-        $this.hide();
-    });
-}

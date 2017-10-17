@@ -443,7 +443,7 @@ var imageSlide = {
                         imageSlide.swipe.end_x = Math.floor(imageSlide.swipe.touch.pageX);
                         imageSlide.swipe.end_y = Math.floor(imageSlide.swipe.touch.pageY);
                     }else if(event.type === 'touchend'){
-                        if(imageSlide.swipe.move) imageSlide.swipe.start_x - imageSlide.swipe.end_x > 0 ? imageSlide.buttonAction.prevImageShow.call(this.parentNode.parentNode.parentNode.parentNode) : imageSlide.buttonAction.nextImageShow.call(this.parentNode.parentNode.parentNode.parentNode)
+                        if(imageSlide.swipe.move) imageSlide.swipe.start_x - imageSlide.swipe.end_x > 0 ? imageSlide.buttonAction.nextImageShow.call(this.parentNode.parentNode.parentNode.parentNode) : imageSlide.buttonAction.prevImageShow.call(this.parentNode.parentNode.parentNode.parentNode)
 
                     }
                 }
@@ -1304,7 +1304,7 @@ function setAudio(){
     $('.audio_play').each(function () {
         if($(this).attr('data-type') == 'multi'){
             $(this).on('click', function () {
-                playAudio(audioPath + $(this).attr('data-name') + '.mp3' ,'',this,'', $(this).attr('datasrc'));
+                playAudio(audioPath + $(this).attr('data-name') + '.mp3' ,'',this,'', $(this).attr('about'));
             });
         }else if($(this).attr('data-type') == 'no-color'){
             $(this).on('click', function () {
@@ -1328,8 +1328,8 @@ function setPopVideo() {
         var btnClass = 'video_play_btn'+index.toString();
         var roleText='';
         var imgPath;
-        if($(this).attr('datasrc')){
-            var imgArray = $(this).attr('datasrc').split(',');
+        if($(this).attr('about')){
+            var imgArray = $(this).attr('about').split(',');
         }
         $(this).addClass(btnClass);
         switch($(this).attr('data-type')){
@@ -1518,7 +1518,7 @@ function setShowScriptPopup() {
     for (var i = 0; i < scriptBtnArray.length; i++) {
         $(scriptBtnArray[i]).attr('id', 'script_' + i.toString());
         $(scriptArray[i]).addClass('script_' + i.toString());
-        var topLeft = $(scriptArray[i]).attr('datasrc').split(',');
+        var topLeft = $(scriptArray[i]).attr('about').split(',');
         $(scriptBtnArray[i]).on('click', function () {
             showScriptPopupTopLeft(this, topLeft[0], topLeft[1]);
         });
@@ -1528,7 +1528,7 @@ function setShowWritePopup() {
     var writeBtnArray = $('.btn_write');
     for (var i = 0; i < writeBtnArray.length; i++) {
         $(writeBtnArray[i]).attr('id', 'write_' + i.toString());
-        var topLeft = $(writeBtnArray[i]).attr('datasrc').split(',');
+        var topLeft = $(writeBtnArray[i]).attr('about').split(',');
         $(writeBtnArray[i]).on('click', function () {
             showWritePopup(this, topLeft[0], topLeft[1]);
         })
@@ -1566,6 +1566,105 @@ function showWritePopup(target, top, left){
     $(popup).append(textArea);
     $(popup).append(btnRetry);
     $(popup).append(btnClose);
+
+    $('body').append(popup);
+
+    $(popup).show();
+
+}
+
+
+function setShowWidePopup(){
+    var widePopBtnArray = $('.btn_net');
+    for (var i = 0; i < widePopBtnArray.length; i++) {
+        $(widePopBtnArray[i]).attr('id', 'wide_' + i.toString());
+        var topLeft = $(widePopBtnArray[i]).attr('about').split(',');
+        $(widePopBtnArray[i]).on('click', function () {
+            showWidePopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+
+function showWidePopup(target, top, left){
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+    var popup = document.createElement("div");
+    var innerText = "<h3>위두랑 연결 안내</h3>";
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    innerText += "<p>위두랑 사이트에 접속해서<br />";
+    innerText += "선생님과 이야기 하고,<br />";
+    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "보세요.</p>";
+    $(popup).addClass('popup');
+    $(popup).addClass('wide_popup');
+    $(popup).addClass('display-none');
+    $(popup).append(innerText);
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(btnClose);
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+    $('body').append(popup);
+}
+function setShowInputPopup() {
+    var writeBtnArray = $('.btn_write_input');
+    for (var i = 0; i < writeBtnArray.length; i++) {
+        $(writeBtnArray[i]).attr('id', 'write_input' + i.toString());
+        var topLeft = $(writeBtnArray[i]).attr('about').split(',');
+        $(writeBtnArray[i]).on('click', function () {
+            showInputPopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+function showInputPopup(target, top, left){
+
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+
+    var popup = document.createElement("div");
+    $(popup).addClass('popup');
+    $(popup).addClass('popup_type04');
+    $(popup).addClass('display-none');
+
+    var inputArea = document.createElement('input');
+    $(inputArea).attr('id', 'input_'+target.id);
+    $(inputArea).attr('maxlength', '20');
+    $(inputArea).attr('name', target.id);
+    $(inputArea).attr('spellcheck', 'false');
+
+    var btnRetry = document.createElement('button');
+    $(btnRetry).addClass('btn_type_02');
+    $(btnRetry).addClass('btn_answer');
+    $(btnRetry).on('click',function () {
+        /*        blankCheckByCss(this, 'ls_1_t1_a', 'ls_1_t1');*/
+        blankCheckByCss(this, 'input_a_'+target.id, 'input_'+target.id);
+        /*        textClearByNames(target.id)*/
+    });
+
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+
+    var correct = document.createElement('div');
+    $(correct).addClass('display-none');
+    $(correct).addClass('answer');
+    $(correct).attr('id', 'input_a_'+target.id)
+
+    var text = $(target).attr('data-name');
+    correct.innerHTML = text;
+
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(inputArea);
+    $(popup).append(btnRetry);
+    $(popup).append(btnClose);
+    $(popup).append(correct);
 
     $('body').append(popup);
 

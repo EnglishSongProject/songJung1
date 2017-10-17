@@ -36,7 +36,7 @@
 .select_name:nth-of-type(4) span {top:55px; left:66px; }
 .select_name:hover span {color:#a14796}
 
-.target_sentence {position: absolute;left: 32px; bottom: 35px;;padding: 1px;}
+.target_sentence {position: absolute;left: 32px; bottom: 35px;padding: 1px;}
 .target_sentence span {position: absolute; top:0; display: inline-block; width: 110px; font:17px "Noto Sans KR";}
 .target_sentence span:nth-of-type(1) {left:23px}
 .target_sentence span:nth-of-type(2) {left:185px}
