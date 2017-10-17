@@ -2,6 +2,7 @@
 $(function () {
     setAudio();
     setPopVideo();
+    setShowWritePopup();
     $(".btn_net").on("click",function(){
         showWiduPopup(this)
     });
