@@ -60,8 +60,10 @@
 .tabInner_3{}
 .tabInner_3 .bubble_yel{background: url(../asset/I/2fdc197996094788aaf1df0c26c865f6.png) no-repeat 0 0;background-size:cover;width:295px;height:165px;margin-top:49px;line-height:0;}
 .tabInner_3 .bubble_yel div{font-family: 'Nanum Gothic';display:inline-block;font-size:18px;font-weight:bold;height: 30px;line-height:30px;}
-.tabInner_3 .bubble_yel>div{padding-left:23px; vertical-align:middle;}
-.tabInner_3 .bubble_yel div:nth-of-type(1){padding-top:20px;}
+.tabInner_3 .bubble_yel>div{padding-left:23px; vertical-align:middle;position: absolute}
+.tabInner_3 .bubble_yel div:nth-of-type(1){top: 175px}
+.tabInner_3 .bubble_yel div:nth-of-type(2){top: 215px}
+.tabInner_3 .bubble_yel div:nth-of-type(3){top: 255px}
 .tabInner_3 .bubble_yel  label{display:inline-block;background: #fff;border-radius:15px; margin-right:0px !important;
 font-family: 'Nanum Gothic';font-size:18px !important;font-weight:bold !important;height: 30px;line-height:30px;padding-right:4px;}
 .tabInner_3 .G_img{position:absolute;right:12px;bottom:0;}
