@@ -251,8 +251,8 @@ popup
 .popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
 
 /*popup --popup_type02 */
-.wido_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
-.wido_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+.wide_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
+.wide_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 
 
 

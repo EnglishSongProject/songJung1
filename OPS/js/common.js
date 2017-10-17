@@ -1573,3 +1573,40 @@ function showWritePopup(target, top, left){
 
 }
 
+
+function setShowWidePopup(){
+    var widePopBtnArray = $('.btn_net');
+    for (var i = 0; i < widePopBtnArray.length; i++) {
+        $(widePopBtnArray[i]).attr('id', 'wide_' + i.toString());
+        var topLeft = $(widePopBtnArray[i]).attr('datasrc').split(',');
+        $(widePopBtnArray[i]).on('click', function () {
+            showWidePopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+
+function showWidePopup(target, top, left){
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+    var popup = document.createElement("div");
+    var innerText = "<h3>위두랑 연결 안내</h3>";
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    innerText += "<p>위두랑 사이트에 접속해서<br />";
+    innerText += "선생님과 이야기 하고,<br />";
+    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "보세요.</p>";
+    $(popup).addClass('popup');
+    $(popup).addClass('wide_popup');
+    $(popup).addClass('display-none');
+    $(popup).append(innerText);
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(btnClose);
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+    $('body').append(popup);
+}
+
