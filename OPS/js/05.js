@@ -14,6 +14,7 @@ $(function () {
 	});
 	$(".TabBt_G").click(function(e) {
 		$(".roleplay_video").css("display","none");
+		PageStop();
 	});
 
 	//롤플레이
