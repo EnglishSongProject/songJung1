@@ -250,14 +250,8 @@ popup
 .popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
 
 /*popup --popup_type02 */
-.popup_type02 {background: url(../images/popup/bg_pop2.png) no-repeat 0 0;}
-.popup_type02 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
-
-/*popup --popup_type03 */
-.popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0; padding-left: 11px;}
-.popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
-.popup_type03 button {position: absolute; top: 15px; right: 45px;}
-.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent; }
+.wido_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
+.wido_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 
 
 
