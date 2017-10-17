@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="./css/common.css" />
 <link rel="stylesheet" href="./css/04.css" />
 <link rel="stylesheet" href="./css/video.css" />
+    <link rel="stylesheet" type="text/css" href="./css/role_play.css" />
 <script type="text/javascript" src="js/blux-apx-1.0.js"></script>
 <script type="text/javascript" src="js/DTCaliperSensor.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -15,6 +16,7 @@
 <script type="text/javascript" src="js/04.js"></script>
 <script type="text/javascript" src="js/04_mediaInfo.js"></script>
 <script type="text/javascript" src="js/video.js"></script>
+<script type="text/javascript" src="js/role_play.js"></script>
 <!--${WGTS_LIBS}-->
 
 <style>
@@ -215,5 +217,80 @@ div[data-apx-id='81418A34_'] input {border-bottom:0px !important}
 	<p>　　Nice to meet you, too, Polly.</p>
 	<span>저도 만나서 반가워요, Polly.</span>
 </div>
+
+<!-- 롤플레이 팝업 -->
+<div class="role_play display-none">
+    <h1>Role_Play</h1>
+    <div class="player_img">
+        <span class="player01 on"  title="jason"/>
+        <span class="player02"  title="minji"/>
+        <span class="player03"  title="siu"/>
+        <span class="player04"  title="anna"/>
+    </div>
+    <div class="panel_list">
+        <div class="player_panel">
+            <ul>
+                <li>
+                    <em>A</em>: <span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Jason</span>, how are you doing today?</span>
+                    <span class="interpret">제이슨, 요즘 어때?</span>
+                </li>
+                <li>
+                    <em>B</em>:<span class="color-blue ml_5" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c02_02.mp3', 'single');"> I’m great.</span>
+                    <span class="interpret">잘 지내.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5" > Minji</span>, how are you doing today?</span>
+                    <span class="interpret">민지, 요즘 어때?</span>
+                </li>
+                <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c03_02.mp3', 'single');"> Not so good</span>
+                    <span class="interpret">그저 그래. </span>
+                </li>
+            </ul>
+
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Siu</span>, how are you doing today?</span>
+                    <span class="interpret">시우, 요즘 어때?</span>
+                </li>
+                <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c04_02.mp3', 'single');"> Not bad.</span>
+                    <span class="interpret">나쁘지 않아. </span>
+                </li>
+            </ul>
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <li><em>A</em>:<span onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_01.mp3', 'single');" class="active-purple"><span class="color-blue ml_5"> Anna</span>, how are you doing today?</span>
+                    <span class="interpret">애나, 요즘 어때?</span>
+                </li>
+                <li><em>B</em>:<span class="color-blue ml_5 active-purple" onclick="playAudio('./media/audio/L01/010/L01_010_sp1_c05_02.mp3', 'single');"> I’m fine.</span>
+                    <span class="interpret">잘 지내. </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="player_controller">
+        <div class="select_player">
+            <input type="checkbox" id="sideA" />
+            <label for="sideA"></label>
+            <span class="mr_20">A</span>
+            <input type="checkbox" id="sideB"/>
+            <label for="sideB"></label>
+            <span>B</span>
+        </div>
+        <div class="btn_wrap">
+            <button class="btn_playstop btn_rplay"></button>
+            <button class="btn_rstop"></button>
+            <button class="progress_rbar"></button>
+            <span class="controll_rbar"></span>
+            <button class="btn_rtrans trans_off"></button>
+        </div>
+    </div>
+    <audio id="pAudio" src="./media/audio/L01/010/L01_010_LS1_add_03_a.mp3"></audio>
+    <img class="btn_close" src="images/common/player/pop_media_close.png" alt="닫기" />
+</div> <!-- 롤플레이 팝업 -->
 </body>
 </html>
