@@ -91,6 +91,8 @@ font-family: 'Nanum Gothic';font-size:18px !important;font-weight:bold !importan
 .btn_sounds{background-image: url(../asset/I/sound.png);position:absolute;z-index:100007777;top:865px; left:637px;
 display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;}
 
+.Ko{position: absolute;  top: 13px;  font-size: 11px;  line-height: 28px;  color: #339900;}
+
 #A_name,
 #A_age,
 #A_nickname{position:absolute; z-index:1000000000;border-bottom:none !important;width:135px; height:22px;font-family: 'Noto Sans KR';font-size:15px; text-align:center;}
