@@ -1,4 +1,4 @@
-.popup { display: none; z-index: 999999999999 !important; background: #FFFFFF;}
+.popup { display: none; z-index: 999999999999 !important; background: transparent;}
 .btn_pu_close {cursor:pointer}
 .btn_type {cursor:pointer}
 
