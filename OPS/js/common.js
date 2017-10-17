@@ -443,7 +443,7 @@ var imageSlide = {
                         imageSlide.swipe.end_x = Math.floor(imageSlide.swipe.touch.pageX);
                         imageSlide.swipe.end_y = Math.floor(imageSlide.swipe.touch.pageY);
                     }else if(event.type === 'touchend'){
-                        if(imageSlide.swipe.move) imageSlide.swipe.start_x - imageSlide.swipe.end_x > 0 ? imageSlide.buttonAction.prevImageShow.call(this.parentNode.parentNode.parentNode.parentNode) : imageSlide.buttonAction.nextImageShow.call(this.parentNode.parentNode.parentNode.parentNode)
+                        if(imageSlide.swipe.move) imageSlide.swipe.start_x - imageSlide.swipe.end_x > 0 ? imageSlide.buttonAction.nextImageShow.call(this.parentNode.parentNode.parentNode.parentNode) : imageSlide.buttonAction.prevImageShow.call(this.parentNode.parentNode.parentNode.parentNode)
 
                     }
                 }
