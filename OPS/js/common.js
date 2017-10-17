@@ -1524,3 +1524,21 @@ function setShowScriptPopup() {
         });
     }
 }
+function setShowScriptPopup() {
+    var writeBtnArray = $('.btn_write');
+    for (var i = 0; i < writeBtnArray.length; i++) {
+        $(writeBtnArray[i]).attr('id', 'script_' + i.toString());
+        $(writeBtnArray[i]).addClass('script_' + i.toString());
+    }
+}
+function setWritePopupTopLeft(target, top, left) {
+/*    var */
+    var popup = document.createElement("div");
+    $(popup).addClass('popup');
+    $(popup).addClass('popup_type03');
+    $(popup).addClass('display-none');
+    var textArea = document.createElement('textarea');
+    var btnRetry = document.createElement('button');
+    var close = document.createElement('button');
+
+}
