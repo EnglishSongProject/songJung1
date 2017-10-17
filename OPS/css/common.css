@@ -245,7 +245,7 @@ textarea:focus{outline: none;}
 popup
 ----------------------*/
 
-.popup{position: absolute; padding:17px 23px; display: block; background-size: cover; width:250px; height: 250px; box-sizing: border-box; z-index: 100}
+.popup{position: absolute; padding:17px 23px; display: block; background-size: cover; width:250px; height: 250px; box-sizing: border-box; z-index: 1000000000}
 .popup h3{ display: inline-block; font-family:"Nanum Gothic";font-size: 13px;color: #fff; background: #a9d338; border-radius:20px; padding:7px 15px}
 .popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
 

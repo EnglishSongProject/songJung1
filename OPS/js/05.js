@@ -38,6 +38,9 @@ $(function () {
 		$('.sounds_bk').hide();
 		$('.btn_sounds').show();
 	});
+	$(".trans3").on("click", function(){
+        $(".correct3").toggle();
+    });
 });
 
 

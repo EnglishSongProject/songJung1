@@ -1516,7 +1516,7 @@ function setShowScriptPopup() {
     var scriptBtnArray = $('.btn_sp');
     var scriptArray = $('.script');
     for (var i = 0; i < scriptBtnArray.length; i++) {
-        $(this).attr('id', 'script_' + i.toString());
+        $(scriptBtnArray[i]).attr('id', 'script_' + i.toString());
         $(scriptArray[i]).addClass('script_' + i.toString());
         var topLeft = $(scriptArray[i]).attr('datasrc').split(',');
         $(scriptBtnArray[i]).on('click', function () {
@@ -1524,3 +1524,52 @@ function setShowScriptPopup() {
         });
     }
 }
+function setShowWritePopup() {
+    var writeBtnArray = $('.btn_write');
+    for (var i = 0; i < writeBtnArray.length; i++) {
+        $(writeBtnArray[i]).attr('id', 'write_' + i.toString());
+        var topLeft = $(writeBtnArray[i]).attr('datasrc').split(',');
+        $(writeBtnArray[i]).on('click', function () {
+            showWritePopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+function showWritePopup(target, top, left){
+
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+    var popup = document.createElement("div");
+    $(popup).addClass('popup');
+    $(popup).addClass('popup_type03');
+    $(popup).addClass('display-none');
+    var textArea = document.createElement('textarea');
+    $(textArea).attr('name', 'name');
+    $(textArea).attr('rows', '6');
+    $(textArea).attr('cols', '20');
+    $(textArea).attr('maxlength', '130');
+    $(textArea).attr('name', target.id);
+    $(textArea).attr('spellcheck', 'false');
+    var btnRetry = document.createElement('button');
+    $(btnRetry).addClass('btn_type_02');
+    $(btnRetry).addClass('btn_repeat');
+    $(btnRetry).on('click',function () {
+        textClearByNames(target.id)
+    });
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(textArea);
+    $(popup).append(btnRetry);
+    $(popup).append(btnClose);
+
+    $('body').append(popup);
+
+    $(popup).show();
+
+}
+

@@ -2,6 +2,7 @@
 $(function () {
     setAudio();
     setPopVideo();
+    setShowWritePopup();
 });
 
 /*
