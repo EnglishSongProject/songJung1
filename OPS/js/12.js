@@ -1,7 +1,6 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-
     setAudio();
 
     $("#btn_a_c").click(function(e) {
@@ -11,38 +10,40 @@ $(document).ready(function(e) {
         $("#btn_b_tip").toggleClass("act");
     });
 
-	$(function () {
-	    $("#self_check").click(function(){
-	        $("#self_check_div").toggleClass("on");
+    var $currentPopup = null;
 
-	        if($("#self_check_div").hasClass("on")){
-	            $("#self_check").css('left', '0');
-	        }else{
-	            $("#self_check").css('left', '720px');
-	        }
-	    });
+    $("#btn_bochung1").click(function(){
+        openPopup($("#bo_1"));
+    });
 
-	    $("#btn_bochung1").click(function(){
-	       $("#bo_1").css("display","block");
-	    });
+    $("#btn_bochung2").click(function(){
+        openPopup($("#bo_2"));
+    });
 
-	    $("#btn_bochung2").click(function(){
-	        $("#bo_2").show();
-	    });
+    $("#btn_simhwa1").click(function(){
+        openPopup($("#sim_1"));
+    });
 
-	    $("#btn_simhwa1").click(function(){
-	        $("#sim_1").css("display","block");
-	    });
+    $("#btn_simhwa2").click(function(){
+        openPopup($("#sim_2"));
+    });
 
-	    $("#btn_simhwa2").click(function(){
-	        $("#sim_2").show();
-	    });
+    $(".btn_pu_close").on('click',function(){
+        if($currentPopup){
+            closePopup($currentPopup)
+        }
+    });
 
-	    $(".btn_pu_close").click(function(){
-	       $(".popup").hide();
-	    });
+    function openPopup($Item){
+        if($currentPopup){
+            $currentPopup.hide();
+        }
+        $Item.show();
+        $currentPopup = $Item;
+    }
 
-
-	})
-
+    function closePopup($Item){
+        $Item.hide();
+        $Item = null;
+    }
 });

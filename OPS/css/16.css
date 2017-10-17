@@ -1,4 +1,6 @@
 .popup { display: none; z-index: 999999999999 !important; background: #FFFFFF;}
+.btn_pu_close {cursor:pointer}
+.btn_type {cursor:pointer}
 
 #self_check_div {
     position: absolute;
@@ -20,9 +22,9 @@
 
 #bo_1 {
     position: absolute;
-    top: 22px !important;
+    top: 99px !important;
     display: none;
-    height:313px !important
+    height:309px  !important
 }
 
 #bo_2 {
@@ -36,26 +38,26 @@
     position: absolute;
     top: 430px !important;
     display: none;
-    height:584px !important
+    height:582px !important
 }
 
 #sim_1 {
     position: absolute;
-    top: 22px !important;
+    top: 99px !important;
     display: none;
-    height: 501px !important
+    height: 499px !important
 }
 
 #sim_2 {
     position: absolute;
     top: 542px !important;
     display: none;
-    height:454px !important
+    height:408px !important
 }
 
 #sim_3 {
     position: absolute;
     top: 290px  !important;
     display: none;
-    height:724px !important
+    height:719px !important;
 }
