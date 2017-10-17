@@ -64,3 +64,5 @@ input[type=checkbox]+ label:before, input[type=radio] + label:before {
 input[type=checkbox] + label, input[type=radio] + label {
     padding-left: 0;
 }
+
+.popup { display: none; z-index: 999999999999 !important; background: #FFFFFF;}
