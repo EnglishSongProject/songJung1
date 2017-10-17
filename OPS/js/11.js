@@ -51,7 +51,7 @@ function searchLoad(){
     $("#bt_A_r").on("click",function(){
        $(".road_school img:not(:last)").hide();
        $(".load_01").show();
-       $(".cir_goal").removeClass('t02 t03 t04').addClass("cir_goal t01");
+       $(".cir_goal").removeClass().addClass("cir_goal t01");
        hideAnswer()
        checkedNum = 1;
     })
