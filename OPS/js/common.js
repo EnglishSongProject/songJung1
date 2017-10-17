@@ -1609,4 +1609,66 @@ function showWidePopup(target, top, left){
     });
     $('body').append(popup);
 }
+function setShowInputPopup() {
+    var writeBtnArray = $('.btn_write_input');
+    for (var i = 0; i < writeBtnArray.length; i++) {
+        $(writeBtnArray[i]).attr('id', 'write_input' + i.toString());
+        var topLeft = $(writeBtnArray[i]).attr('about').split(',');
+        $(writeBtnArray[i]).on('click', function () {
+            showInputPopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+function showInputPopup(target, top, left){
+
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+
+    var popup = document.createElement("div");
+    $(popup).addClass('popup');
+    $(popup).addClass('popup_type04');
+    $(popup).addClass('display-none');
+
+    var inputArea = document.createElement('input');
+    $(inputArea).attr('id', 'input_'+target.id);
+    $(inputArea).attr('maxlength', '20');
+    $(inputArea).attr('name', target.id);
+    $(inputArea).attr('spellcheck', 'false');
+
+    var btnRetry = document.createElement('button');
+    $(btnRetry).addClass('btn_type_02');
+    $(btnRetry).addClass('btn_answer');
+    $(btnRetry).on('click',function () {
+        /*        blankCheckByCss(this, 'ls_1_t1_a', 'ls_1_t1');*/
+        blankCheckByCss(this, 'input_a_'+target.id, 'input_'+target.id);
+        /*        textClearByNames(target.id)*/
+    });
+
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+
+    var correct = document.createElement('div');
+    $(correct).addClass('display-none');
+    $(correct).addClass('answer');
+    $(correct).attr('id', 'input_a_'+target.id)
+
+    var text = $(target).attr('data-name');
+    correct.innerHTML = text;
+
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(inputArea);
+    $(popup).append(btnRetry);
+    $(popup).append(btnClose);
+    $(popup).append(correct);
+
+    $('body').append(popup);
+
+    $(popup).show();
+
+}
 
