@@ -34,4 +34,26 @@ $(document).ready(function () {
         AllOff();
         $('.zoom_img_wrap').hide();
     });
+
+
+    // 롤 플레잉
+    var audio_list = [
+        {
+            audio: "./media/audio/L01/010/L01_010_LS1_add_03_a.mp3",
+            timeLine: [2.69]
+        },
+        {
+            audio: "./media/audio/L01/010/L01_010_LS1_add_03_b.mp3",
+            timeLine: [2.55]
+        },
+        {
+            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_c.mp3",
+            timeLine: [2.80]
+        },
+        {
+            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_d.mp3",
+            timeLine: [2.20]
+        }
+    ];
+    role_play(audio_list)
 });
