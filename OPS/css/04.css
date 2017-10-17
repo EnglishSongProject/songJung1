@@ -14,7 +14,7 @@
 
 
 .select_area {position: absolute; left:40px; top:28px}
-.select_name{position:absolute;z-index:100007777;width:100px;height:227px;background-color:transparent;/*border:1px solid black;*/cursor:pointer;}
+.select_name{position:absolute;z-index:100007777;width:80px;height:227px;background-color:transparent;/*border:1px solid black;*/cursor:pointer;}
 #LT_1{top:597px;left:75px;}
 #LT_2{top:605px;left:222px;}
 #LT_3{top:602px;left:382px;}
