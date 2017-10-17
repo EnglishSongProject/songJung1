@@ -24,7 +24,6 @@ $(document).ready(function(e) {
 
 	    $("#btn_bochung1").click(function(){
 	       $("#bo_1").css("display","block");
-
 	    });
 
 	    $("#btn_bochung2").click(function(){
@@ -38,8 +37,6 @@ $(document).ready(function(e) {
 	    $("#btn_simhwa2").click(function(){
 	        $("#sim_2").show();
 	    });
-
-
 
 	    $(".btn_pu_close").click(function(){
 	       $(".popup").hide();

@@ -125,6 +125,7 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .btn_wd {background-image: url(../images/common/011_3.png)}
 .btn_pop {background-image: url(../images/common/015.png)}
 .btn_write {background-image: url(../images/common/020.png)}
+.btn_write_input{background-image: url(../images/common/020.png)}
 .btn_net {background-image: url(../images/common/021.png)}
 
 
@@ -245,19 +246,13 @@ textarea:focus{outline: none;}
 popup
 ----------------------*/
 
-.popup{position: absolute; padding:17px 23px; display: block; background-size: cover; width:250px; height: 250px; box-sizing: border-box; z-index: 100}
+.popup{position: absolute; padding:17px 23px; display: block; background-size: cover; width:250px; height: 250px; box-sizing: border-box; z-index: 1000000000}
 .popup h3{ display: inline-block; font-family:"Nanum Gothic";font-size: 13px;color: #fff; background: #a9d338; border-radius:20px; padding:7px 15px}
 .popup p{ font-family:"Nanum Gothic";font-size:15px; margin-top:15px}
 
 /*popup --popup_type02 */
-.popup_type02 {background: url(../images/popup/bg_pop2.png) no-repeat 0 0;}
-.popup_type02 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
-
-/*popup --popup_type03 */
-.popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0; padding-left: 11px;}
-.popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
-.popup_type03 button {position: absolute; top: 15px; right: 45px;}
-.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent; }
+.wide_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
+.wide_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 
 
 
@@ -411,3 +406,7 @@ scriptPopup
 .trans_text{
     display: none;
 }
+.popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0; padding-left: 11px;}
+.popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
+.popup_type03 button {position: absolute; top: 15px; right: 45px;}
+.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent; }

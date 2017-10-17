@@ -64,3 +64,31 @@ input[type=checkbox]+ label:before, input[type=radio] + label:before {
 input[type=checkbox] + label, input[type=radio] + label {
     padding-left: 0;
 }
+
+.popup { display: none; z-index: 999999999999 !important; background: #FFFFFF;}
+
+
+#bo_1 {
+    position: absolute;
+    top: 106px !important;
+    display: none;
+    height:410px  !important
+}
+#bo_2 {
+    position: absolute;
+    top: 542px !important;
+    display: none;
+    height:413px !important
+}
+#sim_1 {
+    position: absolute;
+    top: 106px !important;
+    display: none;
+    height: 659px !important
+}
+#sim_2 {
+    position: absolute;
+    top: 390px !important;
+    display: none;
+    height:614px !important
+}

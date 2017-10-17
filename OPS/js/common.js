@@ -1524,21 +1524,89 @@ function setShowScriptPopup() {
         });
     }
 }
-function setShowScriptPopup() {
+function setShowWritePopup() {
     var writeBtnArray = $('.btn_write');
     for (var i = 0; i < writeBtnArray.length; i++) {
-        $(writeBtnArray[i]).attr('id', 'script_' + i.toString());
-        $(writeBtnArray[i]).addClass('script_' + i.toString());
+        $(writeBtnArray[i]).attr('id', 'write_' + i.toString());
+        var topLeft = $(writeBtnArray[i]).attr('datasrc').split(',');
+        $(writeBtnArray[i]).on('click', function () {
+            showWritePopup(this, topLeft[0], topLeft[1]);
+        })
     }
 }
-function setWritePopupTopLeft(target, top, left) {
-/*    var */
+function showWritePopup(target, top, left){
+
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
     var popup = document.createElement("div");
     $(popup).addClass('popup');
     $(popup).addClass('popup_type03');
     $(popup).addClass('display-none');
     var textArea = document.createElement('textarea');
+    $(textArea).attr('name', 'name');
+    $(textArea).attr('rows', '6');
+    $(textArea).attr('cols', '20');
+    $(textArea).attr('maxlength', '130');
+    $(textArea).attr('name', target.id);
+    $(textArea).attr('spellcheck', 'false');
     var btnRetry = document.createElement('button');
-    var close = document.createElement('button');
+    $(btnRetry).addClass('btn_type_02');
+    $(btnRetry).addClass('btn_repeat');
+    $(btnRetry).on('click',function () {
+        textClearByNames(target.id)
+    });
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(textArea);
+    $(popup).append(btnRetry);
+    $(popup).append(btnClose);
+
+    $('body').append(popup);
+
+    $(popup).show();
 
 }
+
+
+function setShowWidePopup(){
+    var widePopBtnArray = $('.btn_net');
+    for (var i = 0; i < widePopBtnArray.length; i++) {
+        $(widePopBtnArray[i]).attr('id', 'wide_' + i.toString());
+        var topLeft = $(widePopBtnArray[i]).attr('datasrc').split(',');
+        $(widePopBtnArray[i]).on('click', function () {
+            showWidePopup(this, topLeft[0], topLeft[1]);
+        })
+    }
+}
+
+function showWidePopup(target, top, left){
+    if(document.getElementsByName(target.id).length>0){
+        return;
+    }
+    var popup = document.createElement("div");
+    var innerText = "<h3>위두랑 연결 안내</h3>";
+    var btnClose = document.createElement('button');
+    $(btnClose).addClass('btn_close');
+    innerText += "<p>위두랑 사이트에 접속해서<br />";
+    innerText += "선생님과 이야기 하고,<br />";
+    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "보세요.</p>";
+    $(popup).addClass('popup');
+    $(popup).addClass('wide_popup');
+    $(popup).addClass('display-none');
+    $(popup).append(innerText);
+    popup.style.top = (target.offsetTop - top) + "px";
+    popup.style.left = (target.offsetLeft - left) + "px";
+    $(popup).append(btnClose);
+    $(btnClose).on('click',function () {
+        $(popup).detach();
+    });
+    $('body').append(popup);
+}
+

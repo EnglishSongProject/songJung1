@@ -2,9 +2,6 @@
 $(function () {
     setAudio();
     setPopVideo();
+    setShowWritePopup();
+    setShowWidePopup();
 });
-
-/*
-$(document).ready(function() {
-    imageSlide.init();
-});*/
