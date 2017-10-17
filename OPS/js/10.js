@@ -2,7 +2,7 @@
 $(function () {
     setAudio();
     setPopVideo();
-
+    setShowWritePopup();
     $(".btn_net").on("click",function(){
         showWiduPopup(this)
     });
@@ -19,14 +19,4 @@ function showWiduPopup(target){
         var $this = $(this).parent();
         $this.hide();
     });
-
-    /*
-    posX = position[0] || 0;
-    posY = position[1] || 0;
-
-    $popup.css({
-        left:$popup.offset().left - posX,
-        top: $popup.offset().top  - posY
-    });
-    */
 }
