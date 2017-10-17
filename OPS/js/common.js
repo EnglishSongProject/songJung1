@@ -1516,7 +1516,7 @@ function setShowScriptPopup() {
     var scriptBtnArray = $('.btn_sp');
     var scriptArray = $('.script');
     for (var i = 0; i < scriptBtnArray.length; i++) {
-        $(this).attr('id', 'script_' + i.toString());
+        $(scriptBtnArray[i]).attr('id', 'script_' + i.toString());
         $(scriptArray[i]).addClass('script_' + i.toString());
         var topLeft = $(scriptArray[i]).attr('datasrc').split(',');
         $(scriptBtnArray[i]).on('click', function () {
