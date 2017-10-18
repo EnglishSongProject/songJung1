@@ -18,6 +18,10 @@ var WindowsTenOS = false;
 if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
 
 $(document).ready(function(){
+    setTimeout(function () {
+        initScale("container");
+    }, 500);
+
     checkAskAnswer();
     toggleWord();
     setSpellcheck();
@@ -1671,4 +1675,39 @@ function showInputPopup(target, top, left){
     $(popup).show();
 
 }
+function setVideoRoles(){
+    //롤플레이
+    $('#role_1, #role_2, #role_3').on('click',function () {
+        //뮤트온
+        if (!$(this).hasClass('on')) {
+            $(this).addClass('on');
+            //뮤트 오프
+        } else {
+            $(this).removeClass('on');
+        }
+        setRoles();
+    });
+}
+function initScale() {
+    var wrap = document.getElementById('container');
 
+    GameManager.event.clientWidth = document.body.clientWidth;
+    GameManager.event.clientHeight = document.body.clientHeight;
+
+    GameManager.event.wrapWidth = wrap.clientWidth;
+    GameManager.event.wrapHeight = wrap.clientHeight;
+
+    GameManager.event.zoomVertical = (GameManager.event.clientHeight / GameManager.event.wrapHeight) * 1.0;
+    GameManager.event.zoomHorizontal = (GameManager.event.clientWidth / GameManager.event.wrapWidth) * 1.0;
+
+    if(parent.ZOOMVALUE == undefined) {
+        parent.ZOOMVALUE = 1;
+    }
+    if (GameManager.event.clientHeight < GameManager.event.clientWidth) {
+        GameManager.event.zoomRate = parent.ZOOMVALUE;
+    } else {
+        GameManager.event.zoomRate = GameManager.event.zoomHorizontal;
+    }
+
+    // alert(GameManager.event.zoomRate);
+}
