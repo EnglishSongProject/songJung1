@@ -20,7 +20,7 @@
 .prog_pos{	position:absolute; left: 340px; top:25px; width:60px; height:50px; overflow:hidden; }
 .prog_dur{	position:absolute; left:400px; top:25px; width:60px; height:50px; overflow:hidden; }
 
-.role_list{position: absolute; top: -6px;left: 20px;}
+.role_list{position: absolute; top: -6px;left: 20px;z-index: 1}
 .role_list li{float: left; width: 50px; height: 50px; margin-right: 20px; border: 3px solid gray; border-radius: 3px;}
 .role_list li.on{border-color: yellow;}
 .role_list li > img{width: 50px; height: 50px;}
