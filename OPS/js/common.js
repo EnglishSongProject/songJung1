@@ -777,6 +777,7 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.fontFaceName='Open Sans';
             transText[i].style.color='#339900';
             transText[i].style.top=transTextTop.toString()+'px';
+            transText[i].style.left='34px';
             $(transText[i]).addClass('transText '+targetId);
             transTextTop += textLineHeight;
         }else{
