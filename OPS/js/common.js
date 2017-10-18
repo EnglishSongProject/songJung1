@@ -1596,7 +1596,7 @@ function showWidePopup(target, top, left){
     $(btnClose).addClass('btn_close');
     innerText += "<p>위두랑 사이트에 접속해서<br />";
     innerText += "선생님과 이야기 하고,<br />";
-    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "친구들과 의견을 공유해<br />";
     innerText += "보세요.</p>";
     $(popup).addClass('popup');
     $(popup).addClass('wide_popup');
