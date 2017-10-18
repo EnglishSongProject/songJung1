@@ -1,17 +1,17 @@
 $(document).ready(function(){
     $(".btn_role").on("click",function(){
         $(".role_play").show();
+        imageSlide.closePopup();
     });
-    role_play()
 });
 
-function role_play(){
+function role_play(audio_list){
     var $btnPlaystop = $(".btn_playstop")
     var $btnTrns = $(".btn_rtrans");
     var $btnPlay =  $(".btn_rplay");
     var $btnPause =  $(".btn_rpause");
     var $btnStop =  $(".btn_rstop");
-
+ 
     var $progressBar = $(".progress_rbar");
     var $controllBar = $(".controll_rbar");
     var $interpret = $(".interpret");
@@ -19,32 +19,21 @@ function role_play(){
     var $playerPanel =$(".player_panel");
     var $current = $selectPlayer.eq(0);
     var rpAudio = $("#pAudio").get(0);
-
+ 
     var selectedSide  = 'all';
-    var timeLine = 2.69;
+    var timeLine = 5.35;
     var isPlaying = false;
     var timeID = null;
-
-    var role_player_list = [
-        {
-            audio: "./media/audio/L01/010/L01_010_LS1_add_03_a.mp3",
-            timeLine: 2.69
-        },
-        {
-            audio: "./media/audio/L01/010/L01_010_LS1_add_03_b.mp3",
-            timeLine: 2.50
-        },
-        {
-            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_c.mp3",
-            timeLine: 2.60
-        },
-        {
-            audio:  "./media/audio/L01/010/L01_010_LS1_add_03_d.mp3",
-            timeLine: 1.95
-        }
-    ];
+ 
+    var role_player_list = audio_list;
     var checkbox = document.querySelectorAll("input[type=checkbox]");
-
+ 
+ 
+    function init(){
+       rpAudio.src = role_player_list[0].audio;
+       timeLine = role_player_list[0].timeLine;
+    }
+ 
     function initEvent(){
         // 오디오 이벤트
         $btnPlaystop.on("click",function(e){
@@ -55,21 +44,21 @@ function role_play(){
                 pauseAudio()
             }
         });
-
+ 
         $btnStop.on("click",function(){
             stopAudio();
         });
-
+ 
         // 플레이어 선택
         $selectPlayer.click(function(e){
             var $this = $(this);
             var idx = $this.index();
-
-
+ 
+ 
             // 해당 오디오 선택
             rpAudio.src = role_player_list[idx].audio;
             timeLine = role_player_list[idx].timeLine;
-
+ 
             // 오디오 로드
             $(rpAudio).on('loadedmetadata', function() {
                 resetAudio();
@@ -81,8 +70,9 @@ function role_play(){
                 $playerPanel.eq(idx).show();
                 $current  = $this;
             });
+ 
         });
-
+ 
         // 체크박스 선택
         for(var i=0; i < checkbox.length; i++){
             checkbox[i].addEventListener("change",function(){
@@ -95,7 +85,7 @@ function role_play(){
                     this.checked = false
                 }
                 stopAudio();
-
+ 
                 //어느 플레이어가 선택되었는지 체크
                 for(var i=0; i < checkbox.length; i++){
                     if(checkbox[i].checked){
@@ -104,10 +94,9 @@ function role_play(){
                     }
                     selectedSide = "all"
                 }
-
             })
         }
-
+ 
         //  진행바 클릭시 해당부분으로 이동
         $progressBar.on("click",function(e){
             var moveX = e.pageX -  $controllBar.width() / 2
@@ -116,7 +105,7 @@ function role_play(){
             });
             rpAudio.currentTime = getCerrentTime(moveX)
         });
-
+ 
         // 해석 온오프
         $btnTrns.on("click",function(){
             var $this = $(this);
@@ -132,20 +121,20 @@ function role_play(){
                 })
             }
         });
-
+ 
         //rpAudio.addEventListener("timeupdate",updateProgress);
-
+ 
         rpAudio.addEventListener("ended", function (e) {
             stopAudio();
         });
-
+ 
         /* 마우스 드래그, 터치 이벤트 */
         $controllBar.get(0).addEventListener('mousedown', mouseDown, false);
         $controllBar.get(0).addEventListener('touchstart', mouseDown, false);
-
+ 
         window.addEventListener('mouseup', mouseUp, false);
         window.addEventListener('touchend', mouseUp, false);
-
+ 
         // 팝업창 닫을 때 오디오 초기화, 첫번째 플레이어 선택, 해석끄기, 팝업창 숨기기
         $(".role_play .btn_close").on("click",function(){
             resetAudio();
@@ -157,26 +146,37 @@ function role_play(){
             $(".role_play").hide();
         })
     }
-
+ 
     function checkSide(){
-          if(selectedSide == "sideA"){
-            if(rpAudio.currentTime <  timeLine){
-                rpAudio.muted = true
-            }else{
-                rpAudio.muted = false
-            }
-        }else if(selectedSide == "sideB"){
-            if( rpAudio.currentTime  > timeLine){
-                rpAudio.muted = true
-            }else{
-                rpAudio.muted = false
-            }
+        var startTime =  timeLine[0];
+        var endTime =  timeLine[1] || rpAudio.duration
 
+        if(selectedSide == "sideA"){
+            if(rpAudio.currentTime <  startTime){
+                rpAudio.muted = true
+            }else{
+                rpAudio.muted = false
+            }
+ 
+        }else if(selectedSide == "sideB"){
+            if(startTime < rpAudio.currentTime &&  endTime > rpAudio.currentTime){
+               rpAudio.muted = true
+            }else{
+               rpAudio.muted = false
+            }
+ 
+        }else if(selectedSide == "sideC"){
+            if(rpAudio.currentTime >  endTime){
+               rpAudio.muted = true
+            }else{
+               rpAudio.muted = false
+            }
+          
         }else if(selectedSide == "all"){
             rpAudio.muted = false
         }
     }
-
+ 
     // 초기화
     function resetAudio(){
         stopAudio();
@@ -185,40 +185,38 @@ function role_play(){
             checkbox[i].checked = false
         }
     }
-
+ 
     // 오디오 관련 함수
     function playAudio(){
         rpAudio.play();
         isPlaying = true
         $(".btn_playstop").removeClass("btn_rplay").addClass("btn_rpause");
-
+ 
         if (timeID){
             clearInterval(timeID);
         }
         timeID = setInterval(updateProgress,10);
-
+ 
     }
-
+ 
     function pauseAudio(){
         rpAudio.pause();
         isPlaying = false
         $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
-
+ 
         clearInterval(timeID);
         timeID = null;
-
+ 
     }
-
+ 
     function stopAudio(){
         try {
             rpAudio.pause();
             isPlaying = false;
             rpAudio.currentTime = 0;
-            $controllBar.offset({
-                left:276
-            })
+            $controllBar.removeAttr("style");
             $(".btn_playstop").removeClass("btn_rpause").addClass("btn_rplay");
-
+ 
             clearInterval(timeID);
             timeID = null;
         }
@@ -227,29 +225,29 @@ function role_play(){
             if(window.console && console.error("Error:" + e));
         }
     }
-
+ 
     function updateProgress(){
         var curX = (rpAudio.currentTime / rpAudio.duration * $progressBar.width()) + $progressBar.offset().left;
         $controllBar.offset({
             left:curX
         });
-
+ 
        checkSide();
     }
-
+ 
     /*drag , 터치 관련 함수*/
     var activeControl = false;
     function mouseDown() {
         activeControl = true;
         window.addEventListener('mousemove', moveControll, true);
         window.addEventListener('touchmove', moveControll, true);
-
+ 
         //rpAudio.removeEventListener('timeupdate', updateProgress, false);
         clearInterval(timeID);
         timeID = null;
         rpAudio.pause();
     }
-
+ 
     function mouseUp(event) {
         if (activeControl == true) {
             var posX = 0;
@@ -259,15 +257,15 @@ function role_play(){
             else {
                 posX = event.pageX;
             }
-
+ 
             window.removeEventListener('mousemove', moveControll, true);
             window.removeEventListener('touchmove', moveControll, true);
-
+ 
             // change current time
             posX -=  $('.controll_bar').width() / 2;
             rpAudio.currentTime = getCerrentTime(posX);
             //rpAudio.addEventListener("timeupdate",updateProgress,false);
-
+ 
             if(isPlaying){
                 rpAudio.play();
                 if(timeID == null){
@@ -277,7 +275,7 @@ function role_play(){
         }
         activeControl = false;
     }
-
+ 
     function moveControll(event){
         var moveX = 0;
         if (event.touches) {
@@ -287,23 +285,26 @@ function role_play(){
             event.preventDefault();
             moveX = event.pageX;
         }
-
+ 
         var startX =$progressBar.offset().left
         var endX = $progressBar.offset().left + $progressBar.width() - $controllBar.width()
-
+ 
         if(moveX < startX){
             moveX = startX
         }else if(moveX > endX){
             moveX = endX
         }
-
+ 
         $controllBar.offset({
             left:moveX
         })
     }
-
+ 
     function getCerrentTime(posX) {
         return (posX - $progressBar.offset().left) / ($progressBar.width()) * rpAudio.duration
     }
+ 
+    init();
     initEvent();
-}
+ }
+ 

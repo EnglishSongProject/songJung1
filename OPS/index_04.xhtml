@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="./css/common.css" />
 <link rel="stylesheet" href="./css/04.css" />
 <link rel="stylesheet" href="./css/video.css" />
+    <link rel="stylesheet" type="text/css" href="./css/role_play.css" />
 <script type="text/javascript" src="js/blux-apx-1.0.js"></script>
 <script type="text/javascript" src="js/DTCaliperSensor.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -15,6 +16,7 @@
 <script type="text/javascript" src="js/04.js"></script>
 <script type="text/javascript" src="js/04_mediaInfo.js"></script>
 <script type="text/javascript" src="js/video.js"></script>
+<script type="text/javascript" src="js/role_play.js"></script>
 <!--${WGTS_LIBS}-->
 
 <style>
@@ -38,6 +40,7 @@ div[data-apx-id='82371A34_'] input,
 div[data-apx-id='81418A34_'] input {border-bottom:0px !important}
 
 .scriptPopup {left:-200px; z-index: 10000000000 !important}
+.controll_rbar {left:300px}
 </style>
 <title>Digital Textbook</title>
 </head>
@@ -217,5 +220,110 @@ div[data-apx-id='81418A34_'] input {border-bottom:0px !important}
 	<p>       Nice to meet you, too, Polly.</p>
 	<span>저도 만나서 반가워요, Polly.</span>
 </div>
+
+<!-- 롤플레이 팝업 -->
+<div class="role_play display-none">
+    <h1>Role_Play</h1>
+    <div class="player_img">
+        <span class="player01 on"  title="jason"/>
+        <span class="player02"  title="minji"/>
+        <span class="player03"  title="siu"/>
+        <span class="player04"  title="anna"/>
+    </div>
+    <div class="panel_list">
+        <div class="player_panel">
+            <ul>
+                <li style="height:75px">
+                    <em>A</em>: This is my English teacher, Mr.Parker .<br/>
+                    <span style="padding-left:20px">He is from Canada.</span>        
+                    <span class="interpret">이분은 나의 영어 선생님인 Parker 선생님이셔, 캐나다 출신이셔.</span>
+                </li>
+                <li>
+                    <em>B</em>: Hi. Pleased to meet you, Mr.Parker.
+                    <span class="interpret">안녕하세요. 만나 뵙게 되어 반갑습니다, Parker 선생님.</span>
+                </li>
+                <li>
+                    <em>C</em>: Nice to meet you, too.
+                    <span class="interpret">나도 만나서 반갑구나.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <li style="height:75px">
+                    <em>A</em>: This is my best friend, Suji.<br/>
+                    <span style="padding-left:20px">She is from Korea.</span>        
+                    <span class="interpret">이 아이는 나의 가장 친한 친구 수지야. 한국 출신이야.</span>
+                </li>
+                <li>
+                    <em>B</em> Hi. Nice to meet you, Suji
+                    <span class="interpret">안녕. 만나서 반가워, 수지야.</span>
+                </li>
+                <li>
+                    <em>C</em>: Nice to meet you, too.
+                    <span class="interpret">나도 만나서 반가워.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <ul>
+                    <li style="height:75px">
+                        <em>A</em>: This is my neighbor, Pei<br/>
+                        <span style="padding-left:20px">She is from Thailand.</span>        
+                        <span class="interpret">이분은 나의 이웃인 Pei 아줌마야. 태국 출신이셔.</span>
+                    </li>
+                    <li>
+                        <em>B</em> Hi. Pleased to meet you, Pei.
+                        <span class="interpret">안녕하세요. 만나 뵙게 되어 반갑습니다, Pei 아줌마</span>
+                    </li>
+                    <li>
+                        <em>C</em>: Pleased to meet you, too.
+                        <span class="interpret">나도 만나서 반갑구나.</span>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="player_panel hide">
+            <ul>
+                <li style="height:75px">
+                    <em>A</em>: This is my classmate, Eric.<br/>
+                    <span style="padding-left:20px">He is from France.</span>        
+                    <span class="interpret">이 아이는 반 친한인 Eric이야. 프랑스 출신이야.</span>
+                </li>
+                <li>
+                    <em>B</em> Hi. Nice to meet you, Eric.
+                    <span class="interpret">안녕. 만나서 반가워, Eric.</span>
+                </li>
+                <li>
+                    <em>C</em>: Nice to meet you, too.
+                    <span class="interpret">나도 만나서 반가워.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="player_controller">
+        <div class="select_player">
+            <input type="checkbox" id="sideA" />
+            <label for="sideA"></label>
+            <span class="mr_5">A</span>
+            <input type="checkbox" id="sideB"/>
+            <label for="sideB"></label>
+            <span class="mr_5">B</span>
+            <input type="checkbox" id="sideC"/>
+            <label for="sideC"></label>
+            <span class="mr_5">C</span>
+        </div>
+        <div class="btn_wrap">
+            <button class="btn_playstop btn_rplay" style="margin-left:20px"></button>
+            <button class="btn_rstop"></button>
+            <button class="progress_rbar"></button>
+            <span class="controll_rbar"></span>
+            <button class="btn_rtrans trans_off"></button>
+        </div>
+    </div>
+    <audio id="pAudio" src="./media/audio/L01/011/L01_011_LS2_add_03_a.mp3"></audio>
+    <img class="btn_close" src="images/common/player/pop_media_close.png" alt="닫기" />
+</div> <!-- 롤플레이 팝업 -->
 </body>
 </html>
