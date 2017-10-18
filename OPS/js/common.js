@@ -772,6 +772,7 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.fontFaceName='Open Sans';
             transText[i].style.color='#339900';
             transText[i].style.top=transTextTop.toString()+'px';
+            transText[i].style.left='34px';
             $(transText[i]).addClass('transText '+targetId);
             transTextTop += textLineHeight;
         }else{
@@ -1599,7 +1600,7 @@ function showWidePopup(target, top, left){
     $(btnClose).addClass('btn_close');
     innerText += "<p>위두랑 사이트에 접속해서<br />";
     innerText += "선생님과 이야기 하고,<br />";
-    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "친구들과 의견을 공유해<br />";
     innerText += "보세요.</p>";
     $(popup).addClass('popup');
     $(popup).addClass('wide_popup');
