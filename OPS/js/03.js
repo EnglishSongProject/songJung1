@@ -21,9 +21,6 @@ $(document).ready(function () {
         $(".eg > div").eq(idx).show();
     });
 
-    $(".btn_tip").on("click", function () {
-        $(".tip_con").toggle();
-    });
 
     $(".trans3").on("click", function () {
         $(".correct3").toggle();

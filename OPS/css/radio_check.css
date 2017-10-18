@@ -12,6 +12,7 @@ label.checkbox_1_b, label.checkbox_2_b, label.checkbox_3_b, label.checkbox_4_b, 
 input[type=checkbox].checkbox_1_b:checked, label.checkbox_1_b:before, input[type=radio].radio_1_b:checked, label.radio_1_b:before{
     background: url(../images/common/num_01.png)  no-repeat 0 0;
 }
+
 input[type=checkbox].checkbox_2_b:checked, label.checkbox_2_b:before, input[type=radio].radio_2_b:checked, label.radio_2_b:before{
     background: url(../images/common/num_02.png)  no-repeat 0 0;
 }

@@ -187,8 +187,13 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .slider_thumbnail button {display: inline-block; width:20px; height:20px; overflow: hidden; background: url(../images/common/slide_bt_off.png) no-repeat 0 0; margin:0 5px; font-family: "Noto Sans KR"; text-indent:-999em}
 .slider_thumbnail button.on {background: url(../images/common/slide_bt_on.png); font-weight:700; text-indent:-999em}
 
-.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
-.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
+.btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png); }
+.btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png); }
+
+.slider_content .btn_next {position:absolute; top:50%; left:-82px; background:url("../images/common/btn_left.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999;text-indent:-9999em; transform: translateY(-50%)}
+.slider_content .btn_prev {position:absolute; top:50%; right:519px; background:url("../images/common/btn_right.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999; text-indent:-9999em; transform: translateY(-50%)}
+
+
 
 
 /*체크박스*/
@@ -238,7 +243,7 @@ textarea {overflow: auto}
 textarea:focus{outline: none;}
 
 .intro_word {display: none}
-
+.btn_type {cursor:pointer}
 
 /*----------------------
 popup
