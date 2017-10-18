@@ -16,10 +16,34 @@ var isPc = (AndroidOS == false && ipadOS ) ? true : false;
 
 var WindowsTenOS = false;
 if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
-
+// 디바이 터치 등록
+var GameManager = {
+    event: {
+        isTouchDevice: 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch,
+        eventSelector: function (eventType) {
+            // console.log('□ this.isTouchDevice :', this.isTouchDevice);
+            var selectedEvent;
+            switch (eventType) {
+                case 'eventDown':
+                    selectedEvent = this.isTouchDevice ? 'touchstart' : 'mousedown';
+                    break;
+                case 'eventMove':
+                    selectedEvent = this.isTouchDevice ? 'touchmove' : 'mousemove';
+                    break;
+                case 'eventUp':
+                    selectedEvent = this.isTouchDevice ? 'touchend' : 'mouseup';
+                    break;
+                case 'eventOut':
+                    selectedEvent = this.isTouchDevice ? 'touchleave' : 'mouseout';
+                    break;
+            }
+            return selectedEvent;
+        }
+    }
+};
 $(document).ready(function(){
     setTimeout(function () {
-        initScale("container");
+        initScale();
     }, 500);
 
     checkAskAnswer();
@@ -1378,7 +1402,7 @@ function setPopVideo() {
         innerHtmlText += "<div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='닫기'/></div></div>";
         innerHtmlText += "<div id='vwrap' ><div class='pageContainer'><div class='page_1'><div class='videoWrap'></div></div>";
         innerHtmlText += "<div class='txt'>*동영상의 대표 이미지를 poster로 지정해야 함</div></div></div>";
-        innerHtmlText += "<div class='waiter' id='waiter_wrap'><div class='bg'></div><div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div></div><div class='controller'><div class='bg'></div>";
+        innerHtmlText += "<div class='waiter' id='waiter_wrap'><img src='./images/common/controls/vdo/mic.png' /></div><div class='controller'><div class='bg'></div>";
         innerHtmlText += "<div class='progController'><div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div><div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>";
         innerHtmlText += "<div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><div id='prog_color'><img src='images/common/player/prog_color.png' /></div><div id='prog_mouse'>";
         innerHtmlText += "<img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>"
@@ -1690,7 +1714,7 @@ function setVideoRoles(){
     });
 }
 function initScale() {
-    var wrap = document.getElementById('container');
+    var wrap = document.querySelector('body');
 
     GameManager.event.clientWidth = document.body.clientWidth;
     GameManager.event.clientHeight = document.body.clientHeight;
