@@ -18,18 +18,19 @@
     position: absolute;
     transition: 0.5s;
     z-index: 999999999999;
+    left:722px;top:23px;
 }
 
 #bo_1 {
     position: absolute;
-    top: 99px !important;
+    top: 90px !important;
     display: none;
     height:309px  !important
 }
 
 #bo_2 {
     position: absolute;
-    top: 535px !important;
+    top: 380px !important;
     display: none;
     height:413px !important
 }
@@ -43,14 +44,14 @@
 
 #sim_1 {
     position: absolute;
-    top: 99px !important;
+    top: 90px !important;
     display: none;
     height: 499px !important
 }
 
 #sim_2 {
     position: absolute;
-    top: 535px !important;
+    top: 380px !important;
     display: none;
     height:443px !important
 }
@@ -61,8 +62,21 @@
     display: none;
     height:719px !important;
 }
-.btn_list{position:absolute;left:375px;top:115px;}
+
+.bt_list1{left:378px;top:115px;}
 .bt_list2{left:336px;top:690px;}
 .bt_list3{left:668px;top:690px;}
 .bt_list4{left:320px;top:824px;}
 .bt_list5{left:634px;top:824px;}
+
+
+.bs_top{top:100px;left:44px;}
+.bs_middle {top: 391px; left: 44px;}
+.bs_bottom{top:928px;left:44px;}
+
+.btn_bo,
+.btn_sim{width:37px; height:28px; background-repeat:no-repeat;text-indent:-9999px; background-size:cover;}
+.bs_top > button:first-of-type(1),.bs_bottom > button:first-of-type(1){margin-top:0;}
+
+.p23_btn {top: 732px;left: 655px;}
+.p23_btn > button {margin-top: 10px; display: block;}
