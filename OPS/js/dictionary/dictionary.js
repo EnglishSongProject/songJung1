@@ -12,8 +12,8 @@ $(document).ready(function(){
                 $("#flashcard > #word_meaning").text(words[index].meaning);
                 $("#flashcard_example > #description").text(words[index].description);
                 $("#flashcard_example > #description2").text(words[index].description2);
-                $("#btn_mp3_a").off('click');
-                $("#btn_mp3_a").on("click", function(){
+                //$("#word").off('click');
+                $("#word").on("click", function(){
                     playAudio('./media/audio/WORD/'+words[index].unit+'/'+words[index].mp3+'.mp3', 'single');
                 });
             }

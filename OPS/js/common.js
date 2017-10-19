@@ -21,9 +21,7 @@ $(document).ready(function(){
     checkAskAnswer();
     toggleWord();
     setSpellcheck();
-    toggleTip()
 })
-
 
 // 오디오 팝업
 var currentFile = "";
@@ -351,6 +349,17 @@ function playAudio(path, btnId, target, imgId, direction) {
 
     function getCerrentTime(posX) {
         return (posX - $('.progress_bar').offset().left) / ($('.progress_bar').width() - $('.controll_bar').width()) * oAudio.duration
+    }
+}
+
+// 열려있는 사운드창 닫기
+function closePopup(){
+    if($("#myaudio").length > 0) {
+        $(".audio-popup").hide().detach();
+        currentFile = ''
+    }
+    if($('.single').length){
+        $('.single').detach()
     }
 }
 
@@ -777,7 +786,6 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.fontFaceName='Open Sans';
             transText[i].style.color='#339900';
             transText[i].style.top=transTextTop.toString()+'px';
-            transText[i].style.left='34px';
             $(transText[i]).addClass('transText '+targetId);
             transTextTop += textLineHeight;
         }else{
@@ -1040,10 +1048,12 @@ function setTextDrag(num) {
 }
 //사전 재생모듈
 function setDictionary() {
-
     var diction = $('.btn_word');
 
     $(diction).on('click', function () {
+
+        // 열려있는 사운드 창 닫기
+        closePopup();
         $('.intro_word').css('display', 'block');
     });
 
@@ -1063,7 +1073,6 @@ function setDictionary() {
     dictionInnerHtml += "<ul class='word_catagory_list'><li>단원</li><li class='display-none'>알파벳</li></ul>";
     dictionInnerHtml += "<ul class='lesson_btn_list'><li class='on'>전체</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>sp</li></ul></div>";
     dictionInnerHtml += "<div id='words' class='word_list bold'></div>";
-    dictionInnerHtml += "<div class='word btn_mp3_a' id='btn_mp3_a'></div>";
     dictionInnerHtml += "<div id='flashcard'><div id='word' class='bold'></div><div id='word_meaning'></div></div>";
     dictionInnerHtml += "<div id='flashcard_example'><div id='description' class='bold'></div><div id='description2'></div></div>";
 
@@ -1288,11 +1297,5 @@ function showInputPopup(target, top, left){
 
     $(popup).show();
 
-}
-
-function toggleTip(){
-    $(".btn_tip").on("click", function () {
-        $(".tip_con").toggle();
-    });
 }
 
