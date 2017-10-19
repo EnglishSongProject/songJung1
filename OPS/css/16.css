@@ -17,7 +17,7 @@
 #self_check {
     position: absolute;
     transition: 0.5s;
-    z-index: 999999999999;
+    z-index: 1000000001;
     left:722px;top:23px;
 }
 
