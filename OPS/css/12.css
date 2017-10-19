@@ -29,15 +29,15 @@
 .btn_write {background-image: url(../images/common/020.png)}
 .btn_answer{background-image: url(../images/common/012.png)}
 /* 버튼간격 */
-.btn_list {position: absolute; display: inline-block; margin-left:5px !important; vertical-align: middle; z-index: 1000000000}
+.btn_list {position: absolute; display: inline-block; margin-left:5px !important; vertical-align: middle;z-index:100007774;}
 .btn_list button {vertical-align: middle; left: 5px;}
 /*보충심화*/
 .btn_bo,
 .btn_sim{width:37px; height:28px; background-repeat:no-repeat;text-indent:-9999px; background-size:cover;}
-.bs_top{top:148px;left:43px;}
+.bs_top{top:148px;left:43px;z-index:100007775;}
 .bs_top > button,.bs_bottom > button{display:block;margin-top:5px;}
 .bs_top > button:first-of-type(1),.bs_bottom > button:first-of-type(1){margin-top:0;}
-.bs_bottom{top:611px;left:43px;}
+.bs_bottom{top:611px;left:43px;z-index:100007775;}
 /* input=text */
 #t_1_1,#t_1_2,#t_1_3,#t_2_1,#t_2_2,#t_2_3,
 #a_1_1,#a_1_2,#a_1_3,#a_2_1,#a_2_2,#a_2_3{position:absolute;z-index:1000000000;outline:none;font-family: 'Faustina';width:105px;height:22px;}
