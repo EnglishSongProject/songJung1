@@ -6,7 +6,7 @@ $(function () {
     setPopVideo();
     //btn_write
     setShowWritePopup();
-    //btn_net
+    //btn_wide
     setShowWidePopup();
     //btn_write_input
     setShowInputPopup();

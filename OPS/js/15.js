@@ -3,4 +3,8 @@
  */
 $(function () {
     setAudio();
+
+    $("#btn_world_intro > *").click(function(){
+        $(".showInfoPopup").toggle();
+    })
 });

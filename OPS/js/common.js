@@ -16,36 +16,8 @@ var isPc = (AndroidOS == false && ipadOS ) ? true : false;
 
 var WindowsTenOS = false;
 if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
-// 디바이 터치 등록
-var GameManager = {
-    event: {
-        isTouchDevice: 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch,
-        eventSelector: function (eventType) {
-            // console.log('□ this.isTouchDevice :', this.isTouchDevice);
-            var selectedEvent;
-            switch (eventType) {
-                case 'eventDown':
-                    selectedEvent = this.isTouchDevice ? 'touchstart' : 'mousedown';
-                    break;
-                case 'eventMove':
-                    selectedEvent = this.isTouchDevice ? 'touchmove' : 'mousemove';
-                    break;
-                case 'eventUp':
-                    selectedEvent = this.isTouchDevice ? 'touchend' : 'mouseup';
-                    break;
-                case 'eventOut':
-                    selectedEvent = this.isTouchDevice ? 'touchleave' : 'mouseout';
-                    break;
-            }
-            return selectedEvent;
-        }
-    }
-};
-$(document).ready(function(){
-    setTimeout(function () {
-        initScale();
-    }, 500);
 
+$(document).ready(function(){
     checkAskAnswer();
     toggleWord();
     setSpellcheck();
@@ -380,6 +352,17 @@ function playAudio(path, btnId, target, imgId, direction) {
     }
 }
 
+// 열려있는 사운드창 닫기
+function closePopup(){
+    if($("#myaudio").length > 0) {
+        $(".audio-popup").hide().detach();
+        currentFile = ''
+    }
+    if($('.single').length){
+        $('.single').detach()
+    }
+}
+
 //슬라이더 js
 var imageSlide = {
 
@@ -398,9 +381,16 @@ var imageSlide = {
                 image[m].addEventListener('touchmove', imageSlide.swipe.swiper, false);
                 image[m].addEventListener('touchend',imageSlide.swipe.swiper, false);
             }
+
+            slide_content[i].getElementsByClassName('btn_next')[0].addEventListener("click", function(){
+                imageSlide.showImg.call(thumbnail_list[0])
+            });
+
+            slide_content[i].getElementsByClassName('btn_prev')[0].addEventListener("click", function(){
+                imageSlide.showImg.call(thumbnail_list[1])
+            });
         }
     },
-
 
     showImg  : function(){
         var content =  this.parentNode.parentNode.parentNode;
@@ -796,406 +786,13 @@ function showScriptPopupTopLeft(target, top, left){
             transText[i].style.fontFaceName='Open Sans';
             transText[i].style.color='#339900';
             transText[i].style.top=transTextTop.toString()+'px';
-            transText[i].style.left='34px';
             $(transText[i]).addClass('transText '+targetId);
             transTextTop += textLineHeight;
         }else{
             transText[i].style.lineHeight=textLineHeight.toString()+'px';
         }
     }
-
 }
-
-$(document).ready(function(){
-    /**
-     * Created by sr01-02 on 2017-09-15.
-     */
-    /**
-     * Created by wonhuiryu on 2017-09-09.
-     */
-        // Global variable to track current file name.
-        //OS 분기처리
-    var ipadOS = false;
-    if (navigator.appVersion.indexOf("iPad")!=-1) ipadOS = true;
-
-    var AndroidOS = false;
-    if ( navigator.userAgent.toLowerCase().indexOf("android") != -1 ) AndroidOS = true;
-
-    var isPc = (AndroidOS == false && ipadOS ) ? true : false;
-
-    var WindowsTenOS = false;
-    if ( navigator.userAgent.toLowerCase().indexOf("webview") != -1 ) WindowsTenOS = true;
-
-
-    //슬라이더 js
-    var imageSlide = {
-
-        init : function(){
-            var slide_content = document.getElementsByClassName('slider_content');
-            for(var i=0,j=slide_content.length; i<j; i++){
-                var slider_image = slide_content[i].getElementsByClassName('slider_image')[0];
-                var image = slider_image.children;
-                var thumbnail = slide_content[i].getElementsByClassName('slider_thumbnail')[0];
-                var thumbnail_list = thumbnail.children;
-                slider_image.firstElementChild.classList.add('on');
-                for(var m=0,n=thumbnail_list.length; m<n; m++){
-                    if(m===0) thumbnail_list[m].classList.add('on');
-                    thumbnail_list[m].addEventListener('mousedown',imageSlide.showImg,false);
-                    image[m].addEventListener('touchstart', imageSlide.swipe.swiper, false);
-                    image[m].addEventListener('touchmove', imageSlide.swipe.swiper, false);
-                    image[m].addEventListener('touchend',imageSlide.swipe.swiper, false);
-                }
-            }
-        },
-
-
-        showImg  : function(){
-            var content =  this.parentNode.parentNode.parentNode;
-            var index = parseInt(this.getAttribute('data-num'));
-            var slide = content.getElementsByClassName('slider_image')[0];
-            this.parentNode.getElementsByClassName('on')[0].classList.remove('on');
-            this.classList.add('on');
-            slide.getElementsByClassName('on')[0].classList.remove('on');
-            slide.children[index-1].classList.add('on');
-
-            imageSlide.closePopup()
-        },
-
-        buttonAction : {
-
-            prevImageShow : function(){
-                var slide = this.getElementsByClassName('slider_image')[0];
-                var thumbnail = this.getElementsByClassName('slider_thumbnail')[0];
-                var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('data-num'));
-                if(index === 1) {
-                    return false;
-                }else{
-                    slide.getElementsByClassName('on')[0].classList.remove('on');
-                    slide.children[index-2].classList.add('on');
-                    thumbnail.getElementsByClassName('on')[0].classList.remove('on');
-                    thumbnail.children[index-2].classList.add('on');
-                }
-
-                imageSlide.closePopup()
-
-            },
-
-            nextImageShow : function(){
-                var slide = this.getElementsByClassName('slider_image')[0];
-                var thumbnail = this.getElementsByClassName('slider_thumbnail')[0];
-                var index = parseInt(thumbnail.getElementsByClassName('on')[0].getAttribute('data-num'));
-
-                if(index === slide.children.length) {
-                    return false;
-                }
-                else {
-                    slide.getElementsByClassName('on')[0].classList.remove('on');
-                    slide.children[index].classList.add('on');
-                    thumbnail.getElementsByClassName('on')[0].classList.remove('on');
-                    thumbnail.children[index].classList.add('on');
-                }
-
-                imageSlide.closePopup()
-            }
-        },
-        swipe : {
-            touch : null,
-            start_x : null,
-            start_y : null,
-            end_x : null,
-            end_y : null,
-            move : false,
-            swiper : function(event){
-                if (typeof event !== 'undefined') {
-                    if (typeof event.touches !== 'undefined') {
-                        imageSlide.swipe.touch = event.touches[0];
-                        if(event.type === 'touchstart'){
-                            imageSlide.swipe.start_x = Math.floor(imageSlide.swipe.touch.pageX);
-                            imageSlide.swipe.start_y = Math.floor(imageSlide.swipe.touch.pageY);
-                            imageSlide.swipe.move = false;
-                        }else if(event.type === 'touchmove'){
-                            imageSlide.swipe.move = true;
-                            imageSlide.swipe.end_x = Math.floor(imageSlide.swipe.touch.pageX);
-                            imageSlide.swipe.end_y = Math.floor(imageSlide.swipe.touch.pageY);
-                        }else if(event.type === 'touchend'){
-                            if(imageSlide.swipe.move) imageSlide.swipe.start_x - imageSlide.swipe.end_x > 0 ? imageSlide.buttonAction.prevImageShow.call(this.parentNode.parentNode.parentNode.parentNode) : imageSlide.buttonAction.nextImageShow.call(this.parentNode.parentNode.parentNode.parentNode)
-
-                        }
-                    }
-                }
-            }
-        },
-        closePopup : function(){
-            if($("#myaudio").length > 0) {
-                $(".audio-popup").hide().detach();
-                currentFile = ''
-            }
-
-            if($('.single').length){
-                $('.single').detach()
-            }
-        }
-    }
-
-    function blankCheck(questionId, Ids, answers){
-
-        var questionId = document.getElementById(questionId);
-        var answerIdArray;
-        var answerArray;
-        var answerId;
-        //해당 문자가 + 기호를 포함하고 있는가 확인한다.
-        //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
-        //포함하고 있지 않다면 단일 빈칸 체크임
-        if(Ids.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
-            answerIdArray =  Ids.split('+');
-            answerArray =  answers.split('+');
-        }else{//단일일경우(단일 빈칸체크일 경우
-            answerIdArray = [Ids];
-            answerArray = [answers];
-        }
-        if(questionId.innerHTML =='정답'){
-            questionId.innerHTML='다시풀기';
-            for(var i=0; i<answerIdArray.length; i++){
-                answerId = document.getElementById(answerIdArray[i]);
-                answerId.innerHTML = answerArray[i];
-            }
-        }else if (questionId.innerHTML =='다시풀기'){
-            questionId.innerHTML='정답';
-            for(var i=0; i<answerIdArray.length; i++){
-                answerId = document.getElementById(answerIdArray[i]);
-                answerId.innerHTML = '';
-            }
-        }
-    }
-
-
-    function radioCheck(questionId, names, answers) {
-        var questionId = document.getElementById(questionId);
-        var answerNameArray;
-        var answerArray;
-        //해당 문자가 + 기호를 포함하고 있는가 확인한다.
-        //+기호를 포함하고 있다면 다중 라디오 체크이기 때문에 split함수를 사용하여 배열로 만들고
-        //포함하고 있지 않다면 단일 라디오 체크이기 때문에 split함수 사용 시 에러를 출력한다
-        if(names.indexOf("+") != -1){//배열일경우(다중 라디오체크일 경우)
-            answerNameArray =  names.split('+');
-            answerArray =  answers.split('+');
-        }else{//단일일경우(단일 라디오체크일 경우
-            answerNameArray = [names];
-            answerArray = [answers];
-        }
-        var totalForCorrect=0;
-
-        if(questionId.title =='답안') {
-            $(questionId).removeClass('btn_answer');
-            $(questionId).addClass('btn_repeat');
-            questionId.title ='다시풀기';
-            for(var i=0; i<answerNameArray.length;i++){
-                //answerNameArray의 갯수만큼 나와야함.
-                totalForCorrect += radioCorrectCheckSeperForAll(answerNameArray[i], answerArray[i]);
-            }
-            if (totalForCorrect == answerNameArray.length) {
-                //정답일때 radiobox 컨트롤
-            } else {
-                //오답일때 radiobox 컨트롤
-            }
-            for(var i=0; i<answerNameArray.length;i++) {
-                var name = document.getElementsByName(answerNameArray[i]);
-                for(var y=0; y<name.length;y++){
-                    if(name[y].checked){
-                        name[y].checked=false;
-                    }
-                }
-                name[answerArray[i]].checked=true;
-                $(name[answerArray[i]]).removeClass('correct');
-                $(name[answerArray[i]]).addClass('false');
-            }
-
-        }else if (questionId.title == '다시풀기'){
-            $(questionId).removeClass('btn_repeat');
-            $(questionId).addClass('btn_answer');
-            questionId.title = '답안';
-            for(var i=0; i<answerNameArray.length;i++) {
-                var name = document.getElementsByName(answerNameArray[i]);
-                for(var y=0; y<name.length;y++){
-                    if($(name[y]).hasClass('false')){
-                        $(name[y]).removeClass('false');
-                    }
-                    $(name[y]).addClass('correct');
-                    if(name[y].checked){
-                        name[y].checked=false;
-                    }
-                }
-            }
-        }
-    }
-    //radio 정답 체크 1과 0을 반환해줌.
-    function radioCorrectCheckSeperForAll(name, answer){
-        var name = document.getElementsByName(name);
-        if(name[answer].checked){
-            return 1;
-        }else{
-            return 0;
-        }
-    }
-
-    //정답을 보여줄 Id
-    //버튼 Id
-    //소스가 개판이라 죄송합니다.
-    function textClear(idForClear, nameForClear, Id_a, btnId_q) {
-        if(nameForClear == undefined){
-            if (idForClear != null && idForClear != '' && idForClear != undefined) {
-                var idForC = document.getElementById(idForClear);
-                idForC.value = '';
-            }
-            return;
-        }
-        var id = document.getElementById(btnId_q);
-        var answer = document.getElementById(Id_a);
-        if ($(id).hasClass('btn_answer')) {
-            $(id).removeClass('btn_answer');
-            $(id).addClass('btn_repeat');
-            $(answer).css('display', 'inline-block');
-        } else if ($(id).hasClass('btn_repeat')) {
-            //singleClear
-            if (idForClear != null && idForClear != '' && idForClear != undefined) {
-                var idForC = document.getElementById(idForClear);
-                idForC.value = '';
-            }
-            //checkWithCheckBox
-            var checkBoxNamesForClear = document.getElementsByName(nameForClear);
-            console.log(checkBoxNamesForClear);
-            for (var i = 0; i < checkBoxNamesForClear.length; i++) {
-                checkBoxNamesForClear[i].checked = false;
-            }
-            $(id).removeClass('btn_repeat');
-            $(id).addClass('btn_answer');
-            $(answer).css('display', 'none');
-        }
-    }
-    function textClearByNames(name,ck_list) {
-        var nameArray = document.getElementsByName(name);
-        console.log(name);
-        console.log(nameArray);
-        var ckArray = document.getElementsByName(ck_list);
-        for(var i=0; i<nameArray.length; i++){
-            nameArray[i].value='';
-        }
-        for(var i=0; i<ckArray.length; i++){
-            ckArray[i].checked= false;
-        }
-
-    }
-    function listenAndNumberCheck(questionId, inputId, answer) {
-        var questionId = document.getElementById(questionId);
-        var answerArray;
-        if(inputId.indexOf("+") != -1){//배열일경우(다중 빈칸체크일 경우)
-            answerArray = answer.split('+');
-            inputId = inputId.split('+');
-        }
-        if(questionId.title =='답안'){
-            $(questionId).removeClass('btn_answer');
-            $(questionId).addClass('btn_repeat');
-            questionId.title ='다시풀기';
-            var correctCheck = 0;
-            for(var i=0; i<inputId.length; i++){
-                var id = document.getElementById(inputId[i]);
-                if(id.value==answerArray[i]){
-                    correctCheck +=1
-                }
-            }
-            for(var i=0;i<inputId.length;i++){
-                var id = document.getElementById(inputId[i]);
-                if(id.value != null && id.value != ''){
-                    $(id).addClass('color-red');
-                }
-            }
-            if(correctCheck == 3){
-//정답컨트롤
-            }else{
-//오답컨트롤
-                for(var i=0; i<inputId.length; i++){
-                    var id = document.getElementById(inputId[i]);
-                    id.value=answerArray[i];
-                    if(!$(id).hasClass('color-red')){
-                        $(id).addClass('color-red');
-                    }
-                }
-            }
-        }else if (questionId.title == '다시풀기'){
-            $(questionId).removeClass('btn_repeat');
-            $(questionId).addClass('btn_answer');
-            questionId.title = '답안';
-            for(var i=0;i<inputId.length;i++){
-                var id = document.getElementById(inputId[i]);
-                if(id.value != null && id.value != ''){
-                    id.value='';
-                    if($(id).hasClass('color-red')){
-                        $(id).removeClass('color-red');
-                    }
-                }
-            }
-        }
-    }
-    //스크립트 팝업
-    function showScriptPopupTopLeft(target, top, left){
-        var popup = document.createElement("div");
-        var closeImg = document.createElement('img');
-        var transBtn = document.createElement('img');
-        var text = document.createElement('div');
-        var targetId = target.id;
-        var textInit = document.getElementsByClassName(targetId+' script');
-        closeImg.src='./images/popup/close_pop.png';
-        transBtn.src='./images/common/09.png';
-        transBtn.style.width='30px';
-        transBtn.style.height='30px';
-        transBtn.style.right='40px';
-        transBtn.style.position='absolute';
-        transBtn.style.top='5px';
-        closeImg.style.position='absolute';
-        closeImg.style.top='11px';
-        closeImg.style.right='10px';
-        closeImg.style.width='20px';
-        text.style.padding='0px 10px';
-        text.style.marginTop='30px';
-        var top = top;
-        var left = left;
-        popup.className = "scriptPopup";
-        $(popup).addClass(targetId);
-        target.parentNode.appendChild(popup);
-        popup.style.top = (target.offsetTop - top) + "px";
-        popup.style.left = (target.offsetLeft + left) + "px";
-        popup.appendChild(text);
-        popup.appendChild(transBtn);
-        popup.appendChild(closeImg);
-        closeImg.addEventListener('click', function () {
-            var removePopup = document.getElementsByClassName('scriptPopup '+targetId);
-            $(removePopup).remove();
-        });
-        transBtn.addEventListener('click', function () {
-            var displayTrans = document.getElementsByClassName('transText '+targetId);
-            $(displayTrans).toggle();
-        });
-        text.innerHTML=textInit[0].outerHTML;
-        $(text.childNodes).removeClass('display-none');
-        var transText = text.children[0].children;
-        var transTextTop = 61;
-        var textLineHeight = 40;
-        for(var i=0; i<transText.length; i++){
-            if(i%2 != 0){
-                transText[i].style.display='none';
-                transText[i].style.position='absolute';
-                transText[i].style.fontSize='11px';
-                transText[i].style.fontFaceName='Open Sans';
-                transText[i].style.color='#339900';
-                transText[i].style.top=transTextTop.toString()+'px';
-                $(transText[i]).addClass('transText '+targetId);
-                transTextTop += textLineHeight;
-            }else{
-                transText[i].style.lineHeight=textLineHeight.toString()+'px';
-            }
-        }
-    }
-})
 
 // ask & answer 문제풀이
 function checkAskAnswer(){
@@ -1402,7 +999,7 @@ function setPopVideo() {
         innerHtmlText += "<div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='닫기'/></div></div>";
         innerHtmlText += "<div id='vwrap' ><div class='pageContainer'><div class='page_1'><div class='videoWrap'></div></div>";
         innerHtmlText += "<div class='txt'>*동영상의 대표 이미지를 poster로 지정해야 함</div></div></div>";
-        innerHtmlText += "<div class='waiter' id='waiter_wrap'><img src='./images/common/controls/vdo/mic.png' /></div><div class='controller'><div class='bg'></div>";
+        innerHtmlText += "<div class='waiter' id='waiter_wrap'><div class='bg'></div><div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div></div><div class='controller'><div class='bg'></div>";
         innerHtmlText += "<div class='progController'><div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div><div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>";
         innerHtmlText += "<div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><div id='prog_color'><img src='images/common/player/prog_color.png' /></div><div id='prog_mouse'>";
         innerHtmlText += "<img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>"
@@ -1451,10 +1048,12 @@ function setTextDrag(num) {
 }
 //사전 재생모듈
 function setDictionary() {
-
     var diction = $('.btn_word');
 
     $(diction).on('click', function () {
+
+        // 열려있는 사운드 창 닫기
+        closePopup();
         $('.intro_word').css('display', 'block');
     });
 
@@ -1474,7 +1073,6 @@ function setDictionary() {
     dictionInnerHtml += "<ul class='word_catagory_list'><li>단원</li><li class='display-none'>알파벳</li></ul>";
     dictionInnerHtml += "<ul class='lesson_btn_list'><li class='on'>전체</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>sp</li></ul></div>";
     dictionInnerHtml += "<div id='words' class='word_list bold'></div>";
-    dictionInnerHtml += "<div class='word btn_mp3_a' id='btn_mp3_a'></div>";
     dictionInnerHtml += "<div id='flashcard'><div id='word' class='bold'></div><div id='word_meaning'></div></div>";
     dictionInnerHtml += "<div id='flashcard_example'><div id='description' class='bold'></div><div id='description2'></div></div>";
 
@@ -1624,7 +1222,7 @@ function showWidePopup(target, top, left){
     $(btnClose).addClass('btn_close');
     innerText += "<p>위두랑 사이트에 접속해서<br />";
     innerText += "선생님과 이야기 하고,<br />";
-    innerText += "친구들과 의견을 공유해<br />";
+    innerText += "친구들과 의견을 공유해,<br />";
     innerText += "보세요.</p>";
     $(popup).addClass('popup');
     $(popup).addClass('wide_popup');
@@ -1700,39 +1298,4 @@ function showInputPopup(target, top, left){
     $(popup).show();
 
 }
-function setVideoRoles(){
-    //롤플레이
-    $('#role_1, #role_2, #role_3').on('click',function () {
-        //뮤트온
-        if (!$(this).hasClass('on')) {
-            $(this).addClass('on');
-            //뮤트 오프
-        } else {
-            $(this).removeClass('on');
-        }
-        setRoles();
-    });
-}
-function initScale() {
-    var wrap = document.querySelector('body');
 
-    GameManager.event.clientWidth = document.body.clientWidth;
-    GameManager.event.clientHeight = document.body.clientHeight;
-
-    GameManager.event.wrapWidth = wrap.clientWidth;
-    GameManager.event.wrapHeight = wrap.clientHeight;
-
-    GameManager.event.zoomVertical = (GameManager.event.clientHeight / GameManager.event.wrapHeight) * 1.0;
-    GameManager.event.zoomHorizontal = (GameManager.event.clientWidth / GameManager.event.wrapWidth) * 1.0;
-
-    if(parent.ZOOMVALUE == undefined) {
-        parent.ZOOMVALUE = 1;
-    }
-    if (GameManager.event.clientHeight < GameManager.event.clientWidth) {
-        GameManager.event.zoomRate = parent.ZOOMVALUE;
-    } else {
-        GameManager.event.zoomRate = GameManager.event.zoomHorizontal;
-    }
-
-    // alert(GameManager.event.zoomRate);
-}

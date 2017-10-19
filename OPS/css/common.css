@@ -103,6 +103,8 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .btn_type_03 {display: inline-block; width: 100px;
     height: 44px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
 .btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_05 {display: inline-block; width: 48px;
+    height: 138px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
 
 /* btn_type_01 */
 .btn_bo {background-image: url(../images/common/016_2.png)}
@@ -126,16 +128,20 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .btn_write_input{background-image: url(../images/common/020.png)}
 .btn_net {background-image: url(../images/common/021.png)}
 
-
 /* btn_type_03 */
+.btn_selfReview {background-image: url(../images/common/018_01.png)}
 .btn_word {background-image: url(../images/common/018_2.png)}
 .btn_dogame {background-image: url(../images/common/019_2.png)}
+.btn_danwon {background-image: url(../images/common/018_03.png)}
 
 /* btn_type_04 */
 .btn_pmovie {background-image: url(../images/common/04.png)}
 
+/* btn_type_05 */
+.btn_selfCheck {background-image: url(../images/common/selfcheck.png)}
+
 /* 버튼간격 */
-.btn_list {position: absolute; display: inline-block; margin-left:5px !important; vertical-align: middle; z-index: 1000000000}
+.btn_list {position: absolute; display: inline-block; margin-left:5px !important; vertical-align: middle; z-index: 1000000000; white-space: nowrap;}
 .btn_list button {vertical-align: middle; left: 5px;}
 
 /*tip*/
@@ -223,7 +229,7 @@ input[type=checkbox]:checked + label:before, input[type=radio]:checked + label:b
     font-size: 25px;
     font-weight:800;
     text-align: center;
-    line-height: 18px;
+    line-height: 10px;
 }
 input[type=checkbox]:checked.correct + label:before, input[type=radio]:checked.correct + label:before{
     color: blue;
@@ -251,7 +257,6 @@ popup
 /*popup --popup_type02 */
 .wide_popup{background: url(../images/popup/bg_pop2.png) no-repeat 0 0; z-index: 99999999999999}
 .wide_popup .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close2.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
-
 
 
 /*----------------------

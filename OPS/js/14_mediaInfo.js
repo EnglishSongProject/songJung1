@@ -14,7 +14,7 @@ var mediaInfo = [
             // 동영상 경로
             './media/video/L01_021_Work_Ani-1'
         ],
-        rolePos:[100, 0, 110],
+        rolePos:[100, 0, 110], //'선생님:'의 넓이, 콜론의 x좌표, 대사의 x좌표
 
         section: [
         ],

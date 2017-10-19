@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/02.css" />
         <script type="text/javascript" src="js/DTCaliperSensor.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        <!--<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>-->
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/02.js"></script>
 		<script type="text/javascript" src="js/02_mediaInfo.js"></script>
@@ -20,6 +20,7 @@
       <h2 class="sub_tit audio_play" data-name="L01_009_intro2_01">새 학교에서 친구들을 만나 인사하고 소개해요.</h2>
       <div xmlns="http://www.w3.org/1999/xhtml" class="slider_area">
           <div class="slider_content">
+              <button class="btn_next">next</button>
               <div class="slider_image_wrap">
                   <ul class="slider_image">
                       <li data-num="1" class="">
@@ -64,10 +65,9 @@
                                     <itemBody>
                                     <li class="active-purple">
                                       <span class="ls02_span_01">A:</span>
-                                          <input id="ls_2_t1" class="ls_2_t1" type="text" />,
-                                          <label for="ls_2_t1"></label> <span onclick="playAudio('./media/audio/L01/009/L01_009_sp2_a02.mp3', 'single');">this is my friend,</span>
-                                          <input id="ls_2_t2" class="ls_2_t2" type="text" />.
-                                          <label for="ls_2_t2"></label>
+                                      <input id="ls_2_t1" class="ls_2_t1" type="text" />,
+                                      <span onclick="playAudio('./media/audio/L01/009/L01_009_sp2_a02.mp3', 'single');">this is my friend,</span>
+                                      <input id="ls_2_t2" class="ls_2_t2" type="text" />.
                                     </li>
                                     </itemBody>
                                     <modalFeedback>
@@ -108,9 +108,9 @@
                                   <dt>Self Check</dt>
                                   <dd class="sol audio_play" data-name="L01_009_intro2_07">자신을 소개할 때 어떤 것을 말하고 싶나요?</dd>
                                 </dl>
-                                <assessmentItem data-qid="ls_3_t_area" data-response-type="fillInTheBlank">
+                                <assessmentItem data-qid="" data-response-type="fillInTheBlank">
                                 <itemBody>
-                                    <textarea id="ls_3_t_area_inner"></textarea>
+                                    <textarea id="ls_3_t_area"></textarea>
                                 </itemBody>
                                     <modalFeedback>
                                     </modalFeedback>
@@ -187,14 +187,15 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="slider_thumbnail_area">
-                        <ul class="slider_thumbnail">
-                            <li data-num="1" class=""></li>
-                            <li data-num="2" class=""></li>
-                        </ul>
-                    </div>
-                  </div>
-              </div>
-        </div>
-    </body>
+              <button class="btn_prev">prev</button>
+                <div class="slider_thumbnail_area">
+                    <ul class="slider_thumbnail">
+                        <li data-num="1" class=""></li>
+                        <li data-num="2" class=""></li>
+                    </ul>
+                </div>
+          </div>
+      </div>
+</div>
+</body>
 </html>
