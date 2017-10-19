@@ -15,7 +15,7 @@ li{font-family: 'Nanum Gothic';font-size:17px;font-weight:bold;}
 
 .slider_image article{position:relative;padding-left:20px;background: #fff;margin-top:15px;border-radius:15px;height:220px;}
 
-.first {background: url(../images/09/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
+.first {background: url(../images/02/bg_lesson01_p09.jpg) no-repeat 0 0; background-size: cover}
 input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c6c;font-family: 'Nanum Gothic';font-size:17px;line-height:15px;margin-top:-3px; }
 .ls_1_t1{width:145px;}
 .ls_2_t1{width:100px;}
@@ -31,13 +31,13 @@ input[type="text"]{background-color: rgba(0,0,0,0);border-bottom:1px solid #6c6c
 
 section > article > ul > li {line-height:15px;}
 article dl{margin-top:5px;}
-article dt{color:#fff;text-align: center;width:70px;background: url(../images/09/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:18px;height:20px;line-height: 20px;}
+article dt{color:#fff;text-align: center;width:70px;background: url(../images/02/selfcheck_p09.png) no-repeat 0 0;background-size: 100% 100%;float:left;font-family: 'Nanum Pen';font-size:18px;height:20px;line-height: 20px;}
 article dd{display:inline-block;margin-left:5px;font-family: 'Nanum Gothic';    vertical-align: top;font-weight: 500;font-size:15px;line-height:17px;}
 article dd.sol:hover{color: #9a01cd;}
 article dd ul li{font-size:15px;line-height: 21px;font-weight:400;}
 article dd ul li:hover{color: #9a01cd;}
 
-li article h1{font-family: 'Bubblegum Sans';font-size:20px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:33px;background: url(../images/09/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
+li article h1{font-family: 'Bubblegum Sans';font-size:20px;letter-spacing: 1px;position:absolute;top:-10px;left:10px;color:#fff;display:inline-block;padding:0 8px;height:30px;line-height:33px;background: url(../images/02/p09_strapline.png) no-repeat 0 0;background-size: 100% 100%;}
 
 li article h2{font-size:16px;font-family:'Nanum Gothic';font-weight:bold;display:inline-block;margin-bottom:5px;margin-top:30px;}
 
@@ -48,8 +48,8 @@ article:nth-of-type(3) textarea{ min-height: 100px;max-height: 100px;}
 
 .slider_thumbnail_area { height: 765px; left: 50%; margin-left: -50%; overflow: hidden; position: relative; top:0; width: 50%;}
 .slider_thumbnail_area ul {text-align: center;width:74px; position: relative; top:730px;left:50%;margin-left:-37px;}
-.slider_thumbnail_area ul li {width: 20px; height: 20px; border: 1px solid #ddd; border-radius: 15px; background: url(../images/09/rol_p09_off.png) no-repeat 0 0; text-indent: -9999px; margin: 0 5px;cursor: pointer;display: inline-block;}
-.slider_area .slider_thumbnail_area ul li.on { background: url(../images/09/rol_p09_on.png) no-repeat 0 0; border: 1px solid #fff;}
+.slider_thumbnail_area ul li {width: 20px; height: 20px; border: 1px solid #ddd; border-radius: 15px; background: url(../images/02/rol_p09_off.png) no-repeat 0 0; text-indent: -9999px; margin: 0 5px;cursor: pointer;display: inline-block;}
+.slider_area .slider_thumbnail_area ul li.on { background: url(../images/02/rol_p09_on.png) no-repeat 0 0; border: 1px solid #fff;}
 .slider_thumbnail_area ul li:last-child { margin-right: 10px;}
 
 .btn_list{margin-top:27px;}
