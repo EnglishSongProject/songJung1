@@ -11,7 +11,7 @@ var mediaInfo = [
 
     {
         //동영상 제목
-        title: "Role-Play",
+        title: "Role Play",
 
         folder: [
             // 동영상 경로
@@ -61,23 +61,34 @@ var mediaInfo = [
 
         // 동영상 텍스트 [순번, 사람번호, 영어, 한글]
         syncText: [
-            [1, 1, 'Hello, Mr.Jackson.', ''],
-            [2, 1, "How are you doing?", ''],
-            [3, 2, 'Pretty good.', ''],
-            [4, 2, 'How about you Sumi?', ''],
-            [5, 1, "Great, thanks.", ''],
-            [6, 1, 'Mr.Jackson, this is my little sister, Jiwon.', ''],
-            [7, 1, 'She\'s 10 years old.', ''],
-            [8, 2, "Hi, Jiwon.", ''],
-            [9, 2, 'Nice to meet you.', ''],
-            [10, 2, 'I am Joe Jackson, and I\'m your sister\'s English teacher.', ''],
-            [11, 3, 'Pleased to meet you Mr.Jackson.', ''],
-            [12, 3, "I like English.", ''],
-            [13, 3, 'English is fun.', ''],
-            [14, 3, 'Are you from America?', ''],
-            [15, 2, "No, I\'m not.", ''],
-            [16, 2, 'I\'m from Canada.', ''],
-            [17, 3, 'Oh i see.', '']
+            [1, 1, 'Hello, Mr.Jackson.', '안녕하세요, Jackson 선생님'],
+            [2, 1, "How are you doing?", '잘 지내세요?'],
+            [3, 2, 'Pretty good.', '아주 잘 지낸단다.'],
+            [4, 2, 'How about you Sumi?', '너는 어떠니, 수미야?'],
+            [5, 1, "Great, thanks.", '잘 시내요, 감사합니다.'],
+            [6, 1, 'Mr.Jackson, this is my little sister, Jiwon.', 'Jackson 선생님, 이 아이는 제 여동생, 지원이에요'],
+            [7, 1, 'She\'s 10 years old.', '10살이에요.'],
+            [8, 2, "Hi, Jiwon.", '안녕, 지원아.'],
+            [9, 2, 'Nice to meet you.', '만나서 반갑구나.'],
+            [10, 2, 'I am Joe Jackson, and I\'m your sister\'s English teacher.', '나는 Joe Jackson이고 너희 언니의 영어 선생님이야.'],
+            [11, 3, 'Pleased to meet you Mr.Jackson.', '만나 뵙게 되어 반갑습니다, Jackson 선생님.'],
+            [12, 3, "I like English.", '저는 영어를 종아해요'],
+            [13, 3, 'English is fun.', '영어는 재미있어요.'],
+            [14, 3, 'Are you from America?', '미국 출신이세요?'],
+            [15, 2, "No, I\'m not.", '아니, 그렇지 않아.'],
+            [16, 2, 'I\'m from Canada.', '나는 캐나다 출신이야.'],
+            [17, 3, 'Oh i see.', '오, 네.']
         ]
+    }
+];
+
+var soundInfoForAni = [
+    {
+        arrayForName:'sp1',
+        arrayInfo:[[0, 0.5], [0.9, 1.6]]
+    },
+    {
+        arrayForName:'sp2',
+        arrayInfo:[[0, 0.5], [0.6, 1.1]]
     }
 ];

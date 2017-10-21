@@ -72,6 +72,56 @@ function playAudio(path, btnId, target, imgId, direction) {
                     oAudio.currentTime = 0;
                 }else{
                     oAudio.play();
+                    if(imgId == 'sound-ani'){
+/*                        console.log(target);
+                        console.log(soundInfoForAni[0].arrayForName);*/
+     /*                   console.log($(target).hasClass(soundInfoForAni[0].arrayForName));*/
+                        for(var i=0; i<soundInfoForAni.length; i++){
+                            if($(target).hasClass(soundInfoForAni[i].arrayForName+'_sentence')){
+                                var checkedArray = soundInfoForAni[i];
+                                var htmlArray = $('\.'+soundInfoForAni[i].arrayForName);
+                                var name = soundInfoForAni[i].arrayForName;
+                            }
+                        }
+
+                        console.log(htmlArray);
+                        $(htmlArray).each(function (idx) {
+                            $(this).addClass(name + '_index'+idx.toString())
+                        });
+
+                        var textForEval='';
+                        for (var i = 0; i < checkedArray.arrayInfo.length; i++) {
+                            if(i ==0){
+                                textForEval += 'if(';
+                            }else{
+                                textForEval += 'else if(';
+                            }
+                            textForEval += checkedArray.arrayInfo[i][0].toString() + '<oAudio.currentTime&&oAudio.currentTime<' + checkedArray.arrayInfo[i][1].toString() + '){';
+                            textForEval += '$(\'.'+name + '_index'+i.toString()+'\').addClass('+'\'active\''+');}';
+                            if(i==checkedArray.arrayInfo.length-1){
+                                textForEval += 'else {' + '$(\'.'+name+'\').removeClass('+'\'active\''+');}';
+                            }
+                        }
+/*                        var i=0;
+                        do{
+                            textForEval += 'if(';
+                            textForEval += checkedArray.arrayInfo[i][0].toString() + '<oAudio.currentTime&&oAudio.currentTime<' + checkedArray.arrayInfo[i][1].toString() + '){';
+                            textForEval += '$(\'.'+name+'\').addClass('+'\'active\''+');}';
+                            if(i>0){
+
+                            }
+                            i++
+
+                        }while (i<checkedArray.arrayInfo.length)*/
+
+                        console.log(textForEval);
+
+                        $(oAudio).on('timeupdate', function () {
+                            eval(textForEval);
+                            console.log(oAudio.currentTime);
+                            console.log(oAudio.duration);
+                        });
+                    }
                     if(imgId != 'undefined') {
                         $(target).addClass('single_on');
                         $(target).css('color', '#9a01cd');
@@ -92,7 +142,7 @@ function playAudio(path, btnId, target, imgId, direction) {
                 if(window.console && console.error("Error:" + e));
             }
 
-            if(imgId != null && imgId != 'undefined'){
+            if(imgId != null && imgId != 'undefined' && imgId != 'sound-ani'){
                 var imgClassForNone = document.getElementsByClassName('class-for-none');
                 for(var i=0; i<imgClassForNone.length; i++){
                     imgClassForNone[i].style.display='none';
@@ -173,6 +223,10 @@ function playAudio(path, btnId, target, imgId, direction) {
                 else if(direction == 'top-left-much'){
                     popup.style.left = ($target.offset().left - 120) + "px";
                     popup.style.top = ($target.offset().top -42) + "px";
+                }
+                else if(direction == 'bottom'){
+                    popup.style.left = ($target.offset().left - 40) + "px";
+                    popup.style.top = ($target.offset().top + 30) + "px";
                 }
                 else{
                     popup.style.left = ($target.offset().left) + "px";
@@ -538,9 +592,9 @@ function blankCheckByCss(questionId, Ids, clearId, type, dragName,savePositionNa
 
             console.log(inputId,answerId)
 
-            if(inputId.value.trim() == answerId.innerHTML) {
+/*            if(inputId.value.trim() == answerId.innerHTML) {
                 score++
-            }
+            }*/
             if(type!='type02'){
                 answerId.style.display='inline-block';
             }
@@ -928,18 +982,26 @@ function setAudio(){
     if($('.audio_play').length == 0) return;
 
     $('.audio_play').each(function () {
-        if($(this).attr('data-type') == 'multi'){
-            $(this).on('click', function () {
-                playAudio(audioPath + $(this).attr('data-name') + '.mp3' ,'',this,'', $(this).attr('about'));
-            });
-        }else if($(this).attr('data-type') == 'no-color'){
-            $(this).on('click', function () {
-                playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this, 'undefined');
-            });
-        }else{
-            $(this).on('click', function () {
-                playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this);
-            });
+        switch($(this).attr('data-type')){
+            case 'multi':
+                $(this).on('click', function () {
+                    playAudio(audioPath + $(this).attr('data-name') + '.mp3' ,'',this,'', $(this).attr('about'));
+                });
+                break;
+            case 'no-color':
+                $(this).on('click', function () {
+                    playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this, 'undefined');
+                });
+                break;
+            case 'sound-ani':
+                $(this).on('click', function () {
+                    playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this, 'sound-ani');
+                });
+                break;
+            default:
+                $(this).on('click', function () {
+                    playAudio(audioPath + $(this).attr('data-name') + '.mp3', 'single', this);
+                });
         }
     });
 }
@@ -953,7 +1015,6 @@ function setPopVideo() {
         var transText;
         var btnClass = 'video_play_btn'+index.toString();
         var roleText='';
-        var imgPath;
         if($(this).attr('about')){
             var imgArray = $(this).attr('about').split(',');
         }
@@ -999,7 +1060,7 @@ function setPopVideo() {
         innerHtmlText += "<div class='btn_media_close'><img src='images/common/player/pop_media_close.png' alt='닫기'/></div></div>";
         innerHtmlText += "<div id='vwrap' ><div class='pageContainer'><div class='page_1'><div class='videoWrap'></div></div>";
         innerHtmlText += "<div class='txt'>*동영상의 대표 이미지를 poster로 지정해야 함</div></div></div>";
-        innerHtmlText += "<div class='waiter' id='waiter_wrap'><div class='bg'></div><div class='bar' id='waitBall'><img src='images/common/player/waiter_ball.png' /></div></div><div class='controller'><div class='bg'></div>";
+        innerHtmlText += "<div class='waiter' id='waiter_wrap'><img src='images/common/controls/vdo/mic.png' /></div><div class='controller'><div class='bg'></div>";
         innerHtmlText += "<div class='progController'><div id='prog_play'><img id='play' src='images/common/controls/vdo/btnPlay.png' /></div><div id='prog_stop'><img id='stop' src='images/common/controls/vdo/btnStop.png' /></div>";
         innerHtmlText += "<div id='prog_gray'><img src='images/common/player/prog_gray.png' /></div><div id='prog_color'><img src='images/common/player/prog_color.png' /></div><div id='prog_mouse'>";
         innerHtmlText += "<img src='images/common/player/prog_gray.png' ondragstart='return false' /></div><div id='prog_ball'><img src='images/common/player/prog_ball.png' ondragstart='return false' /></div>"
@@ -1222,7 +1283,7 @@ function showWidePopup(target, top, left){
     $(btnClose).addClass('btn_close');
     innerText += "<p>위두랑 사이트에 접속해서<br />";
     innerText += "선생님과 이야기 하고,<br />";
-    innerText += "친구들과 의견을 공유해,<br />";
+    innerText += "친구들과 의견을 공유해<br />";
     innerText += "보세요.</p>";
     $(popup).addClass('popup');
     $(popup).addClass('wide_popup');

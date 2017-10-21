@@ -4,4 +4,6 @@
 $(function () {
     setAudio();
     setPopVideo();
+    setDictionary();
+    setShowInputPopup();
 });

@@ -69,13 +69,10 @@
 .bt_list4{left:320px;top:824px;}
 .bt_list5{left:634px;top:824px;}
 
-
 .bs_top{top:100px;left:44px;}
 .bs_middle {top: 391px; left: 44px;}
 .bs_bottom{top:928px;left:44px;}
 
-.btn_bo,
-.btn_sim{width:37px; height:28px; background-repeat:no-repeat;text-indent:-9999px; background-size:cover;}
 .bs_top > button:first-of-type(1),.bs_bottom > button:first-of-type(1){margin-top:0;}
 
 .p23_btn {top: 732px;left: 655px;}

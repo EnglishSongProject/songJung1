@@ -96,13 +96,13 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .mr_20{margin-right: 20px;}
 
 /* 버튼 */
-.btn_type_01 {display: inline-block; width:148px; height:80px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_01 {display: inline-block; width:37px;height: 28px; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; font: bold 13px Nanum Gothic;
+    color: #FFFFFF;}
 .btn_type_02 {display: inline-block; width:30px; height:30px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0;
     position: relative; top:-1px
 }
-.btn_type_03 {display: inline-block; width: 100px;
-    height: 44px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
-.btn_type_04 {display: inline-block; width:150px; height:150px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
+.btn_type_03 {display: inline-block; width: 100px; height: 44px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
+.btn_type_04 {display: inline-block; width: 37px; height: 28px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0}
 .btn_type_05 {display: inline-block; width: 48px;
     height: 138px; text-indent:-9999em; overflow: hidden; background-size:cover; background-repeat:no-repeat; background-position: 0 0; }
 
@@ -126,7 +126,7 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .btn_pop {background-image: url(../images/common/015.png)}
 .btn_write {background-image: url(../images/common/020.png)}
 .btn_write_input{background-image: url(../images/common/020.png)}
-.btn_net {background-image: url(../images/common/021.png)}
+.btn_net {background-image: url(../images/common/021_1.png);background-size: contain;width: 46px;height: 30px;}
 
 /* btn_type_03 */
 .btn_selfReview {background-image: url(../images/common/018_01.png)}
@@ -196,10 +196,8 @@ input[type=text] {border-bottom:1px solid #000 !important; padding-bottom:2px !i
 .btn_slide_on {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_on.png);}
 .btn_slide_off {display: inline-block; width:20px; height:20px; text-indent:-9999em; overflow: hidden; background-image:url(../images/common/slide_bt_off.png);}
 
-.slider_content .btn_next {position:absolute; top:50%; left:-82px; background:url("../images/common/btn_left.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999;text-indent:-9999em; transform: translateY(-50%)}
-.slider_content .btn_prev {position:absolute; top:50%; right:519px; background:url("../images/common/btn_right.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999; text-indent:-9999em; transform: translateY(-50%)}
-
-
+.slider_content .btn_next {position:absolute; top:46%; left:-82px; background:url("../images/common/btn_left.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999;text-indent:-9999em; transform: translateY(-50%)}
+.slider_content .btn_prev {position:absolute; top:46%; right:519px; background:url("../images/common/btn_right.png") no-repeat 0 0; width:51px; height:93px; z-index:99999999; text-indent:-9999em; transform: translateY(-50%)}
 
 
 /*체크박스*/
@@ -269,8 +267,8 @@ scriptPopup
 ----------------------*/
 
 .scriptPopup{
-    background-color: #ffc21d;
-    border-radius: 20px;
+    background-color: #fff;
+    /*border-radius: 20px;*/
     background-size: cover;
     position: absolute;
     display: block;
@@ -282,7 +280,13 @@ scriptPopup
     padding: 5px;
     z-index: 1000000001;
     overflow: auto;
+    /*17-10-20수정*/
+    box-shadow:2px 2px 3px #ccc;
+    border:1px solid #ccc;
+    border-radius:0px;
 }
+.script{ font-size:18px !important;}
+.transText{left: 38px !important; font-size:14px !important;}
 .scriptPopupClose{
     display: block;
     width: 25px;
@@ -420,7 +424,7 @@ scriptPopup
 .popup_type03 {background: url(../images/popup/bg_pop3.png) no-repeat 0 0; padding-left: 11px;}
 .popup_type03 .btn_close {position: absolute;  top: 20px; right: 20px; width:16px; height:16px; background: url(../images/popup/btn_close3.png) no-repeat 0 0;  text-indent:9999em; overflow: hidden}
 .popup_type03 button {position: absolute; top: 15px; right: 45px;}
-.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent; }
+.popup_type03 textarea { font-family:"Nanum Gothic";font-size:15px; width:93%; margin-top:30px; text-align: left; resize:none; background: transparent;  line-height:1.6}
 
 /*input*/
 .popup_type04 {background: url(../images/popup/bg_pop3_1.png) no-repeat 0 0; padding-left: 11px;}
@@ -430,3 +434,23 @@ scriptPopup
     top: 14px;}
 .popup_type04 .answer { font-family:"Nanum Gothic";position: absolute; top: 14px; color: red;
     top:50px;left: 10px;}
+
+/*script design*/
+.scriptPopup::-webkit-scrollbar-track
+{
+
+    border-radius: 10px;
+    background-color:transparent;
+    -webkit-transform:translateX(-20deg)
+}
+.scriptPopup::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: transparent;
+}
+.scriptPopup::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+    background-color: #FFF;
+}

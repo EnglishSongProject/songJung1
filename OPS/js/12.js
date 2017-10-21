@@ -2,6 +2,8 @@
 
 $(document).ready(function(e) {
     setAudio();
+    //textDrag p12_droppable, p12_draggable
+    setTextDrag('p12');
 
     $("#btn_a_c").click(function(e) {
         $("#btn_a_tip").toggleClass("act");

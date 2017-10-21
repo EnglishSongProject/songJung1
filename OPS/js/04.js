@@ -17,6 +17,14 @@ $(document).ready(function () {
         var idx = $(this).index();
         $(".eg > div").hide();
         $(".eg > div").eq(idx).show();
+		
+		$(".C_tap").addClass('on');
+		
+    });
+	
+	$(".C_tap_close").click(function(e) {
+        $(".C_tap").removeClass('on');
+		$(".eg > div").hide();
     });
 
     $(".btn_tip").on("click",function(){

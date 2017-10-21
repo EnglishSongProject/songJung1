@@ -3,6 +3,7 @@ $(function () {
     setAudio();
     setPopVideo();
     setShowWritePopup();
+/*    Text.init('14', 'clear');*/
 });
 
 /*

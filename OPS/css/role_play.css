@@ -4,7 +4,9 @@
 
 /*player_img*/
 .player_img {text-align: center; padding:20px 0 }
-.player_img span{display: inline-block;width:115px; height:99px; margin:0 10px; cursor: pointer}
+.player_img span{display: inline-block;width:115px; height:99px; margin:0 10px; cursor: pointer; background-repeat: no-repeat; background-size: cover}
+
+/*
 .player01 { background:url(../images/role_play/player01.png)}
 .player02 { background:url(../images/role_play/player02.png)}
 .player03 { background:url(../images/role_play/player03.png)}
@@ -13,6 +15,7 @@
 .player02.on { background:url(../images/role_play/player02_on.png)}
 .player03.on { background:url(../images/role_play/player03_on.png)}
 .player04.on { background:url(../images/role_play/player04_on.png)}
+*/
 
 /*player_panel*/
 .player_panel {position: relative; font: 18px/ 1.7 'Faustina'; background: #faf9f2; padding: 45px 0 45px 114px; letter-spacing: 0.5px;}
@@ -35,6 +38,6 @@
 .progress_rbar {width:385px; height:21px; background:url(../images/role_play/progressbar.png) no-repeat 0 0; margin: 0px 15px;}
 .trans_off {width:40px; height:25px; background:url(../images/role_play/trans_off.png) no-repeat 0 0 }
 .trans_on {width:40px; height:25px; background:url(../images/role_play/trans_on.png) no-repeat 0 0 }
-.controll_rbar {position: absolute;top: 27px; left: 275px; display: block; width:10px ; height:10px ;background:url(../images/role_play/ctrbar.png) no-repeat 0 0}
+.controll_rbar {position: absolute;top: 27px; left: 36%; display: block; width:10px ; height:10px ;background:url(../images/role_play/ctrbar.png) no-repeat 0 0}
 
 .btn_close { position: absolute; right:22px; top: 17px; cursor: pointer; width: 22px;  height: 22px;}

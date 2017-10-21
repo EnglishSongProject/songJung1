@@ -36,18 +36,33 @@ function searchLoad(){
           checkedNum = 5
        }
     })
+	
+	
+
+
 
     $("#bt_A_a").click(function(){
-       if(checkedNum == 5){
-           //정답
-          showAnswer()
-       }else{
-           //오답
-          showAnswer()
-          checkedNum = 6
-       }
-    })
+		$("#bt_A_a").toggleClass("btn_answer btn_repeat");
 
+			if($("#bt_A_a").hasClass("btn_repeat")){
+				if(checkedNum == 5){
+				//정답
+				showAnswer()
+		   }else{
+			   //오답
+			  showAnswer()
+			  checkedNum = 6
+		   }
+		} else if($("#bt_A_a").hasClass("btn_answer")){
+		   $(".road_school img:not(:last)").hide();
+		   $(".load_01").show();
+		   $(".cir_goal").removeClass().addClass("cir_goal t01");
+		   hideAnswer()
+		   checkedNum = 1;
+		}
+  })
+
+/*
     $("#bt_A_r").on("click",function(){
        $(".road_school img:not(:last)").hide();
        $(".load_01").show();
@@ -55,7 +70,7 @@ function searchLoad(){
        hideAnswer()
        checkedNum = 1;
     })
-
+*/
     function showAnswer(){
        $(".on").css({
           border: "3px solid red"

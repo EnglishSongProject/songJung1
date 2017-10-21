@@ -112,7 +112,7 @@
 
 
  /* 영, 한영, 한 */
-.sc_paper .haneng	{ position: absolute; top:10px; right:-35px; width:160px; height:30px;}
+.sc_paper .haneng	{ position: absolute; top:10px; right:-35px; width:160px; height:30px; }
 /*.sc_paper .haneng .btn_en { position: absolute; top:2px; left:2px;  cursor:pointer;}
 .sc_paper .haneng .btn_ek { position: absolute; top:2px; left:32px; cursor:pointer;}
 .sc_paper .haneng .btn_kr { position: absolute; top:2px; left:62px; cursor:pointer;}*/
@@ -137,4 +137,19 @@
 	50%{transform: scale(1.2);}
 	100%{transform: scale(1);}
 }
-
+@keyframes sound_ani {
+	0%{transform: scale(1);}
+	100%{transform: scale(1.8);}
+}
+.sound_point{
+	background:url(../images/common/audio_pop/controllbar.png);
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+.sound_point.active{
+	animation: sound_ani  600ms linear 0s;
+	background:url(../images/common/audio_pop/controllbar.png);
+	width: 15px;
+	height: 15px;
+}

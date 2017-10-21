@@ -4,4 +4,12 @@
 $(function () {
     setAudio();
     setPopVideo();
+    Text.init('13', 'clear');
 });
+
+
+var array = [
+    {
+
+    }
+]
