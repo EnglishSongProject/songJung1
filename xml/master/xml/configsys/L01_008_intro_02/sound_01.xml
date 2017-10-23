@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Topic  -->
+		<item>snd/L01/008/L01_008_intro_topic.mp3</item>
+		<!-- 소개하기 -->
+		<item>snd/L01/008/L01_008_intro1_02.mp3</item>
+		<!-- Functions -->
+		<item>snd/L01/008/L01_008_intro_functions.mp3</item>
+		<!-- 안부 묻고 답하기 -->
+		<item>snd/L01/008/L01_008_intro1_03.mp3</item>
+		<!-- A : How are you doing today? -->
+		<item>snd/L01/008/L01_008_intro_sp03.mp3</item>
+		<!-- B : I’m great. -->
+		<item>snd/L01/008/L01_008_intro_sp04.mp3</item>
+		<!-- 소개하고 인사 나누기 -->
+		<item>snd/L01/008/L01_008_intro1_04.mp3</item>
+		<!-- A : This is my English teacher, Mr. Parker. -->
+		<item>snd/L01/008/L01_008_intro_sp06.mp3</item>
+		<!-- B : Hi. -->
+		<item>snd/L01/008/L01_008_intro_sp07.mp3</item>
+		<!-- Pleased to meet you, Mr. Parker. -->
+		<item>snd/L01/008/L01_008_intro_sp07_1.mp3</item>
+		<!-- C : Nice to meet you, too. -->
+		<item>snd/L01/008/L01_008_intro_sp08.mp3</item>
+		<!-- Forms -->
+		<item>snd/L01/008/L01_008_intro_forms.mp3</item>
+		<!-- My name is Kang Hosik. -->
+		<item>snd/L01/008/L01_008_intro_sp10.mp3</item>
+		<!-- I like cookies and doughnuts. -->
+		<item>snd/L01/008/L01_008_intro_sp10_2.mp3</item>
+		<!-- Are you good at soccer? -->
+		<item>snd/L01/008/L01_008_intro_sp11.mp3</item>
+		<!-- No, I’m not. -->
+		<item>snd/L01/008/L01_008_intro_sp11_1.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

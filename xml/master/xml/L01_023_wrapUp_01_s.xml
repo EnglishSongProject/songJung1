@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<configsys>xml/configsys/L01_023_wrapUp_01_s/configsys_01.xml</configsys>
+	<language>xml/configsys/L01_023_wrapUp_01_s/language_01.xml</language>
+	<intro>xml/configsys/L01_023_wrapUp_01_s/intro_01.xml</intro>
+	<sound>xml/configsys/L01_023_wrapUp_01_s/sound_01.xml</sound>
+	<page>xml/configsys/L01_023_wrapUp_01_s/page_01.xml</page>
+	<video>xml/configsys/L01_023_wrapUp_01_s/video_01.xml</video>
+</root>

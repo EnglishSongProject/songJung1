@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Listen & Speak 1 -->
+		<item>snd/L01/008/L01_008_intro_01_k.mp3</item>
+		<!-- 한국어 해설 파일 없음. 기본에 있음 -->
+		<item>snd/L01/008/L01_008_intro_01_k2.mp3</item>
+		<!-- Communication Task -->
+		<item>snd/L01/008/L01_008_intro_02.mp3</item>
+		<!-- Reading -->
+		<item>snd/L01/008/L01_008_intro_03.mp3</item>
+	</soundFile>
+</root>

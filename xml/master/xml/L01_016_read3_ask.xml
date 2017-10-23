@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<configsys>xml/configsys/L01_016_read3_ask/configsys_01.xml</configsys>
+	<language>xml/configsys/L01_016_read3_ask/language_01.xml</language>
+	<intro>xml/configsys/L01_016_read3_ask/intro_01.xml</intro>
+	<sound>xml/configsys/L01_016_read3_ask/sound_01.xml</sound>
+	<page>xml/configsys/L01_016_read3_ask/page_01.xml</page>
+	<video>xml/configsys/L01_016_read3_ask/video_01.xml</video>
+</root>

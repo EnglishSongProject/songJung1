@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 남자아이의 말에 적절한 응답을 해 봅시다. -->
+		<item>snd/L01/023/L01_023_wu_kor_04.mp3</item>
+		
+		<!-- Hi.   -->
+		<item>snd/L01/023/L01_023_wrap_03_01.mp3</item>
+				
+		<!-- My name is Jihun. -->
+		<item>snd/L01/023/L01_023_wrap_03_01_1.mp3</item>
+		
+		<!-- Pleased to meet you. -->
+		<item>snd/L01/023/L01_023_wrap_03_01_2.mp3</item>
+		
+	</soundFile>
+</root>

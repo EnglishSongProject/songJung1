@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Active Speaking -->
+		<item>snd/L01/012/L01_012_act_b01.mp3</item>
+		<!-- Bring a picture of your best friend and introduce him or her to your classmates. -->
+		<item>snd/L01/012/L01_012_act_b01_1.mp3</item>
+		<!-- This is my best friend, Dahyeon. -->
+		<item>snd/L01/012/L01_012_act_b02.mp3</item>
+		<!-- She is 14 years old. -->
+		<item>snd/L01/012/L01_012_act_b04.mp3</item>
+		<!-- Her nickname is Library Girl. -->
+		<item>snd/L01/012/L01_012_act_b05.mp3</item>
+		
+		<item>snd/L01/012/L01_012_english_sndP11.mp3</item>
+		<item>snd/L01/012/L01_012_english_sndP21.mp3</item>
+		<item>snd/L01/012/L01_012_english_sndP31.mp3</item>
+		
+	</soundFile>
+</root>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

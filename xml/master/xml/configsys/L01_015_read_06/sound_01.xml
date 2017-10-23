@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 소개된 친구들 중 친해지고 싶은 사람이 있다면, 누구인가요?
+왜 그렇게 생각하는지 짝과 함께 이야기해 봅시다.
+  -->
+		<item>snd/L01/017/L01_017_Reading_02.mp3</item>
+		<!-- Jiseong. -->
+		<item>snd/L01/017/L01_017_talk_02.mp3</item>
+		<!-- I like soccer, too.-->
+		<item>snd/L01/017/L01_017_talk_02_1.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

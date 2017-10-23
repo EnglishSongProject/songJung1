@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- C Match and Talk -->
+		<item>snd/L01/010/L01_010_sp1_c01.mp3</item>
+		<!-- How is each person doing today? -->
+		<item>snd/L01/010/L01_010_sp1_c01_1.mp3</item>
+		<!-- Jason, I'm Great!-->
+		<item>snd/L01/010/L01_010_sp1_c02_w.mp3</item>	
+		<!-- Minji, Not so Good-->
+		<item>snd/L01/010/L01_010_sp1_c03_w.mp3</item>
+		<!-- Siu, Not bad.-->
+		<item>snd/L01/010/L01_010_sp1_c04_w.mp3</item>
+		<!-- Anna, I'm fine.-->
+		<item>snd/L01/010/L01_010_sp1_c05_w.mp3</item>	
+		
+		
+		<!-- Jason, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c02_01.mp3</item>		
+		<!-- I’m great. -->
+		<item>snd/L01/010/L01_010_sp1_c02_02.mp3</item>
+		
+		<!-- Minji, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c03_01.mp3</item>
+		<!-- Not so good. -->
+		<item>snd/L01/010/L01_010_sp1_c03_02.mp3</item>
+		
+		<!-- Siu, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c04_01.mp3</item>
+		<!-- Not bad. -->
+		<item>snd/L01/010/L01_010_sp1_c04_02.mp3</item>
+		
+		<!-- Anna, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c05_01.mp3</item>
+		<!-- I’m fine. -->
+		<item>snd/L01/010/L01_010_sp1_c05_02.mp3</item>		
+	</soundFile>
+</root>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

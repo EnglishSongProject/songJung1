@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- bring  -->
+		<item>snd/L01/012/L01_012_act_b_sc09.mp3</item>		
+		<!-- little -->
+		<item>snd/L01/012/L01_012_act_b_sc10.mp3</item>		
+		<!-- middle -->
+		<item>snd/L01/012/L01_012_act_b_sc11.mp3</item>
+		<!-- trip -->
+		<item>snd/L01/012/L01_012_act_b_sc12.mp3</item>
+		<!-- listen  -->
+		<item>snd/L01/012/L01_012_act_b_sc13.mp3</item>
+		<!-- sister  -->
+		<item>snd/L01/012/L01_012_act_b_sc14.mp3</item>	
+		
+		<!-- cheer -->
+		<item>snd/L01/012/L01_012_act_b_sc15.mp3</item>		
+		<!-- speak -->
+		<item>snd/L01/012/L01_012_act_b_sc16.mp3</item>		
+		<!-- sweet -->
+		<item>snd/L01/012/L01_012_act_b_sc17.mp3</item>
+		<!-- teach -->
+		<item>snd/L01/012/L01_012_act_b_sc18.mp3</item>
+		<!-- read  -->
+		<item>snd/L01/012/L01_012_act_b_sc19.mp3</item>
+		<!-- sleep  -->
+		<item>snd/L01/012/L01_012_act_b_sc20.mp3</item>			
+		
+	</soundFile>
+</root>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>L01_011_listen2_01_s.swf</swfPath>
+	</config>
+	<soundFile>
+		<!-- Sam, this is my dog, Bob. -->
+		<item>snd/L01/011/L01_011_sp2_a02.mp3</item>
+		<!-- Bob, this is Sam. -->
+		<item>snd/L01/011/L01_011_sp2_a02_1.mp3</item>
+		<!-- Nice meet you, Bob. -->
+		<item>snd/L01/011/L01_011_sp2_a03.mp3</item>
+	</soundFile>
+</root>

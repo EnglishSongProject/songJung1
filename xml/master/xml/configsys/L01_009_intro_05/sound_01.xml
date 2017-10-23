@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>	
+		
+		<!-- 친구들과 모둠을 이루어 모둠 소개 UCC를 만들어요. -->
+		<item>snd/L01/009/L01_009_intro2_10.mp3</item>
+		<!-- 친구들과 모둠 소개 UCC를 만들 때 어떤 점에 유의해야 하나요? -->
+		<item>snd/L01/009/L01_009_intro2_11.mp3</item>
+	</soundFile>
+</root>

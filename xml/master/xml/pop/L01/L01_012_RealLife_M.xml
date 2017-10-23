@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>video/L01_012_RealLife_M.swf</swfPath>
+		<videoWidth>1280</videoWidth>	<!--로드되는 영상의 스테이지 가로,세로값 입력-->
+		<videoHeight>720</videoHeight>
+		<useThumb>y</useThumb>
+		<useSectionRepeat>y</useSectionRepeat>
+		<useFullScreen>n</useFullScreen>
+		<useViewSubtitle>y</useViewSubtitle>
+		<useRepeat>n</useRepeat>
+		<useViewScript>n</useViewScript>
+	</config>
+	<thumb>
+		<actor path="imgAsset\actor\001_1.jpg" actName="Sumi">
+			<item startFrameNum="98" endFrameNum="196"/>
+			<item startFrameNum="290" endFrameNum="484"/>
+		
+		</actor>
+		<actor path="imgAsset\actor\001_2.jpg" actName="Mr. Jackson">
+
+			<item startFrameNum="212" endFrameNum="290"/>
+			<item startFrameNum="495" endFrameNum="702"/>
+			<item startFrameNum="938" endFrameNum="1029"/>
+		</actor>
+		<actor path="imgAsset\actor\001_3.jpg" actName="Jiwon">
+			<item startFrameNum="714" endFrameNum="918"/>
+			<item startFrameNum="1048" endFrameNum="1100"/>
+			
+		</actor>
+	</thumb>
+</root>

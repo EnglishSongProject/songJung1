@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 통역사가 되어 봐요. -->
+		<item>snd/L01/022/L01_022_title.mp3</item>
+		
+		<!-- 국제회의에 참석한 각국 대표와 그 나라의 인사말을 연결해 보고, 다양한 언어로 인사해 봅시다. -->
+		<item>snd/L01/022/L01_022_World_02.mp3</item>
+		
+		<!-- こんにちは. [konnichiwa] -->
+		<item>snd/L01/022/L01_022_solve_02_07.mp3</item>
+		<!-- Hello. -->
+		<item>snd/L01/022/L01_022_solve_02_04.mp3</item>
+		<!-- 안녕하세요.  -->
+		<item>snd/L01/022/L01_022_World_03.mp3</item>
+		<!-- Guten Tag. -->
+		<item>snd/L01/022/L01_022_solve_02_06.mp3</item>
+		<!-- Bonjour. -->
+		<item>snd/L01/022/L01_022_solve_02_05.mp3</item>
+	</soundFile>
+</root>

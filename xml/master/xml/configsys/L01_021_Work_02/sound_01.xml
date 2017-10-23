@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<item>snd/m_step2.mp3</item>
+		<!-- 모둠원을 소개하는 UCC 대본을 만들어 봅시다. -->
+		<item>snd/L01/021/L01_021_wt_02.mp3</item>
+		
+	</soundFile>
+</root>

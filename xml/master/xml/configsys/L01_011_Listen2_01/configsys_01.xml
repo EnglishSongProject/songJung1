@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<button>
+		<!-- 해석 -->
+		<item>kor=true</item>
+		
+		<!-- 사용안함. 전체화면-->
+		<item>fullScreen=false</item>
+		
+		<!-- 대본 -->
+		<item>fullScript=true</item>
+		
+		<!-- 대본닫기 -->
+		<item>closeScript=true</item>
+		
+		<!-- 사용안함. 정오답체크 -->
+		<item>check=false</item>
+		
+		<!-- 정답 -->
+		<item>answer=true</item>
+		
+		<!-- 예시 표시뜨게하기 -->
+		<item>ex=false</item>
+		
+		<!-- 다시풀기 -->
+		<item>retry=true</item>
+		
+		<!-- self Review -->
+		<item>workSheet=false</item>
+		
+		<!-- 플레이어 -->
+		<item>player=true</item>
+		
+		<!-- scene 1버튼 -->
+		<item>scene1=false</item>
+		
+		<!-- scene 2버튼 -->
+		<item>scene2=false</item>
+		
+		<!-- scene 3버튼 -->
+		<item>scene3=false</item>
+	</button>
+	<popUp>		
+		<item>xml/pop/L01/script/L01_011_listen2_01_s.xml</item>
+		<item>xml/pop/L01/L01_011_listen2_ani.xml</item>
+	</popUp>
+	<worksheetmenu>false</worksheetmenu>
+	<worksheetPath>
+		<!-- self Review 클릭시 오픈할 파일 경로와 명 -->
+		<item></item>
+	</worksheetPath>
+</root>

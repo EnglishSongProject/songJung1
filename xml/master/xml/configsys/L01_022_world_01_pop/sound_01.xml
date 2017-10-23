@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 세계 여러 나라 사람들은 다양한 언어를 사용하고 있어요. 각 언어마다 인사말도 모두 다르죠. 어느 나라 사람을 만나도 반갑게 인사할 수 있도록 다양한 언어의 인사말을 알아 두면 좋아요.  -->
+		<item>snd/L01/022/L01_022_World_01.mp3</item>
+		
+		<!-- Hola. -->
+		<item>snd/L01/022/L01_022_english_sndD1.mp3</item>
+		
+		<!-- Ciao. -->
+		<item>snd/L01/022/L01_022_english_sndD2.mp3</item>
+		<!-- Namaste. -->
+		<item>snd/L01/022/L01_022_english_sndD3.mp3</item>
+		<!-- Ni hao.  -->
+		<item>snd/L01/022/L01_022_english_sndD4.mp3</item>
+		
+	</soundFile>
+</root>

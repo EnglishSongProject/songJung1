@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>
+		<!-- 소개하고 인사를 나눠요. -->
+		<item>snd/L01/009/L01_009_intro2_04.mp3</item>
+		<!-- A: Dana this is my friend, Yena. -->
+		<item>snd/L01/009/L01_009_sp2_a02.mp3</item>
+		<!-- B: Pleased to meet you, Yena. -->
+		<item>snd/L01/009/L01_009_intro_08w.mp3</item>
+		<!-- C: Nice to meet you, too.-->
+		<item>snd/L01/009/L01_009_intro_yena.mp3</item>	
+		<!-- 서로 모르는 두 친구를 소개해 줄 수 있나요?-->
+		<item>snd/L01/009/L01_009_intro2_05.mp3</item>			
+	</soundFile>
+</root>
+
+
+	
+	
+	
+	
+	

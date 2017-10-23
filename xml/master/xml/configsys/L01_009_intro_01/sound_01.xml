@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>
+		<!-- 안부를 묻고 답해요. -->
+		<item>snd/L01/009/L01_009_intro2_02.mp3</item>
+		<!-- A: How are you doing today? -->
+		<item>snd/L01/009/L01_009_sp1_a02.mp3</item>
+		<!-- B: Good -->
+		<item>snd/L01/009/L01_009_intro_06w.mp3</item>
+		<!-- 안부를 묻는 친구의 말에 답할 수 있나요?-->
+		<item>snd/L01/009/L01_009_intro2_03.mp3</item>		
+	</soundFile>
+</root>

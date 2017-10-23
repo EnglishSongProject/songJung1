@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<button>
+		<!-- 해석 -->
+		<item>kor=false</item>
+		
+		<!-- 사용안함. 전체화면-->
+		<item>fullScreen=false</item>
+		
+		<!-- 대본 -->
+		<item>fullScript=false</item>
+		
+		<!-- 대본닫기 -->
+		<item>closeScript=false</item>
+		
+		<!-- 사용안함. 정오답체크 -->
+		<item>check=false</item>
+		
+		<!-- 정답 -->
+		<item>answer=true</item>
+		
+		<!-- 예시 표시뜨게하기 -->
+		<item>ex=false</item>
+		
+		<!-- 다시풀기 -->
+		<item>retry=true</item>
+		
+		<!-- self Review -->
+		<item>workSheet=false</item>
+		
+		<!-- 플레이어 -->
+		<item>player=false</item>
+		
+		<!-- scene 1버튼 -->
+		<item>scene1=false</item>
+		
+		<!-- scene 2버튼 -->
+		<item>scene2=false</item>
+		
+		<!-- scene 3버튼 -->
+		<item>scene3=false</item>
+	</button>
+	<popUp>		
+		<!-- item 노드 순서대로 넘버링으로 불러들임. -->
+		
+		<!-- 설정이 필요한건 xml 경로를 그냥 이미지를 띠울땐 swf를 -->
+		
+	</popUp>
+	<worksheetmenu>false</worksheetmenu>
+	<worksheetPath>
+		<!-- self Review 클릭시 오픈할 파일 경로와 명 -->
+		<item></item>
+	</worksheetPath>
+</root>

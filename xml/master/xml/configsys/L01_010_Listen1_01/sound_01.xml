@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- A Warm Up -->
+		<item>snd/L01/010/L01_010_sp1_a01.mp3</item>
+		<!-- What will the girl say? -->
+		<item>snd/L01/010/L01_010_sp1_a01_1.mp3</item>
+		<!-- How are you doing? -->
+		<item>snd/L01/010/L01_010_sp1_a02.mp3</item>
+		<!-- I'm Good.~~~~~~~~~~~~~~~Not so good. -->
+		<item>snd/L01/010/L01_010_sp1_a03.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- How are you doing? -->
+		<item>snd/L01/010/L01_010_sp1_a02.mp3</item>
+		<!-- I'm Good.~~~~~~~~~~~~~~~ -->
+		<item>snd/L01/010/L01_010_sp1_a03.mp3</item>
+		<!-- Not so good. -->
+		<item>snd/L01/010/L01_010_sp1_a03_1.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+	
+	
+	

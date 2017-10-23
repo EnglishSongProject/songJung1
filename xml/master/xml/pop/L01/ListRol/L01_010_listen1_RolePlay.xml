@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>L01_010_Listen1_Roleplay.swf</swfPath>
+	</config>
+	<soundFile>
+		<!-- Jason, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c02_01.mp3</item>		
+		<!-- I’m great. -->
+		<item>snd/L01/010/L01_010_sp1_c02_02.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Minji, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c03_01.mp3</item>
+		<!-- Not so good. -->
+		<item>snd/L01/010/L01_010_sp1_c03_02.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Siu, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c04_01.mp3</item>
+		<!-- Not bad. -->
+		<item>snd/L01/010/L01_010_sp1_c04_02.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Anna, How are you doing today?-->
+		<item>snd/L01/010/L01_010_sp1_c05_01.mp3</item>
+		<!-- I’m fine. -->
+		<item>snd/L01/010/L01_010_sp1_c05_02.mp3</item>	
+	</soundFile>
+</root>

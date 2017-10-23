@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>	
+		
+		<!-- 통역사가 되어 여러 나라의 인사말을 알아봐요. -->
+		<item>snd/L01/009/L01_009_intro2_12.mp3</item>
+		<!-- 다른 나라의 인사말 중 아는 것이 있나요? -->
+		<item>snd/L01/009/L01_009_intro2_13.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+	

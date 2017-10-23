@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<item>snd/m_step1.mp3</item>
+		<!-- 네 명이 한 모둠이 되어 서로에게 자기소개를 해 봅시다. -->
+		<item>snd/L01/021/L01_021_wt_01.mp3</item>
+		<!-- Hi. -->
+		<item>snd/L01/021/L01_021_work_01_01.mp3</item>
+		<!-- My name is Jina.   -->
+		<item>snd/L01/021/L01_021_work_01_01_1.mp3</item>
+		<!-- My nickname is Good Listener.  -->
+		<item>snd/L01/021/L01_021_work_01_02.mp3</item>
+		<!-- I’m active. -->
+		<item>snd/L01/021/L01_021_work_02.mp3</item>
+		<!-- My birthday is November 5th. -->
+		<item>snd/L01/021/L01_021_work_03.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Hi. -->
+		<item>snd/L01/021/L01_021_work_01_01.mp3</item>
+		<!-- My name is Jina.   -->
+		<item>snd/L01/021/L01_021_work_01_01_1.mp3</item>
+		<!-- My nickname is Good Listener.  -->
+		<item>snd/L01/021/L01_021_work_01_02.mp3</item>
+		<!-- I’m active. -->
+		<item>snd/L01/021/L01_021_work_02.mp3</item>
+		<!-- My birthday is November 5th. -->
+		<item>snd/L01/021/L01_021_work_03.mp3</item>
+	</soundFile>	
+</root>

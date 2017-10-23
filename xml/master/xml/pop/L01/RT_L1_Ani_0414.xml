@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>video/RT_L1_Ani_0414.swf</swfPath>
+		<videoWidth>1280</videoWidth>	<!--로드되는 영상의 스테이지 가로,세로값 입력-->
+		<videoHeight>800</videoHeight>
+		<useThumb>n</useThumb>					<!--씬구간   기능 / ->구현감춤 -->
+		<useSectionRepeat>n</useSectionRepeat>  <!--구간반복 기능 / ->구현감춤 -->
+		<useFullScreen>n</useFullScreen>		<!--전체보기 기능 / ->구현감춤 -->
+		<useViewSubtitle>y</useViewSubtitle>	<!--자막보기 기능 -->
+		<useRepeat>n</useRepeat>				<!--구간반복 기능 / ->구현감춤 -->
+		<useViewScript>n</useViewScript>		<!--대본보기 기능 -->
+	</config>
+	<thumb>
+		<!-- startFrameNum=1, endFrameNum="669" 파일의 시작과 끝지정  -->
+		<item path="video/imgAsset/thumb1.jpg" startFrameNum="1" endFrameNum="2214"/>
+	</thumb>
+</root>

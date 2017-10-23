@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>		
+		
+		<!-- 네임 텐트를 만들고 자기소개 글을 써요. -->
+		<item>snd/L01/009/L01_009_intro2_08.mp3</item>
+		<!-- 네임 텐트가 무엇인지 알고 있나요? -->
+		<item>snd/L01/009/L01_009_intro2_09_1.mp3</item>
+		<!-- 자신의 네임 텐트를 어떻게 꾸미고 싶나요? -->
+		<item>snd/L01/009/L01_009_intro2_09_2.mp3</item>
+
+	</soundFile>
+</root>
+
+
+
+
+	
+	
+	

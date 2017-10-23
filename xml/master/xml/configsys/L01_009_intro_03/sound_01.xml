@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- Study Plan for the Lesson -->
+		<item>snd/L01/009/L01_009_intro_sp01.mp3</item>
+		<!-- 새 학교에서 친구들을 만나 인사하고 소개해요. -->
+		<item>snd/L01/009/L01_009_intro2_01.mp3</item>
+		<!-- 선생님과 친구들이 네임 텐트를 만들어 자기소개 하는 글을 읽어요. -->
+		<item>snd/L01/009/L01_009_intro2_06.mp3</item>
+		<!-- 자신을 소개할 때 어떤 것을 말하고 싶나요? -->
+		<item>snd/L01/009/L01_009_intro2_07.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+	

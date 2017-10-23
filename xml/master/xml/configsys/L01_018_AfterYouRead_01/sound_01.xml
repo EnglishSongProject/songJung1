@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 본문의 내용과 일치하면 T, 일치하지 않으면 F로 가서 학교 가는 길을 찾아봅시다. -->
+		<item>snd/L01/018/L01_018_AR_01.mp3</item>
+		<!-- I am a science teacher. -->
+		<item>snd/L01/018/L01_018_afte_a01_02.mp3</item>
+		<!-- My nickname is Song Navi. -->
+		<item>snd/L01/018/L01_018_afte_a01_03.mp3</item>
+		<!-- I like action movies. -->
+		<item>snd/L01/018/L01_018_afte_a01_04_Fix.mp3</item>
+		<!-- I am good at soccer. -->
+		<item>snd/L01/018/L01_018_afte_a01_05_Fix.mp3</item>
+	</soundFile>
+	
+</root>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 다음 글을 읽고, 물음에 답해 봅시다. -->
+		<item>snd/L01/023/L01_023_wu_kor_05.mp3</item>
+		
+		<!-- 4번. 빈칸에 알맞은 낱말을 골라 봅시다. -->
+		<item>snd/L01/023/L01_023_wu_kor_06.mp3</item>
+		<!-- One. be  -->
+		<item>snd/L01/023/L01_023_wrap_04_11.mp3</item>
+		<!-- Two. take  -->
+		<item>snd/L01/023/L01_023_wrap_04_12.mp3</item>
+		<!-- Three. introduce  -->
+		<item>snd/L01/023/L01_023_wrap_04_13.mp3</item>
+		<!-- Four. meet  -->
+		<item>snd/L01/023/L01_023_wrap_04_14.mp3</item>
+		
+		<!-- 5번. 윗글의 다음에 이어질 상황으로 알맞은 것을 골라 봅시다. -->
+		<item>snd/L01/023/L01_023_wu_kor_07.mp3</item>
+		<!-- 일. 학생들이 자신을 소개한다.   -->
+		<item>snd/L01/023/L01_023_wu_kor_08.mp3</item>
+		<!-- 이. 학생들이 선생님에게 질문한다.  -->
+		<item>snd/L01/023/L01_023_wu_kor_09.mp3</item>
+		<!-- 삼. 영어 수업이 시작된다.    -->
+		<item>snd/L01/023/L01_023_wu_kor_10.mp3</item>
+		<!-- 사. 선생님이 학생들에게 케이크를 준다.-->
+		<item>snd/L01/023/L01_023_wu_kor_11.mp3</item>
+		
+	</soundFile>
+	<soundFile>
+		<!-- Today is our first class. -->
+		<item>snd/L01/023/L01_023_wrap_04_01.mp3</item>
+				
+		<!-- Let’s make a name tent and introduce ourselves. -->
+		<item>snd/L01/023/L01_023_wrap_04_02.mp3</item>
+		
+		<!-- Here’s my name tent. -->
+		<item>snd/L01/023/L01_023_wrap_04_03.mp3</item>
+		
+		<!-- My name is Kang Hosik. -->
+		<item>snd/L01/023/L01_023_wrap_04_04.mp3</item>
+		
+		<!-- I like cookies and doughnuts.-->
+		<item>snd/L01/023/L01_023_wrap_04_05.mp3</item>
+		
+		<!-- I am not a great baker. -->
+		<item>snd/L01/023/L01_023_wrap_04_06.mp3</item>
+		
+		<!-- But my cheesecake is fantastic. -->
+		<item>snd/L01/023/L01_023_wrap_04_07.mp3</item>
+		
+		<!-- Now it’s your turn. -->
+		<item>snd/L01/023/L01_023_wrap_04_08.mp3</item>
+	</soundFile>	
+</root>
+
+
+
+
+
+
+
+
+

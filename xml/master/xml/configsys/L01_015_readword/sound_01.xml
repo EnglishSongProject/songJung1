@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- welcome -->
+		<item>snd/L01/015/L01_015_w01.mp3</item>
+		<!-- introduce -->
+		<item>snd/L01/015/L01_015_w02.mp3</item>
+		
+		<!-- baker -->
+		<item>snd/L01/016/L01_016_w01.mp3</item>
+		<!-- fantastic -->
+		<item>snd/L01/016/L01_016_w02.mp3</item>
+		<!-- turn -->
+		<item>snd/L01/016/L01_016_w03.mp3</item>
+		
+		<!-- camping -->
+		<item>snd/L01/016/L01_016_w06.mp3</item>
+		<!-- active -->
+		<item>snd/L01/016/L01_016_w04.mp3</item>
+		<!-- trip -->
+		<item>snd/L01/016/L01_016_w05.mp3</item>
+		
+		
+		<!-- animation movie  -->
+		<item>snd/L01/017/L01_017_w01.mp3</item>
+		<!-- comic book  -->
+		<item>snd/L01/017/L01_017_w02.mp3</item>
+		<!-- work -->
+		<item>snd/L01/017/L01_017_w03.mp3</item>
+		<!-- be good at -->
+		<item>snd/L01/017/L01_017_w04.mp3</item>
+	</soundFile>
+</root>
+
+
+
+
+
+
+
+
+

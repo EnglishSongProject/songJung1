@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 1. 글 쓴 사람의 특징이 자기소개 글에 잘 나타나 있나요? -->
+		<item>snd/L01/020/L01_020_ww_03.mp3</item>
+		<!-- 2. be동사와 일반동사를 알맞게 사용했나요? -->
+		<item>snd/L01/020/L01_020_ww_04.mp3</item>
+		
+	</soundFile>
+</root>

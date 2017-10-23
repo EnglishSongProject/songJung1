@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+
+/* ===================== 동영상 관련 ====================== */
+
+
+/* 타이틀 텍스트 */
+.media_titlefont {position:absolute; width:700px; text-align: left; font-size: 30px; font-family: "Fredoka One"; color: #2aa4be;}
+.media_titlefont .media_tt{position:absolute;top: -12px;left: -45px;}
+.media_timefont {position:absolute; width:700px; text-align: left; font-size: 20px; font-family: "NanumGothic";}
+.media_captionfont {position:absolute; width:700px; text-align: left; font-size: 18px; font-family: "NanumGothic"; top: -5px;}
+.media_scriptfont {position:absolute; width:700px; text-align: left; font-size: 16px; font-family: "NanumGothic";}
+
+
+
+
+/* 헤더 - (아이콘, 타이틀, 본문보기 버튼) */
+#video_header{ position: absolute; top: 0px; left: 0; right: 0; width: 768px; height: 60px; margin: 0 auto;}
+.media_icon{ position:absolute; left:0px; top:0px;}
+.media_title{ position:absolute; left:80px; top:20px;}
+.btn_media_close{ position:absolute; left: 630px;  top: 0px; cursor: pointer; }
+.btn_media_close > img {width: 22px; height: 22px;}
+
+
+/* 화면 크기 */
+#vwrap{ position: absolute; top: 60px; left: 0; right: 0; width: 768px; height: 576px; margin: 0 auto;}
+
+
+/* role에서의 시간 그래프 */
+.waiter { position:absolute; left: 100px; right:0px;     top: 320px ;width:200px; margin:0 auto; visibility:hidden;}
+.waiter > img {position: relative;  width:100px; height: 100px;     animation: mic_ani 900ms linear 0s infinite;}
+.waiter .bar{ position:absolute; left:20px; top:16px; width:28px; height:28px;}
+.video_header{ height: 60px; background-color: #ebf6ee;}
+
+
+
+/* 구간재생 번호표 */
+
+
+
+/* 컨트롤러의 배경 반복 */
+.controller { position: absolute; top: 540px; left: 0; right: 0; width: 768px; height: 65px; overflow:hidden;}
+.controller .bg	{ position: absolute;  width: 768px; height: 65px; background-color:#ebf6ee; }
+
+
+/* 구간재생 이미지 */
+.controller .thumb_list { position:absolute; right:20px; top:30px; width:768px;} /* 오른쪽 정렬 */
+.controller .thumb_box { position:absolute; cursor:pointer; top:-2px; right:-2px; overflow1:hidden;} /* 하나의 thumb */
+.controller .thumb_one { position:absolute; cursor:pointer;} /* 하나의 thumb */
+
+
+/* 컨트롤러 */
+
+/*1. 동영상 진행바 컨트롤러*/
+
+.progController { position:absolute; left:10px; top:10px; width:373px;}
+#prog_play{ position:absolute; left:35px; top:12px; cursor:pointer;     z-index: 1;}
+#prog_stop{ position:absolute; left:70px; top:12px; cursor:pointer;     z-index: 1;}
+
+/* 볼 */
+#prog_gray{	position:absolute; left:120px; top:12px; width:373px; height:10px;	z-index:2;}
+#prog_color{ position:absolute; left:120px; top:12px; width:373px; height:20px; overflow:hidden; z-index:3;}
+#prog_mouse{ position:absolute; left:120px; top:12px; width:373px; height:10px; cursor:pointer; z-index:4; opacity:0;}
+#prog_ball{	position:absolute; top:12px; width:20px; height:20px;	cursor:pointer; z-index:5;}
+
+/*자막, 대본*/
+#prog_cap{	position:absolute; left:520px; top:12px; z-index:4; cursor:pointer;}
+#prog_cap2{	position:absolute; left:590px; top:12px; z-index:4; cursor:pointer;}
+#prog_sct{	position:absolute; left:660px; top:12px; z-index:4; cursor:pointer;}
+
+
+/*동영상 시간*/
+.prog_pos{	position:absolute; left: 120px; top:25px; width:60px; height:50px; overflow:hidden; }
+.prog_dur{	position:absolute; left:180px; top:25px; width:60px; height:50px; overflow:hidden; }
+.time_pos{	position:absolute; width:60px; }
+.time_dur{	position:absolute; width:60px; }
+
+
+/*2. 사운드 볼륨 컨트롤러*/
+.volController { position:absolute; left:100px; top:30px;}
+#vol_spk{ position:absolute; left:0px; top:0px; width:29px; height:32px; z-index:5; cursor:pointer;}
+#vol_gray { position:absolute; left:28px; top:0px;	z-index:2;}
+#vol_color { position:absolute; left:28px; top:0px; width:16px;	z-index:3; overflow:hidden;}
+#vol_mouse { position:absolute; left:28px; top:0px; width:88px;	z-index:4; cursor:pointer; overflow:hidden; opacity:0;}
+
+
+
+
+
+.sc_paper { position: absolute; top:240px; left:0px; width:768px; height:300px; } /*top: 컨트롤러top + 컨트롤로 height */
+
+/* 한줄 자막 */
+.sc_paper .caption_wrap {position:absolute; left:0px; top:250px;  width:768px; height:50px; overflow:hidden;}
+.sc_paper .caption_wrap .caption_bg{ position:absolute; left:0px; top:0px; width:768px; height:50px; background: url(../images/common/player/player_caption_bg.png) no-repeat 0 0;opacity: 0.5;} /* 한줄 자막 */
+.sc_paper .caption_wrap .caption_txt{	position:absolute; left:28px; top:16px; width:700px;}
+.sc_paper .caption_wrap .txt_one{width:700px; height:28px; overflow:hidden;text-align: center; color: blue;}
+.sc_paper .caption_wrap .txt_two{width:700px; height:28px; overflow:hidden;text-align: center; color: blue;}
+
+
+
+.sc_paper .script_wrap {position:absolute; left:0px; top:125px;  width:768px; height:420px; overflow:hidden; background-color: #e5e5e5;}
+.sc_paper .script_wrap .script_txt {position:absolute; left:0px; top:0px;  width:768px; padding: 15px;}
+
+
+/* 대본 */
+
+/*대본 스크롤러*/
+.sc_paper .scController { position:absolute; right:30px; top:15px;}
+.sc_paper .scController .sc_bg{	position:absolute; left:11px; top:0px; width:30px; height:390px;	z-index:1;}
+.sc_paper .scController .sc_bg > img{height:390px;}
+.sc_paper .scController .sc_ball{	position:absolute; left:4px; top:0px; width:22px; height:45px;	cursor:pointer; z-index:2;}
+
+
+ /* 영, 한영, 한 */
+.sc_paper .haneng	{ position: absolute; top:10px; right:-35px; width:160px; height:30px; }
+/*.sc_paper .haneng .btn_en { position: absolute; top:2px; left:2px;  cursor:pointer;}
+.sc_paper .haneng .btn_ek { position: absolute; top:2px; left:32px; cursor:pointer;}
+.sc_paper .haneng .btn_kr { position: absolute; top:2px; left:62px; cursor:pointer;}*/
+.video_trans{
+	font: 14px 'Open Sans';
+	font-weight: 700;
+	color: #339900;
+}
+.fullsize{
+	position: absolute;
+	left: 712px;
+	top: 12px;
+	z-index: 1;
+}
+.btn_full_screen{
+	background: url(../images/common/player/full_screen.png);
+	width: 25px;
+	height: 25px;
+}
+@keyframes mic_ani {
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+@keyframes sound_ani {
+	0%{transform: scale(1);}
+	100%{transform: scale(1.8);}
+}
+.sound_point{
+	background:url(../images/common/audio_pop/controllbar.png);
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+.sound_point.active{
+	animation: sound_ani  600ms linear 0s;
+	background:url(../images/common/audio_pop/controllbar.png);
+	width: 15px;
+	height: 15px;
+}

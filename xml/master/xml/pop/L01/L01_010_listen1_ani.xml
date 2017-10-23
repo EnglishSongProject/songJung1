@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>video/L01_010_listen1_ani.swf</swfPath>
+		<videoWidth>1280</videoWidth>	<!--로드되는 영상의 스테이지 가로,세로값 입력-->
+		<videoHeight>800</videoHeight>
+		<useThumb>n</useThumb>
+		<useSectionRepeat>n</useSectionRepeat>
+		<useFullScreen>n</useFullScreen>
+		<useViewSubtitle>y</useViewSubtitle>
+		<useRepeat>n</useRepeat>
+		<useViewScript>n</useViewScript>
+	</config>
+	<thumb>
+		<!-- startFrameNum=1, endFrameNum="593" 파일의 시작과 끝지정  -->
+		<item path="video/imgAsset\thumb1.jpg" startFrameNum="1" endFrameNum="593"/>
+	</thumb>
+</root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- A
+새로운 친구를 만났을 때 가장 궁금한 것 세 가지를 고르고, 짝의 것과 비교해 봅시다
+  -->
+		<item>snd/L01/014/L01_014_BR_01.mp3</item>
+		<!-- name  -->
+		<item>snd/L01/014/L01_014_befo_a01_01.mp3</item>
+		<!-- school  -->
+		<item>snd/L01/014/L01_014_befo_a01_02.mp3</item>
+		<!-- family -->
+		<item>snd/L01/014/L01_014_befo_a01_03.mp3</item>
+		
+		<!-- nickname -->
+		<item>snd/L01/014/L01_014_befo_a01_04.mp3</item>
+		
+		<!-- birthday -->
+		<item>snd/L01/014/L01_014_befo_a01_05.mp3</item>
+		
+		<!-- Your Own -->
+		<item>snd/L01/014/L01_014_befo_a01_06.mp3</item>
+		
+	</soundFile>
+</root>
+
+ 
+ 
+ 
+ 
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

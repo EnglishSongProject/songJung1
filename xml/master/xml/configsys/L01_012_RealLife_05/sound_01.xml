@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- nickname  -->
+		<item>snd/L01/012/L01_012_act_b_sc01.mp3</item>
+		<!-- meet -->
+		<item>snd/L01/012/L01_012_act_b_sc04.mp3</item>
+		<!-- this  -->
+		<item>snd/L01/012/L01_012_act_b_sc02.mp3</item>
+		<!-- pleased -->
+		<item>snd/L01/012/L01_012_act_b_sc05.mp3</item>
+		
+		<!-- How are you doing? -->
+		<item>snd/L01/012/L01_012_act_b_sc07.mp3</item>
+		
+		<!-- Pretty good. -->
+		<item>snd/L01/012/L01_012_act_b_sc08.mp3</item>
+		
+	</soundFile>
+</root>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

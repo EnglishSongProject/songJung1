@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 단원 돌아보기 -->
+		<item>snd/L01/023/L01_023_SELF_11.mp3</item>
+		<!-- 가장 흥미로웠던 내용은 무엇인가요? -->
+		<item>snd/L01/023/L01_023_SELF_12.mp3</item>
+		<!-- 이를 더 탐구할 방법을 생각해 봅시다. -->
+		<item>snd/L01/023/L01_023_SELF_13.mp3</item>
+		<!-- 가장 어려웠던 부분은 무엇인가요?-->
+		<item>snd/L01/023/L01_023_SELF_14.mp3</item>
+		<!-- 이를 보충할 계획을 세워 봅시다. -->
+		<item>snd/L01/023/L01_023_SELF_15.mp3</item>
+		
+	</soundFile>
+</root>
+
+
+
+
+
+
+
+

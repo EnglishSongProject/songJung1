@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>L01_012_RealLife_03_s.swf</swfPath>
+	</config>
+	<soundFile>
+		<!-- G1: Hello, Mr. Jackson. -->
+		<item>snd/L01/012/L01_012_act_a_scr01.mp3</item>
+		<!-- How are you doing? -->
+		<item>snd/L01/012/L01_012_act_a_scr01_1.mp3</item>
+		<!-- M: Pretty good. -->
+		<item>snd/L01/012/L01_012_act_a_scr02.mp3</item>
+		<!-- How about you, Sumi? -->
+		<item>snd/L01/012/L01_012_act_a_scr02_1.mp3</item>
+		<!-- G1: Great, thanks. -->
+		<item>snd/L01/012/L01_012_act_a_scr03_1.mp3</item>
+		<!-- She’s 10 years old. -->
+		<item>snd/L01/012/L01_012_act_a_scr03_2.mp3</item>	
+		<!-- M: Hi, Jiwon. -->
+		<item>snd/L01/012/L01_012_act_a_scr04.mp3</item>
+		<!-- Nice to meet you. -->
+		<item>snd/L01/012/L01_012_act_a_scr04_1.mp3</item>
+		<!-- I am Joe Jackson, and I’m your sister’s English teacher. -->
+		<item>snd/L01/012/L01_012_act_a_scr04_2.mp3</item>		
+		<!--G2: Pleased to meet you, Mr. Jackson. -->
+		<item>snd/L01/012/L01_012_act_a_scr05.mp3</item>
+		<!--  I like English. -->
+		<item>snd/L01/012/L01_012_act_a_scr05_1.mp3</item>
+		<!-- English is fun. -->
+		<item>snd/L01/012/L01_012_act_a_scr05_2.mp3</item>	
+		<!--Are you from America? -->
+		<item>snd/L01/012/L01_012_act_a_scr05_3.mp3</item>
+		<!--  M: No, I’m not. -->
+		<item>snd/L01/012/L01_012_act_a_scr06.mp3</item>
+		<!-- I’m from Canada. -->
+		<item>snd/L01/012/L01_012_act_a_scr06_1.mp3</item>
+		<!-- G2: Oh, I see. -->
+		<item>snd/L01/012/L01_012_act_a_scr07.mp3</item> 
+	</soundFile>
+</root>

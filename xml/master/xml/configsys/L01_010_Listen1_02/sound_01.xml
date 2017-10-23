@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- B Listen and Check -->
+		<item>snd/L01/010/L01_010_sp1_b01.mp3</item>
+		<!-- How is each student doing? -->
+		<item>snd/L01/010/L01_010_sp1_b01_1.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- number1 -->
+		<item>snd/L01/010/L01_010_sp1_b02.mp3</item>
+		<!-- G: How are you doing, David? -->
+		<item>snd/L01/010/L01_010_sp1_b02_1.mp3</item>
+		<!--  B: Great.  -->
+		<item>snd/L01/010/L01_010_sp1_b03.mp3</item>
+		<!-- I¡¯m happy with my new school.  -->
+		<item>snd/L01/010/L01_010_sp1_b03_1.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- number2  -->
+		<item>snd/L01/010/L01_010_sp1_b04.mp3</item>
+		<!-- B: How¡¯s it going, Dayun? -->
+		<item>snd/L01/010/L01_010_sp1_b04_1.mp3</item>
+		<!-- G: Not so good.  -->
+		<item>snd/L01/010/L01_010_sp1_b05.mp3</item>
+		<!-- I have a headache.  -->
+		<item>snd/L01/010/L01_010_sp1_b05_1.mp3</item>
+	</soundFile>
+</root>
+
+
+	
+		

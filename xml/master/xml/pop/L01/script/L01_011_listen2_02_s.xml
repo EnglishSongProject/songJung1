@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<swfPath>L01_011_listen2_02_s.swf</swfPath>
+	</config>
+	<soundFile>
+		<!-- Number 1.  -->
+		<item>snd/L01/011/L01_011_sp2_b02.mp3</item>
+		<!-- B: Ms. Brown, this is Hana.  -->
+		<item>snd/L01/011/L01_011_sp2_b02_1.mp3</item>
+		<!-- Hana, this is Ms. Brown. -->
+		<item>snd/L01/011/L01_011_sp2_b02_2.mp3</item>
+		<!-- G: Pleased to meet you, Ms. Brown. -->
+		<item>snd/L01/011/L01_011_sp2_b03.mp3</item>
+		<!-- W: Nice to meet you, too, Hana. -->
+		<item>snd/L01/011/L01_011_sp2_b04.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Number 2.  -->
+		<item>snd/L01/011/L01_011_sp2_b05.mp3</item>
+		<!-- B: Hi, I¡¯m Mike. -->
+		<item>snd/L01/011/L01_011_sp2_b05_1.mp3</item>
+		<!-- I¡¯m from Denmark. -->
+		<item>snd/L01/011/L01_011_sp2_b05_2.mp3</item>
+		<!-- My nickname is Mike Messi.  -->
+		<item>snd/L01/011/L01_011_sp2_b05_3.mp3</item>
+		<!-- Nice to meet you. -->
+		<item>snd/L01/011/L01_011_sp2_b05_4.mp3</item>
+		<!-- G: Hi, I¡¯m Bora.  -->
+		<item>snd/L01/011/L01_011_sp2_b06.mp3</item>
+		<!-- My nickname is Borapova. -->
+		<item>snd/L01/011/L01_011_sp2_b06_1.mp3</item>
+		<!-- Nice to meet you, too. -->
+		<item>snd/L01/011/L01_011_sp2_b06_2.mp3</item>
+	</soundFile>
+	<soundFile>
+		<!-- Number 3.  -->
+		<item>snd/L01/011/L01_011_sp2_b07.mp3</item>
+		<!-- B1: Hi, Polly.  -->
+		<item>snd/L01/011/L01_011_sp2_b07_1.mp3</item>
+		<!-- I¡¯d like to introduce my brother, Jinsu. -->
+		<item>snd/L01/011/L01_011_sp2_b07_2.mp3</item>
+		<!-- G: Hi, Jinsu.  -->
+		<item>snd/L01/011/L01_011_sp2_b08.mp3</item>
+		<!-- Nice to meet you.  -->
+		<item>snd/L01/011/L01_011_sp2_b08_1.mp3</item>
+		<!-- How old are you? -->
+		<item>snd/L01/011/L01_011_sp2_b08_2.mp3</item>
+		<!-- B2: I¡¯m 8 years old. -->
+		<item>snd/L01/011/L01_011_sp2_b09.mp3</item>
+		<!-- Nice to meet you, too, Polly. -->
+		<item>snd/L01/011/L01_011_sp2_b09_1.mp3</item>
+	</soundFile>
+</root>

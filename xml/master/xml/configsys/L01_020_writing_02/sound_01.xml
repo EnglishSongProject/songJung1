@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<item>snd/m_step2.mp3</item>	
+		<!-- 수호의 글을 참고하여 자기소개 글을 써 봅시다.-->
+		<item>snd/L01/020/L01_020_ww_02.mp3</item>
+		
+	</soundFile>
+</root>

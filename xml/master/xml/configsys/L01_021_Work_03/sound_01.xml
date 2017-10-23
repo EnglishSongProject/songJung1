@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<item>snd/m_step3.mp3</item>
+		<!-- 대본을 바탕으로 UCC를 만들어 발표하고 다른 모둠과 비교해 봅시다. -->
+		<item>snd/L01/021/L01_021_wt_03.mp3</item>
+		
+	</soundFile>
+</root>

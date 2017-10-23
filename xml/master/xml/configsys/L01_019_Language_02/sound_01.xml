@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<soundFile>
+		<!-- 빈칸에 알맞은 낱말을 골라 문장을 완성해 봅시다.  -->
+		<item>snd/L01/019/L01_019_LU_01.mp3</item>
+		
+		<!-- My name is Han Muhyeon.  -->
+		<item>snd/L01/019/L01_019_lang_a01_10.mp3</item>
+		<!-- I am a music teacher.    -->
+		<item>snd/L01/019/L01_019_lang_a01_11.mp3</item>
+		<!-- I play the piano every day.   -->
+		<item>snd/L01/019/L01_019_lang_a01_12.mp3</item>
+		
+		<!-- Hana and Duri like sports. -->
+		<item>snd/L01/019/L01_019_lang_a01_13.mp3</item>
+		<!-- They play soccer games on TV every day.    -->
+		<item>snd/L01/019/L01_019_lang_a01_14.mp3</item>
+		<!-- They are good at baseball. -->
+		<item>snd/L01/019/L01_019_lang_a01_15.mp3</item>
+		
+		<!-- am -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w2.mp3</item>
+		<!-- are -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w5.mp3</item>
+		<!-- is -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w3.mp3</item>
+		<!-- like. -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w4.mp3</item>
+		<!-- play. -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w1.mp3</item>
+		<!-- watch -->
+		<item>snd/L01/019/L01_019_lang_a01_09_w6.mp3</item>		
+		
+	</soundFile>
+</root>
+
+
+  	
+	
+	
+	
+	
+	
